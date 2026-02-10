@@ -14,6 +14,7 @@ import com.motorph.model.Payslip;
 import com.motorph.service.AttendanceService;
 import com.motorph.service.PayrollService;
 import com.motorph.service.RateService;
+import com.motorph.ui.DashboardFrame;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -74,6 +75,11 @@ public class Main {
         System.out.println("Gross Pay: " + payslip.getGrossPay());
         System.out.println("Allowances: " + payslip.getAllowances());
         System.out.println("Net Pay: " + payslip.getNetPay());
+        
+        
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            new DashboardFrame().setVisible(true);
+        });
         
     }  
 }
