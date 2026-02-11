@@ -20,6 +20,15 @@
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/dao/CsvAttendanceDAO.java</file>
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/service/AttendanceService.java</file>
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/service/PayrollService.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/Payslip.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/LoginFrame.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/MainFrame.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/DashboardPanel.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/EmployeeListPanel.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/PayslipPanel.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/AttendancePanel.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/NavigationManager.java</file>
+            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/util/AppContext.java</file>
         </group>
     </open-files>
 </project-private>

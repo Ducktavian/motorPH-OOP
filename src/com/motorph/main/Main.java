@@ -14,7 +14,7 @@ import com.motorph.model.Payslip;
 import com.motorph.service.AttendanceService;
 import com.motorph.service.PayrollService;
 import com.motorph.service.RateService;
-import com.motorph.ui.DashboardFrame;
+import com.motorph.ui.LoginFrame;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -40,12 +40,18 @@ public class Main {
         }
         */
         
+        // Create employee dao object
+        EmployeeDAO employeeDAO = new CsvEmployeeDAO("employees.csv");
+        
+        // Create employee object by getting the first employee from the return value of dao
+        Employee employee = employeeDAO.getAllEmployees().get(0);
+        
+        
         // Creates a csv attendance dao object
         AttendanceDAO attendanceDAO = new CsvAttendanceDAO("attendance.csv");
         
         // Create attendance service object
-        AttendanceService attendanceService =
-            new AttendanceService(attendanceDAO);
+        AttendanceService attendanceService = new AttendanceService(attendanceDAO);
         
         
         // Create RateService object
@@ -53,12 +59,6 @@ public class Main {
         
         // Create PayrollService object
         PayrollService payrollService = new PayrollService(attendanceService, rateService);
-        
-        // Create employee dao object
-        EmployeeDAO employeeDAO = new CsvEmployeeDAO("employees.csv");
-        
-        // Create employee object by getting the first employee from the return value of dao
-        Employee employee = employeeDAO.getAllEmployees().get(0);
         
         
         // Payslip object
@@ -76,8 +76,9 @@ public class Main {
         System.out.println("Net Pay: " + payslip.getNetPay());
         
         
+        
         javax.swing.SwingUtilities.invokeLater(() -> {
-            new DashboardFrame().setVisible(true);
+            new LoginFrame().setVisible(true);
         });
         
     }  

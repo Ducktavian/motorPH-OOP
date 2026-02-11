@@ -6,5 +6,7 @@ import java.util.List;
 public interface EmployeeDAO {
 
     List<Employee> getAllEmployees();
-
+    
+    // Wrtie employee
+    void addEmployee();
 }

@@ -25,9 +25,7 @@ public class CsvEmployeeDAO implements EmployeeDAO {
     @Override
     public List<Employee> getAllEmployees() {
         List<Employee> employees = new ArrayList<>();
-        
-        System.out.println("CSV Path: " + filePath);
-        
+       
 
         
         try (CSVReader reader = new CSVReader(new FileReader (filePath))) {
@@ -38,41 +36,44 @@ public class CsvEmployeeDAO implements EmployeeDAO {
             while ((data = reader.readNext()) != null) {
                 
                 
-                
-                
                 // Employee Creation
                 String employeeNumber = data[0];
                 String lastName = data[1];
                 String firstName = data[2];
+                String birthday = data[3];
+                String address = data[4];
+                String phoneNumber = data[5];
+                String SSSNumber = data[6];
+                String philhealthNumber = data[7];
+                String TIN = data[8];
+                String pagIbigNumber = data[9];
+                String status = data[10];
                 String position = data[POSITION_INDEX].toLowerCase();
-
+                String immediateSupervisor = data[12];
+                
+                
                 double basicSalary = Double.parseDouble(data[13].replace(",", ""));
                 double riceSubsidy = Double.parseDouble(data[14].replace(",", ""));
                 double phoneAllowance = Double.parseDouble(data[15].replace(",", ""));
                 double clothingAllowance = Double.parseDouble(data[16].replace(",", ""));
-                
-                double hourlyRate = Double.parseDouble(data[18]);
+               
 
                 
                 Employee employee;
                 
                 if (position.contains("hr")) {
-                    employee = new HR(employeeNumber, lastName, firstName,
-                        position, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance, hourlyRate);
+                    employee = new HR(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
                 }
                 else if (position.contains("it")) {
-                    employee = new IT(employeeNumber, lastName, firstName,
-                        position, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance, hourlyRate);
+                    employee = new IT(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
                 }
                 else if (position.contains("finance")
                     || position.contains("account")
                     || position.contains("payroll")) {
-                    employee = new Finance(employeeNumber, lastName, firstName,
-                        position, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance, hourlyRate);
+                    employee = new Finance(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
                 }
                 else {
-                    employee = new RegularEmployee(employeeNumber, lastName, firstName,
-                        position, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance, hourlyRate);
+                    employee = new RegularEmployee(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
                 }
                 
                 employees.add(employee);
@@ -90,6 +91,11 @@ public class CsvEmployeeDAO implements EmployeeDAO {
             return 0.0;
         }
         return Double.parseDouble(value.replace(",", ""));
+    }
+    
+    @Override
+    public void addEmployee() {
+        
     }
 
 }

@@ -8,6 +8,6 @@ package com.motorph.ui;
  *
  * @author Lenovo
  */
-public class EmployeeListFrame {
+public class NavigationManager {
     
 }
