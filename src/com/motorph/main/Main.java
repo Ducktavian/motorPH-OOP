@@ -17,7 +17,7 @@ import com.motorph.service.RateService;
 import com.motorph.ui.LoginFrame;
 import java.time.LocalDate;
 import java.util.List;
-
+import java.util.Scanner;
 
 //
 
@@ -39,13 +39,31 @@ public class Main {
             System.out.println("------------------------");
         }
         */
+        // Initiallize employee to null
+        Employee employee = null;
         
         // Create employee dao object
         EmployeeDAO employeeDAO = new CsvEmployeeDAO("employees.csv");
         
         // Create employee object by getting the first employee from the return value of dao
-        Employee employee = employeeDAO.getAllEmployees().get(0);
+        List<Employee> employees = employeeDAO.getAllEmployees();
         
+        
+        // Ask user for employee number
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Employee Number: ");
+        
+        String employeeNumber = scanner.nextLine();
+        
+        // Find employee using the employee Number
+        for (Employee emp: employees) {
+            if (emp.getEmployeeNumber().equals(employeeNumber)) {
+                employee = emp;
+                break;
+            }
+        }
+        
+        scanner.close();
         
         // Creates a csv attendance dao object
         AttendanceDAO attendanceDAO = new CsvAttendanceDAO("attendance.csv");

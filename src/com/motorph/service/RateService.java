@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.motorph.service;
 
 import com.motorph.model.Employee;
 
-/**
- *
- * @author Lenovo
- */
+
 public class RateService {
     
     private static final int WORKING_DAYS_PER_MONTH = 21;

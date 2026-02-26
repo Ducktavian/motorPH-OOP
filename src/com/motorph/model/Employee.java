@@ -89,7 +89,56 @@ public abstract class Employee {
     public double getBasicSalary() {
         return basicSalary;
     }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getSSSNumber() {
+        return SSSNumber;
+    }
+
+    public String getPhilhealthNumber() {
+        return philhealthNumber;
+    }
+
+    public String getTIN() {
+        return TIN;
+    }
+
+    public String getPagIbigNumber() {
+        return pagIbigNumber;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getImmediateSupervisor() {
+        return immediateSupervisor;
+    }
+
+    public double getRiceSubsidy() {
+        return riceSubsidy;
+    }
+
+    public double getPhoneAllowance() {
+        return phoneAllowance;
+    }
+
+    public double getClothingAllowance() {
+        return clothingAllowance;
+    }
     
+
     
     public String getFullName() { 
         return firstName + " " + lastName; 
