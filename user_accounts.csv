@@ -1,0 +1,35 @@
+userId,	Employee #,	username,	passwordHash,	Active,
+1,	10001,	Garcia,	password,	TRUE
+2,	10002,	Lim,	password,	TRUE
+3,	10003,	Aquino,	password,	TRUE
+4,	10004,	Reyes,	password,	TRUE
+5,	10005,	Hernandez,	password,	TRUE
+6,	10006,	Villanueva,	password,	TRUE
+7,	10007,	San Jose,	password,	TRUE
+8,	10008,	Romualdez,	password,	TRUE
+9,	10009,	Atienza,	password,	TRUE
+10,	10010,	Alvaro,	password,	TRUE
+11,	10011,	Salcedo,	password,	TRUE
+12,	10012,	Lopez,	password,	TRUE
+13,	10013,	Farala,	password,	TRUE
+14,	10014,	Martinez,	password,	TRUE
+15,	10015,	Romualdez,	password,	TRUE
+16,	10016,	Mata,	password,	TRUE
+17,	10017,	De Leon,	password,	TRUE
+18,	10018,	San Jose,	password,	TRUE
+19,	10019,	Rosario,	password,	TRUE
+20,	10020,	Bautista,	password,	TRUE
+21,	10021,	Lazaro,	password,	TRUE
+22,	10022,	Delos Santos,	password,	TRUE
+23,	10023,	Santos,	password,	TRUE
+24,	10024,	Del Rosario,	password,	TRUE
+25,	10025,	Tolentino,	password,	TRUE
+26,	10026,	Gutierrez,	password,	TRUE
+27,	10027,	Manalaysay,	password,	TRUE
+28,	10028,	Villegas,	password,	TRUE
+29,	10029,	Ramos,	password,	TRUE
+30,	10030,	Maceda,	password,	TRUE
+31,	10031,	Aguilar,	password,	TRUE
+32,	10032,	Castro,	password,	TRUE
+33,	10033,	Martinez,	password,	TRUE
+34,	10034,	Santos,	password,	TRUE

@@ -14,20 +14,26 @@ import java.io.FileReader;
 
 public class CsvEmployeeDAO implements EmployeeDAO {
     
-    private String filePath;
+    private String filePath = "employees.csv";
     private static final int POSITION_INDEX = 11;
+    private List<Employee> employees;
     
-    public CsvEmployeeDAO(String filePath) {
-        this.filePath = filePath;
+    // Constructor
+    public CsvEmployeeDAO() {
+        employees = new ArrayList<>();
+        loadEmployees();
+        
     }
     
     
     @Override
     public List<Employee> getAllEmployees() {
-        List<Employee> employees = new ArrayList<>();
-       
-
+        loadEmployees();
         
+        return employees;
+    }
+    
+    private void loadEmployees() {
         try (CSVReader reader = new CSVReader(new FileReader (filePath))) {
             
             String[] data;
@@ -81,16 +87,28 @@ public class CsvEmployeeDAO implements EmployeeDAO {
         } catch (Exception e) {
             e.printStackTrace();
         }
-               
-        
-        return employees;
     }
     
+    // IDK
     private double parseAmount(String value) {
         if (value == null || value.equalsIgnoreCase("N/A") || value.isBlank()) {
             return 0.0;
         }
         return Double.parseDouble(value.replace(",", ""));
+    }
+    
+    // Returns employee
+    public Employee findEmployee(String employeeNumber) {
+        String searchKey = employeeNumber.trim();
+        
+        for (Employee emp: employees) {
+            if (emp.getEmployeeNumber().equals(searchKey)) {
+                return emp;
+            }
+        }
+       
+        System.out.println("Could not find employee!");
+        return null;
     }
     
     @Override

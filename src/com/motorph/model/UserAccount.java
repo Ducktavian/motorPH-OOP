@@ -11,7 +11,7 @@ public class UserAccount {
     private String employeeNumber;
     private boolean active;
     
-    public UserAccount(int userId, String username, String passwordHash, Role role, String employeeNumber, boolean active) {
+    public UserAccount(int userId, String employeeNumber, String username, String passwordHash, Role role, boolean active) {
         this.userId = userId;
         this.username = username;
         this.passwordHash = passwordHash;

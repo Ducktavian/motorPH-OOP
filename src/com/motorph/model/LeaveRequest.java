@@ -42,7 +42,7 @@ public class LeaveRequest extends Request {
         return days * dailyRate;
     }
     
-    @Override
+    
     public double calculateImpact() {
         return 0; // default
     }
