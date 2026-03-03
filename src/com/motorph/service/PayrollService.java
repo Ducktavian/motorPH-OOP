@@ -22,6 +22,15 @@ public class PayrollService {
     private AttendanceService attendanceService;
     private RateService rateService;
     private DeductionService deductionService;
+
+    // Constructor
+    public PayrollService() {}
+    
+    // Constructor
+    public PayrollService(AttendanceService attendanceService, RateService rateService) {
+        this.attendanceService = attendanceService;
+        this.rateService = rateService;
+    }
     
     // Constructor
     public PayrollService(AttendanceService attendanceService, RateService rateService, DeductionService deductionService) {

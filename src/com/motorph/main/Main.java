@@ -24,80 +24,33 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         
-        /*
-        // 1. Point to your CSV file
-        EmployeeDAO dao = new CsvEmployeeDAO("employees.csv");
-
-        // 2. Load employees
-        for (Employee e : dao.getAllEmployees()) {
-
-            // 3. Print basic info
-            System.out.println(e.getFullName());
-            System.out.println("Class: " + e.getClass().getSimpleName());
-            System.out.println("Gross Salary: " + e.computeGrossSalary());
-            System.out.println("Hourly Rate: " + e.computeHourlyRate());
-            System.out.println("------------------------");
-        }
-        */
-        // Initiallize employee to null
-        Employee employee = null;
-        
-        // Create employee dao object
-        EmployeeDAO employeeDAO = new CsvEmployeeDAO("employees.csv");
-        
-        // Create employee object by getting the first employee from the return value of dao
-        List<Employee> employees = employeeDAO.getAllEmployees();
-        
-        
-        // Ask user for employee number
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter Employee Number: ");
-        
-        String employeeNumber = scanner.nextLine();
-        
-        // Find employee using the employee Number
-        for (Employee emp: employees) {
-            if (emp.getEmployeeNumber().equals(employeeNumber)) {
-                employee = emp;
-                break;
-            }
-        }
-        
-        scanner.close();
-        
-        // Creates a csv attendance dao object
-        AttendanceDAO attendanceDAO = new CsvAttendanceDAO("attendance.csv");
-        
-        // Create attendance service object
-        AttendanceService attendanceService = new AttendanceService(attendanceDAO);
-        
-        
-        // Create RateService object
-        RateService rateService = new RateService();
-        
-        // Create PayrollService object
-        PayrollService payrollService = new PayrollService(attendanceService, rateService);
-        
-        
-        // Payslip object
-        Payslip payslip = payrollService.generatePayslip(
-            employee,
-            LocalDate.of(2024, 6, 1),
-            LocalDate.of(2024, 6, 15)
-        );
-                
-        System.out.println("Payslip Generated:");
-        System.out.println("Employee: " + payslip.getEmployeeName());
-        System.out.println("Hours Worked: " + payslip.getTotalHours());
-        System.out.println("Gross Pay: " + payslip.getGrossPay());
-        System.out.println("Allowances: " + payslip.getAllowances());
-        System.out.println("Net Pay: " + payslip.getNetPay());
-        
-        
-        
-        javax.swing.SwingUtilities.invokeLater(() -> {
-            new LoginFrame().setVisible(true);
-        });
+       boolean running = true;
+       
+       while (running) {
+           System.out.println("Log-In as:\n1-Employee\n2-HR\n3-Finace\n4-IT\n5-Exit");
+           Scanner scanner = new Scanner(System.in);
+           
+           
+           System.out.println("Login");
+           System.out.print("Enter username: ");
+           String username = scanner.nextLine();
+           
+           System.out.print("Enter Password: ");
+           String password = scanner.nextLine();
+           
+           int logInChoice = scanner.nextInt();
+           
+           switch (logInChoice) {
+               case 1:
+                   
+               case 2:
+               case 3:
+               case 4:
+                   
+               case 5:
+                   break;
+           }
+       }
         
     }  
 }
