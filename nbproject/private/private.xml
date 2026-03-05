@@ -4,8 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/LoginFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HRAddEmployeeFrame.java</file>
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/ITActivityLogsFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HRDashboardFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HROvertimeUndertimeListFrame.java</file>
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HRPayslipFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HRLeaveListFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HREditEmployeeFrame.java</file>
         </group>
     </open-files>
 </project-private>
