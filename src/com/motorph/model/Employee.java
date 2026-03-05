@@ -148,6 +148,10 @@ public abstract class Employee {
         return basicSalary / (21 * 8);
     }
     
+    public double getDailyRate() {
+        return getHourlyRate() * 8;
+    }
+    
     public double getSemiMonthlyRate() {
         return basicSalary / 2;
     }

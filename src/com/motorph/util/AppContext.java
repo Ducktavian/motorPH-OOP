@@ -27,7 +27,7 @@ public class AppContext {
         RateService rateService = new RateService();
 
         payrollService = new PayrollService(attendanceService, rateService);
-        employeeDAO = new CsvEmployeeDAO("employees.csv");
+        employeeDAO = new CsvEmployeeDAO();
     }
 
     public static PayrollService getPayrollService() {

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.motorph.dao;
 
 import com.motorph.model.Employee;
@@ -53,7 +50,6 @@ public class UserAccountDAO {
     public UserAccount findByUsername(String username) {
         username = username.trim();
         for (UserAccount user: users) {
-            System.out.println(user.getUsername() + "" + username);
             if (user.getUsername().equals(username)) {
                 System.out.println("User found!");
                 return user;

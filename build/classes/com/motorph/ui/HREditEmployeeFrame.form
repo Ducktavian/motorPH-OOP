@@ -335,7 +335,7 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jTextField18" min="-2" pref="95" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jTextField19" pref="88" max="32767" attributes="0"/>
+                                  <Component id="jTextField19" pref="91" max="32767" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jTextField20" min="-2" pref="87" max="-2" attributes="0"/>
                               </Group>

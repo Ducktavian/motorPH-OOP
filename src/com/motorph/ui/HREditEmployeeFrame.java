@@ -384,7 +384,7 @@ public class HREditEmployeeFrame extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField19, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
+                                .addComponent(jTextField19, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(19, 19, 19))
