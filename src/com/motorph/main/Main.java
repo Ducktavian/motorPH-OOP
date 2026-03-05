@@ -22,6 +22,8 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
 
+import com.motorph.ui.TestingMainFrame;
+
 //
 
 public class Main {
@@ -37,6 +39,8 @@ public class Main {
         boolean running = true;
         boolean isLoggedIn = false;
 
+        TestingMainFrame frame = new TestingMainFrame();
+        frame.setVisible(true);
 
         while (running) {
            // Create scanner
