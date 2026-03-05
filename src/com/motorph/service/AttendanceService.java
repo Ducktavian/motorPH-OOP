@@ -2,6 +2,7 @@
 package com.motorph.service;
 
 import com.motorph.dao.AttendanceDAO;
+import com.motorph.dao.CsvAttendanceDAO;
 import com.motorph.model.AttendanceRecord;
 
 import java.time.Duration;
@@ -11,11 +12,11 @@ import java.util.List;
 
 public class AttendanceService {
     
-    private AttendanceDAO attendanceDAO;
+    private AttendanceDAO attendanceDAO = new CsvAttendanceDAO();
     
     // Constructor
-    public AttendanceService(AttendanceDAO attendanceDAO) {
-        this.attendanceDAO = attendanceDAO;
+    public AttendanceService() {
+        
     }
     
     // Computes hours worked for a single attendance record ( helper function)
@@ -63,5 +64,10 @@ public class AttendanceService {
         }
         
         return Math.round(total * 100.0) / 100.0;
+    }
+    
+    // Get all atendances of an employee
+    public List<AttendanceRecord> getAttendanceByEmployee(String employeeNumber) {
+        return attendanceDAO.getAttendanceByEmployee(employeeNumber);
     }
 }

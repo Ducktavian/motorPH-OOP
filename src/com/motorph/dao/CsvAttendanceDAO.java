@@ -14,18 +14,18 @@ import java.util.List;
 
 public class CsvAttendanceDAO implements AttendanceDAO {
     
-    private String filePath;
+    private String filePath = "attendance.csv";
     
     private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("MM/dd/yyy");
     private static final DateTimeFormatter TIME_FORMAT = DateTimeFormatter.ofPattern("H:mm");
     
-    public CsvAttendanceDAO(String filePath) {
-        this.filePath = filePath;
+    public CsvAttendanceDAO() {
     }
     
     
 
     @Override
+    // return all attendances of this employee
     public List<AttendanceRecord> getAttendanceByEmployee(String employeeNumber) {
         List<AttendanceRecord> result = new ArrayList<>();
         
