@@ -102,6 +102,7 @@ public class PayrollService {
         
         // Return Payslip object
         return new Payslip(
+                "PLACEHOLDER",
                 employee.getEmployeeNumber(),
                 employee.getFirstName() + " " + employee.getLastName(),
                 employee.getPosition(),

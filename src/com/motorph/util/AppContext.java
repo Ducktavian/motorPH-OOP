@@ -22,8 +22,8 @@ public class AppContext {
     private static EmployeeDAO employeeDAO;
 
     static {
-        AttendanceDAO attendanceDAO = new CsvAttendanceDAO("attendance.csv");
-        AttendanceService attendanceService = new AttendanceService(attendanceDAO);
+        AttendanceDAO attendanceDAO = new CsvAttendanceDAO();
+        AttendanceService attendanceService = new AttendanceService();
         RateService rateService = new RateService();
 
         payrollService = new PayrollService(attendanceService, rateService);

@@ -5,7 +5,7 @@ import java.time.LocalDate;
  *
  * @author Lenovo
  */
-public abstract class Request {
+public abstract class Request implements Requestable {
     
     protected String requestId;
     protected String employeeId;

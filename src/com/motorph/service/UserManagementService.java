@@ -18,6 +18,7 @@ public class UserManagementService {
         userDAO = new UserAccountDAO();
     }
     
+    // Authorize IT
     private void authorizeIT() {
         UserAccount current = Session.getCurrentUser();
         
@@ -32,10 +33,10 @@ public class UserManagementService {
         
         UserAccount newUser = new UserAccount(
                 newId,
+                employeeNumber,
                 username,
                 password,
                 role,
-                employeeNumber,
                 true   
         );
         
