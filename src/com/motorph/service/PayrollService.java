@@ -1,4 +1,3 @@
-
 package com.motorph.service;
 
 import com.motorph.exception.UnauthorizedException;
@@ -122,7 +121,7 @@ public class PayrollService {
         
         double basicSalary = emp.getBasicSalary();
         
-        
+
         
         // Monthly contributions
         double monthlySSS = deductionService.calculateSSSContribution(monthlyGross);

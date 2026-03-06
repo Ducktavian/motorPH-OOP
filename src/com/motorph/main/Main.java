@@ -39,8 +39,11 @@ public class Main {
         boolean running = true;
         boolean isLoggedIn = false;
 
-        TestingMainFrame frame = new TestingMainFrame();
-        frame.setVisible(true);
+        //TestingMainFrame frame = new TestingMainFrame();
+        //frame.setVisible(true);
+        
+        LoginFrame loginFrame = new LoginFrame();
+        loginFrame.setVisible(true);
 
         while (running) {
            // Create scanner
