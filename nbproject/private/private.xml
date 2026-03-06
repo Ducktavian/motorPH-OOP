@@ -3,69 +3,26 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/main/Main.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/Employee.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/HR.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/dao/CsvEmployeeDAO.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/dao/EmployeeDAO.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/IT.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/Finance.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/RegularEmployee.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/employees.csv</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/attendance.csv</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/AttendanceRecord.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/dao/AttendanceDAO.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/dao/CsvAttendanceDAO.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/service/AttendanceService.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/service/PayrollService.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/Payslip.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/LoginFrame.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/MainFrame.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/DashboardPanel.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/EmployeeListPanel.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/PayslipPanel.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/AttendancePanel.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/NavigationManager.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/util/AppContext.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/service/RateService.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/Role.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/UserAccount.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/dao/UserAccountDAO.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/service/AuthService.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/util/Session.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/exception/UnauthorizedException.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/service/UserManagementService.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/DeductionBreakdown.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/PayrollDispute.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/DeductionRule.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/SSSDeduction.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/PhilHealthDeduction.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/PagIbigDeduction.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/TaxDeduction.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/DisputeStatus.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/service/PayrollDisputeService.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/service/DeductionService.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/RequestStatus.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/Request.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/LeaveRequest.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/OvertimeRequest.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/UndertimeRequest.java</file>
-            <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/user_accounts.csv</file>
-=======
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/LoginFrame.java</file>
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HRAddEmployeeFrame.java</file>
-            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/ITActivityLogsFrame.java</file>
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HRDashboardFrame.java</file>
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HROvertimeUndertimeListFrame.java</file>
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HRPayslipFrame.java</file>
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HRLeaveListFrame.java</file>
             <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/HREditEmployeeFrame.java</file>
-<<<<<<< HEAD
-            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/sample.java</file>
-=======
->>>>>>> 055258bba9e7bad92d3f2d59d25c8ad70a44e58b
->>>>>>> 8e64a42d30701cc1eef63b3e5d8fe336e2606616
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/main/Main.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/NavigationManager.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/ITDashboardFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/EmployeeDashboardFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/FinanceDashboardFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/ITActivityFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/FinancePayrollFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/EmployeePayrollFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/EmployeeAttendanceFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/EmployeeLeaveFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/EmployeeRequestFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/FinanceAttendanceFrame.java</file>
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/ITManageAccountFrame.java</file>
         </group>
     </open-files>
 </project-private>
