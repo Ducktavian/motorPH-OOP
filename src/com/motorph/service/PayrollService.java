@@ -1,4 +1,3 @@
-
 package com.motorph.service;
 
 import com.motorph.exception.UnauthorizedException;
@@ -102,6 +101,7 @@ public class PayrollService {
         
         // Return Payslip object
         return new Payslip(
+                "PLACEHOLDER",
                 employee.getEmployeeNumber(),
                 employee.getFirstName() + " " + employee.getLastName(),
                 employee.getPosition(),
@@ -121,7 +121,7 @@ public class PayrollService {
         
         double basicSalary = emp.getBasicSalary();
         
-        
+
         
         // Monthly contributions
         double monthlySSS = deductionService.calculateSSSContribution(monthlyGross);
