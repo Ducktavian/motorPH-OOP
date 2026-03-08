@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -29,7 +33,7 @@
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel17" min="-2" pref="314" max="-2" attributes="0"/>
-              <EmptySpace pref="951" max="32767" attributes="0"/>
+              <EmptySpace pref="31" max="32767" attributes="0"/>
               <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
           </Group>
@@ -91,7 +95,7 @@
                   <Component id="jButton3" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jButton4" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace pref="716" max="32767" attributes="0"/>
+                  <EmptySpace pref="336" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

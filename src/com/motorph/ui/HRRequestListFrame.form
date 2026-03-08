@@ -806,7 +806,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="934" max="32767" attributes="0"/>
+                      <EmptySpace pref="14" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="jPanel10" min="-2" pref="193" max="-2" attributes="0"/>
@@ -1432,7 +1432,7 @@
                   <Component id="jButton15" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jButton16" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace pref="716" max="32767" attributes="0"/>
+                  <EmptySpace pref="336" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
