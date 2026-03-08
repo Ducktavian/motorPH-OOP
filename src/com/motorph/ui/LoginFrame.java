@@ -37,6 +37,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(146, 192, 253));
@@ -88,7 +89,10 @@ public class LoginFrame extends javax.swing.JFrame {
         jButton1.addActionListener(this::jButton1ActionPerformed);
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 339, 75, 31));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 380, 400));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 380, 400));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHBackgroundImg.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, 740));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 700));
         jPanel1.getAccessibleContext().setAccessibleName("loginMainFrame");
@@ -136,6 +140,7 @@ public class LoginFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordField1;
