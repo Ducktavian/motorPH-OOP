@@ -28,297 +28,293 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        ActivityLogsImg = new javax.swing.JLabel();
+        LogoutImg = new javax.swing.JLabel();
+        DisputeDetailsImg = new javax.swing.JLabel();
+        AttendanceLogsImg = new javax.swing.JLabel();
+        LeaveDetailsImg = new javax.swing.JLabel();
+        RequestDetailsImg = new javax.swing.JLabel();
+        EmployeeDetailsImg = new javax.swing.JLabel();
+        PayrollDetailsImg = new javax.swing.JLabel();
+        UserAccountImg = new javax.swing.JLabel();
+        PayslipImg = new javax.swing.JLabel();
+        DashboardImg = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jButton5 = new javax.swing.JButton();
+        jTextField8 = new javax.swing.JTextField();
+        jButton13 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jTextField5 = new javax.swing.JTextField();
+        jButton9 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        jButton10 = new javax.swing.JButton();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
+        jButton12 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jTextField3 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        jTextField4 = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jTextField5 = new javax.swing.JTextField();
-        jButton6 = new javax.swing.JButton();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jTextField8 = new javax.swing.JTextField();
-        jButton9 = new javax.swing.JButton();
-        jTextField9 = new javax.swing.JTextField();
-        jButton10 = new javax.swing.JButton();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jTextField12 = new javax.swing.JTextField();
-        jButton13 = new javax.swing.JButton();
+        MainDashboardImg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField1.setEnabled(false);
-        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        ActivityLogsImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/ActivityLogsImg.png"))); // NOI18N
+        getContentPane().add(ActivityLogsImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 430, 170, 120));
+        ActivityLogsImg.getAccessibleContext().setAccessibleName("ActivityLogsImg");
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Dashboard");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        LogoutImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/LogoutImg.png"))); // NOI18N
+        getContentPane().add(LogoutImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 640, 40, 30));
+        LogoutImg.getAccessibleContext().setAccessibleName("LogoutImg");
 
-        jTextField2.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField2.setEnabled(false);
-        jTextField2.addActionListener(this::jTextField2ActionPerformed);
+        DisputeDetailsImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/DisputeDetailsImg.png"))); // NOI18N
+        getContentPane().add(DisputeDetailsImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 230, 160, 120));
+        DisputeDetailsImg.getAccessibleContext().setAccessibleName("DisputeDetailsImg");
 
-        jButton2.setBackground(new java.awt.Color(30, 42, 56));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Attendance Log");
-        jButton2.addActionListener(this::jButton2ActionPerformed);
+        AttendanceLogsImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/AttendanceLogsImg.png"))); // NOI18N
+        getContentPane().add(AttendanceLogsImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 160, 110));
+        AttendanceLogsImg.getAccessibleContext().setAccessibleName("AttendanceLogsImg");
 
-        jTextField3.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField3.setEnabled(false);
-        jTextField3.addActionListener(this::jTextField3ActionPerformed);
+        LeaveDetailsImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/LeaveDetailsImg.png"))); // NOI18N
+        getContentPane().add(LeaveDetailsImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 230, 170, 120));
+        LeaveDetailsImg.getAccessibleContext().setAccessibleName("LeaveDetailsImg");
+
+        RequestDetailsImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/RequestDetailsImg.png"))); // NOI18N
+        getContentPane().add(RequestDetailsImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 160, 120));
+        RequestDetailsImg.getAccessibleContext().setAccessibleName("RequestDetailsImg");
+
+        EmployeeDetailsImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/EmployeeDetailsImg.png"))); // NOI18N
+        getContentPane().add(EmployeeDetailsImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 170, 120));
+        EmployeeDetailsImg.getAccessibleContext().setAccessibleName("EmployeeDetailsImg");
+
+        PayrollDetailsImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/PayrollDetailsImg.png"))); // NOI18N
+        getContentPane().add(PayrollDetailsImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 30, 160, 120));
+        PayrollDetailsImg.getAccessibleContext().setAccessibleName("PayrollDetailsImg");
+
+        UserAccountImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/UserAccountImg.png"))); // NOI18N
+        getContentPane().add(UserAccountImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 430, 150, 120));
+        UserAccountImg.getAccessibleContext().setAccessibleName("UserAccountImg");
+
+        PayslipImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/PayslipImg.png"))); // NOI18N
+        getContentPane().add(PayslipImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 170, 120));
+        PayslipImg.getAccessibleContext().setAccessibleName("PayslipImg");
+
+        DashboardImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/DashboardImg.png"))); // NOI18N
+        getContentPane().add(DashboardImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 170, 120));
+        DashboardImg.getAccessibleContext().setAccessibleName("DashboardImg");
+
+        jTextField12.setBackground(new java.awt.Color(233, 233, 233));
+        jTextField12.setEnabled(false);
+        jTextField12.addActionListener(this::jTextField12ActionPerformed);
+        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 423, 169, 131));
+
+        jButton5.setBackground(new java.awt.Color(30, 42, 56));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Request Details");
+        jButton5.addActionListener(this::jButton5ActionPerformed);
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 360, 169, 45));
+
+        jTextField8.setBackground(new java.awt.Color(233, 233, 233));
+        jTextField8.setEnabled(false);
+        jTextField8.addActionListener(this::jTextField8ActionPerformed);
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 223, 169, 131));
+
+        jButton13.setBackground(new java.awt.Color(30, 42, 56));
+        jButton13.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(255, 255, 255));
+        jButton13.setText("      Logout");
+        jButton13.setActionCommand("Logout");
+        jButton13.addActionListener(this::jButton13ActionPerformed);
+        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 632, 130, 45));
 
         jButton3.setBackground(new java.awt.Color(30, 42, 56));
         jButton3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Payslip");
         jButton3.addActionListener(this::jButton3ActionPerformed);
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 160, 169, 45));
 
-        jTextField4.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField4.setEnabled(false);
-        jTextField4.addActionListener(this::jTextField4ActionPerformed);
-
-        jButton4.setBackground(new java.awt.Color(30, 42, 56));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Payroll Details");
-        jButton4.addActionListener(this::jButton4ActionPerformed);
-
-        jButton5.setBackground(new java.awt.Color(30, 42, 56));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Request List");
-        jButton5.addActionListener(this::jButton5ActionPerformed);
-
-        jTextField5.setBackground(new java.awt.Color(178, 178, 178));
+        jTextField5.setBackground(new java.awt.Color(233, 233, 233));
         jTextField5.setEnabled(false);
         jTextField5.addActionListener(this::jTextField5ActionPerformed);
-
-        jButton6.setBackground(new java.awt.Color(30, 42, 56));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("File A Leave");
-        jButton6.addActionListener(this::jButton6ActionPerformed);
-
-        jTextField6.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField6.setEnabled(false);
-        jTextField6.addActionListener(this::jTextField6ActionPerformed);
-
-        jTextField7.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField7.setEnabled(false);
-        jTextField7.addActionListener(this::jTextField7ActionPerformed);
-
-        jButton7.setBackground(new java.awt.Color(30, 42, 56));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Leave List");
-        jButton7.addActionListener(this::jButton7ActionPerformed);
-
-        jButton8.setBackground(new java.awt.Color(30, 42, 56));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("File A Request");
-        jButton8.addActionListener(this::jButton8ActionPerformed);
-
-        jTextField8.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField8.setEnabled(false);
-        jTextField8.addActionListener(this::jTextField8ActionPerformed);
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 223, 169, 131));
 
         jButton9.setBackground(new java.awt.Color(30, 42, 56));
         jButton9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Employee Details");
         jButton9.addActionListener(this::jButton9ActionPerformed);
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 360, 169, 45));
 
-        jTextField9.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField9.setEnabled(false);
-        jTextField9.addActionListener(this::jTextField9ActionPerformed);
+        jTextField1.setBackground(new java.awt.Color(233, 233, 233));
+        jTextField1.setEnabled(false);
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 23, 169, 131));
 
         jButton10.setBackground(new java.awt.Color(30, 42, 56));
         jButton10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton10.setForeground(new java.awt.Color(255, 255, 255));
         jButton10.setText("User Account");
         jButton10.addActionListener(this::jButton10ActionPerformed);
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 560, 169, 45));
 
-        jTextField10.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField10.setEnabled(false);
-        jTextField10.addActionListener(this::jTextField10ActionPerformed);
+        jTextField6.setBackground(new java.awt.Color(233, 233, 233));
+        jTextField6.setEnabled(false);
+        jTextField6.addActionListener(this::jTextField6ActionPerformed);
+        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 223, 169, 131));
 
-        jTextField11.setBackground(new java.awt.Color(178, 178, 178));
+        jTextField11.setBackground(new java.awt.Color(233, 233, 233));
         jTextField11.setEnabled(false);
         jTextField11.addActionListener(this::jTextField11ActionPerformed);
+        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 423, 169, 131));
+
+        jButton1.setBackground(new java.awt.Color(30, 42, 56));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Dashboard");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 160, 169, 45));
 
         jButton11.setBackground(new java.awt.Color(30, 42, 56));
         jButton11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setText("Activity Logs");
         jButton11.addActionListener(this::jButton11ActionPerformed);
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 560, 169, 45));
+
+        jTextField7.setBackground(new java.awt.Color(233, 233, 233));
+        jTextField7.setEnabled(false);
+        jTextField7.addActionListener(this::jTextField7ActionPerformed);
+        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 223, 169, 131));
+
+        jTextField4.setBackground(new java.awt.Color(233, 233, 233));
+        jTextField4.setEnabled(false);
+        jTextField4.addActionListener(this::jTextField4ActionPerformed);
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 23, 169, 131));
+
+        jTextField2.setBackground(new java.awt.Color(233, 233, 233));
+        jTextField2.setEnabled(false);
+        jTextField2.addActionListener(this::jTextField2ActionPerformed);
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 23, 169, 131));
 
         jButton12.setBackground(new java.awt.Color(30, 42, 56));
         jButton12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setText("Dispute Form");
+        jButton12.setText("Dispute Details");
         jButton12.addActionListener(this::jButton12ActionPerformed);
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 360, 169, 45));
 
-        jTextField12.setBackground(new java.awt.Color(178, 178, 178));
-        jTextField12.setEnabled(false);
-        jTextField12.addActionListener(this::jTextField12ActionPerformed);
+        jButton7.setBackground(new java.awt.Color(30, 42, 56));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("Leave Details");
+        jButton7.addActionListener(this::jButton7ActionPerformed);
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 360, 169, 45));
 
-        jButton13.setBackground(new java.awt.Color(30, 42, 56));
-        jButton13.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(255, 255, 255));
-        jButton13.setText("Logout");
-        jButton13.addActionListener(this::jButton13ActionPerformed);
+        jButton4.setBackground(new java.awt.Color(30, 42, 56));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Payroll Details");
+        jButton4.addActionListener(this::jButton4ActionPerformed);
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 160, 169, 45));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField11)
-                                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(46, 46, 46)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField12)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(46, 46, 46)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField9)
-                                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(48, 48, 48)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField10)
-                                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField7)
-                                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(46, 46, 46)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField8)
-                                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(46, 46, 46)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField5)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(48, 48, 48)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField6)
-                                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField1)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(46, 46, 46)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField2)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(46, 46, 46)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField3)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(48, 48, 48)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField4)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(402, 402, 402)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(97, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        jButton2.setBackground(new java.awt.Color(30, 42, 56));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Attendance Logs");
+        jButton2.addActionListener(this::jButton2ActionPerformed);
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 160, 169, 45));
+
+        jTextField3.setBackground(new java.awt.Color(233, 233, 233));
+        jTextField3.setEnabled(false);
+        jTextField3.addActionListener(this::jTextField3ActionPerformed);
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 23, 169, 131));
+
+        MainDashboardImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MainDashboardImg.png"))); // NOI18N
+        getContentPane().add(MainDashboardImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
+        MainDashboardImg.getAccessibleContext().setAccessibleName("MainDashboardImg");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField8ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField11ActionPerformed
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
@@ -328,85 +324,9 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
-
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
-
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
-
     private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField12ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -434,6 +354,18 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ActivityLogsImg;
+    private javax.swing.JLabel AttendanceLogsImg;
+    private javax.swing.JLabel DashboardImg;
+    private javax.swing.JLabel DisputeDetailsImg;
+    private javax.swing.JLabel EmployeeDetailsImg;
+    private javax.swing.JLabel LeaveDetailsImg;
+    private javax.swing.JLabel LogoutImg;
+    private javax.swing.JLabel MainDashboardImg;
+    private javax.swing.JLabel PayrollDetailsImg;
+    private javax.swing.JLabel PayslipImg;
+    private javax.swing.JLabel RequestDetailsImg;
+    private javax.swing.JLabel UserAccountImg;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -443,12 +375,9 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
@@ -458,6 +387,5 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }
