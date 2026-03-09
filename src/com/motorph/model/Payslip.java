@@ -26,7 +26,7 @@ public class Payslip {
     private double totalHours;
     private double hourlyRate;
     private double grossPay;
-    private double allowances;
+    private AllowanceBreakdown allowanceBreakdown;
     
     // Deductions
     private DeductionBreakdown deductionBreakdown;
@@ -43,7 +43,7 @@ public class Payslip {
                    double totalHours,
                    double hourlyRate,
                    double grossPay,
-                   double allowances,
+                   AllowanceBreakdown allowanceBreakdown,
                    DeductionBreakdown deductionBreakdown,
                    double netPay) {
         this.employeeNumber = employeeNumber;
@@ -54,7 +54,7 @@ public class Payslip {
         this.totalHours = totalHours;
         this.hourlyRate = hourlyRate;
         this.grossPay = grossPay;
-        this.allowances = allowances;
+        this.allowanceBreakdown = allowanceBreakdown;
         this.deductionBreakdown = deductionBreakdown;
         this.netPay = netPay;
     }
@@ -95,9 +95,13 @@ public class Payslip {
     public double getGrossPay() {
         return grossPay;
     }
+    
+    public AllowanceBreakdown getAllowanceBreakdown() {
+        return allowanceBreakdown;
+    }
 
     public double getAllowances() {
-        return allowances;
+        return allowanceBreakdown.getTotal();
     }
     
     public DeductionBreakdown getDeductionBreakdown() {

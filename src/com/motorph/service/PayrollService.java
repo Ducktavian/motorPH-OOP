@@ -1,6 +1,7 @@
 package com.motorph.service;
 
 import com.motorph.exception.UnauthorizedException;
+import com.motorph.model.AllowanceBreakdown;
 import com.motorph.model.DeductionBreakdown;
 import com.motorph.model.Employee;
 import com.motorph.model.Payslip;
@@ -59,7 +60,7 @@ public class PayrollService {
         double cutoffGross = round(cutoffHours * hourlyRate);
         
         // get allowances
-        double allowances = round(employee.getTotalAllowances() / 2);
+        AllowanceBreakdown allowanceBreakdown = computeAllowances(employee);
         
         
         // Compute MONTHLY gross for deductions
@@ -81,7 +82,7 @@ public class PayrollService {
         }
        
         // Compute Netpay
-        double netPay = cutoffGross + allowances - totalDeductions;
+        double netPay = cutoffGross + allowanceBreakdown.getTotal() - totalDeductions;
         
         // Return Payslip object
         return new Payslip(
@@ -93,13 +94,25 @@ public class PayrollService {
                 cutoffHours,
                 hourlyRate,
                 cutoffGross,
-                allowances,
+                allowanceBreakdown,
                 deductionBreakdown,
                 netPay
         );
     }
     
+    // Divide allowances by 2 (semi monthly)
+    public AllowanceBreakdown computeAllowances(Employee employee) {
+        AllowanceBreakdown allowances = 
+            new AllowanceBreakdown(
+                round(employee.getRiceSubsidy() / 2),
+                round(employee.getPhoneAllowance() / 2),
+                round(employee.getClothingAllowance() / 2)
+            );
+        
+        return allowances;
+    }
     
+    // Deductions are computed in monthly and deducted on the second cutoff
     public DeductionBreakdown computeMonthlyDeductions(Employee emp, double monthlyGross) {
         
         // Monthly contributions

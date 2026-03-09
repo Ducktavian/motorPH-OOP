@@ -193,7 +193,15 @@ public class Main {
         System.out.println("Employee: " + selected.getEmployeeName());
         System.out.println("Period: " + selected.getPeriodStart() + " - " + selected.getPeriodEnd());
         System.out.println("Gross Pay: " + selected.getGrossPay());
-        System.out.println("Allowances: " + selected.getAllowances());
+        
+        if (selected.getAllowanceBreakdown() != null) {
+
+            System.out.println("\nAllowances:");
+            System.out.println("Rice Subsidy: " + selected.getAllowanceBreakdown().getRiceSubsidy());
+            System.out.println("Phone Allowance: " + selected.getAllowanceBreakdown().getPhoneAllowance());
+            System.out.println("Clothing Allowance " + selected.getAllowanceBreakdown().getClothingAllowance());
+            System.out.println("Total Allowance " + selected.getAllowanceBreakdown().getTotal());
+        }
 
         if (selected.getDeductionBreakdown() != null) {
 
@@ -203,6 +211,7 @@ public class Main {
             System.out.println("PhilHealth: " + selected.getDeductionBreakdown().getPhilHealth());
             System.out.println("PagIBIG: " + selected.getDeductionBreakdown().getPagIbig());
             System.out.println("Tax: " + selected.getDeductionBreakdown().getWithholdingTax());
+            System.out.println("Total Deductions: " + selected.getDeductionBreakdown().getTotal());
         }
 
         System.out.println("\nNet Pay: " + selected.getNetPay());
