@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/main/Main.java</file>
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/Employee.java</file>
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/model/HR.java</file>
@@ -58,6 +59,9 @@
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/EmployeeAttendanceFrame.java</file>
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/EmployeeDashboardFrame.java</file>
             <file>file:/C:/Users/Lenovo/OneDrive/Documents/NetBeansProjects/MotorPHPayrollSystem/src/com/motorph/ui/ITManageAccountFrame.java</file>
+=======
+            <file>file:/C:/Users/Lenovo/Downloads/Work_S/MMDC/OOP/motorPH-OOP/src/com/motorph/ui/EmployeeDashboardFrame.java</file>
+>>>>>>> f8af29b48472aa97428dd7f461bf9cf4b65e7916
         </group>
     </open-files>
 </project-private>
