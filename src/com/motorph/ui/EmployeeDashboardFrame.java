@@ -156,30 +156,37 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
 
         hrField.setForeground(new java.awt.Color(30, 42, 56));
         hrField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField.setEnabled(false);
         hrField.addActionListener(this::hrFieldActionPerformed);
 
         hrField2.setForeground(new java.awt.Color(30, 42, 56));
         hrField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField2.setEnabled(false);
         hrField2.addActionListener(this::hrField2ActionPerformed);
 
         hrField3.setForeground(new java.awt.Color(30, 42, 56));
         hrField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField3.setEnabled(false);
         hrField3.addActionListener(this::hrField3ActionPerformed);
 
         hrField4.setForeground(new java.awt.Color(30, 42, 56));
         hrField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField4.setEnabled(false);
         hrField4.addActionListener(this::hrField4ActionPerformed);
 
         hrField5.setForeground(new java.awt.Color(30, 42, 56));
         hrField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField5.setEnabled(false);
         hrField5.addActionListener(this::hrField5ActionPerformed);
 
         hrField6.setForeground(new java.awt.Color(30, 42, 56));
         hrField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField6.setEnabled(false);
         hrField6.addActionListener(this::hrField6ActionPerformed);
 
         hrField7.setForeground(new java.awt.Color(30, 42, 56));
         hrField7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField7.setEnabled(false);
         hrField7.addActionListener(this::hrField7ActionPerformed);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -196,10 +203,12 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
 
         hrField8.setForeground(new java.awt.Color(30, 42, 56));
         hrField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField8.setEnabled(false);
         hrField8.addActionListener(this::hrField8ActionPerformed);
 
         hrField9.setForeground(new java.awt.Color(30, 42, 56));
         hrField9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField9.setEnabled(false);
         hrField9.addActionListener(this::hrField9ActionPerformed);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -212,6 +221,7 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
 
         hrField1.setForeground(new java.awt.Color(30, 42, 56));
         hrField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField1.setEnabled(false);
         hrField1.addActionListener(this::hrField1ActionPerformed);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -220,30 +230,37 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
 
         hrField10.setForeground(new java.awt.Color(30, 42, 56));
         hrField10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField10.setEnabled(false);
         hrField10.addActionListener(this::hrField10ActionPerformed);
 
         hrField11.setForeground(new java.awt.Color(30, 42, 56));
         hrField11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField11.setEnabled(false);
         hrField11.addActionListener(this::hrField11ActionPerformed);
 
         hrField12.setForeground(new java.awt.Color(30, 42, 56));
         hrField12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField12.setEnabled(false);
         hrField12.addActionListener(this::hrField12ActionPerformed);
 
         hrField13.setForeground(new java.awt.Color(30, 42, 56));
         hrField13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField13.setEnabled(false);
         hrField13.addActionListener(this::hrField13ActionPerformed);
 
         hrField14.setForeground(new java.awt.Color(30, 42, 56));
         hrField14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField14.setEnabled(false);
         hrField14.addActionListener(this::hrField14ActionPerformed);
 
         hrField15.setForeground(new java.awt.Color(30, 42, 56));
         hrField15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField15.setEnabled(false);
         hrField15.addActionListener(this::hrField15ActionPerformed);
 
         hrField16.setForeground(new java.awt.Color(30, 42, 56));
         hrField16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField16.setEnabled(false);
         hrField16.addActionListener(this::hrField16ActionPerformed);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
