@@ -14,15 +14,17 @@ import com.motorph.model.Payslip;
 import com.motorph.model.UserAccount;
 import com.motorph.service.AttendanceService;
 import com.motorph.service.AuthService;
+import com.motorph.service.DeductionService;
 import com.motorph.service.PayrollService;
 import com.motorph.service.RateService;
 import com.motorph.ui.LoginFrame;
 import com.motorph.util.Session;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-import com.motorph.ui.TestingMainFrame;
+
 
 //
 
@@ -42,8 +44,8 @@ public class Main {
         //TestingMainFrame frame = new TestingMainFrame();
         //frame.setVisible(true);
         
-        LoginFrame loginFrame = new LoginFrame();
-        loginFrame.setVisible(true);
+        //LoginFrame loginFrame = new LoginFrame();
+        //loginFrame.setVisible(true);
 
         while (running) {
            // Create scanner
@@ -148,7 +150,63 @@ public class Main {
     }
     
     public static void viewPayrollDetails() {
-    
+        AttendanceService attendanceService = new AttendanceService();
+        RateService rateService = new RateService();
+        DeductionService deductionService = new DeductionService();
+        PayrollService payrollService = new PayrollService(attendanceService, rateService, deductionService);
+        
+        Employee employee = csvEmpDao.findEmployee(Session.getCurrentUser().getEmployeeNumber());
+
+        List<Payslip> payslipLog = new ArrayList<>();
+
+        payslipLog.add(payrollService.generatePayslip(
+                employee,
+                LocalDate.of(2024,7,1),
+                LocalDate.of(2024,7,15)));
+
+        payslipLog.add(payrollService.generatePayslip(
+                employee,
+                LocalDate.of(2024,7,16),
+                LocalDate.of(2024,7,31)));
+        
+        System.out.println("\n---Payslip History---");
+
+        for (int i = 0; i < payslipLog.size(); i++) {
+            Payslip p = payslipLog.get(i);
+
+            System.out.println(
+                (i + 1) + ". " +
+                p.getPeriodStart() + " to " +
+                p.getPeriodEnd()
+            );
+        }
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Select payslip number: ");
+        int choice = scanner.nextInt();
+
+        Payslip selected = payslipLog.get(choice - 1);
+
+        System.out.println("\n---Payslip---");
+
+        System.out.println("Employee: " + selected.getEmployeeName());
+        System.out.println("Period: " + selected.getPeriodStart() + " - " + selected.getPeriodEnd());
+        System.out.println("Gross Pay: " + selected.getGrossPay());
+        System.out.println("Allowances: " + selected.getAllowances());
+
+        if (selected.getDeductionBreakdown() != null) {
+
+            System.out.println("\nDeductions:");
+
+            System.out.println("SSS: " + selected.getDeductionBreakdown().getSss());
+            System.out.println("PhilHealth: " + selected.getDeductionBreakdown().getPhilHealth());
+            System.out.println("PagIBIG: " + selected.getDeductionBreakdown().getPagIbig());
+            System.out.println("Tax: " + selected.getDeductionBreakdown().getWithholdingTax());
+        }
+
+        System.out.println("\nNet Pay: " + selected.getNetPay());
+        System.out.println("------------");
     }
     
     public static void fileRequest() {}

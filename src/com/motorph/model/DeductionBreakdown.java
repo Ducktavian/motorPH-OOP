@@ -7,10 +7,10 @@ package com.motorph.model;
  */
 public class DeductionBreakdown {
     
-    double sss;
-    double philHealth;
-    double pagIbig;
-    double withholdingTax;
+    private double sss;
+    private double philHealth;
+    private double pagIbig;
+    private double withholdingTax;
 
     public DeductionBreakdown(double sss, double philHealth, double pagIbig, double withholdingTax) {
         this.sss = sss;
@@ -18,6 +18,24 @@ public class DeductionBreakdown {
         this.pagIbig = pagIbig;
         this.withholdingTax = withholdingTax;
     }
+
+    public double getSss() {
+        return sss;
+    }
+
+    public double getPhilHealth() {
+        return philHealth;
+    }
+
+    public double getPagIbig() {
+        return pagIbig;
+    }
+
+    public double getWithholdingTax() {
+        return withholdingTax;
+    }
+    
+    
     
     
     public double getTotal() {

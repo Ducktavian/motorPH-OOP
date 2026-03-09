@@ -2,14 +2,9 @@ package com.motorph.service;
 
 import com.motorph.exception.UnauthorizedException;
 import com.motorph.model.DeductionBreakdown;
-import com.motorph.model.DeductionRule;
 import com.motorph.model.Employee;
-import com.motorph.model.PagIbigDeduction;
 import com.motorph.model.Payslip;
-import com.motorph.model.PhilHealthDeduction;
 import com.motorph.model.Role;
-import com.motorph.model.SSSDeduction;
-import com.motorph.model.TaxDeduction;
 import com.motorph.model.UserAccount;
 import com.motorph.util.Session;
 
@@ -22,9 +17,6 @@ public class PayrollService {
     private RateService rateService;
     private DeductionService deductionService;
 
-    // Constructor
-    public PayrollService() {}
-    
     // Constructor
     public PayrollService(AttendanceService attendanceService, RateService rateService) {
         this.attendanceService = attendanceService;
@@ -54,21 +46,7 @@ public class PayrollService {
         System.out.println("Security check passed. Processing payroll");
     }
     
-   
     
-    // Computes all time gross pay based on hours worked and hourly rate
-    public double computeGrossPay(Employee employee) {
-        
-        // Totalhours worked in attendance record
-        double totalHours = attendanceService.computeTotalHours(employee.getEmployeeNumber());
-        
-        double hourlyRate = rateService.computeHourlyRate(employee);
-        
-        double grossPay = totalHours * hourlyRate;
-        
-        // 739291.0 vs 739290.51
-        return round(grossPay);
-    }
     
     // Generate a payslip for a given payroll period
     public Payslip generatePayslip(Employee employee, LocalDate periodStart, LocalDate periodEnd) {
@@ -81,7 +59,7 @@ public class PayrollService {
         double cutoffGross = round(cutoffHours * hourlyRate);
         
         // get allowances
-        double allowances = employee.getTotalAllowances();
+        double allowances = round(employee.getTotalAllowances() / 2);
         
         
         // Compute MONTHLY gross for deductions
@@ -92,18 +70,23 @@ public class PayrollService {
         
         double monthlyGross = round(monthlyHours * hourlyRate);
         
-        // Compute deductions
-        DeductionBreakdown deductions = computeSemiMonthlyDeductions(employee, monthlyGross);
-        double totalDeductions = deductions.getTotal();
+        // // Compute deductions
+        DeductionBreakdown deductionBreakdown = null;
+        double totalDeductions = 0;
+        
+        // If second cutoff: Apply deductions
+        if (isSecondCutoff(periodEnd)) {
+            deductionBreakdown = computeMonthlyDeductions(employee, monthlyGross);
+            totalDeductions = deductionBreakdown.getTotal();
+        }
        
         // Compute Netpay
         double netPay = cutoffGross + allowances - totalDeductions;
         
         // Return Payslip object
         return new Payslip(
-                "PLACEHOLDER",
                 employee.getEmployeeNumber(),
-                employee.getFirstName() + " " + employee.getLastName(),
+                employee.getFullName(),
                 employee.getPosition(),
                 periodStart,
                 periodEnd,
@@ -111,17 +94,13 @@ public class PayrollService {
                 hourlyRate,
                 cutoffGross,
                 allowances,
-                totalDeductions,
+                deductionBreakdown,
                 netPay
         );
     }
     
     
-    public DeductionBreakdown computeSemiMonthlyDeductions(Employee emp, double monthlyGross) {
-        
-        double basicSalary = emp.getBasicSalary();
-        
-
+    public DeductionBreakdown computeMonthlyDeductions(Employee emp, double monthlyGross) {
         
         // Monthly contributions
         double monthlySSS = deductionService.calculateSSSContribution(monthlyGross);
@@ -135,15 +114,19 @@ public class PayrollService {
         
         // Return DeductionBreakdown object
         return new DeductionBreakdown(
-                round(monthlySSS / 2),
-                round(monthlyPhilHealth / 2),
-                round(monthlyPagIbig / 2),
-                round(tax / 2)
+                round(monthlySSS),
+                round(monthlyPhilHealth),
+                round(monthlyPagIbig),
+                round(tax)
         );
     }
     
     // Helper
     private double round(double value) {
         return Math.round(value * 100.0) / 100.0;
+    }
+    
+    private boolean isSecondCutoff(LocalDate periodEnd) {
+        return periodEnd.getDayOfMonth() == periodEnd.lengthOfMonth();
     }
 }

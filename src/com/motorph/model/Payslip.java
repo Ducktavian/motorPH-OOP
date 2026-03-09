@@ -11,7 +11,7 @@ import java.time.LocalDate;
  */
 public class Payslip {
     
-    private String payslipId;
+    private String payslipId = "PLACEHOLDER";
     
     // Employee Info
     private String employeeNumber;
@@ -29,12 +29,12 @@ public class Payslip {
     private double allowances;
     
     // Deductions
-    private double totalDeductions;
+    private DeductionBreakdown deductionBreakdown;
     
     // Final Pay
     private double netPay;
     
-    public Payslip(String payslipId,
+    public Payslip(
                    String employeeNumber,
                    String employeeName,
                    String position,
@@ -44,9 +44,8 @@ public class Payslip {
                    double hourlyRate,
                    double grossPay,
                    double allowances,
-                   double totalDeductions,
+                   DeductionBreakdown deductionBreakdown,
                    double netPay) {
-        this.payslipId = payslipId;
         this.employeeNumber = employeeNumber;
         this.employeeName = employeeName;
         this.position = position;
@@ -56,7 +55,7 @@ public class Payslip {
         this.hourlyRate = hourlyRate;
         this.grossPay = grossPay;
         this.allowances = allowances;
-        this.totalDeductions = totalDeductions;
+        this.deductionBreakdown = deductionBreakdown;
         this.netPay = netPay;
     }
     
@@ -100,9 +99,13 @@ public class Payslip {
     public double getAllowances() {
         return allowances;
     }
+    
+    public DeductionBreakdown getDeductionBreakdown() {
+        return deductionBreakdown;
+    }
 
     public double getTotalDeductions() {
-        return totalDeductions;
+        return deductionBreakdown.getTotal();
     }
 
     public double getNetPay() {
