@@ -33,10 +33,6 @@ public class HRPayslipFrame extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
         jButton9 = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
@@ -94,6 +90,11 @@ public class HRPayslipFrame extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
+        jPanel6 = new javax.swing.JPanel();
+        jTextField3 = new javax.swing.JTextField();
+        SearchIconImg = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -144,57 +145,6 @@ public class HRPayslipFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 409, Short.MAX_VALUE)
                 .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
-        );
-
-        jPanel6.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel6.setForeground(new java.awt.Color(146, 192, 253));
-
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField3.setText("   Enter Employee ID");
-        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField3.addActionListener(this::jTextField3ActionPerformed);
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
-        );
-
-        jPanel2.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel2.setForeground(new java.awt.Color(30, 58, 138));
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Employee Details");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addContainerGap(9, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -256,34 +206,42 @@ public class HRPayslipFrame extends javax.swing.JFrame {
 
         hrField5.setForeground(new java.awt.Color(31, 41, 55));
         hrField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField5.setEnabled(false);
         hrField5.addActionListener(this::hrField5ActionPerformed);
 
         hrField9.setForeground(new java.awt.Color(31, 41, 55));
         hrField9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField9.setEnabled(false);
         hrField9.addActionListener(this::hrField9ActionPerformed);
 
         hrField10.setForeground(new java.awt.Color(31, 41, 55));
         hrField10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField10.setEnabled(false);
         hrField10.addActionListener(this::hrField10ActionPerformed);
 
         hrField11.setForeground(new java.awt.Color(31, 41, 55));
         hrField11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField11.setEnabled(false);
         hrField11.addActionListener(this::hrField11ActionPerformed);
 
         hrField12.setForeground(new java.awt.Color(31, 41, 55));
         hrField12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField12.setEnabled(false);
         hrField12.addActionListener(this::hrField12ActionPerformed);
 
         hrField13.setForeground(new java.awt.Color(31, 41, 55));
         hrField13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField13.setEnabled(false);
         hrField13.addActionListener(this::hrField13ActionPerformed);
 
         hrField14.setForeground(new java.awt.Color(31, 41, 55));
         hrField14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField14.setEnabled(false);
         hrField14.addActionListener(this::hrField14ActionPerformed);
 
         hrField19.setForeground(new java.awt.Color(31, 41, 55));
         hrField19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField19.setEnabled(false);
         hrField19.addActionListener(this::hrField19ActionPerformed);
 
         jLabel31.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
@@ -424,26 +382,32 @@ public class HRPayslipFrame extends javax.swing.JFrame {
 
         hrField15.setForeground(new java.awt.Color(31, 41, 55));
         hrField15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField15.setEnabled(false);
         hrField15.addActionListener(this::hrField15ActionPerformed);
 
         hrField16.setForeground(new java.awt.Color(31, 41, 55));
         hrField16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField16.setEnabled(false);
         hrField16.addActionListener(this::hrField16ActionPerformed);
 
         hrField17.setForeground(new java.awt.Color(31, 41, 55));
         hrField17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField17.setEnabled(false);
         hrField17.addActionListener(this::hrField17ActionPerformed);
 
         hrField18.setForeground(new java.awt.Color(31, 41, 55));
         hrField18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField18.setEnabled(false);
         hrField18.addActionListener(this::hrField18ActionPerformed);
 
         hrField20.setForeground(new java.awt.Color(31, 41, 55));
         hrField20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField20.setEnabled(false);
         hrField20.addActionListener(this::hrField20ActionPerformed);
 
         hrField22.setForeground(new java.awt.Color(31, 41, 55));
         hrField22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField22.setEnabled(false);
         hrField22.addActionListener(this::hrField22ActionPerformed);
 
         jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -452,10 +416,12 @@ public class HRPayslipFrame extends javax.swing.JFrame {
 
         hrField23.setForeground(new java.awt.Color(31, 41, 55));
         hrField23.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField23.setEnabled(false);
         hrField23.addActionListener(this::hrField23ActionPerformed);
 
         hrField21.setForeground(new java.awt.Color(31, 41, 55));
         hrField21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField21.setEnabled(false);
         hrField21.addActionListener(this::hrField21ActionPerformed);
 
         jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
@@ -562,6 +528,7 @@ public class HRPayslipFrame extends javax.swing.JFrame {
         hrField24.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         hrField24.setForeground(new java.awt.Color(255, 255, 255));
         hrField24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField24.setEnabled(false);
         hrField24.addActionListener(this::hrField24ActionPerformed);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -573,12 +540,10 @@ public class HRPayslipFrame extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(13, 13, 13)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGap(158, 158, 158)
+                            .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                                 .addComponent(jLabel37)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(hrField24, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -606,6 +571,7 @@ public class HRPayslipFrame extends javax.swing.JFrame {
 
         hrField.setForeground(new java.awt.Color(31, 41, 55));
         hrField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField.setEnabled(false);
         hrField.addActionListener(this::hrFieldActionPerformed);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -618,14 +584,17 @@ public class HRPayslipFrame extends javax.swing.JFrame {
 
         hrField2.setForeground(new java.awt.Color(31, 41, 55));
         hrField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField2.setEnabled(false);
         hrField2.addActionListener(this::hrField2ActionPerformed);
 
         hrField3.setForeground(new java.awt.Color(31, 41, 55));
         hrField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField3.setEnabled(false);
         hrField3.addActionListener(this::hrField3ActionPerformed);
 
         hrField4.setForeground(new java.awt.Color(31, 41, 55));
         hrField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField4.setEnabled(false);
         hrField4.addActionListener(this::hrField4ActionPerformed);
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -634,14 +603,17 @@ public class HRPayslipFrame extends javax.swing.JFrame {
 
         hrField6.setForeground(new java.awt.Color(31, 41, 55));
         hrField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField6.setEnabled(false);
         hrField6.addActionListener(this::hrField6ActionPerformed);
 
         hrField7.setForeground(new java.awt.Color(31, 41, 55));
         hrField7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField7.setEnabled(false);
         hrField7.addActionListener(this::hrField7ActionPerformed);
 
         hrField8.setForeground(new java.awt.Color(31, 41, 55));
         hrField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField8.setEnabled(false);
         hrField8.addActionListener(this::hrField8ActionPerformed);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -663,6 +635,31 @@ public class HRPayslipFrame extends javax.swing.JFrame {
         jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         jButton5.addActionListener(this::jButton5ActionPerformed);
 
+        jPanel6.setBackground(new java.awt.Color(146, 192, 253));
+        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        jPanel6.setForeground(new java.awt.Color(146, 192, 253));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(31, 41, 55));
+        jTextField3.setText("   Enter Employee ID");
+        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        jTextField3.addActionListener(this::jTextField3ActionPerformed);
+        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+
+        SearchIconImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
+        jPanel6.add(SearchIconImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+
+        jPanel2.setBackground(new java.awt.Color(30, 58, 138));
+        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        jPanel2.setForeground(new java.awt.Color(30, 58, 138));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText(" Employee Payslip");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 230, 46));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -671,42 +668,42 @@ public class HRPayslipFrame extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(12, 12, 12)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(294, 294, 294)
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 10, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel12))
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(hrField4, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(42, 42, 42)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel15))
-                        .addGap(28, 28, 28)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(hrField6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(57, 57, 57)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel10)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jLabel11)
+                                    .addComponent(jLabel12))
+                                .addGap(29, 29, 29)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(hrField4, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(hrField3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(hrField2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(hrField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(42, 42, 42)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jLabel16)
+                                    .addComponent(jLabel15))
+                                .addGap(28, 28, 28)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(hrField6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(hrField7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(hrField8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(292, 292, 292)
+                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -715,11 +712,11 @@ public class HRPayslipFrame extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -747,11 +744,11 @@ public class HRPayslipFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(hrField6, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(35, 35, 35)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(12, 12, 12)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(23, 23, 23))
         );
 
         pack();
@@ -761,6 +758,94 @@ public class HRPayslipFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
+    private void hrField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField24ActionPerformed
+
+    private void hrField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField21ActionPerformed
+
+    private void hrField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField23ActionPerformed
+
+    private void hrField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField22ActionPerformed
+
+    private void hrField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField20ActionPerformed
+
+    private void hrField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField18ActionPerformed
+
+    private void hrField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField17ActionPerformed
+
+    private void hrField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField16ActionPerformed
+
+    private void hrField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField15ActionPerformed
+
+    private void hrField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField19ActionPerformed
+
+    private void hrField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField14ActionPerformed
+
+    private void hrField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField13ActionPerformed
+
+    private void hrField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField12ActionPerformed
+
+    private void hrField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField11ActionPerformed
+
+    private void hrField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField10ActionPerformed
+
+    private void hrField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField9ActionPerformed
+
+    private void hrField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField5ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void hrField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField7ActionPerformed
+
+    private void hrField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField6ActionPerformed
+
+    private void hrField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField4ActionPerformed
+
+    private void hrField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField3ActionPerformed
+
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
@@ -769,109 +854,21 @@ public class HRPayslipFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void hrFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrFieldActionPerformed
-
     private void hrField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hrField2ActionPerformed
-
-    private void hrField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField3ActionPerformed
-
-    private void hrField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField4ActionPerformed
-
-    private void hrField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField6ActionPerformed
-
-    private void hrField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField7ActionPerformed
-
-    private void hrField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField8ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void hrFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_hrFieldActionPerformed
 
-    private void hrField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField5ActionPerformed
+    private void hrField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField5ActionPerformed
-
-    private void hrField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField9ActionPerformed
-
-    private void hrField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField10ActionPerformed
-
-    private void hrField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField11ActionPerformed
-
-    private void hrField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField12ActionPerformed
-
-    private void hrField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField13ActionPerformed
-
-    private void hrField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField14ActionPerformed
-
-    private void hrField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField15ActionPerformed
-
-    private void hrField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField16ActionPerformed
-
-    private void hrField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField17ActionPerformed
-
-    private void hrField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField18ActionPerformed
-
-    private void hrField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField20ActionPerformed
-
-    private void hrField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField22ActionPerformed
-
-    private void hrField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField23ActionPerformed
-
-    private void hrField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField19ActionPerformed
-
-    private void hrField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField21ActionPerformed
-
-    private void hrField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField24ActionPerformed
+    }//GEN-LAST:event_hrField8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -899,6 +896,7 @@ public class HRPayslipFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel SearchIconImg;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JTextField hrField;
     private javax.swing.JTextField hrField10;
