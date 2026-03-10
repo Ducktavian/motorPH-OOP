@@ -991,14 +991,6 @@
                       <Editor/>
                       <Renderer/>
                     </Column>
-<<<<<<< HEAD
-=======
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                      <Title/>
-                      <Editor/>
-                      <Renderer/>
-                    </Column>
->>>>>>> 7bfb1ed8c7dac68c472c8d655da52e3cd22f861a
                   </TableColumnModel>
                 </Property>
                 <Property name="gridColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">

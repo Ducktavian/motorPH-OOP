@@ -341,7 +341,6 @@
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
-<<<<<<< HEAD
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
@@ -527,8 +526,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Employee Details"/>
           </Properties>
-=======
->>>>>>> 7bfb1ed8c7dac68c472c8d655da52e3cd22f861a
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="40" y="10" width="180" height="-1"/>
@@ -1205,13 +1202,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-<<<<<<< HEAD
                               <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="7" max="32767" attributes="0"/>
-=======
-                              <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
->>>>>>> 7bfb1ed8c7dac68c472c8d655da52e3cd22f861a
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1624,13 +1616,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-<<<<<<< HEAD
                               <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="7" max="32767" attributes="0"/>
-=======
-                              <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
->>>>>>> 7bfb1ed8c7dac68c472c8d655da52e3cd22f861a
                           </Group>
                       </Group>
                     </DimensionLayout>
