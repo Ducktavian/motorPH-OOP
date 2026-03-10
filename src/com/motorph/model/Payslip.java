@@ -35,8 +35,8 @@ public class Payslip {
     private double netPay;
     
     public Payslip(
+                   String payslipId,
                    String employeeNumber,
-                   String employeeName,
                    String position,
                    LocalDate periodStart,
                    LocalDate periodEnd,
@@ -46,8 +46,8 @@ public class Payslip {
                    AllowanceBreakdown allowanceBreakdown,
                    DeductionBreakdown deductionBreakdown,
                    double netPay) {
+        this.payslipId = payslipId;
         this.employeeNumber = employeeNumber;
-        this.employeeName = employeeName;
         this.position = position;
         this.periodStart = periodStart;
         this.periodEnd = periodEnd;

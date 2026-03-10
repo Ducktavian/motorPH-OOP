@@ -9,6 +9,7 @@ import com.motorph.dao.CsvAttendanceDAO;
 import com.motorph.dao.CsvEmployeeDAO;
 import com.motorph.dao.EmployeeDAO;
 import com.motorph.service.AttendanceService;
+import com.motorph.service.DeductionService;
 import com.motorph.service.PayrollService;
 import com.motorph.service.RateService;
 
@@ -25,8 +26,9 @@ public class AppContext {
         AttendanceDAO attendanceDAO = new CsvAttendanceDAO();
         AttendanceService attendanceService = new AttendanceService();
         RateService rateService = new RateService();
+        DeductionService deductionService = new DeductionService();
 
-        payrollService = new PayrollService(attendanceService, rateService);
+        payrollService = new PayrollService(attendanceService, rateService, deductionService);
         employeeDAO = new CsvEmployeeDAO();
     }
 
