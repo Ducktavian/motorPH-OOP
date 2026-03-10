@@ -40,6 +40,16 @@ public abstract class Request implements Requestable {
         return approvedBy;
     }
     
+    public void setRequestStatus(RequestStatus status) {
+        this.status = status;
+    }
+    
+    public void setApprovedBy(String approvedBy) {
+        this.approvedBy = approvedBy;
+
+    }
+    
+    @Override
     public void approve(String approverId) {
         if (this.status == RequestStatus.PENDING) {
             this.status = RequestStatus.APPROVED;
@@ -48,6 +58,7 @@ public abstract class Request implements Requestable {
         }
     }
     
+    @Override
     public void reject(String approverId) {
         if (this.status == RequestStatus.PENDING) {
             this.status = RequestStatus.REJECTED;

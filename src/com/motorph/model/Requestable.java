@@ -16,11 +16,11 @@ interface Requestable {
     
     String getEmployeeId();
     
-    LocalDate dateFiled();
+    LocalDate getDateFiled();
     
     RequestStatus getStatus();
     
-    void approve();
+    void approve(String approverId);
     
-    void reject();
+    void reject(String approverId);
 }

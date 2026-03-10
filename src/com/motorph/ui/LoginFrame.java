@@ -2,6 +2,7 @@
 
 package com.motorph.ui;
 
+import com.motorph.model.Role;
 import com.motorph.model.UserAccount;
 import com.motorph.service.AuthService;
 
@@ -162,8 +163,32 @@ public class LoginFrame extends javax.swing.JFrame {
             
             System.out.println("Welcome " + user.getUsername() + "!");
             
-            // Open new window
-            // TODO: Insert code here
+            // Hide current LoginFrame
+            this.dispose();
+            
+            String role = user.getRole().toString().trim();
+            
+            switch(role.toUpperCase()) {
+                case "IT":
+                    new ITDashboardFrame().setVisible(true);
+                    break;
+                case "Finance":
+                    new FinanceDashboardFrame().setVisible(true);
+                    break;
+                    
+                case "HR":
+                    new HRDashboardFrame().setVisible(true);
+                    break;
+                case "EMPLOYEE":
+                    new EmployeeDashboardFrame().setVisible(true);
+                    break;
+                default:
+                    javax.swing.JOptionPane.showMessageDialog(this, "Unknown Role: " + role);
+                    System.out.println(role + " =? " + "EMPLOYEE");
+                    System.out.println();
+                    new LoginFrame().setVisible(true); // Re-open login if role is invalid
+                    break;
+            }
             
             
         } catch (Exception ex) {
