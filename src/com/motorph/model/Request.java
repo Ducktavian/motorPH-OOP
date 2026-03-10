@@ -11,6 +11,7 @@ public abstract class Request implements Requestable {
     protected String employeeId;
     protected LocalDate dateFiled;
     protected RequestStatus status;
+    protected String approvedBy;
     
     public Request(String requestId, String employeeId, LocalDate dateFiled) {
         this.requestId = requestId;
@@ -27,7 +28,7 @@ public abstract class Request implements Requestable {
         return employeeId;
     }
     
-    public LocalDate dateFiled() {
+    public LocalDate getDateFiled() {
         return dateFiled;
     }
     
@@ -35,15 +36,23 @@ public abstract class Request implements Requestable {
         return status;
     }
     
-    public void approve() {
+    public String getApprovedBy() {
+        return approvedBy;
+    }
+    
+    public void approve(String approverId) {
         if (this.status == RequestStatus.PENDING) {
             this.status = RequestStatus.APPROVED;
+            this.approvedBy = approverId;
+
         }
     }
     
-    public void reject() {
+    public void reject(String approverId) {
         if (this.status == RequestStatus.PENDING) {
             this.status = RequestStatus.REJECTED;
+            this.approvedBy = approverId;
+
         }
     }
     

@@ -11,17 +11,24 @@ public class LeaveRequest extends Request {
     private LocalDate startDate;
     private LocalDate endDate;
     private String reason;
+    private LeaveType leaveType;
+    
+    // Status inherited
+    // approvedBy inherited
     
     public LeaveRequest(String requestId,
                         String employeeId,
                         LocalDate dateFiled,
                         LocalDate startDate,
                         LocalDate endDate,
-                        String reason) {
+                        LeaveType leaveType,
+                        String reason
+                        ) {
         super(requestId, employeeId, dateFiled);
         this.startDate = startDate;
         this.endDate = endDate;
         this.reason = reason;
+        this.leaveType = leaveType;
     }
     
     public LocalDate getStartDate() {
@@ -36,13 +43,22 @@ public class LeaveRequest extends Request {
         return reason;
     }
     
-    // Calculates deduction amount (requires daily rate input)
-    public double calculateImpact(double dailyRate) {
-        long days = ChronoUnit.DAYS.between(startDate, endDate) + 1;
-        return days * dailyRate;
+    public LeaveType getLeaveType() {
+        return leaveType;
+    }
+    
+    // Calculate number of leave days
+    public long getLeaveDays() {
+        return ChronoUnit.DAYS.between(startDate, endDate) + 1;
     }
     
     
+    // Calculates deduction amount (requires daily rate input)
+    public double calculateImpact(double dailyRate) {
+        return getLeaveDays() * dailyRate;
+    }
+    
+    // Default overload
     public double calculateImpact() {
         return 0; // default
     }
