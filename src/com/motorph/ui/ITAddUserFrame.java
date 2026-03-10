@@ -28,297 +28,362 @@ public class ITAddUserFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel15 = new javax.swing.JPanel();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel16 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jButton19 = new javax.swing.JButton();
-        jPanel17 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel45 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel48 = new javax.swing.JLabel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
+        hrField = new javax.swing.JTextField();
+        hrField3 = new javax.swing.JTextField();
+        hrField5 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         hrField11 = new javax.swing.JTextField();
-        hrField12 = new javax.swing.JTextField();
-        hrField21 = new javax.swing.JTextField();
-        hrField22 = new javax.swing.JTextField();
-        hrField23 = new javax.swing.JTextField();
-        hrField24 = new javax.swing.JTextField();
-        hrField25 = new javax.swing.JTextField();
-        hrField26 = new javax.swing.JTextField();
+        hrField14 = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
         hrField13 = new javax.swing.JTextField();
-        hrField27 = new javax.swing.JTextField();
-        hrField28 = new javax.swing.JTextField();
-        hrField29 = new javax.swing.JTextField();
-        hrField30 = new javax.swing.JTextField();
-        hrField31 = new javax.swing.JTextField();
-        hrField32 = new javax.swing.JTextField();
-        hrField33 = new javax.swing.JTextField();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        hrField15 = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        hrField16 = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel15.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton5.setBackground(new java.awt.Color(30, 42, 56));
+        jButton5.setBackground(new java.awt.Color(34, 197, 94));
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Dashboard");
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setText("Activate");
+        jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         jButton5.addActionListener(this::jButton5ActionPerformed);
-        jPanel15.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
 
-        jButton6.setBackground(new java.awt.Color(30, 42, 56));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Edit Employee Details");
-        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.addActionListener(this::jButton6ActionPerformed);
-        jPanel15.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
+        jPanel2.setBackground(new java.awt.Color(30, 58, 138));
+        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        jPanel2.setForeground(new java.awt.Color(30, 58, 138));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton18.setBackground(new java.awt.Color(30, 42, 56));
-        jButton18.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(255, 255, 255));
-        jButton18.setText("Add Employee Details");
-        jButton18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton18.addActionListener(this::jButton18ActionPerformed);
-        jPanel15.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 301, -1, 39));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Add User Account");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 220, 46));
 
-        jButton16.setBackground(new java.awt.Color(30, 42, 56));
-        jButton16.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(255, 255, 255));
-        jButton16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton16.setLabel("Main Dashboard");
-        jButton16.addActionListener(this::jButton16ActionPerformed);
-        jPanel15.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        jPanel3.setForeground(new java.awt.Color(30, 42, 56));
+        jPanel3.setFocusable(false);
+        jPanel3.setPreferredSize(new java.awt.Dimension(700, 469));
+        jPanel3.setRequestFocusEnabled(false);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
-        jPanel15.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel1.setText("Employee ID");
 
-        getContentPane().add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 700));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel3.setText("Employee Name");
 
-        jPanel16.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel16.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        hrField.setForeground(new java.awt.Color(30, 42, 56));
+        hrField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField.setEnabled(false);
+        hrField.addActionListener(this::hrFieldActionPerformed);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Edit Employee Details");
-        jPanel16.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 266, 46));
+        hrField3.setForeground(new java.awt.Color(30, 42, 56));
+        hrField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField3.setEnabled(false);
+        hrField3.addActionListener(this::hrField3ActionPerformed);
 
-        getContentPane().add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 14, -1, -1));
+        hrField5.setForeground(new java.awt.Color(30, 42, 56));
+        hrField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField5.setEnabled(false);
+        hrField5.addActionListener(this::hrField5ActionPerformed);
 
-        jButton19.setBackground(new java.awt.Color(34, 197, 94));
-        jButton19.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(255, 255, 255));
-        jButton19.setText("Activate");
-        jButton19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton19.addActionListener(this::jButton19ActionPerformed);
-        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(871, 575, 110, 40));
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel6.setText("Position");
 
-        jPanel17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 2, true));
-        jPanel17.setForeground(new java.awt.Color(31, 41, 55));
-        jPanel17.setFocusable(false);
-        jPanel17.setPreferredSize(new java.awt.Dimension(700, 469));
-        jPanel17.setRequestFocusEnabled(false);
-        jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel19.setText("Department");
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel8.setText("Employee ID");
-        jPanel17.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 25, -1, -1));
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel13.setText("Immediate Supervisor");
 
-        jLabel22.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel22.setText("Last Name");
-        jPanel17.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 74, -1, -1));
-
-        jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel45.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel45.setText("Address");
-        jPanel17.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 123, -1, -1));
-
-        jLabel47.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel47.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel47.setText("Birthday");
-        jPanel17.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 172, -1, -1));
-
-        jLabel48.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel48.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel48.setText("Position");
-        jPanel17.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 221, -1, -1));
-
-        jLabel49.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel49.setText("Basic Salary");
-        jPanel17.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 270, -1, -1));
-
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel23.setText("SSS");
-        jPanel17.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 368, -1, -1));
-
-        jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel24.setText("PhilHealth");
-        jPanel17.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 417, -1, -1));
-
-        jLabel25.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel25.setText("Status");
-        jPanel17.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 319, -1, -1));
-
-        jLabel50.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel50.setText("First Name");
-        jPanel17.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 74, -1, -1));
-
-        jLabel51.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel51.setText("Phone Number");
-        jPanel17.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 172, -1, -1));
-
-        jLabel52.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel52.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel52.setText("Immediate Supervisor");
-        jPanel17.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 221, -1, -1));
-
-        jLabel53.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel53.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel53.setText("Daily Rate");
-        jPanel17.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 270, -1, -1));
-
-        jLabel54.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel54.setText("TIN");
-        jPanel17.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 368, -1, -1));
-
-        jLabel55.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel55.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel55.setText("Pag-Ibig");
-        jPanel17.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 417, -1, -1));
-
-        jLabel56.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jLabel56.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel56.setText("Department");
-        jPanel17.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 319, 134, -1));
-
-        hrField11.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField11.setForeground(new java.awt.Color(31, 41, 55));
+        hrField11.setForeground(new java.awt.Color(30, 42, 56));
         hrField11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField11.setEnabled(false);
         hrField11.addActionListener(this::hrField11ActionPerformed);
-        jPanel17.add(hrField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 74, 150, 31));
 
-        hrField12.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField12.setForeground(new java.awt.Color(31, 41, 55));
-        hrField12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField12.addActionListener(this::hrField12ActionPerformed);
-        jPanel17.add(hrField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 123, 515, 31));
+        hrField14.setForeground(new java.awt.Color(30, 42, 56));
+        hrField14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField14.setEnabled(false);
+        hrField14.addActionListener(this::hrField14ActionPerformed);
 
-        hrField21.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField21.setForeground(new java.awt.Color(31, 41, 55));
-        hrField21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField21.addActionListener(this::hrField21ActionPerformed);
-        jPanel17.add(hrField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 172, 150, 31));
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel10.setText("Status");
 
-        hrField22.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField22.setForeground(new java.awt.Color(31, 41, 55));
-        hrField22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField22.addActionListener(this::hrField22ActionPerformed);
-        jPanel17.add(hrField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 221, 150, 31));
-
-        hrField23.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField23.setForeground(new java.awt.Color(31, 41, 55));
-        hrField23.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField23.addActionListener(this::hrField23ActionPerformed);
-        jPanel17.add(hrField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 270, 150, 31));
-
-        hrField24.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField24.setForeground(new java.awt.Color(31, 41, 55));
-        hrField24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField24.addActionListener(this::hrField24ActionPerformed);
-        jPanel17.add(hrField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 319, 150, 31));
-
-        hrField25.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField25.setForeground(new java.awt.Color(31, 41, 55));
-        hrField25.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField25.addActionListener(this::hrField25ActionPerformed);
-        jPanel17.add(hrField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 368, 150, 31));
-
-        hrField26.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField26.setForeground(new java.awt.Color(31, 41, 55));
-        hrField26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField26.addActionListener(this::hrField26ActionPerformed);
-        jPanel17.add(hrField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 417, 150, 31));
-
-        hrField13.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField13.setForeground(new java.awt.Color(31, 41, 55));
+        hrField13.setForeground(new java.awt.Color(30, 42, 56));
         hrField13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField13.setEnabled(false);
         hrField13.addActionListener(this::hrField13ActionPerformed);
-        jPanel17.add(hrField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 25, 150, 31));
 
-        hrField27.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField27.setForeground(new java.awt.Color(31, 41, 55));
-        hrField27.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField27.addActionListener(this::hrField27ActionPerformed);
-        jPanel17.add(hrField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 221, 150, 31));
+        jPanel15.setBackground(new java.awt.Color(146, 192, 253));
+        jPanel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        jPanel15.setForeground(new java.awt.Color(30, 58, 138));
+        jPanel15.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        hrField28.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField28.setForeground(new java.awt.Color(31, 41, 55));
-        hrField28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField28.addActionListener(this::hrField28ActionPerformed);
-        jPanel17.add(hrField28, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 270, 150, 31));
+        jLabel20.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel20.setText("User Account Details");
+        jLabel20.setToolTipText("");
 
-        hrField29.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField29.setForeground(new java.awt.Color(31, 41, 55));
-        hrField29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField29.addActionListener(this::hrField29ActionPerformed);
-        jPanel17.add(hrField29, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 319, 150, 31));
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 1, Short.MAX_VALUE))
+        );
 
-        hrField30.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField30.setForeground(new java.awt.Color(31, 41, 55));
-        hrField30.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField30.addActionListener(this::hrField30ActionPerformed);
-        jPanel17.add(hrField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 368, 150, 31));
+        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        hrField31.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField31.setForeground(new java.awt.Color(31, 41, 55));
-        hrField31.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField31.addActionListener(this::hrField31ActionPerformed);
-        jPanel17.add(hrField31, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 417, 150, 31));
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel11.setText("Username");
 
-        hrField32.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField32.setForeground(new java.awt.Color(31, 41, 55));
-        hrField32.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField32.addActionListener(this::hrField32ActionPerformed);
-        jPanel17.add(hrField32, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 172, 150, 31));
+        hrField15.setForeground(new java.awt.Color(30, 42, 56));
+        hrField15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField15.addActionListener(this::hrField15ActionPerformed);
 
-        hrField33.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrField33.setForeground(new java.awt.Color(31, 41, 55));
-        hrField33.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField33.addActionListener(this::hrField33ActionPerformed);
-        jPanel17.add(hrField33, new org.netbeans.lib.awtextra.AbsoluteConstraints(541, 74, 150, 31));
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel12.setText("Password");
 
-        getContentPane().add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 73, 707, 490));
+        hrField16.setForeground(new java.awt.Color(30, 42, 56));
+        hrField16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField16.addActionListener(this::hrField16ActionPerformed);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(hrField16, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel11)
+                    .addComponent(hrField15, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(hrField15, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(hrField16, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hrField5, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(hrField13, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(hrField14, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                        .addComponent(hrField11, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(205, 205, 205)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13)
+                    .addComponent(hrField11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel6)
+                    .addComponent(hrField14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(hrField5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10)
+                    .addComponent(hrField13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
+        jPanel1.setBackground(new java.awt.Color(30, 58, 138));
+
+        jButton1.setBackground(new java.awt.Color(30, 42, 56));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Dashboard");
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.addActionListener(this::jButton1ActionPerformed);
+
+        jButton9.setBackground(new java.awt.Color(30, 42, 56));
+        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jButton9.setLabel("Main Dashboard");
+        jButton9.addActionListener(this::jButton9ActionPerformed);
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+
+        jButton2.setBackground(new java.awt.Color(30, 42, 56));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Dashboard");
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.addActionListener(this::jButton2ActionPerformed);
+
+        jButton3.setBackground(new java.awt.Color(30, 42, 56));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("Edit User Account");
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.addActionListener(this::jButton3ActionPerformed);
+
+        jButton4.setBackground(new java.awt.Color(30, 42, 56));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Add User Account");
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton4.addActionListener(this::jButton4ActionPerformed);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(92, 92, 92)
+                .addComponent(jButton9))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel17)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(189, 189, 189)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(307, 307, 307)
+                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -327,85 +392,57 @@ public class ITAddUserFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void hrFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_hrFieldActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    private void hrField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+    }//GEN-LAST:event_hrField3ActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void hrField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
-
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    }//GEN-LAST:event_hrField5ActionPerformed
 
     private void hrField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hrField11ActionPerformed
 
-    private void hrField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField12ActionPerformed
+    private void hrField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField14ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField12ActionPerformed
-
-    private void hrField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField21ActionPerformed
-
-    private void hrField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField22ActionPerformed
-
-    private void hrField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField23ActionPerformed
-
-    private void hrField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField24ActionPerformed
-
-    private void hrField25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField25ActionPerformed
-
-    private void hrField26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrField26ActionPerformed
+    }//GEN-LAST:event_hrField14ActionPerformed
 
     private void hrField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField13ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hrField13ActionPerformed
 
-    private void hrField27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField27ActionPerformed
+    private void hrField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField15ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField27ActionPerformed
+    }//GEN-LAST:event_hrField15ActionPerformed
 
-    private void hrField28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField28ActionPerformed
+    private void hrField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField16ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField28ActionPerformed
+    }//GEN-LAST:event_hrField16ActionPerformed
 
-    private void hrField29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField29ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField29ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void hrField30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField30ActionPerformed
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField30ActionPerformed
+    }//GEN-LAST:event_jButton9ActionPerformed
 
-    private void hrField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField31ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField31ActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void hrField32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField32ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField32ActionPerformed
+    }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void hrField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField33ActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField33ActionPerformed
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -433,47 +470,35 @@ public class ITAddUserFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField hrField;
     private javax.swing.JTextField hrField11;
-    private javax.swing.JTextField hrField12;
     private javax.swing.JTextField hrField13;
-    private javax.swing.JTextField hrField21;
-    private javax.swing.JTextField hrField22;
-    private javax.swing.JTextField hrField23;
-    private javax.swing.JTextField hrField24;
-    private javax.swing.JTextField hrField25;
-    private javax.swing.JTextField hrField26;
-    private javax.swing.JTextField hrField27;
-    private javax.swing.JTextField hrField28;
-    private javax.swing.JTextField hrField29;
-    private javax.swing.JTextField hrField30;
-    private javax.swing.JTextField hrField31;
-    private javax.swing.JTextField hrField32;
-    private javax.swing.JTextField hrField33;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
+    private javax.swing.JTextField hrField14;
+    private javax.swing.JTextField hrField15;
+    private javax.swing.JTextField hrField16;
+    private javax.swing.JTextField hrField3;
+    private javax.swing.JTextField hrField5;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 }
