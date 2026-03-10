@@ -6,9 +6,10 @@ import java.util.List;
 public interface EmployeeDAO {
 
     List<Employee> getAllEmployees();
+    Employee findEmployee(String employeeNumber);
+    String generateNextEmployeeNumber();
     
     // Wrtie employee
-    void addEmployee();
     void addEmployee(Employee employee);
     void updateEmployee(Employee employee);
     void deleteEmployee(String employeeNumber);

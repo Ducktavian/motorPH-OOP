@@ -10,11 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 public class CsvEmployeeDAO implements EmployeeDAO {
     
-    private String filePath = "employees.csv";
+    private final String filePath = "employees.csv";
     private static final int POSITION_INDEX = 11;
     private List<Employee> employees;
     
@@ -28,12 +30,13 @@ public class CsvEmployeeDAO implements EmployeeDAO {
     
     @Override
     public List<Employee> getAllEmployees() {
-        loadEmployees();
-        
         return employees;
     }
     
     private void loadEmployees() {
+        
+        employees.clear();
+        
         try (CSVReader reader = new CSVReader(new FileReader (filePath))) {
             
             String[] data;
@@ -106,31 +109,104 @@ public class CsvEmployeeDAO implements EmployeeDAO {
                 return emp;
             }
         }
-       
-        System.out.println("Could not find employee!");
         return null;
     }
     
     @Override
-    public void addEmployee() {
-        
-    }
-
-    @Override
     public void addEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
+        employees.add(employee);
+        
+        saveAllEmployees();
     }
 
     @Override
-    public void updateEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void updateEmployee(Employee updatedEmployee) {
+        
+        for (int i = 0; i < employees.size(); i++) {
+            if (employees.get(i).getEmployeeNumber().equals(updatedEmployee.getEmployeeNumber())) {
+                 employees.set(i, updatedEmployee);
+                break; 
+            }
+        }
+        
+        saveAllEmployees();
     }
 
     @Override
     public void deleteEmployee(String employeeNumber) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
+        employees.removeIf(emp -> emp.getEmployeeNumber().equals(employeeNumber));
+        
+        saveAllEmployees();
+    }
+
+    // Writes in the file
+    private void saveAllEmployees() {
+
+        try (CSVWriter writer = new CSVWriter(new FileWriter(filePath))) {
+
+            String[] header = {
+                "Employee #","Last Name","First Name","Birthday","Address",
+                "Phone Number","SSS #","Philhealth #","TIN","Pag-ibig #",
+                "Status","Position","Immediate Supervisor",
+                "Basic Salary","Rice Subsidy","Phone Allowance","Clothing Allowance",
+                "Gross Semi-monthly Rate", "Hourly Rate"
+                
+            };
+
+            writer.writeNext(header);
+
+            for (Employee emp : employees) {
+
+                String[] row = {
+                    emp.getEmployeeNumber(),
+                    emp.getLastName(),
+                    emp.getFirstName(),
+                    emp.getBirthday(),
+                    emp.getAddress(),
+                    emp.getPhoneNumber(),
+                    emp.getSSSNumber(),
+                    emp.getPhilhealthNumber(),
+                    emp.getTIN(),
+                    emp.getPagIbigNumber(),
+                    emp.getStatus(),
+                    emp.getPosition(),
+                    emp.getImmediateSupervisor(),
+                    String.valueOf(emp.getBasicSalary()),
+                    String.valueOf(emp.getRiceSubsidy()),
+                    String.valueOf(emp.getPhoneAllowance()),
+                    String.valueOf(emp.getClothingAllowance()),
+                    String.valueOf(emp.getSemiMonthlyRate()),
+                    String.valueOf(emp.getHourlyRate())
+                        
+                };
+
+                writer.writeNext(row);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     
+    
+    public String generateNextEmployeeNumber() {
+        int max = 0;
+        
+        for (Employee emp: employees) {
+            
+            int current = Integer.parseInt(emp.getEmployeeNumber());
+            
+            if (current > max) {
+                max = current;
+            }
+        }
+        
+        int next = max + 1;
+        
+        return String.valueOf(next);
+    }
     
 
 }

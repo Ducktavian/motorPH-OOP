@@ -18,11 +18,6 @@ public class PayrollService {
     private RateService rateService;
     private DeductionService deductionService;
 
-    // Constructor
-    public PayrollService(AttendanceService attendanceService, RateService rateService) {
-        this.attendanceService = attendanceService;
-        this.rateService = rateService;
-    }
     
     // Constructor
     public PayrollService(AttendanceService attendanceService, RateService rateService, DeductionService deductionService) {
@@ -84,10 +79,14 @@ public class PayrollService {
         // Compute Netpay
         double netPay = cutoffGross + allowanceBreakdown.getTotal() - totalDeductions;
         
+        //Generate payslipId
+        String payslipId = generatePayslipId(employee.getEmployeeNumber(), periodEnd);
+        
+        
         // Return Payslip object
         return new Payslip(
+                payslipId,
                 employee.getEmployeeNumber(),
-                employee.getFullName(),
                 employee.getPosition(),
                 periodStart,
                 periodEnd,
@@ -132,6 +131,19 @@ public class PayrollService {
                 round(monthlyPagIbig),
                 round(tax)
         );
+    }
+    
+    private String generatePayslipId(String employeeNumber, LocalDate periodEnd) {
+        
+        int year = periodEnd.getYear();
+        int month = periodEnd.getMonthValue();
+        
+        int cutoff = isSecondCutoff(periodEnd) ? 2 : 1;
+        
+        return employeeNumber + "-" +
+                year + "-" +
+                String.format("%02d", month) +
+                "-C" + cutoff;
     }
     
     // Helper
