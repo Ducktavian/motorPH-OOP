@@ -5,8 +5,6 @@ package com.motorph.ui;
 import com.motorph.model.UserAccount;
 import com.motorph.service.AuthService;
 
-import org.netbeans.lib.awtextra.AbsoluteLayout;
-import org.netbeans.lib.awtextra.AbsoluteConstraints;
 
 /**
  *
