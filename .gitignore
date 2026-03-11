@@ -1,3 +1,22 @@
-nbproject/private/
+# NetBeans specific
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
 build/
-/dist/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Specific file causing your current conflict
+build/built-jar.properties
+
+# Compiled Java files
+*.class
+*.jar
+*.war
+
+# OS generated files
+.DS_Store
+Thumbs.db

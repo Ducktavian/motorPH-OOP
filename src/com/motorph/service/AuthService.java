@@ -3,6 +3,7 @@ package com.motorph.service;
 
 import com.motorph.dao.CsvUserAccountDAO;
 import com.motorph.model.UserAccount;
+import com.motorph.util.PasswordUtil;
 
 
 public class AuthService {
@@ -23,7 +24,8 @@ public class AuthService {
             throw new Exception("User not found.");
         }
         
-        if (!user.getPasswordHash().equals(password)) {
+        // Checks passowrd
+        if (PasswordUtil.verifyPassword(password, user.getPasswordHash())) {
             System.out.println("Invalid password.");
             throw new Exception("Invalid password.");
         }
