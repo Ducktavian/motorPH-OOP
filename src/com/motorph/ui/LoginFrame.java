@@ -5,6 +5,7 @@ package com.motorph.ui;
 import com.motorph.model.Role;
 import com.motorph.model.UserAccount;
 import com.motorph.service.AuthService;
+import com.motorph.util.Session;
 
 
 /**
@@ -161,6 +162,7 @@ public class LoginFrame extends javax.swing.JFrame {
         try {
             UserAccount user = authService.login(username, password);
             
+            Session.setCurrentUser(user);
             System.out.println("Welcome " + user.getUsername() + "!");
             
             // Hide current LoginFrame

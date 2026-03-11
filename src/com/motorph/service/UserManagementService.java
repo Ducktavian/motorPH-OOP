@@ -9,6 +9,7 @@ import com.motorph.util.Session;
 import java.util.List;
 
 
+
 public class UserManagementService {
     
     private CsvUserAccountDAO userDAO;
@@ -52,6 +53,7 @@ public class UserManagementService {
         if (user == null) {
             throw new RuntimeException("User not found.");
         }
+        
         
         user.setPasswordHash(newPassword);
     }

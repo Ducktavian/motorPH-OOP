@@ -4,6 +4,7 @@ package com.motorph.dao;
 import com.motorph.model.Employee;
 import com.motorph.model.Role;
 import com.motorph.model.UserAccount;
+import com.motorph.util.PasswordUtil;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import java.io.File;
@@ -122,4 +123,51 @@ public class CsvUserAccountDAO implements UserAccountDAO {
         
         
     }    
+    
+    
+    
+    public void update(UserAccount updatedUser) {
+        List<UserAccount> allUsers = findAll();
+        
+        for (int i = 0; i < allUsers.size(); i++) {
+            if (allUsers.get(i).getUsername().equals(updatedUser.getUsername())) {
+                allUsers.set(i, updatedUser);
+                break;
+            }
+        }
+        
+        // Write the whole list back to the CSV file
+        saveAll(allUsers);
+    }
+
+    private void saveAll(List<UserAccount> allUsers) {
+        try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH))) {
+            String[] header = {"userId", "Employee #", "username", "passwordHash", "active"};
+
+
+            writer.writeNext(header);
+
+            for (UserAccount user: allUsers) {
+                
+                String passwordHash = PasswordUtil.hashPassword("password");
+                
+                user.setPasswordHash(passwordHash);
+
+                String[] row = {
+                    String.valueOf(user.getUserId()),
+                    user.getEmployeeNumber(),
+                    user.getUsername(),
+                    user.getPasswordHash(),
+                    String.valueOf(user.isActive())
+                };
+                writer.writeNext(row);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
+    
+    
 }   

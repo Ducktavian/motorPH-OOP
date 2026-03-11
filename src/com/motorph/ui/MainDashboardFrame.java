@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.Session;
+
 /**
  *
  * @author Lenovo
@@ -50,7 +52,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
         jTextField6 = new javax.swing.JTextField();
         jTextField11 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        dashboardBtn = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jTextField7 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
@@ -175,12 +177,12 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         jTextField11.addActionListener(this::jTextField11ActionPerformed);
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 423, 169, 131));
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Dashboard");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 160, 169, 45));
+        dashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        dashboardBtn.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        dashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        dashboardBtn.setText("Dashboard");
+        dashboardBtn.addActionListener(this::dashboardBtnActionPerformed);
+        getContentPane().add(dashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 160, 169, 45));
 
         jButton11.setBackground(new java.awt.Color(30, 42, 56));
         jButton11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -284,9 +286,32 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField11ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void dashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashboardBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        this.dispose();
+        
+        String role = Session.getCurrentUser().getRole().toString();
+        
+        switch(role.toUpperCase()) {
+                case "IT":
+                    new ITDashboardFrame().setVisible(true);
+                    break;
+                case "FINANCE":
+                    System.out.println("Now in FINANCE");
+                    new FinanceDashboardFrame().setVisible(true);
+                    break;
+                case "HR":
+                    new HRDashboardFrame().setVisible(true);
+                    break;
+                case "EMPLOYEE":
+                    System.out.println("Now in Employee");
+                    new EmployeeDashboardFrame().setVisible(true);
+                    break;
+                default:
+                    
+                    break;
+            }
+    }//GEN-LAST:event_dashboardBtnActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
@@ -366,7 +391,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JLabel PayslipImg;
     private javax.swing.JLabel RequestDetailsImg;
     private javax.swing.JLabel UserAccountImg;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton dashboardBtn;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;

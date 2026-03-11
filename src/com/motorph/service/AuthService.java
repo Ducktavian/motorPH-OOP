@@ -17,6 +17,7 @@ public class AuthService {
         
         UserAccount user = userAccountDAO.findByUsername(username);
         
+        
         if (user == null) {
             System.out.println("User not found.");
             throw new Exception("User not found.");
