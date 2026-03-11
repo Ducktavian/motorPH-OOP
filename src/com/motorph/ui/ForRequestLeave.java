@@ -246,6 +246,7 @@ public class ForRequestLeave extends javax.swing.JFrame {
         jRadioButton116 = new javax.swing.JRadioButton();
         jButton91 = new javax.swing.JButton();
         jButton92 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(3000, 6000));
@@ -2683,17 +2684,25 @@ public class ForRequestLeave extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1351, Short.MAX_VALUE))
+                .addGap(199, 199, 199)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(1075, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 2543, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 1394, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 2543, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(120, 120, 120)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 1394, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(3426, Short.MAX_VALUE))
         );
 
@@ -3154,6 +3163,7 @@ public class ForRequestLeave extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jLabel96;
@@ -3166,6 +3176,7 @@ public class ForRequestLeave extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel103;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel42;
     private javax.swing.JPanel jPanel43;
     private javax.swing.JPanel jPanel44;
@@ -3178,6 +3189,7 @@ public class ForRequestLeave extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel66;
     private javax.swing.JPanel jPanel67;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel90;
     private javax.swing.JPanel jPanel91;
     private javax.swing.JPanel jPanel92;
@@ -3220,6 +3232,7 @@ public class ForRequestLeave extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton97;
     private javax.swing.JRadioButton jRadioButton98;
     private javax.swing.JRadioButton jRadioButton99;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField133;
     private javax.swing.JTextField jTextField134;
     private javax.swing.JTextField jTextField135;
