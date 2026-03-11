@@ -168,24 +168,27 @@ public class LoginFrame extends javax.swing.JFrame {
             
             String role = user.getRole().toString().trim();
             
+            System.out.println("Role: " + role);
+            
             switch(role.toUpperCase()) {
                 case "IT":
                     new ITDashboardFrame().setVisible(true);
                     break;
-                case "Finance":
+                case "FINANCE":
+                    System.out.println("Now in FINANCE");
                     new FinanceDashboardFrame().setVisible(true);
-                    break;
-                    
+                    break;                   
                 case "HR":
                     new HRDashboardFrame().setVisible(true);
                     break;
                 case "EMPLOYEE":
+                    System.out.println("Now in Employee");
                     new EmployeeDashboardFrame().setVisible(true);
                     break;
                 default:
                     javax.swing.JOptionPane.showMessageDialog(this, "Unknown Role: " + role);
-                    System.out.println(role + " =? " + "EMPLOYEE");
-                    System.out.println();
+                    System.out.println(role + " =? " + "FINANCE");
+                    System.out.println(role.equals("FINANCE"));
                     new LoginFrame().setVisible(true); // Re-open login if role is invalid
                     break;
             }
