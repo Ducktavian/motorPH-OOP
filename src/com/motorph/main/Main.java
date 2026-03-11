@@ -50,7 +50,7 @@ public class Main {
         EmployeeService empService = new EmployeeService(empDao);
         
         
-        testingAddEmployee(empService);
+        //testingAddEmployee(empService);
         //testingDeleteEmployee(empService, "10035");
         
         
