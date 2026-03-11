@@ -151,7 +151,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="48" max="32767" attributes="0"/>
+                          <EmptySpace pref="49" max="32767" attributes="0"/>
                           <Component id="hrField11" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -214,7 +214,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="37" green="29" red="1f" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Employee ID"/>
+            <Property name="text" type="java.lang.String" value="Employee #"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">

@@ -30,7 +30,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ActivityLogsImg = new javax.swing.JLabel();
         LogoutImg = new javax.swing.JLabel();
         DisputeDetailsImg = new javax.swing.JLabel();
         AttendanceLogsImg = new javax.swing.JLabel();
@@ -41,7 +40,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         UserAccountImg = new javax.swing.JLabel();
         PayslipImg = new javax.swing.JLabel();
         DashboardImg = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
         requestDetails = new javax.swing.JButton();
         jTextField8 = new javax.swing.JTextField();
         logoutBtn = new javax.swing.JButton();
@@ -49,7 +47,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         employeeDetailsBtn = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
-        userAccountBtn = new javax.swing.JButton();
         jTextField6 = new javax.swing.JTextField();
         jTextField11 = new javax.swing.JTextField();
         dashboardBtn = new javax.swing.JButton();
@@ -66,10 +63,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        ActivityLogsImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/ActivityLogsImg.png"))); // NOI18N
-        getContentPane().add(ActivityLogsImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 430, 170, 120));
-        ActivityLogsImg.getAccessibleContext().setAccessibleName("ActivityLogsImg");
 
         LogoutImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/LogoutImg.png"))); // NOI18N
         getContentPane().add(LogoutImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 640, 40, 30));
@@ -99,8 +92,8 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         getContentPane().add(PayrollDetailsImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 30, 160, 120));
         PayrollDetailsImg.getAccessibleContext().setAccessibleName("PayrollDetailsImg");
 
-        UserAccountImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/UserAccountImg.png"))); // NOI18N
-        getContentPane().add(UserAccountImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 430, 150, 120));
+        UserAccountImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/ActivityLogsImg.png"))); // NOI18N
+        getContentPane().add(UserAccountImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 430, 150, 120));
         UserAccountImg.getAccessibleContext().setAccessibleName("UserAccountImg");
 
         PayslipImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/PayslipImg.png"))); // NOI18N
@@ -110,11 +103,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         DashboardImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/DashboardImg.png"))); // NOI18N
         getContentPane().add(DashboardImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 170, 120));
         DashboardImg.getAccessibleContext().setAccessibleName("DashboardImg");
-
-        jTextField12.setBackground(new java.awt.Color(233, 233, 233));
-        jTextField12.setEnabled(false);
-        jTextField12.addActionListener(this::jTextField12ActionPerformed);
-        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 423, 169, 131));
 
         requestDetails.setBackground(new java.awt.Color(30, 42, 56));
         requestDetails.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
@@ -159,13 +147,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         jTextField1.setEnabled(false);
         jTextField1.addActionListener(this::jTextField1ActionPerformed);
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 23, 169, 131));
-
-        userAccountBtn.setBackground(new java.awt.Color(30, 42, 56));
-        userAccountBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        userAccountBtn.setForeground(new java.awt.Color(255, 255, 255));
-        userAccountBtn.setText("User Account");
-        userAccountBtn.addActionListener(this::userAccountBtnActionPerformed);
-        getContentPane().add(userAccountBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 560, 169, 45));
 
         jTextField6.setBackground(new java.awt.Color(233, 233, 233));
         jTextField6.setEnabled(false);
@@ -288,15 +269,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void userAccountBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userAccountBtnActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        
-        new ITAddUserFrame().setVisible(true);
-        
-        
-    }//GEN-LAST:event_userAccountBtnActionPerformed
-
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField6ActionPerformed
@@ -363,10 +335,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -393,7 +361,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel ActivityLogsImg;
     private javax.swing.JLabel AttendanceLogsImg;
     private javax.swing.JLabel DashboardImg;
     private javax.swing.JLabel DisputeDetailsImg;
@@ -412,7 +379,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JButton employeeDetailsBtn;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
@@ -425,6 +391,5 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JButton payrollDetailsBtn;
     private javax.swing.JButton payslipBtn;
     private javax.swing.JButton requestDetails;
-    private javax.swing.JButton userAccountBtn;
     // End of variables declaration//GEN-END:variables
 }
