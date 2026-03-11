@@ -52,6 +52,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(31, 41, 55));
         jLabel2.setText("Welcome,");
 
+        UsernameField.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         UsernameField.setForeground(new java.awt.Color(31, 41, 55));
         UsernameField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         UsernameField.setName(""); // NOI18N
@@ -61,6 +62,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(31, 41, 55));
         jLabel3.setText("Username");
 
+        jPasswordField1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jPasswordField1.setForeground(new java.awt.Color(31, 41, 55));
         jPasswordField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
@@ -69,6 +71,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel4.setText("Password");
 
         jButton1.setBackground(new java.awt.Color(245, 247, 250));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jButton1.setForeground(new java.awt.Color(31, 41, 55));
         jButton1.setText("Forgot Password?");
         jButton1.setBorder(null);

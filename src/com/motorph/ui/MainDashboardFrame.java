@@ -117,7 +117,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 423, 169, 131));
 
         jButton5.setBackground(new java.awt.Color(30, 42, 56));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Request Details");
         jButton5.addActionListener(this::jButton5ActionPerformed);
@@ -129,7 +129,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 223, 169, 131));
 
         jButton13.setBackground(new java.awt.Color(30, 42, 56));
-        jButton13.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        jButton13.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
         jButton13.setText("      Logout");
         jButton13.setActionCommand("Logout");
@@ -137,7 +137,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 632, 130, 45));
 
         jButton3.setBackground(new java.awt.Color(30, 42, 56));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Payslip");
         jButton3.addActionListener(this::jButton3ActionPerformed);
@@ -149,7 +149,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 223, 169, 131));
 
         jButton9.setBackground(new java.awt.Color(30, 42, 56));
-        jButton9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton9.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Employee Details");
         jButton9.addActionListener(this::jButton9ActionPerformed);
@@ -161,7 +161,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 23, 169, 131));
 
         jButton10.setBackground(new java.awt.Color(30, 42, 56));
-        jButton10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jButton10.setForeground(new java.awt.Color(255, 255, 255));
         jButton10.setText("User Account");
         jButton10.addActionListener(this::jButton10ActionPerformed);
@@ -178,14 +178,14 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 423, 169, 131));
 
         dashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        dashboardBtn.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        dashboardBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         dashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
         dashboardBtn.setText("Dashboard");
         dashboardBtn.addActionListener(this::dashboardBtnActionPerformed);
         getContentPane().add(dashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 160, 169, 45));
 
         jButton11.setBackground(new java.awt.Color(30, 42, 56));
-        jButton11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton11.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setText("Activity Logs");
         jButton11.addActionListener(this::jButton11ActionPerformed);
@@ -207,28 +207,28 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 23, 169, 131));
 
         jButton12.setBackground(new java.awt.Color(30, 42, 56));
-        jButton12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton12.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jButton12.setForeground(new java.awt.Color(255, 255, 255));
         jButton12.setText("Dispute Details");
         jButton12.addActionListener(this::jButton12ActionPerformed);
         getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 360, 169, 45));
 
         jButton7.setBackground(new java.awt.Color(30, 42, 56));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setText("Leave Details");
         jButton7.addActionListener(this::jButton7ActionPerformed);
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 360, 169, 45));
 
         jButton4.setBackground(new java.awt.Color(30, 42, 56));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Payroll Details");
         jButton4.addActionListener(this::jButton4ActionPerformed);
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 160, 169, 45));
 
         jButton2.setBackground(new java.awt.Color(30, 42, 56));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Attendance Logs");
         jButton2.addActionListener(this::jButton2ActionPerformed);
