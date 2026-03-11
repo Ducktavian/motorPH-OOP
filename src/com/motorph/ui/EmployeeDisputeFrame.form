@@ -697,7 +697,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="7" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -936,7 +936,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Employee ID"/>
+                <Property name="text" type="java.lang.String" value="Employee #"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel41">

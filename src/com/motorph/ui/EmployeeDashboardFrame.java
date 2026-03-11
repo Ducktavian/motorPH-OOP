@@ -69,6 +69,8 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        hrField17 = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -127,7 +129,7 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel1.setText("Employee ID");
+        jLabel1.setText("Employee #");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(31, 41, 55));
@@ -186,7 +188,7 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel19.setText("Department");
+        jLabel19.setText("Phone Allowance");
 
         hrField8.setForeground(new java.awt.Color(30, 42, 56));
         hrField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -255,7 +257,7 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel14.setText("Daily Rate");
+        jLabel14.setText("Rice Subsidy");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(31, 41, 55));
@@ -268,6 +270,15 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
         jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(31, 41, 55));
         jLabel16.setText("Pag-Ibig");
+
+        hrField17.setForeground(new java.awt.Color(30, 42, 56));
+        hrField17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrField17.setEnabled(false);
+        hrField17.addActionListener(this::hrField17ActionPerformed);
+
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel20.setText("Clothing Allowance");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -307,7 +318,8 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
                                     .addComponent(jLabel14)
                                     .addComponent(jLabel10)
                                     .addComponent(jLabel15)
-                                    .addComponent(jLabel16))))
+                                    .addComponent(jLabel16)
+                                    .addComponent(jLabel20))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(hrField16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -315,7 +327,8 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
                             .addComponent(hrField14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(hrField13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(hrField12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(hrField11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hrField17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -331,7 +344,9 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10)
+                    .addComponent(hrField17, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -365,7 +380,7 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
                     .addComponent(hrField7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19)
                     .addComponent(hrField14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
+                    .addComponent(jLabel20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(hrField8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -697,6 +712,10 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    private void hrField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrField17ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -732,6 +751,7 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JTextField hrField14;
     private javax.swing.JTextField hrField15;
     private javax.swing.JTextField hrField16;
+    private javax.swing.JTextField hrField17;
     private javax.swing.JTextField hrField2;
     private javax.swing.JTextField hrField3;
     private javax.swing.JTextField hrField4;
@@ -754,6 +774,7 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

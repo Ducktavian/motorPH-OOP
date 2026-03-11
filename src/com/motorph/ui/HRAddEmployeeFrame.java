@@ -70,8 +70,11 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         phoneNumberField = new javax.swing.JTextField();
         firstNameField = new javax.swing.JTextField();
         statusDropdown = new javax.swing.JComboBox<>();
+        jLabel18 = new javax.swing.JLabel();
+        dailyRateField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         jPanel2.setBackground(new java.awt.Color(30, 58, 138));
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -137,7 +140,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel1.setText("Employee ID");
+        jLabel1.setText("Employee #");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(31, 41, 55));
@@ -169,7 +172,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel10.setText("Status");
+        jLabel10.setText("Clothing Allowance");
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(31, 41, 55));
@@ -185,7 +188,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel14.setText("Daily Rate");
+        jLabel14.setText("Rice Subsidy");
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(31, 41, 55));
@@ -197,7 +200,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel19.setText("Department");
+        jLabel19.setText("Phone Allowance");
 
         lastNameField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         lastNameField.setForeground(new java.awt.Color(31, 41, 55));
@@ -279,6 +282,15 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         statusDropdown.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Regular", "Probationary" }));
         statusDropdown.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(31, 41, 55));
+        jLabel18.setText("Status");
+
+        dailyRateField1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        dailyRateField1.setForeground(new java.awt.Color(31, 41, 55));
+        dailyRateField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        dailyRateField1.addActionListener(this::dailyRateField1ActionPerformed);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -286,18 +298,6 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(50, 50, 50)
-                        .addComponent(employeeNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(69, 69, 69)
-                        .addComponent(lastNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel11)
-                        .addGap(103, 103, 103)
-                        .addComponent(firstNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel4)
                         .addGap(90, 90, 90)
@@ -334,23 +334,42 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                         .addComponent(jLabel12)
                         .addGap(65, 65, 65)
                         .addComponent(phoneNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(26, 26, 26)
-                            .addComponent(departmentField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel10)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(statusDropdown, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                            .addComponent(jLabel7)
-                            .addGap(59, 59, 59)
-                            .addComponent(basicSalaryField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel14)
-                            .addGap(109, 109, 109)
-                            .addComponent(dailyRateField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addGap(59, 59, 59)
+                                .addComponent(basicSalaryField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel14))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(departmentField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel10)))
+                        .addGap(28, 28, 28)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(dailyRateField1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dailyRateField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(69, 69, 69)
+                                .addComponent(lastNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(employeeNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel11))
+                        .addGap(103, 103, 103)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(statusDropdown, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(firstNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -359,7 +378,10 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addComponent(employeeNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(employeeNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(statusDropdown, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel18)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
@@ -398,7 +420,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                     .addComponent(departmentField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19)
                     .addComponent(jLabel10)
-                    .addComponent(statusDropdown, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(dailyRateField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
@@ -419,14 +441,20 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(597, 597, 597)
-                        .addComponent(activateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 707, Short.MAX_VALUE))
-                .addGap(9, 9, 9))
+                        .addGap(12, 12, 12)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(453, 453, 453))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
+                                .addGap(27, 27, 27))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(activateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -462,12 +490,75 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         new MainDashboardFrame().setVisible(true);
     }//GEN-LAST:event_mainDashboardFrameActionPerformed
 
+    private void dailyRateField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dailyRateField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dailyRateField1ActionPerformed
+
+    private void firstNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_firstNameFieldActionPerformed
+
+    private void phoneNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phoneNumberFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_phoneNumberFieldActionPerformed
+
+    private void pagIbigFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pagIbigFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pagIbigFieldActionPerformed
+
+    private void tinFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tinFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tinFieldActionPerformed
+
+    private void dailyRateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dailyRateFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dailyRateFieldActionPerformed
+
+    private void immediateSupervisorFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_immediateSupervisorFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_immediateSupervisorFieldActionPerformed
+
+    private void employeeNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeNumberFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_employeeNumberFieldActionPerformed
+
+    private void philHealthFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_philHealthFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_philHealthFieldActionPerformed
+
+    private void ssFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ssFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ssFieldActionPerformed
+
+    private void departmentFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departmentFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_departmentFieldActionPerformed
+
+    private void basicSalaryFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_basicSalaryFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_basicSalaryFieldActionPerformed
+
+    private void positionFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_positionFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_positionFieldActionPerformed
+
+    private void bdayFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdayFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bdayFieldActionPerformed
+
+    private void addressFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addressFieldActionPerformed
+
+    private void lastNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastNameFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lastNameFieldActionPerformed
+
     private void activateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_activateBtnActionPerformed
         // TODO add your handling code here:
-        
-        
+
         System.out.println(lastNameField.getText());
-        
+
         Object selectedItem = statusDropdown.getSelectedItem();
 
         // Check if an item is selected to avoid a NullPointerException
@@ -480,68 +571,8 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
             // You can also display it in a text field, for example:
             // myTextField.setText(selectedValue);
         }
-        
+
     }//GEN-LAST:event_activateBtnActionPerformed
-
-    private void lastNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastNameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lastNameFieldActionPerformed
-
-    private void addressFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addressFieldActionPerformed
-
-    private void bdayFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdayFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bdayFieldActionPerformed
-
-    private void positionFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_positionFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_positionFieldActionPerformed
-
-    private void basicSalaryFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_basicSalaryFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_basicSalaryFieldActionPerformed
-
-    private void departmentFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departmentFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_departmentFieldActionPerformed
-
-    private void ssFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ssFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ssFieldActionPerformed
-
-    private void philHealthFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_philHealthFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_philHealthFieldActionPerformed
-
-    private void employeeNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeNumberFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeNumberFieldActionPerformed
-
-    private void immediateSupervisorFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_immediateSupervisorFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_immediateSupervisorFieldActionPerformed
-
-    private void dailyRateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dailyRateFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_dailyRateFieldActionPerformed
-
-    private void tinFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tinFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tinFieldActionPerformed
-
-    private void pagIbigFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pagIbigFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pagIbigFieldActionPerformed
-
-    private void phoneNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phoneNumberFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_phoneNumberFieldActionPerformed
-
-    private void firstNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_firstNameFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -574,6 +605,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
     private javax.swing.JTextField basicSalaryField;
     private javax.swing.JTextField bdayField;
     private javax.swing.JTextField dailyRateField;
+    private javax.swing.JTextField dailyRateField1;
     private javax.swing.JTextField departmentField;
     private javax.swing.JTextField employeeNumberField;
     private javax.swing.JTextField firstNameField;
@@ -590,6 +622,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -160,7 +160,7 @@ public class ITActivityLogs extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel1.setText("Employee ID");
+        jLabel1.setText("Employee #");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(31, 41, 55));
@@ -403,7 +403,7 @@ public class ITActivityLogs extends javax.swing.JFrame {
 
         jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField3.setText("   Enter Employee ID");
+        jTextField3.setText("   Enter Employee #");
         jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         jTextField3.addActionListener(this::jTextField3ActionPerformed);
         jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
@@ -466,7 +466,7 @@ public class ITActivityLogs extends javax.swing.JFrame {
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel24)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -520,7 +520,7 @@ public class ITActivityLogs extends javax.swing.JFrame {
 
         jLabel59.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel59.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel59.setText("Employee ID");
+        jLabel59.setText("Employee #");
 
         jLabel60.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel60.setForeground(new java.awt.Color(31, 41, 55));
@@ -644,7 +644,7 @@ public class ITActivityLogs extends javax.swing.JFrame {
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel25)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -698,7 +698,7 @@ public class ITActivityLogs extends javax.swing.JFrame {
 
         jLabel72.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel72.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel72.setText("Employee ID");
+        jLabel72.setText("Employee #");
 
         jLabel73.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel73.setForeground(new java.awt.Color(31, 41, 55));
@@ -822,7 +822,7 @@ public class ITActivityLogs extends javax.swing.JFrame {
             .addGroup(jPanel25Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel26)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel25Layout.setVerticalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -876,7 +876,7 @@ public class ITActivityLogs extends javax.swing.JFrame {
 
         jLabel77.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel77.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel77.setText("Employee ID");
+        jLabel77.setText("Employee #");
 
         jLabel78.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel78.setForeground(new java.awt.Color(31, 41, 55));
