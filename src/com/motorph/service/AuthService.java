@@ -1,16 +1,16 @@
 
 package com.motorph.service;
 
-import com.motorph.dao.UserAccountDAO;
+import com.motorph.dao.CsvUserAccountDAO;
 import com.motorph.model.UserAccount;
 
 
 public class AuthService {
     
-    private UserAccountDAO userAccountDAO;
+    private CsvUserAccountDAO userAccountDAO;
     
     public AuthService() {
-        userAccountDAO = new UserAccountDAO();
+        userAccountDAO = new CsvUserAccountDAO();
     }
     
     public UserAccount login(String username, String password) throws Exception {

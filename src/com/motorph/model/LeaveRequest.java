@@ -17,14 +17,14 @@ public class LeaveRequest extends Request {
     // approvedBy inherited
     
     public LeaveRequest(String requestId,
-                        String employeeId,
+                        String employeeNumber,
                         LocalDate dateFiled,
                         LocalDate startDate,
                         LocalDate endDate,
                         LeaveType leaveType,
                         String reason
                         ) {
-        super(requestId, employeeId, dateFiled);
+        super(requestId, employeeNumber, dateFiled);
         this.startDate = startDate;
         this.endDate = endDate;
         this.reason = reason;

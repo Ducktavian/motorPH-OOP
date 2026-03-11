@@ -8,30 +8,34 @@ import java.time.LocalDate;
 public abstract class Request implements Requestable {
     
     protected String requestId;
-    protected String employeeId;
+    protected String employeeNumber;
     protected LocalDate dateFiled;
     protected RequestStatus status;
     protected String approvedBy;
     
     public Request(String requestId, String employeeId, LocalDate dateFiled) {
         this.requestId = requestId;
-        this.employeeId = employeeId;
+        this.employeeNumber = employeeId;
         this.dateFiled = dateFiled;
         this.status = RequestStatus.PENDING;
     }
     
+    @Override
     public String getRequestId() {
         return requestId;
     }
     
-    public String getEmployeeId() {
-        return employeeId;
+    @Override
+    public String getEmployeeNumber() {
+        return employeeNumber;
     }
     
+    @Override
     public LocalDate getDateFiled() {
         return dateFiled;
     }
     
+    @Override
     public RequestStatus getStatus() {
         return status;
     }

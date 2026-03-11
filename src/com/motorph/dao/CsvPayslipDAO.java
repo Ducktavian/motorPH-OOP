@@ -14,28 +14,28 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Lenovo
- */
+
 public class CsvPayslipDAO implements PayslipDAO {
     
     private static final String FILE_PATH = "data/payslips.csv";
-    
     
     public CsvPayslipDAO() {
         
     }
 
     public void savePayslip(Payslip payslip) {
+        File file = new File(FILE_PATH);
         
-        try {
-            File file = new File(FILE_PATH);
+        // Create directory if it doesn't exist
+        if (file.getParentFile() != null && !file.getParentFile().exists()) {
+            file.getParentFile().mkdirs();
+        }
+        
+        boolean fileExist = file.exists();
+        
+        try (CSVWriter writer = new CSVWriter(new FileWriter(file, true))) {
             
-            boolean fileExist = file.exists();
-            
-            CSVWriter writer = new CSVWriter(new FileWriter(file, true));
-            
+ 
             // if file is new: write header
             if (!fileExist) {
                 String[] header = {
@@ -59,6 +59,10 @@ public class CsvPayslipDAO implements PayslipDAO {
                 writer.writeNext(header);
             }
             
+            // Check for nulls in nested objects to prevent NullPointerException
+            AllowanceBreakdown allowances = payslip.getAllowanceBreakdown();
+            DeductionBreakdown deductions = payslip.getDeductionBreakdown();
+
             String[] row = {
                 payslip.getPayslipId(),
                 payslip.getEmployeeNumber(),
@@ -68,53 +72,45 @@ public class CsvPayslipDAO implements PayslipDAO {
                 String.valueOf(payslip.getTotalHours()),
                 String.valueOf(payslip.getHourlyRate()),
                 String.valueOf(payslip.getGrossPay()),
-                String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()),
-                String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()),
-                String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()),
-                String.valueOf(
-                    payslip.getDeductionBreakdown() != null
-                    ? payslip.getDeductionBreakdown().getSss()
-                    : 0
-                ),
-                String.valueOf(
-                    payslip.getDeductionBreakdown() != null
-                    ? payslip.getDeductionBreakdown().getPhilHealth()
-                    : 0
-                ),
-                String.valueOf(
-                    payslip.getDeductionBreakdown() != null
-                    ? payslip.getDeductionBreakdown().getPagIbig()
-                    : 0
-                ),
-                String.valueOf(
-                    payslip.getDeductionBreakdown() != null
-                    ? payslip.getDeductionBreakdown().getWithholdingTax()
-                    : 0
-                ),
+                String.valueOf(allowances != null ? allowances.getRiceSubsidy() : 0),
+                String.valueOf(allowances != null ? allowances.getPhoneAllowance() : 0),
+                String.valueOf(allowances != null ? allowances.getClothingAllowance() : 0),
+                String.valueOf(deductions != null ? deductions.getSss() : 0),
+                String.valueOf(deductions != null ? deductions.getPhilHealth() : 0),
+                String.valueOf(deductions != null ? deductions.getPagIbig() : 0),
+                String.valueOf(deductions != null ? deductions.getWithholdingTax() : 0),
                 String.valueOf(payslip.getNetPay())
             };
             
             writer.writeNext(row);
-            writer.close();    
+            
             
         } catch (Exception e) {
+            System.err.println("Error saving payslip: " + e.getMessage());
             e.printStackTrace();
         }
+        
+         
     }
     
-    public List<Payslip> findPayslipsByEmploye(String employeeNumber) {
+    public List<Payslip> findPayslipsByEmployee(String employeeNumber) {
         
         List<Payslip> payslips = new ArrayList<>();
         
+        File file = new File(FILE_PATH);
+
+        // 3. Return empty list if file doesn't exist yet (prevents FileReader error)
+        if (!file.exists()) {
+            return payslips;
+        }
+        
         try (CSVReader reader = new CSVReader(new FileReader(FILE_PATH))) {
-            
             reader.readNext(); // skip header
             
             String[] row;
-            
             while ((row = reader.readNext()) != null) {
-                
-                if (row[1].equals(employeeNumber)) {
+                // Check if row has enough columns and matches employee ID
+                if (row.length >= 16 && row[1].equals(employeeNumber)) {
                     
                     // Reconstruct AllowanceBreakdown
                     AllowanceBreakdown allowanceBreakdown =
@@ -148,31 +144,13 @@ public class CsvPayslipDAO implements PayslipDAO {
                             Double.parseDouble(row[15])
                     );
                     
-                    payslips.add(p);
-                    
-                    /*
-                       
-                    "payslipId",
-                    "employeeNumber",
-                    "position",
-                    "periodStart",
-                    "periodEnd",
-                    "totalHours",
-                    "hourlyRate",
-                    "grossPay",
-                    "riceSubsidy",
-                    "phoneAllowance",
-                    "clothingAllowance",
-                    "sss",
-                    "philhealth",
-                    "pagibig",
-                    "tax",
-                    "netPay"*/
+                    payslips.add(p);             
                 }
             }
             
             
         } catch (Exception e) {
+            System.err.println("Error reading payslips: " + e.getMessage());
             e.printStackTrace();
         }
         

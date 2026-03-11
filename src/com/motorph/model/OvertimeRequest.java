@@ -13,11 +13,11 @@ public class OvertimeRequest extends Request{
     private double hours;
     
     public OvertimeRequest(String requestId,
-                           String employeeId,
+                           String employeeNumber,
                            LocalDate dateFiled,
                            LocalDate overtimeDate,
                            double hours) {
-        super(requestId, employeeId, dateFiled);
+        super(requestId, employeeNumber, dateFiled);
         this.overtimeDate = overtimeDate;
         this.hours = hours;
         
