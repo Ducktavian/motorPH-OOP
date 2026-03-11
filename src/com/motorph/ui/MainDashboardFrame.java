@@ -248,6 +248,9 @@ public class MainDashboardFrame extends javax.swing.JFrame {
 
     private void requestDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestDetailsActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        
+        new EmployeeRequestFrame().setVisible(true);
     }//GEN-LAST:event_requestDetailsActionPerformed
 
     private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
@@ -263,6 +266,9 @@ public class MainDashboardFrame extends javax.swing.JFrame {
 
     private void payslipBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payslipBtnActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        
+        new EmployeePayslipFrame().setVisible(true);
     }//GEN-LAST:event_payslipBtnActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
@@ -284,6 +290,11 @@ public class MainDashboardFrame extends javax.swing.JFrame {
 
     private void userAccountBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userAccountBtnActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        
+        new ITAddUserFrame().setVisible(true);
+        
+        
     }//GEN-LAST:event_userAccountBtnActionPerformed
 
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
@@ -298,27 +309,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        String role = Session.getCurrentUser().getRole().toString();
-        
-        switch(role.toUpperCase()) {
-                case "IT":
-                    new ITActivityLogs().setVisible(true);
-                    break;
-                case "FINANCE":
-                    System.out.println("Now in FINANCE");
-                    new FinanceAttendanceLogsFrame().setVisible(true);
-                    break;
-                case "HR":
-                    new HREmployeeDetails().setVisible(true);
-                    break;
-                case "EMPLOYEE":
-                    System.out.println("Now in Employee");
-                    new EmployeeDashboardFrame().setVisible(true);
-                    break;
-                default:
-                    
-                    break;
-            }
+        new EmployeeDashboardFrame().setVisible(true);
     }//GEN-LAST:event_dashboardBtnActionPerformed
 
     private void activityLogsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_activityLogsActionPerformed
@@ -344,7 +335,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        //new
+        new EmployeeDisputeFrame().setVisible(true);
     }//GEN-LAST:event_disputeDetailsActionPerformed
 
     private void leaveDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leaveDetailsBtnActionPerformed

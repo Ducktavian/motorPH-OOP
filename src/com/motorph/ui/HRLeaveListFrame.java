@@ -59,7 +59,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jPanel15 = new javax.swing.JPanel();
         jButton10 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
+        mainDashboardBtn = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jPanel16 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -390,7 +390,6 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         jPanel15.setBackground(new java.awt.Color(30, 58, 138));
 
@@ -401,13 +400,13 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
         jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton10.addActionListener(this::jButton10ActionPerformed);
 
-        jButton16.setBackground(new java.awt.Color(30, 42, 56));
-        jButton16.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(255, 255, 255));
-        jButton16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton16.setLabel("Main Dashboard");
-        jButton16.addActionListener(this::jButton16ActionPerformed);
+        mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        mainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        mainDashboardBtn.setLabel("Main Dashboard");
+        mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
@@ -424,7 +423,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
                     .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addGap(92, 92, 92)
-                .addComponent(jButton16))
+                .addComponent(mainDashboardBtn))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -436,7 +435,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
                         .addGap(189, 189, 189)
                         .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 370, Short.MAX_VALUE)
-                .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39))
         );
 
@@ -1133,9 +1132,11 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+        this.dispose();
+        new MainDashboardFrame().setVisible(true);
+    }//GEN-LAST:event_mainDashboardBtnActionPerformed
 
     private void jTextField133ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField133ActionPerformed
         // TODO add your handling code here:
@@ -1248,7 +1249,6 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton55;
     private javax.swing.JButton jButton56;
@@ -1340,5 +1340,6 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JButton mainDashboardBtn;
     // End of variables declaration//GEN-END:variables
 }

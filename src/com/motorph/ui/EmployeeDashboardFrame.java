@@ -31,7 +31,7 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         dashboardBtn = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        mainDashboardBtn = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -90,14 +90,14 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
         dashboardBtn.addActionListener(this::dashboardBtnActionPerformed);
         jPanel1.add(dashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
 
-        jButton9.setBackground(new java.awt.Color(30, 42, 56));
-        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton9.setLabel("Main Dashboard");
-        jButton9.addActionListener(this::jButton9ActionPerformed);
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        mainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        mainDashboardBtn.setLabel("Main Dashboard");
+        mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
+        jPanel1.add(mainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
 
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
@@ -618,9 +618,12 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
        
     }//GEN-LAST:event_dashboardBtnActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+        this.dispose();
+        
+        new MainDashboardFrame().setVisible(true);
+    }//GEN-LAST:event_mainDashboardBtnActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -739,7 +742,6 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JTextField hrField9;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -767,5 +769,6 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JButton mainDashboardBtn;
     // End of variables declaration//GEN-END:variables
 }
