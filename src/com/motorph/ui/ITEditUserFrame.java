@@ -354,7 +354,7 @@ public class ITEditUserFrame extends javax.swing.JFrame {
         jButton8.setBackground(new java.awt.Color(34, 197, 94));
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Activate");
+        jButton8.setText("Update");
         jButton8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         jButton8.addActionListener(this::jButton8ActionPerformed);
 

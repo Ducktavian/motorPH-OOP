@@ -28,20 +28,20 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        hrField2 = new javax.swing.JTextField();
+        employeeNumberField = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        hrField7 = new javax.swing.JTextField();
+        payrollPeriodField = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        hrField = new javax.swing.JTextField();
+        employeeNameField = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        hrField6 = new javax.swing.JTextField();
+        dailyRateField = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        hrField4 = new javax.swing.JTextField();
-        hrField3 = new javax.swing.JTextField();
-        hrField8 = new javax.swing.JTextField();
+        statusField = new javax.swing.JTextField();
+        employeePosition = new javax.swing.JTextField();
+        payrollDateField = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         maindDashboardBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -98,10 +98,10 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        hrField2.setForeground(new java.awt.Color(31, 41, 55));
-        hrField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField2.setEnabled(false);
-        hrField2.addActionListener(this::hrField2ActionPerformed);
+        employeeNumberField.setForeground(new java.awt.Color(31, 41, 55));
+        employeeNumberField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeNumberField.setEnabled(false);
+        employeeNumberField.addActionListener(this::employeeNumberFieldActionPerformed);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(31, 41, 55));
@@ -111,19 +111,19 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(31, 41, 55));
         jLabel16.setText("Payroll Date");
 
-        hrField7.setForeground(new java.awt.Color(31, 41, 55));
-        hrField7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField7.setEnabled(false);
-        hrField7.addActionListener(this::hrField7ActionPerformed);
+        payrollPeriodField.setForeground(new java.awt.Color(31, 41, 55));
+        payrollPeriodField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        payrollPeriodField.setEnabled(false);
+        payrollPeriodField.addActionListener(this::payrollPeriodFieldActionPerformed);
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(31, 41, 55));
         jLabel15.setText("Daily Rate");
 
-        hrField.setForeground(new java.awt.Color(31, 41, 55));
-        hrField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField.setEnabled(false);
-        hrField.addActionListener(this::hrFieldActionPerformed);
+        employeeNameField.setForeground(new java.awt.Color(31, 41, 55));
+        employeeNameField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeNameField.setEnabled(false);
+        employeeNameField.addActionListener(this::employeeNameFieldActionPerformed);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(31, 41, 55));
@@ -139,29 +139,29 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
         jLabel2.setText("Create a Payslip");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 200, 46));
 
-        hrField6.setForeground(new java.awt.Color(31, 41, 55));
-        hrField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField6.setEnabled(false);
-        hrField6.addActionListener(this::hrField6ActionPerformed);
+        dailyRateField.setForeground(new java.awt.Color(31, 41, 55));
+        dailyRateField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        dailyRateField.setEnabled(false);
+        dailyRateField.addActionListener(this::dailyRateFieldActionPerformed);
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(31, 41, 55));
         jLabel12.setText("Status");
 
-        hrField4.setForeground(new java.awt.Color(31, 41, 55));
-        hrField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField4.setEnabled(false);
-        hrField4.addActionListener(this::hrField4ActionPerformed);
+        statusField.setForeground(new java.awt.Color(31, 41, 55));
+        statusField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        statusField.setEnabled(false);
+        statusField.addActionListener(this::statusFieldActionPerformed);
 
-        hrField3.setForeground(new java.awt.Color(31, 41, 55));
-        hrField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField3.setEnabled(false);
-        hrField3.addActionListener(this::hrField3ActionPerformed);
+        employeePosition.setForeground(new java.awt.Color(31, 41, 55));
+        employeePosition.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePosition.setEnabled(false);
+        employeePosition.addActionListener(this::employeePositionActionPerformed);
 
-        hrField8.setForeground(new java.awt.Color(31, 41, 55));
-        hrField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField8.setEnabled(false);
-        hrField8.addActionListener(this::hrField8ActionPerformed);
+        payrollDateField.setForeground(new java.awt.Color(31, 41, 55));
+        payrollDateField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        payrollDateField.setEnabled(false);
+        payrollDateField.addActionListener(this::payrollDateFieldActionPerformed);
 
         jPanel1.setBackground(new java.awt.Color(30, 58, 138));
         jPanel1.setPreferredSize(new java.awt.Dimension(262, 700));
@@ -689,31 +689,31 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel9)
                                         .addGap(29, 29, 29)
-                                        .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(employeeNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(42, 42, 42)
                                         .addComponent(jLabel16)
                                         .addGap(39, 39, 39)
-                                        .addComponent(hrField8, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(payrollDateField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel10)
                                         .addGap(54, 54, 54)
-                                        .addComponent(hrField2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(employeeNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(42, 42, 42)
                                         .addComponent(jLabel14)
                                         .addGap(28, 28, 28)
-                                        .addComponent(hrField7, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(payrollPeriodField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel11)
                                         .addGap(86, 86, 86)
-                                        .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(employeePosition, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(42, 42, 42)
                                         .addComponent(jLabel15)
                                         .addGap(52, 52, 52)
-                                        .addComponent(hrField6, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(dailyRateField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel12)
                                         .addGap(99, 99, 99)
-                                        .addComponent(hrField4, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(statusField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(198, 198, 198)
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -730,8 +730,8 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrField8, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(payrollDateField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -739,8 +739,8 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
                             .addComponent(jLabel16))))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrField2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrField7, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(payrollPeriodField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -748,8 +748,8 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
                             .addComponent(jLabel14))))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrField6, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeePosition, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dailyRateField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -760,7 +760,7 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(jLabel12))
-                    .addComponent(hrField4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(statusField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
@@ -774,33 +774,33 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void hrField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField2ActionPerformed
+    private void employeeNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeNumberFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField2ActionPerformed
+    }//GEN-LAST:event_employeeNumberFieldActionPerformed
 
-    private void hrField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField7ActionPerformed
+    private void payrollPeriodFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payrollPeriodFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField7ActionPerformed
+    }//GEN-LAST:event_payrollPeriodFieldActionPerformed
 
-    private void hrFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrFieldActionPerformed
+    private void employeeNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeNameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrFieldActionPerformed
+    }//GEN-LAST:event_employeeNameFieldActionPerformed
 
-    private void hrField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField6ActionPerformed
+    private void dailyRateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dailyRateFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField6ActionPerformed
+    }//GEN-LAST:event_dailyRateFieldActionPerformed
 
-    private void hrField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField4ActionPerformed
+    private void statusFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField4ActionPerformed
+    }//GEN-LAST:event_statusFieldActionPerformed
 
-    private void hrField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField3ActionPerformed
+    private void employeePositionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePositionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField3ActionPerformed
+    }//GEN-LAST:event_employeePositionActionPerformed
 
-    private void hrField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField8ActionPerformed
+    private void payrollDateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payrollDateFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField8ActionPerformed
+    }//GEN-LAST:event_payrollDateFieldActionPerformed
 
     private void maindDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maindDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -923,7 +923,10 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel SearchIconImg;
-    private javax.swing.JTextField hrField;
+    private javax.swing.JTextField dailyRateField;
+    private javax.swing.JTextField employeeNameField;
+    private javax.swing.JTextField employeeNumberField;
+    private javax.swing.JTextField employeePosition;
     private javax.swing.JTextField hrField10;
     private javax.swing.JTextField hrField11;
     private javax.swing.JTextField hrField12;
@@ -934,18 +937,12 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
     private javax.swing.JTextField hrField17;
     private javax.swing.JTextField hrField18;
     private javax.swing.JTextField hrField19;
-    private javax.swing.JTextField hrField2;
     private javax.swing.JTextField hrField20;
     private javax.swing.JTextField hrField21;
     private javax.swing.JTextField hrField22;
     private javax.swing.JTextField hrField23;
     private javax.swing.JTextField hrField24;
-    private javax.swing.JTextField hrField3;
-    private javax.swing.JTextField hrField4;
     private javax.swing.JTextField hrField5;
-    private javax.swing.JTextField hrField6;
-    private javax.swing.JTextField hrField7;
-    private javax.swing.JTextField hrField8;
     private javax.swing.JTextField hrField9;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton5;
@@ -989,5 +986,8 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JButton maindDashboardBtn;
+    private javax.swing.JTextField payrollDateField;
+    private javax.swing.JTextField payrollPeriodField;
+    private javax.swing.JTextField statusField;
     // End of variables declaration//GEN-END:variables
 }

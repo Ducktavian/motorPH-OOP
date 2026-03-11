@@ -41,34 +41,34 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                                      <Component id="hrField" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="employeeNameField" min="-2" pref="158" max="-2" attributes="0"/>
                                       <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
                                       <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="39" pref="39" max="-2" attributes="0"/>
-                                      <Component id="hrField8" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="payrollDateField" min="-2" pref="158" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="54" pref="54" max="-2" attributes="0"/>
-                                      <Component id="hrField2" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="employeeNumberField" min="-2" pref="158" max="-2" attributes="0"/>
                                       <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
                                       <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
-                                      <Component id="hrField7" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="payrollPeriodField" min="-2" pref="158" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="86" pref="86" max="-2" attributes="0"/>
-                                      <Component id="hrField3" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="employeePosition" min="-2" pref="158" max="-2" attributes="0"/>
                                       <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
                                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
-                                      <Component id="hrField6" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="dailyRateField" min="-2" pref="158" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="99" pref="99" max="-2" attributes="0"/>
-                                      <Component id="hrField4" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="statusField" min="-2" pref="158" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -95,8 +95,8 @@
               </Group>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="hrField" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="hrField8" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="employeeNameField" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="payrollDateField" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -107,8 +107,8 @@
               </Group>
               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="hrField2" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="hrField7" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="employeeNumberField" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="payrollPeriodField" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -119,8 +119,8 @@
               </Group>
               <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="hrField3" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="hrField6" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="employeePosition" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="dailyRateField" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -135,7 +135,7 @@
                       <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                       <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="hrField4" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="statusField" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
@@ -151,7 +151,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="hrField2">
+    <Component class="javax.swing.JTextField" name="employeeNumberField">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -166,7 +166,7 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeNumberFieldActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
@@ -191,7 +191,7 @@
         <Property name="text" type="java.lang.String" value="Payroll Date"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="hrField7">
+    <Component class="javax.swing.JTextField" name="payrollPeriodField">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -206,7 +206,7 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="payrollPeriodFieldActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel15">
@@ -220,7 +220,7 @@
         <Property name="text" type="java.lang.String" value="Daily Rate"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="hrField">
+    <Component class="javax.swing.JTextField" name="employeeNameField">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -235,7 +235,7 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrFieldActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeNameFieldActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel14">
@@ -288,7 +288,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="hrField6">
+    <Component class="javax.swing.JTextField" name="dailyRateField">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -303,7 +303,7 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dailyRateFieldActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel12">
@@ -317,7 +317,7 @@
         <Property name="text" type="java.lang.String" value="Status"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="hrField4">
+    <Component class="javax.swing.JTextField" name="statusField">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -332,10 +332,10 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField4ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="statusFieldActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="hrField3">
+    <Component class="javax.swing.JTextField" name="employeePosition">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -350,10 +350,10 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePositionActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="hrField8">
+    <Component class="javax.swing.JTextField" name="payrollDateField">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -368,7 +368,7 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField8ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="payrollDateFieldActionPerformed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">
