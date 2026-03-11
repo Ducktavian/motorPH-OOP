@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.Session;
+
 /**
  *
  * @author Lenovo
@@ -17,6 +19,14 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
      */
     public EmployeeLeaveFrame() {
         initComponents();
+        
+        String role = Session.getCurrentUser().getRole().name();
+        
+        if (role.equals("HR")) {
+            this.leaveListBtn.setVisible(true);
+        } else {
+            this.leaveListBtn.setVisible(false);
+        }
     }
 
     /**
@@ -30,7 +40,7 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        leaveListBtn = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -78,13 +88,13 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
         jButton1.addActionListener(this::jButton1ActionPerformed);
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
 
-        jButton4.setBackground(new java.awt.Color(30, 42, 56));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Leave List");
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.addActionListener(this::jButton4ActionPerformed);
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
+        leaveListBtn.setBackground(new java.awt.Color(30, 42, 56));
+        leaveListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        leaveListBtn.setForeground(new java.awt.Color(255, 255, 255));
+        leaveListBtn.setText("Leave List");
+        leaveListBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        leaveListBtn.addActionListener(this::leaveListBtnActionPerformed);
+        jPanel1.add(leaveListBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
 
         jButton9.setBackground(new java.awt.Color(30, 42, 56));
         jButton9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -586,9 +596,9 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField33ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void leaveListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leaveListBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_leaveListBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -618,7 +628,6 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -652,5 +661,6 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField32;
     private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JButton leaveListBtn;
     // End of variables declaration//GEN-END:variables
 }

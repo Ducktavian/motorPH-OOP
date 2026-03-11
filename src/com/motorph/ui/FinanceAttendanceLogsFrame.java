@@ -8,14 +8,14 @@ package com.motorph.ui;
  *
  * @author Lenovo
  */
-public class FinanceDashboardFrame extends javax.swing.JFrame {
+public class FinanceAttendanceLogsFrame extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinanceDashboardFrame.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinanceAttendanceLogsFrame.class.getName());
 
     /**
      * Creates new form FinanceDashboardFrame
      */
-    public FinanceDashboardFrame() {
+    public FinanceAttendanceLogsFrame() {
         initComponents();
     }
 
@@ -431,7 +431,7 @@ public class FinanceDashboardFrame extends javax.swing.JFrame {
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel24)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -638,7 +638,7 @@ public class FinanceDashboardFrame extends javax.swing.JFrame {
             .addGroup(jPanel23Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel28)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         jPanel23Layout.setVerticalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -845,7 +845,7 @@ public class FinanceDashboardFrame extends javax.swing.JFrame {
             .addGroup(jPanel25Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel29)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         jPanel25Layout.setVerticalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1246,7 +1246,7 @@ public class FinanceDashboardFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FinanceDashboardFrame().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new FinanceAttendanceLogsFrame().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

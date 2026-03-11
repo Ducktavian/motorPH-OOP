@@ -8,14 +8,14 @@ package com.motorph.ui;
  *
  * @author Lenovo
  */
-public class FinanceAttendanceFrame extends javax.swing.JFrame {
+public class FinanceEditAttendanceLogsFrame extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinanceAttendanceFrame.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinanceEditAttendanceLogsFrame.class.getName());
 
     /**
      * Creates new form FinanceAttendanceFrame
      */
-    public FinanceAttendanceFrame() {
+    public FinanceEditAttendanceLogsFrame() {
         initComponents();
     }
 
@@ -55,7 +55,7 @@ public class FinanceAttendanceFrame extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(30, 42, 56));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Dashboard");
+        jButton1.setText("Attendance Logs");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.addActionListener(this::jButton1ActionPerformed);
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
@@ -63,7 +63,7 @@ public class FinanceAttendanceFrame extends javax.swing.JFrame {
         jButton4.setBackground(new java.awt.Color(30, 42, 56));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Attendance Logs");
+        jButton4.setText("Edit Attendance Logs");
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton4.addActionListener(this::jButton4ActionPerformed);
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
@@ -380,7 +380,7 @@ public class FinanceAttendanceFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FinanceAttendanceFrame().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new FinanceEditAttendanceLogsFrame().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

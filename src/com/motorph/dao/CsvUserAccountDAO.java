@@ -148,9 +148,7 @@ public class CsvUserAccountDAO implements UserAccountDAO {
             writer.writeNext(header);
 
             for (UserAccount user: allUsers) {
-                
-                
-
+  
                 String[] row = {
                     String.valueOf(user.getUserId()),
                     user.getEmployeeNumber(),

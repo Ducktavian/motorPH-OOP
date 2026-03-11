@@ -46,11 +46,6 @@ public class PasswordUtil {
            
         byte[] testHash = factory.generateSecret(spec).getEncoded();
         
-        System.out.println(Base64.getEncoder().encodeToString(originalHash));
-        System.out.println(Base64.getEncoder().encodeToString(testHash));
-        
-        System.out.println(java.util.Arrays.equals(originalHash, testHash) + "");
-        
         return java.util.Arrays.equals(originalHash, testHash);
         
     }

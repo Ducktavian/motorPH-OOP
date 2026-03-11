@@ -22,42 +22,55 @@ public class CsvPayslipDAO implements PayslipDAO {
     public CsvPayslipDAO() {
         
     }
+    
+    private void initializeFile() {
+           try {
+            File file = new File(FILE_PATH);
+            
+            // Create folder if missing
+            if (file.getParentFile() != null && !file.getParentFile().exists()) {
+                file.getParentFile().mkdirs();
+            }
+            
+            // if file is new: write header
+            if (!file.exists()) {
+                try(CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH))) {
+                     // if file is new: write header
+                    String[] header = {
+                        "payslipId",
+                        "employeeNumber",
+                        "position",
+                        "periodStart",
+                        "periodEnd",
+                        "totalHours",
+                        "hourlyRate",
+                        "grossPay",
+                        "riceSubsidy",
+                        "phoneAllowance",
+                        "clothingAllowance",
+                        "sss",
+                        "philhealth",
+                        "pagibig",
+                        "tax",
+                        "netPay"
+                    };
+                    writer.writeNext(header);
+                }            
+            }
+        } catch (Exception e) {
+            System.err.println("Could not initialize leave CSV: " + e.getMessage());
+        }
+    }
 
     public void savePayslip(Payslip payslip) {
         File file = new File(FILE_PATH);
         
-        // Create directory if it doesn't exist
-        if (file.getParentFile() != null && !file.getParentFile().exists()) {
-            file.getParentFile().mkdirs();
-        }
         
-        boolean fileExist = file.exists();
         
         try (CSVWriter writer = new CSVWriter(new FileWriter(file, true))) {
             
  
-            // if file is new: write header
-            if (!fileExist) {
-                String[] header = {
-                    "payslipId",
-                    "employeeNumber",
-                    "position",
-                    "periodStart",
-                    "periodEnd",
-                    "totalHours",
-                    "hourlyRate",
-                    "grossPay",
-                    "riceSubsidy",
-                    "phoneAllowance",
-                    "clothingAllowance",
-                    "sss",
-                    "philhealth",
-                    "pagibig",
-                    "tax",
-                    "netPay"
-                };
-                writer.writeNext(header);
-            }
+           
             
             // Check for nulls in nested objects to prevent NullPointerException
             AllowanceBreakdown allowances = payslip.getAllowanceBreakdown();
