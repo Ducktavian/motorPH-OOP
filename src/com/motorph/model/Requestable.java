@@ -14,7 +14,7 @@ interface Requestable {
     
     String getRequestId();
     
-    String getEmployeeId();
+    String getEmployeeNumber();
     
     LocalDate getDateFiled();
     

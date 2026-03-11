@@ -12,21 +12,35 @@ import java.util.List;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import java.io.FileReader;
+import java.io.File;
 import java.io.FileWriter;
 
 public class CsvEmployeeDAO implements EmployeeDAO {
     
-    private final String filePath = "employees.csv";
+    private final String FILE_PATH = "data/employees.csv";
     private static final int POSITION_INDEX = 11;
     private List<Employee> employees;
     
     // Constructor
     public CsvEmployeeDAO() {
-        employees = new ArrayList<>();
+        this.employees = new ArrayList<>();
+        ensureFileExists();
         loadEmployees();
-        
     }
     
+    private void ensureFileExists() {
+        try {
+            File file = new File(FILE_PATH);
+            if (file.getParentFile() != null && !file.getParentFile().exists()) {
+                file.getParentFile().mkdirs();
+            }
+            if (!file.exists()) {
+                saveAllEmployees();
+            }
+        } catch (Exception e) {
+            System.err.println("Initial file creation failed: " + e.getMessage());
+        }
+    }
     
     @Override
     public List<Employee> getAllEmployees() {
@@ -34,16 +48,18 @@ public class CsvEmployeeDAO implements EmployeeDAO {
     }
     
     private void loadEmployees() {
+        employees.clear();        
+        File file = new File(FILE_PATH);        
+        if (!file.exists()) return;
         
-        employees.clear();
-        
-        try (CSVReader reader = new CSVReader(new FileReader (filePath))) {
+        try (CSVReader reader = new CSVReader(new FileReader (FILE_PATH))) {
             
             String[] data;
-            reader.readNext();
+            reader.readNext(); // skips header
             
             while ((data = reader.readNext()) != null) {
                 
+                if (data.length < 17) continue; // skips malformed rows
                 
                 // Employee Creation
                 String employeeNumber = data[0];
@@ -60,16 +76,12 @@ public class CsvEmployeeDAO implements EmployeeDAO {
                 String position = data[POSITION_INDEX].toLowerCase();
                 String immediateSupervisor = data[12];
                 
-                
-                double basicSalary = Double.parseDouble(data[13].replace(",", ""));
-                double riceSubsidy = Double.parseDouble(data[14].replace(",", ""));
-                double phoneAllowance = Double.parseDouble(data[15].replace(",", ""));
-                double clothingAllowance = Double.parseDouble(data[16].replace(",", ""));
-               
-
+                double basicSalary = parseAmount(data[13]);
+                double riceSubsidy = parseAmount(data[14]);
+                double phoneAllowance = parseAmount(data[15]);
+                double clothingAllowance = parseAmount(data[16]);
                 
                 Employee employee;
-                
                 if (position.contains("hr")) {
                     employee = new HR(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
                 }
@@ -92,15 +104,20 @@ public class CsvEmployeeDAO implements EmployeeDAO {
         }
     }
     
-    // IDK
+    // helper to pasrse doubles
     private double parseAmount(String value) {
         if (value == null || value.equalsIgnoreCase("N/A") || value.isBlank()) {
             return 0.0;
         }
-        return Double.parseDouble(value.replace(",", ""));
+        try {
+            return Double.parseDouble(value.replace(",", ""));
+        } catch (NumberFormatException e) {
+            return 0.0;
+        }
     }
     
     // Returns employee
+    @Override
     public Employee findEmployee(String employeeNumber) {
         String searchKey = employeeNumber.trim();
         
@@ -114,64 +131,48 @@ public class CsvEmployeeDAO implements EmployeeDAO {
     
     @Override
     public void addEmployee(Employee employee) {
-        
         employees.add(employee);
-        
         saveAllEmployees();
     }
 
     @Override
     public void updateEmployee(Employee updatedEmployee) {
-        
         for (int i = 0; i < employees.size(); i++) {
             if (employees.get(i).getEmployeeNumber().equals(updatedEmployee.getEmployeeNumber())) {
-                 employees.set(i, updatedEmployee);
-                break; 
+                employees.set(i, updatedEmployee);
+                saveAllEmployees();
+                return;
             }
         }
-        
-        saveAllEmployees();
     }
 
     @Override
     public void deleteEmployee(String employeeNumber) {
+        if (employees.removeIf(emp -> emp.getEmployeeNumber().equals(employeeNumber))) {
+            saveAllEmployees();
+        }
         
-        employees.removeIf(emp -> emp.getEmployeeNumber().equals(employeeNumber));
-        
-        saveAllEmployees();
     }
 
     // Writes in the file
     private void saveAllEmployees() {
-
-        try (CSVWriter writer = new CSVWriter(new FileWriter(filePath))) {
-
+        try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH))) {
             String[] header = {
                 "Employee #","Last Name","First Name","Birthday","Address",
                 "Phone Number","SSS #","Philhealth #","TIN","Pag-ibig #",
                 "Status","Position","Immediate Supervisor",
                 "Basic Salary","Rice Subsidy","Phone Allowance","Clothing Allowance",
                 "Gross Semi-monthly Rate", "Hourly Rate"
-                
             };
-
             writer.writeNext(header);
 
             for (Employee emp : employees) {
 
                 String[] row = {
-                    emp.getEmployeeNumber(),
-                    emp.getLastName(),
-                    emp.getFirstName(),
-                    emp.getBirthday(),
-                    emp.getAddress(),
-                    emp.getPhoneNumber(),
-                    emp.getSSSNumber(),
-                    emp.getPhilhealthNumber(),
-                    emp.getTIN(),
-                    emp.getPagIbigNumber(),
-                    emp.getStatus(),
-                    emp.getPosition(),
+                    emp.getEmployeeNumber(),emp.getLastName(),emp.getFirstName(),
+                    emp.getBirthday(),emp.getAddress(),emp.getPhoneNumber(),
+                    emp.getSSSNumber(),emp.getPhilhealthNumber(),emp.getTIN(),
+                    emp.getPagIbigNumber(),emp.getStatus(),emp.getPosition(),
                     emp.getImmediateSupervisor(),
                     String.valueOf(emp.getBasicSalary()),
                     String.valueOf(emp.getRiceSubsidy()),
@@ -179,34 +180,30 @@ public class CsvEmployeeDAO implements EmployeeDAO {
                     String.valueOf(emp.getClothingAllowance()),
                     String.valueOf(emp.getSemiMonthlyRate()),
                     String.valueOf(emp.getHourlyRate())
-                        
                 };
-
                 writer.writeNext(row);
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
     
-    
+    // Use to auto-generate the employee number of a new employee
     public String generateNextEmployeeNumber() {
+        // If list is empty, start at a default (e.g., 10001)
+        if (employees.isEmpty()) {
+            return "10001"; 
+        }
+        
         int max = 0;
         
         for (Employee emp: employees) {
-            
             int current = Integer.parseInt(emp.getEmployeeNumber());
-            
             if (current > max) {
                 max = current;
             }
         }
-        
         int next = max + 1;
-        
         return String.valueOf(next);
     }
-    
-
 }

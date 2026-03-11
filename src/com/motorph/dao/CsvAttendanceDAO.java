@@ -14,7 +14,7 @@ import java.util.List;
 
 public class CsvAttendanceDAO implements AttendanceDAO {
     
-    private String filePath = "attendance.csv";
+    private final String FILE_PATH = "data/attendance.csv";
     
     private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("MM/dd/yyy");
     private static final DateTimeFormatter TIME_FORMAT = DateTimeFormatter.ofPattern("H:mm");
@@ -42,7 +42,7 @@ public class CsvAttendanceDAO implements AttendanceDAO {
     public List<AttendanceRecord> getAllAttendance() {
         List<AttendanceRecord> records = new ArrayList<>();
         
-        try (CSVReader reader = new CSVReader(new FileReader(filePath))) {
+        try (CSVReader reader = new CSVReader(new FileReader(FILE_PATH))) {
             String[] line;
             reader.readNext();
             

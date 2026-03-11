@@ -1,7 +1,7 @@
 
 package com.motorph.service;
 
-import com.motorph.dao.UserAccountDAO;
+import com.motorph.dao.CsvUserAccountDAO;
 import com.motorph.exception.UnauthorizedException;
 import com.motorph.model.Role;
 import com.motorph.model.UserAccount;
@@ -11,11 +11,11 @@ import java.util.List;
 
 public class UserManagementService {
     
-    private UserAccountDAO userDAO;
+    private CsvUserAccountDAO userDAO;
     
     // :)
     public UserManagementService() {
-        userDAO = new UserAccountDAO();
+        userDAO = new CsvUserAccountDAO();
     }
     
     // Authorize IT
