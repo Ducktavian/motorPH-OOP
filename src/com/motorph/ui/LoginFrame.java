@@ -44,7 +44,6 @@ public class LoginFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(146, 192, 253));
-        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LoginPanel.setBackground(new java.awt.Color(245, 247, 250));

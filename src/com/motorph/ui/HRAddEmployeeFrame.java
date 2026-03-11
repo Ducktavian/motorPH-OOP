@@ -72,7 +72,6 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         jComboBox2 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(30, 58, 138));
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -83,8 +82,6 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Add Employee Details");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 266, 46));
-
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 15, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(30, 58, 138));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -125,15 +122,12 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 700));
-
         jButton5.setBackground(new java.awt.Color(34, 197, 94));
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Activate");
         jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         jButton5.addActionListener(this::jButton5ActionPerformed);
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(871, 576, 110, 40));
 
         jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 2, true));
         jPanel3.setForeground(new java.awt.Color(31, 41, 55));
@@ -356,7 +350,8 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                             .addGap(18, 18, 18)
                             .addComponent(jLabel14)
                             .addGap(109, 109, 109)
-                            .addComponent(hrField28, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(hrField28, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -418,7 +413,32 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                     .addComponent(hrField31, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 74, 707, 490));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(597, 597, 597)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 707, Short.MAX_VALUE))
+                .addGap(9, 9, 9))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         pack();
         setLocationRelativeTo(null);

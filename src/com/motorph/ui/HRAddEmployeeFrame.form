@@ -21,8 +21,37 @@
     <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-68,0,0,3,-24"/>
   </AuxValues>
 
-  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-    <Property name="useNullLayout" type="boolean" value="false"/>
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="597" pref="597" max="-2" attributes="0"/>
+                      <Component id="jButton5" min="-2" pref="110" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jPanel3" alignment="0" pref="707" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" min="-2" pref="700" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+              <Component id="jPanel3" min="-2" pref="490" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jButton5" min="-2" pref="40" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="jPanel2">
@@ -41,11 +70,6 @@
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="274" y="15" width="-1" height="-1"/>
-        </Constraint>
-      </Constraints>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
@@ -75,11 +99,6 @@
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="-1" height="700"/>
-        </Constraint>
-      </Constraints>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
@@ -215,11 +234,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
       </Events>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="871" y="576" width="110" height="40"/>
-        </Constraint>
-      </Constraints>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel3">
       <Properties>
@@ -239,11 +253,6 @@
         </Property>
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="274" y="74" width="707" height="490"/>
-        </Constraint>
-      </Constraints>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -327,6 +336,7 @@
                           </Group>
                       </Group>
                   </Group>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

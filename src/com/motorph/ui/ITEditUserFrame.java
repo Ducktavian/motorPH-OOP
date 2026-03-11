@@ -57,7 +57,8 @@ public class ITEditUserFrame extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -107,7 +108,7 @@ public class ITEditUserFrame extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel19.setText("Department");
+        jLabel19.setText("Phone Number");
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(31, 41, 55));
@@ -350,26 +351,35 @@ public class ITEditUserFrame extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jButton5.setBackground(new java.awt.Color(34, 197, 94));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Update");
-        jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton5.addActionListener(this::jButton5ActionPerformed);
+        jButton8.setBackground(new java.awt.Color(34, 197, 94));
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("Activate");
+        jButton8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        jButton8.addActionListener(this::jButton8ActionPerformed);
+
+        jButton10.setBackground(new java.awt.Color(30, 58, 138));
+        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
+        jButton10.setText("Send Account");
+        jButton10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        jButton10.addActionListener(this::jButton10ActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -379,8 +389,10 @@ public class ITEditUserFrame extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -440,9 +452,13 @@ public class ITEditUserFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -479,10 +495,11 @@ public class ITEditUserFrame extends javax.swing.JFrame {
     private javax.swing.JTextField hrField3;
     private javax.swing.JTextField hrField5;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
