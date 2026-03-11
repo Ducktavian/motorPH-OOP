@@ -149,9 +149,7 @@ public class CsvUserAccountDAO implements UserAccountDAO {
 
             for (UserAccount user: allUsers) {
                 
-                String passwordHash = PasswordUtil.hashPassword("password");
                 
-                user.setPasswordHash(passwordHash);
 
                 String[] row = {
                     String.valueOf(user.getUserId()),

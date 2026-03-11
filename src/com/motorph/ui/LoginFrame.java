@@ -159,6 +159,8 @@ public class LoginFrame extends javax.swing.JFrame {
         AuthService authService = new AuthService();
         
         try {
+            
+            
             UserAccount user = authService.login(username, password);
             
             Session.setCurrentUser(user);

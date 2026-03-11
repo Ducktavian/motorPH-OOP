@@ -18,14 +18,13 @@ public class AuthService {
         
         UserAccount user = userAccountDAO.findByUsername(username);
         
-        
         if (user == null) {
             System.out.println("User not found.");
             throw new Exception("User not found.");
         }
         
         // Checks passowrd
-        if (PasswordUtil.verifyPassword(password, user.getPasswordHash())) {
+        if (!PasswordUtil.verifyPassword(password, user.getPasswordHash())) {
             System.out.println("Invalid password.");
             throw new Exception("Invalid password.");
         }
