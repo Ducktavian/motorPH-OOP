@@ -28,171 +28,176 @@ public class FinanceAttendanceLogsFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        mainDashboardBtn = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        MotorPHIconImgLbl = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
-        SearchIconImg = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jPanel14 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel13 = new javax.swing.JPanel();
-        jLabel25 = new javax.swing.JLabel();
-        jPanel16 = new javax.swing.JPanel();
-        jPanel17 = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jLabel55 = new javax.swing.JLabel();
-        jTextField27 = new javax.swing.JTextField();
-        jLabel56 = new javax.swing.JLabel();
-        jTextField29 = new javax.swing.JTextField();
-        jLabel57 = new javax.swing.JLabel();
-        jLabel58 = new javax.swing.JLabel();
-        jTextField31 = new javax.swing.JTextField();
-        jTextField32 = new javax.swing.JTextField();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField41 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField50 = new javax.swing.JTextField();
-        jPanel18 = new javax.swing.JPanel();
-        jPanel19 = new javax.swing.JPanel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel68 = new javax.swing.JLabel();
-        jLabel69 = new javax.swing.JLabel();
-        jTextField28 = new javax.swing.JTextField();
-        jLabel77 = new javax.swing.JLabel();
-        jTextField30 = new javax.swing.JTextField();
-        jLabel78 = new javax.swing.JLabel();
-        jLabel79 = new javax.swing.JLabel();
-        jTextField42 = new javax.swing.JTextField();
-        jTextField43 = new javax.swing.JTextField();
-        jLabel80 = new javax.swing.JLabel();
-        jLabel81 = new javax.swing.JLabel();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField44 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField51 = new javax.swing.JTextField();
-        jPanel20 = new javax.swing.JPanel();
-        jPanel21 = new javax.swing.JPanel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel82 = new javax.swing.JLabel();
-        jLabel83 = new javax.swing.JLabel();
-        jTextField45 = new javax.swing.JTextField();
-        jLabel84 = new javax.swing.JLabel();
-        jTextField46 = new javax.swing.JTextField();
-        jLabel85 = new javax.swing.JLabel();
-        jLabel86 = new javax.swing.JLabel();
-        jTextField47 = new javax.swing.JTextField();
-        jTextField48 = new javax.swing.JTextField();
-        jLabel87 = new javax.swing.JLabel();
-        jLabel88 = new javax.swing.JLabel();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField49 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField52 = new javax.swing.JTextField();
+        financeAttLogsSidebarPnl = new javax.swing.JPanel();
+        financeAttLogsMainDashboardBtn = new javax.swing.JButton();
+        financeAttLogsAttLogsBtn = new javax.swing.JButton();
+        financeAttLogsMotorPHIconImgLbl = new javax.swing.JLabel();
+        financeAttLogsSearchPnl = new javax.swing.JPanel();
+        financeAttLogsEENumberFld = new javax.swing.JTextField();
+        financeAttLogsSearchIconImgLbl = new javax.swing.JLabel();
+        financeAttLogsEDetailsPnl = new javax.swing.JPanel();
+        financeAttLogsEDetailsLbl = new javax.swing.JLabel();
+        financeAttLogsAttLogsBrdrPnl = new javax.swing.JPanel();
+        financeAttLogsAttLogsScrlPnl = new javax.swing.JScrollPane();
+        financeAttLogsAttLogsTbl = new javax.swing.JTable();
+        financeAttLogsAttLogsPnl = new javax.swing.JPanel();
+        financeAttLogsAttLogsLbl = new javax.swing.JLabel();
+        financeAttLogsEditBtn = new javax.swing.JButton();
+        financeAttLogsDListBrdrScrlPnl = new javax.swing.JScrollPane();
+        financeAttLogsDListBrdrPnl = new javax.swing.JPanel();
+        financeAttLogsDListPnl = new javax.swing.JPanel();
+        financeAttLogsDListLbl = new javax.swing.JLabel();
+        financeAttLogsFADisputeBrdrPnl1 = new javax.swing.JPanel();
+        financeAttLogsFADisputePnl1 = new javax.swing.JPanel();
+        financeAttLogsFADisputeLbl1 = new javax.swing.JLabel();
+        financeAttLogsPositionLbl1 = new javax.swing.JLabel();
+        financeAttLogsPrlDateLbl1 = new javax.swing.JLabel();
+        financeAttLogsENameFld1 = new javax.swing.JTextField();
+        financeAttLogsReasonLbl1 = new javax.swing.JLabel();
+        financeAttLogsReasonFld1 = new javax.swing.JTextField();
+        financeAttLogsStatusLbl1 = new javax.swing.JLabel();
+        financeAttLogsPrlPeiodLbl1 = new javax.swing.JLabel();
+        financeAttLogsENumberFld1 = new javax.swing.JTextField();
+        financeAttLogsPositionFld1 = new javax.swing.JTextField();
+        financeAttLogsENumberLbl1 = new javax.swing.JLabel();
+        financeAttLogsENameLbl1 = new javax.swing.JLabel();
+        financeAttLogsDenyBtn1 = new javax.swing.JButton();
+        financeAttLogsApproveBtn1 = new javax.swing.JButton();
+        financeAttLogsStatusFld1 = new javax.swing.JTextField();
+        financeAttLogsPrlDateFld1 = new javax.swing.JTextField();
+        financeAttLogsTicketFld1 = new javax.swing.JTextField();
+        financeAttLogsPrlPeiodFld1 = new javax.swing.JTextField();
+        financeAttLogsFADisputeBrdrPnl2 = new javax.swing.JPanel();
+        financeAttLogsFADisputePnl2 = new javax.swing.JPanel();
+        financeAttLogsFADisputeLbl2 = new javax.swing.JLabel();
+        financeAttLogsPositionLbl2 = new javax.swing.JLabel();
+        financeAttLogsPrlDateLbl2 = new javax.swing.JLabel();
+        financeAttLogsENameFld2 = new javax.swing.JTextField();
+        financeAttLogsReasonLbl2 = new javax.swing.JLabel();
+        financeAttLogsReasonFld2 = new javax.swing.JTextField();
+        financeAttLogsStatusLbl2 = new javax.swing.JLabel();
+        financeAttLogsPrlPeiodLbl2 = new javax.swing.JLabel();
+        financeAttLogsENumberFld2 = new javax.swing.JTextField();
+        financeAttLogsPositionFld2 = new javax.swing.JTextField();
+        financeAttLogsENumberLbl2 = new javax.swing.JLabel();
+        financeAttLogsENameLbl2 = new javax.swing.JLabel();
+        financeAttLogsDenyBtn2 = new javax.swing.JButton();
+        financeAttLogsApproveBtn2 = new javax.swing.JButton();
+        financeAttLogsStatusFld2 = new javax.swing.JTextField();
+        financeAttLogsPrlDateFld2 = new javax.swing.JTextField();
+        financeAttLogsTicketFld2 = new javax.swing.JTextField();
+        financeAttLogsPrlPeiodFld2 = new javax.swing.JTextField();
+        financeAttLogsFADisputeBrdrPnl3 = new javax.swing.JPanel();
+        financeAttLogsFADisputePnl3 = new javax.swing.JPanel();
+        financeAttLogsFADisputeLbl3 = new javax.swing.JLabel();
+        financeAttLogsPositionLbl3 = new javax.swing.JLabel();
+        financeAttLogsPrlDateLbl3 = new javax.swing.JLabel();
+        financeAttLogsENameFld3 = new javax.swing.JTextField();
+        financeAttLogsReasonLbl3 = new javax.swing.JLabel();
+        financeAttLogsReasonFld3 = new javax.swing.JTextField();
+        financeAttLogsStatusLbl3 = new javax.swing.JLabel();
+        financeAttLogsPrlPeiodLbl3 = new javax.swing.JLabel();
+        financeAttLogsENumberFld3 = new javax.swing.JTextField();
+        financeAttLogsPositionFld3 = new javax.swing.JTextField();
+        financeAttLogsENumberLbl3 = new javax.swing.JLabel();
+        financeAttLogsENameLbl3 = new javax.swing.JLabel();
+        financeAttLogsDenyBtn3 = new javax.swing.JButton();
+        financeAttLogsApproveBtn3 = new javax.swing.JButton();
+        financeAttLogsStatusFld3 = new javax.swing.JTextField();
+        financeAttLogsPrlDateFld3 = new javax.swing.JTextField();
+        financeAttLogsTicketFld3 = new javax.swing.JTextField();
+        financeAttLogsPrlPeiodFld3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(30, 58, 138));
+        financeAttLogsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setLabel("Main Dashboard");
-        mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
+        financeAttLogsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        financeAttLogsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financeAttLogsMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        financeAttLogsMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        financeAttLogsMainDashboardBtn.setLabel("Main Dashboard");
+        financeAttLogsMainDashboardBtn.addActionListener(this::financeAttLogsMainDashboardBtnActionPerformed);
 
-        jButton2.setBackground(new java.awt.Color(30, 42, 56));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Attendance Logs");
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.addActionListener(this::jButton2ActionPerformed);
+        financeAttLogsAttLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        financeAttLogsAttLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financeAttLogsAttLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsAttLogsBtn.setText("Attendance Logs");
+        financeAttLogsAttLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        financeAttLogsAttLogsBtn.addActionListener(this::financeAttLogsAttLogsBtnActionPerformed);
 
-        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        financeAttLogsMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout financeAttLogsSidebarPnlLayout = new javax.swing.GroupLayout(financeAttLogsSidebarPnl);
+        financeAttLogsSidebarPnl.setLayout(financeAttLogsSidebarPnlLayout);
+        financeAttLogsSidebarPnlLayout.setHorizontalGroup(
+            financeAttLogsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsSidebarPnlLayout.createSequentialGroup()
                 .addGap(92, 92, 92)
-                .addComponent(mainDashboardBtn))
-            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(financeAttLogsMainDashboardBtn))
+            .addGroup(financeAttLogsSidebarPnlLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(financeAttLogsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsSidebarPnlLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(MotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(financeAttLogsMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financeAttLogsAttLogsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        financeAttLogsSidebarPnlLayout.setVerticalGroup(
+            financeAttLogsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsSidebarPnlLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(MotorPHIconImgLbl)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(financeAttLogsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financeAttLogsMotorPHIconImgLbl)
+                    .addGroup(financeAttLogsSidebarPnlLayout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(financeAttLogsAttLogsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(mainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
         );
 
-        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
+        financeAttLogsMainDashboardBtn.getAccessibleContext().setAccessibleName("financeAttLogsMainDashboardBtn");
+        financeAttLogsAttLogsBtn.getAccessibleContext().setAccessibleName("financeAttLogsAttLogsBtn");
+        financeAttLogsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("financeAttLogsMotorPHIconImgLbl");
 
-        jPanel6.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel6.setForeground(new java.awt.Color(146, 192, 253));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        financeAttLogsSearchPnl.setBackground(new java.awt.Color(146, 192, 253));
+        financeAttLogsSearchPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsSearchPnl.setForeground(new java.awt.Color(146, 192, 253));
+        financeAttLogsSearchPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField3.setText("   Enter Employee ID");
-        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField3.addActionListener(this::jTextField3ActionPerformed);
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+        financeAttLogsEENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financeAttLogsEENumberFld.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsEENumberFld.setText("   Enter Employee #");
+        financeAttLogsEENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsEENumberFld.addActionListener(this::financeAttLogsEENumberFldActionPerformed);
+        financeAttLogsSearchPnl.add(financeAttLogsEENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+        financeAttLogsEENumberFld.getAccessibleContext().setAccessibleName("financeAttLogsEENumberFld");
 
-        SearchIconImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
-        jPanel6.add(SearchIconImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+        financeAttLogsSearchIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
+        financeAttLogsSearchPnl.add(financeAttLogsSearchIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+        financeAttLogsSearchIconImgLbl.getAccessibleContext().setAccessibleName("financeAttLogsSearchIconImgLbl");
 
-        jPanel2.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel2.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        financeAttLogsEDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financeAttLogsEDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsEDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        financeAttLogsEDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Employee Details");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 211, 46));
+        financeAttLogsEDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        financeAttLogsEDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsEDetailsLbl.setText("Employee Details");
+        financeAttLogsEDetailsPnl.add(financeAttLogsEDetailsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 211, 46));
+        financeAttLogsEDetailsLbl.getAccessibleContext().setAccessibleName("financeAttLogsEDetailsLbl");
 
-        jPanel3.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        financeAttLogsAttLogsBrdrPnl.setBackground(new java.awt.Color(146, 192, 253));
+        financeAttLogsAttLogsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jScrollPane1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsAttLogsScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        jTable1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTable1.setForeground(new java.awt.Color(30, 42, 56));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        financeAttLogsAttLogsTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsAttLogsTbl.setForeground(new java.awt.Color(30, 42, 56));
+        financeAttLogsAttLogsTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -307,748 +312,830 @@ public class FinanceAttendanceLogsFrame extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jTable1.setGridColor(new java.awt.Color(178, 178, 178));
-        jTable1.setSelectionForeground(new java.awt.Color(30, 42, 56));
-        jScrollPane1.setViewportView(jTable1);
+        financeAttLogsAttLogsTbl.setGridColor(new java.awt.Color(178, 178, 178));
+        financeAttLogsAttLogsTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
+        financeAttLogsAttLogsScrlPnl.setViewportView(financeAttLogsAttLogsTbl);
+        financeAttLogsAttLogsTbl.getAccessibleContext().setAccessibleName("financeAttLogsAttLogsTbl");
 
-        jPanel14.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel14.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel14.setPreferredSize(new java.awt.Dimension(126, 40));
+        financeAttLogsAttLogsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financeAttLogsAttLogsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsAttLogsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        financeAttLogsAttLogsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        jLabel23.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("Attendance Logs");
-        jLabel23.setToolTipText("");
+        financeAttLogsAttLogsLbl.setBackground(new java.awt.Color(255, 255, 255));
+        financeAttLogsAttLogsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        financeAttLogsAttLogsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsAttLogsLbl.setText("Attendance Logs");
+        financeAttLogsAttLogsLbl.setToolTipText("");
 
-        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
-        jPanel14.setLayout(jPanel14Layout);
-        jPanel14Layout.setHorizontalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
+        javax.swing.GroupLayout financeAttLogsAttLogsPnlLayout = new javax.swing.GroupLayout(financeAttLogsAttLogsPnl);
+        financeAttLogsAttLogsPnl.setLayout(financeAttLogsAttLogsPnlLayout);
+        financeAttLogsAttLogsPnlLayout.setHorizontalGroup(
+            financeAttLogsAttLogsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsAttLogsPnlLayout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(financeAttLogsAttLogsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel14Layout.setVerticalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+        financeAttLogsAttLogsPnlLayout.setVerticalGroup(
+            financeAttLogsAttLogsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(financeAttLogsAttLogsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        jButton5.setBackground(new java.awt.Color(59, 130, 246));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Edit");
-        jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton5.addActionListener(this::jButton5ActionPerformed);
+        financeAttLogsAttLogsLbl.getAccessibleContext().setAccessibleName("financeAttLogsAttLogsLbl");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        financeAttLogsEditBtn.setBackground(new java.awt.Color(59, 130, 246));
+        financeAttLogsEditBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financeAttLogsEditBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsEditBtn.setText("Edit");
+        financeAttLogsEditBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsEditBtn.addActionListener(this::financeAttLogsEditBtnActionPerformed);
+
+        javax.swing.GroupLayout financeAttLogsAttLogsBrdrPnlLayout = new javax.swing.GroupLayout(financeAttLogsAttLogsBrdrPnl);
+        financeAttLogsAttLogsBrdrPnl.setLayout(financeAttLogsAttLogsBrdrPnlLayout);
+        financeAttLogsAttLogsBrdrPnlLayout.setHorizontalGroup(
+            financeAttLogsAttLogsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsAttLogsBrdrPnlLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 666, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(financeAttLogsAttLogsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financeAttLogsAttLogsScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 666, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsAttLogsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(financeAttLogsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(155, 155, 155)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(financeAttLogsAttLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        financeAttLogsAttLogsBrdrPnlLayout.setVerticalGroup(
+            financeAttLogsAttLogsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsAttLogsBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsAttLogsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(financeAttLogsAttLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsAttLogsScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12))
         );
 
-        jScrollPane2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        financeAttLogsAttLogsScrlPnl.getAccessibleContext().setAccessibleName("financeAttLogsAttLogsScrlPnl");
+        financeAttLogsAttLogsPnl.getAccessibleContext().setAccessibleName("financeAttLogsAttLogsPnl");
+        financeAttLogsEditBtn.getAccessibleContext().setAccessibleName("financeAttLogsEditBtn");
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setForeground(new java.awt.Color(30, 42, 56));
+        financeAttLogsDListBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jPanel13.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel13.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel13.setPreferredSize(new java.awt.Dimension(126, 40));
+        financeAttLogsDListBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
+        financeAttLogsDListBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
 
-        jLabel25.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel25.setText("Dispute List");
-        jLabel25.setToolTipText("");
+        financeAttLogsDListPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financeAttLogsDListPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsDListPnl.setForeground(new java.awt.Color(30, 58, 138));
+        financeAttLogsDListPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
+        financeAttLogsDListLbl.setBackground(new java.awt.Color(255, 255, 255));
+        financeAttLogsDListLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        financeAttLogsDListLbl.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsDListLbl.setText("Dispute List");
+        financeAttLogsDListLbl.setToolTipText("");
+
+        javax.swing.GroupLayout financeAttLogsDListPnlLayout = new javax.swing.GroupLayout(financeAttLogsDListPnl);
+        financeAttLogsDListPnl.setLayout(financeAttLogsDListPnlLayout);
+        financeAttLogsDListPnlLayout.setHorizontalGroup(
+            financeAttLogsDListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsDListPnlLayout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(financeAttLogsDListLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
+        financeAttLogsDListPnlLayout.setVerticalGroup(
+            financeAttLogsDListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsDListPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel25)
+                .addComponent(financeAttLogsDListLbl)
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        jPanel16.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel16.setForeground(new java.awt.Color(178, 178, 178));
+        financeAttLogsDListLbl.getAccessibleContext().setAccessibleName("financeAttLogsDListLbl");
 
-        jPanel17.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel17.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel17.setPreferredSize(new java.awt.Dimension(126, 40));
+        financeAttLogsFADisputeBrdrPnl1.setBackground(new java.awt.Color(233, 233, 233));
+        financeAttLogsFADisputeBrdrPnl1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsFADisputeBrdrPnl1.setForeground(new java.awt.Color(178, 178, 178));
 
-        jLabel24.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel24.setText("File A Dispute");
-        jLabel24.setToolTipText("");
+        financeAttLogsFADisputePnl1.setBackground(new java.awt.Color(146, 192, 253));
+        financeAttLogsFADisputePnl1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsFADisputePnl1.setForeground(new java.awt.Color(30, 58, 138));
+        financeAttLogsFADisputePnl1.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
-        jPanel17.setLayout(jPanel17Layout);
-        jPanel17Layout.setHorizontalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel17Layout.createSequentialGroup()
+        financeAttLogsFADisputeLbl1.setBackground(new java.awt.Color(255, 255, 255));
+        financeAttLogsFADisputeLbl1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        financeAttLogsFADisputeLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsFADisputeLbl1.setText("File A Dispute");
+        financeAttLogsFADisputeLbl1.setToolTipText("");
+
+        javax.swing.GroupLayout financeAttLogsFADisputePnl1Layout = new javax.swing.GroupLayout(financeAttLogsFADisputePnl1);
+        financeAttLogsFADisputePnl1.setLayout(financeAttLogsFADisputePnl1Layout);
+        financeAttLogsFADisputePnl1Layout.setHorizontalGroup(
+            financeAttLogsFADisputePnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsFADisputePnl1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel24)
+                .addComponent(financeAttLogsFADisputeLbl1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel17Layout.setVerticalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
-                .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        financeAttLogsFADisputePnl1Layout.setVerticalGroup(
+            financeAttLogsFADisputePnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeAttLogsFADisputePnl1Layout.createSequentialGroup()
+                .addComponent(financeAttLogsFADisputeLbl1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jLabel54.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel54.setText("Position");
+        financeAttLogsFADisputeLbl1.getAccessibleContext().setAccessibleName("financeAttLogsFADisputeLbl1");
 
-        jLabel55.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel55.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel55.setText("Payroll Date");
+        financeAttLogsPositionLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsPositionLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPositionLbl1.setText("Position");
 
-        jTextField27.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField27.setText(" ");
-        jTextField27.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField27.setEnabled(false);
-        jTextField27.addActionListener(this::jTextField27ActionPerformed);
+        financeAttLogsPrlDateLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsPrlDateLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlDateLbl1.setText("Payroll Date");
 
-        jLabel56.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel56.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel56.setText("Reason");
+        financeAttLogsENameFld1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENameFld1.setText(" ");
+        financeAttLogsENameFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsENameFld1.setEnabled(false);
+        financeAttLogsENameFld1.addActionListener(this::financeAttLogsENameFld1ActionPerformed);
 
-        jTextField29.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField29.setText(" ");
-        jTextField29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField29.setEnabled(false);
-        jTextField29.addActionListener(this::jTextField29ActionPerformed);
+        financeAttLogsReasonLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsReasonLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsReasonLbl1.setText("Reason");
 
-        jLabel57.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel57.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel57.setText("Status");
+        financeAttLogsReasonFld1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsReasonFld1.setText(" ");
+        financeAttLogsReasonFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsReasonFld1.setEnabled(false);
+        financeAttLogsReasonFld1.addActionListener(this::financeAttLogsReasonFld1ActionPerformed);
 
-        jLabel58.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel58.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel58.setText("Payroll Period");
+        financeAttLogsStatusLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsStatusLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsStatusLbl1.setText("Status");
 
-        jTextField31.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField31.setText(" ");
-        jTextField31.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField31.setEnabled(false);
-        jTextField31.addActionListener(this::jTextField31ActionPerformed);
+        financeAttLogsPrlPeiodLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsPrlPeiodLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlPeiodLbl1.setText("Payroll Period");
 
-        jTextField32.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField32.setText(" ");
-        jTextField32.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField32.setEnabled(false);
-        jTextField32.addActionListener(this::jTextField32ActionPerformed);
+        financeAttLogsENumberFld1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENumberFld1.setText(" ");
+        financeAttLogsENumberFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsENumberFld1.setEnabled(false);
+        financeAttLogsENumberFld1.addActionListener(this::financeAttLogsENumberFld1ActionPerformed);
 
-        jLabel59.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel59.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel59.setText("Employee #");
+        financeAttLogsPositionFld1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPositionFld1.setText(" ");
+        financeAttLogsPositionFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPositionFld1.setEnabled(false);
+        financeAttLogsPositionFld1.addActionListener(this::financeAttLogsPositionFld1ActionPerformed);
 
-        jLabel60.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel60.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel60.setText("Employee Name");
+        financeAttLogsENumberLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsENumberLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENumberLbl1.setText("Employee #");
 
-        jButton11.setBackground(new java.awt.Color(239, 68, 68));
-        jButton11.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setText("Deny");
-        jButton11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton11.addActionListener(this::jButton11ActionPerformed);
+        financeAttLogsENameLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsENameLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENameLbl1.setText("Employee Name");
 
-        jButton10.setBackground(new java.awt.Color(34, 197, 94));
-        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("Approve");
-        jButton10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton10.addActionListener(this::jButton10ActionPerformed);
+        financeAttLogsDenyBtn1.setBackground(new java.awt.Color(239, 68, 68));
+        financeAttLogsDenyBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financeAttLogsDenyBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsDenyBtn1.setText("Deny");
+        financeAttLogsDenyBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financeAttLogsDenyBtn1.addActionListener(this::financeAttLogsDenyBtn1ActionPerformed);
 
-        jTextField1.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField1.setEnabled(false);
+        financeAttLogsApproveBtn1.setBackground(new java.awt.Color(34, 197, 94));
+        financeAttLogsApproveBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financeAttLogsApproveBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsApproveBtn1.setText("Approve");
+        financeAttLogsApproveBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financeAttLogsApproveBtn1.addActionListener(this::financeAttLogsApproveBtn1ActionPerformed);
 
-        jTextField41.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField41.setText(" ");
-        jTextField41.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField41.setEnabled(false);
-        jTextField41.addActionListener(this::jTextField41ActionPerformed);
+        financeAttLogsStatusFld1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsStatusFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsStatusFld1.setEnabled(false);
 
-        jTextField5.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField5.setEnabled(false);
+        financeAttLogsPrlDateFld1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlDateFld1.setText(" ");
+        financeAttLogsPrlDateFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPrlDateFld1.setEnabled(false);
+        financeAttLogsPrlDateFld1.addActionListener(this::financeAttLogsPrlDateFld1ActionPerformed);
 
-        jTextField50.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField50.setText(" ");
-        jTextField50.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField50.setEnabled(false);
-        jTextField50.addActionListener(this::jTextField50ActionPerformed);
+        financeAttLogsTicketFld1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsTicketFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsTicketFld1.setEnabled(false);
 
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
+        financeAttLogsPrlPeiodFld1.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlPeiodFld1.setText(" ");
+        financeAttLogsPrlPeiodFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPrlPeiodFld1.setEnabled(false);
+        financeAttLogsPrlPeiodFld1.addActionListener(this::financeAttLogsPrlPeiodFld1ActionPerformed);
+
+        javax.swing.GroupLayout financeAttLogsFADisputeBrdrPnl1Layout = new javax.swing.GroupLayout(financeAttLogsFADisputeBrdrPnl1);
+        financeAttLogsFADisputeBrdrPnl1.setLayout(financeAttLogsFADisputeBrdrPnl1Layout);
+        financeAttLogsFADisputeBrdrPnl1Layout.setHorizontalGroup(
+            financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel16Layout.createSequentialGroup()
-                            .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+                            .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(financeAttLogsPrlDateLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financeAttLogsFADisputePnl1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financeAttLogsENumberLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(20, 20, 20))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
-                            .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeAttLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+                            .addComponent(financeAttLogsENameLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+                        .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(financeAttLogsPrlPeiodLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financeAttLogsPositionLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(23, 23, 23)))
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField32, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                        .addComponent(jTextField31, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField27, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(financeAttLogsPositionFld1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                        .addComponent(financeAttLogsENumberFld1, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(financeAttLogsENameFld1, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(financeAttLogsTicketFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsPrlDateFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsPrlPeiodFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel16Layout.createSequentialGroup()
-                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financeAttLogsReasonLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+                            .addComponent(financeAttLogsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(32, 32, 32)
-                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel16Layout.createSequentialGroup()
-                                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financeAttLogsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+                                .addComponent(financeAttLogsStatusLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(83, 83, 83)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(financeAttLogsStatusFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(financeAttLogsReasonFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18))
         );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
+        financeAttLogsFADisputeBrdrPnl1Layout.setVerticalGroup(
+            financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(financeAttLogsFADisputePnl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(financeAttLogsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsTicketFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel60)
-                    .addComponent(jLabel57)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financeAttLogsENameFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsENameLbl1)
+                    .addComponent(financeAttLogsStatusLbl1)
+                    .addComponent(financeAttLogsStatusFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel56)
-                    .addComponent(jLabel59))
+                .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financeAttLogsENumberFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsReasonLbl1)
+                    .addComponent(financeAttLogsENumberLbl1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel54)
-                            .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+                        .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financeAttLogsPositionFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financeAttLogsPositionLbl1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel55)
+                        .addComponent(financeAttLogsPrlDateLbl1)
                         .addGap(13, 13, 13)
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel58)
-                            .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financeAttLogsPrlPeiodLbl1)
+                            .addComponent(financeAttLogsPrlPeiodFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(financeAttLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(financeAttLogsReasonFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsPrlDateFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jPanel18.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel18.setForeground(new java.awt.Color(178, 178, 178));
+        financeAttLogsFADisputePnl1.getAccessibleContext().setAccessibleName("financeAttLogsFADisputePnl1");
+        financeAttLogsPositionLbl1.getAccessibleContext().setAccessibleName("financeAttLogsPositionLbl1");
+        financeAttLogsPrlDateLbl1.getAccessibleContext().setAccessibleName("financeAttLogsPrlDateLbl1");
+        financeAttLogsENameFld1.getAccessibleContext().setAccessibleName("financeAttLogsENameFld1");
+        financeAttLogsReasonLbl1.getAccessibleContext().setAccessibleName("financeAttLogsReasonLbl1");
+        financeAttLogsReasonFld1.getAccessibleContext().setAccessibleName("financeAttLogsReasonFld1");
+        financeAttLogsStatusLbl1.getAccessibleContext().setAccessibleName("financeAttLogsStatusLbl1");
+        financeAttLogsPrlPeiodLbl1.getAccessibleContext().setAccessibleName("financeAttLogsPrlPeiodLbl1");
+        financeAttLogsENumberFld1.getAccessibleContext().setAccessibleName("financeAttLogsENumberFld1");
+        financeAttLogsPositionFld1.getAccessibleContext().setAccessibleName("financeAttLogsPositionFld1");
+        financeAttLogsENumberLbl1.getAccessibleContext().setAccessibleName("financeAttLogsENumberLbl1");
+        financeAttLogsENumberLbl1.getAccessibleContext().setAccessibleDescription("");
+        financeAttLogsENameLbl1.getAccessibleContext().setAccessibleName("financeAttLogsENameLbl1");
+        financeAttLogsDenyBtn1.getAccessibleContext().setAccessibleName("financeAttLogsDenyBtn1");
+        financeAttLogsApproveBtn1.getAccessibleContext().setAccessibleName("financeAttLogsApproveBtn1");
+        financeAttLogsStatusFld1.getAccessibleContext().setAccessibleName("financeAttLogsStatusFld1");
+        financeAttLogsStatusFld1.getAccessibleContext().setAccessibleDescription("");
+        financeAttLogsPrlDateFld1.getAccessibleContext().setAccessibleName("financeAttLogsPrlDateFld1");
+        financeAttLogsTicketFld1.getAccessibleContext().setAccessibleName("financeAttLogsTicketFld1");
+        financeAttLogsPrlPeiodFld1.getAccessibleContext().setAccessibleName("financeAttLogsPrlPeiodFld1");
 
-        jPanel19.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel19.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel19.setPreferredSize(new java.awt.Dimension(126, 40));
+        financeAttLogsFADisputeBrdrPnl2.setBackground(new java.awt.Color(233, 233, 233));
+        financeAttLogsFADisputeBrdrPnl2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsFADisputeBrdrPnl2.setForeground(new java.awt.Color(178, 178, 178));
 
-        jLabel26.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel26.setText("File A Dispute");
-        jLabel26.setToolTipText("");
+        financeAttLogsFADisputePnl2.setBackground(new java.awt.Color(146, 192, 253));
+        financeAttLogsFADisputePnl2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsFADisputePnl2.setForeground(new java.awt.Color(30, 58, 138));
+        financeAttLogsFADisputePnl2.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
-        jPanel19.setLayout(jPanel19Layout);
-        jPanel19Layout.setHorizontalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel19Layout.createSequentialGroup()
+        financeAttLogsFADisputeLbl2.setBackground(new java.awt.Color(255, 255, 255));
+        financeAttLogsFADisputeLbl2.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        financeAttLogsFADisputeLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsFADisputeLbl2.setText("File A Dispute");
+        financeAttLogsFADisputeLbl2.setToolTipText("");
+
+        javax.swing.GroupLayout financeAttLogsFADisputePnl2Layout = new javax.swing.GroupLayout(financeAttLogsFADisputePnl2);
+        financeAttLogsFADisputePnl2.setLayout(financeAttLogsFADisputePnl2Layout);
+        financeAttLogsFADisputePnl2Layout.setHorizontalGroup(
+            financeAttLogsFADisputePnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsFADisputePnl2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel26)
+                .addComponent(financeAttLogsFADisputeLbl2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel19Layout.setVerticalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
-                .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        financeAttLogsFADisputePnl2Layout.setVerticalGroup(
+            financeAttLogsFADisputePnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeAttLogsFADisputePnl2Layout.createSequentialGroup()
+                .addComponent(financeAttLogsFADisputeLbl2, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jLabel68.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel68.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel68.setText("Position");
+        financeAttLogsFADisputeLbl2.getAccessibleContext().setAccessibleName("financeAttLogsFADisputeLbl2");
 
-        jLabel69.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel69.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel69.setText("Payroll Date");
+        financeAttLogsPositionLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsPositionLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPositionLbl2.setText("Position");
 
-        jTextField28.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField28.setText(" ");
-        jTextField28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField28.setEnabled(false);
-        jTextField28.addActionListener(this::jTextField28ActionPerformed);
+        financeAttLogsPrlDateLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsPrlDateLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlDateLbl2.setText("Payroll Date");
 
-        jLabel77.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel77.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel77.setText("Reason");
+        financeAttLogsENameFld2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENameFld2.setText(" ");
+        financeAttLogsENameFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsENameFld2.setEnabled(false);
+        financeAttLogsENameFld2.addActionListener(this::financeAttLogsENameFld2ActionPerformed);
 
-        jTextField30.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField30.setText(" ");
-        jTextField30.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField30.setEnabled(false);
-        jTextField30.addActionListener(this::jTextField30ActionPerformed);
+        financeAttLogsReasonLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsReasonLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsReasonLbl2.setText("Reason");
 
-        jLabel78.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel78.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel78.setText("Status");
+        financeAttLogsReasonFld2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsReasonFld2.setText(" ");
+        financeAttLogsReasonFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsReasonFld2.setEnabled(false);
+        financeAttLogsReasonFld2.addActionListener(this::financeAttLogsReasonFld2ActionPerformed);
 
-        jLabel79.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel79.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel79.setText("Payroll Period");
+        financeAttLogsStatusLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsStatusLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsStatusLbl2.setText("Status");
 
-        jTextField42.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField42.setText(" ");
-        jTextField42.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField42.setEnabled(false);
-        jTextField42.addActionListener(this::jTextField42ActionPerformed);
+        financeAttLogsPrlPeiodLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsPrlPeiodLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlPeiodLbl2.setText("Payroll Period");
 
-        jTextField43.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField43.setText(" ");
-        jTextField43.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField43.setEnabled(false);
-        jTextField43.addActionListener(this::jTextField43ActionPerformed);
+        financeAttLogsENumberFld2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENumberFld2.setText(" ");
+        financeAttLogsENumberFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsENumberFld2.setEnabled(false);
+        financeAttLogsENumberFld2.addActionListener(this::financeAttLogsENumberFld2ActionPerformed);
 
-        jLabel80.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel80.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel80.setText("Employee #");
+        financeAttLogsPositionFld2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPositionFld2.setText(" ");
+        financeAttLogsPositionFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPositionFld2.setEnabled(false);
+        financeAttLogsPositionFld2.addActionListener(this::financeAttLogsPositionFld2ActionPerformed);
 
-        jLabel81.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel81.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel81.setText("Employee Name");
+        financeAttLogsENumberLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsENumberLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENumberLbl2.setText("Employee #");
 
-        jButton12.setBackground(new java.awt.Color(239, 68, 68));
-        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setText("Deny");
-        jButton12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton12.addActionListener(this::jButton12ActionPerformed);
+        financeAttLogsENameLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsENameLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENameLbl2.setText("Employee Name");
 
-        jButton13.setBackground(new java.awt.Color(34, 197, 94));
-        jButton13.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(255, 255, 255));
-        jButton13.setText("Approve");
-        jButton13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton13.addActionListener(this::jButton13ActionPerformed);
+        financeAttLogsDenyBtn2.setBackground(new java.awt.Color(239, 68, 68));
+        financeAttLogsDenyBtn2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financeAttLogsDenyBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsDenyBtn2.setText("Deny");
+        financeAttLogsDenyBtn2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financeAttLogsDenyBtn2.addActionListener(this::financeAttLogsDenyBtn2ActionPerformed);
 
-        jTextField6.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField6.setEnabled(false);
+        financeAttLogsApproveBtn2.setBackground(new java.awt.Color(34, 197, 94));
+        financeAttLogsApproveBtn2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financeAttLogsApproveBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsApproveBtn2.setText("Approve");
+        financeAttLogsApproveBtn2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financeAttLogsApproveBtn2.addActionListener(this::financeAttLogsApproveBtn2ActionPerformed);
 
-        jTextField44.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField44.setText(" ");
-        jTextField44.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField44.setEnabled(false);
-        jTextField44.addActionListener(this::jTextField44ActionPerformed);
+        financeAttLogsStatusFld2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsStatusFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsStatusFld2.setEnabled(false);
 
-        jTextField7.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField7.setEnabled(false);
+        financeAttLogsPrlDateFld2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlDateFld2.setText(" ");
+        financeAttLogsPrlDateFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPrlDateFld2.setEnabled(false);
+        financeAttLogsPrlDateFld2.addActionListener(this::financeAttLogsPrlDateFld2ActionPerformed);
 
-        jTextField51.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField51.setText(" ");
-        jTextField51.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField51.setEnabled(false);
-        jTextField51.addActionListener(this::jTextField51ActionPerformed);
+        financeAttLogsTicketFld2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsTicketFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsTicketFld2.setEnabled(false);
 
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
+        financeAttLogsPrlPeiodFld2.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlPeiodFld2.setText(" ");
+        financeAttLogsPrlPeiodFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPrlPeiodFld2.setEnabled(false);
+        financeAttLogsPrlPeiodFld2.addActionListener(this::financeAttLogsPrlPeiodFld2ActionPerformed);
+
+        javax.swing.GroupLayout financeAttLogsFADisputeBrdrPnl2Layout = new javax.swing.GroupLayout(financeAttLogsFADisputeBrdrPnl2);
+        financeAttLogsFADisputeBrdrPnl2.setLayout(financeAttLogsFADisputeBrdrPnl2Layout);
+        financeAttLogsFADisputeBrdrPnl2Layout.setHorizontalGroup(
+            financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel18Layout.createSequentialGroup()
-                            .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
+                            .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(financeAttLogsPositionLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financeAttLogsPrlDateLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financeAttLogsFADisputePnl2, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financeAttLogsENumberLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(20, 20, 20))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
-                            .addComponent(jLabel81, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeAttLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
+                            .addComponent(financeAttLogsENameLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
+                        .addComponent(financeAttLogsPrlPeiodLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(23, 23, 23)))
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField43, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                        .addComponent(jTextField42, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField28, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(financeAttLogsPositionFld2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                        .addComponent(financeAttLogsENumberFld2, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(financeAttLogsENameFld2, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(financeAttLogsTicketFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsPrlDateFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsPrlPeiodFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel18Layout.createSequentialGroup()
-                            .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financeAttLogsReasonLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
+                            .addComponent(financeAttLogsApproveBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(32, 32, 32)
-                            .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel18Layout.createSequentialGroup()
-                                .addComponent(jLabel78, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financeAttLogsDenyBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
+                                .addComponent(financeAttLogsStatusLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(83, 83, 83)
-                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(financeAttLogsStatusFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(financeAttLogsReasonFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18))
         );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
+        financeAttLogsFADisputeBrdrPnl2Layout.setVerticalGroup(
+            financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(financeAttLogsFADisputePnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(financeAttLogsApproveBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsDenyBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsTicketFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel81)
-                    .addComponent(jLabel78)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financeAttLogsENameFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsENameLbl2)
+                    .addComponent(financeAttLogsStatusLbl2)
+                    .addComponent(financeAttLogsStatusFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel77)
-                    .addComponent(jLabel80))
+                .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financeAttLogsENumberFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsReasonLbl2)
+                    .addComponent(financeAttLogsENumberLbl2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel68)
-                            .addComponent(jTextField43, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
+                        .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financeAttLogsPositionLbl2)
+                            .addComponent(financeAttLogsPositionFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel69)
+                        .addComponent(financeAttLogsPrlDateLbl2)
                         .addGap(13, 13, 13)
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel79)
-                            .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financeAttLogsPrlPeiodLbl2)
+                            .addComponent(financeAttLogsPrlPeiodFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(financeAttLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(financeAttLogsReasonFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsPrlDateFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jPanel20.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel20.setForeground(new java.awt.Color(178, 178, 178));
+        financeAttLogsFADisputePnl2.getAccessibleContext().setAccessibleName("financeAttLogsFADisputePnl2");
+        financeAttLogsPositionLbl2.getAccessibleContext().setAccessibleName("financeAttLogsPositionLbl2");
+        financeAttLogsPrlDateLbl2.getAccessibleContext().setAccessibleName("financeAttLogsPrlDateLbl2");
+        financeAttLogsENameFld2.getAccessibleContext().setAccessibleName("financeAttLogsENameFld2");
+        financeAttLogsReasonLbl2.getAccessibleContext().setAccessibleName("financeAttLogsReasonLbl2");
+        financeAttLogsReasonFld2.getAccessibleContext().setAccessibleName("financeAttLogsReasonFld2");
+        financeAttLogsStatusLbl2.getAccessibleContext().setAccessibleName("financeAttLogsStatusLbl2");
+        financeAttLogsPrlPeiodLbl2.getAccessibleContext().setAccessibleName("financeAttLogsPrlPeiodLbl2");
+        financeAttLogsENumberFld2.getAccessibleContext().setAccessibleName("financeAttLogsENumberFld2");
+        financeAttLogsPositionFld2.getAccessibleContext().setAccessibleName("financeAttLogsPositionFld2");
+        financeAttLogsENumberLbl2.getAccessibleContext().setAccessibleName("financeAttLogsENumberLbl2");
+        financeAttLogsENameLbl2.getAccessibleContext().setAccessibleName("financeAttLogsENameLbl2");
+        financeAttLogsDenyBtn2.getAccessibleContext().setAccessibleName("financeAttLogsDenyBtn2");
+        financeAttLogsApproveBtn2.getAccessibleContext().setAccessibleName("financeAttLogsApproveBtn2");
+        financeAttLogsApproveBtn2.getAccessibleContext().setAccessibleDescription("");
+        financeAttLogsStatusFld2.getAccessibleContext().setAccessibleName("financeAttLogsStatusFld2");
+        financeAttLogsPrlDateFld2.getAccessibleContext().setAccessibleName("financeAttLogsPrlDateFld2");
+        financeAttLogsTicketFld2.getAccessibleContext().setAccessibleName("financeAttLogsTicketFld2");
+        financeAttLogsPrlPeiodFld2.getAccessibleContext().setAccessibleName("financeAttLogsPrlPeiodFld2");
 
-        jPanel21.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel21.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel21.setPreferredSize(new java.awt.Dimension(126, 40));
+        financeAttLogsFADisputeBrdrPnl3.setBackground(new java.awt.Color(233, 233, 233));
+        financeAttLogsFADisputeBrdrPnl3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsFADisputeBrdrPnl3.setForeground(new java.awt.Color(178, 178, 178));
 
-        jLabel27.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel27.setText("File A Dispute");
-        jLabel27.setToolTipText("");
+        financeAttLogsFADisputePnl3.setBackground(new java.awt.Color(146, 192, 253));
+        financeAttLogsFADisputePnl3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsFADisputePnl3.setForeground(new java.awt.Color(30, 58, 138));
+        financeAttLogsFADisputePnl3.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
-        jPanel21.setLayout(jPanel21Layout);
-        jPanel21Layout.setHorizontalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
+        financeAttLogsFADisputeLbl3.setBackground(new java.awt.Color(255, 255, 255));
+        financeAttLogsFADisputeLbl3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        financeAttLogsFADisputeLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsFADisputeLbl3.setText("File A Dispute");
+        financeAttLogsFADisputeLbl3.setToolTipText("");
+
+        javax.swing.GroupLayout financeAttLogsFADisputePnl3Layout = new javax.swing.GroupLayout(financeAttLogsFADisputePnl3);
+        financeAttLogsFADisputePnl3.setLayout(financeAttLogsFADisputePnl3Layout);
+        financeAttLogsFADisputePnl3Layout.setHorizontalGroup(
+            financeAttLogsFADisputePnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsFADisputePnl3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel27)
+                .addComponent(financeAttLogsFADisputeLbl3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel21Layout.setVerticalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
-                .addComponent(jLabel27, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        financeAttLogsFADisputePnl3Layout.setVerticalGroup(
+            financeAttLogsFADisputePnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeAttLogsFADisputePnl3Layout.createSequentialGroup()
+                .addComponent(financeAttLogsFADisputeLbl3, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jLabel82.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel82.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel82.setText("Position");
+        financeAttLogsFADisputeLbl3.getAccessibleContext().setAccessibleName("financeAttLogsFADisputeLbl3");
 
-        jLabel83.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel83.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel83.setText("Payroll Date");
+        financeAttLogsPositionLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsPositionLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPositionLbl3.setText("Position");
 
-        jTextField45.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField45.setText(" ");
-        jTextField45.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField45.setEnabled(false);
-        jTextField45.addActionListener(this::jTextField45ActionPerformed);
+        financeAttLogsPrlDateLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsPrlDateLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlDateLbl3.setText("Payroll Date");
 
-        jLabel84.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel84.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel84.setText("Reason");
+        financeAttLogsENameFld3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENameFld3.setText(" ");
+        financeAttLogsENameFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsENameFld3.setEnabled(false);
+        financeAttLogsENameFld3.addActionListener(this::financeAttLogsENameFld3ActionPerformed);
 
-        jTextField46.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField46.setText(" ");
-        jTextField46.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField46.setEnabled(false);
-        jTextField46.addActionListener(this::jTextField46ActionPerformed);
+        financeAttLogsReasonLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsReasonLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsReasonLbl3.setText("Reason");
 
-        jLabel85.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel85.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel85.setText("Status");
+        financeAttLogsReasonFld3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsReasonFld3.setText(" ");
+        financeAttLogsReasonFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsReasonFld3.setEnabled(false);
+        financeAttLogsReasonFld3.addActionListener(this::financeAttLogsReasonFld3ActionPerformed);
 
-        jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel86.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel86.setText("Payroll Period");
+        financeAttLogsStatusLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsStatusLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsStatusLbl3.setText("Status");
 
-        jTextField47.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField47.setText(" ");
-        jTextField47.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField47.setEnabled(false);
-        jTextField47.addActionListener(this::jTextField47ActionPerformed);
+        financeAttLogsPrlPeiodLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsPrlPeiodLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlPeiodLbl3.setText("Payroll Period");
 
-        jTextField48.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField48.setText(" ");
-        jTextField48.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField48.setEnabled(false);
-        jTextField48.addActionListener(this::jTextField48ActionPerformed);
+        financeAttLogsENumberFld3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENumberFld3.setText(" ");
+        financeAttLogsENumberFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsENumberFld3.setEnabled(false);
+        financeAttLogsENumberFld3.addActionListener(this::financeAttLogsENumberFld3ActionPerformed);
 
-        jLabel87.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel87.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel87.setText("Employee #");
+        financeAttLogsPositionFld3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPositionFld3.setText(" ");
+        financeAttLogsPositionFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPositionFld3.setEnabled(false);
+        financeAttLogsPositionFld3.addActionListener(this::financeAttLogsPositionFld3ActionPerformed);
 
-        jLabel88.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel88.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel88.setText("Employee Name");
+        financeAttLogsENumberLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsENumberLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENumberLbl3.setText("Employee #");
 
-        jButton14.setBackground(new java.awt.Color(239, 68, 68));
-        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(255, 255, 255));
-        jButton14.setText("Deny");
-        jButton14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton14.addActionListener(this::jButton14ActionPerformed);
+        financeAttLogsENameLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        financeAttLogsENameLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsENameLbl3.setText("Employee Name");
 
-        jButton15.setBackground(new java.awt.Color(34, 197, 94));
-        jButton15.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(255, 255, 255));
-        jButton15.setText("Approve");
-        jButton15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton15.addActionListener(this::jButton15ActionPerformed);
+        financeAttLogsDenyBtn3.setBackground(new java.awt.Color(239, 68, 68));
+        financeAttLogsDenyBtn3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financeAttLogsDenyBtn3.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsDenyBtn3.setText("Deny");
+        financeAttLogsDenyBtn3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financeAttLogsDenyBtn3.addActionListener(this::financeAttLogsDenyBtn3ActionPerformed);
 
-        jTextField8.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField8.setEnabled(false);
+        financeAttLogsApproveBtn3.setBackground(new java.awt.Color(34, 197, 94));
+        financeAttLogsApproveBtn3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financeAttLogsApproveBtn3.setForeground(new java.awt.Color(255, 255, 255));
+        financeAttLogsApproveBtn3.setText("Approve");
+        financeAttLogsApproveBtn3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financeAttLogsApproveBtn3.addActionListener(this::financeAttLogsApproveBtn3ActionPerformed);
 
-        jTextField49.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField49.setText(" ");
-        jTextField49.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField49.setEnabled(false);
-        jTextField49.addActionListener(this::jTextField49ActionPerformed);
+        financeAttLogsStatusFld3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsStatusFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsStatusFld3.setEnabled(false);
 
-        jTextField9.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField9.setEnabled(false);
+        financeAttLogsPrlDateFld3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlDateFld3.setText(" ");
+        financeAttLogsPrlDateFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPrlDateFld3.setEnabled(false);
+        financeAttLogsPrlDateFld3.addActionListener(this::financeAttLogsPrlDateFld3ActionPerformed);
 
-        jTextField52.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField52.setText(" ");
-        jTextField52.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField52.setEnabled(false);
-        jTextField52.addActionListener(this::jTextField52ActionPerformed);
+        financeAttLogsTicketFld3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsTicketFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsTicketFld3.setEnabled(false);
 
-        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
-        jPanel20.setLayout(jPanel20Layout);
-        jPanel20Layout.setHorizontalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
+        financeAttLogsPrlPeiodFld3.setForeground(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlPeiodFld3.setText(" ");
+        financeAttLogsPrlPeiodFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPrlPeiodFld3.setEnabled(false);
+        financeAttLogsPrlPeiodFld3.addActionListener(this::financeAttLogsPrlPeiodFld3ActionPerformed);
+
+        javax.swing.GroupLayout financeAttLogsFADisputeBrdrPnl3Layout = new javax.swing.GroupLayout(financeAttLogsFADisputeBrdrPnl3);
+        financeAttLogsFADisputeBrdrPnl3.setLayout(financeAttLogsFADisputeBrdrPnl3Layout);
+        financeAttLogsFADisputeBrdrPnl3Layout.setHorizontalGroup(
+            financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel20Layout.createSequentialGroup()
-                            .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel82, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel83, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
+                            .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(financeAttLogsPositionLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financeAttLogsPrlDateLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financeAttLogsFADisputePnl3, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financeAttLogsENumberLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(20, 20, 20))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
-                            .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeAttLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
+                            .addComponent(financeAttLogsENameLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                    .addGroup(jPanel20Layout.createSequentialGroup()
-                        .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
+                        .addComponent(financeAttLogsPrlPeiodLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(23, 23, 23)))
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField48, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                        .addComponent(jTextField47, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField45, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField49, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(financeAttLogsPositionFld3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                        .addComponent(financeAttLogsENumberFld3, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(financeAttLogsENameFld3, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(financeAttLogsTicketFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsPrlDateFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsPrlPeiodFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel84, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel20Layout.createSequentialGroup()
-                            .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financeAttLogsReasonLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
+                            .addComponent(financeAttLogsApproveBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(32, 32, 32)
-                            .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel20Layout.createSequentialGroup()
-                                .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financeAttLogsDenyBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
+                                .addComponent(financeAttLogsStatusLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(83, 83, 83)
-                                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(financeAttLogsStatusFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(financeAttLogsReasonFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18))
         );
-        jPanel20Layout.setVerticalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
+        financeAttLogsFADisputeBrdrPnl3Layout.setVerticalGroup(
+            financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(financeAttLogsFADisputePnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(financeAttLogsApproveBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsDenyBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsTicketFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel88)
-                    .addComponent(jLabel85)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financeAttLogsENameFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsENameLbl3)
+                    .addComponent(financeAttLogsStatusLbl3)
+                    .addComponent(financeAttLogsStatusFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField47, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel84)
-                    .addComponent(jLabel87))
+                .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financeAttLogsENumberFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsReasonLbl3)
+                    .addComponent(financeAttLogsENumberLbl3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel20Layout.createSequentialGroup()
-                        .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel82)
-                            .addComponent(jTextField48, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
+                        .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financeAttLogsPositionLbl3)
+                            .addComponent(financeAttLogsPositionFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel83)
+                        .addComponent(financeAttLogsPrlDateLbl3)
                         .addGap(13, 13, 13)
-                        .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel86)
-                            .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField49, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financeAttLogsPrlPeiodLbl3)
+                            .addComponent(financeAttLogsPrlPeiodFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(financeAttLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(financeAttLogsReasonFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsPrlDateFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        financeAttLogsFADisputePnl3.getAccessibleContext().setAccessibleName("financeAttLogsFADisputePnl3");
+        financeAttLogsPositionLbl3.getAccessibleContext().setAccessibleName("financeAttLogsPositionLbl3");
+        financeAttLogsPrlDateLbl3.getAccessibleContext().setAccessibleName("financeAttLogsPrlDateLbl3");
+        financeAttLogsENameFld3.getAccessibleContext().setAccessibleName("financeAttLogsENameFld3");
+        financeAttLogsReasonLbl3.getAccessibleContext().setAccessibleName("financeAttLogsReasonLbl3");
+        financeAttLogsReasonFld3.getAccessibleContext().setAccessibleName("financeAttLogsReasonFld3");
+        financeAttLogsStatusLbl3.getAccessibleContext().setAccessibleName("financeAttLogsStatusLbl3");
+        financeAttLogsPrlPeiodLbl3.getAccessibleContext().setAccessibleName("financeAttLogsPrlPeiodLbl3");
+        financeAttLogsENumberFld3.getAccessibleContext().setAccessibleName("financeAttLogsENumberFld3");
+        financeAttLogsPositionFld3.getAccessibleContext().setAccessibleName("financeAttLogsPositionFld3");
+        financeAttLogsENumberLbl3.getAccessibleContext().setAccessibleName("financeAttLogsENumberLbl3");
+        financeAttLogsENameLbl3.getAccessibleContext().setAccessibleName("financeAttLogsENameLbl3");
+        financeAttLogsDenyBtn3.getAccessibleContext().setAccessibleName("financeAttLogsDenyBtn3");
+        financeAttLogsApproveBtn3.getAccessibleContext().setAccessibleName("financeAttLogsApproveBtn3");
+        financeAttLogsStatusFld3.getAccessibleContext().setAccessibleName("financeAttLogsStatusFld3");
+        financeAttLogsPrlDateFld3.getAccessibleContext().setAccessibleName("financeAttLogsPrlDateFld3");
+        financeAttLogsTicketFld3.getAccessibleContext().setAccessibleName("financeAttLogsTicketFld3");
+        financeAttLogsPrlPeiodFld3.getAccessibleContext().setAccessibleName("financeAttLogsPrlPeiodFld3");
+
+        javax.swing.GroupLayout financeAttLogsDListBrdrPnlLayout = new javax.swing.GroupLayout(financeAttLogsDListBrdrPnl);
+        financeAttLogsDListBrdrPnl.setLayout(financeAttLogsDListBrdrPnlLayout);
+        financeAttLogsDListBrdrPnlLayout.setHorizontalGroup(
+            financeAttLogsDListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeAttLogsDListBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(274, Short.MAX_VALUE)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(249, 249, 249))
-            .addGroup(jPanel4Layout.createSequentialGroup()
+            .addGroup(financeAttLogsDListBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financeAttLogsDListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(financeAttLogsFADisputeBrdrPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsFADisputeBrdrPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsFADisputeBrdrPnl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        financeAttLogsDListBrdrPnlLayout.setVerticalGroup(
+            financeAttLogsDListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeAttLogsDListBrdrPnlLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsFADisputeBrdrPnl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsFADisputeBrdrPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsFADisputeBrdrPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        jScrollPane2.setViewportView(jPanel4);
+        financeAttLogsDListPnl.getAccessibleContext().setAccessibleName("financeAttLogsDListPnl");
+        financeAttLogsFADisputeBrdrPnl1.getAccessibleContext().setAccessibleName("financeAttLogsFADisputeBrdrPnl1");
+        financeAttLogsFADisputeBrdrPnl2.getAccessibleContext().setAccessibleName("financeAttLogsFADisputeBrdrPnl2");
+        financeAttLogsFADisputeBrdrPnl3.getAccessibleContext().setAccessibleName("financeAttLogsFADisputeBrdrPnl3");
+
+        financeAttLogsDListBrdrScrlPnl.setViewportView(financeAttLogsDListBrdrPnl);
+        financeAttLogsDListBrdrPnl.getAccessibleContext().setAccessibleName("financeAttLogsDListBrdrPnl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeAttLogsEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE))
+                        .addComponent(financeAttLogsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financeAttLogsAttLogsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(financeAttLogsDListBrdrScrlPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE))
                 .addGap(14, 17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -1056,132 +1143,138 @@ public class FinanceAttendanceLogsFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financeAttLogsEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeAttLogsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(14, 14, 14)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsAttLogsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeAttLogsDListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(18, Short.MAX_VALUE))
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(financeAttLogsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+
+        financeAttLogsSidebarPnl.getAccessibleContext().setAccessibleName("financeAttLogsSidebarPnl");
+        financeAttLogsSearchPnl.getAccessibleContext().setAccessibleName("financeAttLogsSearchPnl");
+        financeAttLogsEDetailsPnl.getAccessibleContext().setAccessibleName("financeAttLogsEDetailsPnl");
+        financeAttLogsAttLogsBrdrPnl.getAccessibleContext().setAccessibleName("financeAttLogsAttLogsBrdrPnl");
+        financeAttLogsDListBrdrScrlPnl.getAccessibleContext().setAccessibleName("financeAttLogsDListBrdrScrlPnl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void financeAttLogsEditBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsEditBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_financeAttLogsEditBtnActionPerformed
 
-    private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
+    private void financeAttLogsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardFrame().setVisible(true);
-    }//GEN-LAST:event_mainDashboardBtnActionPerformed
+    }//GEN-LAST:event_financeAttLogsMainDashboardBtnActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void financeAttLogsEENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsEENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_financeAttLogsEENumberFldActionPerformed
 
-    private void jTextField27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField27ActionPerformed
+    private void financeAttLogsENameFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsENameFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField27ActionPerformed
+    }//GEN-LAST:event_financeAttLogsENameFld1ActionPerformed
 
-    private void jTextField29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField29ActionPerformed
+    private void financeAttLogsReasonFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsReasonFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField29ActionPerformed
+    }//GEN-LAST:event_financeAttLogsReasonFld1ActionPerformed
 
-    private void jTextField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField31ActionPerformed
+    private void financeAttLogsENumberFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsENumberFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField31ActionPerformed
+    }//GEN-LAST:event_financeAttLogsENumberFld1ActionPerformed
 
-    private void jTextField32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField32ActionPerformed
+    private void financeAttLogsPositionFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsPositionFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField32ActionPerformed
+    }//GEN-LAST:event_financeAttLogsPositionFld1ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void financeAttLogsDenyBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsDenyBtn1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_financeAttLogsDenyBtn1ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void financeAttLogsApproveBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsApproveBtn1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_financeAttLogsApproveBtn1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void financeAttLogsAttLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsAttLogsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_financeAttLogsAttLogsBtnActionPerformed
 
-    private void jTextField41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField41ActionPerformed
+    private void financeAttLogsPrlDateFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsPrlDateFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField41ActionPerformed
+    }//GEN-LAST:event_financeAttLogsPrlDateFld1ActionPerformed
 
-    private void jTextField50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField50ActionPerformed
+    private void financeAttLogsPrlPeiodFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsPrlPeiodFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField50ActionPerformed
+    }//GEN-LAST:event_financeAttLogsPrlPeiodFld1ActionPerformed
 
-    private void jTextField28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField28ActionPerformed
+    private void financeAttLogsENameFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsENameFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField28ActionPerformed
+    }//GEN-LAST:event_financeAttLogsENameFld2ActionPerformed
 
-    private void jTextField30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField30ActionPerformed
+    private void financeAttLogsReasonFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsReasonFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField30ActionPerformed
+    }//GEN-LAST:event_financeAttLogsReasonFld2ActionPerformed
 
-    private void jTextField42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField42ActionPerformed
+    private void financeAttLogsENumberFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsENumberFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField42ActionPerformed
+    }//GEN-LAST:event_financeAttLogsENumberFld2ActionPerformed
 
-    private void jTextField43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField43ActionPerformed
+    private void financeAttLogsPositionFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsPositionFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField43ActionPerformed
+    }//GEN-LAST:event_financeAttLogsPositionFld2ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void financeAttLogsDenyBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsDenyBtn2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_financeAttLogsDenyBtn2ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void financeAttLogsApproveBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsApproveBtn2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_financeAttLogsApproveBtn2ActionPerformed
 
-    private void jTextField44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField44ActionPerformed
+    private void financeAttLogsPrlDateFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsPrlDateFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField44ActionPerformed
+    }//GEN-LAST:event_financeAttLogsPrlDateFld2ActionPerformed
 
-    private void jTextField51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField51ActionPerformed
+    private void financeAttLogsPrlPeiodFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsPrlPeiodFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField51ActionPerformed
+    }//GEN-LAST:event_financeAttLogsPrlPeiodFld2ActionPerformed
 
-    private void jTextField45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField45ActionPerformed
+    private void financeAttLogsENameFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsENameFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField45ActionPerformed
+    }//GEN-LAST:event_financeAttLogsENameFld3ActionPerformed
 
-    private void jTextField46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField46ActionPerformed
+    private void financeAttLogsReasonFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsReasonFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField46ActionPerformed
+    }//GEN-LAST:event_financeAttLogsReasonFld3ActionPerformed
 
-    private void jTextField47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField47ActionPerformed
+    private void financeAttLogsENumberFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsENumberFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField47ActionPerformed
+    }//GEN-LAST:event_financeAttLogsENumberFld3ActionPerformed
 
-    private void jTextField48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField48ActionPerformed
+    private void financeAttLogsPositionFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsPositionFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField48ActionPerformed
+    }//GEN-LAST:event_financeAttLogsPositionFld3ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void financeAttLogsDenyBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsDenyBtn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_financeAttLogsDenyBtn3ActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void financeAttLogsApproveBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsApproveBtn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_financeAttLogsApproveBtn3ActionPerformed
 
-    private void jTextField49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField49ActionPerformed
+    private void financeAttLogsPrlDateFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsPrlDateFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField49ActionPerformed
+    }//GEN-LAST:event_financeAttLogsPrlDateFld3ActionPerformed
 
-    private void jTextField52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField52ActionPerformed
+    private void financeAttLogsPrlPeiodFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsPrlPeiodFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField52ActionPerformed
+    }//GEN-LAST:event_financeAttLogsPrlPeiodFld3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1209,84 +1302,84 @@ public class FinanceAttendanceLogsFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MotorPHIconImgLbl;
-    private javax.swing.JLabel SearchIconImg;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
-    private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel81;
-    private javax.swing.JLabel jLabel82;
-    private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
-    private javax.swing.JLabel jLabel85;
-    private javax.swing.JLabel jLabel86;
-    private javax.swing.JLabel jLabel87;
-    private javax.swing.JLabel jLabel88;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField42;
-    private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField44;
-    private javax.swing.JTextField jTextField45;
-    private javax.swing.JTextField jTextField46;
-    private javax.swing.JTextField jTextField47;
-    private javax.swing.JTextField jTextField48;
-    private javax.swing.JTextField jTextField49;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField50;
-    private javax.swing.JTextField jTextField51;
-    private javax.swing.JTextField jTextField52;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
-    private javax.swing.JButton mainDashboardBtn;
+    private javax.swing.JButton financeAttLogsApproveBtn1;
+    private javax.swing.JButton financeAttLogsApproveBtn2;
+    private javax.swing.JButton financeAttLogsApproveBtn3;
+    private javax.swing.JPanel financeAttLogsAttLogsBrdrPnl;
+    private javax.swing.JButton financeAttLogsAttLogsBtn;
+    private javax.swing.JLabel financeAttLogsAttLogsLbl;
+    private javax.swing.JPanel financeAttLogsAttLogsPnl;
+    private javax.swing.JScrollPane financeAttLogsAttLogsScrlPnl;
+    private javax.swing.JTable financeAttLogsAttLogsTbl;
+    private javax.swing.JPanel financeAttLogsDListBrdrPnl;
+    private javax.swing.JScrollPane financeAttLogsDListBrdrScrlPnl;
+    private javax.swing.JLabel financeAttLogsDListLbl;
+    private javax.swing.JPanel financeAttLogsDListPnl;
+    private javax.swing.JButton financeAttLogsDenyBtn1;
+    private javax.swing.JButton financeAttLogsDenyBtn2;
+    private javax.swing.JButton financeAttLogsDenyBtn3;
+    private javax.swing.JLabel financeAttLogsEDetailsLbl;
+    private javax.swing.JPanel financeAttLogsEDetailsPnl;
+    private javax.swing.JTextField financeAttLogsEENumberFld;
+    private javax.swing.JTextField financeAttLogsENameFld1;
+    private javax.swing.JTextField financeAttLogsENameFld2;
+    private javax.swing.JTextField financeAttLogsENameFld3;
+    private javax.swing.JLabel financeAttLogsENameLbl1;
+    private javax.swing.JLabel financeAttLogsENameLbl2;
+    private javax.swing.JLabel financeAttLogsENameLbl3;
+    private javax.swing.JTextField financeAttLogsENumberFld1;
+    private javax.swing.JTextField financeAttLogsENumberFld2;
+    private javax.swing.JTextField financeAttLogsENumberFld3;
+    private javax.swing.JLabel financeAttLogsENumberLbl1;
+    private javax.swing.JLabel financeAttLogsENumberLbl2;
+    private javax.swing.JLabel financeAttLogsENumberLbl3;
+    private javax.swing.JButton financeAttLogsEditBtn;
+    private javax.swing.JPanel financeAttLogsFADisputeBrdrPnl1;
+    private javax.swing.JPanel financeAttLogsFADisputeBrdrPnl2;
+    private javax.swing.JPanel financeAttLogsFADisputeBrdrPnl3;
+    private javax.swing.JLabel financeAttLogsFADisputeLbl1;
+    private javax.swing.JLabel financeAttLogsFADisputeLbl2;
+    private javax.swing.JLabel financeAttLogsFADisputeLbl3;
+    private javax.swing.JPanel financeAttLogsFADisputePnl1;
+    private javax.swing.JPanel financeAttLogsFADisputePnl2;
+    private javax.swing.JPanel financeAttLogsFADisputePnl3;
+    private javax.swing.JButton financeAttLogsMainDashboardBtn;
+    private javax.swing.JLabel financeAttLogsMotorPHIconImgLbl;
+    private javax.swing.JTextField financeAttLogsPositionFld1;
+    private javax.swing.JTextField financeAttLogsPositionFld2;
+    private javax.swing.JTextField financeAttLogsPositionFld3;
+    private javax.swing.JLabel financeAttLogsPositionLbl1;
+    private javax.swing.JLabel financeAttLogsPositionLbl2;
+    private javax.swing.JLabel financeAttLogsPositionLbl3;
+    private javax.swing.JTextField financeAttLogsPrlDateFld1;
+    private javax.swing.JTextField financeAttLogsPrlDateFld2;
+    private javax.swing.JTextField financeAttLogsPrlDateFld3;
+    private javax.swing.JLabel financeAttLogsPrlDateLbl1;
+    private javax.swing.JLabel financeAttLogsPrlDateLbl2;
+    private javax.swing.JLabel financeAttLogsPrlDateLbl3;
+    private javax.swing.JTextField financeAttLogsPrlPeiodFld1;
+    private javax.swing.JTextField financeAttLogsPrlPeiodFld2;
+    private javax.swing.JTextField financeAttLogsPrlPeiodFld3;
+    private javax.swing.JLabel financeAttLogsPrlPeiodLbl1;
+    private javax.swing.JLabel financeAttLogsPrlPeiodLbl2;
+    private javax.swing.JLabel financeAttLogsPrlPeiodLbl3;
+    private javax.swing.JTextField financeAttLogsReasonFld1;
+    private javax.swing.JTextField financeAttLogsReasonFld2;
+    private javax.swing.JTextField financeAttLogsReasonFld3;
+    private javax.swing.JLabel financeAttLogsReasonLbl1;
+    private javax.swing.JLabel financeAttLogsReasonLbl2;
+    private javax.swing.JLabel financeAttLogsReasonLbl3;
+    private javax.swing.JLabel financeAttLogsSearchIconImgLbl;
+    private javax.swing.JPanel financeAttLogsSearchPnl;
+    private javax.swing.JPanel financeAttLogsSidebarPnl;
+    private javax.swing.JTextField financeAttLogsStatusFld1;
+    private javax.swing.JTextField financeAttLogsStatusFld2;
+    private javax.swing.JTextField financeAttLogsStatusFld3;
+    private javax.swing.JLabel financeAttLogsStatusLbl1;
+    private javax.swing.JLabel financeAttLogsStatusLbl2;
+    private javax.swing.JLabel financeAttLogsStatusLbl3;
+    private javax.swing.JTextField financeAttLogsTicketFld1;
+    private javax.swing.JTextField financeAttLogsTicketFld2;
+    private javax.swing.JTextField financeAttLogsTicketFld3;
     // End of variables declaration//GEN-END:variables
 }

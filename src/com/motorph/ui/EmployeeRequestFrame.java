@@ -28,126 +28,126 @@ public class EmployeeRequestFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        mainDashboardBtn = new javax.swing.JButton();
-        MotorPHIconImgLbl = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        jPanel18 = new javax.swing.JPanel();
-        jLabel50 = new javax.swing.JLabel();
-        jPanel19 = new javax.swing.JPanel();
-        jPanel15 = new javax.swing.JPanel();
+        employeeRequestSidebarPnl = new javax.swing.JPanel();
+        employeeRequestRDetailsBtn = new javax.swing.JButton();
+        employeeRequestRListBtn = new javax.swing.JButton();
+        employeeRequestMainDashboardBtn = new javax.swing.JButton();
+        employeeRequestMotorPHIconImgLbl = new javax.swing.JLabel();
+        employeeRequestRDetailsPnl = new javax.swing.JPanel();
+        employeeRequestRDetailsLbl = new javax.swing.JLabel();
+        employeeRequestRFormBrdrPnl = new javax.swing.JPanel();
+        employeeRequestRFormPnl = new javax.swing.JPanel();
+        employeeRequestRFormLbl = new javax.swing.JLabel();
+        employeeRequestFARequestBrdrPnl = new javax.swing.JPanel();
+        employeeRequestFARequestPnl = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jTextField24 = new javax.swing.JTextField();
-        jLabel45 = new javax.swing.JLabel();
-        jButton18 = new javax.swing.JButton();
-        jLabel46 = new javax.swing.JLabel();
-        jTextField25 = new javax.swing.JTextField();
-        jTextField26 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jTextField27 = new javax.swing.JTextField();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        employeeRequestHourLbl = new javax.swing.JLabel();
+        employeeRequestENameFld = new javax.swing.JTextField();
+        employeeRequestReasonLbl = new javax.swing.JLabel();
+        employeeRequestSubmitBtn = new javax.swing.JButton();
+        employeeRequestDateLbl = new javax.swing.JLabel();
+        employeeRequestENumberFld = new javax.swing.JTextField();
+        employeeRequestReasonFld = new javax.swing.JTextField();
+        employeeRequestDateFld = new javax.swing.JTextField();
+        employeeRequestENumberLbl = new javax.swing.JLabel();
+        employeeRequestENameLbl = new javax.swing.JLabel();
+        employeeRequestHourFld = new javax.swing.JTextField();
+        employeeRequestOvertimeRBtn = new javax.swing.JRadioButton();
+        employeeRequestUndertimeRBtn = new javax.swing.JRadioButton();
+        employeeRequestRecordsBrdrPnl = new javax.swing.JPanel();
+        employeeRequestRecordsLbl = new javax.swing.JLabel();
+        employeeRequestRecordsScrlPnl = new javax.swing.JScrollPane();
+        employeeRequestRecordsTbl = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        employeeRequestSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeRequestSidebarPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Request Details");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
+        employeeRequestRDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeeRequestRDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeRequestRDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeRequestRDetailsBtn.setText("Request Details");
+        employeeRequestRDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeeRequestRDetailsBtn.addActionListener(this::employeeRequestRDetailsBtnActionPerformed);
+        employeeRequestSidebarPnl.add(employeeRequestRDetailsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
+        employeeRequestRDetailsBtn.getAccessibleContext().setAccessibleName("employeeRequestRDetailsBtn");
 
-        jButton4.setBackground(new java.awt.Color(30, 42, 56));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Request List");
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.addActionListener(this::jButton4ActionPerformed);
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
+        employeeRequestRListBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeeRequestRListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeRequestRListBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeRequestRListBtn.setText("Request List");
+        employeeRequestRListBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeeRequestRListBtn.addActionListener(this::employeeRequestRListBtnActionPerformed);
+        employeeRequestSidebarPnl.add(employeeRequestRListBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
+        employeeRequestRListBtn.getAccessibleContext().setAccessibleName("employeeRequestRListBtn");
 
-        mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setLabel("Main Dashboard");
-        mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
-        jPanel1.add(mainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        employeeRequestMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeeRequestMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeRequestMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeRequestMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        employeeRequestMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        employeeRequestMainDashboardBtn.setLabel("Main Dashboard");
+        employeeRequestMainDashboardBtn.addActionListener(this::employeeRequestMainDashboardBtnActionPerformed);
+        employeeRequestSidebarPnl.add(employeeRequestMainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        employeeRequestMainDashboardBtn.getAccessibleContext().setAccessibleName("employeeRequestMainDashboardBtn");
 
-        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
-        jPanel1.add(MotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
-        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
+        employeeRequestMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        employeeRequestSidebarPnl.add(employeeRequestMotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
+        employeeRequestMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("employeeRequestMotorPHIconImgLbl");
 
-        jPanel2.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel2.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        employeeRequestRDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeRequestRDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestRDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeRequestRDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel4.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel4.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        employeeRequestRDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeeRequestRDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeeRequestRDetailsLbl.setText(" Request Details");
+        employeeRequestRDetailsPnl.add(employeeRequestRDetailsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 210, 46));
+        employeeRequestRDetailsLbl.getAccessibleContext().setAccessibleName("employeeRequestRDetailsLbl");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText(" Request Details");
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 210, 46));
+        employeeRequestRFormBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
+        employeeRequestRFormBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        employeeRequestRFormPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeRequestRFormPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestRFormPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeRequestRFormPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        jPanel18.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel18.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel18.setPreferredSize(new java.awt.Dimension(126, 40));
+        employeeRequestRFormLbl.setBackground(new java.awt.Color(255, 255, 255));
+        employeeRequestRFormLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeeRequestRFormLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeeRequestRFormLbl.setText("Request Form");
+        employeeRequestRFormLbl.setToolTipText("");
 
-        jLabel50.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel50.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel50.setText("Request Form");
-        jLabel50.setToolTipText("");
-
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
+        javax.swing.GroupLayout employeeRequestRFormPnlLayout = new javax.swing.GroupLayout(employeeRequestRFormPnl);
+        employeeRequestRFormPnl.setLayout(employeeRequestRFormPnlLayout);
+        employeeRequestRFormPnlLayout.setHorizontalGroup(
+            employeeRequestRFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeRequestRFormPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeRequestRFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
+        employeeRequestRFormPnlLayout.setVerticalGroup(
+            employeeRequestRFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeRequestRFormPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel50)
+                .addComponent(employeeRequestRFormLbl)
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        jPanel19.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel19.setForeground(new java.awt.Color(178, 178, 178));
+        employeeRequestRFormLbl.getAccessibleContext().setAccessibleName("employeeRequestRFormLbl");
 
-        jPanel15.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel15.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel15.setPreferredSize(new java.awt.Dimension(126, 40));
+        employeeRequestFARequestBrdrPnl.setBackground(new java.awt.Color(233, 233, 233));
+        employeeRequestFARequestBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestFARequestBrdrPnl.setForeground(new java.awt.Color(178, 178, 178));
+
+        employeeRequestFARequestPnl.setBackground(new java.awt.Color(146, 192, 253));
+        employeeRequestFARequestPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestFARequestPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeRequestFARequestPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
         jLabel21.setBackground(new java.awt.Color(255, 255, 255));
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
@@ -155,188 +155,208 @@ public class EmployeeRequestFrame extends javax.swing.JFrame {
         jLabel21.setText(" File A Request");
         jLabel21.setToolTipText("");
 
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
+        javax.swing.GroupLayout employeeRequestFARequestPnlLayout = new javax.swing.GroupLayout(employeeRequestFARequestPnl);
+        employeeRequestFARequestPnl.setLayout(employeeRequestFARequestPnlLayout);
+        employeeRequestFARequestPnlLayout.setHorizontalGroup(
+            employeeRequestFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeRequestFARequestPnlLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+        employeeRequestFARequestPnlLayout.setVerticalGroup(
+            employeeRequestFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestFARequestPnlLayout.createSequentialGroup()
                 .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jLabel43.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel43.setText("Hour");
+        employeeRequestHourLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeRequestHourLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestHourLbl.setText("Hour");
 
-        jTextField24.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField24.setText(" ");
-        jTextField24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField24.addActionListener(this::jTextField24ActionPerformed);
+        employeeRequestENameFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestENameFld.setText(" ");
+        employeeRequestENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestENameFld.addActionListener(this::employeeRequestENameFldActionPerformed);
 
-        jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel45.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel45.setText("Reason");
+        employeeRequestReasonLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeRequestReasonLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestReasonLbl.setText("Reason");
 
-        jButton18.setBackground(new java.awt.Color(59, 130, 246));
-        jButton18.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jButton18.setForeground(new java.awt.Color(255, 255, 255));
-        jButton18.setText("Submit");
-        jButton18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton18.addActionListener(this::jButton18ActionPerformed);
+        employeeRequestSubmitBtn.setBackground(new java.awt.Color(59, 130, 246));
+        employeeRequestSubmitBtn.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        employeeRequestSubmitBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeRequestSubmitBtn.setText("Submit");
+        employeeRequestSubmitBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        employeeRequestSubmitBtn.addActionListener(this::employeeRequestSubmitBtnActionPerformed);
 
-        jLabel46.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel46.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel46.setText("Date");
+        employeeRequestDateLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeRequestDateLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestDateLbl.setText("Date");
 
-        jTextField25.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField25.setText(" ");
-        jTextField25.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField25.addActionListener(this::jTextField25ActionPerformed);
+        employeeRequestENumberFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestENumberFld.setText(" ");
+        employeeRequestENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestENumberFld.addActionListener(this::employeeRequestENumberFldActionPerformed);
 
-        jTextField26.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField26.setText(" ");
-        jTextField26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField26.addActionListener(this::jTextField26ActionPerformed);
+        employeeRequestReasonFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestReasonFld.setText(" ");
+        employeeRequestReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestReasonFld.addActionListener(this::employeeRequestReasonFldActionPerformed);
 
-        jTextField30.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField30.setText(" ");
-        jTextField30.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField30.addActionListener(this::jTextField30ActionPerformed);
+        employeeRequestDateFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestDateFld.setText(" ");
+        employeeRequestDateFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestDateFld.addActionListener(this::employeeRequestDateFldActionPerformed);
 
-        jLabel42.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel42.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel42.setText("Employee #");
+        employeeRequestENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeRequestENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestENumberLbl.setText("Employee #");
 
-        jLabel41.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel41.setText("Employee Name");
+        employeeRequestENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeRequestENameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestENameLbl.setText("Employee Name");
 
-        jTextField27.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField27.setText(" ");
-        jTextField27.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField27.addActionListener(this::jTextField27ActionPerformed);
+        employeeRequestHourFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestHourFld.setText(" ");
+        employeeRequestHourFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestHourFld.addActionListener(this::employeeRequestHourFldActionPerformed);
 
-        jRadioButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(31, 41, 55));
-        jRadioButton1.setText("Overtime");
+        employeeRequestOvertimeRBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeRequestOvertimeRBtn.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestOvertimeRBtn.setText("Overtime");
 
-        jRadioButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(31, 41, 55));
-        jRadioButton2.setText("Undertime");
+        employeeRequestUndertimeRBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeRequestUndertimeRBtn.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestUndertimeRBtn.setText("Undertime");
 
-        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
-        jPanel19.setLayout(jPanel19Layout);
-        jPanel19Layout.setHorizontalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+        javax.swing.GroupLayout employeeRequestFARequestBrdrPnlLayout = new javax.swing.GroupLayout(employeeRequestFARequestBrdrPnl);
+        employeeRequestFARequestBrdrPnl.setLayout(employeeRequestFARequestBrdrPnlLayout);
+        employeeRequestFARequestBrdrPnlLayout.setHorizontalGroup(
+            employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel19Layout.createSequentialGroup()
-                        .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel19Layout.createSequentialGroup()
-                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(employeeRequestSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
+                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(employeeRequestENameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeRequestENumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeRequestReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField25, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                .addComponent(jTextField24))
-                            .addComponent(jRadioButton1))
+                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(employeeRequestENumberFld, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+                                .addComponent(employeeRequestENameFld))
+                            .addComponent(employeeRequestOvertimeRBtn))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel19Layout.createSequentialGroup()
-                                .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(employeeRequestDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
-                                .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel19Layout.createSequentialGroup()
-                                .addComponent(jRadioButton2)
+                                .addComponent(employeeRequestDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(employeeRequestUndertimeRBtn)
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel19Layout.createSequentialGroup()
-                                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(employeeRequestHourLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(jTextField26))
+                                .addComponent(employeeRequestHourFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(employeeRequestReasonFld))
                 .addGap(16, 16, 16))
         );
-        jPanel19Layout.setVerticalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel19Layout.createSequentialGroup()
+        employeeRequestFARequestBrdrPnlLayout.setVerticalGroup(
+            employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeRequestSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel46)
-                        .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel41)))
+                .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(employeeRequestDateLbl)
+                        .addComponent(employeeRequestDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(employeeRequestENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(employeeRequestENameLbl)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel42)
-                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel43))
-                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeRequestENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeRequestENumberLbl)
+                    .addComponent(employeeRequestHourFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeRequestHourLbl))
+                .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2))
+                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(employeeRequestOvertimeRBtn)
+                            .addComponent(employeeRequestUndertimeRBtn))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel45)
+                        .addComponent(employeeRequestReasonLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeRequestReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
         );
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+        employeeRequestFARequestPnl.getAccessibleContext().setAccessibleName("employeeRequestFARequestPnl");
+        employeeRequestHourLbl.getAccessibleContext().setAccessibleName("employeeRequestHourLbl");
+        employeeRequestENameFld.getAccessibleContext().setAccessibleName("employeeRequestENameFld");
+        employeeRequestReasonLbl.getAccessibleContext().setAccessibleName("employeeRequestReasonLbl");
+        employeeRequestSubmitBtn.getAccessibleContext().setAccessibleName("employeeRequestSubmitBtn");
+        employeeRequestDateLbl.getAccessibleContext().setAccessibleName("employeeRequestDateLbl");
+        employeeRequestENumberFld.getAccessibleContext().setAccessibleName("employeeRequestENumberFld");
+        employeeRequestReasonFld.getAccessibleContext().setAccessibleName("employeeRequestReasonFld");
+        employeeRequestDateFld.getAccessibleContext().setAccessibleName("employeeRequestDateFld");
+        employeeRequestENumberLbl.getAccessibleContext().setAccessibleName("employeeRequestENumberLbl");
+        employeeRequestENameLbl.getAccessibleContext().setAccessibleName("employeeRequestENameLbl");
+        employeeRequestHourFld.getAccessibleContext().setAccessibleName("employeeRequestHourFld");
+        employeeRequestOvertimeRBtn.getAccessibleContext().setAccessibleName("employeeRequestOvertimeRBtn");
+        employeeRequestUndertimeRBtn.getAccessibleContext().setAccessibleName("employeeRequestUndertimeRBtn");
+
+        javax.swing.GroupLayout employeeRequestRFormBrdrPnlLayout = new javax.swing.GroupLayout(employeeRequestRFormBrdrPnl);
+        employeeRequestRFormBrdrPnl.setLayout(employeeRequestRFormBrdrPnlLayout);
+        employeeRequestRFormBrdrPnlLayout.setHorizontalGroup(
+            employeeRequestRFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestRFormBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeRequestRFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(244, 244, 244))
-            .addGroup(jPanel5Layout.createSequentialGroup()
+            .addGroup(employeeRequestRFormBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeRequestFARequestBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+        employeeRequestRFormBrdrPnlLayout.setVerticalGroup(
+            employeeRequestRFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestRFormBrdrPnlLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeRequestRFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeRequestFARequestBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(178, 178, 178));
-        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        employeeRequestRFormPnl.getAccessibleContext().setAccessibleName("employeeRequestRFormPnl");
+        employeeRequestFARequestBrdrPnl.getAccessibleContext().setAccessibleName("employeeRequestFARequestBrdrPnl");
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel6.setText("Records");
+        employeeRequestRecordsBrdrPnl.setBackground(new java.awt.Color(178, 178, 178));
+        employeeRequestRecordsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jTable3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTable3.setForeground(new java.awt.Color(30, 42, 56));
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+        employeeRequestRecordsLbl.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeRequestRecordsLbl.setText("Records");
+
+        employeeRequestRecordsScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+
+        employeeRequestRecordsTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestRecordsTbl.setForeground(new java.awt.Color(30, 42, 56));
+        employeeRequestRecordsTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -451,105 +471,111 @@ public class EmployeeRequestFrame extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jTable3.setGridColor(new java.awt.Color(178, 178, 178));
-        jTable3.setSelectionForeground(new java.awt.Color(30, 42, 56));
-        jScrollPane5.setViewportView(jTable3);
+        employeeRequestRecordsTbl.setGridColor(new java.awt.Color(178, 178, 178));
+        employeeRequestRecordsTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
+        employeeRequestRecordsScrlPnl.setViewportView(employeeRequestRecordsTbl);
+        employeeRequestRecordsTbl.getAccessibleContext().setAccessibleName("employeeRequestRecordsTbl");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
+        javax.swing.GroupLayout employeeRequestRecordsBrdrPnlLayout = new javax.swing.GroupLayout(employeeRequestRecordsBrdrPnl);
+        employeeRequestRecordsBrdrPnl.setLayout(employeeRequestRecordsBrdrPnlLayout);
+        employeeRequestRecordsBrdrPnlLayout.setHorizontalGroup(
+            employeeRequestRecordsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeRequestRecordsBrdrPnlLayout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addGroup(employeeRequestRecordsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestRecordsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(employeeRequestRecordsLbl)
                         .addGap(319, 319, 319))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestRecordsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(employeeRequestRecordsScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 667, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(14, 14, 14))))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        employeeRequestRecordsBrdrPnlLayout.setVerticalGroup(
+            employeeRequestRecordsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeRequestRecordsBrdrPnlLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(jLabel6)
+                .addComponent(employeeRequestRecordsLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeRequestRecordsScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
+
+        employeeRequestRecordsLbl.getAccessibleContext().setAccessibleName("employeeRequestRecordsLbl");
+        employeeRequestRecordsScrlPnl.getAccessibleContext().setAccessibleName("employeeRequestRecordsScrlPnl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeRequestSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(employeeRequestRDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeRequestRFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeRequestRecordsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeRequestSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(employeeRequestRDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(employeeRequestRecordsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(employeeRequestRFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
+
+        employeeRequestSidebarPnl.getAccessibleContext().setAccessibleName("employeeRequestSidebarPnl");
+        employeeRequestRDetailsPnl.getAccessibleContext().setAccessibleName("employeeRequestRDetailsPnl");
+        employeeRequestRFormBrdrPnl.getAccessibleContext().setAccessibleName("employeeRequestRFormBrdrPnl");
+        employeeRequestRecordsBrdrPnl.getAccessibleContext().setAccessibleName("employeeRequestRecordsBrdrPnl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void employeeRequestRDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestRDetailsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_employeeRequestRDetailsBtnActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void employeeRequestRListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestRListBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_employeeRequestRListBtnActionPerformed
 
-    private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
+    private void employeeRequestMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardFrame().setVisible(true);
-    }//GEN-LAST:event_mainDashboardBtnActionPerformed
+    }//GEN-LAST:event_employeeRequestMainDashboardBtnActionPerformed
 
-    private void jTextField27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField27ActionPerformed
+    private void employeeRequestHourFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestHourFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField27ActionPerformed
+    }//GEN-LAST:event_employeeRequestHourFldActionPerformed
 
-    private void jTextField30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField30ActionPerformed
+    private void employeeRequestDateFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestDateFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField30ActionPerformed
+    }//GEN-LAST:event_employeeRequestDateFldActionPerformed
 
-    private void jTextField26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField26ActionPerformed
+    private void employeeRequestReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestReasonFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField26ActionPerformed
+    }//GEN-LAST:event_employeeRequestReasonFldActionPerformed
 
-    private void jTextField25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField25ActionPerformed
+    private void employeeRequestENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField25ActionPerformed
+    }//GEN-LAST:event_employeeRequestENumberFldActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    private void employeeRequestSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestSubmitBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+    }//GEN-LAST:event_employeeRequestSubmitBtnActionPerformed
 
-    private void jTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField24ActionPerformed
+    private void employeeRequestENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestENameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField24ActionPerformed
+    }//GEN-LAST:event_employeeRequestENameFldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -577,36 +603,35 @@ public class EmployeeRequestFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MotorPHIconImgLbl;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextField employeeRequestDateFld;
+    private javax.swing.JLabel employeeRequestDateLbl;
+    private javax.swing.JTextField employeeRequestENameFld;
+    private javax.swing.JLabel employeeRequestENameLbl;
+    private javax.swing.JTextField employeeRequestENumberFld;
+    private javax.swing.JLabel employeeRequestENumberLbl;
+    private javax.swing.JPanel employeeRequestFARequestBrdrPnl;
+    private javax.swing.JPanel employeeRequestFARequestPnl;
+    private javax.swing.JTextField employeeRequestHourFld;
+    private javax.swing.JLabel employeeRequestHourLbl;
+    private javax.swing.JButton employeeRequestMainDashboardBtn;
+    private javax.swing.JLabel employeeRequestMotorPHIconImgLbl;
+    private javax.swing.JRadioButton employeeRequestOvertimeRBtn;
+    private javax.swing.JButton employeeRequestRDetailsBtn;
+    private javax.swing.JLabel employeeRequestRDetailsLbl;
+    private javax.swing.JPanel employeeRequestRDetailsPnl;
+    private javax.swing.JPanel employeeRequestRFormBrdrPnl;
+    private javax.swing.JLabel employeeRequestRFormLbl;
+    private javax.swing.JPanel employeeRequestRFormPnl;
+    private javax.swing.JButton employeeRequestRListBtn;
+    private javax.swing.JTextField employeeRequestReasonFld;
+    private javax.swing.JLabel employeeRequestReasonLbl;
+    private javax.swing.JPanel employeeRequestRecordsBrdrPnl;
+    private javax.swing.JLabel employeeRequestRecordsLbl;
+    private javax.swing.JScrollPane employeeRequestRecordsScrlPnl;
+    private javax.swing.JTable employeeRequestRecordsTbl;
+    private javax.swing.JPanel employeeRequestSidebarPnl;
+    private javax.swing.JButton employeeRequestSubmitBtn;
+    private javax.swing.JRadioButton employeeRequestUndertimeRBtn;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTable jTable3;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JButton mainDashboardBtn;
     // End of variables declaration//GEN-END:variables
 }

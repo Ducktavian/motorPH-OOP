@@ -24,13 +24,12 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <Component id="employeeRequestSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                  <Component id="jPanel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeeRequestRDetailsPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeeRequestRFormBrdrPnl" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeeRequestRecordsBrdrPnl" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="13" max="32767" attributes="0"/>
           </Group>
@@ -40,16 +39,14 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel1" min="-2" pref="700" max="-2" attributes="0"/>
+                  <Component id="employeeRequestSidebarPnl" min="-2" pref="700" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
                       <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-                      <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeRequestRDetailsPnl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="employeeRequestRecordsBrdrPnl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeRequestRFormBrdrPnl" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -58,18 +55,21 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="employeeRequestSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestSidebarPnl"/>
+      </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="employeeRequestRDetailsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -83,8 +83,11 @@
             <Property name="text" type="java.lang.String" value="Request Details"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRDetailsBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeRequestRDetailsBtnActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -92,7 +95,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton4">
+        <Component class="javax.swing.JButton" name="employeeRequestRListBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -106,8 +109,11 @@
             <Property name="text" type="java.lang.String" value="Request List"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRListBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeRequestRListBtnActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -115,7 +121,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="mainDashboardBtn">
+        <Component class="javax.swing.JButton" name="employeeRequestMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -130,8 +136,11 @@
             <Property name="horizontalTextPosition" type="int" value="4"/>
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestMainDashboardBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeRequestMainDashboardBtnActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -139,14 +148,14 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="MotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="employeeRequestMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="MotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestMotorPHIconImgLbl"/>
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -156,7 +165,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel2">
+    <Container class="javax.swing.JPanel" name="employeeRequestRDetailsPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -172,33 +181,15 @@
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
-      </Layout>
-    </Container>
-    <Container class="javax.swing.JPanel" name="jPanel4">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="8a" green="3a" red="1e" type="rgb"/>
-        </Property>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-            <LineBorder roundedCorners="true">
-              <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
-            </LineBorder>
-          </Border>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="8a" green="3a" red="1e" type="rgb"/>
-        </Property>
-      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRDetailsPnl"/>
+      </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JLabel" name="employeeRequestRDetailsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -208,6 +199,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value=" Request Details"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRDetailsLbl"/>
+          </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="7" y="1" width="210" height="46"/>
@@ -216,7 +210,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel5">
+    <Container class="javax.swing.JPanel" name="employeeRequestRFormBrdrPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -229,18 +223,21 @@
           </Border>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRFormBrdrPnl"/>
+      </AccessibilityProperties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jPanel18" min="-2" pref="198" max="-2" attributes="0"/>
+                  <Component id="employeeRequestRFormPnl" min="-2" pref="198" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="244" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                  <Component id="jPanel19" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeeRequestFARequestBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="17" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -249,16 +246,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                  <Component id="jPanel18" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="employeeRequestRFormPnl" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jPanel19" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeeRequestFARequestBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel18">
+        <Container class="javax.swing.JPanel" name="employeeRequestRFormPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -277,13 +274,16 @@
               <Dimension value="[126, 40]"/>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRFormPnl"/>
+          </AccessibilityProperties>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                      <Component id="jLabel50" min="-2" pref="176" max="-2" attributes="0"/>
+                      <Component id="employeeRequestRFormLbl" min="-2" pref="176" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -292,14 +292,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel50" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeRequestRFormLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel50">
+            <Component class="javax.swing.JLabel" name="employeeRequestRFormLbl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -313,10 +313,13 @@
                 <Property name="text" type="java.lang.String" value="Request Form"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRFormLbl"/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanel19">
+        <Container class="javax.swing.JPanel" name="employeeRequestFARequestBrdrPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="e9" green="e9" red="e9" type="rgb"/>
@@ -332,6 +335,9 @@
               <Color blue="b2" green="b2" red="b2" type="rgb"/>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestFARequestBrdrPnl"/>
+          </AccessibilityProperties>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -340,43 +346,43 @@
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jPanel15" min="-2" pref="160" max="-2" attributes="0"/>
+                              <Component id="employeeRequestFARequestPnl" min="-2" pref="160" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jButton18" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="employeeRequestSubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel41" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
-                                  <Component id="jLabel42" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
-                                  <Component id="jLabel45" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Component id="employeeRequestENameLbl" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
+                                  <Component id="employeeRequestENumberLbl" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
+                                  <Component id="employeeRequestReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jTextField25" alignment="0" pref="150" max="32767" attributes="0"/>
-                                      <Component id="jTextField24" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="employeeRequestENumberFld" alignment="0" pref="150" max="32767" attributes="0"/>
+                                      <Component id="employeeRequestENameFld" alignment="0" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="employeeRequestOvertimeRBtn" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jLabel46" min="-2" pref="80" max="-2" attributes="0"/>
+                                      <Component id="employeeRequestDateLbl" min="-2" pref="80" max="-2" attributes="0"/>
                                       <EmptySpace pref="65" max="32767" attributes="0"/>
-                                      <Component id="jTextField30" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="employeeRequestDateFld" min="-2" pref="150" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeeRequestUndertimeRBtn" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel43" min="-2" pref="80" max="-2" attributes="0"/>
+                                      <Component id="employeeRequestHourLbl" min="-2" pref="80" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jTextField27" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="employeeRequestHourFld" min="-2" pref="150" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jTextField26" alignment="0" max="32767" attributes="0"/>
+                          <Component id="employeeRequestReasonFld" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
@@ -387,50 +393,50 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jPanel15" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton18" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="employeeRequestFARequestPnl" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="employeeRequestSubmitBtn" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="jLabel46" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField30" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="employeeRequestDateLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="employeeRequestDateFld" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="jTextField24" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="employeeRequestENameFld" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="employeeRequestENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField25" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jLabel42" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField27" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="jLabel43" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="employeeRequestENumberFld" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="employeeRequestENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="employeeRequestHourFld" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="employeeRequestHourLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="employeeRequestOvertimeRBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="employeeRequestUndertimeRBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace pref="27" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
+                              <Component id="employeeRequestReasonLbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="jTextField26" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="employeeRequestReasonFld" min="-2" pref="56" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JPanel" name="jPanel15">
+            <Container class="javax.swing.JPanel" name="employeeRequestFARequestPnl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -449,6 +455,9 @@
                   <Dimension value="[126, 40]"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestFARequestPnl"/>
+              </AccessibilityProperties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -487,7 +496,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="jLabel43">
+            <Component class="javax.swing.JLabel" name="employeeRequestHourLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -497,8 +506,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Hour"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestHourLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField24">
+            <Component class="javax.swing.JTextField" name="employeeRequestENameFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -512,11 +524,14 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestENameFld"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField24ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeRequestENameFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel45">
+            <Component class="javax.swing.JLabel" name="employeeRequestReasonLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -526,8 +541,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reason"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestReasonLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton18">
+            <Component class="javax.swing.JButton" name="employeeRequestSubmitBtn">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f6" green="82" red="3b" type="rgb"/>
@@ -547,11 +565,14 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestSubmitBtn"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton18ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeRequestSubmitBtnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel46">
+            <Component class="javax.swing.JLabel" name="employeeRequestDateLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -561,8 +582,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Date"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestDateLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField25">
+            <Component class="javax.swing.JTextField" name="employeeRequestENumberFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -576,11 +600,14 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestENumberFld"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField25ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeRequestENumberFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField26">
+            <Component class="javax.swing.JTextField" name="employeeRequestReasonFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -594,11 +621,14 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestReasonFld"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField26ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeRequestReasonFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField30">
+            <Component class="javax.swing.JTextField" name="employeeRequestDateFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -612,11 +642,14 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestDateFld"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField30ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeRequestDateFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel42">
+            <Component class="javax.swing.JLabel" name="employeeRequestENumberLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -626,8 +659,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Employee #"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestENumberLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel41">
+            <Component class="javax.swing.JLabel" name="employeeRequestENameLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -637,8 +673,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Employee Name"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestENameLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField27">
+            <Component class="javax.swing.JTextField" name="employeeRequestHourFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -652,11 +691,14 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestHourFld"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField27ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeRequestHourFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+            <Component class="javax.swing.JRadioButton" name="employeeRequestOvertimeRBtn">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -666,8 +708,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Overtime"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestOvertimeRBtn"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+            <Component class="javax.swing.JRadioButton" name="employeeRequestUndertimeRBtn">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -677,12 +722,15 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Undertime"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestUndertimeRBtn"/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel3">
+    <Container class="javax.swing.JPanel" name="employeeRequestRecordsBrdrPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="b2" green="b2" red="b2" type="rgb"/>
@@ -695,19 +743,22 @@
           </Border>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRecordsBrdrPnl"/>
+      </AccessibilityProperties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="15" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          <Component id="employeeRequestRecordsLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="319" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jScrollPane5" min="-2" pref="676" max="-2" attributes="0"/>
+                          <Component id="employeeRequestRecordsScrlPnl" min="-2" pref="667" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -718,31 +769,46 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeeRequestRecordsLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jScrollPane5" min="-2" pref="148" max="-2" attributes="0"/>
+                  <Component id="employeeRequestRecordsScrlPnl" min="-2" pref="148" max="-2" attributes="0"/>
                   <EmptySpace pref="15" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="employeeRequestRecordsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Records"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRecordsLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+        <Container class="javax.swing.JScrollPane" name="employeeRequestRecordsScrlPnl">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder roundedCorners="true">
+                  <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRecordsScrlPnl"/>
+          </AccessibilityProperties>
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="jTable3">
+            <Component class="javax.swing.JTable" name="employeeRequestRecordsTbl">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -814,6 +880,9 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeRequestRecordsTbl"/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>

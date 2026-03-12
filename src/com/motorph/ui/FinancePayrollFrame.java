@@ -28,686 +28,733 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        hrField2 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        hrField = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        hrField6 = new javax.swing.JTextField();
-        hrField3 = new javax.swing.JTextField();
-        hrField8 = new javax.swing.JTextField();
-        jPanel1 = new javax.swing.JPanel();
-        maindDashboardBtn = new javax.swing.JButton();
-        MotorPHIconImgLbl = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        hrField5 = new javax.swing.JTextField();
-        hrField9 = new javax.swing.JTextField();
-        hrField10 = new javax.swing.JTextField();
-        hrField11 = new javax.swing.JTextField();
-        hrField12 = new javax.swing.JTextField();
-        hrField13 = new javax.swing.JTextField();
-        hrField14 = new javax.swing.JTextField();
-        hrField19 = new javax.swing.JTextField();
-        jLabel31 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        hrField15 = new javax.swing.JTextField();
-        hrField16 = new javax.swing.JTextField();
-        hrField17 = new javax.swing.JTextField();
-        hrField18 = new javax.swing.JTextField();
-        hrField20 = new javax.swing.JTextField();
-        hrField22 = new javax.swing.JTextField();
-        jLabel36 = new javax.swing.JLabel();
-        hrField23 = new javax.swing.JTextField();
-        hrField21 = new javax.swing.JTextField();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        hrField24 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
-        SearchIconImg = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        financePrlENumberFld = new javax.swing.JTextField();
+        financePrlENameLbl = new javax.swing.JLabel();
+        financePrlPrlDateLbl = new javax.swing.JLabel();
+        financePrlStatusLbl = new javax.swing.JLabel();
+        financePrlENameFld = new javax.swing.JTextField();
+        financePrlPrlPeriodLbl = new javax.swing.JLabel();
+        financePrlCreatePylPnl = new javax.swing.JPanel();
+        financePrlCreatePylLbl = new javax.swing.JLabel();
+        financePrlStatusFld = new javax.swing.JTextField();
+        financePrlPositionFld = new javax.swing.JTextField();
+        financePrlPrlDateFld = new javax.swing.JTextField();
+        financePrlSidebarBtn = new javax.swing.JPanel();
+        financePrlMainDashboardBtn = new javax.swing.JButton();
+        financePrlMotorPHIconImgLbl = new javax.swing.JLabel();
+        financePrlPrlDetailsBtn = new javax.swing.JButton();
+        financePrlCalculatorBrdrPnl = new javax.swing.JPanel();
+        financePrlCalculatorLbl = new javax.swing.JLabel();
+        financePrlTGrossBrdrPnl = new javax.swing.JPanel();
+        financePrlEarningLbl = new javax.swing.JLabel();
+        financePrlBasicSalaryLbl = new javax.swing.JLabel();
+        financePrlOvertimeLbl = new javax.swing.JLabel();
+        financePrlHolidayLbl = new javax.swing.JLabel();
+        financePrlBenefitLbl = new javax.swing.JLabel();
+        financePrlRiceSubsidyLbl = new javax.swing.JLabel();
+        financePrlPAllowanceLbl = new javax.swing.JLabel();
+        financePrlCAllowanceLbl = new javax.swing.JLabel();
+        financePrlBonusLbl = new javax.swing.JLabel();
+        financePrlBonusTypeCbx = new javax.swing.JComboBox<>();
+        financePrlBasicSalaryFld = new javax.swing.JTextField();
+        financePrlOvertimeFld = new javax.swing.JTextField();
+        financePrlHolidayFld = new javax.swing.JTextField();
+        financePrlRiceSubsidyFld = new javax.swing.JTextField();
+        financePrlPAllowanceFld = new javax.swing.JTextField();
+        financePrlCAllowanceFld = new javax.swing.JTextField();
+        financePrlBonusTypeFld = new javax.swing.JTextField();
+        financePrlTGrossFld = new javax.swing.JTextField();
+        financePrlTGrossLbl = new javax.swing.JLabel();
+        financePrlTDeductionBrdrPnl = new javax.swing.JPanel();
+        financePrlDeductionLbl = new javax.swing.JLabel();
+        financePrlSSSLbl = new javax.swing.JLabel();
+        financePrlTINLbl = new javax.swing.JLabel();
+        financePrlPhilHealthLbl = new javax.swing.JLabel();
+        financePrlPagIbigLbl = new javax.swing.JLabel();
+        financePrlLateLbl = new javax.swing.JLabel();
+        financePrlUndertimeLbl = new javax.swing.JLabel();
+        financePrlSSSFld = new javax.swing.JTextField();
+        financePrlTINFld = new javax.swing.JTextField();
+        financePrlPhilHealthFld = new javax.swing.JTextField();
+        financePrlPagIbigFld = new javax.swing.JTextField();
+        financePrlLateFld = new javax.swing.JTextField();
+        financePrlUndertimeFld = new javax.swing.JTextField();
+        financePrlAbsentLbl = new javax.swing.JLabel();
+        financePrlAbsentFld = new javax.swing.JTextField();
+        financePrlTDeductionFld = new javax.swing.JTextField();
+        financePrlTDeductionLbl = new javax.swing.JLabel();
+        financePrlNetPayLbl = new javax.swing.JLabel();
+        financePrlNetPayFld = new javax.swing.JTextField();
+        financePrlPDFBtn = new javax.swing.JButton();
+        financePrlENumberLbl = new javax.swing.JLabel();
+        financePrlPositionLbl = new javax.swing.JLabel();
+        financePrlSearchPnl = new javax.swing.JPanel();
+        financePrlEENumberFld = new javax.swing.JTextField();
+        financePrlSearchIconImgLbl = new javax.swing.JLabel();
+        financePrlSendPylBtn = new javax.swing.JButton();
+        financePrlPrlPeriodCbx = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        hrField2.setForeground(new java.awt.Color(31, 41, 55));
-        hrField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField2.setEnabled(false);
-        hrField2.addActionListener(this::hrField2ActionPerformed);
+        financePrlENumberFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlENumberFld.setEnabled(false);
+        financePrlENumberFld.addActionListener(this::financePrlENumberFldActionPerformed);
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel9.setText("Employee Name");
+        financePrlENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlENameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlENameLbl.setText("Employee Name");
 
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel16.setText("Payroll Date");
+        financePrlPrlDateLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlPrlDateLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPrlDateLbl.setText("Payroll Date");
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel15.setText("Status");
+        financePrlStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlStatusLbl.setText("Status");
 
-        hrField.setForeground(new java.awt.Color(31, 41, 55));
-        hrField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField.setEnabled(false);
-        hrField.addActionListener(this::hrFieldActionPerformed);
+        financePrlENameFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlENameFld.setEnabled(false);
+        financePrlENameFld.addActionListener(this::financePrlENameFldActionPerformed);
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel14.setText("Payroll Period");
+        financePrlPrlPeriodLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlPrlPeriodLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPrlPeriodLbl.setText("Payroll Period");
 
-        jPanel2.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel2.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        financePrlCreatePylPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financePrlCreatePylPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlCreatePylPnl.setForeground(new java.awt.Color(30, 58, 138));
+        financePrlCreatePylPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Create a Payslip");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 200, 46));
+        financePrlCreatePylLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        financePrlCreatePylLbl.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlCreatePylLbl.setText("Create a Payslip");
+        financePrlCreatePylPnl.add(financePrlCreatePylLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 200, 46));
+        financePrlCreatePylLbl.getAccessibleContext().setAccessibleName("financePrlCreatePylLbl");
 
-        hrField6.setForeground(new java.awt.Color(31, 41, 55));
-        hrField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField6.setEnabled(false);
-        hrField6.addActionListener(this::hrField6ActionPerformed);
+        financePrlStatusFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlStatusFld.setEnabled(false);
+        financePrlStatusFld.addActionListener(this::financePrlStatusFldActionPerformed);
 
-        hrField3.setForeground(new java.awt.Color(31, 41, 55));
-        hrField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField3.setEnabled(false);
-        hrField3.addActionListener(this::hrField3ActionPerformed);
+        financePrlPositionFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPositionFld.setEnabled(false);
+        financePrlPositionFld.addActionListener(this::financePrlPositionFldActionPerformed);
 
-        hrField8.setForeground(new java.awt.Color(31, 41, 55));
-        hrField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField8.setEnabled(false);
-        hrField8.addActionListener(this::hrField8ActionPerformed);
+        financePrlPrlDateFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPrlDateFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPrlDateFld.setEnabled(false);
+        financePrlPrlDateFld.addActionListener(this::financePrlPrlDateFldActionPerformed);
 
-        jPanel1.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel1.setPreferredSize(new java.awt.Dimension(262, 700));
+        financePrlSidebarBtn.setBackground(new java.awt.Color(30, 58, 138));
+        financePrlSidebarBtn.setPreferredSize(new java.awt.Dimension(262, 700));
 
-        maindDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        maindDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        maindDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        maindDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        maindDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        maindDashboardBtn.setLabel("Main Dashboard");
-        maindDashboardBtn.addActionListener(this::maindDashboardBtnActionPerformed);
+        financePrlMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        financePrlMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        financePrlMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        financePrlMainDashboardBtn.setLabel("Main Dashboard");
+        financePrlMainDashboardBtn.addActionListener(this::financePrlMainDashboardBtnActionPerformed);
 
-        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        financePrlMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        jButton2.setBackground(new java.awt.Color(30, 42, 56));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Payroll Details");
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.addActionListener(this::jButton2ActionPerformed);
+        financePrlPrlDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        financePrlPrlDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlPrlDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlPrlDetailsBtn.setText("Payroll Details");
+        financePrlPrlDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        financePrlPrlDetailsBtn.addActionListener(this::financePrlPrlDetailsBtnActionPerformed);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout financePrlSidebarBtnLayout = new javax.swing.GroupLayout(financePrlSidebarBtn);
+        financePrlSidebarBtn.setLayout(financePrlSidebarBtnLayout);
+        financePrlSidebarBtnLayout.setHorizontalGroup(
+            financePrlSidebarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financePrlSidebarBtnLayout.createSequentialGroup()
                 .addGap(92, 92, 92)
-                .addComponent(maindDashboardBtn))
-            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(financePrlMainDashboardBtn))
+            .addGroup(financePrlSidebarBtnLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(financePrlSidebarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(financePrlSidebarBtnLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(MotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(financePrlMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financePrlPrlDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        financePrlSidebarBtnLayout.setVerticalGroup(
+            financePrlSidebarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financePrlSidebarBtnLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(MotorPHIconImgLbl)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(financePrlSidebarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financePrlMotorPHIconImgLbl)
+                    .addGroup(financePrlSidebarBtnLayout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(financePrlPrlDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(409, 409, 409)
-                .addComponent(maindDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financePrlMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
+        financePrlMainDashboardBtn.getAccessibleContext().setAccessibleName("financePrlMainDashboardBtn");
+        financePrlMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("financePrlMotorPHIconImgLbl");
+        financePrlPrlDetailsBtn.getAccessibleContext().setAccessibleName("financePrlPrlDetailsBtn");
 
-        jPanel4.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel4.setForeground(new java.awt.Color(146, 192, 253));
-        jPanel4.setPreferredSize(new java.awt.Dimension(710, 408));
+        financePrlCalculatorBrdrPnl.setBackground(new java.awt.Color(146, 192, 253));
+        financePrlCalculatorBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlCalculatorBrdrPnl.setForeground(new java.awt.Color(146, 192, 253));
+        financePrlCalculatorBrdrPnl.setPreferredSize(new java.awt.Dimension(710, 408));
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel13.setText("Salary Calculator");
+        financePrlCalculatorLbl.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlCalculatorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlCalculatorLbl.setText("Salary Calculator");
 
-        jPanel5.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel5.setForeground(new java.awt.Color(30, 58, 138));
+        financePrlTGrossBrdrPnl.setBackground(new java.awt.Color(233, 233, 233));
+        financePrlTGrossBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlTGrossBrdrPnl.setForeground(new java.awt.Color(30, 58, 138));
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel17.setText("Earning");
+        financePrlEarningLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financePrlEarningLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlEarningLbl.setText("Earning");
 
-        jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel18.setText("Basic Salary");
+        financePrlBasicSalaryLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlBasicSalaryLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlBasicSalaryLbl.setText("Basic Salary");
 
-        jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel19.setText("Overtime");
+        financePrlOvertimeLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlOvertimeLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlOvertimeLbl.setText("Overtime");
 
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel20.setText("Holiday");
+        financePrlHolidayLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlHolidayLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlHolidayLbl.setText("Holiday");
 
-        jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel21.setText("Benefit");
+        financePrlBenefitLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financePrlBenefitLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlBenefitLbl.setText("Benefit");
 
-        jLabel22.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel22.setText("Rice Subsidy");
+        financePrlRiceSubsidyLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlRiceSubsidyLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlRiceSubsidyLbl.setText("Rice Subsidy");
 
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel23.setText("Phone Allowance");
+        financePrlPAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlPAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPAllowanceLbl.setText("Phone Allowance");
 
-        jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel24.setText("Clothing Allowance");
+        financePrlCAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlCAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlCAllowanceLbl.setText("Clothing Allowance");
 
-        jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel25.setText("Bonus");
+        financePrlBonusLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financePrlBonusLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlBonusLbl.setText("Bonus");
 
-        jComboBox1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jComboBox1.setForeground(new java.awt.Color(31, 41, 55));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bonus Type", "13th Month", "Christmas", "Performance" }));
-        jComboBox1.addActionListener(this::jComboBox1ActionPerformed);
+        financePrlBonusTypeCbx.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlBonusTypeCbx.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlBonusTypeCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bonus Type", "13th Month", "Christmas", "Performance" }));
+        financePrlBonusTypeCbx.addActionListener(this::financePrlBonusTypeCbxActionPerformed);
 
-        hrField5.setForeground(new java.awt.Color(31, 41, 55));
-        hrField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField5.setEnabled(false);
-        hrField5.addActionListener(this::hrField5ActionPerformed);
+        financePrlBasicSalaryFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlBasicSalaryFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlBasicSalaryFld.setEnabled(false);
+        financePrlBasicSalaryFld.addActionListener(this::financePrlBasicSalaryFldActionPerformed);
 
-        hrField9.setForeground(new java.awt.Color(31, 41, 55));
-        hrField9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField9.setEnabled(false);
-        hrField9.addActionListener(this::hrField9ActionPerformed);
+        financePrlOvertimeFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlOvertimeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlOvertimeFld.setEnabled(false);
+        financePrlOvertimeFld.addActionListener(this::financePrlOvertimeFldActionPerformed);
 
-        hrField10.setForeground(new java.awt.Color(31, 41, 55));
-        hrField10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField10.setEnabled(false);
-        hrField10.addActionListener(this::hrField10ActionPerformed);
+        financePrlHolidayFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlHolidayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlHolidayFld.setEnabled(false);
+        financePrlHolidayFld.addActionListener(this::financePrlHolidayFldActionPerformed);
 
-        hrField11.setForeground(new java.awt.Color(31, 41, 55));
-        hrField11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField11.setEnabled(false);
-        hrField11.addActionListener(this::hrField11ActionPerformed);
+        financePrlRiceSubsidyFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlRiceSubsidyFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlRiceSubsidyFld.setEnabled(false);
+        financePrlRiceSubsidyFld.addActionListener(this::financePrlRiceSubsidyFldActionPerformed);
 
-        hrField12.setForeground(new java.awt.Color(31, 41, 55));
-        hrField12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField12.setEnabled(false);
-        hrField12.addActionListener(this::hrField12ActionPerformed);
+        financePrlPAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPAllowanceFld.setEnabled(false);
+        financePrlPAllowanceFld.addActionListener(this::financePrlPAllowanceFldActionPerformed);
 
-        hrField13.setForeground(new java.awt.Color(31, 41, 55));
-        hrField13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField13.setEnabled(false);
-        hrField13.addActionListener(this::hrField13ActionPerformed);
+        financePrlCAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlCAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlCAllowanceFld.setEnabled(false);
+        financePrlCAllowanceFld.addActionListener(this::financePrlCAllowanceFldActionPerformed);
 
-        hrField14.setForeground(new java.awt.Color(31, 41, 55));
-        hrField14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField14.setEnabled(false);
-        hrField14.addActionListener(this::hrField14ActionPerformed);
+        financePrlBonusTypeFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlBonusTypeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlBonusTypeFld.setEnabled(false);
+        financePrlBonusTypeFld.addActionListener(this::financePrlBonusTypeFldActionPerformed);
 
-        hrField19.setForeground(new java.awt.Color(31, 41, 55));
-        hrField19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField19.setEnabled(false);
-        hrField19.addActionListener(this::hrField19ActionPerformed);
+        financePrlTGrossFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlTGrossFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlTGrossFld.setEnabled(false);
+        financePrlTGrossFld.addActionListener(this::financePrlTGrossFldActionPerformed);
 
-        jLabel31.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel31.setText("Total Gross");
+        financePrlTGrossLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financePrlTGrossLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlTGrossLbl.setText("Total Gross");
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout financePrlTGrossBrdrPnlLayout = new javax.swing.GroupLayout(financePrlTGrossBrdrPnl);
+        financePrlTGrossBrdrPnl.setLayout(financePrlTGrossBrdrPnlLayout);
+        financePrlTGrossBrdrPnlLayout.setHorizontalGroup(
+            financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financePrlTGrossBrdrPnlLayout.createSequentialGroup()
+                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, financePrlTGrossBrdrPnlLayout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel19)
+                        .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlOvertimeLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField9, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel18)
+                                .addComponent(financePrlOvertimeFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlBasicSalaryLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField5, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel20)
+                                .addComponent(financePrlBasicSalaryFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlHolidayLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField10, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel22)
+                                .addComponent(financePrlHolidayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlRiceSubsidyLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField11, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel23)
+                                .addComponent(financePrlRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlPAllowanceLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField12, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel24)
+                                .addComponent(financePrlPAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlCAllowanceLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
-                                .addComponent(hrField13, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel5Layout.createSequentialGroup()
-                                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financePrlCAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
+                                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
+                                        .addComponent(financePrlBonusTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financePrlTGrossBrdrPnlLayout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(jLabel31)))
+                                        .addComponent(financePrlTGrossLbl)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrField14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrField19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
+                                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(financePrlBonusTypeFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(financePrlTGrossFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, financePrlTGrossBrdrPnlLayout.createSequentialGroup()
                         .addGap(134, 134, 134)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel21)
-                            .addComponent(jLabel17)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(financePrlBenefitLbl)
+                            .addComponent(financePrlEarningLbl)
+                            .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
                                 .addGap(4, 4, 4)
-                                .addComponent(jLabel25)))
+                                .addComponent(financePrlBonusLbl)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(26, 26, 26))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        financePrlTGrossBrdrPnlLayout.setVerticalGroup(
+            financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel17)
+                .addComponent(financePrlEarningLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18)
-                    .addComponent(hrField5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financePrlBasicSalaryLbl)
+                    .addComponent(financePrlBasicSalaryFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel19)
-                    .addComponent(hrField9, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financePrlOvertimeLbl)
+                    .addComponent(financePrlOvertimeFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(hrField10, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financePrlHolidayLbl)
+                    .addComponent(financePrlHolidayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel21)
+                .addComponent(financePrlBenefitLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel22)
-                    .addComponent(hrField11, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financePrlRiceSubsidyLbl)
+                    .addComponent(financePrlRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23)
-                    .addComponent(hrField12, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financePrlPAllowanceLbl)
+                    .addComponent(financePrlPAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(hrField13, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financePrlCAllowanceLbl)
+                    .addComponent(financePrlCAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel25)
+                .addComponent(financePrlBonusLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrField14, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financePrlBonusTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlBonusTypeFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField19, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel31))
+                .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(financePrlTGrossFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlTGrossLbl))
                 .addGap(8, 8, 8))
         );
 
-        jPanel7.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel7.setForeground(new java.awt.Color(30, 58, 138));
+        financePrlEarningLbl.getAccessibleContext().setAccessibleName("financePrlEarningLbl");
+        financePrlBasicSalaryLbl.getAccessibleContext().setAccessibleName("financePrlBasicSalaryLbl");
+        financePrlOvertimeLbl.getAccessibleContext().setAccessibleName("financePrlOvertimeLbl");
+        financePrlHolidayLbl.getAccessibleContext().setAccessibleName("financePrlHolidayLbl");
+        financePrlBenefitLbl.getAccessibleContext().setAccessibleName("financePrlBenefitLbl");
+        financePrlRiceSubsidyLbl.getAccessibleContext().setAccessibleName("financePrlRiceSubsidyLbl");
+        financePrlPAllowanceLbl.getAccessibleContext().setAccessibleName("financePrlPAllowanceLbl");
+        financePrlCAllowanceLbl.getAccessibleContext().setAccessibleName("financePrlCAllowanceLbl");
+        financePrlBonusLbl.getAccessibleContext().setAccessibleName("financePrlBonusLbl");
+        financePrlBonusTypeCbx.getAccessibleContext().setAccessibleName("financePrlBonusTypeCbx");
+        financePrlBasicSalaryFld.getAccessibleContext().setAccessibleName("financePrlBasicSalaryFld");
+        financePrlOvertimeFld.getAccessibleContext().setAccessibleName("financePrlOvertimeFld");
+        financePrlHolidayFld.getAccessibleContext().setAccessibleName("financePrlHolidayFld");
+        financePrlRiceSubsidyFld.getAccessibleContext().setAccessibleName("financePrlRiceSubsidyFld");
+        financePrlPAllowanceFld.getAccessibleContext().setAccessibleName("financePrlPAllowanceFld");
+        financePrlCAllowanceFld.getAccessibleContext().setAccessibleName("financePrlCAllowanceFld");
+        financePrlBonusTypeFld.getAccessibleContext().setAccessibleName("financePrlBonusTypeFld");
+        financePrlTGrossFld.getAccessibleContext().setAccessibleName("financePrlTGrossFld");
+        financePrlTGrossLbl.getAccessibleContext().setAccessibleName("financePrlTGrossLbl");
 
-        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel27.setText("Deduction");
+        financePrlTDeductionBrdrPnl.setBackground(new java.awt.Color(233, 233, 233));
+        financePrlTDeductionBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlTDeductionBrdrPnl.setForeground(new java.awt.Color(30, 58, 138));
 
-        jLabel28.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel28.setText("SSS");
+        financePrlDeductionLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financePrlDeductionLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlDeductionLbl.setText("Deduction");
 
-        jLabel29.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel29.setText("TIN");
+        financePrlSSSLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlSSSLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlSSSLbl.setText("SSS");
 
-        jLabel30.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel30.setText("PhilHealth");
+        financePrlTINLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlTINLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlTINLbl.setText("TIN");
 
-        jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel32.setText("Pag-Ibig");
+        financePrlPhilHealthLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlPhilHealthLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPhilHealthLbl.setText("PhilHealth");
 
-        jLabel33.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel33.setText("Late");
+        financePrlPagIbigLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlPagIbigLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPagIbigLbl.setText("Pag-Ibig");
 
-        jLabel34.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel34.setText("Undertime");
+        financePrlLateLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlLateLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlLateLbl.setText("Late");
 
-        hrField15.setForeground(new java.awt.Color(31, 41, 55));
-        hrField15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField15.setEnabled(false);
-        hrField15.addActionListener(this::hrField15ActionPerformed);
+        financePrlUndertimeLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlUndertimeLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlUndertimeLbl.setText("Undertime");
 
-        hrField16.setForeground(new java.awt.Color(31, 41, 55));
-        hrField16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField16.setEnabled(false);
-        hrField16.addActionListener(this::hrField16ActionPerformed);
+        financePrlSSSFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlSSSFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlSSSFld.setEnabled(false);
+        financePrlSSSFld.addActionListener(this::financePrlSSSFldActionPerformed);
 
-        hrField17.setForeground(new java.awt.Color(31, 41, 55));
-        hrField17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField17.setEnabled(false);
-        hrField17.addActionListener(this::hrField17ActionPerformed);
+        financePrlTINFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlTINFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlTINFld.setEnabled(false);
+        financePrlTINFld.addActionListener(this::financePrlTINFldActionPerformed);
 
-        hrField18.setForeground(new java.awt.Color(31, 41, 55));
-        hrField18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField18.setEnabled(false);
-        hrField18.addActionListener(this::hrField18ActionPerformed);
+        financePrlPhilHealthFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPhilHealthFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPhilHealthFld.setEnabled(false);
+        financePrlPhilHealthFld.addActionListener(this::financePrlPhilHealthFldActionPerformed);
 
-        hrField20.setForeground(new java.awt.Color(31, 41, 55));
-        hrField20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField20.setEnabled(false);
-        hrField20.addActionListener(this::hrField20ActionPerformed);
+        financePrlPagIbigFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPagIbigFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPagIbigFld.setEnabled(false);
+        financePrlPagIbigFld.addActionListener(this::financePrlPagIbigFldActionPerformed);
 
-        hrField22.setForeground(new java.awt.Color(31, 41, 55));
-        hrField22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField22.setEnabled(false);
-        hrField22.addActionListener(this::hrField22ActionPerformed);
+        financePrlLateFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlLateFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlLateFld.setEnabled(false);
+        financePrlLateFld.addActionListener(this::financePrlLateFldActionPerformed);
 
-        jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel36.setText("Absent");
+        financePrlUndertimeFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlUndertimeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlUndertimeFld.setEnabled(false);
+        financePrlUndertimeFld.addActionListener(this::financePrlUndertimeFldActionPerformed);
 
-        hrField23.setForeground(new java.awt.Color(31, 41, 55));
-        hrField23.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField23.setEnabled(false);
-        hrField23.addActionListener(this::hrField23ActionPerformed);
+        financePrlAbsentLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlAbsentLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlAbsentLbl.setText("Absent");
 
-        hrField21.setForeground(new java.awt.Color(31, 41, 55));
-        hrField21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField21.setEnabled(false);
-        hrField21.addActionListener(this::hrField21ActionPerformed);
+        financePrlAbsentFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlAbsentFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlAbsentFld.setEnabled(false);
+        financePrlAbsentFld.addActionListener(this::financePrlAbsentFldActionPerformed);
 
-        jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel35.setText("Total Dedcution");
+        financePrlTDeductionFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlTDeductionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlTDeductionFld.setEnabled(false);
+        financePrlTDeductionFld.addActionListener(this::financePrlTDeductionFldActionPerformed);
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel7Layout.createSequentialGroup()
+        financePrlTDeductionLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financePrlTDeductionLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlTDeductionLbl.setText("Total Deduction");
+
+        javax.swing.GroupLayout financePrlTDeductionBrdrPnlLayout = new javax.swing.GroupLayout(financePrlTDeductionBrdrPnl);
+        financePrlTDeductionBrdrPnl.setLayout(financePrlTDeductionBrdrPnlLayout);
+        financePrlTDeductionBrdrPnlLayout.setHorizontalGroup(
+            financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
+                .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
                         .addGap(134, 134, 134)
-                        .addComponent(jLabel27)
+                        .addComponent(financePrlDeductionLbl)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel7Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(jLabel36)
+                        .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlAbsentLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField23, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(jLabel29)
+                                .addComponent(financePrlAbsentFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlTINLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField16, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(jLabel28)
+                                .addComponent(financePrlTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlSSSLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField15, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(jLabel30)
+                                .addComponent(financePrlSSSFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlPhilHealthLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField17, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(jLabel32)
+                                .addComponent(financePrlPhilHealthFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlPagIbigLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField18, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(jLabel33)
+                                .addComponent(financePrlPagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlLateLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField20, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(jLabel34)
+                                .addComponent(financePrlLateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(financePrlUndertimeLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrField22, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(financePrlUndertimeFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
                         .addContainerGap(75, Short.MAX_VALUE)
-                        .addComponent(jLabel35)
+                        .addComponent(financePrlTDeductionLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(hrField21, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(financePrlTDeductionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(26, 26, 26))
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+        financePrlTDeductionBrdrPnlLayout.setVerticalGroup(
+            financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(hrField21, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel35)))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jLabel27)
+                        .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financePrlTDeductionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financePrlTDeductionLbl)))
+                    .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(financePrlDeductionLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel28)
-                            .addComponent(hrField15, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financePrlSSSLbl)
+                            .addComponent(financePrlSSSFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel29)
-                            .addComponent(hrField16, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financePrlTINLbl)
+                            .addComponent(financePrlTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel30)
-                            .addComponent(hrField17, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financePrlPhilHealthLbl)
+                            .addComponent(financePrlPhilHealthFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel32)
-                            .addComponent(hrField18, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financePrlPagIbigLbl)
+                            .addComponent(financePrlPagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel33)
-                            .addComponent(hrField20, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financePrlLateLbl)
+                            .addComponent(financePrlLateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel34)
-                            .addComponent(hrField22, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financePrlUndertimeLbl)
+                            .addComponent(financePrlUndertimeFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel36)
-                            .addComponent(hrField23, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financePrlAbsentLbl)
+                            .addComponent(financePrlAbsentFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 59, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
-        jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel37.setText("Net Pay");
+        financePrlDeductionLbl.getAccessibleContext().setAccessibleName("financePrlDeductionLbl");
+        financePrlSSSLbl.getAccessibleContext().setAccessibleName("financePrlSSSLbl");
+        financePrlTINLbl.getAccessibleContext().setAccessibleName("financePrlTINLbl");
+        financePrlPhilHealthLbl.getAccessibleContext().setAccessibleName("financePrlPhilHealthLbl");
+        financePrlPagIbigLbl.getAccessibleContext().setAccessibleName("financePrlPagIbigLbl");
+        financePrlLateLbl.getAccessibleContext().setAccessibleName("financePrlLateLbl");
+        financePrlUndertimeLbl.getAccessibleContext().setAccessibleName("financePrlUndertimeLbl");
+        financePrlSSSFld.getAccessibleContext().setAccessibleName("financePrlSSSFld");
+        financePrlTINFld.getAccessibleContext().setAccessibleName("financePrlTINFld");
+        financePrlPhilHealthFld.getAccessibleContext().setAccessibleName("financePrlPhilHealthFld");
+        financePrlPagIbigFld.getAccessibleContext().setAccessibleName("financePrlPagIbigFld");
+        financePrlLateFld.getAccessibleContext().setAccessibleName("financePrlLateFld");
+        financePrlUndertimeFld.getAccessibleContext().setAccessibleName("financePrlUndertimeFld");
+        financePrlAbsentLbl.getAccessibleContext().setAccessibleName("financePrlAbsentLbl");
+        financePrlAbsentFld.getAccessibleContext().setAccessibleName("financePrlAbsentFld");
+        financePrlTDeductionFld.getAccessibleContext().setAccessibleName("financePrlTDeductionFld");
+        financePrlTDeductionLbl.getAccessibleContext().setAccessibleName("financePrlTDeductionLbl");
 
-        hrField24.setBackground(new java.awt.Color(34, 197, 94));
-        hrField24.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        hrField24.setForeground(new java.awt.Color(255, 255, 255));
-        hrField24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField24.setEnabled(false);
-        hrField24.addActionListener(this::hrField24ActionPerformed);
+        financePrlNetPayLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financePrlNetPayLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlNetPayLbl.setText("Net Pay");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        financePrlNetPayFld.setBackground(new java.awt.Color(34, 197, 94));
+        financePrlNetPayFld.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        financePrlNetPayFld.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlNetPayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlNetPayFld.setEnabled(false);
+        financePrlNetPayFld.addActionListener(this::financePrlNetPayFldActionPerformed);
+
+        javax.swing.GroupLayout financePrlCalculatorBrdrPnlLayout = new javax.swing.GroupLayout(financePrlCalculatorBrdrPnl);
+        financePrlCalculatorBrdrPnl.setLayout(financePrlCalculatorBrdrPnlLayout);
+        financePrlCalculatorBrdrPnlLayout.setHorizontalGroup(
+            financePrlCalculatorBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financePrlCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(financePrlTGrossBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(financePrlCalculatorBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(financePrlCalculatorBrdrPnlLayout.createSequentialGroup()
                         .addGap(167, 167, 167)
-                        .addComponent(jLabel37)
+                        .addComponent(financePrlNetPayLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(hrField24, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(financePrlNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(financePrlCalculatorBrdrPnlLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(financePrlTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(18, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financePrlCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel13)
+                .addComponent(financePrlCalculatorLbl)
                 .addGap(283, 283, 283))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        financePrlCalculatorBrdrPnlLayout.setVerticalGroup(
+            financePrlCalculatorBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financePrlCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel13)
+                .addComponent(financePrlCalculatorLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(financePrlCalculatorBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financePrlTGrossBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(financePrlCalculatorBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(financePrlTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel37)
-                            .addComponent(hrField24, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(financePrlCalculatorBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(financePrlNetPayLbl)
+                            .addComponent(financePrlNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
-        jButton5.setBackground(new java.awt.Color(30, 58, 138));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Export to PDF");
-        jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton5.addActionListener(this::jButton5ActionPerformed);
+        financePrlCalculatorLbl.getAccessibleContext().setAccessibleName("financePrlCalculatorLbl");
+        financePrlTGrossBrdrPnl.getAccessibleContext().setAccessibleName("financePrlTGrossBrdrPnl");
+        financePrlTDeductionBrdrPnl.getAccessibleContext().setAccessibleName("financePrlTDeductionBrdrPnl");
+        financePrlNetPayLbl.getAccessibleContext().setAccessibleName("financePrlNetPayLbl");
+        financePrlNetPayFld.getAccessibleContext().setAccessibleName("financePrlNetPayFld");
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel10.setText("Employee ID");
+        financePrlPDFBtn.setBackground(new java.awt.Color(30, 58, 138));
+        financePrlPDFBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlPDFBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlPDFBtn.setText("Export to PDF");
+        financePrlPDFBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPDFBtn.addActionListener(this::financePrlPDFBtnActionPerformed);
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel11.setText("Position");
+        financePrlENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlENumberLbl.setText("Employee #");
 
-        jPanel6.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel6.setForeground(new java.awt.Color(146, 192, 253));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        financePrlPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPositionLbl.setText("Position");
 
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField3.setText("   Enter Employee ID");
-        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField3.addActionListener(this::jTextField3ActionPerformed);
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+        financePrlSearchPnl.setBackground(new java.awt.Color(146, 192, 253));
+        financePrlSearchPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlSearchPnl.setForeground(new java.awt.Color(146, 192, 253));
+        financePrlSearchPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        SearchIconImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
-        jPanel6.add(SearchIconImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+        financePrlEENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlEENumberFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlEENumberFld.setText("   Enter Employee #");
+        financePrlEENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlEENumberFld.addActionListener(this::financePrlEENumberFldActionPerformed);
+        financePrlSearchPnl.add(financePrlEENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+        financePrlEENumberFld.getAccessibleContext().setAccessibleName("financePrlEENumberFld");
 
-        jButton6.setBackground(new java.awt.Color(34, 197, 94));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Send Payslip");
-        jButton6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton6.addActionListener(this::jButton6ActionPerformed);
+        financePrlSearchIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
+        financePrlSearchPnl.add(financePrlSearchIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+        financePrlSearchIconImgLbl.getAccessibleContext().setAccessibleName("financePrlSearchIconImgLbl");
 
-        jComboBox2.setForeground(new java.awt.Color(31, 41, 55));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "1st cutoff", "2nd cutoff" }));
-        jComboBox2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 1, true));
+        financePrlSendPylBtn.setBackground(new java.awt.Color(34, 197, 94));
+        financePrlSendPylBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlSendPylBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlSendPylBtn.setText("Send Payslip");
+        financePrlSendPylBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlSendPylBtn.addActionListener(this::financePrlSendPylBtnActionPerformed);
+
+        financePrlPrlPeriodCbx.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPrlPeriodCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "1st cutoff", "2nd cutoff" }));
+        financePrlPrlPeriodCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 1, true));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financePrlSidebarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financePrlCreatePylPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(financePrlSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(financePrlCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(45, 45, 45)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addGap(29, 29, 29)
-                                        .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(financePrlPositionLbl)
+                                        .addGap(86, 86, 86)
+                                        .addComponent(financePrlPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(42, 42, 42)
-                                        .addComponent(jLabel16)
-                                        .addGap(35, 35, 35)
-                                        .addComponent(hrField8, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(financePrlStatusLbl))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel11)
-                                                .addGap(86, 86, 86)
-                                                .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(42, 42, 42)
-                                                .addComponent(jLabel15))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel10)
-                                                .addGap(54, 54, 54)
-                                                .addComponent(hrField2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(42, 42, 42)
-                                                .addComponent(jLabel14)))
-                                        .addGap(28, 28, 28)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(hrField6, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
-                                            .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))
+                                            .addComponent(financePrlENameLbl)
+                                            .addComponent(financePrlENumberLbl))
+                                        .addGap(29, 29, 29)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(financePrlENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(financePrlENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(42, 42, 42)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(financePrlPrlPeriodLbl)
+                                            .addComponent(financePrlPrlDateLbl))))
+                                .addGap(22, 22, 22)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(financePrlPrlDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(financePrlStatusFld, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                                        .addComponent(financePrlPrlPeriodCbx, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(199, 199, 199)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financePrlPDFBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(39, 39, 39)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(financePrlSendPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -715,162 +762,183 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financePrlCreatePylPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrField8, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel16))))
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrField2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10)
+                            .addComponent(financePrlENameLbl)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel14)
-                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(6, 6, 6)
+                                .addComponent(financePrlPrlDateLbl)
+                                .addComponent(financePrlPrlDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrField6, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(financePrlENumberLbl)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(financePrlPrlPeriodLbl)
+                                .addComponent(financePrlPrlPeriodCbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(financePrlENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(8, 8, 8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financePrlPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel15))))
+                            .addComponent(financePrlPositionLbl)
+                            .addComponent(financePrlStatusLbl))))
                 .addGap(18, 18, 18)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financePrlCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financePrlPDFBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlSendPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(financePrlSidebarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+
+        financePrlENumberFld.getAccessibleContext().setAccessibleName("financePrlENumberFld");
+        financePrlENameLbl.getAccessibleContext().setAccessibleName("financePrlENameLbl");
+        financePrlPrlDateLbl.getAccessibleContext().setAccessibleName("financePrlPrlDateLbl");
+        financePrlStatusLbl.getAccessibleContext().setAccessibleName("financePrlStatusLbl");
+        financePrlENameFld.getAccessibleContext().setAccessibleName("financePrlENameFld");
+        financePrlPrlPeriodLbl.getAccessibleContext().setAccessibleName("financePrlPrlPeriodLbl");
+        financePrlCreatePylPnl.getAccessibleContext().setAccessibleName("financePrlCreatePylPnl");
+        financePrlStatusFld.getAccessibleContext().setAccessibleName("financePrlStatusFld");
+        financePrlPositionFld.getAccessibleContext().setAccessibleName("financePrlPositionFld");
+        financePrlPrlDateFld.getAccessibleContext().setAccessibleName("financePrlPrlDateFld");
+        financePrlSidebarBtn.getAccessibleContext().setAccessibleName("financePrlSidebarBtn");
+        financePrlCalculatorBrdrPnl.getAccessibleContext().setAccessibleName("financePrlCalculatorBrdrPnl");
+        financePrlPDFBtn.getAccessibleContext().setAccessibleName("financePrlPDFBtn");
+        financePrlENumberLbl.getAccessibleContext().setAccessibleName("financePrlENumberLbl");
+        financePrlPositionLbl.getAccessibleContext().setAccessibleName("financePrlPositionLbl");
+        financePrlSearchPnl.getAccessibleContext().setAccessibleName("financePrlSearchPnl");
+        financePrlSendPylBtn.getAccessibleContext().setAccessibleName("financePrlSendPylBtn");
+        financePrlPrlPeriodCbx.getAccessibleContext().setAccessibleName("financePrlPrlPeriodCbx");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void hrField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField2ActionPerformed
+    private void financePrlENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField2ActionPerformed
+    }//GEN-LAST:event_financePrlENumberFldActionPerformed
 
-    private void hrFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrFieldActionPerformed
+    private void financePrlENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlENameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrFieldActionPerformed
+    }//GEN-LAST:event_financePrlENameFldActionPerformed
 
-    private void hrField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField3ActionPerformed
+    private void financePrlPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPositionFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField3ActionPerformed
+    }//GEN-LAST:event_financePrlPositionFldActionPerformed
 
-    private void hrField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField8ActionPerformed
+    private void financePrlPrlDateFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPrlDateFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField8ActionPerformed
+    }//GEN-LAST:event_financePrlPrlDateFldActionPerformed
 
-    private void maindDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maindDashboardBtnActionPerformed
+    private void financePrlMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardFrame().setVisible(true);
-    }//GEN-LAST:event_maindDashboardBtnActionPerformed
+    }//GEN-LAST:event_financePrlMainDashboardBtnActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void financePrlPrlDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPrlDetailsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_financePrlPrlDetailsBtnActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void financePrlBonusTypeCbxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlBonusTypeCbxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_financePrlBonusTypeCbxActionPerformed
 
-    private void hrField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField5ActionPerformed
+    private void financePrlBasicSalaryFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlBasicSalaryFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField5ActionPerformed
+    }//GEN-LAST:event_financePrlBasicSalaryFldActionPerformed
 
-    private void hrField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField9ActionPerformed
+    private void financePrlOvertimeFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlOvertimeFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField9ActionPerformed
+    }//GEN-LAST:event_financePrlOvertimeFldActionPerformed
 
-    private void hrField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField10ActionPerformed
+    private void financePrlHolidayFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlHolidayFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField10ActionPerformed
+    }//GEN-LAST:event_financePrlHolidayFldActionPerformed
 
-    private void hrField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField11ActionPerformed
+    private void financePrlRiceSubsidyFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlRiceSubsidyFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField11ActionPerformed
+    }//GEN-LAST:event_financePrlRiceSubsidyFldActionPerformed
 
-    private void hrField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField12ActionPerformed
+    private void financePrlPAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPAllowanceFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField12ActionPerformed
+    }//GEN-LAST:event_financePrlPAllowanceFldActionPerformed
 
-    private void hrField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField13ActionPerformed
+    private void financePrlCAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlCAllowanceFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField13ActionPerformed
+    }//GEN-LAST:event_financePrlCAllowanceFldActionPerformed
 
-    private void hrField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField14ActionPerformed
+    private void financePrlBonusTypeFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlBonusTypeFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField14ActionPerformed
+    }//GEN-LAST:event_financePrlBonusTypeFldActionPerformed
 
-    private void hrField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField19ActionPerformed
+    private void financePrlTGrossFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlTGrossFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField19ActionPerformed
+    }//GEN-LAST:event_financePrlTGrossFldActionPerformed
 
-    private void hrField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField15ActionPerformed
+    private void financePrlSSSFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlSSSFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField15ActionPerformed
+    }//GEN-LAST:event_financePrlSSSFldActionPerformed
 
-    private void hrField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField16ActionPerformed
+    private void financePrlTINFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlTINFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField16ActionPerformed
+    }//GEN-LAST:event_financePrlTINFldActionPerformed
 
-    private void hrField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField17ActionPerformed
+    private void financePrlPhilHealthFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPhilHealthFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField17ActionPerformed
+    }//GEN-LAST:event_financePrlPhilHealthFldActionPerformed
 
-    private void hrField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField18ActionPerformed
+    private void financePrlPagIbigFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPagIbigFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField18ActionPerformed
+    }//GEN-LAST:event_financePrlPagIbigFldActionPerformed
 
-    private void hrField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField20ActionPerformed
+    private void financePrlLateFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlLateFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField20ActionPerformed
+    }//GEN-LAST:event_financePrlLateFldActionPerformed
 
-    private void hrField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField22ActionPerformed
+    private void financePrlUndertimeFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlUndertimeFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField22ActionPerformed
+    }//GEN-LAST:event_financePrlUndertimeFldActionPerformed
 
-    private void hrField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField23ActionPerformed
+    private void financePrlAbsentFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlAbsentFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField23ActionPerformed
+    }//GEN-LAST:event_financePrlAbsentFldActionPerformed
 
-    private void hrField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField21ActionPerformed
+    private void financePrlTDeductionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlTDeductionFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField21ActionPerformed
+    }//GEN-LAST:event_financePrlTDeductionFldActionPerformed
 
-    private void hrField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField24ActionPerformed
+    private void financePrlNetPayFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlNetPayFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField24ActionPerformed
+    }//GEN-LAST:event_financePrlNetPayFldActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void financePrlPDFBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPDFBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_financePrlPDFBtnActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void financePrlEENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlEENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_financePrlEENumberFldActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void financePrlSendPylBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlSendPylBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_financePrlSendPylBtnActionPerformed
 
-    private void hrField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField6ActionPerformed
+    private void financePrlStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlStatusFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField6ActionPerformed
+    }//GEN-LAST:event_financePrlStatusFldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -898,70 +966,70 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MotorPHIconImgLbl;
-    private javax.swing.JLabel SearchIconImg;
-    private javax.swing.JTextField hrField;
-    private javax.swing.JTextField hrField10;
-    private javax.swing.JTextField hrField11;
-    private javax.swing.JTextField hrField12;
-    private javax.swing.JTextField hrField13;
-    private javax.swing.JTextField hrField14;
-    private javax.swing.JTextField hrField15;
-    private javax.swing.JTextField hrField16;
-    private javax.swing.JTextField hrField17;
-    private javax.swing.JTextField hrField18;
-    private javax.swing.JTextField hrField19;
-    private javax.swing.JTextField hrField2;
-    private javax.swing.JTextField hrField20;
-    private javax.swing.JTextField hrField21;
-    private javax.swing.JTextField hrField22;
-    private javax.swing.JTextField hrField23;
-    private javax.swing.JTextField hrField24;
-    private javax.swing.JTextField hrField3;
-    private javax.swing.JTextField hrField5;
-    private javax.swing.JTextField hrField6;
-    private javax.swing.JTextField hrField8;
-    private javax.swing.JTextField hrField9;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JButton maindDashboardBtn;
+    private javax.swing.JTextField financePrlAbsentFld;
+    private javax.swing.JLabel financePrlAbsentLbl;
+    private javax.swing.JTextField financePrlBasicSalaryFld;
+    private javax.swing.JLabel financePrlBasicSalaryLbl;
+    private javax.swing.JLabel financePrlBenefitLbl;
+    private javax.swing.JLabel financePrlBonusLbl;
+    private javax.swing.JComboBox<String> financePrlBonusTypeCbx;
+    private javax.swing.JTextField financePrlBonusTypeFld;
+    private javax.swing.JTextField financePrlCAllowanceFld;
+    private javax.swing.JLabel financePrlCAllowanceLbl;
+    private javax.swing.JPanel financePrlCalculatorBrdrPnl;
+    private javax.swing.JLabel financePrlCalculatorLbl;
+    private javax.swing.JLabel financePrlCreatePylLbl;
+    private javax.swing.JPanel financePrlCreatePylPnl;
+    private javax.swing.JLabel financePrlDeductionLbl;
+    private javax.swing.JTextField financePrlEENumberFld;
+    private javax.swing.JTextField financePrlENameFld;
+    private javax.swing.JLabel financePrlENameLbl;
+    private javax.swing.JTextField financePrlENumberFld;
+    private javax.swing.JLabel financePrlENumberLbl;
+    private javax.swing.JLabel financePrlEarningLbl;
+    private javax.swing.JTextField financePrlHolidayFld;
+    private javax.swing.JLabel financePrlHolidayLbl;
+    private javax.swing.JTextField financePrlLateFld;
+    private javax.swing.JLabel financePrlLateLbl;
+    private javax.swing.JButton financePrlMainDashboardBtn;
+    private javax.swing.JLabel financePrlMotorPHIconImgLbl;
+    private javax.swing.JTextField financePrlNetPayFld;
+    private javax.swing.JLabel financePrlNetPayLbl;
+    private javax.swing.JTextField financePrlOvertimeFld;
+    private javax.swing.JLabel financePrlOvertimeLbl;
+    private javax.swing.JTextField financePrlPAllowanceFld;
+    private javax.swing.JLabel financePrlPAllowanceLbl;
+    private javax.swing.JButton financePrlPDFBtn;
+    private javax.swing.JTextField financePrlPagIbigFld;
+    private javax.swing.JLabel financePrlPagIbigLbl;
+    private javax.swing.JTextField financePrlPhilHealthFld;
+    private javax.swing.JLabel financePrlPhilHealthLbl;
+    private javax.swing.JTextField financePrlPositionFld;
+    private javax.swing.JLabel financePrlPositionLbl;
+    private javax.swing.JTextField financePrlPrlDateFld;
+    private javax.swing.JLabel financePrlPrlDateLbl;
+    private javax.swing.JButton financePrlPrlDetailsBtn;
+    private javax.swing.JComboBox<String> financePrlPrlPeriodCbx;
+    private javax.swing.JLabel financePrlPrlPeriodLbl;
+    private javax.swing.JTextField financePrlRiceSubsidyFld;
+    private javax.swing.JLabel financePrlRiceSubsidyLbl;
+    private javax.swing.JTextField financePrlSSSFld;
+    private javax.swing.JLabel financePrlSSSLbl;
+    private javax.swing.JLabel financePrlSearchIconImgLbl;
+    private javax.swing.JPanel financePrlSearchPnl;
+    private javax.swing.JButton financePrlSendPylBtn;
+    private javax.swing.JPanel financePrlSidebarBtn;
+    private javax.swing.JTextField financePrlStatusFld;
+    private javax.swing.JLabel financePrlStatusLbl;
+    private javax.swing.JPanel financePrlTDeductionBrdrPnl;
+    private javax.swing.JTextField financePrlTDeductionFld;
+    private javax.swing.JLabel financePrlTDeductionLbl;
+    private javax.swing.JPanel financePrlTGrossBrdrPnl;
+    private javax.swing.JTextField financePrlTGrossFld;
+    private javax.swing.JLabel financePrlTGrossLbl;
+    private javax.swing.JTextField financePrlTINFld;
+    private javax.swing.JLabel financePrlTINLbl;
+    private javax.swing.JTextField financePrlUndertimeFld;
+    private javax.swing.JLabel financePrlUndertimeLbl;
     // End of variables declaration//GEN-END:variables
 }

@@ -28,104 +28,110 @@ public class FinanceEditAttendanceLogsFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        mainDashboardBtn = new javax.swing.JButton();
-        MotorPHIconImgLbl = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
-        SearchIconImg = new javax.swing.JLabel();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jPanel13 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
+        financeEAttLogsSidebarPnl = new javax.swing.JPanel();
+        financeEAttLogsAttLogsBtn = new javax.swing.JButton();
+        financeEAttLogsEAttLogsBtn = new javax.swing.JButton();
+        financeEAttLogsMainDashboardBtn = new javax.swing.JButton();
+        financeEAttLogsMotorPHIconImgLbl = new javax.swing.JLabel();
+        financeEAttLogsEAttLogsPnl = new javax.swing.JPanel();
+        financeEAttLogsEAttLogsLbl = new javax.swing.JLabel();
+        financeEAttLogsSearchPnl = new javax.swing.JPanel();
+        financeEAttLogsEENumberFld = new javax.swing.JTextField();
+        financeEAttLogsSearchIconImgLbl = new javax.swing.JLabel();
+        financeEAttLogsApproveAllBtn = new javax.swing.JButton();
+        financeEAttLogsDenyAllBtn = new javax.swing.JButton();
+        financeEAttLogsAttLogsBrdrPnl = new javax.swing.JPanel();
+        financeEAttLogsAttLogsBrdrScrlPnl = new javax.swing.JScrollPane();
+        financeEAttLogsAttLogsTbl = new javax.swing.JTable();
+        financeEAttLogsAttLogsPnl = new javax.swing.JPanel();
+        financeEAttLogsAttLogsLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        financeEAttLogsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financeEAttLogsSidebarPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Attendance Logs");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
+        financeEAttLogsAttLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        financeEAttLogsAttLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financeEAttLogsAttLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financeEAttLogsAttLogsBtn.setText("Attendance Logs");
+        financeEAttLogsAttLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        financeEAttLogsAttLogsBtn.addActionListener(this::financeEAttLogsAttLogsBtnActionPerformed);
+        financeEAttLogsSidebarPnl.add(financeEAttLogsAttLogsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
+        financeEAttLogsAttLogsBtn.getAccessibleContext().setAccessibleName("financeEAttLogsAttLogsBtn");
 
-        jButton4.setBackground(new java.awt.Color(30, 42, 56));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Edit Attendance Logs");
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.addActionListener(this::jButton4ActionPerformed);
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
+        financeEAttLogsEAttLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        financeEAttLogsEAttLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financeEAttLogsEAttLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financeEAttLogsEAttLogsBtn.setText("Edit Attendance Logs");
+        financeEAttLogsEAttLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        financeEAttLogsEAttLogsBtn.addActionListener(this::financeEAttLogsEAttLogsBtnActionPerformed);
+        financeEAttLogsSidebarPnl.add(financeEAttLogsEAttLogsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
+        financeEAttLogsEAttLogsBtn.getAccessibleContext().setAccessibleName("financeEAttLogsEAttLogsBtn");
 
-        mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setLabel("Main Dashboard");
-        mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
-        jPanel1.add(mainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        financeEAttLogsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        financeEAttLogsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financeEAttLogsMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financeEAttLogsMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        financeEAttLogsMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        financeEAttLogsMainDashboardBtn.setLabel("Main Dashboard");
+        financeEAttLogsMainDashboardBtn.addActionListener(this::financeEAttLogsMainDashboardBtnActionPerformed);
+        financeEAttLogsSidebarPnl.add(financeEAttLogsMainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        financeEAttLogsMainDashboardBtn.getAccessibleContext().setAccessibleName("financeEAttLogsMainDashboardBtn");
 
-        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
-        jPanel1.add(MotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
-        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
+        financeEAttLogsMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        financeEAttLogsSidebarPnl.add(financeEAttLogsMotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
+        financeEAttLogsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("financeEAttLogsMotorPHIconImgLbl");
 
-        jPanel2.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel2.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        financeEAttLogsEAttLogsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financeEAttLogsEAttLogsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeEAttLogsEAttLogsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        financeEAttLogsEAttLogsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Edit Attendance Logs");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 260, 46));
+        financeEAttLogsEAttLogsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        financeEAttLogsEAttLogsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        financeEAttLogsEAttLogsLbl.setText("Edit Attendance Logs");
+        financeEAttLogsEAttLogsPnl.add(financeEAttLogsEAttLogsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 260, 46));
+        financeEAttLogsEAttLogsLbl.getAccessibleContext().setAccessibleName("financeEAttLogsEAttLogsLbl");
 
-        jPanel6.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel6.setForeground(new java.awt.Color(146, 192, 253));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        financeEAttLogsSearchPnl.setBackground(new java.awt.Color(146, 192, 253));
+        financeEAttLogsSearchPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeEAttLogsSearchPnl.setForeground(new java.awt.Color(146, 192, 253));
+        financeEAttLogsSearchPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField3.setText("   Enter Employee #");
-        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField3.addActionListener(this::jTextField3ActionPerformed);
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+        financeEAttLogsEENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financeEAttLogsEENumberFld.setForeground(new java.awt.Color(31, 41, 55));
+        financeEAttLogsEENumberFld.setText("   Enter Employee #");
+        financeEAttLogsEENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeEAttLogsEENumberFld.addActionListener(this::financeEAttLogsEENumberFldActionPerformed);
+        financeEAttLogsSearchPnl.add(financeEAttLogsEENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+        financeEAttLogsEENumberFld.getAccessibleContext().setAccessibleName("financeEAttLogsEENumberFld");
 
-        SearchIconImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
-        jPanel6.add(SearchIconImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+        financeEAttLogsSearchIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
+        financeEAttLogsSearchPnl.add(financeEAttLogsSearchIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+        financeEAttLogsSearchIconImgLbl.getAccessibleContext().setAccessibleName("financeEAttLogsSearchIconImgLbl");
 
-        jButton16.setBackground(new java.awt.Color(34, 197, 94));
-        jButton16.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton16.setForeground(new java.awt.Color(255, 255, 255));
-        jButton16.setText("Approve All");
-        jButton16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton16.addActionListener(this::jButton16ActionPerformed);
+        financeEAttLogsApproveAllBtn.setBackground(new java.awt.Color(34, 197, 94));
+        financeEAttLogsApproveAllBtn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financeEAttLogsApproveAllBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financeEAttLogsApproveAllBtn.setText("Approve All");
+        financeEAttLogsApproveAllBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financeEAttLogsApproveAllBtn.addActionListener(this::financeEAttLogsApproveAllBtnActionPerformed);
 
-        jButton17.setBackground(new java.awt.Color(239, 68, 68));
-        jButton17.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton17.setForeground(new java.awt.Color(255, 255, 255));
-        jButton17.setText("Deny All");
-        jButton17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton17.addActionListener(this::jButton17ActionPerformed);
+        financeEAttLogsDenyAllBtn.setBackground(new java.awt.Color(239, 68, 68));
+        financeEAttLogsDenyAllBtn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financeEAttLogsDenyAllBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financeEAttLogsDenyAllBtn.setText("Deny All");
+        financeEAttLogsDenyAllBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financeEAttLogsDenyAllBtn.addActionListener(this::financeEAttLogsDenyAllBtnActionPerformed);
 
-        jPanel4.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        financeEAttLogsAttLogsBrdrPnl.setBackground(new java.awt.Color(146, 192, 253));
+        financeEAttLogsAttLogsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jTable1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTable1.setForeground(new java.awt.Color(30, 42, 56));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        financeEAttLogsAttLogsTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeEAttLogsAttLogsTbl.setForeground(new java.awt.Color(30, 42, 56));
+        financeEAttLogsAttLogsTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -240,126 +246,139 @@ public class FinanceEditAttendanceLogsFrame extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jTable1.setColumnSelectionAllowed(true);
-        jTable1.setGridColor(new java.awt.Color(178, 178, 178));
-        jTable1.setSelectionForeground(new java.awt.Color(30, 42, 56));
-        jScrollPane1.setViewportView(jTable1);
-        jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        financeEAttLogsAttLogsTbl.setColumnSelectionAllowed(true);
+        financeEAttLogsAttLogsTbl.setGridColor(new java.awt.Color(178, 178, 178));
+        financeEAttLogsAttLogsTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
+        financeEAttLogsAttLogsBrdrScrlPnl.setViewportView(financeEAttLogsAttLogsTbl);
+        financeEAttLogsAttLogsTbl.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        financeEAttLogsAttLogsTbl.getAccessibleContext().setAccessibleName("financeEAttLogsAttLogsTbl");
 
-        jPanel13.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel13.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel13.setPreferredSize(new java.awt.Dimension(126, 40));
+        financeEAttLogsAttLogsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financeEAttLogsAttLogsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeEAttLogsAttLogsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        financeEAttLogsAttLogsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        jLabel23.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("Attendance Logs");
-        jLabel23.setToolTipText("");
+        financeEAttLogsAttLogsLbl.setBackground(new java.awt.Color(255, 255, 255));
+        financeEAttLogsAttLogsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        financeEAttLogsAttLogsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        financeEAttLogsAttLogsLbl.setText("Attendance Logs");
+        financeEAttLogsAttLogsLbl.setToolTipText("");
 
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
+        javax.swing.GroupLayout financeEAttLogsAttLogsPnlLayout = new javax.swing.GroupLayout(financeEAttLogsAttLogsPnl);
+        financeEAttLogsAttLogsPnl.setLayout(financeEAttLogsAttLogsPnlLayout);
+        financeEAttLogsAttLogsPnlLayout.setHorizontalGroup(
+            financeEAttLogsAttLogsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeEAttLogsAttLogsPnlLayout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(financeEAttLogsAttLogsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+        financeEAttLogsAttLogsPnlLayout.setVerticalGroup(
+            financeEAttLogsAttLogsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(financeEAttLogsAttLogsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        financeEAttLogsAttLogsLbl.getAccessibleContext().setAccessibleName("financeEAttLogsAttLogsLbl");
+
+        javax.swing.GroupLayout financeEAttLogsAttLogsBrdrPnlLayout = new javax.swing.GroupLayout(financeEAttLogsAttLogsBrdrPnl);
+        financeEAttLogsAttLogsBrdrPnl.setLayout(financeEAttLogsAttLogsBrdrPnlLayout);
+        financeEAttLogsAttLogsBrdrPnlLayout.setHorizontalGroup(
+            financeEAttLogsAttLogsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeEAttLogsAttLogsBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeEAttLogsAttLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(212, 212, 212))
-            .addGroup(jPanel4Layout.createSequentialGroup()
+            .addGroup(financeEAttLogsAttLogsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeEAttLogsAttLogsBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        financeEAttLogsAttLogsBrdrPnlLayout.setVerticalGroup(
+            financeEAttLogsAttLogsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeEAttLogsAttLogsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeEAttLogsAttLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 438, Short.MAX_VALUE)
+                .addComponent(financeEAttLogsAttLogsBrdrScrlPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 438, Short.MAX_VALUE)
                 .addContainerGap())
         );
+
+        financeEAttLogsAttLogsBrdrScrlPnl.getAccessibleContext().setAccessibleName("financeEAttLogsAttLogsBrdrScrlPnl");
+        financeEAttLogsAttLogsPnl.getAccessibleContext().setAccessibleName("financeEAttLogsAttLogsPnl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeEAttLogsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(financeEAttLogsEAttLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(financeEAttLogsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createSequentialGroup()
                             .addGap(466, 466, 466)
-                            .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financeEAttLogsApproveAllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(financeEAttLogsDenyAllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(financeEAttLogsAttLogsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(10, 10, 10))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(financeEAttLogsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(financeEAttLogsEAttLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financeEAttLogsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19)
+                .addComponent(financeEAttLogsAttLogsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(financeEAttLogsDenyAllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeEAttLogsApproveAllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
+
+        financeEAttLogsSidebarPnl.getAccessibleContext().setAccessibleName("financeEAttLogsSidebarPnl");
+        financeEAttLogsEAttLogsPnl.getAccessibleContext().setAccessibleName("financeEAttLogsEAttLogsPnl");
+        financeEAttLogsSearchPnl.getAccessibleContext().setAccessibleName("financeEAttLogsSearchPnl");
+        financeEAttLogsApproveAllBtn.getAccessibleContext().setAccessibleName("financeEAttLogsApproveAllBtn");
+        financeEAttLogsDenyAllBtn.getAccessibleContext().setAccessibleName("financeEAttLogsDenyAllBtn");
+        financeEAttLogsAttLogsBrdrPnl.getAccessibleContext().setAccessibleName("financeEAttLogsAttLogsBrdrPnl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void financeEAttLogsAttLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEAttLogsAttLogsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_financeEAttLogsAttLogsBtnActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void financeEAttLogsEAttLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEAttLogsEAttLogsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_financeEAttLogsEAttLogsBtnActionPerformed
 
-    private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
+    private void financeEAttLogsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEAttLogsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardFrame().setVisible(true);
-    }//GEN-LAST:event_mainDashboardBtnActionPerformed
+    }//GEN-LAST:event_financeEAttLogsMainDashboardBtnActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void financeEAttLogsEENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEAttLogsEENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_financeEAttLogsEENumberFldActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void financeEAttLogsApproveAllBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEAttLogsApproveAllBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    }//GEN-LAST:event_financeEAttLogsApproveAllBtnActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void financeEAttLogsDenyAllBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEAttLogsDenyAllBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }//GEN-LAST:event_financeEAttLogsDenyAllBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -387,22 +406,22 @@ public class FinanceEditAttendanceLogsFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MotorPHIconImgLbl;
-    private javax.swing.JLabel SearchIconImg;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JButton mainDashboardBtn;
+    private javax.swing.JButton financeEAttLogsApproveAllBtn;
+    private javax.swing.JPanel financeEAttLogsAttLogsBrdrPnl;
+    private javax.swing.JScrollPane financeEAttLogsAttLogsBrdrScrlPnl;
+    private javax.swing.JButton financeEAttLogsAttLogsBtn;
+    private javax.swing.JLabel financeEAttLogsAttLogsLbl;
+    private javax.swing.JPanel financeEAttLogsAttLogsPnl;
+    private javax.swing.JTable financeEAttLogsAttLogsTbl;
+    private javax.swing.JButton financeEAttLogsDenyAllBtn;
+    private javax.swing.JButton financeEAttLogsEAttLogsBtn;
+    private javax.swing.JLabel financeEAttLogsEAttLogsLbl;
+    private javax.swing.JPanel financeEAttLogsEAttLogsPnl;
+    private javax.swing.JTextField financeEAttLogsEENumberFld;
+    private javax.swing.JButton financeEAttLogsMainDashboardBtn;
+    private javax.swing.JLabel financeEAttLogsMotorPHIconImgLbl;
+    private javax.swing.JLabel financeEAttLogsSearchIconImgLbl;
+    private javax.swing.JPanel financeEAttLogsSearchPnl;
+    private javax.swing.JPanel financeEAttLogsSidebarPnl;
     // End of variables declaration//GEN-END:variables
 }
