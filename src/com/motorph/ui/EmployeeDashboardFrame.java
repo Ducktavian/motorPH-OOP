@@ -29,60 +29,58 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        employeeDashboardSidebarPnl = new javax.swing.JPanel();
         dashboardBtn = new javax.swing.JButton();
         mainDashboardBtn = new javax.swing.JButton();
-        jLabel17 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        hrField = new javax.swing.JTextField();
-        hrField2 = new javax.swing.JTextField();
-        hrField3 = new javax.swing.JTextField();
-        hrField4 = new javax.swing.JTextField();
-        hrField5 = new javax.swing.JTextField();
-        hrField6 = new javax.swing.JTextField();
-        hrField7 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        hrField8 = new javax.swing.JTextField();
-        hrField9 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        hrField1 = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        hrField11 = new javax.swing.JTextField();
-        hrField12 = new javax.swing.JTextField();
-        hrField13 = new javax.swing.JTextField();
-        hrField14 = new javax.swing.JTextField();
-        hrField15 = new javax.swing.JTextField();
-        hrField16 = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        hrField17 = new javax.swing.JTextField();
-        jLabel20 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jPanel13 = new javax.swing.JPanel();
+        MotorPHIconImgLbl = new javax.swing.JLabel();
+        employeeDashboardProfilePnl = new javax.swing.JPanel();
+        employeeDashboardProfileLbl = new javax.swing.JLabel();
+        employeeDashboardEDetailsBrdrPnl = new javax.swing.JPanel();
+        employeeDashboardENumberLbl = new javax.swing.JLabel();
+        employeeDashboardLNameLbl = new javax.swing.JLabel();
+        employeeDashboardAddressLbl = new javax.swing.JLabel();
+        employeeDashboardBirthdayLbl = new javax.swing.JLabel();
+        employeeDashboardENumberFld = new javax.swing.JTextField();
+        employeeDashboardAddressFld = new javax.swing.JTextField();
+        employeeDashboardLNameFld = new javax.swing.JTextField();
+        employeeDashboardBirthdayFld = new javax.swing.JTextField();
+        employeeDashboardPositionFld = new javax.swing.JTextField();
+        employeeDashboardBasicSalaryFld = new javax.swing.JTextField();
+        employeeDashboardPAllowanceFld = new javax.swing.JTextField();
+        employeeDashboardPositionLbl = new javax.swing.JLabel();
+        employeeDashboardBasicSalaryLbl = new javax.swing.JLabel();
+        employeeDashboardPAllowanceLbl = new javax.swing.JLabel();
+        employeeDashboardSSSFld = new javax.swing.JTextField();
+        employeeDashboardPhilHealthFld = new javax.swing.JTextField();
+        employeeDashboardSSSLbl = new javax.swing.JLabel();
+        employeeDashboardPhilHealthLbl = new javax.swing.JLabel();
+        employeeDashboardFNameFld = new javax.swing.JTextField();
+        employeeDashboardISupervisorLbl = new javax.swing.JLabel();
+        employeeDashboardPNumberFld = new javax.swing.JTextField();
+        employeeDashboardISupervisorFld = new javax.swing.JTextField();
+        employeeDashboardRiceSubsidyFld = new javax.swing.JTextField();
+        employeeDashboardCAllowanceFld = new javax.swing.JTextField();
+        employeeDashboardTINFld = new javax.swing.JTextField();
+        employeeDashboardPagIbigFld = new javax.swing.JTextField();
+        employeeDashboardFNameLbl = new javax.swing.JLabel();
+        employeeDashboardPNumberLbl = new javax.swing.JLabel();
+        employeeDashboardRiceSubsidyLbl = new javax.swing.JLabel();
+        employeeDashboardStatusLbl = new javax.swing.JLabel();
+        employeeDashboardTINLbl = new javax.swing.JLabel();
+        employeeDashboardPagIbigLbl = new javax.swing.JLabel();
+        employeeDashboardStatusFld = new javax.swing.JTextField();
+        employeeDashboardCAllowanceLbl = new javax.swing.JLabel();
+        employeeDashboardTimeOutBtn = new javax.swing.JButton();
+        employeeDashboardAttLogsBrdrPnl = new javax.swing.JPanel();
+        employeeDashboardAttLogsBrdrScrlPnl = new javax.swing.JScrollPane();
+        employeeDashboardAttLogsTbl = new javax.swing.JTable();
+        employeeDashboardAttendanceLogsPnl = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
+        employeeDashboardTimeInBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        employeeDashboardSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
         dashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         dashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -90,7 +88,6 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
         dashboardBtn.setText("Dashboard");
         dashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         dashboardBtn.addActionListener(this::dashboardBtnActionPerformed);
-        jPanel1.add(dashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
 
         mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -99,318 +96,386 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
         mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         mainDashboardBtn.setLabel("Main Dashboard");
         mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
-        jPanel1.add(mainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
+        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        jPanel2.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel2.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        javax.swing.GroupLayout employeeDashboardSidebarPnlLayout = new javax.swing.GroupLayout(employeeDashboardSidebarPnl);
+        employeeDashboardSidebarPnl.setLayout(employeeDashboardSidebarPnlLayout);
+        employeeDashboardSidebarPnlLayout.setHorizontalGroup(
+            employeeDashboardSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeDashboardSidebarPnlLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(employeeDashboardSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(dashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(employeeDashboardSidebarPnlLayout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(MotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addGroup(employeeDashboardSidebarPnlLayout.createSequentialGroup()
+                .addGap(92, 92, 92)
+                .addComponent(mainDashboardBtn))
+        );
+        employeeDashboardSidebarPnlLayout.setVerticalGroup(
+            employeeDashboardSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeDashboardSidebarPnlLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(employeeDashboardSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(employeeDashboardSidebarPnlLayout.createSequentialGroup()
+                        .addGap(189, 189, 189)
+                        .addComponent(dashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(MotorPHIconImgLbl))
+                .addGap(409, 409, 409)
+                .addComponent(mainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Profile");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 90, 46));
+        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
 
-        jButton5.setBackground(new java.awt.Color(34, 197, 94));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Log In");
-        jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton5.addActionListener(this::jButton5ActionPerformed);
+        employeeDashboardProfilePnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeDashboardProfilePnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardProfilePnl.setForeground(new java.awt.Color(30, 58, 138));
 
-        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
-        jPanel3.setForeground(new java.awt.Color(30, 42, 56));
-        jPanel3.setFocusable(false);
-        jPanel3.setPreferredSize(new java.awt.Dimension(700, 469));
-        jPanel3.setRequestFocusEnabled(false);
+        employeeDashboardProfileLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeeDashboardProfileLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeeDashboardProfileLbl.setText("Profile");
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel1.setText("Employee #");
+        javax.swing.GroupLayout employeeDashboardProfilePnlLayout = new javax.swing.GroupLayout(employeeDashboardProfilePnl);
+        employeeDashboardProfilePnl.setLayout(employeeDashboardProfilePnlLayout);
+        employeeDashboardProfilePnlLayout.setHorizontalGroup(
+            employeeDashboardProfilePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeDashboardProfilePnlLayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(employeeDashboardProfileLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        employeeDashboardProfilePnlLayout.setVerticalGroup(
+            employeeDashboardProfilePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(employeeDashboardProfileLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel3.setText("Last Name");
+        employeeDashboardProfileLbl.getAccessibleContext().setAccessibleName("employeeDashboardProfileLbl");
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel4.setText("Address");
+        employeeDashboardEDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        employeeDashboardEDetailsBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardEDetailsBrdrPnl.setFocusable(false);
+        employeeDashboardEDetailsBrdrPnl.setPreferredSize(new java.awt.Dimension(700, 469));
+        employeeDashboardEDetailsBrdrPnl.setRequestFocusEnabled(false);
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel5.setText("Birthday");
+        employeeDashboardENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardENumberLbl.setText("Employee #");
 
-        hrField.setForeground(new java.awt.Color(30, 42, 56));
-        hrField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField.setEnabled(false);
-        hrField.addActionListener(this::hrFieldActionPerformed);
+        employeeDashboardLNameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardLNameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardLNameLbl.setText("Last Name");
 
-        hrField2.setForeground(new java.awt.Color(30, 42, 56));
-        hrField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField2.setEnabled(false);
-        hrField2.addActionListener(this::hrField2ActionPerformed);
+        employeeDashboardAddressLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardAddressLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardAddressLbl.setText("Address");
 
-        hrField3.setForeground(new java.awt.Color(30, 42, 56));
-        hrField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField3.setEnabled(false);
-        hrField3.addActionListener(this::hrField3ActionPerformed);
+        employeeDashboardBirthdayLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardBirthdayLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardBirthdayLbl.setText("Birthday");
 
-        hrField4.setForeground(new java.awt.Color(30, 42, 56));
-        hrField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField4.setEnabled(false);
-        hrField4.addActionListener(this::hrField4ActionPerformed);
+        employeeDashboardENumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardENumberFld.setEnabled(false);
+        employeeDashboardENumberFld.addActionListener(this::employeeDashboardENumberFldActionPerformed);
 
-        hrField5.setForeground(new java.awt.Color(30, 42, 56));
-        hrField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField5.setEnabled(false);
-        hrField5.addActionListener(this::hrField5ActionPerformed);
+        employeeDashboardAddressFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardAddressFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardAddressFld.setEnabled(false);
+        employeeDashboardAddressFld.addActionListener(this::employeeDashboardAddressFldActionPerformed);
 
-        hrField6.setForeground(new java.awt.Color(30, 42, 56));
-        hrField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField6.setEnabled(false);
-        hrField6.addActionListener(this::hrField6ActionPerformed);
+        employeeDashboardLNameFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardLNameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardLNameFld.setEnabled(false);
+        employeeDashboardLNameFld.addActionListener(this::employeeDashboardLNameFldActionPerformed);
 
-        hrField7.setForeground(new java.awt.Color(30, 42, 56));
-        hrField7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField7.setEnabled(false);
-        hrField7.addActionListener(this::hrField7ActionPerformed);
+        employeeDashboardBirthdayFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardBirthdayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardBirthdayFld.setEnabled(false);
+        employeeDashboardBirthdayFld.addActionListener(this::employeeDashboardBirthdayFldActionPerformed);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel6.setText("Position");
+        employeeDashboardPositionFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPositionFld.setEnabled(false);
+        employeeDashboardPositionFld.addActionListener(this::employeeDashboardPositionFldActionPerformed);
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel7.setText("Basic Salary");
+        employeeDashboardBasicSalaryFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardBasicSalaryFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardBasicSalaryFld.setEnabled(false);
+        employeeDashboardBasicSalaryFld.addActionListener(this::employeeDashboardBasicSalaryFldActionPerformed);
 
-        jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel19.setText("Phone Allowance");
+        employeeDashboardPAllowanceFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardPAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPAllowanceFld.setEnabled(false);
+        employeeDashboardPAllowanceFld.addActionListener(this::employeeDashboardPAllowanceFldActionPerformed);
 
-        hrField8.setForeground(new java.awt.Color(30, 42, 56));
-        hrField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField8.setEnabled(false);
-        hrField8.addActionListener(this::hrField8ActionPerformed);
+        employeeDashboardPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardPositionLbl.setText("Position");
 
-        hrField9.setForeground(new java.awt.Color(30, 42, 56));
-        hrField9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField9.setEnabled(false);
-        hrField9.addActionListener(this::hrField9ActionPerformed);
+        employeeDashboardBasicSalaryLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardBasicSalaryLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardBasicSalaryLbl.setText("Basic Salary");
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel8.setText("SSS");
+        employeeDashboardPAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardPAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardPAllowanceLbl.setText("Phone Allowance");
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel9.setText("PhilHealth");
+        employeeDashboardSSSFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardSSSFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardSSSFld.setEnabled(false);
+        employeeDashboardSSSFld.addActionListener(this::employeeDashboardSSSFldActionPerformed);
 
-        hrField1.setForeground(new java.awt.Color(30, 42, 56));
-        hrField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField1.setEnabled(false);
-        hrField1.addActionListener(this::hrField1ActionPerformed);
+        employeeDashboardPhilHealthFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardPhilHealthFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPhilHealthFld.setEnabled(false);
+        employeeDashboardPhilHealthFld.addActionListener(this::employeeDashboardPhilHealthFldActionPerformed);
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel13.setText("Immediate Supervisor");
+        employeeDashboardSSSLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardSSSLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardSSSLbl.setText("SSS");
 
-        hrField11.setForeground(new java.awt.Color(30, 42, 56));
-        hrField11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField11.setEnabled(false);
-        hrField11.addActionListener(this::hrField11ActionPerformed);
+        employeeDashboardPhilHealthLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardPhilHealthLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardPhilHealthLbl.setText("PhilHealth");
 
-        hrField12.setForeground(new java.awt.Color(30, 42, 56));
-        hrField12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField12.setEnabled(false);
-        hrField12.addActionListener(this::hrField12ActionPerformed);
+        employeeDashboardFNameFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardFNameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardFNameFld.setEnabled(false);
+        employeeDashboardFNameFld.addActionListener(this::employeeDashboardFNameFldActionPerformed);
 
-        hrField13.setForeground(new java.awt.Color(30, 42, 56));
-        hrField13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField13.setEnabled(false);
-        hrField13.addActionListener(this::hrField13ActionPerformed);
+        employeeDashboardISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardISupervisorLbl.setText("Immediate Supervisor");
 
-        hrField14.setForeground(new java.awt.Color(30, 42, 56));
-        hrField14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField14.setEnabled(false);
-        hrField14.addActionListener(this::hrField14ActionPerformed);
+        employeeDashboardPNumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardPNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPNumberFld.setEnabled(false);
+        employeeDashboardPNumberFld.addActionListener(this::employeeDashboardPNumberFldActionPerformed);
 
-        hrField15.setForeground(new java.awt.Color(30, 42, 56));
-        hrField15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField15.setEnabled(false);
-        hrField15.addActionListener(this::hrField15ActionPerformed);
+        employeeDashboardISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardISupervisorFld.setEnabled(false);
+        employeeDashboardISupervisorFld.addActionListener(this::employeeDashboardISupervisorFldActionPerformed);
 
-        hrField16.setForeground(new java.awt.Color(30, 42, 56));
-        hrField16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField16.setEnabled(false);
-        hrField16.addActionListener(this::hrField16ActionPerformed);
+        employeeDashboardRiceSubsidyFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardRiceSubsidyFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardRiceSubsidyFld.setEnabled(false);
+        employeeDashboardRiceSubsidyFld.addActionListener(this::employeeDashboardRiceSubsidyFldActionPerformed);
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel11.setText("First Name");
+        employeeDashboardCAllowanceFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardCAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardCAllowanceFld.setEnabled(false);
+        employeeDashboardCAllowanceFld.addActionListener(this::employeeDashboardCAllowanceFldActionPerformed);
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel12.setText("Phone Number");
+        employeeDashboardTINFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardTINFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardTINFld.setEnabled(false);
+        employeeDashboardTINFld.addActionListener(this::employeeDashboardTINFldActionPerformed);
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel14.setText("Rice Subsidy");
+        employeeDashboardPagIbigFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardPagIbigFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPagIbigFld.setEnabled(false);
+        employeeDashboardPagIbigFld.addActionListener(this::employeeDashboardPagIbigFldActionPerformed);
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel10.setText("Status");
+        employeeDashboardFNameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardFNameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardFNameLbl.setText("First Name");
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel15.setText("TIN");
+        employeeDashboardPNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardPNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardPNumberLbl.setText("Phone Number");
 
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel16.setText("Pag-Ibig");
+        employeeDashboardRiceSubsidyLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardRiceSubsidyLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardRiceSubsidyLbl.setText("Rice Subsidy");
 
-        hrField17.setForeground(new java.awt.Color(30, 42, 56));
-        hrField17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField17.setEnabled(false);
-        hrField17.addActionListener(this::hrField17ActionPerformed);
+        employeeDashboardStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardStatusLbl.setText("Status");
 
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel20.setText("Clothing Allowance");
+        employeeDashboardTINLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardTINLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardTINLbl.setText("TIN");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        employeeDashboardPagIbigLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardPagIbigLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardPagIbigLbl.setText("Pag-Ibig");
+
+        employeeDashboardStatusFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardStatusFld.setEnabled(false);
+        employeeDashboardStatusFld.addActionListener(this::employeeDashboardStatusFldActionPerformed);
+
+        employeeDashboardCAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeeDashboardCAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDashboardCAllowanceLbl.setText("Clothing Allowance");
+
+        javax.swing.GroupLayout employeeDashboardEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(employeeDashboardEDetailsBrdrPnl);
+        employeeDashboardEDetailsBrdrPnl.setLayout(employeeDashboardEDetailsBrdrPnlLayout);
+        employeeDashboardEDetailsBrdrPnlLayout.setHorizontalGroup(
+            employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(employeeDashboardENumberLbl)
+                    .addComponent(employeeDashboardLNameLbl)
+                    .addComponent(employeeDashboardAddressLbl)
+                    .addComponent(employeeDashboardBirthdayLbl)
+                    .addComponent(employeeDashboardPositionLbl)
+                    .addComponent(employeeDashboardBasicSalaryLbl)
+                    .addComponent(employeeDashboardPAllowanceLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardSSSLbl)
+                    .addComponent(employeeDashboardPhilHealthLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(hrField4, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(employeeDashboardBirthdayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel12))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(hrField9, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
-                                    .addComponent(hrField8)
-                                    .addComponent(hrField7)
-                                    .addComponent(hrField6)
-                                    .addComponent(hrField5)
-                                    .addComponent(hrField))
+                                .addComponent(employeeDashboardPNumberLbl))
+                            .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(employeeDashboardPhilHealthFld, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                                    .addComponent(employeeDashboardSSSFld)
+                                    .addComponent(employeeDashboardPAllowanceFld)
+                                    .addComponent(employeeDashboardBasicSalaryFld)
+                                    .addComponent(employeeDashboardPositionFld)
+                                    .addComponent(employeeDashboardENumberFld))
                                 .addGap(18, 18, 18)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel13)
-                                    .addComponent(jLabel14)
-                                    .addComponent(jLabel10)
-                                    .addComponent(jLabel15)
-                                    .addComponent(jLabel16)
-                                    .addComponent(jLabel20))))
+                                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(employeeDashboardISupervisorLbl)
+                                    .addComponent(employeeDashboardRiceSubsidyLbl)
+                                    .addComponent(employeeDashboardStatusLbl)
+                                    .addComponent(employeeDashboardTINLbl)
+                                    .addComponent(employeeDashboardPagIbigLbl)
+                                    .addComponent(employeeDashboardCAllowanceLbl))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrField16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrField17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(employeeDashboardPagIbigFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDashboardTINFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDashboardCAllowanceFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDashboardRiceSubsidyFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDashboardISupervisorFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDashboardPNumberFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDashboardStatusFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(employeeDashboardLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel11)
+                        .addComponent(employeeDashboardFNameLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(hrField1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(hrField2))
+                        .addComponent(employeeDashboardFNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(employeeDashboardAddressFld))
                 .addGap(16, 16, 16))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        employeeDashboardEDetailsBrdrPnlLayout.setVerticalGroup(
+            employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10)
-                    .addComponent(hrField17, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeDashboardENumberLbl)
+                    .addComponent(employeeDashboardENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardStatusLbl)
+                    .addComponent(employeeDashboardStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel11)
-                    .addComponent(hrField1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeDashboardLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardLNameLbl)
+                    .addComponent(employeeDashboardFNameLbl)
+                    .addComponent(employeeDashboardFNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeDashboardAddressFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardAddressLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5)
-                    .addComponent(hrField11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeDashboardBirthdayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardBirthdayLbl)
+                    .addComponent(employeeDashboardPNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardPNumberLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6)
-                    .addComponent(hrField12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeDashboardPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardPositionLbl)
+                    .addComponent(employeeDashboardISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardISupervisorLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addComponent(hrField13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeDashboardBasicSalaryFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardBasicSalaryLbl)
+                    .addComponent(employeeDashboardRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardRiceSubsidyLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19)
-                    .addComponent(hrField14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeDashboardPAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardPAllowanceLbl)
+                    .addComponent(employeeDashboardCAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardCAllowanceLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(hrField15, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeDashboardSSSFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardSSSLbl)
+                    .addComponent(employeeDashboardTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardTINLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9)
-                    .addComponent(hrField16, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel16))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeDashboardPhilHealthFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardPhilHealthLbl)
+                    .addComponent(employeeDashboardPagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardPagIbigLbl))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
-        jButton6.setBackground(new java.awt.Color(239, 68, 68));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Log Out");
-        jButton6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton6.addActionListener(this::jButton6ActionPerformed);
+        employeeDashboardENumberLbl.getAccessibleContext().setAccessibleName("employeeDashboardENumberLbl");
+        employeeDashboardLNameLbl.getAccessibleContext().setAccessibleName("employeeDashboardLNameLbl");
+        employeeDashboardAddressLbl.getAccessibleContext().setAccessibleName("employeeDashboardAddressLbl");
+        employeeDashboardBirthdayLbl.getAccessibleContext().setAccessibleName("employeeDashboardBirthdayLbl");
+        employeeDashboardENumberFld.getAccessibleContext().setAccessibleName("employeeDashboardENumberFld");
+        employeeDashboardAddressFld.getAccessibleContext().setAccessibleName("employeeDashboardAddressFld");
+        employeeDashboardLNameFld.getAccessibleContext().setAccessibleName("employeeDashboardLNameFld");
+        employeeDashboardBirthdayFld.getAccessibleContext().setAccessibleName("employeeDashboardBirthdayFld");
+        employeeDashboardPositionFld.getAccessibleContext().setAccessibleName("employeeDashboardPositionFld");
+        employeeDashboardBasicSalaryFld.getAccessibleContext().setAccessibleName("employeeDashboardBasicSalaryFld");
+        employeeDashboardPAllowanceFld.getAccessibleContext().setAccessibleName("employeeDashboardPAllowanceFld");
+        employeeDashboardPositionLbl.getAccessibleContext().setAccessibleName("employeeDashboardPositionLbl");
+        employeeDashboardBasicSalaryLbl.getAccessibleContext().setAccessibleName("employeeDashboardBasicSalaryLbl");
+        employeeDashboardPAllowanceLbl.getAccessibleContext().setAccessibleName("employeeDashboardPAllowanceLbl");
+        employeeDashboardSSSFld.getAccessibleContext().setAccessibleName("employeeDashboardSSSFld");
+        employeeDashboardPhilHealthFld.getAccessibleContext().setAccessibleName("employeeDashboardPhilHealthFld");
+        employeeDashboardSSSLbl.getAccessibleContext().setAccessibleName("employeeDashboardSSSLbl");
+        employeeDashboardPhilHealthLbl.getAccessibleContext().setAccessibleName("employeeDashboardPhilHealthLbl");
+        employeeDashboardFNameFld.getAccessibleContext().setAccessibleName("employeeDashboardFNameFld");
+        employeeDashboardISupervisorLbl.getAccessibleContext().setAccessibleName("employeeDashboardISupervisorLbl");
+        employeeDashboardPNumberFld.getAccessibleContext().setAccessibleName("employeeDashboardPNumberFld");
+        employeeDashboardISupervisorFld.getAccessibleContext().setAccessibleName("employeeDashboardISupervisorFld");
+        employeeDashboardRiceSubsidyFld.getAccessibleContext().setAccessibleName("employeeDashboardRiceSubsidyFld");
+        employeeDashboardCAllowanceFld.getAccessibleContext().setAccessibleName("employeeDashboardCAllowanceFld");
+        employeeDashboardTINFld.getAccessibleContext().setAccessibleName("employeeDashboardTINFld");
+        employeeDashboardPagIbigFld.getAccessibleContext().setAccessibleName("employeeDashboardPagIbigFld");
+        employeeDashboardFNameLbl.getAccessibleContext().setAccessibleName("employeeDashboardFNameLbl");
+        employeeDashboardPNumberLbl.getAccessibleContext().setAccessibleName("employeeDashboardPNumberLbl");
+        employeeDashboardRiceSubsidyLbl.getAccessibleContext().setAccessibleName("employeeDashboardRiceSubsidyLbl");
+        employeeDashboardStatusLbl.getAccessibleContext().setAccessibleName("employeeDashboardStatusLbl");
+        employeeDashboardTINLbl.getAccessibleContext().setAccessibleName("employeeDashboardTINLbl");
+        employeeDashboardPagIbigLbl.getAccessibleContext().setAccessibleName("employeeDashboardPagIbigLbl");
+        employeeDashboardStatusFld.getAccessibleContext().setAccessibleName("employeeDashboardStatusFld");
+        employeeDashboardCAllowanceLbl.getAccessibleContext().setAccessibleName("employeeDashboardCAllowanceLbl");
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        employeeDashboardTimeOutBtn.setBackground(new java.awt.Color(239, 68, 68));
+        employeeDashboardTimeOutBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeDashboardTimeOutBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeDashboardTimeOutBtn.setText("Time Out");
+        employeeDashboardTimeOutBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardTimeOutBtn.addActionListener(this::employeeDashboardTimeOutBtnActionPerformed);
 
-        jPanel4.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        employeeDashboardAttLogsBrdrPnl.setBackground(new java.awt.Color(146, 192, 253));
+        employeeDashboardAttLogsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jTable1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTable1.setForeground(new java.awt.Color(30, 42, 56));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        employeeDashboardAttLogsTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardAttLogsTbl.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardAttLogsTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -525,14 +590,15 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jTable1.setGridColor(new java.awt.Color(178, 178, 178));
-        jTable1.setSelectionForeground(new java.awt.Color(30, 42, 56));
-        jScrollPane1.setViewportView(jTable1);
+        employeeDashboardAttLogsTbl.setGridColor(new java.awt.Color(178, 178, 178));
+        employeeDashboardAttLogsTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardAttLogsBrdrScrlPnl.setViewportView(employeeDashboardAttLogsTbl);
+        employeeDashboardAttLogsTbl.getAccessibleContext().setAccessibleName("employeeDashboardAttLogsTbl");
 
-        jPanel13.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel13.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel13.setPreferredSize(new java.awt.Dimension(126, 40));
+        employeeDashboardAttendanceLogsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeDashboardAttendanceLogsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardAttendanceLogsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeDashboardAttendanceLogsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
         jLabel23.setBackground(new java.awt.Color(255, 255, 255));
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
@@ -540,86 +606,94 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
         jLabel23.setText("Attendance Logs");
         jLabel23.setToolTipText("");
 
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
+        javax.swing.GroupLayout employeeDashboardAttendanceLogsPnlLayout = new javax.swing.GroupLayout(employeeDashboardAttendanceLogsPnl);
+        employeeDashboardAttendanceLogsPnl.setLayout(employeeDashboardAttendanceLogsPnlLayout);
+        employeeDashboardAttendanceLogsPnlLayout.setHorizontalGroup(
+            employeeDashboardAttendanceLogsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeDashboardAttendanceLogsPnlLayout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        employeeDashboardAttendanceLogsPnlLayout.setVerticalGroup(
+            employeeDashboardAttendanceLogsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout employeeDashboardAttLogsBrdrPnlLayout = new javax.swing.GroupLayout(employeeDashboardAttLogsBrdrPnl);
+        employeeDashboardAttLogsBrdrPnl.setLayout(employeeDashboardAttLogsBrdrPnlLayout);
+        employeeDashboardAttLogsBrdrPnlLayout.setHorizontalGroup(
+            employeeDashboardAttLogsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeDashboardAttLogsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeDashboardAttLogsBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeDashboardAttLogsBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeDashboardAttendanceLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(220, 220, 220))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        employeeDashboardAttLogsBrdrPnlLayout.setVerticalGroup(
+            employeeDashboardAttLogsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeDashboardAttLogsBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeDashboardAttendanceLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(employeeDashboardAttLogsBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+
+        employeeDashboardAttLogsBrdrScrlPnl.getAccessibleContext().setAccessibleName("employeeDashboardAttLogsBrdrScrlPnl");
+        employeeDashboardAttendanceLogsPnl.getAccessibleContext().setAccessibleName("employeeDashboardAttendanceLogsPnl");
+
+        employeeDashboardTimeInBtn.setBackground(new java.awt.Color(34, 197, 94));
+        employeeDashboardTimeInBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeDashboardTimeInBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeDashboardTimeInBtn.setText("Time In");
+        employeeDashboardTimeInBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardTimeInBtn.addActionListener(this::employeeDashboardTimeInBtnActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(employeeDashboardSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(397, 397, 397)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(employeeDashboardProfilePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(375, 375, 375)
+                        .addComponent(employeeDashboardTimeInBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 710, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(16, Short.MAX_VALUE))
+                        .addComponent(employeeDashboardTimeOutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(employeeDashboardEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 711, Short.MAX_VALUE)
+                    .addComponent(employeeDashboardAttLogsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel18))
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardProfilePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(employeeDashboardTimeOutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDashboardTimeInBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(12, 12, 12)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE)
+                .addComponent(employeeDashboardEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeDashboardAttLogsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
+            .addComponent(employeeDashboardSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel1.getAccessibleContext().setAccessibleName("");
+        employeeDashboardSidebarPnl.getAccessibleContext().setAccessibleName("employeeDashboardSidebarPnl");
+        employeeDashboardProfilePnl.getAccessibleContext().setAccessibleName("employeeDashboardProfilePnl");
+        employeeDashboardEDetailsBrdrPnl.getAccessibleContext().setAccessibleName("employeeDashboardEDetailsBrdrPnl");
+        employeeDashboardTimeOutBtn.getAccessibleContext().setAccessibleName("employeeDashboardTimeOutBtn");
+        employeeDashboardAttLogsBrdrPnl.getAccessibleContext().setAccessibleName("employeeDashboardAttLogsBrdrPnl");
+        employeeDashboardTimeInBtn.getAccessibleContext().setAccessibleName("employeeDashboardTimeInBtn");
 
         getAccessibleContext().setAccessibleName("EmployeeDashboardFrame");
         getAccessibleContext().setAccessibleDescription("");
@@ -640,81 +714,81 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
         new MainDashboardFrame().setVisible(true);
     }//GEN-LAST:event_mainDashboardBtnActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void employeeDashboardENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_employeeDashboardENumberFldActionPerformed
 
-    private void hrFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrFieldActionPerformed
+    private void employeeDashboardAddressFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardAddressFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrFieldActionPerformed
+    }//GEN-LAST:event_employeeDashboardAddressFldActionPerformed
 
-    private void hrField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField2ActionPerformed
+    private void employeeDashboardLNameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardLNameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField2ActionPerformed
+    }//GEN-LAST:event_employeeDashboardLNameFldActionPerformed
 
-    private void hrField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField3ActionPerformed
+    private void employeeDashboardBirthdayFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardBirthdayFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField3ActionPerformed
+    }//GEN-LAST:event_employeeDashboardBirthdayFldActionPerformed
 
-    private void hrField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField4ActionPerformed
+    private void employeeDashboardPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardPositionFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField4ActionPerformed
+    }//GEN-LAST:event_employeeDashboardPositionFldActionPerformed
 
-    private void hrField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField5ActionPerformed
+    private void employeeDashboardBasicSalaryFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardBasicSalaryFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField5ActionPerformed
+    }//GEN-LAST:event_employeeDashboardBasicSalaryFldActionPerformed
 
-    private void hrField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField6ActionPerformed
+    private void employeeDashboardPAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardPAllowanceFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField6ActionPerformed
+    }//GEN-LAST:event_employeeDashboardPAllowanceFldActionPerformed
 
-    private void hrField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField7ActionPerformed
+    private void employeeDashboardSSSFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardSSSFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField7ActionPerformed
+    }//GEN-LAST:event_employeeDashboardSSSFldActionPerformed
 
-    private void hrField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField8ActionPerformed
+    private void employeeDashboardPhilHealthFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardPhilHealthFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField8ActionPerformed
+    }//GEN-LAST:event_employeeDashboardPhilHealthFldActionPerformed
 
-    private void hrField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField9ActionPerformed
+    private void employeeDashboardFNameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardFNameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField9ActionPerformed
+    }//GEN-LAST:event_employeeDashboardFNameFldActionPerformed
 
-    private void hrField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField1ActionPerformed
+    private void employeeDashboardPNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardPNumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField1ActionPerformed
+    }//GEN-LAST:event_employeeDashboardPNumberFldActionPerformed
 
-    private void hrField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField11ActionPerformed
+    private void employeeDashboardISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardISupervisorFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField11ActionPerformed
+    }//GEN-LAST:event_employeeDashboardISupervisorFldActionPerformed
 
-    private void hrField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField12ActionPerformed
+    private void employeeDashboardRiceSubsidyFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardRiceSubsidyFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField12ActionPerformed
+    }//GEN-LAST:event_employeeDashboardRiceSubsidyFldActionPerformed
 
-    private void hrField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField13ActionPerformed
+    private void employeeDashboardCAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardCAllowanceFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField13ActionPerformed
+    }//GEN-LAST:event_employeeDashboardCAllowanceFldActionPerformed
 
-    private void hrField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField14ActionPerformed
+    private void employeeDashboardTINFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardTINFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField14ActionPerformed
+    }//GEN-LAST:event_employeeDashboardTINFldActionPerformed
 
-    private void hrField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField15ActionPerformed
+    private void employeeDashboardPagIbigFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardPagIbigFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField15ActionPerformed
+    }//GEN-LAST:event_employeeDashboardPagIbigFldActionPerformed
 
-    private void hrField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField16ActionPerformed
+    private void employeeDashboardTimeOutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardTimeOutBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField16ActionPerformed
+    }//GEN-LAST:event_employeeDashboardTimeOutBtnActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void employeeDashboardStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardStatusFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_employeeDashboardStatusFldActionPerformed
 
-    private void hrField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField17ActionPerformed
+    private void employeeDashboardTimeInBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardTimeInBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField17ActionPerformed
+    }//GEN-LAST:event_employeeDashboardTimeInBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -742,54 +816,53 @@ public class EmployeeDashboardFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel MotorPHIconImgLbl;
     private javax.swing.JButton dashboardBtn;
-    private javax.swing.JTextField hrField;
-    private javax.swing.JTextField hrField1;
-    private javax.swing.JTextField hrField11;
-    private javax.swing.JTextField hrField12;
-    private javax.swing.JTextField hrField13;
-    private javax.swing.JTextField hrField14;
-    private javax.swing.JTextField hrField15;
-    private javax.swing.JTextField hrField16;
-    private javax.swing.JTextField hrField17;
-    private javax.swing.JTextField hrField2;
-    private javax.swing.JTextField hrField3;
-    private javax.swing.JTextField hrField4;
-    private javax.swing.JTextField hrField5;
-    private javax.swing.JTextField hrField6;
-    private javax.swing.JTextField hrField7;
-    private javax.swing.JTextField hrField8;
-    private javax.swing.JTextField hrField9;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
+    private javax.swing.JTextField employeeDashboardAddressFld;
+    private javax.swing.JLabel employeeDashboardAddressLbl;
+    private javax.swing.JPanel employeeDashboardAttLogsBrdrPnl;
+    private javax.swing.JScrollPane employeeDashboardAttLogsBrdrScrlPnl;
+    private javax.swing.JTable employeeDashboardAttLogsTbl;
+    private javax.swing.JPanel employeeDashboardAttendanceLogsPnl;
+    private javax.swing.JTextField employeeDashboardBasicSalaryFld;
+    private javax.swing.JLabel employeeDashboardBasicSalaryLbl;
+    private javax.swing.JTextField employeeDashboardBirthdayFld;
+    private javax.swing.JLabel employeeDashboardBirthdayLbl;
+    private javax.swing.JTextField employeeDashboardCAllowanceFld;
+    private javax.swing.JLabel employeeDashboardCAllowanceLbl;
+    private javax.swing.JPanel employeeDashboardEDetailsBrdrPnl;
+    private javax.swing.JTextField employeeDashboardENumberFld;
+    private javax.swing.JLabel employeeDashboardENumberLbl;
+    private javax.swing.JTextField employeeDashboardFNameFld;
+    private javax.swing.JLabel employeeDashboardFNameLbl;
+    private javax.swing.JTextField employeeDashboardISupervisorFld;
+    private javax.swing.JLabel employeeDashboardISupervisorLbl;
+    private javax.swing.JTextField employeeDashboardLNameFld;
+    private javax.swing.JLabel employeeDashboardLNameLbl;
+    private javax.swing.JTextField employeeDashboardPAllowanceFld;
+    private javax.swing.JLabel employeeDashboardPAllowanceLbl;
+    private javax.swing.JTextField employeeDashboardPNumberFld;
+    private javax.swing.JLabel employeeDashboardPNumberLbl;
+    private javax.swing.JTextField employeeDashboardPagIbigFld;
+    private javax.swing.JLabel employeeDashboardPagIbigLbl;
+    private javax.swing.JTextField employeeDashboardPhilHealthFld;
+    private javax.swing.JLabel employeeDashboardPhilHealthLbl;
+    private javax.swing.JTextField employeeDashboardPositionFld;
+    private javax.swing.JLabel employeeDashboardPositionLbl;
+    private javax.swing.JLabel employeeDashboardProfileLbl;
+    private javax.swing.JPanel employeeDashboardProfilePnl;
+    private javax.swing.JTextField employeeDashboardRiceSubsidyFld;
+    private javax.swing.JLabel employeeDashboardRiceSubsidyLbl;
+    private javax.swing.JTextField employeeDashboardSSSFld;
+    private javax.swing.JLabel employeeDashboardSSSLbl;
+    private javax.swing.JPanel employeeDashboardSidebarPnl;
+    private javax.swing.JTextField employeeDashboardStatusFld;
+    private javax.swing.JLabel employeeDashboardStatusLbl;
+    private javax.swing.JTextField employeeDashboardTINFld;
+    private javax.swing.JLabel employeeDashboardTINLbl;
+    private javax.swing.JButton employeeDashboardTimeInBtn;
+    private javax.swing.JButton employeeDashboardTimeOutBtn;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JButton mainDashboardBtn;
     // End of variables declaration//GEN-END:variables
 }
