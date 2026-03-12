@@ -74,7 +74,7 @@
                       <Component id="payslipBtn" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="MotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
                       </Group>
                       <Component id="leaveListBtn" min="-2" pref="216" max="-2" attributes="0"/>
                   </Group>
@@ -91,7 +91,7 @@
                           <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
                           <Component id="payslipBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="MotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                   <Component id="leaveListBtn" min="-2" pref="39" max="-2" attributes="0"/>
@@ -160,12 +160,15 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="MotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="MotorPHIconImgLbl"/>
+          </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JButton" name="payrollDisputeBtn">
           <Properties>

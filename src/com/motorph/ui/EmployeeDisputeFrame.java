@@ -29,18 +29,18 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         employeeDisputeSidebarPnl = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        employeeDisputeDDetailsBtn = new javax.swing.JButton();
         mainDashboardBtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        MotorPHIconImgLbl = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        employeeDisputeDetailsPnl = new javax.swing.JPanel();
+        employeeDDetailsPnl = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
+        employeeDisputeRecordScrlPnl = new javax.swing.JScrollPane();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        employeeDDetailsBrdrPnl = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jLabel50 = new javax.swing.JLabel();
         jPanel19 = new javax.swing.JPanel();
@@ -73,12 +73,12 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
 
         employeeDisputeSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Dispute Details");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        employeeDisputeDDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeeDisputeDDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeDisputeDDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeDisputeDDetailsBtn.setText("Dispute Details");
+        employeeDisputeDDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeeDisputeDDetailsBtn.addActionListener(this::employeeDisputeDDetailsBtnActionPerformed);
 
         mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -88,7 +88,7 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
         mainDashboardBtn.setLabel("Main Dashboard");
         mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
         jButton2.setBackground(new java.awt.Color(30, 42, 56));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -108,10 +108,10 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(employeeDisputeSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDisputeDDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(employeeDisputeSidebarPnlLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(MotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         employeeDisputeSidebarPnlLayout.setVerticalGroup(
             employeeDisputeSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,8 +120,8 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
                 .addGroup(employeeDisputeSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(employeeDisputeSidebarPnlLayout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1))
+                        .addComponent(employeeDisputeDDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(MotorPHIconImgLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -129,18 +129,21 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
                 .addGap(17, 17, 17))
         );
 
-        employeeDisputeDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
-        employeeDisputeDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeeDisputeDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        employeeDisputeDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        employeeDisputeDDetailsBtn.getAccessibleContext().setAccessibleName("employeeDisputeDDetailsBtn");
+        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
+
+        employeeDDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeDDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeDDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText(" Dispute Details");
-        employeeDisputeDetailsPnl.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 200, 46));
+        employeeDDetailsPnl.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 200, 46));
 
-        jScrollPane3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
-        jScrollPane3.setPreferredSize(new java.awt.Dimension(638, 500));
+        employeeDisputeRecordScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        employeeDisputeRecordScrlPnl.setPreferredSize(new java.awt.Dimension(638, 500));
 
         jPanel6.setBackground(new java.awt.Color(178, 178, 178));
         jPanel6.setForeground(new java.awt.Color(30, 42, 56));
@@ -296,9 +299,9 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
                 .addContainerGap(192, Short.MAX_VALUE))
         );
 
-        jScrollPane3.setViewportView(jPanel6);
+        employeeDisputeRecordScrlPnl.setViewportView(jPanel6);
 
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        employeeDDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
         jPanel18.setBackground(new java.awt.Color(30, 58, 138));
         jPanel18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -525,23 +528,23 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout employeeDDetailsBrdrPnlLayout = new javax.swing.GroupLayout(employeeDDetailsBrdrPnl);
+        employeeDDetailsBrdrPnl.setLayout(employeeDDetailsBrdrPnlLayout);
+        employeeDDetailsBrdrPnlLayout.setHorizontalGroup(
+            employeeDDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeDDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGroup(employeeDDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(employeeDDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGap(14, 14, 14)
                         .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGroup(employeeDDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGap(242, 242, 242)
                         .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        employeeDDetailsBrdrPnlLayout.setVerticalGroup(
+            employeeDDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeDDetailsBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(12, Short.MAX_VALUE)
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -557,30 +560,35 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
                 .addComponent(employeeDisputeSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(employeeDisputeDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(employeeDDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(employeeDisputeRecordScrlPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(28, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(employeeDisputeDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeDDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)
+                .addComponent(employeeDisputeRecordScrlPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)
                 .addGap(12, 12, 12)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeDDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
             .addComponent(employeeDisputeSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        employeeDisputeSidebarPnl.getAccessibleContext().setAccessibleName("employeeDisputeSidebarPnl");
+        employeeDDetailsPnl.getAccessibleContext().setAccessibleName("employeeDDetailsPnl");
+        employeeDisputeRecordScrlPnl.getAccessibleContext().setAccessibleName("employeeDisputeRecordScrlPnl");
+        employeeDDetailsBrdrPnl.getAccessibleContext().setAccessibleName("employeeDDetailsBrdrPnl");
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void employeeDisputeDDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDisputeDDetailsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_employeeDisputeDDetailsBtnActionPerformed
 
     private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -659,14 +667,16 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel employeeDisputeDetailsPnl;
+    private javax.swing.JLabel MotorPHIconImgLbl;
+    private javax.swing.JPanel employeeDDetailsBrdrPnl;
+    private javax.swing.JPanel employeeDDetailsPnl;
+    private javax.swing.JButton employeeDisputeDDetailsBtn;
+    private javax.swing.JScrollPane employeeDisputeRecordScrlPnl;
     private javax.swing.JPanel employeeDisputeSidebarPnl;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox6;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel4;
@@ -681,10 +691,8 @@ public class EmployeeDisputeFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField24;
     private javax.swing.JTextField jTextField25;
