@@ -1,10 +1,10 @@
-
 package com.motorph.ui;
 
 import com.motorph.dao.CsvEmployeeDAO;
 import com.motorph.model.Employee;
 import com.motorph.service.EmployeeService;
 import com.motorph.util.DateUtils;
+import javax.swing.JOptionPane;
 
 
 public class HREmployeeDetails extends javax.swing.JFrame {
@@ -18,8 +18,6 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         initComponents();
         
         this.empService = new EmployeeService(new CsvEmployeeDAO());
-        
-      
     }
     
     private void performSearch() {
@@ -1238,10 +1236,20 @@ public class HREmployeeDetails extends javax.swing.JFrame {
 
     private void editBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editBtnActionPerformed
         // TODO add your handling code here:
-        Employee emp = empService.findEmployee(employeeNumberField.getText());
-        this.dispose();
-        new HREditEmployeeFrame(emp).setVisible(true);
-        
+        try {
+            Employee emp = empService.findEmployee(employeeNumberField.getText());
+            
+            if (emp == null) throw new IllegalArgumentException("Select an employee to edit.");
+            
+            this.dispose();
+            new HREditEmployeeFrame(emp).setVisible(true);
+        } catch (IllegalArgumentException e) {
+             JOptionPane.showMessageDialog(this,  e.getMessage());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Unexpected system error.", "Error", JOptionPane.ERROR_MESSAGE);
+            
+            e.printStackTrace();
+        }
         
     }//GEN-LAST:event_editBtnActionPerformed
 
