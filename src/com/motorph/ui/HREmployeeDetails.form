@@ -72,7 +72,7 @@
           <Group type="102" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
@@ -84,12 +84,12 @@
                           <Component id="editBtn" min="-2" pref="65" max="-2" attributes="0"/>
                           <Component id="deleteBtn" min="-2" pref="65" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                       <Component id="jScrollPane2" min="-2" pref="607" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jPanel3" alignment="0" min="-2" pref="705" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="21" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -343,7 +343,7 @@
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jTextField3">
+        <Component class="javax.swing.JTextField" name="searchBox">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -361,7 +361,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchBoxActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -369,7 +369,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="SearchIconImg">
+        <Component class="javax.swing.JLabel" name="searchIconBtn">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/SearchIconImg.png"/>
@@ -378,6 +378,9 @@
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SearchIconImg"/>
           </AccessibilityProperties>
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="searchIconBtnKeyPressed"/>
+          </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="170" y="-10" width="60" height="60"/>
@@ -1777,18 +1780,18 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="hrField4" min="-2" pref="158" max="-2" attributes="0"/>
+                                  <Component id="bdayField" min="-2" pref="158" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="hrField9" alignment="0" pref="158" max="32767" attributes="0"/>
-                                      <Component id="hrField8" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="hrField7" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="hrField6" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="hrField5" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="hrField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="philhealthField" alignment="0" pref="158" max="32767" attributes="0"/>
+                                      <Component id="sssField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="phoneAllowanceField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="basicSalaryField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="positionField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="employeeNumberField" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -1803,30 +1806,30 @@
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace pref="52" max="32767" attributes="0"/>
+                                  <EmptySpace pref="51" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="hrField16" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                                      <Component id="hrField15" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                                      <Component id="hrField14" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                                      <Component id="hrField13" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                                      <Component id="hrField12" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                                      <Component id="hrField11" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="pagIbigField" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="tinField" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="clothingAllowanceField" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="riceSubsidyField" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="immediateSupervisorField" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                                      <Component id="phoneNumberField" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                  <Component id="hrField10" max="32767" attributes="0"/>
+                                  <Component id="statusField" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="hrField3" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="lastNameField" min="-2" pref="158" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="hrField1" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="firstNameField" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="hrField2" max="32767" attributes="0"/>
+                      <Component id="addressField" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
               </Group>
@@ -1838,66 +1841,66 @@
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="hrField10" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeNumberField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="statusField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField3" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="lastNameField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="firstNameField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="addressField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField4" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="bdayField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField11" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="phoneNumberField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="hrField5" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="positionField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                               <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="hrField12" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="immediateSupervisorField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                               <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="hrField6" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="basicSalaryField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                               <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="hrField13" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="riceSubsidyField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="jLabel14" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField7" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="phoneAllowanceField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField14" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="clothingAllowanceField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField8" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="sssField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField15" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="tinField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField9" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="philhealthField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField16" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="pagIbigField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" pref="15" max="32767" attributes="0"/>
@@ -1950,7 +1953,7 @@
             <Property name="text" type="java.lang.String" value="Birthday"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField">
+        <Component class="javax.swing.JTextField" name="employeeNumberField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -1965,10 +1968,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeNumberFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField2">
+        <Component class="javax.swing.JTextField" name="addressField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -1983,10 +1986,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addressFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField3">
+        <Component class="javax.swing.JTextField" name="lastNameField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2001,10 +2004,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lastNameFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField4">
+        <Component class="javax.swing.JTextField" name="bdayField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2019,10 +2022,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bdayFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField5">
+        <Component class="javax.swing.JTextField" name="positionField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2037,10 +2040,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="positionFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField6">
+        <Component class="javax.swing.JTextField" name="basicSalaryField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2055,10 +2058,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField6ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="basicSalaryFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField7">
+        <Component class="javax.swing.JTextField" name="phoneAllowanceField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2073,7 +2076,7 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField7ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="phoneAllowanceFieldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
@@ -2109,7 +2112,7 @@
             <Property name="text" type="java.lang.String" value="Phone Allowance"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField8">
+        <Component class="javax.swing.JTextField" name="sssField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2124,10 +2127,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField8ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sssFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField9">
+        <Component class="javax.swing.JTextField" name="philhealthField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2142,7 +2145,7 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField9ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="philhealthFieldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
@@ -2167,7 +2170,7 @@
             <Property name="text" type="java.lang.String" value="PhilHealth"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField1">
+        <Component class="javax.swing.JTextField" name="firstNameField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2182,7 +2185,7 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="firstNameFieldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel13">
@@ -2196,7 +2199,7 @@
             <Property name="text" type="java.lang.String" value="Immediate Supervisor"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField11">
+        <Component class="javax.swing.JTextField" name="phoneNumberField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2211,10 +2214,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField11ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="phoneNumberFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField12">
+        <Component class="javax.swing.JTextField" name="immediateSupervisorField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2229,10 +2232,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField12ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="immediateSupervisorFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField13">
+        <Component class="javax.swing.JTextField" name="riceSubsidyField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2247,10 +2250,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField13ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="riceSubsidyFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField14">
+        <Component class="javax.swing.JTextField" name="clothingAllowanceField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2265,10 +2268,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField14ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clothingAllowanceFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField15">
+        <Component class="javax.swing.JTextField" name="tinField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2283,10 +2286,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField15ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tinFieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField16">
+        <Component class="javax.swing.JTextField" name="pagIbigField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2301,7 +2304,7 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField16ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pagIbigFieldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
@@ -2370,7 +2373,7 @@
             <Property name="text" type="java.lang.String" value="Pag-Ibig"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField10">
+        <Component class="javax.swing.JTextField" name="statusField">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -2385,7 +2388,7 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField10ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="statusFieldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel21">

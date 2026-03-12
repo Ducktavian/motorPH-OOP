@@ -44,7 +44,7 @@
                                       <Component id="hrField" min="-2" pref="158" max="-2" attributes="0"/>
                                       <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
                                       <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="39" pref="39" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                                       <Component id="hrField8" min="-2" pref="158" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">

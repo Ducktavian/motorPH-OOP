@@ -1,22 +1,76 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package com.motorph.ui;
 
-/**
- *
- * @author Lenovo
- */
+import com.motorph.dao.CsvEmployeeDAO;
+import com.motorph.model.Employee;
+import com.motorph.service.EmployeeService;
+import com.motorph.util.DateUtils;
+
+
 public class HREmployeeDetails extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(HREmployeeDetails.class.getName());
-
+    private final EmployeeService empService;
     /**
      * Creates new form HRDashboardFrame
      */
     public HREmployeeDetails() {
         initComponents();
+        
+        this.empService = new EmployeeService(new CsvEmployeeDAO());
+        
+      
+    }
+    
+    private void performSearch() {
+        System.out.println("Action Triggered!");
+        String id = searchBox.getText().trim();
+        System.out.println(id);
+        Employee found = empService.findEmployee(id);
+        if (found != null) {
+            populateFields(found);
+        } else {
+            clearFields();
+        }
+    }
+    
+    private void populateFields(Employee emp) {
+        employeeNumberField.setText(emp.getEmployeeNumber());
+        firstNameField.setText(emp.getFirstName());
+        lastNameField.setText(emp.getLastName());
+        bdayField.setText(DateUtils.dateToString(emp.getBirthday()));
+        addressField.setText(emp.getAddress());
+        phoneNumberField.setText(emp.getPhoneNumber());
+        sssField.setText(emp.getSSSNumber());
+        philhealthField.setText(emp.getPhilhealthNumber());
+        tinField.setText(emp.getTIN());
+        pagIbigField.setText(emp.getPagIbigNumber());
+        statusField.setText(emp.getStatus());
+        positionField.setText(emp.getPosition());
+        immediateSupervisorField.setText(emp.getImmediateSupervisor());
+        basicSalaryField.setText(String.valueOf(emp.getBasicSalary()));
+        riceSubsidyField.setText(String.valueOf(emp.getRiceSubsidy()));
+        phoneAllowanceField.setText(String.valueOf(emp.getPhoneAllowance()));
+        clothingAllowanceField.setText(String.valueOf(emp.getClothingAllowance()));
+    }
+
+    private void clearFields() {
+        firstNameField.setText("");
+        lastNameField.setText("");
+        bdayField.setText("");
+        addressField.setText("");
+        phoneNumberField.setText("");
+        sssField.setText("");
+        philhealthField.setText("");
+        tinField.setText("");
+        pagIbigField.setText("");
+        statusField.setText("");
+        positionField.setText("");
+        immediateSupervisorField.setText("");
+        basicSalaryField.setText("");
+        riceSubsidyField.setText("");
+        phoneAllowanceField.setText("");
+        clothingAllowanceField.setText("");
     }
 
     /**
@@ -44,8 +98,8 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         editBtn = new javax.swing.JButton();
         deleteBtn = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
-        SearchIconImg = new javax.swing.JLabel();
+        searchBox = new javax.swing.JTextField();
+        searchIconBtn = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel5 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
@@ -103,35 +157,35 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        hrField = new javax.swing.JTextField();
-        hrField2 = new javax.swing.JTextField();
-        hrField3 = new javax.swing.JTextField();
-        hrField4 = new javax.swing.JTextField();
-        hrField5 = new javax.swing.JTextField();
-        hrField6 = new javax.swing.JTextField();
-        hrField7 = new javax.swing.JTextField();
+        employeeNumberField = new javax.swing.JTextField();
+        addressField = new javax.swing.JTextField();
+        lastNameField = new javax.swing.JTextField();
+        bdayField = new javax.swing.JTextField();
+        positionField = new javax.swing.JTextField();
+        basicSalaryField = new javax.swing.JTextField();
+        phoneAllowanceField = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        hrField8 = new javax.swing.JTextField();
-        hrField9 = new javax.swing.JTextField();
+        sssField = new javax.swing.JTextField();
+        philhealthField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        hrField1 = new javax.swing.JTextField();
+        firstNameField = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        hrField11 = new javax.swing.JTextField();
-        hrField12 = new javax.swing.JTextField();
-        hrField13 = new javax.swing.JTextField();
-        hrField14 = new javax.swing.JTextField();
-        hrField15 = new javax.swing.JTextField();
-        hrField16 = new javax.swing.JTextField();
+        phoneNumberField = new javax.swing.JTextField();
+        immediateSupervisorField = new javax.swing.JTextField();
+        riceSubsidyField = new javax.swing.JTextField();
+        clothingAllowanceField = new javax.swing.JTextField();
+        tinField = new javax.swing.JTextField();
+        pagIbigField = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        hrField10 = new javax.swing.JTextField();
+        statusField = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -222,16 +276,21 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         jPanel6.setForeground(new java.awt.Color(146, 192, 253));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField3.setText("   Enter Employee #");
-        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField3.addActionListener(this::jTextField3ActionPerformed);
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+        searchBox.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        searchBox.setForeground(new java.awt.Color(31, 41, 55));
+        searchBox.setText("   Enter Employee #");
+        searchBox.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        searchBox.addActionListener(this::searchBoxActionPerformed);
+        jPanel6.add(searchBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
 
-        SearchIconImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
-        jPanel6.add(SearchIconImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
-        SearchIconImg.getAccessibleContext().setAccessibleName("SearchIconImg");
+        searchIconBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
+        searchIconBtn.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                searchIconBtnKeyPressed(evt);
+            }
+        });
+        jPanel6.add(searchIconBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+        searchIconBtn.getAccessibleContext().setAccessibleName("SearchIconImg");
 
         jScrollPane2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
         jScrollPane2.setForeground(new java.awt.Color(30, 42, 56));
@@ -862,40 +921,40 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(31, 41, 55));
         jLabel5.setText("Birthday");
 
-        hrField.setForeground(new java.awt.Color(30, 42, 56));
-        hrField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField.setEnabled(false);
-        hrField.addActionListener(this::hrFieldActionPerformed);
+        employeeNumberField.setForeground(new java.awt.Color(30, 42, 56));
+        employeeNumberField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeNumberField.setEnabled(false);
+        employeeNumberField.addActionListener(this::employeeNumberFieldActionPerformed);
 
-        hrField2.setForeground(new java.awt.Color(30, 42, 56));
-        hrField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField2.setEnabled(false);
-        hrField2.addActionListener(this::hrField2ActionPerformed);
+        addressField.setForeground(new java.awt.Color(30, 42, 56));
+        addressField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        addressField.setEnabled(false);
+        addressField.addActionListener(this::addressFieldActionPerformed);
 
-        hrField3.setForeground(new java.awt.Color(30, 42, 56));
-        hrField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField3.setEnabled(false);
-        hrField3.addActionListener(this::hrField3ActionPerformed);
+        lastNameField.setForeground(new java.awt.Color(30, 42, 56));
+        lastNameField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        lastNameField.setEnabled(false);
+        lastNameField.addActionListener(this::lastNameFieldActionPerformed);
 
-        hrField4.setForeground(new java.awt.Color(30, 42, 56));
-        hrField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField4.setEnabled(false);
-        hrField4.addActionListener(this::hrField4ActionPerformed);
+        bdayField.setForeground(new java.awt.Color(30, 42, 56));
+        bdayField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        bdayField.setEnabled(false);
+        bdayField.addActionListener(this::bdayFieldActionPerformed);
 
-        hrField5.setForeground(new java.awt.Color(30, 42, 56));
-        hrField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField5.setEnabled(false);
-        hrField5.addActionListener(this::hrField5ActionPerformed);
+        positionField.setForeground(new java.awt.Color(30, 42, 56));
+        positionField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        positionField.setEnabled(false);
+        positionField.addActionListener(this::positionFieldActionPerformed);
 
-        hrField6.setForeground(new java.awt.Color(30, 42, 56));
-        hrField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField6.setEnabled(false);
-        hrField6.addActionListener(this::hrField6ActionPerformed);
+        basicSalaryField.setForeground(new java.awt.Color(30, 42, 56));
+        basicSalaryField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        basicSalaryField.setEnabled(false);
+        basicSalaryField.addActionListener(this::basicSalaryFieldActionPerformed);
 
-        hrField7.setForeground(new java.awt.Color(30, 42, 56));
-        hrField7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField7.setEnabled(false);
-        hrField7.addActionListener(this::hrField7ActionPerformed);
+        phoneAllowanceField.setForeground(new java.awt.Color(30, 42, 56));
+        phoneAllowanceField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        phoneAllowanceField.setEnabled(false);
+        phoneAllowanceField.addActionListener(this::phoneAllowanceFieldActionPerformed);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(31, 41, 55));
@@ -909,15 +968,15 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         jLabel19.setForeground(new java.awt.Color(31, 41, 55));
         jLabel19.setText("Phone Allowance");
 
-        hrField8.setForeground(new java.awt.Color(30, 42, 56));
-        hrField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField8.setEnabled(false);
-        hrField8.addActionListener(this::hrField8ActionPerformed);
+        sssField.setForeground(new java.awt.Color(30, 42, 56));
+        sssField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        sssField.setEnabled(false);
+        sssField.addActionListener(this::sssFieldActionPerformed);
 
-        hrField9.setForeground(new java.awt.Color(30, 42, 56));
-        hrField9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField9.setEnabled(false);
-        hrField9.addActionListener(this::hrField9ActionPerformed);
+        philhealthField.setForeground(new java.awt.Color(30, 42, 56));
+        philhealthField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        philhealthField.setEnabled(false);
+        philhealthField.addActionListener(this::philhealthFieldActionPerformed);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(31, 41, 55));
@@ -927,44 +986,44 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(31, 41, 55));
         jLabel9.setText("PhilHealth");
 
-        hrField1.setForeground(new java.awt.Color(30, 42, 56));
-        hrField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField1.setEnabled(false);
-        hrField1.addActionListener(this::hrField1ActionPerformed);
+        firstNameField.setForeground(new java.awt.Color(30, 42, 56));
+        firstNameField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        firstNameField.setEnabled(false);
+        firstNameField.addActionListener(this::firstNameFieldActionPerformed);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(31, 41, 55));
         jLabel13.setText("Immediate Supervisor");
 
-        hrField11.setForeground(new java.awt.Color(30, 42, 56));
-        hrField11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField11.setEnabled(false);
-        hrField11.addActionListener(this::hrField11ActionPerformed);
+        phoneNumberField.setForeground(new java.awt.Color(30, 42, 56));
+        phoneNumberField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        phoneNumberField.setEnabled(false);
+        phoneNumberField.addActionListener(this::phoneNumberFieldActionPerformed);
 
-        hrField12.setForeground(new java.awt.Color(30, 42, 56));
-        hrField12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField12.setEnabled(false);
-        hrField12.addActionListener(this::hrField12ActionPerformed);
+        immediateSupervisorField.setForeground(new java.awt.Color(30, 42, 56));
+        immediateSupervisorField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        immediateSupervisorField.setEnabled(false);
+        immediateSupervisorField.addActionListener(this::immediateSupervisorFieldActionPerformed);
 
-        hrField13.setForeground(new java.awt.Color(30, 42, 56));
-        hrField13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField13.setEnabled(false);
-        hrField13.addActionListener(this::hrField13ActionPerformed);
+        riceSubsidyField.setForeground(new java.awt.Color(30, 42, 56));
+        riceSubsidyField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        riceSubsidyField.setEnabled(false);
+        riceSubsidyField.addActionListener(this::riceSubsidyFieldActionPerformed);
 
-        hrField14.setForeground(new java.awt.Color(30, 42, 56));
-        hrField14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField14.setEnabled(false);
-        hrField14.addActionListener(this::hrField14ActionPerformed);
+        clothingAllowanceField.setForeground(new java.awt.Color(30, 42, 56));
+        clothingAllowanceField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        clothingAllowanceField.setEnabled(false);
+        clothingAllowanceField.addActionListener(this::clothingAllowanceFieldActionPerformed);
 
-        hrField15.setForeground(new java.awt.Color(30, 42, 56));
-        hrField15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField15.setEnabled(false);
-        hrField15.addActionListener(this::hrField15ActionPerformed);
+        tinField.setForeground(new java.awt.Color(30, 42, 56));
+        tinField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        tinField.setEnabled(false);
+        tinField.addActionListener(this::tinFieldActionPerformed);
 
-        hrField16.setForeground(new java.awt.Color(30, 42, 56));
-        hrField16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField16.setEnabled(false);
-        hrField16.addActionListener(this::hrField16ActionPerformed);
+        pagIbigField.setForeground(new java.awt.Color(30, 42, 56));
+        pagIbigField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        pagIbigField.setEnabled(false);
+        pagIbigField.addActionListener(this::pagIbigFieldActionPerformed);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(31, 41, 55));
@@ -990,10 +1049,10 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(31, 41, 55));
         jLabel16.setText("Pag-Ibig");
 
-        hrField10.setForeground(new java.awt.Color(30, 42, 56));
-        hrField10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField10.setEnabled(false);
-        hrField10.addActionListener(this::hrField10ActionPerformed);
+        statusField.setForeground(new java.awt.Color(30, 42, 56));
+        statusField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        statusField.setEnabled(false);
+        statusField.addActionListener(this::statusFieldActionPerformed);
 
         jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(31, 41, 55));
@@ -1020,17 +1079,17 @@ public class HREmployeeDetails extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(hrField4, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(bdayField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel12))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(hrField9, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
-                                    .addComponent(hrField8)
-                                    .addComponent(hrField7)
-                                    .addComponent(hrField6)
-                                    .addComponent(hrField5)
-                                    .addComponent(hrField))
+                                    .addComponent(philhealthField, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                                    .addComponent(sssField)
+                                    .addComponent(phoneAllowanceField)
+                                    .addComponent(basicSalaryField)
+                                    .addComponent(positionField)
+                                    .addComponent(employeeNumberField))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel14)
@@ -1041,24 +1100,24 @@ public class HREmployeeDetails extends javax.swing.JFrame {
                                     .addComponent(jLabel13))))
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrField16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrField15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrField14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrField13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrField12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrField11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(pagIbigField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tinField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(clothingAllowanceField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(riceSubsidyField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(immediateSupervisorField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(phoneNumberField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGap(52, 52, 52)
-                                .addComponent(hrField10))))
+                                .addComponent(statusField))))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lastNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(hrField1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(hrField2))
+                        .addComponent(firstNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(addressField))
                 .addGap(16, 16, 16))
         );
         jPanel3Layout.setVerticalGroup(
@@ -1067,56 +1126,56 @@ public class HREmployeeDetails extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrField10, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(statusField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel21))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lastNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel11)
-                    .addComponent(hrField1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(firstNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addressField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bdayField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5)
-                    .addComponent(hrField11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(phoneNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(hrField5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(positionField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6)
-                            .addComponent(hrField12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(immediateSupervisorField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel13))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(hrField6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(basicSalaryField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7)
-                            .addComponent(hrField13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(riceSubsidyField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(phoneAllowanceField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19)
-                    .addComponent(hrField14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(clothingAllowanceField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sssField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8)
-                    .addComponent(hrField15, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tinField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrField9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(philhealthField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
-                    .addComponent(hrField16, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pagIbigField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel16))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
@@ -1128,7 +1187,7 @@ public class HREmployeeDetails extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
@@ -1138,10 +1197,10 @@ public class HREmployeeDetails extends javax.swing.JFrame {
                             .addComponent(addBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(editBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(deleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(77, 77, 77)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 607, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1179,6 +1238,11 @@ public class HREmployeeDetails extends javax.swing.JFrame {
 
     private void editBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editBtnActionPerformed
         // TODO add your handling code here:
+        Employee emp = empService.findEmployee(employeeNumberField.getText());
+        this.dispose();
+        new HREditEmployeeFrame(emp).setVisible(true);
+        
+        
     }//GEN-LAST:event_editBtnActionPerformed
 
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
@@ -1192,9 +1256,11 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_deleteBtnActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void searchBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBoxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+        System.out.println("EVENT FIRED!");
+        performSearch();
+    }//GEN-LAST:event_searchBoxActionPerformed
 
     private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -1230,69 +1296,69 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton13ActionPerformed
 
-    private void hrFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrFieldActionPerformed
+    private void employeeNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeNumberFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrFieldActionPerformed
+    }//GEN-LAST:event_employeeNumberFieldActionPerformed
 
-    private void hrField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField2ActionPerformed
+    private void addressFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField2ActionPerformed
+    }//GEN-LAST:event_addressFieldActionPerformed
 
-    private void hrField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField3ActionPerformed
+    private void lastNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastNameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField3ActionPerformed
+    }//GEN-LAST:event_lastNameFieldActionPerformed
 
-    private void hrField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField4ActionPerformed
+    private void bdayFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bdayFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField4ActionPerformed
+    }//GEN-LAST:event_bdayFieldActionPerformed
 
-    private void hrField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField5ActionPerformed
+    private void positionFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_positionFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField5ActionPerformed
+    }//GEN-LAST:event_positionFieldActionPerformed
 
-    private void hrField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField6ActionPerformed
+    private void basicSalaryFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_basicSalaryFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField6ActionPerformed
+    }//GEN-LAST:event_basicSalaryFieldActionPerformed
 
-    private void hrField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField7ActionPerformed
+    private void phoneAllowanceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phoneAllowanceFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField7ActionPerformed
+    }//GEN-LAST:event_phoneAllowanceFieldActionPerformed
 
-    private void hrField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField8ActionPerformed
+    private void sssFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sssFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField8ActionPerformed
+    }//GEN-LAST:event_sssFieldActionPerformed
 
-    private void hrField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField9ActionPerformed
+    private void philhealthFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_philhealthFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField9ActionPerformed
+    }//GEN-LAST:event_philhealthFieldActionPerformed
 
-    private void hrField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField1ActionPerformed
+    private void firstNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField1ActionPerformed
+    }//GEN-LAST:event_firstNameFieldActionPerformed
 
-    private void hrField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField11ActionPerformed
+    private void phoneNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phoneNumberFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField11ActionPerformed
+    }//GEN-LAST:event_phoneNumberFieldActionPerformed
 
-    private void hrField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField12ActionPerformed
+    private void immediateSupervisorFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_immediateSupervisorFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField12ActionPerformed
+    }//GEN-LAST:event_immediateSupervisorFieldActionPerformed
 
-    private void hrField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField13ActionPerformed
+    private void riceSubsidyFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_riceSubsidyFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField13ActionPerformed
+    }//GEN-LAST:event_riceSubsidyFieldActionPerformed
 
-    private void hrField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField14ActionPerformed
+    private void clothingAllowanceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clothingAllowanceFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField14ActionPerformed
+    }//GEN-LAST:event_clothingAllowanceFieldActionPerformed
 
-    private void hrField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField15ActionPerformed
+    private void tinFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tinFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField15ActionPerformed
+    }//GEN-LAST:event_tinFieldActionPerformed
 
-    private void hrField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField16ActionPerformed
+    private void pagIbigFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pagIbigFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField16ActionPerformed
+    }//GEN-LAST:event_pagIbigFieldActionPerformed
 
     private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
         // TODO add your handling code here:
@@ -1350,9 +1416,14 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton21ActionPerformed
 
-    private void hrField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField10ActionPerformed
+    private void statusFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField10ActionPerformed
+    }//GEN-LAST:event_statusFieldActionPerformed
+
+    private void searchIconBtnKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchIconBtnKeyPressed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_searchIconBtnKeyPressed
 
     /**
      * @param args the command line arguments
@@ -1378,31 +1449,22 @@ public class HREmployeeDetails extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new HREmployeeDetails().setVisible(true));
     }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel SearchIconImg;
     private javax.swing.JButton addBtn;
+    private javax.swing.JTextField addressField;
+    private javax.swing.JTextField basicSalaryField;
+    private javax.swing.JTextField bdayField;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.JTextField clothingAllowanceField;
     private javax.swing.JButton deleteBtn;
     private javax.swing.JButton editBtn;
-    private javax.swing.JTextField hrField;
-    private javax.swing.JTextField hrField1;
-    private javax.swing.JTextField hrField10;
-    private javax.swing.JTextField hrField11;
-    private javax.swing.JTextField hrField12;
-    private javax.swing.JTextField hrField13;
-    private javax.swing.JTextField hrField14;
-    private javax.swing.JTextField hrField15;
-    private javax.swing.JTextField hrField16;
-    private javax.swing.JTextField hrField2;
-    private javax.swing.JTextField hrField3;
-    private javax.swing.JTextField hrField4;
-    private javax.swing.JTextField hrField5;
-    private javax.swing.JTextField hrField6;
-    private javax.swing.JTextField hrField7;
-    private javax.swing.JTextField hrField8;
-    private javax.swing.JTextField hrField9;
+    private javax.swing.JTextField employeeNumberField;
+    private javax.swing.JTextField firstNameField;
+    private javax.swing.JTextField immediateSupervisorField;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
@@ -1478,12 +1540,23 @@ public class HREmployeeDetails extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField26;
     private javax.swing.JTextField jTextField27;
     private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField30;
     private javax.swing.JTextField jTextField31;
     private javax.swing.JTextField jTextField32;
     private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField lastNameField;
     private javax.swing.JButton mainDashboardBtn;
+    private javax.swing.JTextField pagIbigField;
+    private javax.swing.JTextField philhealthField;
+    private javax.swing.JTextField phoneAllowanceField;
+    private javax.swing.JTextField phoneNumberField;
+    private javax.swing.JTextField positionField;
+    private javax.swing.JTextField riceSubsidyField;
+    private javax.swing.JTextField searchBox;
+    private javax.swing.JLabel searchIconBtn;
+    private javax.swing.JTextField sssField;
+    private javax.swing.JTextField statusField;
+    private javax.swing.JTextField tinField;
     // End of variables declaration//GEN-END:variables
 }
