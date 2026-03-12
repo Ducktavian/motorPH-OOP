@@ -30,7 +30,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         LogoutImg = new javax.swing.JLabel();
         DisputeDetailsImg = new javax.swing.JLabel();
         AttendanceLogsImg = new javax.swing.JLabel();
@@ -64,7 +63,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 460, 130, 110));
 
         LogoutImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/LogoutImg.png"))); // NOI18N
         getContentPane().add(LogoutImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 640, 40, 30));
@@ -382,7 +380,6 @@ public class MainDashboardFrame extends javax.swing.JFrame {
     private javax.swing.JButton dashboardBtn;
     private javax.swing.JButton disputeDetails;
     private javax.swing.JButton employeeDetailsBtn;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField2;

@@ -60,7 +60,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
         jPanel15 = new javax.swing.JPanel();
         leaveDetailsBtn = new javax.swing.JButton();
         mainDashboardBtn = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        MotorPHIconImgLbl = new javax.swing.JLabel();
         jButton11 = new javax.swing.JButton();
         jPanel16 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -407,7 +407,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
         mainDashboardBtn.setLabel("Main Dashboard");
         mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
         jButton11.setBackground(new java.awt.Color(30, 42, 56));
         jButton11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -429,7 +429,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
                     .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(MotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(leaveDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         jPanel15Layout.setVerticalGroup(
@@ -437,7 +437,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
+                    .addComponent(MotorPHIconImgLbl)
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addGap(189, 189, 189)
                         .addComponent(leaveDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -447,6 +447,8 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
                 .addComponent(mainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39))
         );
+
+        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
 
         jPanel16.setBackground(new java.awt.Color(30, 58, 138));
         jPanel16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -1229,6 +1231,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel MotorPHIconImgLbl;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton55;
@@ -1261,7 +1264,6 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel166;
     private javax.swing.JLabel jLabel167;
     private javax.swing.JLabel jLabel168;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel41;

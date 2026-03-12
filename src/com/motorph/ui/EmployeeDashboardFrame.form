@@ -86,16 +86,16 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="dashboardBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardDashboardBtn" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                          <Component id="MotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="employeeDashboardMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <Group type="102" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="mainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardMainDashboardBtn" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -106,19 +106,19 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
-                          <Component id="dashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="employeeDashboardDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="MotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="409" pref="409" max="-2" attributes="0"/>
-                  <Component id="mainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="dashboardBtn">
+        <Component class="javax.swing.JButton" name="employeeDashboardDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -132,11 +132,14 @@
             <Property name="text" type="java.lang.String" value="Dashboard"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardDashboardBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="mainDashboardBtn">
+        <Component class="javax.swing.JButton" name="employeeDashboardMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -151,18 +154,22 @@
             <Property name="horizontalTextPosition" type="int" value="4"/>
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="MotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="employeeDashboardMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="MotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
       </SubComponents>
@@ -1034,7 +1041,7 @@
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="employeeDashboardAttendanceLogsPnl" min="-2" pref="226" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardAttLogsPnl" min="-2" pref="226" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="220" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -1043,7 +1050,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace pref="14" max="32767" attributes="0"/>
-                  <Component id="employeeDashboardAttendanceLogsPnl" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardAttLogsPnl" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="employeeDashboardAttLogsBrdrScrlPnl" min="-2" pref="159" max="-2" attributes="0"/>
               </Group>
@@ -1100,7 +1107,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="employeeDashboardAttendanceLogsPnl">
+        <Container class="javax.swing.JPanel" name="employeeDashboardAttLogsPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -1120,7 +1127,7 @@
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardAttendanceLogsPnl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardAttLogsPnl"/>
           </AccessibilityProperties>
 
           <Layout>
@@ -1128,18 +1135,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace pref="14" max="32767" attributes="0"/>
-                      <Component id="jLabel23" min="-2" pref="210" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardAttLogsLbl" min="-2" pref="210" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel23" alignment="0" min="-2" pref="48" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardAttLogsLbl" alignment="0" min="-2" pref="48" max="-2" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel23">
+            <Component class="javax.swing.JLabel" name="employeeDashboardAttLogsLbl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1153,6 +1160,9 @@
                 <Property name="text" type="java.lang.String" value="Attendance Logs"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardAttLogsLbl"/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>

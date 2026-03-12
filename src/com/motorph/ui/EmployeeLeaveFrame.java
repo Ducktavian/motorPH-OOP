@@ -23,9 +23,9 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
         String role = Session.getCurrentUser().getRole().name();
         
         if (role.equals("HR")) {
-            this.leaveListBtn.setVisible(true);
+            this.employeeLeaveLListBtn.setVisible(true);
         } else {
-            this.leaveListBtn.setVisible(false);
+            this.employeeLeaveLListBtn.setVisible(false);
         }
     }
 
@@ -38,313 +38,342 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        leaveListBtn = new javax.swing.JButton();
-        mainDashboardBtn = new javax.swing.JButton();
-        MotorPHIconImgLbl = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
-        jPanel20 = new javax.swing.JPanel();
-        jLabel51 = new javax.swing.JLabel();
-        jPanel21 = new javax.swing.JPanel();
-        jPanel16 = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        jTextField28 = new javax.swing.JTextField();
-        jLabel47 = new javax.swing.JLabel();
-        jButton19 = new javax.swing.JButton();
-        jLabel48 = new javax.swing.JLabel();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField31 = new javax.swing.JTextField();
-        jTextField32 = new javax.swing.JTextField();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
-        jTextField33 = new javax.swing.JTextField();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        employeeLeaveSidebarPnl = new javax.swing.JPanel();
+        employeeLeaveLDetailsBtn = new javax.swing.JButton();
+        employeeLeaveLListBtn = new javax.swing.JButton();
+        employeeLeaveMainDashboardBtn = new javax.swing.JButton();
+        employeeLeaveMotorPHIconImgLbl = new javax.swing.JLabel();
+        employeeLeaveLDetailsPnl = new javax.swing.JPanel();
+        employeeLeaveLDetailsLbl = new javax.swing.JLabel();
+        employeeLeaveLFormBrdrPnl = new javax.swing.JPanel();
+        employeeLeaveLFormPnl = new javax.swing.JPanel();
+        employeeLeaveLFormLbl = new javax.swing.JLabel();
+        employeeLeaveFALeaveBrdrPnl = new javax.swing.JPanel();
+        employeeLeaveFALeavePnl = new javax.swing.JPanel();
+        employeeLeaveFALeaveLbl = new javax.swing.JLabel();
+        employeeLeaveToLbl = new javax.swing.JLabel();
+        employeeLeaveENameFld = new javax.swing.JTextField();
+        employeeLeaveReasonLbl = new javax.swing.JLabel();
+        employeeLeaveSubmitBtn = new javax.swing.JButton();
+        employeeLeaveFromLbl = new javax.swing.JLabel();
+        employeeLeaveENumberFld = new javax.swing.JTextField();
+        employeeLeaveReasonFld = new javax.swing.JTextField();
+        employeeLeaveFromFld = new javax.swing.JTextField();
+        employeeLeaveENumberLbl = new javax.swing.JLabel();
+        employeeLeaveENameLbl = new javax.swing.JLabel();
+        employeeLeaveToFld = new javax.swing.JTextField();
+        employeeLeaveSickRBtn = new javax.swing.JRadioButton();
+        employeeLeaveVacationRBtn = new javax.swing.JRadioButton();
+        employeeLeaveEmergencyRBtn = new javax.swing.JRadioButton();
+        employeeLeaveRecordsBrdrPnl = new javax.swing.JPanel();
+        employeeLeaveRecordsLbl = new javax.swing.JLabel();
+        employeeLeaveRecordsBrdrScrlLbl = new javax.swing.JScrollPane();
+        employeeLeaveRecordsTbl = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        employeeLeaveSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeLeaveSidebarPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText(" Leave Details");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
+        employeeLeaveLDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeeLeaveLDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeLeaveLDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLDetailsBtn.setText(" Leave Details");
+        employeeLeaveLDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeeLeaveLDetailsBtn.addActionListener(this::employeeLeaveLDetailsBtnActionPerformed);
+        employeeLeaveSidebarPnl.add(employeeLeaveLDetailsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
+        employeeLeaveLDetailsBtn.getAccessibleContext().setAccessibleName("employeeLeaveLDetailsBtn");
 
-        leaveListBtn.setBackground(new java.awt.Color(30, 42, 56));
-        leaveListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        leaveListBtn.setForeground(new java.awt.Color(255, 255, 255));
-        leaveListBtn.setText("Leave List");
-        leaveListBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        leaveListBtn.addActionListener(this::leaveListBtnActionPerformed);
-        jPanel1.add(leaveListBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
+        employeeLeaveLListBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeeLeaveLListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeLeaveLListBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLListBtn.setText("Leave List");
+        employeeLeaveLListBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeeLeaveLListBtn.addActionListener(this::employeeLeaveLListBtnActionPerformed);
+        employeeLeaveSidebarPnl.add(employeeLeaveLListBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
+        employeeLeaveLListBtn.getAccessibleContext().setAccessibleName("employeeLeaveLListBtn");
 
-        mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setLabel("Main Dashboard");
-        mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
-        jPanel1.add(mainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        employeeLeaveMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeeLeaveMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeLeaveMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeLeaveMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        employeeLeaveMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        employeeLeaveMainDashboardBtn.setLabel("Main Dashboard");
+        employeeLeaveMainDashboardBtn.addActionListener(this::employeeLeaveMainDashboardBtnActionPerformed);
+        employeeLeaveSidebarPnl.add(employeeLeaveMainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        employeeLeaveMainDashboardBtn.getAccessibleContext().setAccessibleName("employeeLeaveMainDashboardBtn");
 
-        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
-        jPanel1.add(MotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
-        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
+        employeeLeaveMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        employeeLeaveSidebarPnl.add(employeeLeaveMotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
+        employeeLeaveMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("employeeLeaveMotorPHIconImgLbl");
 
-        jPanel4.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel4.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        employeeLeaveLDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeLeaveLDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveLDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeLeaveLDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText(" Leave Details");
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 180, 46));
+        employeeLeaveLDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeeLeaveLDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLDetailsLbl.setText(" Leave Details");
+        employeeLeaveLDetailsPnl.add(employeeLeaveLDetailsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 180, 46));
+        employeeLeaveLDetailsLbl.getAccessibleContext().setAccessibleName("employeeLeaveLDetailsLbl");
 
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        employeeLeaveLFormBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLFormBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jPanel20.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel20.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel20.setPreferredSize(new java.awt.Dimension(126, 40));
+        employeeLeaveLFormPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeLeaveLFormPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveLFormPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeLeaveLFormPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        jLabel51.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel51.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel51.setText("Leave Form");
-        jLabel51.setToolTipText("");
+        employeeLeaveLFormLbl.setBackground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLFormLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeeLeaveLFormLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLFormLbl.setText("Leave Form");
+        employeeLeaveLFormLbl.setToolTipText("");
 
-        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
-        jPanel20.setLayout(jPanel20Layout);
-        jPanel20Layout.setHorizontalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
+        javax.swing.GroupLayout employeeLeaveLFormPnlLayout = new javax.swing.GroupLayout(employeeLeaveLFormPnl);
+        employeeLeaveLFormPnl.setLayout(employeeLeaveLFormPnlLayout);
+        employeeLeaveLFormPnlLayout.setHorizontalGroup(
+            employeeLeaveLFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveLFormPnlLayout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(employeeLeaveLFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel20Layout.setVerticalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
+        employeeLeaveLFormPnlLayout.setVerticalGroup(
+            employeeLeaveLFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveLFormPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel51)
+                .addComponent(employeeLeaveLFormLbl)
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        jPanel21.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel21.setForeground(new java.awt.Color(178, 178, 178));
+        employeeLeaveLFormLbl.getAccessibleContext().setAccessibleName("employeeLeaveLFormLbl");
 
-        jPanel16.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel16.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel16.setPreferredSize(new java.awt.Dimension(126, 40));
+        employeeLeaveFALeaveBrdrPnl.setBackground(new java.awt.Color(233, 233, 233));
+        employeeLeaveFALeaveBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveFALeaveBrdrPnl.setForeground(new java.awt.Color(178, 178, 178));
 
-        jLabel22.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel22.setText(" File A Leave");
-        jLabel22.setToolTipText("");
+        employeeLeaveFALeavePnl.setBackground(new java.awt.Color(146, 192, 253));
+        employeeLeaveFALeavePnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveFALeavePnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeLeaveFALeavePnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
+        employeeLeaveFALeaveLbl.setBackground(new java.awt.Color(255, 255, 255));
+        employeeLeaveFALeaveLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        employeeLeaveFALeaveLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveFALeaveLbl.setText(" File A Leave");
+        employeeLeaveFALeaveLbl.setToolTipText("");
+
+        javax.swing.GroupLayout employeeLeaveFALeavePnlLayout = new javax.swing.GroupLayout(employeeLeaveFALeavePnl);
+        employeeLeaveFALeavePnl.setLayout(employeeLeaveFALeavePnlLayout);
+        employeeLeaveFALeavePnlLayout.setHorizontalGroup(
+            employeeLeaveFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveFALeavePnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
-                .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        employeeLeaveFALeavePnlLayout.setVerticalGroup(
+            employeeLeaveFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveFALeavePnlLayout.createSequentialGroup()
+                .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jLabel44.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel44.setText("To");
+        employeeLeaveFALeaveLbl.getAccessibleContext().setAccessibleName("employeeLeaveFALeaveLbl");
 
-        jTextField28.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField28.setText(" ");
-        jTextField28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField28.addActionListener(this::jTextField28ActionPerformed);
+        employeeLeaveToLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveToLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveToLbl.setText("To");
 
-        jLabel47.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel47.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel47.setText("Reason");
+        employeeLeaveENameFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveENameFld.setText(" ");
+        employeeLeaveENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveENameFld.addActionListener(this::employeeLeaveENameFldActionPerformed);
 
-        jButton19.setBackground(new java.awt.Color(59, 130, 246));
-        jButton19.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jButton19.setForeground(new java.awt.Color(255, 255, 255));
-        jButton19.setText("Submit");
-        jButton19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton19.addActionListener(this::jButton19ActionPerformed);
+        employeeLeaveReasonLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveReasonLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveReasonLbl.setText("Reason");
 
-        jLabel48.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel48.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel48.setText("From");
+        employeeLeaveSubmitBtn.setBackground(new java.awt.Color(59, 130, 246));
+        employeeLeaveSubmitBtn.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        employeeLeaveSubmitBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeLeaveSubmitBtn.setText("Submit");
+        employeeLeaveSubmitBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        employeeLeaveSubmitBtn.addActionListener(this::employeeLeaveSubmitBtnActionPerformed);
 
-        jTextField29.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField29.setText(" ");
-        jTextField29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField29.addActionListener(this::jTextField29ActionPerformed);
+        employeeLeaveFromLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveFromLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveFromLbl.setText("From");
 
-        jTextField31.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField31.setText(" ");
-        jTextField31.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField31.addActionListener(this::jTextField31ActionPerformed);
+        employeeLeaveENumberFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveENumberFld.setText(" ");
+        employeeLeaveENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveENumberFld.addActionListener(this::employeeLeaveENumberFldActionPerformed);
 
-        jTextField32.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField32.setText(" ");
-        jTextField32.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField32.addActionListener(this::jTextField32ActionPerformed);
+        employeeLeaveReasonFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveReasonFld.setText(" ");
+        employeeLeaveReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveReasonFld.addActionListener(this::employeeLeaveReasonFldActionPerformed);
 
-        jLabel49.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel49.setText("Employee #");
+        employeeLeaveFromFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveFromFld.setText(" ");
+        employeeLeaveFromFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveFromFld.addActionListener(this::employeeLeaveFromFldActionPerformed);
 
-        jLabel52.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel52.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel52.setText("Employee Name");
+        employeeLeaveENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveENumberLbl.setText("Employee #");
 
-        jTextField33.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField33.setText(" ");
-        jTextField33.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField33.addActionListener(this::jTextField33ActionPerformed);
+        employeeLeaveENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveENameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveENameLbl.setText("Employee Name");
 
-        jRadioButton3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(31, 41, 55));
-        jRadioButton3.setText("Sick");
+        employeeLeaveToFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveToFld.setText(" ");
+        employeeLeaveToFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveToFld.addActionListener(this::employeeLeaveToFldActionPerformed);
 
-        jRadioButton4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jRadioButton4.setForeground(new java.awt.Color(31, 41, 55));
-        jRadioButton4.setText("Vacation");
+        employeeLeaveSickRBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveSickRBtn.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveSickRBtn.setText("Sick");
 
-        jRadioButton5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jRadioButton5.setForeground(new java.awt.Color(31, 41, 55));
-        jRadioButton5.setText("Emergency");
+        employeeLeaveVacationRBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveVacationRBtn.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveVacationRBtn.setText("Vacation");
 
-        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
-        jPanel21.setLayout(jPanel21Layout);
-        jPanel21Layout.setHorizontalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
+        employeeLeaveEmergencyRBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveEmergencyRBtn.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveEmergencyRBtn.setText("Emergency");
+
+        javax.swing.GroupLayout employeeLeaveFALeaveBrdrPnlLayout = new javax.swing.GroupLayout(employeeLeaveFALeaveBrdrPnl);
+        employeeLeaveFALeaveBrdrPnl.setLayout(employeeLeaveFALeaveBrdrPnlLayout);
+        employeeLeaveFALeaveBrdrPnlLayout.setHorizontalGroup(
+            employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel21Layout.createSequentialGroup()
-                        .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                        .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(employeeLeaveENameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeLeaveENumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeLeaveFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeLeaveReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel21Layout.createSequentialGroup()
-                                .addComponent(jRadioButton3)
+                        .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(employeeLeaveSickRBtn)
                                 .addGap(86, 86, 86)
-                                .addComponent(jRadioButton4)
+                                .addComponent(employeeLeaveVacationRBtn)
                                 .addGap(66, 66, 66)
-                                .addComponent(jRadioButton5))
-                            .addGroup(jPanel21Layout.createSequentialGroup()
-                                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField29, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                    .addComponent(jTextField28))
+                                .addComponent(employeeLeaveEmergencyRBtn))
+                            .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(employeeLeaveENumberFld, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+                                    .addComponent(employeeLeaveENameFld))
                                 .addGap(18, 18, 18)
-                                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(employeeLeaveToLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(employeeLeaveFromLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                    .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(employeeLeaveToFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(employeeLeaveFromFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                    .addComponent(employeeLeaveReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 21, Short.MAX_VALUE))
         );
-        jPanel21Layout.setVerticalGroup(
-            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel21Layout.createSequentialGroup()
+        employeeLeaveFALeaveBrdrPnlLayout.setVerticalGroup(
+            employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(employeeLeaveFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel48)
-                        .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel52)))
+                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(employeeLeaveFromLbl)
+                        .addComponent(employeeLeaveFromFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(employeeLeaveENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(employeeLeaveENameLbl)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel49)
-                    .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel44))
-                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel21Layout.createSequentialGroup()
+                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(employeeLeaveENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeLeaveENumberLbl)
+                    .addComponent(employeeLeaveToFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeLeaveToLbl))
+                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton4)
-                            .addComponent(jRadioButton5))
+                        .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(employeeLeaveSickRBtn)
+                            .addComponent(employeeLeaveVacationRBtn)
+                            .addComponent(employeeLeaveEmergencyRBtn))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel47)
+                        .addComponent(employeeLeaveReasonLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15))
         );
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+        employeeLeaveFALeavePnl.getAccessibleContext().setAccessibleName("employeeLeaveFALeavePnl");
+        employeeLeaveToLbl.getAccessibleContext().setAccessibleName("employeeLeaveToLbl");
+        employeeLeaveENameFld.getAccessibleContext().setAccessibleName("employeeLeaveENameFld");
+        employeeLeaveReasonLbl.getAccessibleContext().setAccessibleName("employeeLeaveReasonLbl");
+        employeeLeaveSubmitBtn.getAccessibleContext().setAccessibleName("employeeLeaveSubmitBtn");
+        employeeLeaveFromLbl.getAccessibleContext().setAccessibleName("employeeLeaveFromLbl");
+        employeeLeaveENumberFld.getAccessibleContext().setAccessibleName("employeeLeaveENumberFld");
+        employeeLeaveReasonFld.getAccessibleContext().setAccessibleName("employeeLeaveReasonFld");
+        employeeLeaveFromFld.getAccessibleContext().setAccessibleName("employeeLeaveFromFld");
+        employeeLeaveENumberLbl.getAccessibleContext().setAccessibleName("employeeLeaveENumberLbl");
+        employeeLeaveENameLbl.getAccessibleContext().setAccessibleName("employeeLeaveENameLbl");
+        employeeLeaveToFld.getAccessibleContext().setAccessibleName("employeeLeaveToFld");
+        employeeLeaveSickRBtn.getAccessibleContext().setAccessibleName("employeeLeaveSickRBtn");
+        employeeLeaveVacationRBtn.getAccessibleContext().setAccessibleName("employeeLeaveVacationRBtn");
+        employeeLeaveEmergencyRBtn.getAccessibleContext().setAccessibleName("employeeLeaveEmergencyRBtn");
+
+        javax.swing.GroupLayout employeeLeaveLFormBrdrPnlLayout = new javax.swing.GroupLayout(employeeLeaveLFormBrdrPnl);
+        employeeLeaveLFormBrdrPnl.setLayout(employeeLeaveLFormBrdrPnlLayout);
+        employeeLeaveLFormBrdrPnlLayout.setHorizontalGroup(
+            employeeLeaveLFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveLFormBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveLFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(260, 260, 260))
-            .addGroup(jPanel8Layout.createSequentialGroup()
+            .addGroup(employeeLeaveLFormBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveFALeaveBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+        employeeLeaveLFormBrdrPnlLayout.setVerticalGroup(
+            employeeLeaveLFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveLFormBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveLFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveFALeaveBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(178, 178, 178));
-        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        employeeLeaveLFormPnl.getAccessibleContext().setAccessibleName("employeeLeaveLFormPnl");
+        employeeLeaveFALeaveBrdrPnl.getAccessibleContext().setAccessibleName("employeeLeaveFALeaveBrdrPnl");
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel6.setText("Records");
+        employeeLeaveRecordsBrdrPnl.setBackground(new java.awt.Color(178, 178, 178));
+        employeeLeaveRecordsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jTable3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTable3.setForeground(new java.awt.Color(30, 42, 56));
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+        employeeLeaveRecordsLbl.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeeLeaveRecordsLbl.setText("Records");
+
+        employeeLeaveRecordsBrdrScrlLbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+
+        employeeLeaveRecordsTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveRecordsTbl.setForeground(new java.awt.Color(30, 42, 56));
+        employeeLeaveRecordsTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -459,102 +488,111 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jTable3.setGridColor(new java.awt.Color(178, 178, 178));
-        jTable3.setSelectionForeground(new java.awt.Color(30, 42, 56));
-        jScrollPane5.setViewportView(jTable3);
+        employeeLeaveRecordsTbl.setGridColor(new java.awt.Color(178, 178, 178));
+        employeeLeaveRecordsTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
+        employeeLeaveRecordsBrdrScrlLbl.setViewportView(employeeLeaveRecordsTbl);
+        employeeLeaveRecordsTbl.getAccessibleContext().setAccessibleName("employeeLeaveRecordsTbl");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
+        javax.swing.GroupLayout employeeLeaveRecordsBrdrPnlLayout = new javax.swing.GroupLayout(employeeLeaveRecordsBrdrPnl);
+        employeeLeaveRecordsBrdrPnl.setLayout(employeeLeaveRecordsBrdrPnlLayout);
+        employeeLeaveRecordsBrdrPnlLayout.setHorizontalGroup(
+            employeeLeaveRecordsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveRecordsBrdrPnlLayout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addGroup(employeeLeaveRecordsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveRecordsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(employeeLeaveRecordsLbl)
                         .addGap(319, 319, 319))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveRecordsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(employeeLeaveRecordsBrdrScrlLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 667, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(14, 14, 14))))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        employeeLeaveRecordsBrdrPnlLayout.setVerticalGroup(
+            employeeLeaveRecordsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveRecordsBrdrPnlLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(jLabel6)
+                .addComponent(employeeLeaveRecordsLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveRecordsBrdrScrlLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
+
+        employeeLeaveRecordsLbl.getAccessibleContext().setAccessibleName("employeeLeaveRecordsLbl");
+        employeeLeaveRecordsBrdrScrlLbl.getAccessibleContext().setAccessibleName("employeeLeaveRecordsBrdrScrlLbl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(employeeLeaveLDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeLeaveLFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeLeaveRecordsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(13, 13, 13))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(employeeLeaveSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveLDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveRecordsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(employeeLeaveLFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+
+        employeeLeaveSidebarPnl.getAccessibleContext().setAccessibleName("employeeLeaveSidebarPnl");
+        employeeLeaveLDetailsPnl.getAccessibleContext().setAccessibleName("employeeLeaveLDetailsPnl");
+        employeeLeaveLFormBrdrPnl.getAccessibleContext().setAccessibleName("employeeLeaveLFormBrdrPnl");
+        employeeLeaveRecordsBrdrPnl.getAccessibleContext().setAccessibleName("employeeLeaveRecordsBrdrPnl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void employeeLeaveLDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveLDetailsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_employeeLeaveLDetailsBtnActionPerformed
 
-    private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
+    private void employeeLeaveMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardFrame().setVisible(true);
-    }//GEN-LAST:event_mainDashboardBtnActionPerformed
+    }//GEN-LAST:event_employeeLeaveMainDashboardBtnActionPerformed
 
-    private void jTextField28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField28ActionPerformed
+    private void employeeLeaveENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveENameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField28ActionPerformed
+    }//GEN-LAST:event_employeeLeaveENameFldActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    private void employeeLeaveSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveSubmitBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    }//GEN-LAST:event_employeeLeaveSubmitBtnActionPerformed
 
-    private void jTextField29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField29ActionPerformed
+    private void employeeLeaveENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField29ActionPerformed
+    }//GEN-LAST:event_employeeLeaveENumberFldActionPerformed
 
-    private void jTextField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField31ActionPerformed
+    private void employeeLeaveReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveReasonFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField31ActionPerformed
+    }//GEN-LAST:event_employeeLeaveReasonFldActionPerformed
 
-    private void jTextField32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField32ActionPerformed
+    private void employeeLeaveFromFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveFromFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField32ActionPerformed
+    }//GEN-LAST:event_employeeLeaveFromFldActionPerformed
 
-    private void jTextField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField33ActionPerformed
+    private void employeeLeaveToFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveToFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField33ActionPerformed
+    }//GEN-LAST:event_employeeLeaveToFldActionPerformed
 
-    private void leaveListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leaveListBtnActionPerformed
+    private void employeeLeaveLListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveLListBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         
         new HRLeaveListFrame().setVisible(true);
-    }//GEN-LAST:event_leaveListBtnActionPerformed
+    }//GEN-LAST:event_employeeLeaveLListBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -582,36 +620,36 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MotorPHIconImgLbl;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTable jTable3;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField33;
-    private javax.swing.JButton leaveListBtn;
-    private javax.swing.JButton mainDashboardBtn;
+    private javax.swing.JTextField employeeLeaveENameFld;
+    private javax.swing.JLabel employeeLeaveENameLbl;
+    private javax.swing.JTextField employeeLeaveENumberFld;
+    private javax.swing.JLabel employeeLeaveENumberLbl;
+    private javax.swing.JRadioButton employeeLeaveEmergencyRBtn;
+    private javax.swing.JPanel employeeLeaveFALeaveBrdrPnl;
+    private javax.swing.JLabel employeeLeaveFALeaveLbl;
+    private javax.swing.JPanel employeeLeaveFALeavePnl;
+    private javax.swing.JTextField employeeLeaveFromFld;
+    private javax.swing.JLabel employeeLeaveFromLbl;
+    private javax.swing.JButton employeeLeaveLDetailsBtn;
+    private javax.swing.JLabel employeeLeaveLDetailsLbl;
+    private javax.swing.JPanel employeeLeaveLDetailsPnl;
+    private javax.swing.JPanel employeeLeaveLFormBrdrPnl;
+    private javax.swing.JLabel employeeLeaveLFormLbl;
+    private javax.swing.JPanel employeeLeaveLFormPnl;
+    private javax.swing.JButton employeeLeaveLListBtn;
+    private javax.swing.JButton employeeLeaveMainDashboardBtn;
+    private javax.swing.JLabel employeeLeaveMotorPHIconImgLbl;
+    private javax.swing.JTextField employeeLeaveReasonFld;
+    private javax.swing.JLabel employeeLeaveReasonLbl;
+    private javax.swing.JPanel employeeLeaveRecordsBrdrPnl;
+    private javax.swing.JScrollPane employeeLeaveRecordsBrdrScrlLbl;
+    private javax.swing.JLabel employeeLeaveRecordsLbl;
+    private javax.swing.JTable employeeLeaveRecordsTbl;
+    private javax.swing.JRadioButton employeeLeaveSickRBtn;
+    private javax.swing.JPanel employeeLeaveSidebarPnl;
+    private javax.swing.JButton employeeLeaveSubmitBtn;
+    private javax.swing.JTextField employeeLeaveToFld;
+    private javax.swing.JLabel employeeLeaveToLbl;
+    private javax.swing.JRadioButton employeeLeaveVacationRBtn;
     // End of variables declaration//GEN-END:variables
 }
