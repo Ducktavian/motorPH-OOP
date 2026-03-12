@@ -178,7 +178,7 @@ public class CsvEmployeeDAO implements EmployeeDAO {
                 String[] row = {
                     emp.getEmployeeNumber(),emp.getLastName(),emp.getFirstName(),
                     DateUtils.dateToString(emp.getBirthday()),emp.getAddress(),emp.getPhoneNumber(),
-                    emp.getSSSNumber(),emp.getPhilhealthNumber(),emp.getTIN(),
+                    formatSSS(emp.getSSSNumber()),emp.getPhilhealthNumber(),formatTIN(emp.getTIN()),
                     emp.getPagIbigNumber(),emp.getStatus(),emp.getPosition(),
                     emp.getImmediateSupervisor(),
                     String.valueOf(emp.getBasicSalary()),
@@ -212,5 +212,17 @@ public class CsvEmployeeDAO implements EmployeeDAO {
         }
         int next = max + 1;
         return String.valueOf(next);
+    }
+    
+    // helper formatters
+    private String formatSSS(String sss) {
+        if (sss == null || sss.length() != 10) return sss;
+        return sss.substring(0, 2) + "-" + sss.substring(2, 9) + "-" + sss.substring(9);
+    }
+    
+    private String formatTIN(String tin) {
+        if (tin == null || tin.length() != 12) return tin;
+        return tin.substring(0, 3) + "-" + tin.substring(3, 6) + "-" + 
+           tin.substring(6, 9) + "-" + tin.substring(9, 11);
     }
 }

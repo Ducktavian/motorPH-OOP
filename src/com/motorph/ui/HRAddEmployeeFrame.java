@@ -585,13 +585,13 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
             // Phone Number
             String phoneNumber = phoneNumberField.getText().trim();
             // SSS
-            String sssNo = sssField.getText().trim();
+            String sssNo = sssField.getText().trim().replaceAll("[^0-9]", "");
             // Philhealth
-            String philhealthNo = philHealthField.getText().trim();
+            String philhealthNo = philHealthField.getText().trim().replaceAll("[^0-9]", "");
             // Tin
-            String TIN = tinField.getText().trim();
+            String TIN = tinField.getText().trim().replaceAll("[^0-9]", "");
             // PagIbig
-            String pagIbigNo = pagIbigField.getText().trim();
+            String pagIbigNo = pagIbigField.getText().trim().replaceAll("[^0-9]", "");
             // Status
             Object selectedItem = statusDropdown.getSelectedItem();
             // Check if an item is selected to avoid a NullPointerException
