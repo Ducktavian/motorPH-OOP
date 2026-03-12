@@ -29,11 +29,11 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        payslipBtn = new javax.swing.JButton();
         leaveListBtn = new javax.swing.JButton();
         mainDashboardBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        leaveListBtn1 = new javax.swing.JButton();
+        payrollDisputeBtn = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -43,16 +43,15 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         jPanel1.setBackground(new java.awt.Color(30, 58, 138));
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Payslip");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        payslipBtn.setBackground(new java.awt.Color(30, 42, 56));
+        payslipBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        payslipBtn.setForeground(new java.awt.Color(255, 255, 255));
+        payslipBtn.setText("Payslip");
+        payslipBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        payslipBtn.addActionListener(this::payslipBtnActionPerformed);
 
         leaveListBtn.setBackground(new java.awt.Color(30, 42, 56));
         leaveListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -71,12 +70,12 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        leaveListBtn1.setBackground(new java.awt.Color(30, 42, 56));
-        leaveListBtn1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        leaveListBtn1.setForeground(new java.awt.Color(255, 255, 255));
-        leaveListBtn1.setText("Payroll Dispute");
-        leaveListBtn1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        leaveListBtn1.addActionListener(this::leaveListBtn1ActionPerformed);
+        payrollDisputeBtn.setBackground(new java.awt.Color(30, 42, 56));
+        payrollDisputeBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        payrollDisputeBtn.setForeground(new java.awt.Color(255, 255, 255));
+        payrollDisputeBtn.setText("Payroll Dispute");
+        payrollDisputeBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        payrollDisputeBtn.addActionListener(this::payrollDisputeBtnActionPerformed);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -86,8 +85,8 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(leaveListBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(payrollDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(payslipBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -101,12 +100,12 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(payslipBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel1))
                 .addGap(12, 12, 12)
                 .addComponent(leaveListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(leaveListBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(payrollDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
                 .addComponent(mainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
@@ -307,9 +306,12 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void payslipBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payslipBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        this.dispose();
+        
+        new EmployeePayslipFrame().setVisible(true);
+    }//GEN-LAST:event_payslipBtnActionPerformed
 
     private void leaveListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leaveListBtnActionPerformed
         // TODO add your handling code here:
@@ -321,9 +323,14 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
         new MainDashboardFrame().setVisible(true);
     }//GEN-LAST:event_mainDashboardBtnActionPerformed
 
-    private void leaveListBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leaveListBtn1ActionPerformed
+    private void payrollDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payrollDisputeBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_leaveListBtn1ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        
+        new EmployeePayrollDisputeFrame().setVisible(true);
+                                                  
+    }//GEN-LAST:event_payrollDisputeBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -351,7 +358,6 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
@@ -362,7 +368,8 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JButton leaveListBtn;
-    private javax.swing.JButton leaveListBtn1;
     private javax.swing.JButton mainDashboardBtn;
+    private javax.swing.JButton payrollDisputeBtn;
+    private javax.swing.JButton payslipBtn;
     // End of variables declaration//GEN-END:variables
 }

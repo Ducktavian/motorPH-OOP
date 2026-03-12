@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.motorph.main;
 
 import com.motorph.dao.AttendanceDAO;
@@ -50,7 +47,7 @@ public class Main {
         EmployeeService empService = new EmployeeService(empDao);
         
         
-        //testingAddEmployee(empService);
+        testingAddEmployee(empService);
         //testingDeleteEmployee(empService, "10035");
         
         
@@ -58,8 +55,8 @@ public class Main {
     
     private static void testingAddEmployee(EmployeeService empService) {
         String employeeNumber = empService.generateNextEmployeeNumber();
-        String lastName = "Ninja";
-        String firstName = "Ninja";
+        String lastName = "Human";
+        String firstName = "Human";
         String birthday = "3/30/1930";
         String address = "Korea";
         String phoneNumber = "09";
@@ -76,9 +73,7 @@ public class Main {
         double phoneAllowance = 670;
         double clothingAllowance = 670;
         
-        
         Employee employee = new RegularEmployee(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
-        
         
         empService.addEmployee(employee);
     }

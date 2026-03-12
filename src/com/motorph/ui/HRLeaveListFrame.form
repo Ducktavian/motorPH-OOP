@@ -620,7 +620,7 @@
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
                           <Component id="jLabel2" min="-2" pref="180" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jButton10" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="leaveDetailsBtn" min="-2" pref="216" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -633,7 +633,7 @@
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
-                          <Component id="jButton10" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="leaveDetailsBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -646,7 +646,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton10">
+        <Component class="javax.swing.JButton" name="leaveDetailsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -661,7 +661,7 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="leaveDetailsBtnActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="mainDashboardBtn">
@@ -779,13 +779,11 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jPanel70" min="-2" pref="653" max="-2" attributes="0"/>
                           <Component id="jPanel68" min="-2" pref="653" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                              <Component id="jPanel66" min="-2" pref="653" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jPanel66" min="-2" pref="653" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="23" max="32767" attributes="0"/>
                   </Group>

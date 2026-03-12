@@ -8,14 +8,14 @@ package com.motorph.ui;
  *
  * @author Lenovo
  */
-public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
+public class EmployeePayrollDisputeFrame extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeeePayrollDisputeFrame.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayrollDisputeFrame.class.getName());
 
     /**
      * Creates new form EmployeeePayrollDisputeFrame
      */
-    public EmployeeePayrollDisputeFrame() {
+    public EmployeePayrollDisputeFrame() {
         initComponents();
     }
 
@@ -34,10 +34,10 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        payslipRecordBtn = new javax.swing.JButton();
         mainDashboardBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        payslipBtn = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -227,12 +227,12 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(30, 58, 138));
         jPanel1.setPreferredSize(new java.awt.Dimension(262, 700));
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Payslip Record");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        payslipRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
+        payslipRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        payslipRecordBtn.setForeground(new java.awt.Color(255, 255, 255));
+        payslipRecordBtn.setText("Payslip Record");
+        payslipRecordBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        payslipRecordBtn.addActionListener(this::payslipRecordBtnActionPerformed);
 
         mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -244,12 +244,12 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        jButton2.setBackground(new java.awt.Color(30, 42, 56));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Payslip");
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.addActionListener(this::jButton2ActionPerformed);
+        payslipBtn.setBackground(new java.awt.Color(30, 42, 56));
+        payslipBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        payslipBtn.setForeground(new java.awt.Color(255, 255, 255));
+        payslipBtn.setText("Payslip");
+        payslipBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        payslipBtn.addActionListener(this::payslipBtnActionPerformed);
 
         jButton3.setBackground(new java.awt.Color(30, 42, 56));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -269,18 +269,13 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(payslipRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(17, 17, 17)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(payslipBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -290,9 +285,9 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(payslipBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(12, 12, 12)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(payslipRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(307, 307, 307)
@@ -362,7 +357,7 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel21)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -731,9 +726,12 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void payslipRecordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payslipRecordBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        this.dispose();
+        
+        new EmployeePayslipRecordFrame().setVisible(true);
+    }//GEN-LAST:event_payslipRecordBtnActionPerformed
 
     private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -741,9 +739,9 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
         new MainDashboardFrame().setVisible(true);
     }//GEN-LAST:event_mainDashboardBtnActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void payslipBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payslipBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_payslipBtnActionPerformed
 
     private void jTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField24ActionPerformed
         // TODO add your handling code here:
@@ -803,13 +801,11 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new EmployeeePayrollDisputeFrame().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new EmployeePayrollDisputeFrame().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
@@ -824,7 +820,6 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
@@ -835,13 +830,10 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTextField jTextField24;
     private javax.swing.JTextField jTextField25;
@@ -849,5 +841,7 @@ public class EmployeeePayrollDisputeFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField28;
     private javax.swing.JTextField jTextField30;
     private javax.swing.JButton mainDashboardBtn;
+    private javax.swing.JButton payslipBtn;
+    private javax.swing.JButton payslipRecordBtn;
     // End of variables declaration//GEN-END:variables
 }

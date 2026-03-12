@@ -29,11 +29,11 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        payslipRecordBtn = new javax.swing.JButton();
         mainDashboardBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        payrollDisputeBtn = new javax.swing.JButton();
         hrField8 = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         hrField = new javax.swing.JTextField();
@@ -100,12 +100,12 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(30, 58, 138));
         jPanel1.setPreferredSize(new java.awt.Dimension(262, 700));
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Payslip Record");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        payslipRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
+        payslipRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        payslipRecordBtn.setForeground(new java.awt.Color(255, 255, 255));
+        payslipRecordBtn.setText("Payslip Record");
+        payslipRecordBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        payslipRecordBtn.addActionListener(this::payslipRecordBtnActionPerformed);
 
         mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -124,12 +124,12 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.addActionListener(this::jButton2ActionPerformed);
 
-        jButton3.setBackground(new java.awt.Color(30, 42, 56));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Payroll Dispute");
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.addActionListener(this::jButton3ActionPerformed);
+        payrollDisputeBtn.setBackground(new java.awt.Color(30, 42, 56));
+        payrollDisputeBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        payrollDisputeBtn.setForeground(new java.awt.Color(255, 255, 255));
+        payrollDisputeBtn.setText("Payroll Dispute");
+        payrollDisputeBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        payrollDisputeBtn.addActionListener(this::payrollDisputeBtnActionPerformed);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -141,8 +141,8 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(payrollDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(payslipRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -158,9 +158,9 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
                         .addGap(189, 189, 189)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(12, 12, 12)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(payslipRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(payrollDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(307, 307, 307)
                 .addComponent(mainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(14, Short.MAX_VALUE))
@@ -584,7 +584,7 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(hrField24, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel13)
@@ -769,9 +769,14 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void payslipRecordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payslipRecordBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        this.dispose();
+        
+        new EmployeePayslipRecordFrame().setVisible(true);
+                
+                
+    }//GEN-LAST:event_payslipRecordBtnActionPerformed
 
     private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -883,9 +888,12 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void payrollDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payrollDisputeBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+        this.dispose();
+        
+        new EmployeePayrollDisputeFrame().setVisible(true);
+    }//GEN-LAST:event_payrollDisputeBtnActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
@@ -941,9 +949,7 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
     private javax.swing.JTextField hrField7;
     private javax.swing.JTextField hrField8;
     private javax.swing.JTextField hrField9;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
@@ -983,5 +989,7 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JButton mainDashboardBtn;
+    private javax.swing.JButton payrollDisputeBtn;
+    private javax.swing.JButton payslipRecordBtn;
     // End of variables declaration//GEN-END:variables
 }

@@ -58,7 +58,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jPanel15 = new javax.swing.JPanel();
-        jButton10 = new javax.swing.JButton();
+        leaveDetailsBtn = new javax.swing.JButton();
         mainDashboardBtn = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton11 = new javax.swing.JButton();
@@ -392,12 +392,12 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
 
         jPanel15.setBackground(new java.awt.Color(30, 58, 138));
 
-        jButton10.setBackground(new java.awt.Color(30, 42, 56));
-        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText(" Leave Details");
-        jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton10.addActionListener(this::jButton10ActionPerformed);
+        leaveDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        leaveDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        leaveDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        leaveDetailsBtn.setText(" Leave Details");
+        leaveDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        leaveDetailsBtn.addActionListener(this::leaveDetailsBtnActionPerformed);
 
         mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -430,7 +430,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(leaveDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -440,7 +440,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(leaveDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 319, Short.MAX_VALUE)
@@ -1045,12 +1045,11 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel70, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel68, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, 653, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -1103,9 +1102,12 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void leaveDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leaveDetailsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+        this.dispose();
+        
+        new EmployeeLeaveFrame().setVisible(true);
+    }//GEN-LAST:event_leaveDetailsBtnActionPerformed
 
     private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -1227,7 +1229,6 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton55;
@@ -1318,6 +1319,7 @@ public class HRLeaveListFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JButton leaveDetailsBtn;
     private javax.swing.JButton mainDashboardBtn;
     // End of variables declaration//GEN-END:variables
 }

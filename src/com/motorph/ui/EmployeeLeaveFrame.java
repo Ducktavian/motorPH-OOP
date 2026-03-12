@@ -550,6 +550,9 @@ public class EmployeeLeaveFrame extends javax.swing.JFrame {
 
     private void leaveListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leaveListBtnActionPerformed
         // TODO add your handling code here:
+        this.dispose();
+        
+        new HRLeaveListFrame().setVisible(true);
     }//GEN-LAST:event_leaveListBtnActionPerformed
 
     /**
