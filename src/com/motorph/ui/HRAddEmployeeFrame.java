@@ -9,6 +9,7 @@ import com.motorph.dao.EmployeeDAO;
 import com.motorph.model.Employee;
 import com.motorph.model.RegularEmployee;
 import com.motorph.service.EmployeeService;
+import com.motorph.util.DateUtils;
 import com.motorph.util.GuiUtil;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
@@ -578,7 +579,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
             // FirstName
             String firstName = firstNameField.getText().trim();
             // Bday
-            LocalDate bday = LocalDate.parse(bdayField.getText());
+            LocalDate bday = DateUtils.stringToDate(bdayField.getText());
             // Address
             String address = addressField.getText().trim();
             // Phone Number
@@ -634,7 +635,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                        
             
         } catch (DateTimeParseException e) {
-            JOptionPane.showMessageDialog(this, "Please enter the birthday in YYYY-MM-DD format.", "Date Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Please enter the birthday in MM/DD/YYYY format.", "Date Error", JOptionPane.ERROR_MESSAGE);
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Please enter numeric values for Salary and Allowances.", "Number Error", JOptionPane.ERROR_MESSAGE);
         } catch (IllegalArgumentException e) {

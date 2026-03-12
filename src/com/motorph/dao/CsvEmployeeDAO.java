@@ -6,6 +6,7 @@ import com.motorph.model.Finance;
 import com.motorph.model.HR;
 import com.motorph.model.IT;
 import com.motorph.model.RegularEmployee;
+import com.motorph.util.DateUtils;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,7 +76,7 @@ public class CsvEmployeeDAO implements EmployeeDAO {
         String employeeNumber = data[0];
         String lastName = data[1];
         String firstName = data[2];
-        LocalDate birthday = LocalDate.parse(data[3]);
+        LocalDate birthday = DateUtils.stringToDate(data[3]);
         String address = data[4];
         String phoneNumber = data[5];
         String SSSNumber = data[6];
@@ -176,7 +177,7 @@ public class CsvEmployeeDAO implements EmployeeDAO {
 
                 String[] row = {
                     emp.getEmployeeNumber(),emp.getLastName(),emp.getFirstName(),
-                    emp.getBirthday().toString(),emp.getAddress(),emp.getPhoneNumber(),
+                    DateUtils.dateToString(emp.getBirthday()),emp.getAddress(),emp.getPhoneNumber(),
                     emp.getSSSNumber(),emp.getPhilhealthNumber(),emp.getTIN(),
                     emp.getPagIbigNumber(),emp.getStatus(),emp.getPosition(),
                     emp.getImmediateSupervisor(),

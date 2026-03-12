@@ -2,6 +2,7 @@
 package com.motorph.dao;
 
 import com.motorph.model.AttendanceRecord;
+import com.motorph.util.DateUtils;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import java.io.File;
@@ -10,7 +11,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,9 +18,6 @@ import java.util.List;
 public class CsvAttendanceDAO implements AttendanceDAO {
     
     private final String FILE_PATH = "data/attendance.csv";
-    
-    private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("MM/dd/yyy");
-    private static final DateTimeFormatter TIME_FORMAT = DateTimeFormatter.ofPattern("H:mm");
     
     public CsvAttendanceDAO() {
         initializeFile();
@@ -78,9 +75,9 @@ public class CsvAttendanceDAO implements AttendanceDAO {
                 if (line.length >= 6) {
                     try {
                         String employeeNumber = line[0];
-                        LocalDate date = LocalDate.parse(line[3], DATE_FORMAT);
-                        LocalTime logIn = LocalTime.parse(line[4], TIME_FORMAT);
-                        LocalTime logOut = LocalTime.parse(line[5], TIME_FORMAT);
+                        LocalDate date = DateUtils.stringToDate(line[3]);
+                        LocalTime logIn = DateUtils.stringToTime(line[4]);
+                        LocalTime logOut = DateUtils.stringToTime(line[5]);
 
                         records.add(new AttendanceRecord(
                                 employeeNumber,
