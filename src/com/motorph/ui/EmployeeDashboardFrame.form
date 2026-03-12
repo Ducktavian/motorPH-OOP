@@ -28,70 +28,94 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
-                      <Component id="jLabel18" min="-2" pref="180" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
+              <Component id="employeeDashboardSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="397" pref="397" max="-2" attributes="0"/>
-                      <Component id="jButton5" min="-2" pref="99" max="-2" attributes="0"/>
-                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                      <Component id="jButton6" min="-2" pref="99" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardProfilePnl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="375" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardTimeInBtn" min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardTimeOutBtn" min="-2" pref="110" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jPanel3" alignment="0" pref="710" max="32767" attributes="0"/>
-                  <Component id="jPanel4" max="32767" attributes="0"/>
+                  <Component id="employeeDashboardEDetailsBrdrPnl" alignment="0" pref="711" max="32767" attributes="0"/>
+                  <Component id="employeeDashboardAttLogsBrdrPnl" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="16" max="32767" attributes="0"/>
+              <EmptySpace pref="15" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" min="-2" pref="700" max="-2" attributes="0"/>
-          <Group type="102" attributes="0">
-              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-              <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
-          </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardProfilePnl" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton5" min="-2" pref="35" max="-2" attributes="0"/>
-                          <Component id="jButton6" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="employeeDashboardTimeOutBtn" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="employeeDashboardTimeInBtn" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-              <Component id="jPanel3" pref="362" max="32767" attributes="0"/>
+              <Component id="employeeDashboardEDetailsBrdrPnl" pref="361" max="32767" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+              <Component id="employeeDashboardAttLogsBrdrPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
           </Group>
+          <Component id="employeeDashboardSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="employeeDashboardSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardSidebarPnl"/>
       </AccessibilityProperties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="dashboardBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                          <Component id="MotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
+                  <Component id="mainDashboardBtn" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
+                          <Component id="dashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="MotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="409" pref="409" max="-2" attributes="0"/>
+                  <Component id="mainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <EmptySpace pref="14" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JButton" name="dashboardBtn">
@@ -111,11 +135,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dashboardBtnActionPerformed"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="23" y="199" width="216" height="39"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="mainDashboardBtn">
           <Properties>
@@ -135,27 +154,20 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mainDashboardBtnActionPerformed"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="92" y="647" width="-1" height="39"/>
-            </Constraint>
-          </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel17">
+        <Component class="javax.swing.JLabel" name="MotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="10" width="180" height="-1"/>
-            </Constraint>
-          </Constraints>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="MotorPHIconImgLbl"/>
+          </AccessibilityProperties>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel2">
+    <Container class="javax.swing.JPanel" name="employeeDashboardProfilePnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -171,12 +183,30 @@
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardProfilePnl"/>
+      </AccessibilityProperties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="EmployeeDashboardFrame_employeeDashboardProfilePanel"/>
+      </AuxValues>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardProfileLbl" min="-2" pref="90" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="employeeDashboardProfileLbl" min="-2" pref="46" max="-2" attributes="0"/>
+          </Group>
+        </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JLabel" name="employeeDashboardProfileLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -186,39 +216,13 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Profile"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="7" y="1" width="90" height="46"/>
-            </Constraint>
-          </Constraints>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardProfileLbl"/>
+          </AccessibilityProperties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton5">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="5e" green="c5" red="22" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Log In"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-            <LineBorder roundedCorners="true">
-              <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
-            </LineBorder>
-          </Border>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
-      </Events>
-    </Component>
-    <Container class="javax.swing.JPanel" name="jPanel3">
+    <Container class="javax.swing.JPanel" name="employeeDashboardEDetailsBrdrPnl">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -236,6 +240,9 @@
         </Property>
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardEDetailsBrdrPnl"/>
+      </AccessibilityProperties>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -243,64 +250,64 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel19" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
-                      <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardLNameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardAddressLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardBirthdayLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPositionLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardBasicSalaryLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPAllowanceLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardSSSLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPhilHealthLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="hrField4" min="-2" pref="158" max="-2" attributes="0"/>
+                                  <Component id="employeeDashboardBirthdayFld" min="-2" pref="158" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                  <Component id="employeeDashboardPNumberLbl" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="hrField9" alignment="0" pref="158" max="32767" attributes="0"/>
-                                      <Component id="hrField8" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="hrField7" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="hrField6" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="hrField5" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="hrField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="employeeDashboardPhilHealthFld" alignment="0" pref="158" max="32767" attributes="0"/>
+                                      <Component id="employeeDashboardSSSFld" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="employeeDashboardPAllowanceFld" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="employeeDashboardBasicSalaryFld" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="employeeDashboardPositionFld" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="employeeDashboardENumberFld" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeeDashboardISupervisorLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeeDashboardRiceSubsidyLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeeDashboardStatusLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeeDashboardTINLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeeDashboardPagIbigLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeeDashboardCAllowanceLbl" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="hrField16" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                              <Component id="hrField15" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                              <Component id="hrField14" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                              <Component id="hrField13" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                              <Component id="hrField12" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                              <Component id="hrField11" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                              <Component id="hrField17" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                              <Component id="employeeDashboardPagIbigFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                              <Component id="employeeDashboardTINFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                              <Component id="employeeDashboardCAllowanceFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                              <Component id="employeeDashboardRiceSubsidyFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                              <Component id="employeeDashboardISupervisorFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                              <Component id="employeeDashboardPNumberFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                              <Component id="employeeDashboardStatusFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="hrField3" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="employeeDashboardLNameFld" min="-2" pref="158" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                          <Component id="employeeDashboardFNameLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="hrField1" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="employeeDashboardFNameFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="hrField2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="employeeDashboardAddressFld" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
               </Group>
@@ -311,72 +318,72 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField17" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardStatusLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardStatusFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField3" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardLNameFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardLNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardFNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardFNameFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardAddressFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardAddressLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField4" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField11" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardBirthdayFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardBirthdayLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField5" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField12" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPositionFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPositionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField6" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField13" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardBasicSalaryFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardBasicSalaryLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardRiceSubsidyFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardRiceSubsidyLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField7" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField14" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPAllowanceFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardCAllowanceFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardCAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField8" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField15" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardSSSFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardSSSLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardTINFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardTINLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="hrField9" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrField16" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPhilHealthFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPhilHealthLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPagIbigFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPagIbigLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" pref="31" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="employeeDashboardENumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -386,8 +393,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Employee #"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardENumberLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="employeeDashboardLNameLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -397,8 +407,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Last Name"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardLNameLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel4">
+        <Component class="javax.swing.JLabel" name="employeeDashboardAddressLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -408,8 +421,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Address"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardAddressLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
+        <Component class="javax.swing.JLabel" name="employeeDashboardBirthdayLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -419,8 +435,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Birthday"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardBirthdayLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField">
+        <Component class="javax.swing.JTextField" name="employeeDashboardENumberFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -434,11 +453,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardENumberFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardENumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField2">
+        <Component class="javax.swing.JTextField" name="employeeDashboardAddressFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -452,11 +474,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardAddressFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardAddressFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField3">
+        <Component class="javax.swing.JTextField" name="employeeDashboardLNameFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -470,11 +495,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardLNameFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardLNameFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField4">
+        <Component class="javax.swing.JTextField" name="employeeDashboardBirthdayFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -488,11 +516,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardBirthdayFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardBirthdayFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField5">
+        <Component class="javax.swing.JTextField" name="employeeDashboardPositionFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -506,11 +537,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPositionFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardPositionFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField6">
+        <Component class="javax.swing.JTextField" name="employeeDashboardBasicSalaryFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -524,11 +558,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardBasicSalaryFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField6ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardBasicSalaryFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField7">
+        <Component class="javax.swing.JTextField" name="employeeDashboardPAllowanceFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -542,11 +579,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPAllowanceFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField7ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardPAllowanceFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="employeeDashboardPositionLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -556,8 +596,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Position"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPositionLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
+        <Component class="javax.swing.JLabel" name="employeeDashboardBasicSalaryLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -567,8 +610,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Basic Salary"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardBasicSalaryLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel19">
+        <Component class="javax.swing.JLabel" name="employeeDashboardPAllowanceLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -578,8 +624,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Phone Allowance"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPAllowanceLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField8">
+        <Component class="javax.swing.JTextField" name="employeeDashboardSSSFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -593,11 +642,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardSSSFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField8ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardSSSFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField9">
+        <Component class="javax.swing.JTextField" name="employeeDashboardPhilHealthFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -611,11 +663,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPhilHealthFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField9ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardPhilHealthFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
+        <Component class="javax.swing.JLabel" name="employeeDashboardSSSLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -625,8 +680,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="SSS"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardSSSLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel9">
+        <Component class="javax.swing.JLabel" name="employeeDashboardPhilHealthLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -636,8 +694,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="PhilHealth"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPhilHealthLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField1">
+        <Component class="javax.swing.JTextField" name="employeeDashboardFNameFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -651,11 +712,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardFNameFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardFNameFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel13">
+        <Component class="javax.swing.JLabel" name="employeeDashboardISupervisorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -665,8 +729,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Immediate Supervisor"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardISupervisorLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField11">
+        <Component class="javax.swing.JTextField" name="employeeDashboardPNumberFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -680,11 +747,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPNumberFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField11ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardPNumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField12">
+        <Component class="javax.swing.JTextField" name="employeeDashboardISupervisorFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -698,11 +768,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardISupervisorFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField12ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardISupervisorFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField13">
+        <Component class="javax.swing.JTextField" name="employeeDashboardRiceSubsidyFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -716,11 +789,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardRiceSubsidyFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField13ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardRiceSubsidyFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField14">
+        <Component class="javax.swing.JTextField" name="employeeDashboardCAllowanceFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -734,11 +810,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardCAllowanceFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField14ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardCAllowanceFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField15">
+        <Component class="javax.swing.JTextField" name="employeeDashboardTINFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -752,11 +831,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardTINFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField15ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardTINFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField16">
+        <Component class="javax.swing.JTextField" name="employeeDashboardPagIbigFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -770,11 +852,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPagIbigFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField16ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardPagIbigFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel11">
+        <Component class="javax.swing.JLabel" name="employeeDashboardFNameLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -784,8 +869,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="First Name"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardFNameLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel12">
+        <Component class="javax.swing.JLabel" name="employeeDashboardPNumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -795,8 +883,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Phone Number"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPNumberLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel14">
+        <Component class="javax.swing.JLabel" name="employeeDashboardRiceSubsidyLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -806,8 +897,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Rice Subsidy"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardRiceSubsidyLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel10">
+        <Component class="javax.swing.JLabel" name="employeeDashboardStatusLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -817,8 +911,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Status"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardStatusLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel15">
+        <Component class="javax.swing.JLabel" name="employeeDashboardTINLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -828,8 +925,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="TIN"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardTINLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel16">
+        <Component class="javax.swing.JLabel" name="employeeDashboardPagIbigLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -839,8 +939,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Pag-Ibig"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPagIbigLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrField17">
+        <Component class="javax.swing.JTextField" name="employeeDashboardStatusFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -854,11 +957,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardStatusFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrField17ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardStatusFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel20">
+        <Component class="javax.swing.JLabel" name="employeeDashboardCAllowanceLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -868,10 +974,13 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Clothing Allowance"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardCAllowanceLbl"/>
+          </AccessibilityProperties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="employeeDashboardTimeOutBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="44" green="44" red="ef" type="rgb"/>
@@ -882,7 +991,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Log Out"/>
+        <Property name="text" type="java.lang.String" value="Time Out"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder roundedCorners="true">
@@ -891,18 +1000,14 @@
           </Border>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardTimeOutBtn"/>
+      </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardTimeOutBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel18">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Container class="javax.swing.JPanel" name="jPanel4">
+    <Container class="javax.swing.JPanel" name="employeeDashboardAttLogsBrdrPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -915,18 +1020,21 @@
           </Border>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardAttLogsBrdrPnl"/>
+      </AccessibilityProperties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="672" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardAttLogsBrdrScrlPnl" min="-2" pref="672" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jPanel13" min="-2" pref="226" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardAttendanceLogsPnl" min="-2" pref="226" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="220" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -935,22 +1043,25 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace pref="14" max="32767" attributes="0"/>
-                  <Component id="jPanel13" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardAttendanceLogsPnl" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="159" max="-2" attributes="0"/>
+                  <Component id="employeeDashboardAttLogsBrdrScrlPnl" min="-2" pref="159" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+        <Container class="javax.swing.JScrollPane" name="employeeDashboardAttLogsBrdrScrlPnl">
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardAttLogsBrdrScrlPnl"/>
+          </AccessibilityProperties>
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="jTable1">
+            <Component class="javax.swing.JTable" name="employeeDashboardAttLogsTbl">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -983,10 +1094,13 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardAttLogsTbl"/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanel13">
+        <Container class="javax.swing.JPanel" name="employeeDashboardAttendanceLogsPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -1005,6 +1119,9 @@
               <Dimension value="[126, 40]"/>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardAttendanceLogsPnl"/>
+          </AccessibilityProperties>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -1041,5 +1158,32 @@
         </Container>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JButton" name="employeeDashboardTimeInBtn">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="5e" green="c5" red="22" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Time In"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder roundedCorners="true">
+              <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardTimeInBtn"/>
+      </AccessibilityProperties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardTimeInBtnActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>
