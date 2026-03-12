@@ -9,7 +9,7 @@ public abstract class Employee {
     protected String employeeNumber;
     protected String lastName;
     protected String firstName;
-    protected String birthday;
+    protected LocalDate birthday;
     protected String address;
     protected String phoneNumber;
     
@@ -37,7 +37,7 @@ public abstract class Employee {
             String employeeNumber,
             String lastName,
             String firstName,
-            String birthday,
+            LocalDate birthday,
             String address,
             String phoneNumber,
             String SSSNumber,
@@ -90,7 +90,7 @@ public abstract class Employee {
         return basicSalary;
     }
 
-    public String getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 

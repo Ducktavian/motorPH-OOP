@@ -4,6 +4,16 @@
  */
 package com.motorph.ui;
 
+import com.motorph.dao.CsvEmployeeDAO;
+import com.motorph.dao.EmployeeDAO;
+import com.motorph.model.Employee;
+import com.motorph.model.RegularEmployee;
+import com.motorph.service.EmployeeService;
+import com.motorph.util.GuiUtil;
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Lenovo
@@ -11,12 +21,17 @@ package com.motorph.ui;
 public class HRAddEmployeeFrame extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(HRAddEmployeeFrame.class.getName());
-
+    private final EmployeeService empService;
+    
+    
     /**
      * Creates new form HRAddEmployeeFrame
      */
     public HRAddEmployeeFrame() {
         initComponents();
+        
+        EmployeeDAO empDao = new CsvEmployeeDAO();
+        this.empService = new EmployeeService(empDao);
     }
 
     /**
@@ -59,22 +74,21 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         bdayField = new javax.swing.JTextField();
         positionField = new javax.swing.JTextField();
         basicSalaryField = new javax.swing.JTextField();
-        departmentField = new javax.swing.JTextField();
-        ssField = new javax.swing.JTextField();
+        phoneAllowanceField = new javax.swing.JTextField();
+        sssField = new javax.swing.JTextField();
         philHealthField = new javax.swing.JTextField();
         employeeNumberField = new javax.swing.JTextField();
         immediateSupervisorField = new javax.swing.JTextField();
-        dailyRateField = new javax.swing.JTextField();
+        riceSubsidyField = new javax.swing.JTextField();
         tinField = new javax.swing.JTextField();
         pagIbigField = new javax.swing.JTextField();
         phoneNumberField = new javax.swing.JTextField();
         firstNameField = new javax.swing.JTextField();
         statusDropdown = new javax.swing.JComboBox<>();
         jLabel18 = new javax.swing.JLabel();
-        dailyRateField1 = new javax.swing.JTextField();
+        clothingAllowanceField = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         jPanel2.setBackground(new java.awt.Color(30, 58, 138));
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -227,15 +241,15 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         basicSalaryField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         basicSalaryField.addActionListener(this::basicSalaryFieldActionPerformed);
 
-        departmentField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        departmentField.setForeground(new java.awt.Color(31, 41, 55));
-        departmentField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        departmentField.addActionListener(this::departmentFieldActionPerformed);
+        phoneAllowanceField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        phoneAllowanceField.setForeground(new java.awt.Color(31, 41, 55));
+        phoneAllowanceField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        phoneAllowanceField.addActionListener(this::phoneAllowanceFieldActionPerformed);
 
-        ssField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        ssField.setForeground(new java.awt.Color(31, 41, 55));
-        ssField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        ssField.addActionListener(this::ssFieldActionPerformed);
+        sssField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        sssField.setForeground(new java.awt.Color(31, 41, 55));
+        sssField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        sssField.addActionListener(this::sssFieldActionPerformed);
 
         philHealthField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         philHealthField.setForeground(new java.awt.Color(31, 41, 55));
@@ -252,10 +266,10 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         immediateSupervisorField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         immediateSupervisorField.addActionListener(this::immediateSupervisorFieldActionPerformed);
 
-        dailyRateField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        dailyRateField.setForeground(new java.awt.Color(31, 41, 55));
-        dailyRateField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        dailyRateField.addActionListener(this::dailyRateFieldActionPerformed);
+        riceSubsidyField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        riceSubsidyField.setForeground(new java.awt.Color(31, 41, 55));
+        riceSubsidyField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        riceSubsidyField.addActionListener(this::riceSubsidyFieldActionPerformed);
 
         tinField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         tinField.setForeground(new java.awt.Color(31, 41, 55));
@@ -286,10 +300,10 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         jLabel18.setForeground(new java.awt.Color(31, 41, 55));
         jLabel18.setText("Status");
 
-        dailyRateField1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        dailyRateField1.setForeground(new java.awt.Color(31, 41, 55));
-        dailyRateField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        dailyRateField1.addActionListener(this::dailyRateField1ActionPerformed);
+        clothingAllowanceField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        clothingAllowanceField.setForeground(new java.awt.Color(31, 41, 55));
+        clothingAllowanceField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        clothingAllowanceField.addActionListener(this::clothingAllowanceFieldActionPerformed);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -313,7 +327,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel8)
                         .addGap(127, 127, 127)
-                        .addComponent(ssField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(sssField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel15)
                         .addGap(167, 167, 167)
@@ -345,13 +359,13 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(departmentField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(phoneAllowanceField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel10)))
                         .addGap(28, 28, 28)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(dailyRateField1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(dailyRateField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(clothingAllowanceField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(riceSubsidyField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel3Layout.createSequentialGroup()
@@ -414,17 +428,17 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                         .addComponent(basicSalaryField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel7)
                         .addComponent(jLabel14))
-                    .addComponent(dailyRateField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(riceSubsidyField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(departmentField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(phoneAllowanceField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19)
                     .addComponent(jLabel10)
-                    .addComponent(dailyRateField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(clothingAllowanceField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
-                    .addComponent(ssField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sssField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15)
                     .addComponent(tinField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
@@ -449,7 +463,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
                                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(453, 453, 453))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
+                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 704, Short.MAX_VALUE)
                                 .addGap(27, 27, 27))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -490,9 +504,9 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         new MainDashboardFrame().setVisible(true);
     }//GEN-LAST:event_mainDashboardFrameActionPerformed
 
-    private void dailyRateField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dailyRateField1ActionPerformed
+    private void clothingAllowanceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clothingAllowanceFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_dailyRateField1ActionPerformed
+    }//GEN-LAST:event_clothingAllowanceFieldActionPerformed
 
     private void firstNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameFieldActionPerformed
         // TODO add your handling code here:
@@ -510,9 +524,9 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tinFieldActionPerformed
 
-    private void dailyRateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dailyRateFieldActionPerformed
+    private void riceSubsidyFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_riceSubsidyFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_dailyRateFieldActionPerformed
+    }//GEN-LAST:event_riceSubsidyFieldActionPerformed
 
     private void immediateSupervisorFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_immediateSupervisorFieldActionPerformed
         // TODO add your handling code here:
@@ -526,13 +540,13 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_philHealthFieldActionPerformed
 
-    private void ssFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ssFieldActionPerformed
+    private void sssFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sssFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ssFieldActionPerformed
+    }//GEN-LAST:event_sssFieldActionPerformed
 
-    private void departmentFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departmentFieldActionPerformed
+    private void phoneAllowanceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phoneAllowanceFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_departmentFieldActionPerformed
+    }//GEN-LAST:event_phoneAllowanceFieldActionPerformed
 
     private void basicSalaryFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_basicSalaryFieldActionPerformed
         // TODO add your handling code here:
@@ -556,21 +570,80 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
 
     private void activateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_activateBtnActionPerformed
         // TODO add your handling code here:
+        try {
+            // EmployeeNumber
+            String employeeNumber = empService.generateNextEmployeeNumber();
+            // LastName
+            String lastName = lastNameField.getText().trim();
+            // FirstName
+            String firstName = firstNameField.getText().trim();
+            // Bday
+            LocalDate bday = LocalDate.parse(bdayField.getText());
+            // Address
+            String address = addressField.getText().trim();
+            // Phone Number
+            String phoneNumber = phoneNumberField.getText().trim();
+            // SSS
+            String sssNo = sssField.getText().trim();
+            // Philhealth
+            String philhealthNo = philHealthField.getText().trim();
+            // Tin
+            String TIN = tinField.getText().trim();
+            // PagIbig
+            String pagIbigNo = pagIbigField.getText().trim();
+            // Status
+            Object selectedItem = statusDropdown.getSelectedItem();
+            // Check if an item is selected to avoid a NullPointerException
+            String status = null;
+            if (selectedItem != null) {
+                // Convert the selected item to a String
+                status = selectedItem.toString();
 
-        System.out.println(lastNameField.getText());
-
-        Object selectedItem = statusDropdown.getSelectedItem();
-
-        // Check if an item is selected to avoid a NullPointerException
-        if (selectedItem != null) {
-            // Convert the selected item to a String
-            String selectedValue = selectedItem.toString();
-
-            // Now you can use the 'selectedValue' string (e.g., print it, save to a database)
-            System.out.println("Selected Value: " + selectedValue);
-            // You can also display it in a text field, for example:
-            // myTextField.setText(selectedValue);
+                // Now you can use the 'selectedValue' string (e.g., print it, save to a database)
+                System.out.println("Selected Value: " + status);
+                // You can also display it in a text field, for example:
+                // myTextField.setText(selectedValue);
+            }
+            // Position
+            String position = positionField.getText();
+            // Immediate Supervisor
+            String immediateSupervisor = immediateSupervisorField.getText();
+            // Basic Salary
+            double basicSalary = GuiUtil.getDoubleFromField(basicSalaryField);
+            // Rice Subisdy
+            double riceSubsidy = GuiUtil.getDoubleFromField(riceSubsidyField);
+            // Phone Allowance 
+            double phoneAllowance = GuiUtil.getDoubleFromField(phoneAllowanceField);
+            // Clothing Allowance
+            double clothingAllowance = GuiUtil.getDoubleFromField(clothingAllowanceField);
+                   
+            
+            // Default Regular Employee -> Converted to correct type in service
+            Employee emp = new RegularEmployee(
+                    employeeNumber, lastName, firstName, bday, address,
+                    phoneNumber, sssNo, philhealthNo, TIN, pagIbigNo,
+                    status, position, immediateSupervisor, basicSalary, 
+                    riceSubsidy, phoneAllowance, clothingAllowance
+            );
+                        
+            empService.addEmployee(emp);
+            
+            
+            JOptionPane.showMessageDialog(this, "Employee " + employeeNumber + " added successfully!");
+            GuiUtil.openFrame(this, new HREmployeeDetails());
+                       
+            
+        } catch (DateTimeParseException e) {
+            JOptionPane.showMessageDialog(this, "Please enter the birthday in YYYY-MM-DD format.", "Date Error", JOptionPane.ERROR_MESSAGE);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Please enter numeric values for Salary and Allowances.", "Number Error", JOptionPane.ERROR_MESSAGE);
+        } catch (IllegalArgumentException e) {
+            // This catches your specific validation rules (e.g., SSS must be 10 digits)
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Validation Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "An unexpected error occurred: " + e.getMessage());
         }
+        
 
     }//GEN-LAST:event_activateBtnActionPerformed
 
@@ -604,9 +677,7 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
     private javax.swing.JTextField addressField;
     private javax.swing.JTextField basicSalaryField;
     private javax.swing.JTextField bdayField;
-    private javax.swing.JTextField dailyRateField;
-    private javax.swing.JTextField dailyRateField1;
-    private javax.swing.JTextField departmentField;
+    private javax.swing.JTextField clothingAllowanceField;
     private javax.swing.JTextField employeeNumberField;
     private javax.swing.JTextField firstNameField;
     private javax.swing.JTextField immediateSupervisorField;
@@ -639,9 +710,11 @@ public class HRAddEmployeeFrame extends javax.swing.JFrame {
     private javax.swing.JButton mainDashboardFrame;
     private javax.swing.JTextField pagIbigField;
     private javax.swing.JTextField philHealthField;
+    private javax.swing.JTextField phoneAllowanceField;
     private javax.swing.JTextField phoneNumberField;
     private javax.swing.JTextField positionField;
-    private javax.swing.JTextField ssField;
+    private javax.swing.JTextField riceSubsidyField;
+    private javax.swing.JTextField sssField;
     private javax.swing.JComboBox<String> statusDropdown;
     private javax.swing.JTextField tinField;
     // End of variables declaration//GEN-END:variables

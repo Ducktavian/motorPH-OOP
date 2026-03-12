@@ -14,6 +14,7 @@ import com.opencsv.CSVWriter;
 import java.io.FileReader;
 import java.io.File;
 import java.io.FileWriter;
+import java.time.LocalDate;
 
 public class CsvEmployeeDAO implements EmployeeDAO {
     
@@ -61,47 +62,52 @@ public class CsvEmployeeDAO implements EmployeeDAO {
                 
                 if (data.length < 17) continue; // skips malformed rows
                 
-                // Employee Creation
-                String employeeNumber = data[0];
-                String lastName = data[1];
-                String firstName = data[2];
-                String birthday = data[3];
-                String address = data[4];
-                String phoneNumber = data[5];
-                String SSSNumber = data[6];
-                String philhealthNumber = data[7];
-                String TIN = data[8];
-                String pagIbigNumber = data[9];
-                String status = data[10];
-                String position = data[POSITION_INDEX].toLowerCase();
-                String immediateSupervisor = data[12];
-                
-                double basicSalary = parseAmount(data[13]);
-                double riceSubsidy = parseAmount(data[14]);
-                double phoneAllowance = parseAmount(data[15]);
-                double clothingAllowance = parseAmount(data[16]);
-                
-                Employee employee;
-                if (position.contains("hr")) {
-                    employee = new HR(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
-                }
-                else if (position.contains("it")) {
-                    employee = new IT(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
-                }
-                else if (position.contains("finance")
-                    || position.contains("account")
-                    || position.contains("payroll")) {
-                    employee = new Finance(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
-                }
-                else {
-                    employee = new RegularEmployee(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
-                }
-                
-                employees.add(employee);
+                employees.add(createEmployeeInstance(data));
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    
+    // Helper to manage employee
+    public Employee createEmployeeInstance(String[] data) {
+        // Employee Creation
+        String employeeNumber = data[0];
+        String lastName = data[1];
+        String firstName = data[2];
+        LocalDate birthday = LocalDate.parse(data[3]);
+        String address = data[4];
+        String phoneNumber = data[5];
+        String SSSNumber = data[6];
+        String philhealthNumber = data[7];
+        String TIN = data[8];
+        String pagIbigNumber = data[9];
+        String status = data[10];
+        String position = data[POSITION_INDEX].toLowerCase();
+        String immediateSupervisor = data[12];
+
+        double basicSalary = parseAmount(data[13]);
+        double riceSubsidy = parseAmount(data[14]);
+        double phoneAllowance = parseAmount(data[15]);
+        double clothingAllowance = parseAmount(data[16]);
+
+        Employee employee;
+        if (position.contains("hr")) {
+            employee = new HR(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
+        }
+        else if (position.contains("it")) {
+            employee = new IT(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
+        }
+        else if (position.contains("finance")
+            || position.contains("account")
+            || position.contains("payroll")) {
+            employee = new Finance(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
+        }
+        else {
+            employee = new RegularEmployee(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
+        }
+        
+        return employee;
     }
     
     // helper to pasrse doubles
@@ -170,7 +176,7 @@ public class CsvEmployeeDAO implements EmployeeDAO {
 
                 String[] row = {
                     emp.getEmployeeNumber(),emp.getLastName(),emp.getFirstName(),
-                    emp.getBirthday(),emp.getAddress(),emp.getPhoneNumber(),
+                    emp.getBirthday().toString(),emp.getAddress(),emp.getPhoneNumber(),
                     emp.getSSSNumber(),emp.getPhilhealthNumber(),emp.getTIN(),
                     emp.getPagIbigNumber(),emp.getStatus(),emp.getPosition(),
                     emp.getImmediateSupervisor(),

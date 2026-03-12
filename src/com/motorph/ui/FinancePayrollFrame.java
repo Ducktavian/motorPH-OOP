@@ -692,7 +692,7 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
                                         .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(42, 42, 42)
                                         .addComponent(jLabel16)
-                                        .addGap(39, 39, 39)
+                                        .addGap(35, 35, 35)
                                         .addComponent(hrField8, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel10)

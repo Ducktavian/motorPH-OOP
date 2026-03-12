@@ -326,9 +326,7 @@ public class MainDashboardFrame extends javax.swing.JFrame {
 
     private void attendanceLogBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_attendanceLogBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        
-        new FinanceAttendanceLogsFrame().setVisible(true);
+        openFrame(new FinanceAttendanceLogsFrame());
     }//GEN-LAST:event_attendanceLogBtnActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
@@ -358,6 +356,11 @@ public class MainDashboardFrame extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new MainDashboardFrame().setVisible(true));
+    }
+    
+    private void openFrame(javax.swing.JFrame frame) {
+        this.dispose();
+        frame.setVisible(true);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

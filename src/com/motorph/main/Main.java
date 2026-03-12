@@ -57,7 +57,7 @@ public class Main {
         String employeeNumber = empService.generateNextEmployeeNumber();
         String lastName = "Human";
         String firstName = "Human";
-        String birthday = "3/30/1930";
+        LocalDate birthday = LocalDate.parse("3/30/1930");
         String address = "Korea";
         String phoneNumber = "09";
         String SSSNumber = "4234324";
