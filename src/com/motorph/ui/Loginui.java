@@ -55,6 +55,8 @@ public class LoginUI extends javax.swing.JFrame {
         LoginUsernameFld.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         LoginUsernameFld.setForeground(new java.awt.Color(31, 41, 55));
         LoginUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        LoginUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        LoginUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         LoginUsernameFld.setName(""); // NOI18N
         LoginUsernameFld.addActionListener(this::LoginUsernameFldActionPerformed);
 
@@ -65,6 +67,8 @@ public class LoginUI extends javax.swing.JFrame {
         LoginPasswordFld.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         LoginPasswordFld.setForeground(new java.awt.Color(31, 41, 55));
         LoginPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        LoginPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        LoginPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
 
         LoginPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         LoginPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
