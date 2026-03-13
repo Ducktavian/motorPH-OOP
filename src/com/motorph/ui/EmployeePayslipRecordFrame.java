@@ -28,311 +28,307 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        payslipBtn = new javax.swing.JButton();
-        leaveListBtn = new javax.swing.JButton();
-        mainDashboardBtn = new javax.swing.JButton();
-        MotorPHIconImgLbl = new javax.swing.JLabel();
-        payrollDisputeBtn = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jPanel6 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel4 = new javax.swing.JLabel();
+        employeePylRecordSidebarPnl = new javax.swing.JPanel();
+        employeePylRecordPylBtn = new javax.swing.JButton();
+        employeePylRecordPylRecordBtn = new javax.swing.JButton();
+        employeePylRecordMainDashboardBtn = new javax.swing.JButton();
+        employeePylRecordMotorPHIconImgLbl = new javax.swing.JLabel();
+        employeePylRecordPrlDisputeBtn = new javax.swing.JButton();
+        employeePylRecordPylRecordPnl = new javax.swing.JPanel();
+        employeePylRecordPylRecordLbl = new javax.swing.JLabel();
+        employeePylRecordBrdrPnl = new javax.swing.JPanel();
+        employeePylRecordBrdrScrlPnl = new javax.swing.JScrollPane();
+        employeePylRecordTbl = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(30, 58, 138));
+        employeePylRecordSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        payslipBtn.setBackground(new java.awt.Color(30, 42, 56));
-        payslipBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        payslipBtn.setForeground(new java.awt.Color(255, 255, 255));
-        payslipBtn.setText("Payslip");
-        payslipBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        payslipBtn.addActionListener(this::payslipBtnActionPerformed);
+        employeePylRecordPylBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeePylRecordPylBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeePylRecordPylBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeePylRecordPylBtn.setText("Payslip");
+        employeePylRecordPylBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeePylRecordPylBtn.addActionListener(this::employeePylRecordPylBtnActionPerformed);
 
-        leaveListBtn.setBackground(new java.awt.Color(30, 42, 56));
-        leaveListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        leaveListBtn.setForeground(new java.awt.Color(255, 255, 255));
-        leaveListBtn.setText("Payslip Record");
-        leaveListBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        leaveListBtn.addActionListener(this::leaveListBtnActionPerformed);
+        employeePylRecordPylRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeePylRecordPylRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeePylRecordPylRecordBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeePylRecordPylRecordBtn.setText("Payslip Record");
+        employeePylRecordPylRecordBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeePylRecordPylRecordBtn.addActionListener(this::employeePylRecordPylRecordBtnActionPerformed);
 
-        mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setLabel("Main Dashboard");
-        mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
+        employeePylRecordMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeePylRecordMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeePylRecordMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeePylRecordMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        employeePylRecordMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        employeePylRecordMainDashboardBtn.setLabel("Main Dashboard");
+        employeePylRecordMainDashboardBtn.addActionListener(this::employeePylRecordMainDashboardBtnActionPerformed);
 
-        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        employeePylRecordMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        payrollDisputeBtn.setBackground(new java.awt.Color(30, 42, 56));
-        payrollDisputeBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        payrollDisputeBtn.setForeground(new java.awt.Color(255, 255, 255));
-        payrollDisputeBtn.setText("Payroll Dispute");
-        payrollDisputeBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        payrollDisputeBtn.addActionListener(this::payrollDisputeBtnActionPerformed);
+        employeePylRecordPrlDisputeBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeePylRecordPrlDisputeBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeePylRecordPrlDisputeBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeePylRecordPrlDisputeBtn.setText("Payroll Dispute");
+        employeePylRecordPrlDisputeBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeePylRecordPrlDisputeBtn.addActionListener(this::employeePylRecordPrlDisputeBtnActionPerformed);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainDashboardBtn, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout employeePylRecordSidebarPnlLayout = new javax.swing.GroupLayout(employeePylRecordSidebarPnl);
+        employeePylRecordSidebarPnl.setLayout(employeePylRecordSidebarPnlLayout);
+        employeePylRecordSidebarPnlLayout.setHorizontalGroup(
+            employeePylRecordSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(employeePylRecordMainDashboardBtn, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(employeePylRecordSidebarPnlLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(payrollDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(payslipBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(employeePylRecordSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(employeePylRecordPrlDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeePylRecordPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(employeePylRecordSidebarPnlLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(MotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(leaveListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(employeePylRecordMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(employeePylRecordPylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        employeePylRecordSidebarPnlLayout.setVerticalGroup(
+            employeePylRecordSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeePylRecordSidebarPnlLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(employeePylRecordSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(employeePylRecordSidebarPnlLayout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(payslipBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(MotorPHIconImgLbl))
+                        .addComponent(employeePylRecordPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(employeePylRecordMotorPHIconImgLbl))
                 .addGap(12, 12, 12)
-                .addComponent(leaveListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeePylRecordPylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(payrollDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeePylRecordPrlDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
-                .addComponent(mainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeePylRecordMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
         );
 
-        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
+        employeePylRecordPylBtn.getAccessibleContext().setAccessibleName("employeePylRecordPylBtn");
+        employeePylRecordPylRecordBtn.getAccessibleContext().setAccessibleName("employeePylRecordPylRecordBtn");
+        employeePylRecordPylRecordBtn.getAccessibleContext().setAccessibleDescription("");
+        employeePylRecordMainDashboardBtn.getAccessibleContext().setAccessibleName("employeePylRecordMainDashboardBtn");
+        employeePylRecordMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("employeePylRecordMotorPHIconImgLbl");
+        employeePylRecordPrlDisputeBtn.getAccessibleContext().setAccessibleName("employeePylRecordPrlDisputeBtn");
 
-        jPanel4.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel4.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        employeePylRecordPylRecordPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeePylRecordPylRecordPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylRecordPylRecordPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeePylRecordPylRecordPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Payslip Record");
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 180, 46));
+        employeePylRecordPylRecordLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeePylRecordPylRecordLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeePylRecordPylRecordLbl.setText("Payslip Record");
+        employeePylRecordPylRecordPnl.add(employeePylRecordPylRecordLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 180, 46));
+        employeePylRecordPylRecordLbl.getAccessibleContext().setAccessibleName("employeePylRecordPylRecordLbl");
 
-        jScrollPane3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        employeePylRecordBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jPanel6.setBackground(new java.awt.Color(178, 178, 178));
-        jPanel6.setForeground(new java.awt.Color(30, 42, 56));
+        employeePylRecordBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        jTable1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTable1.setForeground(new java.awt.Color(30, 42, 56));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        employeePylRecordTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylRecordTbl.setForeground(new java.awt.Color(30, 42, 56));
+        employeePylRecordTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Employee #", "Employee Name", "Payroll Date", "Payroll Record", "Payslip"
+                "Employee #", "Employee Name", "Payroll Date", "Position", "Payroll Record", "Status", "Payslip"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
         });
-        jTable1.setGridColor(new java.awt.Color(178, 178, 178));
-        jTable1.setSelectionForeground(new java.awt.Color(30, 42, 56));
-        jScrollPane1.setViewportView(jTable1);
+        employeePylRecordTbl.setGridColor(new java.awt.Color(178, 178, 178));
+        employeePylRecordTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
+        employeePylRecordBrdrScrlPnl.setViewportView(employeePylRecordTbl);
+        employeePylRecordTbl.getAccessibleContext().setAccessibleName("employeePylRecordTbl");
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setText("Records");
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(297, 297, 297)
-                        .addComponent(jLabel4))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 638, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(21, Short.MAX_VALUE))
+        javax.swing.GroupLayout employeePylRecordBrdrPnlLayout = new javax.swing.GroupLayout(employeePylRecordBrdrPnl);
+        employeePylRecordBrdrPnl.setLayout(employeePylRecordBrdrPnlLayout);
+        employeePylRecordBrdrPnlLayout.setHorizontalGroup(
+            employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeePylRecordBrdrPnlLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(77, Short.MAX_VALUE))
+        employeePylRecordBrdrPnlLayout.setVerticalGroup(
+            employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordBrdrPnlLayout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19))
         );
 
-        jScrollPane3.setViewportView(jPanel6);
+        employeePylRecordBrdrScrlPnl.getAccessibleContext().setAccessibleName("employeePylRecordBrdrScrlPnl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeePylRecordSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 691, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(employeePylRecordPylRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeePylRecordBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeePylRecordSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(employeePylRecordPylRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(employeePylRecordBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(14, 14, 14))
         );
+
+        employeePylRecordSidebarPnl.getAccessibleContext().setAccessibleName("employeePylRecordSidebarPnl");
+        employeePylRecordPylRecordPnl.getAccessibleContext().setAccessibleName("employeePylRecordPylRecordPnl");
+        employeePylRecordBrdrPnl.getAccessibleContext().setAccessibleName("employeePylRecordBrdrPnl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void payslipBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payslipBtnActionPerformed
+    private void employeePylRecordPylBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPylBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeePayslipFrame().setVisible(true);
-    }//GEN-LAST:event_payslipBtnActionPerformed
+        new EmployeePayslipUI().setVisible(true);
+    }//GEN-LAST:event_employeePylRecordPylBtnActionPerformed
 
-    private void leaveListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leaveListBtnActionPerformed
+    private void employeePylRecordPylRecordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPylRecordBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_leaveListBtnActionPerformed
+    }//GEN-LAST:event_employeePylRecordPylRecordBtnActionPerformed
 
-    private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
+    private void employeePylRecordMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardFrame().setVisible(true);
-    }//GEN-LAST:event_mainDashboardBtnActionPerformed
+        new MainDashboardUI().setVisible(true);
+    }//GEN-LAST:event_employeePylRecordMainDashboardBtnActionPerformed
 
-    private void payrollDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payrollDisputeBtnActionPerformed
+    private void employeePylRecordPrlDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPrlDisputeBtnActionPerformed
         // TODO add your handling code here:
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeePayrollDisputeFrame().setVisible(true);
+        new EmployeePayrollDisputeUI().setVisible(true);
                                                   
-    }//GEN-LAST:event_payrollDisputeBtnActionPerformed
+    }//GEN-LAST:event_employeePylRecordPrlDisputeBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -360,18 +356,16 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MotorPHIconImgLbl;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JButton leaveListBtn;
-    private javax.swing.JButton mainDashboardBtn;
-    private javax.swing.JButton payrollDisputeBtn;
-    private javax.swing.JButton payslipBtn;
+    private javax.swing.JPanel employeePylRecordBrdrPnl;
+    private javax.swing.JScrollPane employeePylRecordBrdrScrlPnl;
+    private javax.swing.JButton employeePylRecordMainDashboardBtn;
+    private javax.swing.JLabel employeePylRecordMotorPHIconImgLbl;
+    private javax.swing.JButton employeePylRecordPrlDisputeBtn;
+    private javax.swing.JButton employeePylRecordPylBtn;
+    private javax.swing.JButton employeePylRecordPylRecordBtn;
+    private javax.swing.JLabel employeePylRecordPylRecordLbl;
+    private javax.swing.JPanel employeePylRecordPylRecordPnl;
+    private javax.swing.JPanel employeePylRecordSidebarPnl;
+    private javax.swing.JTable employeePylRecordTbl;
     // End of variables declaration//GEN-END:variables
 }
