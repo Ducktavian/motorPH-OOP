@@ -19,7 +19,7 @@ import com.motorph.service.PayrollService;
 import com.motorph.service.RateService;
 import com.motorph.ui.EmployeeDashboardUI;
 import com.motorph.ui.EmployeeLeaveUI;
-import com.motorph.ui.LoginUI;
+import com.motorph.ui.LoginFrame;
 import com.motorph.util.Session;
 import java.time.LocalDate;
 import java.util.List;
@@ -35,7 +35,7 @@ public class Main {
     public static void main(String[] args) {
         // Use invokeLater to ensure thread safety for Swing components
         java.awt.EventQueue.invokeLater(() -> {
-            LoginUI loginFrame = new LoginUI();
+            LoginFrame loginFrame = new LoginFrame();
             loginFrame.setLocationRelativeTo(null); // Centers the window on screen
             loginFrame.setVisible(true);
             

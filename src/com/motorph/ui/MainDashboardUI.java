@@ -261,7 +261,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new LoginUI().setVisible(true);
+        new LoginFrame().setVisible(true);
     }//GEN-LAST:event_mainDashboardLogoutBtnActionPerformed
 
     private void mainDashboardPylImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardPylImgBtnActionPerformed
