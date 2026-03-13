@@ -12,14 +12,14 @@ import com.motorph.util.Session;
  *
  * @author Lenovo
  */
-public class LoginFrame extends javax.swing.JFrame {
+public class LoginUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginFrame.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginUI.class.getName());
 
     /**
      * Creates new form LoginFrame
      */
-    public LoginFrame() {
+    public LoginUI() {
         initComponents();
     }
 
@@ -183,7 +183,7 @@ public class LoginFrame extends javax.swing.JFrame {
             Session.setCurrentUser(user);
             System.out.println("Welcome " + user.getUsername() + "!");
             
-            // Hide current LoginFrame
+            // Hide current LoginUI
             this.dispose();
             
             new MainDashboardUI().setVisible(true);
@@ -227,7 +227,7 @@ public class LoginFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new LoginFrame().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new LoginUI().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
