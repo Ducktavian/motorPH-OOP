@@ -308,7 +308,7 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeePayslipFrame().setVisible(true);
+        new EmployeePayslipUI().setVisible(true);
     }//GEN-LAST:event_employeePylRecordPylBtnActionPerformed
 
     private void employeePylRecordPylRecordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPylRecordBtnActionPerformed
@@ -318,7 +318,7 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
     private void employeePylRecordMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardFrame().setVisible(true);
+        new MainDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeePylRecordMainDashboardBtnActionPerformed
 
     private void employeePylRecordPrlDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPrlDisputeBtnActionPerformed
@@ -326,7 +326,7 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeePayrollDisputeFrame().setVisible(true);
+        new EmployeePayrollDisputeUI().setVisible(true);
                                                   
     }//GEN-LAST:event_employeePylRecordPrlDisputeBtnActionPerformed
 
