@@ -180,36 +180,49 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
 
         employeeDashboardENumberFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardENumberFld.setEnabled(false);
         employeeDashboardENumberFld.addActionListener(this::employeeDashboardENumberFldActionPerformed);
 
         employeeDashboardAddressFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardAddressFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardAddressFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardAddressFld.setEnabled(false);
         employeeDashboardAddressFld.addActionListener(this::employeeDashboardAddressFldActionPerformed);
 
         employeeDashboardLNameFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardLNameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardLNameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardLNameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardLNameFld.setEnabled(false);
         employeeDashboardLNameFld.addActionListener(this::employeeDashboardLNameFldActionPerformed);
 
         employeeDashboardBirthdayFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardBirthdayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardBirthdayFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardBirthdayFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardBirthdayFld.setEnabled(false);
         employeeDashboardBirthdayFld.addActionListener(this::employeeDashboardBirthdayFldActionPerformed);
 
         employeeDashboardPositionFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardPositionFld.setEnabled(false);
         employeeDashboardPositionFld.addActionListener(this::employeeDashboardPositionFldActionPerformed);
 
         employeeDashboardBasicSalaryFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardBasicSalaryFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardBasicSalaryFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardBasicSalaryFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardBasicSalaryFld.setEnabled(false);
         employeeDashboardBasicSalaryFld.addActionListener(this::employeeDashboardBasicSalaryFldActionPerformed);
 
         employeeDashboardPAllowanceFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardPAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardPAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardPAllowanceFld.setEnabled(false);
         employeeDashboardPAllowanceFld.addActionListener(this::employeeDashboardPAllowanceFldActionPerformed);
 
@@ -227,11 +240,15 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
 
         employeeDashboardSSSFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardSSSFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardSSSFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardSSSFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardSSSFld.setEnabled(false);
         employeeDashboardSSSFld.addActionListener(this::employeeDashboardSSSFldActionPerformed);
 
         employeeDashboardPhilHealthFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardPhilHealthFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPhilHealthFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardPhilHealthFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardPhilHealthFld.setEnabled(false);
         employeeDashboardPhilHealthFld.addActionListener(this::employeeDashboardPhilHealthFldActionPerformed);
 
@@ -245,6 +262,8 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
 
         employeeDashboardFNameFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardFNameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardFNameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardFNameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardFNameFld.setEnabled(false);
         employeeDashboardFNameFld.addActionListener(this::employeeDashboardFNameFldActionPerformed);
 
@@ -254,31 +273,43 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
 
         employeeDashboardPNumberFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardPNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardPNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardPNumberFld.setEnabled(false);
         employeeDashboardPNumberFld.addActionListener(this::employeeDashboardPNumberFldActionPerformed);
 
         employeeDashboardISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardISupervisorFld.setEnabled(false);
         employeeDashboardISupervisorFld.addActionListener(this::employeeDashboardISupervisorFldActionPerformed);
 
         employeeDashboardRiceSubsidyFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardRiceSubsidyFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardRiceSubsidyFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardRiceSubsidyFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardRiceSubsidyFld.setEnabled(false);
         employeeDashboardRiceSubsidyFld.addActionListener(this::employeeDashboardRiceSubsidyFldActionPerformed);
 
         employeeDashboardCAllowanceFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardCAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardCAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardCAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardCAllowanceFld.setEnabled(false);
         employeeDashboardCAllowanceFld.addActionListener(this::employeeDashboardCAllowanceFldActionPerformed);
 
         employeeDashboardTINFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardTINFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardTINFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardTINFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardTINFld.setEnabled(false);
         employeeDashboardTINFld.addActionListener(this::employeeDashboardTINFldActionPerformed);
 
         employeeDashboardPagIbigFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardPagIbigFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPagIbigFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardPagIbigFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardPagIbigFld.setEnabled(false);
         employeeDashboardPagIbigFld.addActionListener(this::employeeDashboardPagIbigFldActionPerformed);
 
@@ -308,6 +339,8 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
 
         employeeDashboardStatusFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeeDashboardStatusFld.setEnabled(false);
         employeeDashboardStatusFld.addActionListener(this::employeeDashboardStatusFldActionPerformed);
 
