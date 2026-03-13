@@ -11,5 +11,9 @@ public interface AttendanceDAO {
     
     List<AttendanceRecord> getAllAttendance();
     
+    AttendanceRecord getOpenSession(String employeeNumber);
     
+    void timeIn(String employeeNumber, String lastName, String firstName);
+    
+    void timeOut(String employeeNumber);
 }

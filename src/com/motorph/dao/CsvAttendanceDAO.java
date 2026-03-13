@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -97,5 +98,74 @@ public class CsvAttendanceDAO implements AttendanceDAO {
         
         return records;
     }
+    
+    @Override
+    public AttendanceRecord getOpenSession(String employeeNumber) {
+        LocalDate today = LocalDate.now();
+        
+        List<AttendanceRecord> records = getAllAttendance();
+        
+        for (int i = records.size() -1; i >= 0; i--) {
+            AttendanceRecord r = records.get(i);
+            
+            if (r.getEmployeeNumber().equals(employeeNumber)
+                    && r.getDate().equals(today)
+                    && r.getLogOut() == null) {
+                return r;            }
+        }
+        return null;
+    }
+    
+    @Override
+    public void timeIn(String employeeNumber, String lastName, String firstName) {
+        
+        // Checks if employee already timed in
+        if (getOpenSession(employeeNumber) != null) {
+            throw new IllegalStateException("Employee already timed in.");
+        }
+        
+        LocalDate today = LocalDate.now();
+        LocalTime now = LocalTime.now();
+        
+        try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH))) {
+            
+            String[] row = {
+                employeeNumber,
+                lastName,
+                firstName,
+                DateUtils.dateToString(today),
+                DateUtils.timeToString(now),
+                ""
+            };
+            
+            writer.writeNext(row);
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+    }
+    
+    
+    @Override
+    public void timeOut(String employeeNumber) {
+        
+        AttendanceRecord open = getOpenSession(employeeNumber);
+        
+        if (open == null) {
+            throw new IllegalStateException("No active session found");
+        }
+        
+        List<String[]> allRows = new ArrayList<>();
+        LocalDate today = LocalDate.now();
+        LocalTime now = LocalTime.now();
+        
+        
+    }
+    
+    
+    
+    
+    
     
 }

@@ -13,12 +13,16 @@ public class DateUtils {
         return (date == null) ? "" : date.format(FORMATTER);
     }
     
+    public static String timeToString(LocalTime time) {
+        return (time == null) ? "" : time.format(TIME_FORMAT);
+    }
+    
     public static LocalDate stringToDate(String dateStr) {
         return (dateStr == null || dateStr.isEmpty()) ? null : LocalDate.parse(dateStr, FORMATTER);
     }
     
     public static LocalTime stringToTime(String timeStr) {
-        return (timeStr == null || timeStr.isEmpty()) ? null : LocalTime.parse(timeStr, FORMATTER);
+        return (timeStr == null || timeStr.isEmpty()) ? null : LocalTime.parse(timeStr, TIME_FORMAT);
     }
 
 }

@@ -5,6 +5,7 @@ import com.motorph.dao.CsvEmployeeDAO;
 import com.motorph.model.Employee;
 import com.motorph.service.EmployeeService;
 import com.motorph.util.DateUtils;
+import javax.swing.JOptionPane;
 
 
 public class HREmployeeDetailsUI extends javax.swing.JFrame {
@@ -1337,9 +1338,25 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
     private void hrEDetailsEditBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEDetailsEditBtnActionPerformed
         // TODO add your handling code here:
-        Employee emp = empService.findEmployee(hrEDetailsENumberFld.getText());
-        this.dispose();
-        new HREditEmployeeUI(emp).setVisible(true);
+        Employee emp = null;
+        
+        try {
+            emp = empService.findEmployee(hrEDetailsENumberFld.getText());
+
+
+            if (emp == null) {
+                throw new IllegalArgumentException("Enter employee number to edit.");
+            }
+            
+            this.dispose();
+            new HREditEmployeeUI(emp).setVisible(true);
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
+        
+        
+        
         
         
     }//GEN-LAST:event_hrEDetailsEditBtnActionPerformed
