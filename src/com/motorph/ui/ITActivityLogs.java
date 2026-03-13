@@ -28,1191 +28,1239 @@ public class ITActivityLogs extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        mainDashboardBtn = new javax.swing.JButton();
-        MotorPHIconImgLbl = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        hrField = new javax.swing.JTextField();
-        hrField3 = new javax.swing.JTextField();
-        hrField5 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        hrField11 = new javax.swing.JTextField();
-        hrField13 = new javax.swing.JTextField();
-        hrField14 = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jPanel15 = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        hrField15 = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        hrField16 = new javax.swing.JTextField();
-        jButton6 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
-        jTextField3 = new javax.swing.JTextField();
-        SearchIconImg = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jPanel5 = new javax.swing.JPanel();
-        jPanel13 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
-        jPanel16 = new javax.swing.JPanel();
-        jPanel17 = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jTextField27 = new javax.swing.JTextField();
-        jComboBox13 = new javax.swing.JComboBox<>();
-        jLabel56 = new javax.swing.JLabel();
-        jTextField29 = new javax.swing.JTextField();
-        jLabel57 = new javax.swing.JLabel();
-        jTextField31 = new javax.swing.JTextField();
-        jTextField32 = new javax.swing.JTextField();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jPanel18 = new javax.swing.JPanel();
-        jPanel19 = new javax.swing.JPanel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel68 = new javax.swing.JLabel();
-        jTextField28 = new javax.swing.JTextField();
-        jComboBox16 = new javax.swing.JComboBox<>();
-        jLabel69 = new javax.swing.JLabel();
-        jTextField30 = new javax.swing.JTextField();
-        jLabel71 = new javax.swing.JLabel();
-        jTextField41 = new javax.swing.JTextField();
-        jTextField42 = new javax.swing.JTextField();
-        jLabel72 = new javax.swing.JLabel();
-        jLabel73 = new javax.swing.JLabel();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jPanel20 = new javax.swing.JPanel();
-        jPanel25 = new javax.swing.JPanel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel74 = new javax.swing.JLabel();
-        jTextField43 = new javax.swing.JTextField();
-        jComboBox17 = new javax.swing.JComboBox<>();
-        jLabel75 = new javax.swing.JLabel();
-        jTextField44 = new javax.swing.JTextField();
-        jLabel76 = new javax.swing.JLabel();
-        jTextField45 = new javax.swing.JTextField();
-        jTextField46 = new javax.swing.JTextField();
-        jLabel77 = new javax.swing.JLabel();
-        jLabel78 = new javax.swing.JLabel();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        itActLogsSidebarPnl = new javax.swing.JPanel();
+        itActLogsActLogsBtn = new javax.swing.JButton();
+        itActLogsMainDashboardBtn = new javax.swing.JButton();
+        itActLogsMotorPHIconImgLbl = new javax.swing.JLabel();
+        itActLogsActLogsPnl = new javax.swing.JPanel();
+        itActLogsActLogsLbl = new javax.swing.JLabel();
+        itActLogsEDetailsBrdrPnl = new javax.swing.JPanel();
+        itActLogsENumberLbl = new javax.swing.JLabel();
+        itActLogsENameLbl = new javax.swing.JLabel();
+        itActLogsENumberFld = new javax.swing.JTextField();
+        itActLogsENameFld = new javax.swing.JTextField();
+        itActLogsPhnNumberFld = new javax.swing.JTextField();
+        itActLogsPositionLbl = new javax.swing.JLabel();
+        itActLogsPhnNumberLbl = new javax.swing.JLabel();
+        itActLogsISupervisorLbl = new javax.swing.JLabel();
+        itActLogsISupervisorFld = new javax.swing.JTextField();
+        itActLogsStatusFld = new javax.swing.JTextField();
+        itActLogsPositionFld = new javax.swing.JTextField();
+        itActLogsStatusLbl = new javax.swing.JLabel();
+        itActLogsUActDetailsPnl = new javax.swing.JPanel();
+        itActLogsUActDetailsLbl = new javax.swing.JLabel();
+        itActLogsUActDetailsBrdrPnl = new javax.swing.JPanel();
+        itActLogsUsernameLbl = new javax.swing.JLabel();
+        itActLogsUsernameFld = new javax.swing.JTextField();
+        itActLogsPasswordLbl = new javax.swing.JLabel();
+        itActLogsPasswordFld = new javax.swing.JTextField();
+        itActLogsEditBtn = new javax.swing.JButton();
+        itActLogsAddBtn = new javax.swing.JButton();
+        itActLogsDeleteBtn = new javax.swing.JButton();
+        itActLogsSearchPnl = new javax.swing.JPanel();
+        itActLogsEENumberPnl = new javax.swing.JTextField();
+        itActLogsSearchIconImgLbl = new javax.swing.JLabel();
+        itActLogsDListBrdrScrlPnl = new javax.swing.JScrollPane();
+        itActLogsDListBrdrPnl = new javax.swing.JPanel();
+        itActLogsDListPnl = new javax.swing.JPanel();
+        itActLogsDListLbl = new javax.swing.JLabel();
+        itActLogsFADisputeBrdrPnl1 = new javax.swing.JPanel();
+        itActLogsFADisputePnl1 = new javax.swing.JPanel();
+        itActLogsFADisputeLbl1 = new javax.swing.JLabel();
+        itActLogsPositionLbl1 = new javax.swing.JLabel();
+        itActLogsENameFld1 = new javax.swing.JTextField();
+        itActLogsReasonLbl1 = new javax.swing.JLabel();
+        itActLogsReasonFld1 = new javax.swing.JTextField();
+        itActLogsStatusLbl1 = new javax.swing.JLabel();
+        itActLogsENumberFld1 = new javax.swing.JTextField();
+        itActLogsPositionFld1 = new javax.swing.JTextField();
+        itActLogsENumberLbl1 = new javax.swing.JLabel();
+        itActLogsENameLbl1 = new javax.swing.JLabel();
+        itActLogsDenyBtn1 = new javax.swing.JButton();
+        itActLogsApproveBtn1 = new javax.swing.JButton();
+        itActLogsStatusFld1 = new javax.swing.JTextField();
+        itActLogsENameFld4 = new javax.swing.JTextField();
+        itActLogsFADisputeBrdrPnl2 = new javax.swing.JPanel();
+        itActLogsFADisputePnl2 = new javax.swing.JPanel();
+        itActLogsFADisputeLbl2 = new javax.swing.JLabel();
+        itActLogsPositionLbl2 = new javax.swing.JLabel();
+        itActLogsENameFld2 = new javax.swing.JTextField();
+        itActLogsReasonLbl2 = new javax.swing.JLabel();
+        itActLogsReasonFld2 = new javax.swing.JTextField();
+        itActLogsStatusLbl2 = new javax.swing.JLabel();
+        itActLogsENumberFld2 = new javax.swing.JTextField();
+        itActLogsPositionFld2 = new javax.swing.JTextField();
+        itActLogsENumberLbl2 = new javax.swing.JLabel();
+        itActLogsENameLbl2 = new javax.swing.JLabel();
+        itActLogsDenyBtn2 = new javax.swing.JButton();
+        itActLogsApproveBtn2 = new javax.swing.JButton();
+        itActLogsStatusFld2 = new javax.swing.JTextField();
+        itActLogsENameFld5 = new javax.swing.JTextField();
+        itActLogsFADisputeBrdrPnl3 = new javax.swing.JPanel();
+        itActLogsFADisputePnl3 = new javax.swing.JPanel();
+        itActLogsFADisputeLbl3 = new javax.swing.JLabel();
+        itActLogsPositionLbl3 = new javax.swing.JLabel();
+        itActLogsENameFld3 = new javax.swing.JTextField();
+        itActLogsReasonLbl3 = new javax.swing.JLabel();
+        itActLogsReasonFld3 = new javax.swing.JTextField();
+        itActLogsStatusLbl3 = new javax.swing.JLabel();
+        itActLogsENumberFld3 = new javax.swing.JTextField();
+        itActLogsPositionFld3 = new javax.swing.JTextField();
+        itActLogsENumberLbl3 = new javax.swing.JLabel();
+        itActLogsENameLbl3 = new javax.swing.JLabel();
+        itActLogsDenyBtn3 = new javax.swing.JButton();
+        itActLogsApproveBtn3 = new javax.swing.JButton();
+        itActLogsStatusFld3 = new javax.swing.JTextField();
+        itActLogsENameFld6 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        itActLogsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itActLogsSidebarPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(30, 42, 56));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Activity Logs");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
+        itActLogsActLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itActLogsActLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itActLogsActLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsActLogsBtn.setText("Activity Logs");
+        itActLogsActLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        itActLogsActLogsBtn.addActionListener(this::itActLogsActLogsBtnActionPerformed);
+        itActLogsSidebarPnl.add(itActLogsActLogsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
+        itActLogsActLogsBtn.getAccessibleContext().setAccessibleName("itActLogsActLogsBtn");
 
-        mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setLabel("Main Dashboard");
-        mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
-        jPanel1.add(mainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        itActLogsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itActLogsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itActLogsMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        itActLogsMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        itActLogsMainDashboardBtn.setLabel("Main Dashboard");
+        itActLogsMainDashboardBtn.addActionListener(this::itActLogsMainDashboardBtnActionPerformed);
+        itActLogsSidebarPnl.add(itActLogsMainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
+        itActLogsMainDashboardBtn.getAccessibleContext().setAccessibleName("itActLogsMainDashboardBtn");
 
-        MotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
-        jPanel1.add(MotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
-        MotorPHIconImgLbl.getAccessibleContext().setAccessibleName("MotorPHIconImgLbl");
+        itActLogsMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        itActLogsSidebarPnl.add(itActLogsMotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
+        itActLogsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("itActLogsMotorPHIconImgLbl");
 
-        jPanel2.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel2.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        itActLogsActLogsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itActLogsActLogsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsActLogsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itActLogsActLogsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText(" Activity Logs");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 170, 46));
+        itActLogsActLogsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        itActLogsActLogsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsActLogsLbl.setText(" Activity Logs");
+        itActLogsActLogsPnl.add(itActLogsActLogsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 170, 46));
+        itActLogsActLogsLbl.getAccessibleContext().setAccessibleName("itActLogsActLogsLbl");
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
-        jPanel3.setForeground(new java.awt.Color(30, 42, 56));
-        jPanel3.setFocusable(false);
-        jPanel3.setPreferredSize(new java.awt.Dimension(700, 469));
-        jPanel3.setRequestFocusEnabled(false);
+        itActLogsEDetailsBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
+        itActLogsEDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        itActLogsEDetailsBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsEDetailsBrdrPnl.setFocusable(false);
+        itActLogsEDetailsBrdrPnl.setPreferredSize(new java.awt.Dimension(700, 469));
+        itActLogsEDetailsBrdrPnl.setRequestFocusEnabled(false);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel1.setText("Employee #");
+        itActLogsENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENumberLbl.setText("Employee #");
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel3.setText("Employee Name");
+        itActLogsENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsENameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameLbl.setText("Employee Name");
 
-        hrField.setForeground(new java.awt.Color(30, 42, 56));
-        hrField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField.setEnabled(false);
-        hrField.addActionListener(this::hrFieldActionPerformed);
+        itActLogsENumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENumberFld.setEnabled(false);
+        itActLogsENumberFld.addActionListener(this::itActLogsENumberFldActionPerformed);
 
-        hrField3.setForeground(new java.awt.Color(30, 42, 56));
-        hrField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField3.setEnabled(false);
-        hrField3.addActionListener(this::hrField3ActionPerformed);
+        itActLogsENameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld.setEnabled(false);
+        itActLogsENameFld.addActionListener(this::itActLogsENameFldActionPerformed);
 
-        hrField5.setForeground(new java.awt.Color(30, 42, 56));
-        hrField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField5.setEnabled(false);
-        hrField5.addActionListener(this::hrField5ActionPerformed);
+        itActLogsPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPhnNumberFld.setEnabled(false);
+        itActLogsPhnNumberFld.addActionListener(this::itActLogsPhnNumberFldActionPerformed);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel6.setText("Position");
+        itActLogsPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsPositionLbl.setText("Position");
 
-        jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel19.setText("Phone Number");
+        itActLogsPhnNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsPhnNumberLbl.setText("Phone Number");
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel13.setText("Immediate Supervisor");
+        itActLogsISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsISupervisorLbl.setText("Immediate Supervisor");
 
-        hrField11.setForeground(new java.awt.Color(30, 42, 56));
-        hrField11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField11.setEnabled(false);
-        hrField11.addActionListener(this::hrField11ActionPerformed);
+        itActLogsISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsISupervisorFld.setEnabled(false);
+        itActLogsISupervisorFld.addActionListener(this::itActLogsISupervisorFldActionPerformed);
 
-        hrField13.setForeground(new java.awt.Color(30, 42, 56));
-        hrField13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField13.setEnabled(false);
-        hrField13.addActionListener(this::hrField13ActionPerformed);
+        itActLogsStatusFld.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsStatusFld.setEnabled(false);
+        itActLogsStatusFld.addActionListener(this::itActLogsStatusFldActionPerformed);
 
-        hrField14.setForeground(new java.awt.Color(30, 42, 56));
-        hrField14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField14.setEnabled(false);
-        hrField14.addActionListener(this::hrField14ActionPerformed);
+        itActLogsPositionFld.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPositionFld.setEnabled(false);
+        itActLogsPositionFld.addActionListener(this::itActLogsPositionFldActionPerformed);
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel10.setText("Status");
+        itActLogsStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsStatusLbl.setText("Status");
 
-        jPanel15.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel15.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel15.setPreferredSize(new java.awt.Dimension(126, 40));
+        itActLogsUActDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
+        itActLogsUActDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsUActDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itActLogsUActDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        jLabel20.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel20.setText("User Account Details");
-        jLabel20.setToolTipText("");
+        itActLogsUActDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
+        itActLogsUActDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        itActLogsUActDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsUActDetailsLbl.setText("User Account Details");
+        itActLogsUActDetailsLbl.setToolTipText("");
 
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
+        javax.swing.GroupLayout itActLogsUActDetailsPnlLayout = new javax.swing.GroupLayout(itActLogsUActDetailsPnl);
+        itActLogsUActDetailsPnl.setLayout(itActLogsUActDetailsPnlLayout);
+        itActLogsUActDetailsPnlLayout.setHorizontalGroup(
+            itActLogsUActDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsUActDetailsPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsUActDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+        itActLogsUActDetailsPnlLayout.setVerticalGroup(
+            itActLogsUActDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsUActDetailsPnlLayout.createSequentialGroup()
                 .addGap(0, 1, Short.MAX_VALUE)
-                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(itActLogsUActDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsUActDetailsLbl.getAccessibleContext().setAccessibleName("itActLogsUActDetailsLbl");
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel11.setText("Username");
+        itActLogsUActDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        hrField15.setForeground(new java.awt.Color(30, 42, 56));
-        hrField15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField15.addActionListener(this::hrField15ActionPerformed);
+        itActLogsUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsUsernameLbl.setText("Username");
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel12.setText("Password");
+        itActLogsUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsUsernameFld.addActionListener(this::itActLogsUsernameFldActionPerformed);
 
-        hrField16.setForeground(new java.awt.Color(30, 42, 56));
-        hrField16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrField16.addActionListener(this::hrField16ActionPerformed);
+        itActLogsPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsPasswordLbl.setText("Password");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        itActLogsPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPasswordFld.addActionListener(this::itActLogsPasswordFldActionPerformed);
+
+        javax.swing.GroupLayout itActLogsUActDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itActLogsUActDetailsBrdrPnl);
+        itActLogsUActDetailsBrdrPnl.setLayout(itActLogsUActDetailsBrdrPnlLayout);
+        itActLogsUActDetailsBrdrPnlLayout.setHorizontalGroup(
+            itActLogsUActDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsUActDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrField16, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel11)
-                    .addComponent(hrField15, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsUActDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itActLogsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsPasswordLbl)
+                    .addComponent(itActLogsUsernameLbl)
+                    .addComponent(itActLogsUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        itActLogsUActDetailsBrdrPnlLayout.setVerticalGroup(
+            itActLogsUActDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsUActDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jLabel11)
+                .addComponent(itActLogsUsernameLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(hrField15, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel12)
+                .addComponent(itActLogsPasswordLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrField16, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        jButton6.setBackground(new java.awt.Color(59, 130, 246));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Edit");
-        jButton6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton6.addActionListener(this::jButton6ActionPerformed);
+        itActLogsUsernameLbl.getAccessibleContext().setAccessibleName("itActLogsUsernameLbl");
+        itActLogsUsernameFld.getAccessibleContext().setAccessibleName("itActLogsUsernameFld");
+        itActLogsPasswordLbl.getAccessibleContext().setAccessibleName("itActLogsPasswordLbl");
+        itActLogsPasswordFld.getAccessibleContext().setAccessibleName("itActLogsPasswordFld");
 
-        jButton5.setBackground(new java.awt.Color(30, 58, 138));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Add");
-        jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton5.addActionListener(this::jButton5ActionPerformed);
+        itActLogsEditBtn.setBackground(new java.awt.Color(59, 130, 246));
+        itActLogsEditBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsEditBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsEditBtn.setText("Edit");
+        itActLogsEditBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsEditBtn.addActionListener(this::itActLogsEditBtnActionPerformed);
 
-        jButton7.setBackground(new java.awt.Color(239, 68, 68));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Delete");
-        jButton7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jButton7.addActionListener(this::jButton7ActionPerformed);
+        itActLogsAddBtn.setBackground(new java.awt.Color(30, 58, 138));
+        itActLogsAddBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsAddBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsAddBtn.setText("Add");
+        itActLogsAddBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsAddBtn.addActionListener(this::itActLogsAddBtnActionPerformed);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        itActLogsDeleteBtn.setBackground(new java.awt.Color(239, 68, 68));
+        itActLogsDeleteBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsDeleteBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsDeleteBtn.setText("Delete");
+        itActLogsDeleteBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsDeleteBtn.addActionListener(this::itActLogsDeleteBtnActionPerformed);
+
+        javax.swing.GroupLayout itActLogsEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itActLogsEDetailsBrdrPnl);
+        itActLogsEDetailsBrdrPnl.setLayout(itActLogsEDetailsBrdrPnlLayout);
+        itActLogsEDetailsBrdrPnlLayout.setHorizontalGroup(
+            itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel10))
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itActLogsENumberLbl)
+                            .addComponent(itActLogsENameLbl)
+                            .addComponent(itActLogsPositionLbl)
+                            .addComponent(itActLogsPhnNumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsStatusLbl))
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
                                 .addGap(44, 44, 44)
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(itActLogsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                            .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(itActLogsENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
                                         .addGap(29, 29, 29)
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(hrField13, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(hrField5, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(itActLogsStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(itActLogsPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(itActLogsENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(itActLogsUActDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(56, 56, 56))))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel13)
+                    .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(itActLogsISupervisorLbl)
                                 .addGap(18, 18, 18)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrField11, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrField14, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(itActLogsISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(itActLogsPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(itActLogsDeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(itActLogsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itActLogsUActDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18))))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        itActLogsEDetailsBrdrPnlLayout.setVerticalGroup(
+            itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(hrField, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsENumberLbl)
+                            .addComponent(itActLogsENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(hrField3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsENameLbl))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel19)
-                            .addComponent(hrField5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsPhnNumberLbl)
+                            .addComponent(itActLogsPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(9, 9, 9)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(hrField11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel13))
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsISupervisorLbl))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(hrField14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsPositionLbl)
+                            .addComponent(itActLogsPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(hrField13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel10))
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsStatusLbl))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(itActLogsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsDeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(itActLogsEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(itActLogsUActDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itActLogsUActDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jPanel6.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel6.setForeground(new java.awt.Color(146, 192, 253));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        itActLogsENumberLbl.getAccessibleContext().setAccessibleName("itActLogsENumberLbl");
+        itActLogsENameLbl.getAccessibleContext().setAccessibleName("itActLogsENameLbl");
+        itActLogsENumberFld.getAccessibleContext().setAccessibleName("itActLogsENumberFld");
+        itActLogsENameFld.getAccessibleContext().setAccessibleName("itActLogsENameFld");
+        itActLogsPhnNumberFld.getAccessibleContext().setAccessibleName("itActLogsPhnNumberFld");
+        itActLogsPositionLbl.getAccessibleContext().setAccessibleName("itActLogsPositionLbl");
+        itActLogsPhnNumberLbl.getAccessibleContext().setAccessibleName("itActLogsPhnNumberLbl");
+        itActLogsISupervisorLbl.getAccessibleContext().setAccessibleName("itActLogsISupervisorLbl");
+        itActLogsISupervisorFld.getAccessibleContext().setAccessibleName("itActLogsISupervisorFld");
+        itActLogsStatusFld.getAccessibleContext().setAccessibleName("itActLogsStatusFld");
+        itActLogsPositionFld.getAccessibleContext().setAccessibleName("itActLogsPositionFld");
+        itActLogsStatusLbl.getAccessibleContext().setAccessibleName("itActLogsStatusLbl");
+        itActLogsUActDetailsPnl.getAccessibleContext().setAccessibleName("itActLogsUActDetailsPnl");
+        itActLogsUActDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itActLogsUActDetailsBrdrPnl");
+        itActLogsEditBtn.getAccessibleContext().setAccessibleName("itActLogsEditBtn");
+        itActLogsAddBtn.getAccessibleContext().setAccessibleName("itActLogsAddBtn");
+        itActLogsDeleteBtn.getAccessibleContext().setAccessibleName("itActLogsDeleteBtn");
 
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField3.setText("   Enter Employee #");
-        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField3.addActionListener(this::jTextField3ActionPerformed);
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+        itActLogsSearchPnl.setBackground(new java.awt.Color(146, 192, 253));
+        itActLogsSearchPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsSearchPnl.setForeground(new java.awt.Color(146, 192, 253));
+        itActLogsSearchPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        SearchIconImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
-        jPanel6.add(SearchIconImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+        itActLogsEENumberPnl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsEENumberPnl.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsEENumberPnl.setText("   Enter Employee #");
+        itActLogsEENumberPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsEENumberPnl.addActionListener(this::itActLogsEENumberPnlActionPerformed);
+        itActLogsSearchPnl.add(itActLogsEENumberPnl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+        itActLogsEENumberPnl.getAccessibleContext().setAccessibleName("itActLogsEENumberPnl");
 
-        jScrollPane1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        itActLogsSearchIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
+        itActLogsSearchPnl.add(itActLogsSearchIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+        itActLogsSearchIconImgLbl.getAccessibleContext().setAccessibleName("itActLogsSearchIconImgLbl");
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsDListBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        jPanel13.setBackground(new java.awt.Color(30, 58, 138));
-        jPanel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel13.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel13.setPreferredSize(new java.awt.Dimension(126, 40));
+        itActLogsDListBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
+        itActLogsDListBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
 
-        jLabel23.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("Dispute Details");
-        jLabel23.setToolTipText("");
+        itActLogsDListPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itActLogsDListPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsDListPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itActLogsDListPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        itActLogsDListLbl.setBackground(new java.awt.Color(255, 255, 255));
+        itActLogsDListLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        itActLogsDListLbl.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsDListLbl.setText("Dispute List");
+        itActLogsDListLbl.setToolTipText("");
+
+        javax.swing.GroupLayout itActLogsDListPnlLayout = new javax.swing.GroupLayout(itActLogsDListPnl);
+        itActLogsDListPnl.setLayout(itActLogsDListPnlLayout);
+        itActLogsDListPnlLayout.setHorizontalGroup(
+            itActLogsDListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsDListPnlLayout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(itActLogsDListLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
+        itActLogsDListPnlLayout.setVerticalGroup(
+            itActLogsDListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsDListPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel23)
+                .addComponent(itActLogsDListLbl)
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        jPanel16.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel16.setForeground(new java.awt.Color(178, 178, 178));
+        itActLogsDListLbl.getAccessibleContext().setAccessibleName("itActLogsDListLbl");
 
-        jPanel17.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel17.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel17.setPreferredSize(new java.awt.Dimension(126, 40));
+        itActLogsFADisputeBrdrPnl1.setBackground(new java.awt.Color(233, 233, 233));
+        itActLogsFADisputeBrdrPnl1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsFADisputeBrdrPnl1.setForeground(new java.awt.Color(178, 178, 178));
 
-        jLabel24.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel24.setText("File A Dispute");
-        jLabel24.setToolTipText("");
+        itActLogsFADisputePnl1.setBackground(new java.awt.Color(146, 192, 253));
+        itActLogsFADisputePnl1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsFADisputePnl1.setForeground(new java.awt.Color(30, 58, 138));
+        itActLogsFADisputePnl1.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
-        jPanel17.setLayout(jPanel17Layout);
-        jPanel17Layout.setHorizontalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel17Layout.createSequentialGroup()
+        itActLogsFADisputeLbl1.setBackground(new java.awt.Color(255, 255, 255));
+        itActLogsFADisputeLbl1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        itActLogsFADisputeLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsFADisputeLbl1.setText("File A Dispute");
+        itActLogsFADisputeLbl1.setToolTipText("");
+
+        javax.swing.GroupLayout itActLogsFADisputePnl1Layout = new javax.swing.GroupLayout(itActLogsFADisputePnl1);
+        itActLogsFADisputePnl1.setLayout(itActLogsFADisputePnl1Layout);
+        itActLogsFADisputePnl1Layout.setHorizontalGroup(
+            itActLogsFADisputePnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsFADisputePnl1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel24)
+                .addComponent(itActLogsFADisputeLbl1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel17Layout.setVerticalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
-                .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        itActLogsFADisputePnl1Layout.setVerticalGroup(
+            itActLogsFADisputePnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsFADisputePnl1Layout.createSequentialGroup()
+                .addComponent(itActLogsFADisputeLbl1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jLabel54.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel54.setText("Position");
+        itActLogsFADisputeLbl1.getAccessibleContext().setAccessibleName("itActLogsFADisputeLbl1");
 
-        jTextField27.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField27.setText(" ");
-        jTextField27.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField27.setEnabled(false);
-        jTextField27.addActionListener(this::jTextField27ActionPerformed);
+        itActLogsPositionLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsPositionLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsPositionLbl1.setText("Position");
 
-        jComboBox13.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jComboBox13.setForeground(new java.awt.Color(31, 41, 55));
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Submit a Ticket", "HR", "IT" }));
-        jComboBox13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jComboBox13.setEnabled(false);
-        jComboBox13.addActionListener(this::jComboBox13ActionPerformed);
+        itActLogsENameFld1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld1.setText(" ");
+        itActLogsENameFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld1.setEnabled(false);
+        itActLogsENameFld1.addActionListener(this::itActLogsENameFld1ActionPerformed);
 
-        jLabel56.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel56.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel56.setText("Reason");
+        itActLogsReasonLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsReasonLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsReasonLbl1.setText("Reason");
 
-        jTextField29.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField29.setText(" ");
-        jTextField29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField29.setEnabled(false);
-        jTextField29.addActionListener(this::jTextField29ActionPerformed);
+        itActLogsReasonFld1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsReasonFld1.setText(" ");
+        itActLogsReasonFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsReasonFld1.setEnabled(false);
+        itActLogsReasonFld1.addActionListener(this::itActLogsReasonFld1ActionPerformed);
 
-        jLabel57.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel57.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel57.setText("Status");
+        itActLogsStatusLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsStatusLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsStatusLbl1.setText("Status");
 
-        jTextField31.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField31.setText(" ");
-        jTextField31.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField31.setEnabled(false);
-        jTextField31.addActionListener(this::jTextField31ActionPerformed);
+        itActLogsENumberFld1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENumberFld1.setText(" ");
+        itActLogsENumberFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENumberFld1.setEnabled(false);
+        itActLogsENumberFld1.addActionListener(this::itActLogsENumberFld1ActionPerformed);
 
-        jTextField32.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField32.setText(" ");
-        jTextField32.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField32.setEnabled(false);
-        jTextField32.addActionListener(this::jTextField32ActionPerformed);
+        itActLogsPositionFld1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsPositionFld1.setText(" ");
+        itActLogsPositionFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPositionFld1.setEnabled(false);
+        itActLogsPositionFld1.addActionListener(this::itActLogsPositionFld1ActionPerformed);
 
-        jLabel59.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel59.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel59.setText("Employee #");
+        itActLogsENumberLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsENumberLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENumberLbl1.setText("Employee #");
 
-        jLabel60.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel60.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel60.setText("Employee Name");
+        itActLogsENameLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsENameLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameLbl1.setText("Employee Name");
 
-        jButton11.setBackground(new java.awt.Color(239, 68, 68));
-        jButton11.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setText("Deny");
-        jButton11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton11.addActionListener(this::jButton11ActionPerformed);
+        itActLogsDenyBtn1.setBackground(new java.awt.Color(239, 68, 68));
+        itActLogsDenyBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        itActLogsDenyBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsDenyBtn1.setText("Deny");
+        itActLogsDenyBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        itActLogsDenyBtn1.addActionListener(this::itActLogsDenyBtn1ActionPerformed);
 
-        jButton10.setBackground(new java.awt.Color(34, 197, 94));
-        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("Approve");
-        jButton10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton10.addActionListener(this::jButton10ActionPerformed);
+        itActLogsApproveBtn1.setBackground(new java.awt.Color(34, 197, 94));
+        itActLogsApproveBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        itActLogsApproveBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsApproveBtn1.setText("Approve");
+        itActLogsApproveBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        itActLogsApproveBtn1.addActionListener(this::itActLogsApproveBtn1ActionPerformed);
 
-        jTextField1.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField1.setEnabled(false);
-        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        itActLogsStatusFld1.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsStatusFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsStatusFld1.setEnabled(false);
+        itActLogsStatusFld1.addActionListener(this::itActLogsStatusFld1ActionPerformed);
 
-        jTextField2.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField2.setEnabled(false);
-        jTextField2.addActionListener(this::jTextField2ActionPerformed);
+        itActLogsENameFld4.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld4.setText(" ");
+        itActLogsENameFld4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld4.setEnabled(false);
+        itActLogsENameFld4.addActionListener(this::itActLogsENameFld4ActionPerformed);
 
-        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
-        jPanel16.setLayout(jPanel16Layout);
-        jPanel16Layout.setHorizontalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
+        javax.swing.GroupLayout itActLogsFADisputeBrdrPnl1Layout = new javax.swing.GroupLayout(itActLogsFADisputeBrdrPnl1);
+        itActLogsFADisputeBrdrPnl1.setLayout(itActLogsFADisputeBrdrPnl1Layout);
+        itActLogsFADisputeBrdrPnl1Layout.setHorizontalGroup(
+            itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel60, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itActLogsPositionLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsFADisputePnl1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsENumberLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(itActLogsENameLbl1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itActLogsStatusLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField32, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                        .addComponent(jTextField31, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField27, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel16Layout.createSequentialGroup()
-                            .addGap(95, 95, 95)
-                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel16Layout.createSequentialGroup()
+                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(itActLogsPositionFld1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                        .addComponent(itActLogsENumberFld1, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(itActLogsENameFld1, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(itActLogsStatusFld1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
                             .addGap(18, 18, 18)
-                            .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(itActLogsReasonFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+                            .addGap(95, 95, 95)
+                            .addComponent(itActLogsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(itActLogsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itActLogsReasonLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsENameFld4, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
-        jPanel16Layout.setVerticalGroup(
-            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel16Layout.createSequentialGroup()
+        itActLogsFADisputeBrdrPnl1Layout.setVerticalGroup(
+            itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(itActLogsFADisputePnl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(itActLogsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itActLogsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel60)
-                    .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itActLogsENameFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsENameLbl1)
+                    .addComponent(itActLogsENameFld4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel56)
-                    .addComponent(jLabel59))
+                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itActLogsENumberFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsReasonLbl1)
+                    .addComponent(itActLogsENumberLbl1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel54)
-                            .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+                        .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsPositionLbl1)
+                            .addComponent(itActLogsPositionFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel57)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField29))
+                        .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsStatusLbl1)
+                            .addComponent(itActLogsStatusFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(itActLogsReasonFld1))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jPanel18.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel18.setForeground(new java.awt.Color(178, 178, 178));
+        itActLogsFADisputePnl1.getAccessibleContext().setAccessibleName("itActLogsFADisputePnl1");
+        itActLogsPositionLbl1.getAccessibleContext().setAccessibleName("itActLogsPositionLbl1");
+        itActLogsENameFld1.getAccessibleContext().setAccessibleName("itActLogsENameFld1");
+        itActLogsReasonLbl1.getAccessibleContext().setAccessibleName("itActLogsReasonLbl1");
+        itActLogsReasonFld1.getAccessibleContext().setAccessibleName("itActLogsReasonFld1");
+        itActLogsStatusLbl1.getAccessibleContext().setAccessibleName("itActLogsStatusLbl1");
+        itActLogsENumberFld1.getAccessibleContext().setAccessibleName("itActLogsENumberFld1");
+        itActLogsPositionFld1.getAccessibleContext().setAccessibleName("itActLogsPositionFld1");
+        itActLogsENumberLbl1.getAccessibleContext().setAccessibleName("itActLogsENumberLbl1");
+        itActLogsENameLbl1.getAccessibleContext().setAccessibleName("itActLogsENameLbl1");
+        itActLogsDenyBtn1.getAccessibleContext().setAccessibleName("itActLogsDenyBtn1");
+        itActLogsApproveBtn1.getAccessibleContext().setAccessibleName("itActLogsApproveBtn1");
+        itActLogsStatusFld1.getAccessibleContext().setAccessibleName("itActLogsStatusFld1");
 
-        jPanel19.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel19.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel19.setPreferredSize(new java.awt.Dimension(126, 40));
+        itActLogsFADisputeBrdrPnl2.setBackground(new java.awt.Color(233, 233, 233));
+        itActLogsFADisputeBrdrPnl2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsFADisputeBrdrPnl2.setForeground(new java.awt.Color(178, 178, 178));
 
-        jLabel25.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel25.setText("File A Dispute");
-        jLabel25.setToolTipText("");
+        itActLogsFADisputePnl2.setBackground(new java.awt.Color(146, 192, 253));
+        itActLogsFADisputePnl2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsFADisputePnl2.setForeground(new java.awt.Color(30, 58, 138));
+        itActLogsFADisputePnl2.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
-        jPanel19.setLayout(jPanel19Layout);
-        jPanel19Layout.setHorizontalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel19Layout.createSequentialGroup()
+        itActLogsFADisputeLbl2.setBackground(new java.awt.Color(255, 255, 255));
+        itActLogsFADisputeLbl2.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        itActLogsFADisputeLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsFADisputeLbl2.setText("File A Dispute");
+        itActLogsFADisputeLbl2.setToolTipText("");
+
+        javax.swing.GroupLayout itActLogsFADisputePnl2Layout = new javax.swing.GroupLayout(itActLogsFADisputePnl2);
+        itActLogsFADisputePnl2.setLayout(itActLogsFADisputePnl2Layout);
+        itActLogsFADisputePnl2Layout.setHorizontalGroup(
+            itActLogsFADisputePnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsFADisputePnl2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel25)
+                .addComponent(itActLogsFADisputeLbl2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel19Layout.setVerticalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        itActLogsFADisputePnl2Layout.setVerticalGroup(
+            itActLogsFADisputePnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsFADisputePnl2Layout.createSequentialGroup()
+                .addComponent(itActLogsFADisputeLbl2, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jLabel68.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel68.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel68.setText("Position");
+        itActLogsFADisputeLbl2.getAccessibleContext().setAccessibleName("itActLogsFADisputeLbl2");
 
-        jTextField28.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField28.setText(" ");
-        jTextField28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField28.setEnabled(false);
-        jTextField28.addActionListener(this::jTextField28ActionPerformed);
+        itActLogsPositionLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsPositionLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsPositionLbl2.setText("Position");
 
-        jComboBox16.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jComboBox16.setForeground(new java.awt.Color(31, 41, 55));
-        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Submit a Ticket", "HR", "IT" }));
-        jComboBox16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jComboBox16.setEnabled(false);
-        jComboBox16.addActionListener(this::jComboBox16ActionPerformed);
+        itActLogsENameFld2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld2.setText(" ");
+        itActLogsENameFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld2.setEnabled(false);
+        itActLogsENameFld2.addActionListener(this::itActLogsENameFld2ActionPerformed);
 
-        jLabel69.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel69.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel69.setText("Reason");
+        itActLogsReasonLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsReasonLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsReasonLbl2.setText("Reason");
 
-        jTextField30.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField30.setText(" ");
-        jTextField30.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField30.setEnabled(false);
-        jTextField30.addActionListener(this::jTextField30ActionPerformed);
+        itActLogsReasonFld2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsReasonFld2.setText(" ");
+        itActLogsReasonFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsReasonFld2.setEnabled(false);
+        itActLogsReasonFld2.addActionListener(this::itActLogsReasonFld2ActionPerformed);
 
-        jLabel71.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel71.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel71.setText("Status");
+        itActLogsStatusLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsStatusLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsStatusLbl2.setText("Status");
 
-        jTextField41.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField41.setText(" ");
-        jTextField41.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField41.setEnabled(false);
-        jTextField41.addActionListener(this::jTextField41ActionPerformed);
+        itActLogsENumberFld2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENumberFld2.setText(" ");
+        itActLogsENumberFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENumberFld2.setEnabled(false);
+        itActLogsENumberFld2.addActionListener(this::itActLogsENumberFld2ActionPerformed);
 
-        jTextField42.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField42.setText(" ");
-        jTextField42.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField42.setEnabled(false);
-        jTextField42.addActionListener(this::jTextField42ActionPerformed);
+        itActLogsPositionFld2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsPositionFld2.setText(" ");
+        itActLogsPositionFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPositionFld2.setEnabled(false);
+        itActLogsPositionFld2.addActionListener(this::itActLogsPositionFld2ActionPerformed);
 
-        jLabel72.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel72.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel72.setText("Employee #");
+        itActLogsENumberLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsENumberLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENumberLbl2.setText("Employee #");
 
-        jLabel73.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel73.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel73.setText("Employee Name");
+        itActLogsENameLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsENameLbl2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameLbl2.setText("Employee Name");
 
-        jButton12.setBackground(new java.awt.Color(239, 68, 68));
-        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setText("Deny");
-        jButton12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton12.addActionListener(this::jButton12ActionPerformed);
+        itActLogsDenyBtn2.setBackground(new java.awt.Color(239, 68, 68));
+        itActLogsDenyBtn2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        itActLogsDenyBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsDenyBtn2.setText("Deny");
+        itActLogsDenyBtn2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        itActLogsDenyBtn2.addActionListener(this::itActLogsDenyBtn2ActionPerformed);
 
-        jButton13.setBackground(new java.awt.Color(34, 197, 94));
-        jButton13.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(255, 255, 255));
-        jButton13.setText("Approve");
-        jButton13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton13.addActionListener(this::jButton13ActionPerformed);
+        itActLogsApproveBtn2.setBackground(new java.awt.Color(34, 197, 94));
+        itActLogsApproveBtn2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        itActLogsApproveBtn2.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsApproveBtn2.setText("Approve");
+        itActLogsApproveBtn2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        itActLogsApproveBtn2.addActionListener(this::itActLogsApproveBtn2ActionPerformed);
 
-        jTextField5.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField5.setEnabled(false);
-        jTextField5.addActionListener(this::jTextField5ActionPerformed);
+        itActLogsStatusFld2.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsStatusFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsStatusFld2.setEnabled(false);
+        itActLogsStatusFld2.addActionListener(this::itActLogsStatusFld2ActionPerformed);
 
-        jTextField6.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField6.setEnabled(false);
-        jTextField6.addActionListener(this::jTextField6ActionPerformed);
+        itActLogsENameFld5.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld5.setText(" ");
+        itActLogsENameFld5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld5.setEnabled(false);
+        itActLogsENameFld5.addActionListener(this::itActLogsENameFld5ActionPerformed);
 
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
+        javax.swing.GroupLayout itActLogsFADisputeBrdrPnl2Layout = new javax.swing.GroupLayout(itActLogsFADisputeBrdrPnl2);
+        itActLogsFADisputeBrdrPnl2.setLayout(itActLogsFADisputeBrdrPnl2Layout);
+        itActLogsFADisputeBrdrPnl2Layout.setHorizontalGroup(
+            itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel73, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itActLogsPositionLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsFADisputePnl2, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsENumberLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(itActLogsENameLbl2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itActLogsStatusLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField42, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                        .addComponent(jTextField41, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField28, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox16, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel18Layout.createSequentialGroup()
+                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(itActLogsPositionFld2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                        .addComponent(itActLogsENumberFld2, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(itActLogsENameFld2, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(itActLogsStatusFld2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
                             .addGap(95, 95, 95)
-                            .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsApproveBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel18Layout.createSequentialGroup()
+                            .addComponent(itActLogsDenyBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
                             .addGap(18, 18, 18)
-                            .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(itActLogsReasonFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itActLogsReasonLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsENameFld5, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
+        itActLogsFADisputeBrdrPnl2Layout.setVerticalGroup(
+            itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(itActLogsFADisputePnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(itActLogsApproveBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itActLogsDenyBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel73)
-                    .addComponent(jComboBox16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itActLogsENameFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsENameLbl2)
+                    .addComponent(itActLogsENameFld5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel69)
-                    .addComponent(jLabel72))
+                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itActLogsENumberFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsReasonLbl2)
+                    .addComponent(itActLogsENumberLbl2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel68)
-                            .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
+                        .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsPositionLbl2)
+                            .addComponent(itActLogsPositionFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel71)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField30))
+                        .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsStatusLbl2)
+                            .addComponent(itActLogsStatusFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(itActLogsReasonFld2))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jPanel20.setBackground(new java.awt.Color(233, 233, 233));
-        jPanel20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel20.setForeground(new java.awt.Color(178, 178, 178));
+        itActLogsFADisputePnl2.getAccessibleContext().setAccessibleName("itActLogsFADisputePnl2");
+        itActLogsPositionLbl2.getAccessibleContext().setAccessibleName("itActLogsPositionLbl2");
+        itActLogsENameFld2.getAccessibleContext().setAccessibleName("itActLogsENameFld2");
+        itActLogsReasonLbl2.getAccessibleContext().setAccessibleName("itActLogsReasonLbl2");
+        itActLogsReasonFld2.getAccessibleContext().setAccessibleName("itActLogsReasonFld2");
+        itActLogsStatusLbl2.getAccessibleContext().setAccessibleName("itActLogsStatusLbl2");
+        itActLogsENumberFld2.getAccessibleContext().setAccessibleName("itActLogsENumberFld2");
+        itActLogsPositionFld2.getAccessibleContext().setAccessibleName("itActLogsPositionFld2");
+        itActLogsENumberLbl2.getAccessibleContext().setAccessibleName("itActLogsENumberLbl2");
+        itActLogsENameLbl2.getAccessibleContext().setAccessibleName("itActLogsENameLbl2");
+        itActLogsDenyBtn2.getAccessibleContext().setAccessibleName("itActLogsDenyBtn2");
+        itActLogsApproveBtn2.getAccessibleContext().setAccessibleName("itActLogsApproveBtn2");
+        itActLogsStatusFld2.getAccessibleContext().setAccessibleName("itActLogsStatusFld2");
 
-        jPanel25.setBackground(new java.awt.Color(146, 192, 253));
-        jPanel25.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jPanel25.setForeground(new java.awt.Color(30, 58, 138));
-        jPanel25.setPreferredSize(new java.awt.Dimension(126, 40));
+        itActLogsFADisputeBrdrPnl3.setBackground(new java.awt.Color(233, 233, 233));
+        itActLogsFADisputeBrdrPnl3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsFADisputeBrdrPnl3.setForeground(new java.awt.Color(178, 178, 178));
 
-        jLabel26.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel26.setText("File A Dispute");
-        jLabel26.setToolTipText("");
+        itActLogsFADisputePnl3.setBackground(new java.awt.Color(146, 192, 253));
+        itActLogsFADisputePnl3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsFADisputePnl3.setForeground(new java.awt.Color(30, 58, 138));
+        itActLogsFADisputePnl3.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
-        jPanel25.setLayout(jPanel25Layout);
-        jPanel25Layout.setHorizontalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel25Layout.createSequentialGroup()
+        itActLogsFADisputeLbl3.setBackground(new java.awt.Color(255, 255, 255));
+        itActLogsFADisputeLbl3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        itActLogsFADisputeLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsFADisputeLbl3.setText("File A Dispute");
+        itActLogsFADisputeLbl3.setToolTipText("");
+
+        javax.swing.GroupLayout itActLogsFADisputePnl3Layout = new javax.swing.GroupLayout(itActLogsFADisputePnl3);
+        itActLogsFADisputePnl3.setLayout(itActLogsFADisputePnl3Layout);
+        itActLogsFADisputePnl3Layout.setHorizontalGroup(
+            itActLogsFADisputePnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsFADisputePnl3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel26)
+                .addComponent(itActLogsFADisputeLbl3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel25Layout.setVerticalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel25Layout.createSequentialGroup()
-                .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        itActLogsFADisputePnl3Layout.setVerticalGroup(
+            itActLogsFADisputePnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsFADisputePnl3Layout.createSequentialGroup()
+                .addComponent(itActLogsFADisputeLbl3, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jLabel74.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel74.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel74.setText("Position");
+        itActLogsFADisputeLbl3.getAccessibleContext().setAccessibleName("itActLogsFADisputeLbl3");
 
-        jTextField43.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField43.setText(" ");
-        jTextField43.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField43.setEnabled(false);
-        jTextField43.addActionListener(this::jTextField43ActionPerformed);
+        itActLogsPositionLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsPositionLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsPositionLbl3.setText("Position");
 
-        jComboBox17.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        jComboBox17.setForeground(new java.awt.Color(31, 41, 55));
-        jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Submit a Ticket", "HR", "IT" }));
-        jComboBox17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jComboBox17.setEnabled(false);
-        jComboBox17.addActionListener(this::jComboBox17ActionPerformed);
+        itActLogsENameFld3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld3.setText(" ");
+        itActLogsENameFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld3.setEnabled(false);
+        itActLogsENameFld3.addActionListener(this::itActLogsENameFld3ActionPerformed);
 
-        jLabel75.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel75.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel75.setText("Reason");
+        itActLogsReasonLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsReasonLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsReasonLbl3.setText("Reason");
 
-        jTextField44.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField44.setText(" ");
-        jTextField44.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField44.setEnabled(false);
-        jTextField44.addActionListener(this::jTextField44ActionPerformed);
+        itActLogsReasonFld3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsReasonFld3.setText(" ");
+        itActLogsReasonFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsReasonFld3.setEnabled(false);
+        itActLogsReasonFld3.addActionListener(this::itActLogsReasonFld3ActionPerformed);
 
-        jLabel76.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel76.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel76.setText("Status");
+        itActLogsStatusLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsStatusLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsStatusLbl3.setText("Status");
 
-        jTextField45.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField45.setText(" ");
-        jTextField45.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField45.setEnabled(false);
-        jTextField45.addActionListener(this::jTextField45ActionPerformed);
+        itActLogsENumberFld3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENumberFld3.setText(" ");
+        itActLogsENumberFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENumberFld3.setEnabled(false);
+        itActLogsENumberFld3.addActionListener(this::itActLogsENumberFld3ActionPerformed);
 
-        jTextField46.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField46.setText(" ");
-        jTextField46.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField46.setEnabled(false);
-        jTextField46.addActionListener(this::jTextField46ActionPerformed);
+        itActLogsPositionFld3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsPositionFld3.setText(" ");
+        itActLogsPositionFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPositionFld3.setEnabled(false);
+        itActLogsPositionFld3.addActionListener(this::itActLogsPositionFld3ActionPerformed);
 
-        jLabel77.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel77.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel77.setText("Employee #");
+        itActLogsENumberLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsENumberLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENumberLbl3.setText("Employee #");
 
-        jLabel78.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel78.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel78.setText("Employee Name");
+        itActLogsENameLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itActLogsENameLbl3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameLbl3.setText("Employee Name");
 
-        jButton14.setBackground(new java.awt.Color(239, 68, 68));
-        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(255, 255, 255));
-        jButton14.setText("Deny");
-        jButton14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton14.addActionListener(this::jButton14ActionPerformed);
+        itActLogsDenyBtn3.setBackground(new java.awt.Color(239, 68, 68));
+        itActLogsDenyBtn3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        itActLogsDenyBtn3.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsDenyBtn3.setText("Deny");
+        itActLogsDenyBtn3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        itActLogsDenyBtn3.addActionListener(this::itActLogsDenyBtn3ActionPerformed);
 
-        jButton15.setBackground(new java.awt.Color(34, 197, 94));
-        jButton15.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(255, 255, 255));
-        jButton15.setText("Approve");
-        jButton15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        jButton15.addActionListener(this::jButton15ActionPerformed);
+        itActLogsApproveBtn3.setBackground(new java.awt.Color(34, 197, 94));
+        itActLogsApproveBtn3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        itActLogsApproveBtn3.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsApproveBtn3.setText("Approve");
+        itActLogsApproveBtn3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        itActLogsApproveBtn3.addActionListener(this::itActLogsApproveBtn3ActionPerformed);
 
-        jTextField9.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField9.setEnabled(false);
-        jTextField9.addActionListener(this::jTextField9ActionPerformed);
+        itActLogsStatusFld3.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsStatusFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsStatusFld3.setEnabled(false);
+        itActLogsStatusFld3.addActionListener(this::itActLogsStatusFld3ActionPerformed);
 
-        jTextField10.setForeground(new java.awt.Color(31, 41, 55));
-        jTextField10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTextField10.setEnabled(false);
-        jTextField10.addActionListener(this::jTextField10ActionPerformed);
+        itActLogsENameFld6.setForeground(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld6.setText(" ");
+        itActLogsENameFld6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld6.setEnabled(false);
+        itActLogsENameFld6.addActionListener(this::itActLogsENameFld6ActionPerformed);
 
-        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
-        jPanel20.setLayout(jPanel20Layout);
-        jPanel20Layout.setHorizontalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
+        javax.swing.GroupLayout itActLogsFADisputeBrdrPnl3Layout = new javax.swing.GroupLayout(itActLogsFADisputeBrdrPnl3);
+        itActLogsFADisputeBrdrPnl3.setLayout(itActLogsFADisputeBrdrPnl3Layout);
+        itActLogsFADisputeBrdrPnl3Layout.setHorizontalGroup(
+            itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel78, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel76, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itActLogsPositionLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsFADisputePnl3, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsENumberLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(itActLogsENameLbl3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itActLogsStatusLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField46, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                        .addComponent(jTextField45, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField43, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(jTextField9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel20Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel75, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox17, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel20Layout.createSequentialGroup()
-                            .addGap(95, 95, 95)
-                            .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel20Layout.createSequentialGroup()
-                            .addGap(18, 18, 18)
-                            .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(itActLogsPositionFld3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                        .addComponent(itActLogsENumberFld3, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(itActLogsENameFld3, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(itActLogsStatusFld3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addComponent(itActLogsApproveBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itActLogsDenyBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itActLogsReasonLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsReasonFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itActLogsENameFld6, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
-        jPanel20Layout.setVerticalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel20Layout.createSequentialGroup()
+        itActLogsFADisputeBrdrPnl3Layout.setVerticalGroup(
+            itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(itActLogsFADisputePnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(itActLogsApproveBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itActLogsDenyBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField43, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel78)
-                    .addComponent(jComboBox17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itActLogsENameFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsENameLbl3)
+                    .addComponent(itActLogsENameFld6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel75)
-                    .addComponent(jLabel77))
+                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itActLogsENumberFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsReasonLbl3)
+                    .addComponent(itActLogsENumberLbl3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel20Layout.createSequentialGroup()
-                        .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel74)
-                            .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
+                        .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsPositionLbl3)
+                            .addComponent(itActLogsPositionFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel76)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField44))
+                        .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itActLogsStatusLbl3)
+                            .addComponent(itActLogsStatusFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(itActLogsReasonFld3))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(236, 236, 236)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        itActLogsFADisputePnl3.getAccessibleContext().setAccessibleName("itActLogsFADisputePnl3");
+        itActLogsPositionLbl3.getAccessibleContext().setAccessibleName("itActLogsPositionLbl3");
+        itActLogsENameFld3.getAccessibleContext().setAccessibleName("itActLogsENameFld3");
+        itActLogsReasonLbl3.getAccessibleContext().setAccessibleName("itActLogsReasonLbl3");
+        itActLogsReasonFld3.getAccessibleContext().setAccessibleName("itActLogsReasonFld3");
+        itActLogsStatusLbl3.getAccessibleContext().setAccessibleName("itActLogsStatusLbl3");
+        itActLogsENumberFld3.getAccessibleContext().setAccessibleName("itActLogsENumberFld3");
+        itActLogsPositionFld3.getAccessibleContext().setAccessibleName("itActLogsPositionFld3");
+        itActLogsENumberLbl3.getAccessibleContext().setAccessibleName("itActLogsENumberLbl3");
+        itActLogsENameLbl3.getAccessibleContext().setAccessibleName("itActLogsENameLbl3");
+        itActLogsDenyBtn3.getAccessibleContext().setAccessibleName("itActLogsDenyBtn3");
+        itActLogsApproveBtn3.getAccessibleContext().setAccessibleName("itActLogsApproveBtn3");
+        itActLogsStatusFld3.getAccessibleContext().setAccessibleName("itActLogsStatusFld3");
+
+        javax.swing.GroupLayout itActLogsDListBrdrPnlLayout = new javax.swing.GroupLayout(itActLogsDListBrdrPnl);
+        itActLogsDListBrdrPnl.setLayout(itActLogsDListBrdrPnlLayout);
+        itActLogsDListBrdrPnlLayout.setHorizontalGroup(
+            itActLogsDListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsDListBrdrPnlLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(itActLogsDListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itActLogsFADisputeBrdrPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsFADisputeBrdrPnl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsFADisputeBrdrPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsDListBrdrPnlLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(itActLogsDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(253, 253, 253))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        itActLogsDListBrdrPnlLayout.setVerticalGroup(
+            itActLogsDListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itActLogsDListBrdrPnlLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsFADisputeBrdrPnl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsFADisputeBrdrPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
-                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsFADisputeBrdrPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18))
         );
 
-        jScrollPane1.setViewportView(jPanel5);
+        itActLogsDListPnl.getAccessibleContext().setAccessibleName("itActLogsDListPnl");
+        itActLogsFADisputeBrdrPnl1.getAccessibleContext().setAccessibleName("itActLogsFADisputeBrdrPnl1");
+        itActLogsFADisputeBrdrPnl2.getAccessibleContext().setAccessibleName("itActLogsFADisputeBrdrPnl3");
+        itActLogsFADisputeBrdrPnl3.getAccessibleContext().setAccessibleName("itActLogsFADisputeBrdrPnl2");
+
+        itActLogsDListBrdrScrlPnl.setViewportView(itActLogsDListBrdrPnl);
+        itActLogsDListBrdrPnl.getAccessibleContext().setAccessibleName("itActLogsDListBrdrPnl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itActLogsActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE))
+                        .addComponent(itActLogsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itActLogsEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE)
+                    .addComponent(itActLogsDListBrdrScrlPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itActLogsActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itActLogsDListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        itActLogsSidebarPnl.getAccessibleContext().setAccessibleName("itActLogsSidebarPnl");
+        itActLogsActLogsPnl.getAccessibleContext().setAccessibleName("itActLogsActLogsPnl");
+        itActLogsEDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itActLogsEDetailsBrdrPnl");
+        itActLogsSearchPnl.getAccessibleContext().setAccessibleName("itActLogsSearchPnl");
+        itActLogsDListBrdrScrlPnl.getAccessibleContext().setAccessibleName("itActLogsDListBrdrScrlPnl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void itActLogsActLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsActLogsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_itActLogsActLogsBtnActionPerformed
 
-    private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
+    private void itActLogsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardFrame().setVisible(true);
-    }//GEN-LAST:event_mainDashboardBtnActionPerformed
+    }//GEN-LAST:event_itActLogsMainDashboardBtnActionPerformed
 
-    private void hrFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrFieldActionPerformed
+    private void itActLogsENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrFieldActionPerformed
+    }//GEN-LAST:event_itActLogsENumberFldActionPerformed
 
-    private void hrField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField3ActionPerformed
+    private void itActLogsENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField3ActionPerformed
+    }//GEN-LAST:event_itActLogsENameFldActionPerformed
 
-    private void hrField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField5ActionPerformed
+    private void itActLogsPhnNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPhnNumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField5ActionPerformed
+    }//GEN-LAST:event_itActLogsPhnNumberFldActionPerformed
 
-    private void hrField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField11ActionPerformed
+    private void itActLogsISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsISupervisorFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField11ActionPerformed
+    }//GEN-LAST:event_itActLogsISupervisorFldActionPerformed
 
-    private void hrField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField13ActionPerformed
+    private void itActLogsStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField13ActionPerformed
+    }//GEN-LAST:event_itActLogsStatusFldActionPerformed
 
-    private void hrField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField14ActionPerformed
+    private void itActLogsPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField14ActionPerformed
+    }//GEN-LAST:event_itActLogsPositionFldActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void itActLogsAddBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsAddBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_itActLogsAddBtnActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void itActLogsEditBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsEditBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_itActLogsEditBtnActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void itActLogsDeleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDeleteBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_itActLogsDeleteBtnActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void itActLogsEENumberPnlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsEENumberPnlActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_itActLogsEENumberPnlActionPerformed
 
-    private void hrField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField15ActionPerformed
+    private void itActLogsUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsUsernameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField15ActionPerformed
+    }//GEN-LAST:event_itActLogsUsernameFldActionPerformed
 
-    private void hrField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrField16ActionPerformed
+    private void itActLogsPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPasswordFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrField16ActionPerformed
+    }//GEN-LAST:event_itActLogsPasswordFldActionPerformed
 
-    private void jTextField27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField27ActionPerformed
+    private void itActLogsENameFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField27ActionPerformed
+    }//GEN-LAST:event_itActLogsENameFld1ActionPerformed
 
-    private void jComboBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox13ActionPerformed
+    private void itActLogsReasonFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox13ActionPerformed
+    }//GEN-LAST:event_itActLogsReasonFld1ActionPerformed
 
-    private void jTextField29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField29ActionPerformed
+    private void itActLogsENumberFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField29ActionPerformed
+    }//GEN-LAST:event_itActLogsENumberFld1ActionPerformed
 
-    private void jTextField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField31ActionPerformed
+    private void itActLogsPositionFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField31ActionPerformed
+    }//GEN-LAST:event_itActLogsPositionFld1ActionPerformed
 
-    private void jTextField32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField32ActionPerformed
+    private void itActLogsDenyBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField32ActionPerformed
+    }//GEN-LAST:event_itActLogsDenyBtn1ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void itActLogsApproveBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_itActLogsApproveBtn1ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void itActLogsENameFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_itActLogsENameFld3ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void itActLogsReasonFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_itActLogsReasonFld3ActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void itActLogsENumberFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_itActLogsENumberFld3ActionPerformed
 
-    private void jTextField28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField28ActionPerformed
+    private void itActLogsPositionFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField28ActionPerformed
+    }//GEN-LAST:event_itActLogsPositionFld3ActionPerformed
 
-    private void jComboBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox16ActionPerformed
+    private void itActLogsDenyBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox16ActionPerformed
+    }//GEN-LAST:event_itActLogsDenyBtn3ActionPerformed
 
-    private void jTextField30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField30ActionPerformed
+    private void itActLogsApproveBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField30ActionPerformed
+    }//GEN-LAST:event_itActLogsApproveBtn3ActionPerformed
 
-    private void jTextField41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField41ActionPerformed
+    private void itActLogsStatusFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField41ActionPerformed
+    }//GEN-LAST:event_itActLogsStatusFld3ActionPerformed
 
-    private void jTextField42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField42ActionPerformed
+    private void itActLogsENameFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField42ActionPerformed
+    }//GEN-LAST:event_itActLogsENameFld2ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void itActLogsReasonFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_itActLogsReasonFld2ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void itActLogsENumberFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_itActLogsENumberFld2ActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void itActLogsPositionFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_itActLogsPositionFld2ActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void itActLogsDenyBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_itActLogsDenyBtn2ActionPerformed
 
-    private void jTextField43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField43ActionPerformed
+    private void itActLogsApproveBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField43ActionPerformed
+    }//GEN-LAST:event_itActLogsApproveBtn2ActionPerformed
 
-    private void jComboBox17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox17ActionPerformed
+    private void itActLogsStatusFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox17ActionPerformed
+    }//GEN-LAST:event_itActLogsStatusFld2ActionPerformed
 
-    private void jTextField44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField44ActionPerformed
+    private void itActLogsENameFld4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField44ActionPerformed
+    }//GEN-LAST:event_itActLogsENameFld4ActionPerformed
 
-    private void jTextField45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField45ActionPerformed
+    private void itActLogsENameFld5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField45ActionPerformed
+    }//GEN-LAST:event_itActLogsENameFld5ActionPerformed
 
-    private void jTextField46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField46ActionPerformed
+    private void itActLogsENameFld6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField46ActionPerformed
+    }//GEN-LAST:event_itActLogsENameFld6ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void itActLogsStatusFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
-
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
-
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
-
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
+    }//GEN-LAST:event_itActLogsStatusFld1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1240,92 +1288,89 @@ public class ITActivityLogs extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MotorPHIconImgLbl;
-    private javax.swing.JLabel SearchIconImg;
-    private javax.swing.JTextField hrField;
-    private javax.swing.JTextField hrField11;
-    private javax.swing.JTextField hrField13;
-    private javax.swing.JTextField hrField14;
-    private javax.swing.JTextField hrField15;
-    private javax.swing.JTextField hrField16;
-    private javax.swing.JTextField hrField3;
-    private javax.swing.JTextField hrField5;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JComboBox<String> jComboBox13;
-    private javax.swing.JComboBox<String> jComboBox16;
-    private javax.swing.JComboBox<String> jComboBox17;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel71;
-    private javax.swing.JLabel jLabel72;
-    private javax.swing.JLabel jLabel73;
-    private javax.swing.JLabel jLabel74;
-    private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField42;
-    private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField44;
-    private javax.swing.JTextField jTextField45;
-    private javax.swing.JTextField jTextField46;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField9;
-    private javax.swing.JButton mainDashboardBtn;
+    private javax.swing.JButton itActLogsActLogsBtn;
+    private javax.swing.JLabel itActLogsActLogsLbl;
+    private javax.swing.JPanel itActLogsActLogsPnl;
+    private javax.swing.JButton itActLogsAddBtn;
+    private javax.swing.JButton itActLogsApproveBtn1;
+    private javax.swing.JButton itActLogsApproveBtn2;
+    private javax.swing.JButton itActLogsApproveBtn3;
+    private javax.swing.JPanel itActLogsDListBrdrPnl;
+    private javax.swing.JScrollPane itActLogsDListBrdrScrlPnl;
+    private javax.swing.JLabel itActLogsDListLbl;
+    private javax.swing.JPanel itActLogsDListPnl;
+    private javax.swing.JButton itActLogsDeleteBtn;
+    private javax.swing.JButton itActLogsDenyBtn1;
+    private javax.swing.JButton itActLogsDenyBtn2;
+    private javax.swing.JButton itActLogsDenyBtn3;
+    private javax.swing.JPanel itActLogsEDetailsBrdrPnl;
+    private javax.swing.JTextField itActLogsEENumberPnl;
+    private javax.swing.JTextField itActLogsENameFld;
+    private javax.swing.JTextField itActLogsENameFld1;
+    private javax.swing.JTextField itActLogsENameFld2;
+    private javax.swing.JTextField itActLogsENameFld3;
+    private javax.swing.JTextField itActLogsENameFld4;
+    private javax.swing.JTextField itActLogsENameFld5;
+    private javax.swing.JTextField itActLogsENameFld6;
+    private javax.swing.JLabel itActLogsENameLbl;
+    private javax.swing.JLabel itActLogsENameLbl1;
+    private javax.swing.JLabel itActLogsENameLbl2;
+    private javax.swing.JLabel itActLogsENameLbl3;
+    private javax.swing.JTextField itActLogsENumberFld;
+    private javax.swing.JTextField itActLogsENumberFld1;
+    private javax.swing.JTextField itActLogsENumberFld2;
+    private javax.swing.JTextField itActLogsENumberFld3;
+    private javax.swing.JLabel itActLogsENumberLbl;
+    private javax.swing.JLabel itActLogsENumberLbl1;
+    private javax.swing.JLabel itActLogsENumberLbl2;
+    private javax.swing.JLabel itActLogsENumberLbl3;
+    private javax.swing.JButton itActLogsEditBtn;
+    private javax.swing.JPanel itActLogsFADisputeBrdrPnl1;
+    private javax.swing.JPanel itActLogsFADisputeBrdrPnl2;
+    private javax.swing.JPanel itActLogsFADisputeBrdrPnl3;
+    private javax.swing.JLabel itActLogsFADisputeLbl1;
+    private javax.swing.JLabel itActLogsFADisputeLbl2;
+    private javax.swing.JLabel itActLogsFADisputeLbl3;
+    private javax.swing.JPanel itActLogsFADisputePnl1;
+    private javax.swing.JPanel itActLogsFADisputePnl2;
+    private javax.swing.JPanel itActLogsFADisputePnl3;
+    private javax.swing.JTextField itActLogsISupervisorFld;
+    private javax.swing.JLabel itActLogsISupervisorLbl;
+    private javax.swing.JButton itActLogsMainDashboardBtn;
+    private javax.swing.JLabel itActLogsMotorPHIconImgLbl;
+    private javax.swing.JTextField itActLogsPasswordFld;
+    private javax.swing.JLabel itActLogsPasswordLbl;
+    private javax.swing.JTextField itActLogsPhnNumberFld;
+    private javax.swing.JLabel itActLogsPhnNumberLbl;
+    private javax.swing.JTextField itActLogsPositionFld;
+    private javax.swing.JTextField itActLogsPositionFld1;
+    private javax.swing.JTextField itActLogsPositionFld2;
+    private javax.swing.JTextField itActLogsPositionFld3;
+    private javax.swing.JLabel itActLogsPositionLbl;
+    private javax.swing.JLabel itActLogsPositionLbl1;
+    private javax.swing.JLabel itActLogsPositionLbl2;
+    private javax.swing.JLabel itActLogsPositionLbl3;
+    private javax.swing.JTextField itActLogsReasonFld1;
+    private javax.swing.JTextField itActLogsReasonFld2;
+    private javax.swing.JTextField itActLogsReasonFld3;
+    private javax.swing.JLabel itActLogsReasonLbl1;
+    private javax.swing.JLabel itActLogsReasonLbl2;
+    private javax.swing.JLabel itActLogsReasonLbl3;
+    private javax.swing.JLabel itActLogsSearchIconImgLbl;
+    private javax.swing.JPanel itActLogsSearchPnl;
+    private javax.swing.JPanel itActLogsSidebarPnl;
+    private javax.swing.JTextField itActLogsStatusFld;
+    private javax.swing.JTextField itActLogsStatusFld1;
+    private javax.swing.JTextField itActLogsStatusFld2;
+    private javax.swing.JTextField itActLogsStatusFld3;
+    private javax.swing.JLabel itActLogsStatusLbl;
+    private javax.swing.JLabel itActLogsStatusLbl1;
+    private javax.swing.JLabel itActLogsStatusLbl2;
+    private javax.swing.JLabel itActLogsStatusLbl3;
+    private javax.swing.JPanel itActLogsUActDetailsBrdrPnl;
+    private javax.swing.JLabel itActLogsUActDetailsLbl;
+    private javax.swing.JPanel itActLogsUActDetailsPnl;
+    private javax.swing.JTextField itActLogsUsernameFld;
+    private javax.swing.JLabel itActLogsUsernameLbl;
     // End of variables declaration//GEN-END:variables
 }

@@ -24,51 +24,54 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Component id="jPanel15" min="-2" max="-2" attributes="0"/>
+              <Component id="hrRDetailsSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel16" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane2" min="-2" pref="693" max="-2" attributes="0"/>
+                  <Component id="hrRDetailsRListBrdrScrlPnl" min="-2" pref="693" max="-2" attributes="0"/>
+                  <Component id="hrRDetailsRListPnl" min="-2" pref="175" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel15" min="-2" max="-2" attributes="0"/>
+          <Component id="hrRDetailsSidebarPnl" min="-2" max="-2" attributes="0"/>
           <Group type="102" attributes="0">
               <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-              <Component id="jPanel16" min="-2" max="-2" attributes="0"/>
+              <Component id="hrRDetailsRListPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jScrollPane2" min="-2" pref="576" max="-2" attributes="0"/>
+              <Component id="hrRDetailsRListBrdrScrlPnl" min="-2" pref="576" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel15">
+    <Container class="javax.swing.JPanel" name="hrRDetailsSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsSidebarPnl"/>
+      </AccessibilityProperties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="mainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="hrRDetailsMainDashboardBtn" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton6" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="hrRDetailsRListBtn" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                          <Component id="MotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="hrRDetailsMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jButton5" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="hrRDetailsRDetailsBtn" min="-2" pref="216" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -78,23 +81,23 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="MotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrRDetailsMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
-                          <Component id="jButton5" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="hrRDetailsRDetailsBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jButton6" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="hrRDetailsRListBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace pref="319" max="32767" attributes="0"/>
-                  <Component id="mainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="hrRDetailsMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton5">
+        <Component class="javax.swing.JButton" name="hrRDetailsRDetailsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -108,11 +111,14 @@
             <Property name="text" type="java.lang.String" value="Request Details"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRDetailsBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsRDetailsBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="mainDashboardBtn">
+        <Component class="javax.swing.JButton" name="hrRDetailsMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -127,21 +133,24 @@
             <Property name="horizontalTextPosition" type="int" value="4"/>
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsMainDashboardBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="MotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="hrRDetailsMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="MotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton6">
+        <Component class="javax.swing.JButton" name="hrRDetailsRListBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -155,13 +164,16 @@
             <Property name="text" type="java.lang.String" value="Request List"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRListBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsRListBtnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel16">
+    <Container class="javax.swing.JPanel" name="hrRDetailsRListPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -177,12 +189,15 @@
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRListPnl"/>
+      </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="hrRDetailsRListLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -190,17 +205,20 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value=" Request Details"/>
+            <Property name="text" type="java.lang.String" value=" Request List"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRListLbl"/>
+          </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="7" y="1" width="200" height="46"/>
+              <AbsoluteConstraints x="7" y="1" width="170" height="46"/>
             </Constraint>
           </Constraints>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+    <Container class="javax.swing.JScrollPane" name="hrRDetailsRListBrdrScrlPnl">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -210,10 +228,13 @@
           </Border>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRListBrdrScrlPnl"/>
+      </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel7">
+        <Container class="javax.swing.JPanel" name="hrRDetailsRListBrdrPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -225,6 +246,9 @@
               <Dimension value="[650, 930]"/>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRListBrdrPnl"/>
+          </AccessibilityProperties>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -232,9 +256,9 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jPanel46" min="-2" pref="647" max="-2" attributes="0"/>
-                          <Component id="jPanel44" min="-2" pref="647" max="-2" attributes="0"/>
-                          <Component id="jPanel42" min="-2" pref="647" max="-2" attributes="0"/>
+                          <Component id="hrRDetailsFARequestBrdrPnl3" min="-2" pref="647" max="-2" attributes="0"/>
+                          <Component id="hrRDetailsFARequestBrdrPnl2" min="-2" pref="647" max="-2" attributes="0"/>
+                          <Component id="hrRDetailsFARequestBrdrPnl1" min="-2" pref="647" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="18" max="32767" attributes="0"/>
                   </Group>
@@ -244,18 +268,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                      <Component id="jPanel42" min="-2" pref="289" max="-2" attributes="0"/>
+                      <Component id="hrRDetailsFARequestBrdrPnl1" min="-2" pref="289" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jPanel44" min="-2" pref="289" max="-2" attributes="0"/>
+                      <Component id="hrRDetailsFARequestBrdrPnl2" min="-2" pref="289" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jPanel46" min="-2" pref="289" max="-2" attributes="0"/>
+                      <Component id="hrRDetailsFARequestBrdrPnl3" min="-2" pref="289" max="-2" attributes="0"/>
                       <EmptySpace pref="14" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JPanel" name="jPanel42">
+            <Container class="javax.swing.JPanel" name="hrRDetailsFARequestBrdrPnl1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="e9" green="e9" red="e9" type="rgb"/>
@@ -275,6 +299,9 @@
                   <Dimension value="[661, 257]"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsFARequestBrdrPnl1"/>
+              </AccessibilityProperties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -283,61 +310,61 @@
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jPanel43" min="-2" pref="165" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsFARequestPnl" min="-2" pref="165" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton31" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsApproveBtn1" min="-2" pref="89" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                  <Component id="jButton32" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsDenyBtn1" min="-2" pref="89" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel98" min="-2" pref="160" max="-2" attributes="0"/>
-                                              <Component id="jLabel97" min="-2" pref="116" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsENameLbl1" min="-2" pref="160" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsENumberLbl1" min="-2" pref="116" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jTextField73" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsENameFld1" min="-2" pref="150" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jRadioButton24" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jTextField74" min="-2" pref="150" max="-2" attributes="0"/>
+                                                      <Component id="hrRDetailsOvertimeRBtn1" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="hrRDetailsENumberFld1" min="-2" pref="150" max="-2" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel95" min="-2" pref="80" max="-2" attributes="0"/>
+                                          <Component id="hrRDetailsReasonLbl1" min="-2" pref="80" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="280" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel96" min="-2" pref="80" max="-2" attributes="0"/>
-                                              <Component id="jLabel94" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsStatusLbl1" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsPositionLbl1" min="-2" pref="80" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                                  <Component id="jTextField76" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsStatusFld1" min="-2" pref="150" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jTextField77" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsPositionFld1" min="-2" pref="150" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <Component id="jRadioButton25" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsUndertimeRBtn1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="jTextField75" alignment="1" min="-2" pref="606" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsReasonFld1" alignment="1" min="-2" pref="606" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="21" max="32767" attributes="0"/>
                       </Group>
@@ -348,51 +375,51 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jPanel43" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsFARequestPnl" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                  <Component id="jButton32" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                                  <Component id="jButton31" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsDenyBtn1" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsApproveBtn1" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField73" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="jLabel98" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel96" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField76" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsENameFld1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsENameLbl1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsStatusLbl1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsStatusFld1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField74" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="jLabel97" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel94" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsENumberFld1" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsENumberLbl1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsPositionLbl1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jTextField77" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsPositionFld1" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jRadioButton24" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton25" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsOvertimeRBtn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsUndertimeRBtn1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <EmptySpace pref="28" max="32767" attributes="0"/>
-                                  <Component id="jLabel95" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsReasonLbl1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="jTextField75" min="-2" pref="56" max="-2" attributes="0"/>
+                          <Component id="hrRDetailsReasonFld1" min="-2" pref="56" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="jPanel43">
+                <Container class="javax.swing.JPanel" name="hrRDetailsFARequestPnl">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -411,13 +438,16 @@
                       <Dimension value="[126, 40]"/>
                     </Property>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsFARequestPnl1"/>
+                  </AccessibilityProperties>
 
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel33" min="-2" pref="151" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsFARequestLbl1" min="-2" pref="151" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -425,14 +455,14 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel33" pref="32" max="32767" attributes="0"/>
+                              <Component id="hrRDetailsFARequestLbl1" pref="32" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel33">
+                    <Component class="javax.swing.JLabel" name="hrRDetailsFARequestLbl1">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -446,10 +476,13 @@
                         <Property name="text" type="java.lang.String" value=" File A Request"/>
                         <Property name="toolTipText" type="java.lang.String" value=""/>
                       </Properties>
+                      <AccessibilityProperties>
+                        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsFARequestLbl1"/>
+                      </AccessibilityProperties>
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JLabel" name="jLabel94">
+                <Component class="javax.swing.JLabel" name="hrRDetailsPositionLbl1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -459,8 +492,12 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Position"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsPositionLbl1"/>
+                    <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField73">
+                <Component class="javax.swing.JTextField" name="hrRDetailsENameFld1">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -475,11 +512,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENameFld1"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField73ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsENameFld1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel95">
+                <Component class="javax.swing.JLabel" name="hrRDetailsReasonLbl1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -489,8 +529,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Reason"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsReasonLbl1"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel96">
+                <Component class="javax.swing.JLabel" name="hrRDetailsStatusLbl1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -500,8 +543,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Status"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsStatusLbl1"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField74">
+                <Component class="javax.swing.JTextField" name="hrRDetailsENumberFld1">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -516,11 +562,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENumberFld1"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField74ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsENumberFld1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField75">
+                <Component class="javax.swing.JTextField" name="hrRDetailsReasonFld1">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -535,11 +584,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsReasonFld1"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField75ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsReasonFld1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField76">
+                <Component class="javax.swing.JTextField" name="hrRDetailsStatusFld1">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -554,11 +606,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsStatusFld1"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField76ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsStatusFld1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel97">
+                <Component class="javax.swing.JLabel" name="hrRDetailsENumberLbl1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -568,8 +623,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Employee #"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENumberLbl1"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel98">
+                <Component class="javax.swing.JLabel" name="hrRDetailsENameLbl1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -579,8 +637,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Employee Name"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENameLbl1"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField77">
+                <Component class="javax.swing.JTextField" name="hrRDetailsPositionFld1">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -595,11 +656,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsPositionFld1"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField77ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsPositionFld1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JRadioButton" name="jRadioButton24">
+                <Component class="javax.swing.JRadioButton" name="hrRDetailsOvertimeRBtn1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -610,11 +674,14 @@
                     <Property name="text" type="java.lang.String" value="Overtime"/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsOvertimeRBtn1"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton24ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsOvertimeRBtn1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JRadioButton" name="jRadioButton25">
+                <Component class="javax.swing.JRadioButton" name="hrRDetailsUndertimeRBtn1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -625,8 +692,11 @@
                     <Property name="text" type="java.lang.String" value="Undertime"/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsUndertimeRBtn1"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton31">
+                <Component class="javax.swing.JButton" name="hrRDetailsApproveBtn1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="5e" green="c5" red="22" type="rgb"/>
@@ -646,11 +716,14 @@
                       </Border>
                     </Property>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsApproveBtn1"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton31ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsApproveBtn1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton32">
+                <Component class="javax.swing.JButton" name="hrRDetailsDenyBtn1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="44" green="44" red="ef" type="rgb"/>
@@ -670,13 +743,16 @@
                       </Border>
                     </Property>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsDenyBtn1"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton32ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsDenyBtn1ActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="jPanel44">
+            <Container class="javax.swing.JPanel" name="hrRDetailsFARequestBrdrPnl2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="e9" green="e9" red="e9" type="rgb"/>
@@ -696,6 +772,9 @@
                   <Dimension value="[661, 257]"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsFARequestBrdrPnl2"/>
+              </AccessibilityProperties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -704,61 +783,61 @@
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jPanel45" min="-2" pref="165" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsFARequestPnl2" min="-2" pref="165" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton33" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsApproveBtn2" min="-2" pref="89" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                  <Component id="jButton34" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsDenyBtn2" min="-2" pref="89" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel103" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
-                                              <Component id="jLabel102" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsENameLbl2" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsENumberLbl2" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jTextField78" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsENameFld2" min="-2" pref="150" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jRadioButton26" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jTextField79" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                                      <Component id="hrRDetailsOvertimeRBtn2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="hrRDetailsENumberFld2" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel100" min="-2" pref="80" max="-2" attributes="0"/>
+                                          <Component id="hrRDetailsReasonLbl2" min="-2" pref="80" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="280" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel101" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                                              <Component id="jLabel99" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsStatusLbl2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsPositionLbl2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                                  <Component id="jTextField81" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsStatusFld2" min="-2" pref="150" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jTextField82" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsPositionFld2" min="-2" pref="150" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <Component id="jRadioButton27" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsUndertimeRBtn2" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="jTextField80" alignment="1" min="-2" pref="606" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsReasonFld2" alignment="1" min="-2" pref="606" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="21" max="32767" attributes="0"/>
                       </Group>
@@ -769,51 +848,51 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jPanel45" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsFARequestPnl2" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                  <Component id="jButton34" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                                  <Component id="jButton33" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsDenyBtn2" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsApproveBtn2" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField78" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="jLabel103" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel101" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField81" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsENameFld2" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsENameLbl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsStatusLbl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsStatusFld2" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField79" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="jLabel102" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel99" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsENumberFld2" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsENumberLbl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsPositionLbl2" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jTextField82" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsPositionFld2" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jRadioButton26" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton27" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsOvertimeRBtn2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsUndertimeRBtn2" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace pref="28" max="32767" attributes="0"/>
-                                  <Component id="jLabel100" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsReasonLbl2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="jTextField80" min="-2" pref="56" max="-2" attributes="0"/>
+                          <Component id="hrRDetailsReasonFld2" min="-2" pref="56" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="jPanel45">
+                <Container class="javax.swing.JPanel" name="hrRDetailsFARequestPnl2">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -832,13 +911,16 @@
                       <Dimension value="[126, 40]"/>
                     </Property>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsFARequestPnl2"/>
+                  </AccessibilityProperties>
 
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel34" min="-2" pref="151" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsFARequestLbl2" min="-2" pref="151" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -846,14 +928,14 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel34" pref="32" max="32767" attributes="0"/>
+                              <Component id="hrRDetailsFARequestLbl2" pref="32" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel34">
+                    <Component class="javax.swing.JLabel" name="hrRDetailsFARequestLbl2">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -867,10 +949,13 @@
                         <Property name="text" type="java.lang.String" value=" File A Request"/>
                         <Property name="toolTipText" type="java.lang.String" value=""/>
                       </Properties>
+                      <AccessibilityProperties>
+                        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsFARequestLbl2"/>
+                      </AccessibilityProperties>
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JLabel" name="jLabel99">
+                <Component class="javax.swing.JLabel" name="hrRDetailsPositionLbl2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -880,8 +965,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Position"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsPositionLbl2"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField78">
+                <Component class="javax.swing.JTextField" name="hrRDetailsENameFld2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -896,11 +984,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENameFld2"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField78ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsENameFld2ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel100">
+                <Component class="javax.swing.JLabel" name="hrRDetailsReasonLbl2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -910,8 +1001,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Reason"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsReasonLbl2"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel101">
+                <Component class="javax.swing.JLabel" name="hrRDetailsStatusLbl2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -921,8 +1015,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Status"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsStatusLbl2"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField79">
+                <Component class="javax.swing.JTextField" name="hrRDetailsENumberFld2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -937,11 +1034,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENumberFld2"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField79ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsENumberFld2ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField80">
+                <Component class="javax.swing.JTextField" name="hrRDetailsReasonFld2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -956,11 +1056,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsReasonFld2"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField80ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsReasonFld2ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField81">
+                <Component class="javax.swing.JTextField" name="hrRDetailsStatusFld2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -975,11 +1078,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsStatusFld2"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField81ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsStatusFld2ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel102">
+                <Component class="javax.swing.JLabel" name="hrRDetailsENumberLbl2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -989,8 +1095,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Employee #"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENumberLbl2"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel103">
+                <Component class="javax.swing.JLabel" name="hrRDetailsENameLbl2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1000,8 +1109,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Employee Name"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENameLbl2"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField82">
+                <Component class="javax.swing.JTextField" name="hrRDetailsPositionFld2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1016,11 +1128,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsPositionFld2"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField82ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsPositionFld2ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JRadioButton" name="jRadioButton26">
+                <Component class="javax.swing.JRadioButton" name="hrRDetailsOvertimeRBtn2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1031,11 +1146,14 @@
                     <Property name="text" type="java.lang.String" value="Overtime"/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsOvertimeRBtn2"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton26ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsOvertimeRBtn2ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JRadioButton" name="jRadioButton27">
+                <Component class="javax.swing.JRadioButton" name="hrRDetailsUndertimeRBtn2">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1046,8 +1164,11 @@
                     <Property name="text" type="java.lang.String" value="Undertime"/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsUndertimeRBtn2"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton33">
+                <Component class="javax.swing.JButton" name="hrRDetailsApproveBtn2">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="5e" green="c5" red="22" type="rgb"/>
@@ -1067,11 +1188,14 @@
                       </Border>
                     </Property>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsApproveBtn2"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton33ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsApproveBtn2ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton34">
+                <Component class="javax.swing.JButton" name="hrRDetailsDenyBtn2">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="44" green="44" red="ef" type="rgb"/>
@@ -1091,13 +1215,16 @@
                       </Border>
                     </Property>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsDenyBtn2"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton34ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsDenyBtn2ActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="jPanel46">
+            <Container class="javax.swing.JPanel" name="hrRDetailsFARequestBrdrPnl3">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="e9" green="e9" red="e9" type="rgb"/>
@@ -1117,6 +1244,9 @@
                   <Dimension value="[661, 257]"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsFARequestBrdrPnl3"/>
+              </AccessibilityProperties>
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -1125,61 +1255,61 @@
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jPanel47" min="-2" pref="165" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsFARequestPnl3" min="-2" pref="165" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton35" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsApproveBtn" min="-2" pref="89" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                  <Component id="jButton36" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsDenyBtn3" min="-2" pref="89" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel108" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
-                                              <Component id="jLabel107" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsENameLbl3" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsENumberLbl3" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="jTextField83" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsENameFld3" min="-2" pref="150" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jRadioButton28" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jTextField84" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                                      <Component id="hrRDetailsOvertimeRBtn3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="hrRDetailsENumberFld3" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel105" min="-2" pref="80" max="-2" attributes="0"/>
+                                          <Component id="hrRDetailsReasonLbl3" min="-2" pref="80" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="280" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel106" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                                              <Component id="jLabel104" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsStatusLbl3" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsPositionLbl3" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                                  <Component id="jTextField86" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsStatusFld3" min="-2" pref="150" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jTextField87" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsPositionFld3" min="-2" pref="150" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <Component id="jRadioButton29" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsUndertimeRBtn3" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="jTextField85" alignment="1" min="-2" pref="606" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsReasonFld3" alignment="1" min="-2" pref="606" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="21" max="32767" attributes="0"/>
                       </Group>
@@ -1190,51 +1320,51 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jPanel47" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsFARequestPnl3" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                  <Component id="jButton36" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                                  <Component id="jButton35" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsDenyBtn3" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsApproveBtn" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField83" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="jLabel108" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel106" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField86" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsENameFld3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsENameLbl3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsStatusLbl3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsStatusFld3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField84" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="jLabel107" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel104" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsENumberFld3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsENumberLbl3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsPositionLbl3" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jTextField87" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsPositionFld3" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jRadioButton28" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton29" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsOvertimeRBtn3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsUndertimeRBtn3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace pref="28" max="32767" attributes="0"/>
-                                  <Component id="jLabel105" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsReasonLbl3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="jTextField85" min="-2" pref="56" max="-2" attributes="0"/>
+                          <Component id="hrRDetailsReasonFld3" min="-2" pref="56" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="jPanel47">
+                <Container class="javax.swing.JPanel" name="hrRDetailsFARequestPnl3">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -1253,13 +1383,16 @@
                       <Dimension value="[126, 40]"/>
                     </Property>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsFARequestPnl3"/>
+                  </AccessibilityProperties>
 
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel35" min="-2" pref="151" max="-2" attributes="0"/>
+                              <Component id="hrRDetailsFARequestLbl3" min="-2" pref="151" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -1267,14 +1400,14 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel35" pref="32" max="32767" attributes="0"/>
+                              <Component id="hrRDetailsFARequestLbl3" pref="32" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel35">
+                    <Component class="javax.swing.JLabel" name="hrRDetailsFARequestLbl3">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1288,10 +1421,13 @@
                         <Property name="text" type="java.lang.String" value=" File A Request"/>
                         <Property name="toolTipText" type="java.lang.String" value=""/>
                       </Properties>
+                      <AccessibilityProperties>
+                        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsFARequestLbl3"/>
+                      </AccessibilityProperties>
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JLabel" name="jLabel104">
+                <Component class="javax.swing.JLabel" name="hrRDetailsPositionLbl3">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1301,8 +1437,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Position"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsPositionLbl3"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField83">
+                <Component class="javax.swing.JTextField" name="hrRDetailsENameFld3">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1317,11 +1456,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENameFld3"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField83ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsENameFld3ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel105">
+                <Component class="javax.swing.JLabel" name="hrRDetailsReasonLbl3">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1331,8 +1473,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Reason"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsReasonLbl3"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel106">
+                <Component class="javax.swing.JLabel" name="hrRDetailsStatusLbl3">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1342,8 +1487,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Status"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsStatusLbl3"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField84">
+                <Component class="javax.swing.JTextField" name="hrRDetailsENumberFld3">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1358,11 +1506,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENumberFld3"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField84ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsENumberFld3ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField85">
+                <Component class="javax.swing.JTextField" name="hrRDetailsReasonFld3">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1377,11 +1528,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsReasonFld3"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField85ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsReasonFld3ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField86">
+                <Component class="javax.swing.JTextField" name="hrRDetailsStatusFld3">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1396,11 +1550,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsStatusFld3"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField86ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsStatusFld3ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel107">
+                <Component class="javax.swing.JLabel" name="hrRDetailsENumberLbl3">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1410,8 +1567,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Employee #"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENumberLbl3"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel108">
+                <Component class="javax.swing.JLabel" name="hrRDetailsENameLbl3">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1421,8 +1581,11 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Employee Name"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsENameLbl3"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField87">
+                <Component class="javax.swing.JTextField" name="hrRDetailsPositionFld3">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1437,11 +1600,14 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsPositionFld3"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField87ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsPositionFld3ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JRadioButton" name="jRadioButton28">
+                <Component class="javax.swing.JRadioButton" name="hrRDetailsOvertimeRBtn3">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1452,11 +1618,14 @@
                     <Property name="text" type="java.lang.String" value="Overtime"/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsOvertimeRBtn3"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton28ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsOvertimeRBtn3ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JRadioButton" name="jRadioButton29">
+                <Component class="javax.swing.JRadioButton" name="hrRDetailsUndertimeRBtn3">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="18" style="0"/>
@@ -1467,8 +1636,11 @@
                     <Property name="text" type="java.lang.String" value="Undertime"/>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsUndertimeRBtn3"/>
+                  </AccessibilityProperties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton35">
+                <Component class="javax.swing.JButton" name="hrRDetailsApproveBtn">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="5e" green="c5" red="22" type="rgb"/>
@@ -1488,11 +1660,14 @@
                       </Border>
                     </Property>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsApproveBtn3"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton35ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsApproveBtnActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton36">
+                <Component class="javax.swing.JButton" name="hrRDetailsDenyBtn3">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="44" green="44" red="ef" type="rgb"/>
@@ -1512,8 +1687,11 @@
                       </Border>
                     </Property>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsDenyBtn3"/>
+                  </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton36ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrRDetailsDenyBtn3ActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
