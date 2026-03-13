@@ -596,14 +596,14 @@
                                       <Component id="financePrlRiceSubsidyFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financePrlPAllowanceLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlPhnAllowanceLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financePrlPAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlPhnAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financePrlCAllowanceLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlCltAllowanceLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="50" max="32767" attributes="0"/>
-                                      <Component id="financePrlCAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlCltAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -670,13 +670,13 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financePrlPAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financePrlPAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlPhnAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlPhnAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financePrlCAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financePrlCAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlCltAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlCltAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="financePrlBonusLbl" min="-2" max="-2" attributes="0"/>
@@ -780,7 +780,7 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlRiceSubsidyLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financePrlPAllowanceLbl">
+            <Component class="javax.swing.JLabel" name="financePrlPhnAllowanceLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -791,10 +791,10 @@
                 <Property name="text" type="java.lang.String" value="Phone Allowance"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlPAllowanceLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlPhnAllowanceLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financePrlCAllowanceLbl">
+            <Component class="javax.swing.JLabel" name="financePrlCltAllowanceLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -805,7 +805,7 @@
                 <Property name="text" type="java.lang.String" value="Clothing Allowance"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlCAllowanceLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlCltAllowanceLbl"/>
               </AccessibilityProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="financePrlBonusLbl">
@@ -933,7 +933,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlRiceSubsidyFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financePrlPAllowanceFld">
+            <Component class="javax.swing.JTextField" name="financePrlPhnAllowanceFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -948,13 +948,13 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlPAllowanceFld"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlPhnAllowanceFld"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlPAllowanceFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlPhnAllowanceFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financePrlCAllowanceFld">
+            <Component class="javax.swing.JTextField" name="financePrlCltAllowanceFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -969,10 +969,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlCAllowanceFld"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlCltAllowanceFld"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlCAllowanceFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlCltAllowanceFldActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="financePrlBonusTypeFld">

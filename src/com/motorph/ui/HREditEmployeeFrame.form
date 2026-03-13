@@ -25,13 +25,13 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jButton5" min="-2" pref="110" max="-2" attributes="0"/>
+                  <Component id="hrAEmployeeUpdateBtn" min="-2" pref="110" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeSidebarPnl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jPanel3" min="-2" pref="708" max="-2" attributes="0"/>
-                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeEDetailsBrdrPnl" min="-2" pref="708" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeEEDetailsPnl" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -42,34 +42,37 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Component id="jPanel1" min="-2" pref="700" max="-2" attributes="0"/>
+              <Component id="hrEEmployeeSidebarPnl" min="-2" pref="700" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <Component id="hrEEmployeeEEDetailsPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jPanel3" min="-2" pref="490" max="-2" attributes="0"/>
+              <Component id="hrEEmployeeEDetailsBrdrPnl" min="-2" pref="490" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jButton5" min="-2" pref="40" max="-2" attributes="0"/>
+              <Component id="hrAEmployeeUpdateBtn" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="hrEEmployeeSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeSidebarPnl"/>
+      </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="hrEEmployeeEDetailsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -83,8 +86,11 @@
             <Property name="text" type="java.lang.String" value="Employee Details"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeEDetailsBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeEDetailsBtnActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -92,7 +98,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton4">
+        <Component class="javax.swing.JButton" name="hrEEmployeeEEDetailsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -106,8 +112,11 @@
             <Property name="text" type="java.lang.String" value="Edit Employee Details"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeEEDetailsBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeEEDetailsBtnActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -115,7 +124,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton8">
+        <Component class="javax.swing.JButton" name="hrEEmployeeAEDetailsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -129,8 +138,11 @@
             <Property name="text" type="java.lang.String" value="Add Employee Details"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeAEDetailsBtn"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeAEDetailsBtnActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -138,7 +150,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="mainDashboardBtn">
+        <Component class="javax.swing.JButton" name="hrEEmployeeMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -153,8 +165,12 @@
             <Property name="horizontalTextPosition" type="int" value="4"/>
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeMainDashboardBtnActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -162,14 +178,14 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="MotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="MotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeMotorPHIconImgLbl"/>
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -179,7 +195,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="hrAEmployeeUpdateBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="5e" green="c5" red="22" type="rgb"/>
@@ -199,11 +215,14 @@
           </Border>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrAEmployeeUpdateBtn"/>
+      </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrAEmployeeUpdateBtnActionPerformed"/>
       </Events>
     </Component>
-    <Container class="javax.swing.JPanel" name="jPanel2">
+    <Container class="javax.swing.JPanel" name="hrEEmployeeEEDetailsPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -219,12 +238,15 @@
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeEEDetailsPnl"/>
+      </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeEEDetailsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -234,6 +256,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Edit Employee Details"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeEEDetailsLbl"/>
+          </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="7" y="1" width="266" height="46"/>
@@ -242,7 +267,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel3">
+    <Container class="javax.swing.JPanel" name="hrEEmployeeEDetailsBrdrPnl">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -260,6 +285,9 @@
         </Property>
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeEDetailsBrdrPnl"/>
+      </AccessibilityProperties>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -268,89 +296,89 @@
                   <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeAddressLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="90" pref="90" max="-2" attributes="0"/>
-                          <Component id="addressField" min="-2" pref="515" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeAddressFld" min="-2" pref="515" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeePhilHealthLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="71" pref="71" max="-2" attributes="0"/>
-                          <Component id="philhealthField" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeePhilHealthFld" min="-2" pref="150" max="-2" attributes="0"/>
                           <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                          <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeePagIbigLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="122" pref="122" max="-2" attributes="0"/>
-                          <Component id="pagIbigField" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeePagIbigFld" min="-2" pref="150" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeSSSLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="127" pref="127" max="-2" attributes="0"/>
-                          <Component id="sssField" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeSSSFld" min="-2" pref="150" max="-2" attributes="0"/>
                           <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                          <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeTINLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="167" pref="167" max="-2" attributes="0"/>
-                          <Component id="tinField" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeTINFld" min="-2" pref="150" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeBirthdayLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="87" pref="87" max="-2" attributes="0"/>
-                          <Component id="bdayField" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeBirthdayFld" min="-2" pref="150" max="-2" attributes="0"/>
                           <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeePhnNumberLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
-                          <Component id="phoneNumberField" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeePhnNumberFld" min="-2" pref="150" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeePositionLbl" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-                                  <Component id="positionField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeePositionFld" min="-2" pref="150" max="-2" attributes="0"/>
                                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                                  <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeISupervisorLbl" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeBasicSalaryLbl" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="basicSalaryField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeBasicSalaryFld" min="-2" pref="150" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeRiceSubsidyLbl" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel19" min="-2" pref="154" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeePhnAllowanceLbl" min="-2" pref="154" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="phoneAllowanceField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeePhnAllowanceFld" min="-2" pref="150" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeCltAllowanceLbl" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="clothingAllowanceField" min="-2" pref="150" max="-2" attributes="0"/>
-                              <Component id="riceSubsidyField" min="-2" pref="150" max="-2" attributes="0"/>
-                              <Component id="immediateSupervisorField" min="-2" pref="150" max="-2" attributes="0"/>
+                              <Component id="hrEEmployeeCltAllowanceFld" min="-2" pref="150" max="-2" attributes="0"/>
+                              <Component id="hrEEmployeeRiceSubsidyFld" min="-2" pref="150" max="-2" attributes="0"/>
+                              <Component id="hrEEmployeeISupervisorFld" min="-2" pref="150" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeLNameLbl" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="69" pref="69" max="-2" attributes="0"/>
-                                  <Component id="lastNameField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeLNameFld" min="-2" pref="150" max="-2" attributes="0"/>
                                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeFNameLbl" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeENumberLbl" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-                                  <Component id="employeeNumberField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeENumberFLd" min="-2" pref="150" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrEEmployeeStatusLbl" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="statusDropDown" min="-2" pref="150" max="-2" attributes="0"/>
-                              <Component id="firstNameField" min="-2" pref="150" max="-2" attributes="0"/>
+                              <Component id="hrEEmployeeStatusCbx" min="-2" pref="150" max="-2" attributes="0"/>
+                              <Component id="hrEEmployeeFNameFld" min="-2" pref="150" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -363,82 +391,82 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="employeeNumberField" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                          <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="statusDropDown" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeENumberFLd" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeStatusLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeStatusCbx" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lastNameField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="firstNameField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeLNameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeLNameFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeFNameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeFNameFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="addressField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeAddressLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeAddressFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="bdayField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="phoneNumberField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeBirthdayLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeBirthdayFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeePhnNumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeePhnNumberFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="positionField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
-                              <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="immediateSupervisorField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="hrEEmployeePositionFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="hrEEmployeeISupervisorLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrEEmployeeISupervisorFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeePositionLbl" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="basicSalaryField" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeBasicSalaryFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeBasicSalaryLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrEEmployeeRiceSubsidyLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="riceSubsidyField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeRiceSubsidyFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="phoneAllowanceField" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="clothingAllowanceField" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeePhnAllowanceFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeePhnAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeCltAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeCltAllowanceFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="sssField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="tinField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeSSSLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeSSSFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeTINLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeeTINFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="philhealthField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="pagIbigField" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeePhilHealthLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeePhilHealthFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeePagIbigLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEEmployeePagIbigFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeENumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -448,8 +476,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Employee #"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeENumberLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeLNameLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -459,8 +490,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Last Name"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeLNameLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel4">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeAddressLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -470,8 +504,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Address"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeAddressLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeBirthdayLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -481,8 +518,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Birthday"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeBirthdayLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="hrEEmployeePositionLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -492,8 +532,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Position"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePositionLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeBasicSalaryLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -503,8 +546,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Basic Salary"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeBasicSalaryLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeSSSLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -514,8 +560,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="SSS"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeSSSLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel9">
+        <Component class="javax.swing.JLabel" name="hrEEmployeePhilHealthLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -525,8 +574,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="PhilHealth"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePhilHealthLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel10">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeCltAllowanceLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -536,8 +588,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Clothing Allowance"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeCltAllowanceLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel11">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeFNameLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -547,8 +602,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="First Name"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeFNameLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel12">
+        <Component class="javax.swing.JLabel" name="hrEEmployeePhnNumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -558,8 +616,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Phone Number"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePhnNumberLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel13">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeISupervisorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -569,8 +630,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Immediate Supervisor"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeISupervisorLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel14">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeRiceSubsidyLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -580,8 +644,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Rice Subsidy"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeRiceSubsidyLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel15">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeTINLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -591,8 +658,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="TIN"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeTINLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel16">
+        <Component class="javax.swing.JLabel" name="hrEEmployeePagIbigLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -602,8 +672,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Pag-Ibig"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePagIbigLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel19">
+        <Component class="javax.swing.JLabel" name="hrEEmployeePhnAllowanceLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -613,8 +686,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Phone Allowance"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePhnAllowanceLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="lastNameField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeLNameFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -630,11 +706,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeLNameFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lastNameFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeLNameFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="addressField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeAddressFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -650,11 +729,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeAddressFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addressFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeAddressFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="bdayField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeBirthdayFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -670,11 +752,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeBirthdayFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bdayFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeBirthdayFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="positionField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeePositionFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -690,11 +775,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePositionFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="positionFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeePositionFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="basicSalaryField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeBasicSalaryFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -710,11 +798,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeBasicSalaryFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="basicSalaryFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeBasicSalaryFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="phoneAllowanceField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeePhnAllowanceFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -730,11 +821,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePhnAllowanceFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="phoneAllowanceFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeePhnAllowanceFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="sssField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeSSSFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -750,11 +844,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeSSSFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sssFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeSSSFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="philhealthField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeePhilHealthFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -770,11 +867,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePhilHealthFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="philhealthFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeePhilHealthFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="employeeNumberField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeENumberFLd">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -790,11 +890,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeENumberFLd"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeNumberFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeENumberFLdActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="immediateSupervisorField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeISupervisorFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -810,11 +913,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeISupervisorFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="immediateSupervisorFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeISupervisorFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="riceSubsidyField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeRiceSubsidyFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -830,11 +936,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeRiceSubsidyFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="riceSubsidyFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeRiceSubsidyFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="tinField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeTINFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -850,11 +959,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeTINFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tinFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeTINFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="pagIbigField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeePagIbigFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -870,11 +982,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePagIbigFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pagIbigFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeePagIbigFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="phoneNumberField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeePhnNumberFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -890,11 +1005,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeePhnNumberFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="phoneNumberFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeePhnNumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="firstNameField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeFNameFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -910,11 +1028,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeFNameFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="firstNameFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeFNameFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel18">
+        <Component class="javax.swing.JLabel" name="hrEEmployeeStatusLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="20" style="0"/>
@@ -924,8 +1045,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Status"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeStatusLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="statusDropDown">
+        <Component class="javax.swing.JComboBox" name="hrEEmployeeStatusCbx">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -948,11 +1072,14 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeStatusCbx"/>
+          </AccessibilityProperties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="clothingAllowanceField">
+        <Component class="javax.swing.JTextField" name="hrEEmployeeCltAllowanceFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -968,8 +1095,11 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEEmployeeCltAllowanceFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clothingAllowanceFieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEEmployeeCltAllowanceFldActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

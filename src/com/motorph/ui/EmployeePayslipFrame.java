@@ -48,16 +48,16 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
         employeePylHolidayLbl = new javax.swing.JLabel();
         employeePylBenefitLbl = new javax.swing.JLabel();
         employeePylRiceSubsidyLbl = new javax.swing.JLabel();
-        employeePylPAllowanceLbl = new javax.swing.JLabel();
-        employeePylCAllowanceLbl = new javax.swing.JLabel();
+        employeePylPhnAllowanceLbl = new javax.swing.JLabel();
+        employeePylCltAllowanceLbl = new javax.swing.JLabel();
         employeePylBonusLbl = new javax.swing.JLabel();
         employeePylBonusTypeCbx = new javax.swing.JComboBox<>();
         employeePylBasicSalaryFld = new javax.swing.JTextField();
         employeePylOvertimeFld = new javax.swing.JTextField();
         employeePylHolidayFld = new javax.swing.JTextField();
         employeePylRiceSubsidyFld = new javax.swing.JTextField();
-        employeePylPAllowanceFld = new javax.swing.JTextField();
-        employeePylCAllowanceFld = new javax.swing.JTextField();
+        employeePylPhnAllowanceFld = new javax.swing.JTextField();
+        employeePylCltAllowanceFld = new javax.swing.JTextField();
         employeePylBonusTypeFld = new javax.swing.JTextField();
         employeePylTGrossFld = new javax.swing.JTextField();
         employeePylTGrossLbl = new javax.swing.JLabel();
@@ -231,13 +231,13 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
         employeePylRiceSubsidyLbl.setForeground(new java.awt.Color(31, 41, 55));
         employeePylRiceSubsidyLbl.setText("Rice Subsidy");
 
-        employeePylPAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        employeePylPAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylPAllowanceLbl.setText("Phone Allowance");
+        employeePylPhnAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeePylPhnAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeePylPhnAllowanceLbl.setText("Phone Allowance");
 
-        employeePylCAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        employeePylCAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylCAllowanceLbl.setText("Clothing Allowance");
+        employeePylCltAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeePylCltAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeePylCltAllowanceLbl.setText("Clothing Allowance");
 
         employeePylBonusLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         employeePylBonusLbl.setForeground(new java.awt.Color(31, 41, 55));
@@ -268,15 +268,15 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
         employeePylRiceSubsidyFld.setEnabled(false);
         employeePylRiceSubsidyFld.addActionListener(this::employeePylRiceSubsidyFldActionPerformed);
 
-        employeePylPAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylPAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePylPAllowanceFld.setEnabled(false);
-        employeePylPAllowanceFld.addActionListener(this::employeePylPAllowanceFldActionPerformed);
+        employeePylPhnAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeePylPhnAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylPhnAllowanceFld.setEnabled(false);
+        employeePylPhnAllowanceFld.addActionListener(this::employeePylPhnAllowanceFldActionPerformed);
 
-        employeePylCAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylCAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePylCAllowanceFld.setEnabled(false);
-        employeePylCAllowanceFld.addActionListener(this::employeePylCAllowanceFldActionPerformed);
+        employeePylCltAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeePylCltAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylCltAllowanceFld.setEnabled(false);
+        employeePylCltAllowanceFld.addActionListener(this::employeePylCltAllowanceFldActionPerformed);
 
         employeePylBonusTypeFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylBonusTypeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -318,13 +318,13 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(employeePylRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(employeePylTGrossBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(employeePylPAllowanceLbl)
+                                .addComponent(employeePylPhnAllowanceLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(employeePylPAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(employeePylPhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(employeePylTGrossBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(employeePylCAllowanceLbl)
+                                .addComponent(employeePylCltAllowanceLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
-                                .addComponent(employeePylCAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(employeePylCltAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(employeePylTGrossBrdrPnlLayout.createSequentialGroup()
                                 .addGroup(employeePylTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(employeePylTGrossBrdrPnlLayout.createSequentialGroup()
@@ -373,12 +373,12 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
                     .addComponent(employeePylRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(employeePylTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(employeePylPAllowanceLbl)
-                    .addComponent(employeePylPAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(employeePylPhnAllowanceLbl)
+                    .addComponent(employeePylPhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(employeePylTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(employeePylCAllowanceLbl)
-                    .addComponent(employeePylCAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(employeePylCltAllowanceLbl)
+                    .addComponent(employeePylCltAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(employeePylBonusLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -398,16 +398,16 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
         employeePylHolidayLbl.getAccessibleContext().setAccessibleName("employeePylHolidayLbl");
         employeePylBenefitLbl.getAccessibleContext().setAccessibleName("employeePylBenefitLbl");
         employeePylRiceSubsidyLbl.getAccessibleContext().setAccessibleName("employeePylRiceSubsidyLbl");
-        employeePylPAllowanceLbl.getAccessibleContext().setAccessibleName("employeePylPAllowanceLbl");
-        employeePylCAllowanceLbl.getAccessibleContext().setAccessibleName("employeePylCAllowanceLbl");
+        employeePylPhnAllowanceLbl.getAccessibleContext().setAccessibleName("employeePylPhnAllowanceLbl");
+        employeePylCltAllowanceLbl.getAccessibleContext().setAccessibleName("employeePylCltAllowanceLbl");
         employeePylBonusLbl.getAccessibleContext().setAccessibleName("employeePylBonusLbl");
         employeePylBonusTypeCbx.getAccessibleContext().setAccessibleName("employeePylBonusTypeCbx");
         employeePylBasicSalaryFld.getAccessibleContext().setAccessibleName("employeePylBasicSalaryFld");
         employeePylOvertimeFld.getAccessibleContext().setAccessibleName("employeePylOvertimeFld");
         employeePylHolidayFld.getAccessibleContext().setAccessibleName("employeePylHolidayFld");
         employeePylRiceSubsidyFld.getAccessibleContext().setAccessibleName("employeePylRiceSubsidyFld");
-        employeePylPAllowanceFld.getAccessibleContext().setAccessibleName("employeePylPAllowanceFld");
-        employeePylCAllowanceFld.getAccessibleContext().setAccessibleName("employeePylCAllowanceFld");
+        employeePylPhnAllowanceFld.getAccessibleContext().setAccessibleName("employeePylPhnAllowanceFld");
+        employeePylCltAllowanceFld.getAccessibleContext().setAccessibleName("employeePylCltAllowanceFld");
         employeePylBonusTypeFld.getAccessibleContext().setAccessibleName("employeePylBonusTypeFld");
         employeePylTGrossFld.getAccessibleContext().setAccessibleName("employeePylTGrossFld");
         employeePylTGrossLbl.getAccessibleContext().setAccessibleName("employeePylTGrossLbl");
@@ -883,13 +883,13 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_employeePylRiceSubsidyFldActionPerformed
 
-    private void employeePylPAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylPAllowanceFldActionPerformed
+    private void employeePylPhnAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylPhnAllowanceFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_employeePylPAllowanceFldActionPerformed
+    }//GEN-LAST:event_employeePylPhnAllowanceFldActionPerformed
 
-    private void employeePylCAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylCAllowanceFldActionPerformed
+    private void employeePylCltAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylCltAllowanceFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_employeePylCAllowanceFldActionPerformed
+    }//GEN-LAST:event_employeePylCltAllowanceFldActionPerformed
 
     private void employeePylBonusTypeFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylBonusTypeFldActionPerformed
         // TODO add your handling code here:
@@ -1004,10 +1004,10 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
     private javax.swing.JLabel employeePylBonusLbl;
     private javax.swing.JComboBox<String> employeePylBonusTypeCbx;
     private javax.swing.JTextField employeePylBonusTypeFld;
-    private javax.swing.JTextField employeePylCAllowanceFld;
-    private javax.swing.JLabel employeePylCAllowanceLbl;
     private javax.swing.JPanel employeePylCalculatorBrdrPnl;
     private javax.swing.JLabel employeePylCalculatorLbl;
+    private javax.swing.JTextField employeePylCltAllowanceFld;
+    private javax.swing.JLabel employeePylCltAllowanceLbl;
     private javax.swing.JLabel employeePylDeductionLbl;
     private javax.swing.JTextField employeePylEENumberFld;
     private javax.swing.JTextField employeePylENameFld;
@@ -1027,13 +1027,13 @@ public class EmployeePayslipFrame extends javax.swing.JFrame {
     private javax.swing.JLabel employeePylNetPayLbl;
     private javax.swing.JTextField employeePylOvertimeFld;
     private javax.swing.JLabel employeePylOvertimeLbl;
-    private javax.swing.JTextField employeePylPAllowanceFld;
-    private javax.swing.JLabel employeePylPAllowanceLbl;
     private javax.swing.JButton employeePylPDFBtn;
     private javax.swing.JTextField employeePylPagIbigFld;
     private javax.swing.JLabel employeePylPagIbigLbl;
     private javax.swing.JTextField employeePylPhilHealthFld;
     private javax.swing.JLabel employeePylPhilHealthLbl;
+    private javax.swing.JTextField employeePylPhnAllowanceFld;
+    private javax.swing.JLabel employeePylPhnAllowanceLbl;
     private javax.swing.JTextField employeePylPositionFld;
     private javax.swing.JLabel employeePylPositionLbl;
     private javax.swing.JTextField employeePylPrlDateFld;

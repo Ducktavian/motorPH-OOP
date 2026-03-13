@@ -263,7 +263,7 @@
                       <Component id="employeeDashboardBirthdayLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="employeeDashboardPositionLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="employeeDashboardBasicSalaryLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="employeeDashboardPAllowanceLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPhnAllowanceLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
                       <Component id="employeeDashboardSSSLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="employeeDashboardPhilHealthLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -274,7 +274,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="employeeDashboardBirthdayFld" min="-2" pref="158" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="employeeDashboardPNumberLbl" min="-2" max="-2" attributes="0"/>
+                                  <Component id="employeeDashboardPhnNumberLbl" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -292,7 +292,7 @@
                                       <Component id="employeeDashboardStatusLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="employeeDashboardTINLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="employeeDashboardPagIbigLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="employeeDashboardCAllowanceLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeeDashboardCltAllowanceLbl" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -347,7 +347,7 @@
                       <Component id="employeeDashboardBirthdayFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="employeeDashboardBirthdayLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="employeeDashboardPNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="employeeDashboardPNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPhnNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -366,9 +366,9 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="employeeDashboardPAllowanceFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="employeeDashboardPAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPhnAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="employeeDashboardCAllowanceFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="employeeDashboardCAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardCltAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -621,7 +621,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardBasicSalaryLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="employeeDashboardPAllowanceLbl">
+        <Component class="javax.swing.JLabel" name="employeeDashboardPhnAllowanceLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -632,7 +632,7 @@
             <Property name="text" type="java.lang.String" value="Phone Allowance"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPAllowanceLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPhnAllowanceLbl"/>
           </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JTextField" name="employeeDashboardSSSFld">
@@ -880,7 +880,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardFNameLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="employeeDashboardPNumberLbl">
+        <Component class="javax.swing.JLabel" name="employeeDashboardPhnNumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -891,7 +891,7 @@
             <Property name="text" type="java.lang.String" value="Phone Number"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPNumberLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPhnNumberLbl"/>
           </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JLabel" name="employeeDashboardRiceSubsidyLbl">
@@ -971,7 +971,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardStatusFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="employeeDashboardCAllowanceLbl">
+        <Component class="javax.swing.JLabel" name="employeeDashboardCltAllowanceLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -982,7 +982,7 @@
             <Property name="text" type="java.lang.String" value="Clothing Allowance"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardCAllowanceLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardCltAllowanceLbl"/>
           </AccessibilityProperties>
         </Component>
       </SubComponents>

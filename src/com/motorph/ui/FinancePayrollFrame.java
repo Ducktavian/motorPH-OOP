@@ -52,16 +52,16 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
         financePrlHolidayLbl = new javax.swing.JLabel();
         financePrlBenefitLbl = new javax.swing.JLabel();
         financePrlRiceSubsidyLbl = new javax.swing.JLabel();
-        financePrlPAllowanceLbl = new javax.swing.JLabel();
-        financePrlCAllowanceLbl = new javax.swing.JLabel();
+        financePrlPhnAllowanceLbl = new javax.swing.JLabel();
+        financePrlCltAllowanceLbl = new javax.swing.JLabel();
         financePrlBonusLbl = new javax.swing.JLabel();
         financePrlBonusTypeCbx = new javax.swing.JComboBox<>();
         financePrlBasicSalaryFld = new javax.swing.JTextField();
         financePrlOvertimeFld = new javax.swing.JTextField();
         financePrlHolidayFld = new javax.swing.JTextField();
         financePrlRiceSubsidyFld = new javax.swing.JTextField();
-        financePrlPAllowanceFld = new javax.swing.JTextField();
-        financePrlCAllowanceFld = new javax.swing.JTextField();
+        financePrlPhnAllowanceFld = new javax.swing.JTextField();
+        financePrlCltAllowanceFld = new javax.swing.JTextField();
         financePrlBonusTypeFld = new javax.swing.JTextField();
         financePrlTGrossFld = new javax.swing.JTextField();
         financePrlTGrossLbl = new javax.swing.JLabel();
@@ -238,13 +238,13 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
         financePrlRiceSubsidyLbl.setForeground(new java.awt.Color(31, 41, 55));
         financePrlRiceSubsidyLbl.setText("Rice Subsidy");
 
-        financePrlPAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        financePrlPAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
-        financePrlPAllowanceLbl.setText("Phone Allowance");
+        financePrlPhnAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlPhnAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPhnAllowanceLbl.setText("Phone Allowance");
 
-        financePrlCAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        financePrlCAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
-        financePrlCAllowanceLbl.setText("Clothing Allowance");
+        financePrlCltAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        financePrlCltAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlCltAllowanceLbl.setText("Clothing Allowance");
 
         financePrlBonusLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         financePrlBonusLbl.setForeground(new java.awt.Color(31, 41, 55));
@@ -275,15 +275,15 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
         financePrlRiceSubsidyFld.setEnabled(false);
         financePrlRiceSubsidyFld.addActionListener(this::financePrlRiceSubsidyFldActionPerformed);
 
-        financePrlPAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
-        financePrlPAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        financePrlPAllowanceFld.setEnabled(false);
-        financePrlPAllowanceFld.addActionListener(this::financePrlPAllowanceFldActionPerformed);
+        financePrlPhnAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlPhnAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPhnAllowanceFld.setEnabled(false);
+        financePrlPhnAllowanceFld.addActionListener(this::financePrlPhnAllowanceFldActionPerformed);
 
-        financePrlCAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
-        financePrlCAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        financePrlCAllowanceFld.setEnabled(false);
-        financePrlCAllowanceFld.addActionListener(this::financePrlCAllowanceFldActionPerformed);
+        financePrlCltAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlCltAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlCltAllowanceFld.setEnabled(false);
+        financePrlCltAllowanceFld.addActionListener(this::financePrlCltAllowanceFldActionPerformed);
 
         financePrlBonusTypeFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlBonusTypeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -325,13 +325,13 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(financePrlRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(financePrlPAllowanceLbl)
+                                .addComponent(financePrlPhnAllowanceLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(financePrlPAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(financePrlPhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(financePrlCAllowanceLbl)
+                                .addComponent(financePrlCltAllowanceLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
-                                .addComponent(financePrlCAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(financePrlCltAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
                                 .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(financePrlTGrossBrdrPnlLayout.createSequentialGroup()
@@ -380,12 +380,12 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
                     .addComponent(financePrlRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(financePrlPAllowanceLbl)
-                    .addComponent(financePrlPAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financePrlPhnAllowanceLbl)
+                    .addComponent(financePrlPhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(financePrlTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(financePrlCAllowanceLbl)
-                    .addComponent(financePrlCAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financePrlCltAllowanceLbl)
+                    .addComponent(financePrlCltAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(financePrlBonusLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -405,16 +405,16 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
         financePrlHolidayLbl.getAccessibleContext().setAccessibleName("financePrlHolidayLbl");
         financePrlBenefitLbl.getAccessibleContext().setAccessibleName("financePrlBenefitLbl");
         financePrlRiceSubsidyLbl.getAccessibleContext().setAccessibleName("financePrlRiceSubsidyLbl");
-        financePrlPAllowanceLbl.getAccessibleContext().setAccessibleName("financePrlPAllowanceLbl");
-        financePrlCAllowanceLbl.getAccessibleContext().setAccessibleName("financePrlCAllowanceLbl");
+        financePrlPhnAllowanceLbl.getAccessibleContext().setAccessibleName("financePrlPhnAllowanceLbl");
+        financePrlCltAllowanceLbl.getAccessibleContext().setAccessibleName("financePrlCltAllowanceLbl");
         financePrlBonusLbl.getAccessibleContext().setAccessibleName("financePrlBonusLbl");
         financePrlBonusTypeCbx.getAccessibleContext().setAccessibleName("financePrlBonusTypeCbx");
         financePrlBasicSalaryFld.getAccessibleContext().setAccessibleName("financePrlBasicSalaryFld");
         financePrlOvertimeFld.getAccessibleContext().setAccessibleName("financePrlOvertimeFld");
         financePrlHolidayFld.getAccessibleContext().setAccessibleName("financePrlHolidayFld");
         financePrlRiceSubsidyFld.getAccessibleContext().setAccessibleName("financePrlRiceSubsidyFld");
-        financePrlPAllowanceFld.getAccessibleContext().setAccessibleName("financePrlPAllowanceFld");
-        financePrlCAllowanceFld.getAccessibleContext().setAccessibleName("financePrlCAllowanceFld");
+        financePrlPhnAllowanceFld.getAccessibleContext().setAccessibleName("financePrlPhnAllowanceFld");
+        financePrlCltAllowanceFld.getAccessibleContext().setAccessibleName("financePrlCltAllowanceFld");
         financePrlBonusTypeFld.getAccessibleContext().setAccessibleName("financePrlBonusTypeFld");
         financePrlTGrossFld.getAccessibleContext().setAccessibleName("financePrlTGrossFld");
         financePrlTGrossLbl.getAccessibleContext().setAccessibleName("financePrlTGrossLbl");
@@ -872,13 +872,13 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_financePrlRiceSubsidyFldActionPerformed
 
-    private void financePrlPAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPAllowanceFldActionPerformed
+    private void financePrlPhnAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPhnAllowanceFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_financePrlPAllowanceFldActionPerformed
+    }//GEN-LAST:event_financePrlPhnAllowanceFldActionPerformed
 
-    private void financePrlCAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlCAllowanceFldActionPerformed
+    private void financePrlCltAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlCltAllowanceFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_financePrlCAllowanceFldActionPerformed
+    }//GEN-LAST:event_financePrlCltAllowanceFldActionPerformed
 
     private void financePrlBonusTypeFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlBonusTypeFldActionPerformed
         // TODO add your handling code here:
@@ -974,10 +974,10 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
     private javax.swing.JLabel financePrlBonusLbl;
     private javax.swing.JComboBox<String> financePrlBonusTypeCbx;
     private javax.swing.JTextField financePrlBonusTypeFld;
-    private javax.swing.JTextField financePrlCAllowanceFld;
-    private javax.swing.JLabel financePrlCAllowanceLbl;
     private javax.swing.JPanel financePrlCalculatorBrdrPnl;
     private javax.swing.JLabel financePrlCalculatorLbl;
+    private javax.swing.JTextField financePrlCltAllowanceFld;
+    private javax.swing.JLabel financePrlCltAllowanceLbl;
     private javax.swing.JLabel financePrlCreatePylLbl;
     private javax.swing.JPanel financePrlCreatePylPnl;
     private javax.swing.JLabel financePrlDeductionLbl;
@@ -997,13 +997,13 @@ public class FinancePayrollFrame extends javax.swing.JFrame {
     private javax.swing.JLabel financePrlNetPayLbl;
     private javax.swing.JTextField financePrlOvertimeFld;
     private javax.swing.JLabel financePrlOvertimeLbl;
-    private javax.swing.JTextField financePrlPAllowanceFld;
-    private javax.swing.JLabel financePrlPAllowanceLbl;
     private javax.swing.JButton financePrlPDFBtn;
     private javax.swing.JTextField financePrlPagIbigFld;
     private javax.swing.JLabel financePrlPagIbigLbl;
     private javax.swing.JTextField financePrlPhilHealthFld;
     private javax.swing.JLabel financePrlPhilHealthLbl;
+    private javax.swing.JTextField financePrlPhnAllowanceFld;
+    private javax.swing.JLabel financePrlPhnAllowanceLbl;
     private javax.swing.JTextField financePrlPositionFld;
     private javax.swing.JLabel financePrlPositionLbl;
     private javax.swing.JTextField financePrlPrlDateFld;

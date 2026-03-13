@@ -518,14 +518,14 @@
                                       <Component id="employeePylRiceSubsidyFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="employeePylPAllowanceLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeePylPhnAllowanceLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="employeePylPAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="employeePylPhnAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="employeePylCAllowanceLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="employeePylCltAllowanceLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="50" max="32767" attributes="0"/>
-                                      <Component id="employeePylCAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="employeePylCltAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -592,13 +592,13 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="employeePylPAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="employeePylPAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="employeePylPhnAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="employeePylPhnAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="employeePylCAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="employeePylCAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="employeePylCltAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="employeePylCltAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="employeePylBonusLbl" min="-2" max="-2" attributes="0"/>
@@ -702,7 +702,7 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylRiceSubsidyLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="employeePylPAllowanceLbl">
+            <Component class="javax.swing.JLabel" name="employeePylPhnAllowanceLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -713,10 +713,10 @@
                 <Property name="text" type="java.lang.String" value="Phone Allowance"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylPAllowanceLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylPhnAllowanceLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="employeePylCAllowanceLbl">
+            <Component class="javax.swing.JLabel" name="employeePylCltAllowanceLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -727,7 +727,7 @@
                 <Property name="text" type="java.lang.String" value="Clothing Allowance"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylCAllowanceLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylCltAllowanceLbl"/>
               </AccessibilityProperties>
             </Component>
             <Component class="javax.swing.JLabel" name="employeePylBonusLbl">
@@ -855,7 +855,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylRiceSubsidyFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="employeePylPAllowanceFld">
+            <Component class="javax.swing.JTextField" name="employeePylPhnAllowanceFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -870,13 +870,13 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylPAllowanceFld"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylPhnAllowanceFld"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylPAllowanceFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylPhnAllowanceFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="employeePylCAllowanceFld">
+            <Component class="javax.swing.JTextField" name="employeePylCltAllowanceFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -891,10 +891,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylCAllowanceFld"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylCltAllowanceFld"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylCAllowanceFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylCltAllowanceFldActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="employeePylBonusTypeFld">
