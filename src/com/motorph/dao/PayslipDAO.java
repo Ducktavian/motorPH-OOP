@@ -1,8 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.motorph.dao;
+
+import com.motorph.model.Payslip;
+import java.util.List;
 
 /**
  *
@@ -10,4 +10,7 @@ package com.motorph.dao;
  */
 public interface PayslipDAO {
     
+    void savePayslip(Payslip payslip);
+    
+    List<Payslip> findPayslipsByEmployee(String employeeNumber);
 }

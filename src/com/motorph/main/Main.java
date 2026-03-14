@@ -4,6 +4,7 @@ package com.motorph.main;
 import com.motorph.dao.AttendanceDAO;
 import com.motorph.dao.CsvAttendanceDAO;
 import com.motorph.dao.CsvEmployeeDAO;
+import com.motorph.dao.CsvPayslipDAO;
 import com.motorph.dao.EmployeeDAO;
 import com.motorph.model.AttendanceRecord;
 import com.motorph.model.Employee;
@@ -33,6 +34,8 @@ import  com.motorph.ui.*;
 public class Main {
     
     public static void main(String[] args) {
+    
+        
         // Use invokeLater to ensure thread safety for Swing components
         java.awt.EventQueue.invokeLater(() -> {
             LoginUI loginFrame = new LoginUI();
@@ -47,7 +50,7 @@ public class Main {
         EmployeeService empService = new EmployeeService(empDao);
         
         
-        testingAddEmployee(empService);
+        //testingAddEmployee(empService);
         //testingDeleteEmployee(empService, "10035");
         
         

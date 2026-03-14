@@ -20,7 +20,7 @@ public class CsvPayslipDAO implements PayslipDAO {
     private static final String FILE_PATH = "data/payslips.csv";
     
     public CsvPayslipDAO() {
-        
+        initializeFile();
     }
     
     private void initializeFile() {
@@ -39,6 +39,7 @@ public class CsvPayslipDAO implements PayslipDAO {
                     String[] header = {
                         "payslipId",
                         "employeeNumber",
+                        "employeeName",
                         "position",
                         "periodStart",
                         "periodEnd",
@@ -58,20 +59,26 @@ public class CsvPayslipDAO implements PayslipDAO {
                 }            
             }
         } catch (Exception e) {
-            System.err.println("Could not initialize leave CSV: " + e.getMessage());
+            System.err.println("Could not initialize payslip CSV: " + e.getMessage());
         }
     }
 
+    @Override
     public void savePayslip(Payslip payslip) {
+        
+        // Duplicate check:
+        if (payslipExists(payslip.getPayslipId())) {
+            System.out.println("Payslip already exists: " + payslip.getPayslipId()  );
+            return;
+        }
+        
+        
         File file = new File(FILE_PATH);
         
-        
-        
+
         try (CSVWriter writer = new CSVWriter(new FileWriter(file, true))) {
             
- 
-           
-            
+
             // Check for nulls in nested objects to prevent NullPointerException
             AllowanceBreakdown allowances = payslip.getAllowanceBreakdown();
             DeductionBreakdown deductions = payslip.getDeductionBreakdown();
@@ -79,6 +86,7 @@ public class CsvPayslipDAO implements PayslipDAO {
             String[] row = {
                 payslip.getPayslipId(),
                 payslip.getEmployeeNumber(),
+                payslip.getEmployeeName(),
                 payslip.getPosition(),
                 payslip.getPeriodStart().toString(),
                 payslip.getPeriodEnd().toString(),
@@ -106,6 +114,7 @@ public class CsvPayslipDAO implements PayslipDAO {
          
     }
     
+    @Override
     public List<Payslip> findPayslipsByEmployee(String employeeNumber) {
         
         List<Payslip> payslips = new ArrayList<>();
@@ -123,23 +132,23 @@ public class CsvPayslipDAO implements PayslipDAO {
             String[] row;
             while ((row = reader.readNext()) != null) {
                 // Check if row has enough columns and matches employee ID
-                if (row.length >= 16 && row[1].equals(employeeNumber)) {
+                if (row.length >= 17 && row[1].equals(employeeNumber)) {
                     
                     // Reconstruct AllowanceBreakdown
                     AllowanceBreakdown allowanceBreakdown =
                         new AllowanceBreakdown(
-                                Double.parseDouble(row[8]),
                                 Double.parseDouble(row[9]),
-                                Double.parseDouble(row[10])
+                                Double.parseDouble(row[10]),
+                                Double.parseDouble(row[11])
                         );
                     
                     // Reconstruct DeductionBreakdown
                     DeductionBreakdown deductionBreakdown =
                         new DeductionBreakdown(
-                                Double.parseDouble(row[11]),
                                 Double.parseDouble(row[12]),
                                 Double.parseDouble(row[13]),
-                                Double.parseDouble(row[14])
+                                Double.parseDouble(row[14]),
+                                Double.parseDouble(row[15])
                         );
                     
                     // reconstruct Payslip object
@@ -147,14 +156,15 @@ public class CsvPayslipDAO implements PayslipDAO {
                             row[0],
                             row[1],
                             row[2],
-                            LocalDate.parse(row[3]),
+                            row[3],
                             LocalDate.parse(row[4]),
-                            Double.parseDouble(row[5]),
+                            LocalDate.parse(row[5]),
                             Double.parseDouble(row[6]),
                             Double.parseDouble(row[7]),
+                            Double.parseDouble(row[8]),
                             allowanceBreakdown,
                             deductionBreakdown,
-                            Double.parseDouble(row[15])
+                            Double.parseDouble(row[16])
                     );
                     
                     payslips.add(p);             
@@ -169,4 +179,42 @@ public class CsvPayslipDAO implements PayslipDAO {
         
         return payslips;
     }
+    
+    // Check if payslip already exists
+    public boolean payslipExists(String payslipId) {        
+        File file = new File(FILE_PATH);        
+        if (!file.exists()) return false;        
+        try (CSVReader reader = new CSVReader(new FileReader(file))) {            
+            reader.readNext(); // skip header            
+            String[] row;
+            
+            while ((row = reader.readNext()) != null) {
+                if (row.length > 0 && row[0].equals(payslipId)) {
+                    return true;
+                }
+            }            
+        } catch (Exception e) {
+            System.err.println("Error checking duplicate payslip: " + e.getMessage());
+        }
+        
+        return false;
+    }
+    
+    public boolean isEmpty() {
+
+    File file = new File(FILE_PATH);
+
+    if (!file.exists()) return true;
+
+    try (CSVReader reader = new CSVReader(new FileReader(file))) {
+
+        reader.readNext(); // skip header
+
+        return reader.readNext() == null; // no data rows
+
+    } catch (Exception e) {
+        return true;
+    }
+}
+    
 }

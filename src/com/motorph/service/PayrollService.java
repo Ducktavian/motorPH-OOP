@@ -1,5 +1,6 @@
 package com.motorph.service;
 
+import com.motorph.dao.PayslipDAO;
 import com.motorph.exception.UnauthorizedException;
 import com.motorph.model.AllowanceBreakdown;
 import com.motorph.model.DeductionBreakdown;
@@ -10,6 +11,7 @@ import com.motorph.model.UserAccount;
 import com.motorph.util.Session;
 
 import java.time.LocalDate;
+import java.util.List;
 
 
 public class PayrollService {
@@ -17,13 +19,15 @@ public class PayrollService {
     private AttendanceService attendanceService;
     private RateService rateService;
     private DeductionService deductionService;
+    private PayslipDAO payslipDAO;
 
     
     // Constructor
-    public PayrollService(AttendanceService attendanceService, RateService rateService, DeductionService deductionService) {
+    public PayrollService(AttendanceService attendanceService, RateService rateService, DeductionService deductionService, PayslipDAO payslipDAO) {
         this.attendanceService = attendanceService;
         this.rateService = rateService;
         this.deductionService = deductionService;
+        this.payslipDAO = payslipDAO;
     }
     
     // Security
@@ -84,9 +88,10 @@ public class PayrollService {
         
         
         // Return Payslip object
-        return new Payslip(
+        Payslip payslip = new Payslip(
                 payslipId,
                 employee.getEmployeeNumber(),
+                employee.getFullName(),
                 employee.getPosition(),
                 periodStart,
                 periodEnd,
@@ -97,7 +102,17 @@ public class PayrollService {
                 deductionBreakdown,
                 netPay
         );
+        
+        // Write to CSV
+        payslipDAO.savePayslip(payslip);
+        
+        return payslip;
     }
+    
+    public List<Payslip> findPayslipsByEmployee(String employeeNumber) {
+        return payslipDAO.findPayslipsByEmployee(employeeNumber);
+    }
+    
     
     // Divide allowances by 2 (semi monthly)
     public AllowanceBreakdown computeAllowances(Employee employee) {
@@ -153,5 +168,39 @@ public class PayrollService {
     
     private boolean isSecondCutoff(LocalDate periodEnd) {
         return periodEnd.getDayOfMonth() == periodEnd.lengthOfMonth();
+    }
+    
+    
+    // THIS WAS ONLY USED ONCE 
+    public void generatePayrollHistory(List<Employee> employees, LocalDate from, LocalDate to) {
+        LocalDate cursor = from.withDayOfMonth(1);
+        
+        while (!cursor.isAfter(to)) {
+            
+            LocalDate monthStart = cursor.withDayOfMonth(1);
+            LocalDate monthEnd = cursor.withDayOfMonth(cursor.lengthOfMonth());
+            
+            // Cutoff 1: 1-15
+            LocalDate c1Start = monthStart;
+            LocalDate c1End = cursor.withDayOfMonth(15);
+            
+            // CutOff 2: 16-End
+            LocalDate c2Start = cursor.withDayOfMonth(16);
+            LocalDate c2End = monthEnd;
+            
+            for (Employee emp: employees) {
+                
+                // Generate only if employee has attendance
+                if (attendanceService.computeTotalHours(emp.getEmployeeNumber(), c1Start, c1End) > 0) {
+                    generatePayslip(emp, c1Start, c1End);
+                }
+                
+                if (attendanceService.computeTotalHours(emp.getEmployeeNumber(), c2Start, c2End) > 0) {
+                    generatePayslip(emp, c2Start, c2End);
+                }
+            }
+            
+            cursor = cursor.plusMonths(1);
+        }
     }
 }

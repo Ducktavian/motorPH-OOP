@@ -4,6 +4,7 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
 
 /**
@@ -266,9 +267,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
 
     private void mainDashboardPylImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardPylImgBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        
-        new EmployeePayslipUI().setVisible(true);
+        GuiUtil.openFrame(this, new EmployeePayslipRecordFrame());
     }//GEN-LAST:event_mainDashboardPylImgBtnActionPerformed
 
     private void mainDashboardLDetailsImgFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardLDetailsImgFldActionPerformed

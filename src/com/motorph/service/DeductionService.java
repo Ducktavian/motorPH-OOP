@@ -1,5 +1,3 @@
-
-
 package com.motorph.service;
 
 import com.motorph.model.DeductionRule;

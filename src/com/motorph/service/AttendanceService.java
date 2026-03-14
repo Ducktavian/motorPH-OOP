@@ -1,4 +1,3 @@
-
 package com.motorph.service;
 
 import com.motorph.dao.AttendanceDAO;
@@ -16,7 +15,6 @@ public class AttendanceService {
     
     // Constructor
     public AttendanceService() {
-        
     }
     
     // Computes hours worked for a single attendance record ( helper function)
