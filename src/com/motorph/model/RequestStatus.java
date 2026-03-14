@@ -11,5 +11,5 @@ package com.motorph.model;
 public enum RequestStatus {
     PENDING,
     APPROVED,
-    REJECTED
+    DENIED
 }
