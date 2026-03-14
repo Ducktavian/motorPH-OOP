@@ -2,7 +2,6 @@
 
 package com.motorph.ui;
 
-import com.motorph.model.Role;
 import com.motorph.model.UserAccount;
 import com.motorph.service.AuthService;
 import com.motorph.util.Session;

@@ -134,7 +134,7 @@ public class CsvAttendanceDAO implements AttendanceDAO {
                 firstName,
                 DateUtils.dateToString(today),
                 DateUtils.timeToString(now),
-                ""
+                "" // Empty time out
             };
             
             writer.writeNext(row);
@@ -148,7 +148,8 @@ public class CsvAttendanceDAO implements AttendanceDAO {
     
     @Override
     public void timeOut(String employeeNumber) {
-
+        
+        // Checks if theres an open session (has time-in but no time-out today in record)
         AttendanceRecord open = getOpenSession(employeeNumber);
 
         if (open == null) {

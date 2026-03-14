@@ -4,6 +4,11 @@
  */
 package com.motorph.ui;
 
+import com.motorph.dao.CsvEmployeeDAO;
+import com.motorph.model.Employee;
+import com.motorph.model.Payslip;
+import com.motorph.service.EmployeeService;
+
 /**
  *
  * @author Lenovo
@@ -11,12 +16,55 @@ package com.motorph.ui;
 public class EmployeePayslipUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayslipUI.class.getName());
-
+    private EmployeeService empService;
     /**
      * Creates new form EmployeePayslipFrame
      */
-    public EmployeePayslipUI() {
+    public EmployeePayslipUI(Payslip payslip) {
         initComponents();
+        
+        this.empService = new EmployeeService(new CsvEmployeeDAO());
+        
+        populateEmployeeDetails(payslip);
+        populateSalaryCalculations(payslip);
+    }
+    
+    private void populateEmployeeDetails(Payslip payslip) {
+        employeePylENameFld.setText(payslip.getEmployeeName());
+        employeePylENumberFld.setText(payslip.getEmployeeNumber());
+        employeePylPositionFld.setText(payslip.getPosition());
+        employeePylPrlDateFld.setText(payslip.getPeriodStart() + " - " + payslip.getPeriodEnd());
+        employeePylPrlPeriodFld.setText("Nothin yet");
+        employeePylStatusFld.setText("IDK");
+        
+    }
+    
+    private void populateSalaryCalculations(Payslip payslip) {
+        
+        Employee emp = empService.findEmployee(payslip.getEmployeeNumber());
+        
+        employeePylBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
+        employeePylOvertimeFld.setText("");
+        employeePylHolidayFld.setText("");
+        employeePylRiceSubsidyFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()));
+        employeePylPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()));
+        employeePylCltAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()));
+        employeePylBonusTypeFld.setText("");
+        employeePylTGrossFld.setText("");
+
+        employeePylSSSFld.setText(String.valueOf(payslip.getDeductionBreakdown().getSss()));
+        employeePylTINFld.setText("");
+        employeePylPhilHealthFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPhilHealth()));
+        employeePylPagIbigFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPagIbig()));
+        employeePylLateFld.setText("");
+        employeePylUndertimeFld.setText("");
+        employeePylAbsentFld.setText("");
+        employeePylTDeductionFld.setText(String.valueOf(payslip.getDeductionBreakdown().getTotal()));
+
+        employeePylNetPayFld.setText(String.valueOf(payslip.getNetPay()));
+
+
+        
     }
 
     /**
@@ -628,7 +676,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(employeePylTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(employeePylCalculatorLbl)
@@ -970,30 +1018,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_employeePylEntENumberFldActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new EmployeePayslipUI().setVisible(true));
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField employeePylAbsentFld;

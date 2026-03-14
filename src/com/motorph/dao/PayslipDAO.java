@@ -13,4 +13,6 @@ public interface PayslipDAO {
     void savePayslip(Payslip payslip);
     
     List<Payslip> findPayslipsByEmployee(String employeeNumber);
+    
+    Payslip findPayslipById(String payslipId);
 }

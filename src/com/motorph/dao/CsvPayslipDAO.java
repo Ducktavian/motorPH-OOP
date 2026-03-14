@@ -18,6 +18,8 @@ import java.util.List;
 public class CsvPayslipDAO implements PayslipDAO {
     
     private static final String FILE_PATH = "data/payslips.csv";
+    private List<Payslip> cache = new ArrayList<>();
+    private boolean loaded = false;
     
     public CsvPayslipDAO() {
         initializeFile();
@@ -66,19 +68,21 @@ public class CsvPayslipDAO implements PayslipDAO {
     @Override
     public void savePayslip(Payslip payslip) {
         
-        // Duplicate check:
-        if (payslipExists(payslip.getPayslipId())) {
-            System.out.println("Payslip already exists: " + payslip.getPayslipId()  );
-            return;
+        loadAllPayslips(); // ensure cache is ready
+        
+        // Duplicate check in cache:
+        for (Payslip p : cache) {
+            if (p.getPayslipId().equals(payslip.getPayslipId())) {
+                System.out.println("Payslip already exists: " + payslip.getPayslipId()  );
+                return;
+            }
         }
         
         
         File file = new File(FILE_PATH);
         
-
         try (CSVWriter writer = new CSVWriter(new FileWriter(file, true))) {
             
-
             // Check for nulls in nested objects to prevent NullPointerException
             AllowanceBreakdown allowances = payslip.getAllowanceBreakdown();
             DeductionBreakdown deductions = payslip.getDeductionBreakdown();
@@ -105,53 +109,48 @@ public class CsvPayslipDAO implements PayslipDAO {
             
             writer.writeNext(row);
             
+            loadAllPayslips();
+            cache.add(payslip);
+            
             
         } catch (Exception e) {
             System.err.println("Error saving payslip: " + e.getMessage());
             e.printStackTrace();
         }
-        
-         
     }
     
-    @Override
-    public List<Payslip> findPayslipsByEmployee(String employeeNumber) {
-        
-        List<Payslip> payslips = new ArrayList<>();
+    private void loadAllPayslips() {
+        // Prevents duplicate cache
+        if (loaded) return;
         
         File file = new File(FILE_PATH);
-
-        // 3. Return empty list if file doesn't exist yet (prevents FileReader error)
-        if (!file.exists()) {
-            return payslips;
-        }
+        if (!file.exists()) return;
         
-        try (CSVReader reader = new CSVReader(new FileReader(FILE_PATH))) {
+        // Additonal safety meassure
+        cache.clear();
+        
+         try (CSVReader reader = new CSVReader(new FileReader(file))) {
+
             reader.readNext(); // skip header
-            
             String[] row;
+
             while ((row = reader.readNext()) != null) {
-                // Check if row has enough columns and matches employee ID
-                if (row.length >= 17 && row[1].equals(employeeNumber)) {
-                    
-                    // Reconstruct AllowanceBreakdown
+                if (row.length >= 17) {
                     AllowanceBreakdown allowanceBreakdown =
                         new AllowanceBreakdown(
-                                Double.parseDouble(row[9]),
-                                Double.parseDouble(row[10]),
-                                Double.parseDouble(row[11])
+                            Double.parseDouble(row[9]),
+                            Double.parseDouble(row[10]),
+                            Double.parseDouble(row[11])
                         );
-                    
-                    // Reconstruct DeductionBreakdown
+
                     DeductionBreakdown deductionBreakdown =
                         new DeductionBreakdown(
-                                Double.parseDouble(row[12]),
-                                Double.parseDouble(row[13]),
-                                Double.parseDouble(row[14]),
-                                Double.parseDouble(row[15])
+                            Double.parseDouble(row[12]),
+                            Double.parseDouble(row[13]),
+                            Double.parseDouble(row[14]),
+                            Double.parseDouble(row[15])
                         );
-                    
-                    // reconstruct Payslip object
+
                     Payslip p = new Payslip(
                             row[0],
                             row[1],
@@ -166,55 +165,65 @@ public class CsvPayslipDAO implements PayslipDAO {
                             deductionBreakdown,
                             Double.parseDouble(row[16])
                     );
-                    
-                    payslips.add(p);             
+                    cache.add(p);
                 }
             }
-            
-            
+            loaded = true;
+
         } catch (Exception e) {
-            System.err.println("Error reading payslips: " + e.getMessage());
-            e.printStackTrace();
+            System.err.println("Error loading payslip cache: " + e.getMessage());
         }
+    }
+    
+    @Override
+    public List<Payslip> findPayslipsByEmployee(String employeeNumber) {
+       loadAllPayslips();
+       
+       List<Payslip> result = new ArrayList<>();
+       
+       for (Payslip payslip : cache) {
+           if (payslip.getEmployeeNumber().equals(employeeNumber)) {
+               result.add(payslip);
+           }
+       }
+       
+       return result;
+    }
+    
+    @Override
+    public Payslip findPayslipById(String payslipId) {
+        loadAllPayslips();
         
-        return payslips;
+        for (Payslip payslip: cache) {
+            if (payslip.getPayslipId().equals(payslipId)) {
+                return payslip;
+            }
+        }
+        return null;
     }
     
     // Check if payslip already exists
     public boolean payslipExists(String payslipId) {        
-        File file = new File(FILE_PATH);        
-        if (!file.exists()) return false;        
-        try (CSVReader reader = new CSVReader(new FileReader(file))) {            
-            reader.readNext(); // skip header            
-            String[] row;
-            
-            while ((row = reader.readNext()) != null) {
-                if (row.length > 0 && row[0].equals(payslipId)) {
-                    return true;
-                }
-            }            
-        } catch (Exception e) {
-            System.err.println("Error checking duplicate payslip: " + e.getMessage());
-        }
+        loadAllPayslips();
         
+        for (Payslip payslip: cache) {
+            if (payslip.getPayslipId().equals(payslipId)) {
+                return true;
+            }
+        }
         return false;
     }
     
+    // Helper
     public boolean isEmpty() {
-
-    File file = new File(FILE_PATH);
-
-    if (!file.exists()) return true;
-
-    try (CSVReader reader = new CSVReader(new FileReader(file))) {
-
-        reader.readNext(); // skip header
-
-        return reader.readNext() == null; // no data rows
-
-    } catch (Exception e) {
-        return true;
+        File file = new File(FILE_PATH);
+        if (!file.exists()) return true;
+        try (CSVReader reader = new CSVReader(new FileReader(file))) {
+            reader.readNext(); // skip header
+            return reader.readNext() == null; // no data rows
+        } catch (Exception e) {
+            return true;
+        }
     }
-}
     
 }
