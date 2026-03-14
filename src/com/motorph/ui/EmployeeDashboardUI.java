@@ -4,6 +4,9 @@
  */
 package com.motorph.ui;
 
+import com.motorph.model.Employee;
+import com.motorph.util.DateUtils;
+
 /**
  *
  * @author Lenovo
@@ -20,6 +23,26 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         setExtendedState(EmployeeDashboardUI.MAXIMIZED_BOTH);
     }
     
+    
+    private void populateFields(Employee emp) {
+        employeeDashboardENumberFld.setText(emp.getEmployeeNumber());
+        employeeDashboardFNameFld.setText(emp.getFirstName());
+        employeeDashboardLNameFld.setText(emp.getLastName());
+        employeeDashboardBirthdayFld.setText(DateUtils.dateToString(emp.getBirthday()));
+        employeeDashboardAddressFld.setText(emp.getAddress());
+        employeeDashboardPNumberFld.setText(emp.getPhoneNumber());
+        employeeDashboardSSSFld.setText(emp.getSSSNumber());
+        employeeDashboardPhilHealthFld.setText(emp.getPhilhealthNumber());
+        employeeDashboardTINFld.setText(emp.getTIN());
+        employeeDashboardPagIbigFld.setText(emp.getPagIbigNumber());
+        employeeDashboardStatusFld.setText(emp.getStatus());
+        employeeDashboardPositionFld.setText(emp.getPosition());
+        employeeDashboardISupervisorFld.setText(emp.getImmediateSupervisor());
+        employeeDashboardBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
+        employeeDashboardRiceSubsidyFld.setText(String.valueOf(emp.getRiceSubsidy()));
+        employeeDashboardPAllowanceFld.setText(String.valueOf(emp.getPhoneAllowance()));
+        employeeDashboardCAllowanceFld.setText(String.valueOf(emp.getClothingAllowance()));
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
