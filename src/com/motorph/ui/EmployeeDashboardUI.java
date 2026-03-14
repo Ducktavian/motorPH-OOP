@@ -46,7 +46,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         employeeDashboardBirthdayFld = new javax.swing.JTextField();
         employeeDashboardPositionFld = new javax.swing.JTextField();
         employeeDashboardBasicSalaryFld = new javax.swing.JTextField();
-        employeeDashboardPAllowanceFld = new javax.swing.JTextField();
+        employeeDashboardPhnAllowanceFld = new javax.swing.JTextField();
         employeeDashboardPositionLbl = new javax.swing.JLabel();
         employeeDashboardBasicSalaryLbl = new javax.swing.JLabel();
         employeeDashboardPhnAllowanceLbl = new javax.swing.JLabel();
@@ -56,7 +56,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         employeeDashboardPhilHealthLbl = new javax.swing.JLabel();
         employeeDashboardFNameFld = new javax.swing.JTextField();
         employeeDashboardISupervisorLbl = new javax.swing.JLabel();
-        employeeDashboardPNumberFld = new javax.swing.JTextField();
+        employeeDashboardPhnNumberFld = new javax.swing.JTextField();
         employeeDashboardISupervisorFld = new javax.swing.JTextField();
         employeeDashboardRiceSubsidyFld = new javax.swing.JTextField();
         employeeDashboardCAllowanceFld = new javax.swing.JTextField();
@@ -219,12 +219,12 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         employeeDashboardBasicSalaryFld.setEnabled(false);
         employeeDashboardBasicSalaryFld.addActionListener(this::employeeDashboardBasicSalaryFldActionPerformed);
 
-        employeeDashboardPAllowanceFld.setForeground(new java.awt.Color(30, 42, 56));
-        employeeDashboardPAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeeDashboardPAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        employeeDashboardPAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        employeeDashboardPAllowanceFld.setEnabled(false);
-        employeeDashboardPAllowanceFld.addActionListener(this::employeeDashboardPAllowanceFldActionPerformed);
+        employeeDashboardPhnAllowanceFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardPhnAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPhnAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardPhnAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardPhnAllowanceFld.setEnabled(false);
+        employeeDashboardPhnAllowanceFld.addActionListener(this::employeeDashboardPhnAllowanceFldActionPerformed);
 
         employeeDashboardPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         employeeDashboardPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
@@ -271,12 +271,12 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         employeeDashboardISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
         employeeDashboardISupervisorLbl.setText("Immediate Supervisor");
 
-        employeeDashboardPNumberFld.setForeground(new java.awt.Color(30, 42, 56));
-        employeeDashboardPNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeeDashboardPNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        employeeDashboardPNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        employeeDashboardPNumberFld.setEnabled(false);
-        employeeDashboardPNumberFld.addActionListener(this::employeeDashboardPNumberFldActionPerformed);
+        employeeDashboardPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        employeeDashboardPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDashboardPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        employeeDashboardPhnNumberFld.setEnabled(false);
+        employeeDashboardPhnNumberFld.addActionListener(this::employeeDashboardPhnNumberFldActionPerformed);
 
         employeeDashboardISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
         employeeDashboardISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -376,7 +376,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
                                 .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(employeeDashboardPhilHealthFld, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
                                     .addComponent(employeeDashboardSSSFld)
-                                    .addComponent(employeeDashboardPAllowanceFld)
+                                    .addComponent(employeeDashboardPhnAllowanceFld)
                                     .addComponent(employeeDashboardBasicSalaryFld)
                                     .addComponent(employeeDashboardPositionFld)
                                     .addComponent(employeeDashboardENumberFld))
@@ -395,7 +395,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
                             .addComponent(employeeDashboardCAllowanceFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(employeeDashboardRiceSubsidyFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(employeeDashboardISupervisorFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(employeeDashboardPNumberFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDashboardPhnNumberFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(employeeDashboardStatusFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addComponent(employeeDashboardLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -429,7 +429,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
                 .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(employeeDashboardBirthdayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeDashboardBirthdayLbl)
-                    .addComponent(employeeDashboardPNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeDashboardPhnNumberLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -445,7 +445,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
                     .addComponent(employeeDashboardRiceSubsidyLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(employeeDashboardEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(employeeDashboardPAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDashboardPhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeDashboardPhnAllowanceLbl)
                     .addComponent(employeeDashboardCAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeDashboardCltAllowanceLbl))
@@ -474,7 +474,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         employeeDashboardBirthdayFld.getAccessibleContext().setAccessibleName("employeeDashboardBirthdayFld");
         employeeDashboardPositionFld.getAccessibleContext().setAccessibleName("employeeDashboardPositionFld");
         employeeDashboardBasicSalaryFld.getAccessibleContext().setAccessibleName("employeeDashboardBasicSalaryFld");
-        employeeDashboardPAllowanceFld.getAccessibleContext().setAccessibleName("employeeDashboardPAllowanceFld");
+        employeeDashboardPhnAllowanceFld.getAccessibleContext().setAccessibleName("employeeDashboardPhnAllowanceFld");
         employeeDashboardPositionLbl.getAccessibleContext().setAccessibleName("employeeDashboardPositionLbl");
         employeeDashboardBasicSalaryLbl.getAccessibleContext().setAccessibleName("employeeDashboardBasicSalaryLbl");
         employeeDashboardPhnAllowanceLbl.getAccessibleContext().setAccessibleName("employeeDashboardPhnAllowanceLbl");
@@ -484,7 +484,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         employeeDashboardPhilHealthLbl.getAccessibleContext().setAccessibleName("employeeDashboardPhilHealthLbl");
         employeeDashboardFNameFld.getAccessibleContext().setAccessibleName("employeeDashboardFNameFld");
         employeeDashboardISupervisorLbl.getAccessibleContext().setAccessibleName("employeeDashboardISupervisorLbl");
-        employeeDashboardPNumberFld.getAccessibleContext().setAccessibleName("employeeDashboardPNumberFld");
+        employeeDashboardPhnNumberFld.getAccessibleContext().setAccessibleName("employeeDashboardPhnNumberFld");
         employeeDashboardISupervisorFld.getAccessibleContext().setAccessibleName("employeeDashboardISupervisorFld");
         employeeDashboardRiceSubsidyFld.getAccessibleContext().setAccessibleName("employeeDashboardRiceSubsidyFld");
         employeeDashboardCAllowanceFld.getAccessibleContext().setAccessibleName("employeeDashboardCAllowanceFld");
@@ -776,9 +776,9 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_employeeDashboardBasicSalaryFldActionPerformed
 
-    private void employeeDashboardPAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardPAllowanceFldActionPerformed
+    private void employeeDashboardPhnAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardPhnAllowanceFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_employeeDashboardPAllowanceFldActionPerformed
+    }//GEN-LAST:event_employeeDashboardPhnAllowanceFldActionPerformed
 
     private void employeeDashboardSSSFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardSSSFldActionPerformed
         // TODO add your handling code here:
@@ -792,9 +792,9 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_employeeDashboardFNameFldActionPerformed
 
-    private void employeeDashboardPNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardPNumberFldActionPerformed
+    private void employeeDashboardPhnNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardPhnNumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_employeeDashboardPNumberFldActionPerformed
+    }//GEN-LAST:event_employeeDashboardPhnNumberFldActionPerformed
 
     private void employeeDashboardISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardISupervisorFldActionPerformed
         // TODO add your handling code here:
@@ -879,13 +879,13 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
     private javax.swing.JLabel employeeDashboardLNameLbl;
     private javax.swing.JButton employeeDashboardMainDashboardBtn;
     private javax.swing.JLabel employeeDashboardMotorPHIconImgLbl;
-    private javax.swing.JTextField employeeDashboardPAllowanceFld;
-    private javax.swing.JTextField employeeDashboardPNumberFld;
     private javax.swing.JTextField employeeDashboardPagIbigFld;
     private javax.swing.JLabel employeeDashboardPagIbigLbl;
     private javax.swing.JTextField employeeDashboardPhilHealthFld;
     private javax.swing.JLabel employeeDashboardPhilHealthLbl;
+    private javax.swing.JTextField employeeDashboardPhnAllowanceFld;
     private javax.swing.JLabel employeeDashboardPhnAllowanceLbl;
+    private javax.swing.JTextField employeeDashboardPhnNumberFld;
     private javax.swing.JLabel employeeDashboardPhnNumberLbl;
     private javax.swing.JTextField employeeDashboardPositionFld;
     private javax.swing.JLabel employeeDashboardPositionLbl;

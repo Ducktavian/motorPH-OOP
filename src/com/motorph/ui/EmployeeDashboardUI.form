@@ -280,7 +280,7 @@
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="employeeDashboardPhilHealthFld" alignment="0" pref="158" max="32767" attributes="0"/>
                                       <Component id="employeeDashboardSSSFld" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="employeeDashboardPAllowanceFld" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="employeeDashboardPhnAllowanceFld" alignment="0" max="32767" attributes="0"/>
                                       <Component id="employeeDashboardBasicSalaryFld" alignment="0" max="32767" attributes="0"/>
                                       <Component id="employeeDashboardPositionFld" alignment="0" max="32767" attributes="0"/>
                                       <Component id="employeeDashboardENumberFld" alignment="0" max="32767" attributes="0"/>
@@ -303,7 +303,7 @@
                               <Component id="employeeDashboardCAllowanceFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
                               <Component id="employeeDashboardRiceSubsidyFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
                               <Component id="employeeDashboardISupervisorFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
-                              <Component id="employeeDashboardPNumberFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
+                              <Component id="employeeDashboardPhnNumberFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
                               <Component id="employeeDashboardStatusFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -346,7 +346,7 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="employeeDashboardBirthdayFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="employeeDashboardBirthdayLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="employeeDashboardPNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPhnNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="employeeDashboardPhnNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -365,7 +365,7 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="employeeDashboardPAllowanceFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="employeeDashboardPhnAllowanceFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="employeeDashboardPhnAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="employeeDashboardCAllowanceFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="employeeDashboardCltAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -605,7 +605,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardBasicSalaryFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="employeeDashboardPAllowanceFld">
+        <Component class="javax.swing.JTextField" name="employeeDashboardPhnAllowanceFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -626,10 +626,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPAllowanceFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPhnAllowanceFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardPAllowanceFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardPhnAllowanceFldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="employeeDashboardPositionLbl">
@@ -797,7 +797,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardISupervisorLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="employeeDashboardPNumberFld">
+        <Component class="javax.swing.JTextField" name="employeeDashboardPhnNumberFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -818,10 +818,10 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPNumberFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardPhnNumberFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardPNumberFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeDashboardPhnNumberFldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="employeeDashboardISupervisorFld">
