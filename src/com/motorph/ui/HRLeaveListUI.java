@@ -214,6 +214,8 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsENameFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsENameFld1.setText(" ");
         hrLDetailsENameFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsENameFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsENameFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsENameFld1.setEnabled(false);
         hrLDetailsENameFld1.addActionListener(this::hrLDetailsENameFld1ActionPerformed);
 
@@ -228,18 +230,24 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsENumberFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsENumberFld1.setText(" ");
         hrLDetailsENumberFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsENumberFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsENumberFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsENumberFld1.setEnabled(false);
         hrLDetailsENumberFld1.addActionListener(this::hrLDetailsENumberFld1ActionPerformed);
 
         hrLDetailsReasonFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsReasonFld1.setText(" ");
         hrLDetailsReasonFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsReasonFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsReasonFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsReasonFld1.setEnabled(false);
         hrLDetailsReasonFld1.addActionListener(this::hrLDetailsReasonFld1ActionPerformed);
 
         hrLDetailsStatusFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsStatusFld1.setText(" ");
         hrLDetailsStatusFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsStatusFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsStatusFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsStatusFld1.setEnabled(false);
         hrLDetailsStatusFld1.addActionListener(this::hrLDetailsStatusFld1ActionPerformed);
 
@@ -254,6 +262,8 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsPositionFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsPositionFld1.setText(" ");
         hrLDetailsPositionFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsPositionFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsPositionFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsPositionFld1.setEnabled(false);
         hrLDetailsPositionFld1.addActionListener(this::hrLDetailsPositionFld1ActionPerformed);
 
@@ -425,6 +435,8 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsENameFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsENameFld2.setText(" ");
         hrLDetailsENameFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsENameFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsENameFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsENameFld2.setEnabled(false);
         hrLDetailsENameFld2.addActionListener(this::hrLDetailsENameFld2ActionPerformed);
 
@@ -439,18 +451,24 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsENumberFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsENumberFld2.setText(" ");
         hrLDetailsENumberFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsENumberFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsENumberFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsENumberFld2.setEnabled(false);
         hrLDetailsENumberFld2.addActionListener(this::hrLDetailsENumberFld2ActionPerformed);
 
         hrLDetailsReasonFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsReasonFld2.setText(" ");
         hrLDetailsReasonFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsReasonFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsReasonFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsReasonFld2.setEnabled(false);
         hrLDetailsReasonFld2.addActionListener(this::hrLDetailsReasonFld2ActionPerformed);
 
         hrLDetailsStatusFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsStatusFld2.setText(" ");
         hrLDetailsStatusFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsStatusFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsStatusFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsStatusFld2.setEnabled(false);
         hrLDetailsStatusFld2.addActionListener(this::hrLDetailsStatusFld2ActionPerformed);
 
@@ -465,6 +483,8 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsPositionFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsPositionFld2.setText(" ");
         hrLDetailsPositionFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsPositionFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsPositionFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsPositionFld2.setEnabled(false);
         hrLDetailsPositionFld2.addActionListener(this::hrLDetailsPositionFld2ActionPerformed);
 
@@ -636,6 +656,8 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsENameFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsENameFld3.setText(" ");
         hrLDetailsENameFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsENameFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsENameFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsENameFld3.setEnabled(false);
         hrLDetailsENameFld3.addActionListener(this::hrLDetailsENameFld3ActionPerformed);
 
@@ -650,18 +672,24 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsENumberFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsENumberFld3.setText(" ");
         hrLDetailsENumberFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsENumberFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsENumberFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsENumberFld3.setEnabled(false);
         hrLDetailsENumberFld3.addActionListener(this::hrLDetailsENumberFld3ActionPerformed);
 
         hrLDetailsReasonFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsReasonFld3.setText(" ");
         hrLDetailsReasonFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsReasonFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsReasonFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsReasonFld3.setEnabled(false);
         hrLDetailsReasonFld3.addActionListener(this::hrLDetailsReasonFld3ActionPerformed);
 
         hrLDetailsStatusFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsStatusFld3.setText(" ");
         hrLDetailsStatusFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsStatusFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsStatusFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsStatusFld3.setEnabled(false);
         hrLDetailsStatusFld3.addActionListener(this::hrLDetailsStatusFld3ActionPerformed);
 
@@ -676,6 +704,8 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsPositionFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsPositionFld3.setText(" ");
         hrLDetailsPositionFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsPositionFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrLDetailsPositionFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrLDetailsPositionFld3.setEnabled(false);
         hrLDetailsPositionFld3.addActionListener(this::hrLDetailsPositionFld3ActionPerformed);
 

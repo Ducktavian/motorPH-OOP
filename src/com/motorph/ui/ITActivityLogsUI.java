@@ -169,16 +169,22 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
 
         itActLogsENumberFld.setForeground(new java.awt.Color(30, 42, 56));
         itActLogsENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENumberFld.setEnabled(false);
         itActLogsENumberFld.addActionListener(this::itActLogsENumberFldActionPerformed);
 
         itActLogsENameFld.setForeground(new java.awt.Color(30, 42, 56));
         itActLogsENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENameFld.setEnabled(false);
         itActLogsENameFld.addActionListener(this::itActLogsENameFldActionPerformed);
 
         itActLogsPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
         itActLogsPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsPhnNumberFld.setEnabled(false);
         itActLogsPhnNumberFld.addActionListener(this::itActLogsPhnNumberFldActionPerformed);
 
@@ -196,16 +202,22 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
 
         itActLogsISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
         itActLogsISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsISupervisorFld.setEnabled(false);
         itActLogsISupervisorFld.addActionListener(this::itActLogsISupervisorFldActionPerformed);
 
         itActLogsStatusFld.setForeground(new java.awt.Color(30, 42, 56));
         itActLogsStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsStatusFld.setEnabled(false);
         itActLogsStatusFld.addActionListener(this::itActLogsStatusFldActionPerformed);
 
         itActLogsPositionFld.setForeground(new java.awt.Color(30, 42, 56));
         itActLogsPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsPositionFld.setEnabled(false);
         itActLogsPositionFld.addActionListener(this::itActLogsPositionFldActionPerformed);
 
@@ -250,6 +262,8 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
 
         itActLogsUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
         itActLogsUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsUsernameFld.addActionListener(this::itActLogsUsernameFldActionPerformed);
 
         itActLogsPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -258,6 +272,8 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
 
         itActLogsPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
         itActLogsPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsPasswordFld.addActionListener(this::itActLogsPasswordFldActionPerformed);
 
         javax.swing.GroupLayout itActLogsUActDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itActLogsUActDetailsBrdrPnl);
@@ -429,8 +445,9 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
 
         itActLogsEntENumberPnl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         itActLogsEntENumberPnl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsEntENumberPnl.setText("   Enter Employee #");
         itActLogsEntENumberPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsEntENumberPnl.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsEntENumberPnl.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsEntENumberPnl.addActionListener(this::itActLogsEntENumberPnlActionPerformed);
         itActLogsSearchPnl.add(itActLogsEntENumberPnl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
         itActLogsEntENumberPnl.getAccessibleContext().setAccessibleName("itActLogsEntENumberPnl");
@@ -513,6 +530,8 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         itActLogsENameFld1.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsENameFld1.setText(" ");
         itActLogsENameFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENameFld1.setEnabled(false);
         itActLogsENameFld1.addActionListener(this::itActLogsENameFld1ActionPerformed);
 
@@ -523,6 +542,8 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         itActLogsReasonFld1.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsReasonFld1.setText(" ");
         itActLogsReasonFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsReasonFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsReasonFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsReasonFld1.setEnabled(false);
         itActLogsReasonFld1.addActionListener(this::itActLogsReasonFld1ActionPerformed);
 
@@ -533,12 +554,16 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         itActLogsENumberFld1.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsENumberFld1.setText(" ");
         itActLogsENumberFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENumberFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENumberFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENumberFld1.setEnabled(false);
         itActLogsENumberFld1.addActionListener(this::itActLogsENumberFld1ActionPerformed);
 
         itActLogsPositionFld1.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsPositionFld1.setText(" ");
         itActLogsPositionFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPositionFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsPositionFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsPositionFld1.setEnabled(false);
         itActLogsPositionFld1.addActionListener(this::itActLogsPositionFld1ActionPerformed);
 
@@ -566,12 +591,16 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
 
         itActLogsStatusFld1.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsStatusFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsStatusFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsStatusFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsStatusFld1.setEnabled(false);
         itActLogsStatusFld1.addActionListener(this::itActLogsStatusFld1ActionPerformed);
 
         itActLogsENameFld4.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsENameFld4.setText(" ");
         itActLogsENameFld4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld4.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld4.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENameFld4.setEnabled(false);
         itActLogsENameFld4.addActionListener(this::itActLogsENameFld4ActionPerformed);
 
@@ -699,6 +728,8 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         itActLogsENameFld2.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsENameFld2.setText(" ");
         itActLogsENameFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENameFld2.setEnabled(false);
         itActLogsENameFld2.addActionListener(this::itActLogsENameFld2ActionPerformed);
 
@@ -709,6 +740,8 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         itActLogsReasonFld2.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsReasonFld2.setText(" ");
         itActLogsReasonFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsReasonFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsReasonFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsReasonFld2.setEnabled(false);
         itActLogsReasonFld2.addActionListener(this::itActLogsReasonFld2ActionPerformed);
 
@@ -719,12 +752,16 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         itActLogsENumberFld2.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsENumberFld2.setText(" ");
         itActLogsENumberFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENumberFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENumberFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENumberFld2.setEnabled(false);
         itActLogsENumberFld2.addActionListener(this::itActLogsENumberFld2ActionPerformed);
 
         itActLogsPositionFld2.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsPositionFld2.setText(" ");
         itActLogsPositionFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsPositionFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsPositionFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsPositionFld2.setEnabled(false);
         itActLogsPositionFld2.addActionListener(this::itActLogsPositionFld2ActionPerformed);
 
@@ -752,12 +789,16 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
 
         itActLogsStatusFld2.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsStatusFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsStatusFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsStatusFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsStatusFld2.setEnabled(false);
         itActLogsStatusFld2.addActionListener(this::itActLogsStatusFld2ActionPerformed);
 
         itActLogsENameFld5.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsENameFld5.setText(" ");
         itActLogsENameFld5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld5.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld5.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENameFld5.setEnabled(false);
         itActLogsENameFld5.addActionListener(this::itActLogsENameFld5ActionPerformed);
 
@@ -885,6 +926,8 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         itActLogsENameFld3.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsENameFld3.setText(" ");
         itActLogsENameFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENameFld3.setEnabled(false);
         itActLogsENameFld3.addActionListener(this::itActLogsENameFld3ActionPerformed);
 
@@ -895,6 +938,8 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         itActLogsReasonFld3.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsReasonFld3.setText(" ");
         itActLogsReasonFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsReasonFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsReasonFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsReasonFld3.setEnabled(false);
         itActLogsReasonFld3.addActionListener(this::itActLogsReasonFld3ActionPerformed);
 
@@ -905,6 +950,8 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         itActLogsENumberFld3.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsENumberFld3.setText(" ");
         itActLogsENumberFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENumberFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENumberFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENumberFld3.setEnabled(false);
         itActLogsENumberFld3.addActionListener(this::itActLogsENumberFld3ActionPerformed);
 
@@ -938,12 +985,16 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
 
         itActLogsStatusFld3.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsStatusFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsStatusFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsStatusFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsStatusFld3.setEnabled(false);
         itActLogsStatusFld3.addActionListener(this::itActLogsStatusFld3ActionPerformed);
 
         itActLogsENameFld6.setForeground(new java.awt.Color(31, 41, 55));
         itActLogsENameFld6.setText(" ");
         itActLogsENameFld6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsENameFld6.setCaretColor(new java.awt.Color(31, 41, 55));
+        itActLogsENameFld6.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itActLogsENameFld6.setEnabled(false);
         itActLogsENameFld6.addActionListener(this::itActLogsENameFld6ActionPerformed);
 

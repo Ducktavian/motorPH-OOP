@@ -90,6 +90,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeCltAllowanceFld = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         hrAEmployeeAEDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
         hrAEmployeeAEDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -103,7 +104,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeAEDetailsLbl.getAccessibleContext().setAccessibleName("hrAEmployeeAEDetailsLbl");
 
         hrAEmployeeSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
-        hrAEmployeeSidebarPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         hrAEmployeeEDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
         hrAEmployeeEDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -111,8 +111,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeEDetailsBtn.setText("Employee Details");
         hrAEmployeeEDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         hrAEmployeeEDetailsBtn.addActionListener(this::hrAEmployeeEDetailsBtnActionPerformed);
-        hrAEmployeeSidebarPnl.add(hrAEmployeeEDetailsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
-        hrAEmployeeEDetailsBtn.getAccessibleContext().setAccessibleName("hrAEmployeeEDetailsBtn");
 
         hrAEmployeeEditEDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
         hrAEmployeeEditEDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -120,8 +118,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeEditEDetailsBtn.setText("Edit Employee Details");
         hrAEmployeeEditEDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         hrAEmployeeEditEDetailsBtn.addActionListener(this::hrAEmployeeEditEDetailsBtnActionPerformed);
-        hrAEmployeeSidebarPnl.add(hrAEmployeeEditEDetailsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
-        hrAEmployeeEditEDetailsBtn.getAccessibleContext().setAccessibleName("hrAEmployeeEditEDetailsBtn");
 
         hrAEmployeeAEDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
         hrAEmployeeAEDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -129,8 +125,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeAEDetailsBtn.setText("Add Employee Details");
         hrAEmployeeAEDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         hrAEmployeeAEDetailsBtn.addActionListener(this::hrAEmployeeAEDetailsBtnActionPerformed);
-        hrAEmployeeSidebarPnl.add(hrAEmployeeAEDetailsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 301, -1, 39));
-        hrAEmployeeAEDetailsBtn.getAccessibleContext().setAccessibleName("hrAEmployeeAEDetailsBtn");
 
         hrAEmployeeMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         hrAEmployeeMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -139,11 +133,47 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         hrAEmployeeMainDashboardBtn.setLabel("Main Dashboard");
         hrAEmployeeMainDashboardBtn.addActionListener(this::hrAEmployeeMainDashboardBtnActionPerformed);
-        hrAEmployeeSidebarPnl.add(hrAEmployeeMainDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 647, -1, 39));
-        hrAEmployeeMainDashboardBtn.getAccessibleContext().setAccessibleName("hrAEmployeeMainDashboardBtn");
 
         hrAEmployeeMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
-        hrAEmployeeSidebarPnl.add(hrAEmployeeMotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
+
+        javax.swing.GroupLayout hrAEmployeeSidebarPnlLayout = new javax.swing.GroupLayout(hrAEmployeeSidebarPnl);
+        hrAEmployeeSidebarPnl.setLayout(hrAEmployeeSidebarPnlLayout);
+        hrAEmployeeSidebarPnlLayout.setHorizontalGroup(
+            hrAEmployeeSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(hrAEmployeeSidebarPnlLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(hrAEmployeeSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(hrAEmployeeEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(hrAEmployeeSidebarPnlLayout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(hrAEmployeeMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(hrAEmployeeEditEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hrAEmployeeAEDetailsBtn))
+                .addGap(23, 23, 23))
+            .addComponent(hrAEmployeeMainDashboardBtn, javax.swing.GroupLayout.Alignment.TRAILING)
+        );
+        hrAEmployeeSidebarPnlLayout.setVerticalGroup(
+            hrAEmployeeSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(hrAEmployeeSidebarPnlLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(hrAEmployeeSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(hrAEmployeeSidebarPnlLayout.createSequentialGroup()
+                        .addGap(189, 189, 189)
+                        .addComponent(hrAEmployeeEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(hrAEmployeeMotorPHIconImgLbl))
+                .addGap(12, 12, 12)
+                .addComponent(hrAEmployeeEditEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(hrAEmployeeAEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 264, Short.MAX_VALUE)
+                .addComponent(hrAEmployeeMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43))
+        );
+
+        hrAEmployeeEDetailsBtn.getAccessibleContext().setAccessibleName("hrAEmployeeEDetailsBtn");
+        hrAEmployeeEditEDetailsBtn.getAccessibleContext().setAccessibleName("hrAEmployeeEditEDetailsBtn");
+        hrAEmployeeAEDetailsBtn.getAccessibleContext().setAccessibleName("hrAEmployeeAEDetailsBtn");
+        hrAEmployeeMainDashboardBtn.getAccessibleContext().setAccessibleName("hrAEmployeeMainDashboardBtn");
         hrAEmployeeMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("hrAEmployeeMotorPHIconImgLbl");
 
         hrAEmployeeActivateBtn.setBackground(new java.awt.Color(34, 197, 94));
@@ -159,67 +189,67 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeEDetailsBrdrPnl.setPreferredSize(new java.awt.Dimension(700, 469));
         hrAEmployeeEDetailsBrdrPnl.setRequestFocusEnabled(false);
 
-        hrAEmployeeENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeENumberLbl.setText("Employee #");
 
-        hrAEmployeeLNameLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeLNameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeLNameLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeLNameLbl.setText("Last Name");
 
-        hrAEmployeeAddressLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeAddressLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeAddressLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeAddressLbl.setText("Address");
 
-        hrAEmployeeBirthdayLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeBirthdayLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeBirthdayLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeBirthdayLbl.setText("Birthday");
 
-        hrAEmployeePositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeePositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeePositionLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeePositionLbl.setText("Position");
 
-        hrAEmployeeBasicSalaryLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeBasicSalaryLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeBasicSalaryLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeBasicSalaryLbl.setText("Basic Salary");
 
-        hrAEmployeeSSSLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeSSSLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeSSSLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeSSSLbl.setText("SSS");
 
-        hrAEmployeePhilHealthLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeePhilHealthLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeePhilHealthLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeePhilHealthLbl.setText("PhilHealth");
 
-        hrAEmployeeCltAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeCltAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeCltAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeCltAllowanceLbl.setText("Clothing Allowance");
 
-        hrAEmployeeFNameLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeFNameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeFNameLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeFNameLbl.setText("First Name");
 
-        hrAEmployeePhnNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeePhnNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeePhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeePhnNumberLbl.setText("Phone Number");
 
-        hrAEmployeeISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeISupervisorLbl.setText("Immediate Supervisor");
 
-        hrAEmployeeRiceSubsidyLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeRiceSubsidyLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeRiceSubsidyLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeRiceSubsidyLbl.setText("Rice Subsidy");
 
-        hrAEmployeeTINLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeTINLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeTINLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeTINLbl.setText("TIN");
 
-        hrAEmployeePagIbigLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeePagIbigLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeePagIbigLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeePagIbigLbl.setText("Pag-Ibig");
 
-        hrAEmployeePhnAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeePhnAllowanceLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeePhnAllowanceLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeePhnAllowanceLbl.setText("Phone Allowance");
 
@@ -303,7 +333,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeStatusCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Regular", "Probationary" }));
         hrAEmployeeStatusCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        hrAEmployeeStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        hrAEmployeeStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAEmployeeStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAEmployeeStatusLbl.setText("Status");
 
@@ -320,78 +350,77 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(hrAEmployeeAddressLbl)
-                        .addGap(90, 90, 90)
-                        .addComponent(hrAEmployeeAddressFld, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(hrAEmployeePhilHealthLbl)
-                        .addGap(71, 71, 71)
-                        .addComponent(hrAEmployeePhilHealthFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(hrAEmployeePagIbigLbl)
-                        .addGap(122, 122, 122)
-                        .addComponent(hrAEmployeePagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(hrAEmployeeSSSLbl)
-                        .addGap(127, 127, 127)
-                        .addComponent(hrAEmployeeSSSFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(hrAEmployeeTINLbl)
-                        .addGap(167, 167, 167)
-                        .addComponent(hrAEmployeeTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(hrAEmployeePositionLbl)
-                        .addGap(89, 89, 89)
-                        .addComponent(hrAEmployeePositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(hrAEmployeeISupervisorLbl)
-                        .addGap(6, 6, 6)
-                        .addComponent(hrAEmployeeISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(hrAEmployeeBirthdayLbl)
-                        .addGap(87, 87, 87)
-                        .addComponent(hrAEmployeeBirthdayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(hrAEmployeePhnNumberLbl)
-                        .addGap(65, 65, 65)
-                        .addComponent(hrAEmployeePhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(hrAEmployeePhnAllowanceLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hrAEmployeeBasicSalaryLbl)
+                            .addComponent(hrAEmployeeSSSLbl)
+                            .addComponent(hrAEmployeePhilHealthLbl))
+                        .addContainerGap())
                     .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(hrAEmployeeBasicSalaryLbl)
-                                .addGap(59, 59, 59)
-                                .addComponent(hrAEmployeeBasicSalaryFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(hrAEmployeeRiceSubsidyLbl))
-                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(hrAEmployeePhnAllowanceLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(hrAEmployeePhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(hrAEmployeeCltAllowanceLbl)))
-                        .addGap(28, 28, 28)
+                            .addComponent(hrAEmployeeENumberLbl)
+                            .addComponent(hrAEmployeeLNameLbl))
+                        .addGap(54, 54, 54)
                         .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrAEmployeeCltAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrAEmployeeRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(hrAEmployeeLNameLbl)
-                                .addGap(69, 69, 69)
-                                .addComponent(hrAEmployeeLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(hrAEmployeeENumberLbl)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(hrAEmployeeENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
+                            .addComponent(hrAEmployeeLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hrAEmployeeENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(22, 22, 22)
                         .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(hrAEmployeeStatusLbl)
                             .addComponent(hrAEmployeeFNameLbl))
-                        .addGap(103, 103, 103)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrAEmployeeStatusCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrAEmployeeFNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(23, Short.MAX_VALUE))
+                            .addComponent(hrAEmployeeBirthdayLbl)
+                            .addComponent(hrAEmployeePositionLbl)
+                            .addComponent(hrAEmployeeAddressLbl))
+                        .addGap(81, 81, 81)
+                        .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(hrAEmployeePhilHealthFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(hrAEmployeeSSSFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(hrAEmployeeAddressFld, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(hrAEmployeeFNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                                                .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                                                        .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                            .addComponent(hrAEmployeePositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(hrAEmployeeBirthdayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(hrAEmployeeBasicSalaryFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                                                                .addGap(18, 18, 18)
+                                                                .addComponent(hrAEmployeeRiceSubsidyLbl))
+                                                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                                                                .addGap(18, 18, 18)
+                                                                .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                    .addComponent(hrAEmployeePhnNumberLbl)
+                                                                    .addComponent(hrAEmployeeISupervisorLbl)))))
+                                                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                                                        .addComponent(hrAEmployeePhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addComponent(hrAEmployeeTINLbl)
+                                                            .addComponent(hrAEmployeeCltAllowanceLbl)
+                                                            .addComponent(hrAEmployeePagIbigLbl))))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(hrAEmployeePagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(hrAEmployeeTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(hrAEmployeeCltAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(hrAEmployeeRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(hrAEmployeeISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(hrAEmployeePhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(hrAEmployeeStatusCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(55, 55, 55))))))
         );
         hrAEmployeeEDetailsBrdrPnlLayout.setVerticalGroup(
             hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -403,57 +432,64 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                         .addComponent(hrAEmployeeENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(hrAEmployeeStatusCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(hrAEmployeeStatusLbl)))
-                .addGap(18, 18, 18)
+                .addGap(16, 16, 16)
                 .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(hrAEmployeeLNameLbl)
-                    .addComponent(hrAEmployeeLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrAEmployeeFNameLbl)
-                    .addComponent(hrAEmployeeFNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(hrAEmployeeFNameLbl)
+                        .addComponent(hrAEmployeeLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(hrAEmployeeFNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(hrAEmployeeAddressLbl)
                     .addComponent(hrAEmployeeAddressFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrAEmployeeBirthdayLbl)
-                    .addComponent(hrAEmployeeBirthdayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrAEmployeePhnNumberLbl)
-                    .addComponent(hrAEmployeePhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16)
                 .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
                         .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(hrAEmployeeBirthdayLbl)
+                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(hrAEmployeePhnNumberLbl)
+                                .addComponent(hrAEmployeeBirthdayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(hrAEmployeePositionLbl))
+                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(hrAEmployeePhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14)
+                        .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(hrAEmployeePositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(hrAEmployeeISupervisorLbl)
-                            .addComponent(hrAEmployeeISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(hrAEmployeePositionLbl)))
+                            .addComponent(hrAEmployeeISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
-                .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(hrAEmployeeBasicSalaryFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(hrAEmployeeBasicSalaryLbl)
-                        .addComponent(hrAEmployeeRiceSubsidyLbl))
+                .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(hrAEmployeeBasicSalaryFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hrAEmployeeBasicSalaryLbl)
+                    .addComponent(hrAEmployeeRiceSubsidyLbl)
                     .addComponent(hrAEmployeeRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(16, 16, 16)
                 .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(hrAEmployeePhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrAEmployeePhnAllowanceLbl)
                     .addComponent(hrAEmployeeCltAllowanceLbl)
                     .addComponent(hrAEmployeeCltAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(16, 16, 16)
                 .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(hrAEmployeeSSSLbl)
-                    .addComponent(hrAEmployeeSSSFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrAEmployeeTINLbl)
-                    .addComponent(hrAEmployeeTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(hrAEmployeeTINLbl)
+                        .addComponent(hrAEmployeeSSSFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(hrAEmployeeTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrAEmployeePhilHealthLbl)
-                    .addComponent(hrAEmployeePhilHealthFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrAEmployeePagIbigLbl)
-                    .addComponent(hrAEmployeePagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(hrAEmployeePhilHealthLbl)
+                            .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(hrAEmployeePagIbigLbl)
+                                .addComponent(hrAEmployeePhilHealthFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(hrAEmployeePagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         hrAEmployeeENumberLbl.getAccessibleContext().setAccessibleName("hrAEmployeeENumberLbl");
@@ -502,13 +538,13 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                         .addComponent(hrAEmployeeSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrAEmployeeEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 716, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrAEmployeeAEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(15, 15, 15))
+                            .addComponent(hrAEmployeeAEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hrAEmployeeEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 688, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(hrAEmployeeSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(hrAEmployeeSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(hrAEmployeeAEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)

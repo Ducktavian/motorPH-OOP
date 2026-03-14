@@ -102,8 +102,9 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
 
         financeEditAttLogsEntENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         financeEditAttLogsEntENumberFld.setForeground(new java.awt.Color(31, 41, 55));
-        financeEditAttLogsEntENumberFld.setText("   Enter Employee #");
         financeEditAttLogsEntENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeEditAttLogsEntENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeEditAttLogsEntENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeEditAttLogsEntENumberFld.addActionListener(this::financeEditAttLogsEntENumberFldActionPerformed);
         financeEditAttLogsSearchPnl.add(financeEditAttLogsEntENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
         financeEditAttLogsEntENumberFld.getAccessibleContext().setAccessibleName("financeEditAttLogsEntENumberFld");

@@ -3,6 +3,9 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1000, 700]"/>
+    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -27,20 +30,26 @@
               <Component id="hrRDetailsSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="hrRDetailsRListBrdrScrlPnl" min="-2" pref="693" max="-2" attributes="0"/>
                   <Component id="hrRDetailsRListPnl" min="-2" pref="175" max="-2" attributes="0"/>
+                  <Component id="hrRDetailsRListBrdrScrlPnl" min="-2" pref="692" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="hrRDetailsSidebarPnl" min="-2" max="-2" attributes="0"/>
           <Group type="102" attributes="0">
-              <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-              <Component id="hrRDetailsRListPnl" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="hrRDetailsRListBrdrScrlPnl" min="-2" pref="576" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="hrRDetailsSidebarPnl" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
+                      <Component id="hrRDetailsRListPnl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="hrRDetailsRListBrdrScrlPnl" min="-2" pref="562" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -227,6 +236,9 @@
             </LineBorder>
           </Border>
         </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1000, 700]"/>
+        </Property>
       </Properties>
       <AccessibilityProperties>
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRListBrdrScrlPnl"/>
@@ -260,7 +272,7 @@
                           <Component id="hrRDetailsFARequestBrdrPnl2" min="-2" pref="647" max="-2" attributes="0"/>
                           <Component id="hrRDetailsFARequestBrdrPnl1" min="-2" pref="647" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="18" max="32767" attributes="0"/>
+                      <EmptySpace pref="17" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -308,65 +320,67 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="hrRDetailsFARequestPnl" min="-2" pref="165" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="hrRDetailsApproveBtn1" min="-2" pref="89" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                  <Component id="hrRDetailsDenyBtn1" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                  <Component id="hrRDetailsReasonFld1" min="-2" pref="606" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="hrRDetailsENameLbl1" min="-2" pref="160" max="-2" attributes="0"/>
-                                              <Component id="hrRDetailsENumberLbl1" min="-2" pref="116" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="hrRDetailsENameFld1" min="-2" pref="150" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="hrRDetailsFARequestPnl" min="-2" pref="165" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="hrRDetailsApproveBtn1" min="-2" pref="89" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                      <Component id="hrRDetailsDenyBtn1" min="-2" pref="89" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="hrRDetailsENameLbl1" min="-2" pref="160" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsENumberLbl1" min="-2" pref="116" max="-2" attributes="0"/>
                                               </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="hrRDetailsOvertimeRBtn1" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="hrRDetailsENumberFld1" min="-2" pref="150" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="hrRDetailsOvertimeRBtn1" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="hrRDetailsENumberFld1" min="-2" pref="150" max="-2" attributes="0"/>
+                                                      </Group>
                                                   </Group>
-                                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsENameFld1" max="32767" attributes="0"/>
                                               </Group>
+                                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="hrRDetailsReasonLbl1" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="280" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="hrRDetailsReasonLbl1" min="-2" pref="80" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="280" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="hrRDetailsStatusLbl1" min="-2" pref="80" max="-2" attributes="0"/>
-                                              <Component id="hrRDetailsPositionLbl1" min="-2" pref="80" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                                  <Component id="hrRDetailsStatusFld1" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="hrRDetailsStatusLbl1" min="-2" pref="80" max="-2" attributes="0"/>
+                                                  <Component id="hrRDetailsPositionLbl1" min="-2" pref="80" max="-2" attributes="0"/>
                                               </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="hrRDetailsPositionFld1" min="-2" pref="150" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                                      <Component id="hrRDetailsStatusFld1" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="hrRDetailsPositionFld1" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  </Group>
                                               </Group>
                                           </Group>
+                                          <Component id="hrRDetailsUndertimeRBtn1" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="hrRDetailsUndertimeRBtn1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="hrRDetailsReasonFld1" alignment="1" min="-2" pref="606" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="21" max="32767" attributes="0"/>
+                          <EmptySpace pref="15" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -397,23 +411,23 @@
                               </Group>
                               <Component id="hrRDetailsPositionFld1" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="hrRDetailsOvertimeRBtn1" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="hrRDetailsUndertimeRBtn1" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="23" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <EmptySpace pref="28" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="22" max="32767" attributes="0"/>
                                   <Component id="hrRDetailsReasonLbl1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="hrRDetailsReasonFld1" min="-2" pref="56" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -510,6 +524,12 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <AccessibilityProperties>
@@ -560,6 +580,12 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <AccessibilityProperties>
@@ -582,6 +608,12 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <AccessibilityProperties>
@@ -603,6 +635,12 @@
                           <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                         </LineBorder>
                       </Border>
+                    </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
@@ -653,6 +691,12 @@
                           <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                         </LineBorder>
                       </Border>
+                    </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
@@ -796,21 +840,18 @@
                                               <Component id="hrRDetailsENameLbl2" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
                                               <Component id="hrRDetailsENumberLbl2" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
                                           </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="hrRDetailsENameFld2" min="-2" pref="150" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Component id="hrRDetailsOvertimeRBtn2" alignment="0" min="-2" max="-2" attributes="0"/>
                                                       <Component id="hrRDetailsENumberFld2" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                               </Group>
+                                              <Component id="hrRDetailsENameFld2" max="32767" attributes="0"/>
                                           </Group>
+                                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="hrRDetailsReasonLbl2" min="-2" pref="80" max="-2" attributes="0"/>
@@ -839,7 +880,7 @@
                               </Group>
                               <Component id="hrRDetailsReasonFld2" alignment="1" min="-2" pref="606" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="21" max="32767" attributes="0"/>
+                          <EmptySpace pref="19" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -982,6 +1023,12 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <AccessibilityProperties>
@@ -1032,6 +1079,12 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <AccessibilityProperties>
@@ -1054,6 +1107,12 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <AccessibilityProperties>
@@ -1075,6 +1134,12 @@
                           <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                         </LineBorder>
                       </Border>
+                    </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
@@ -1125,6 +1190,12 @@
                           <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                         </LineBorder>
                       </Border>
+                    </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
@@ -1268,21 +1339,18 @@
                                               <Component id="hrRDetailsENameLbl3" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
                                               <Component id="hrRDetailsENumberLbl3" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
                                           </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="hrRDetailsENameFld3" min="-2" pref="150" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Component id="hrRDetailsOvertimeRBtn3" alignment="0" min="-2" max="-2" attributes="0"/>
                                                       <Component id="hrRDetailsENumberFld3" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                               </Group>
+                                              <Component id="hrRDetailsENameFld3" max="32767" attributes="0"/>
                                           </Group>
+                                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="hrRDetailsReasonLbl3" min="-2" pref="80" max="-2" attributes="0"/>
@@ -1311,7 +1379,7 @@
                               </Group>
                               <Component id="hrRDetailsReasonFld3" alignment="1" min="-2" pref="606" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="21" max="32767" attributes="0"/>
+                          <EmptySpace pref="19" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1454,6 +1522,12 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <AccessibilityProperties>
@@ -1504,6 +1578,12 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <AccessibilityProperties>
@@ -1526,6 +1606,12 @@
                         </LineBorder>
                       </Border>
                     </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
                   <AccessibilityProperties>
@@ -1547,6 +1633,12 @@
                           <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                         </LineBorder>
                       </Border>
+                    </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>
@@ -1597,6 +1689,9 @@
                           <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                         </LineBorder>
                       </Border>
+                    </Property>
+                    <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="37" green="29" red="1f" type="rgb"/>
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                   </Properties>

@@ -163,16 +163,22 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
         itEditUserENumberFld.setForeground(new java.awt.Color(30, 42, 56));
         itEditUserENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUserENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUserENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itEditUserENumberFld.setEnabled(false);
         itEditUserENumberFld.addActionListener(this::itEditUserENumberFldActionPerformed);
 
         itEditUserENameFld.setForeground(new java.awt.Color(30, 42, 56));
         itEditUserENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUserENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUserENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itEditUserENameFld.setEnabled(false);
         itEditUserENameFld.addActionListener(this::itEditUserENameFldActionPerformed);
 
         itEditUserPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
         itEditUserPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUserPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUserPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itEditUserPhnNumberFld.setEnabled(false);
         itEditUserPhnNumberFld.addActionListener(this::itEditUserPhnNumberFldActionPerformed);
 
@@ -190,11 +196,15 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
         itEditUserISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
         itEditUserISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUserISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUserISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itEditUserISupervisorFld.setEnabled(false);
         itEditUserISupervisorFld.addActionListener(this::itEditUserISupervisorFldActionPerformed);
 
         itEditUserPositionFld.setForeground(new java.awt.Color(30, 42, 56));
         itEditUserPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUserPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUserPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itEditUserPositionFld.setEnabled(false);
         itEditUserPositionFld.addActionListener(this::itEditUserPositionFldActionPerformed);
 
@@ -204,6 +214,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
         itEditUserStatusFld.setForeground(new java.awt.Color(30, 42, 56));
         itEditUserStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUserStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUserStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itEditUserStatusFld.setEnabled(false);
         itEditUserStatusFld.addActionListener(this::itEditUserStatusFldActionPerformed);
 
@@ -244,6 +256,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
         itEditUserUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
         itEditUserUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUserUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUserUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itEditUserUsernameFld.addActionListener(this::itEditUserUsernameFldActionPerformed);
 
         itEditUserPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -252,6 +266,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
         itEditUserPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
         itEditUserPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUserPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUserPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itEditUserPasswordFld.addActionListener(this::itEditUserPasswordFldActionPerformed);
 
         javax.swing.GroupLayout itEditUserUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itEditUserUAccDetailsBrdrPnl);

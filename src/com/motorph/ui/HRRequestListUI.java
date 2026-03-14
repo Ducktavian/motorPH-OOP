@@ -90,6 +90,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsDenyBtn3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         hrRDetailsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
@@ -166,6 +167,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsRListLbl.getAccessibleContext().setAccessibleName("hrRDetailsRListLbl");
 
         hrRDetailsRListBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        hrRDetailsRListBrdrScrlPnl.setPreferredSize(new java.awt.Dimension(1000, 700));
 
         hrRDetailsRListBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
         hrRDetailsRListBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
@@ -213,6 +215,8 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsENameFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsENameFld1.setText(" ");
         hrRDetailsENameFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsENameFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsENameFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsENameFld1.setEnabled(false);
         hrRDetailsENameFld1.addActionListener(this::hrRDetailsENameFld1ActionPerformed);
 
@@ -227,18 +231,24 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsENumberFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsENumberFld1.setText(" ");
         hrRDetailsENumberFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsENumberFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsENumberFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsENumberFld1.setEnabled(false);
         hrRDetailsENumberFld1.addActionListener(this::hrRDetailsENumberFld1ActionPerformed);
 
         hrRDetailsReasonFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsReasonFld1.setText(" ");
         hrRDetailsReasonFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsReasonFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsReasonFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsReasonFld1.setEnabled(false);
         hrRDetailsReasonFld1.addActionListener(this::hrRDetailsReasonFld1ActionPerformed);
 
         hrRDetailsStatusFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsStatusFld1.setText(" ");
         hrRDetailsStatusFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsStatusFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsStatusFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsStatusFld1.setEnabled(false);
         hrRDetailsStatusFld1.addActionListener(this::hrRDetailsStatusFld1ActionPerformed);
 
@@ -253,6 +263,8 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsPositionFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsPositionFld1.setText(" ");
         hrRDetailsPositionFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsPositionFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsPositionFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsPositionFld1.setEnabled(false);
         hrRDetailsPositionFld1.addActionListener(this::hrRDetailsPositionFld1ActionPerformed);
 
@@ -287,48 +299,49 @@ public class HRRequestListUI extends javax.swing.JFrame {
             hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                        .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(hrRDetailsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46)
-                        .addComponent(hrRDetailsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrRDetailsENameLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrRDetailsENumberLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(hrRDetailsENameFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(hrRDetailsOvertimeRBtn1)
-                                            .addComponent(hrRDetailsENumberFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(34, 34, 34))))
-                            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                .addComponent(hrRDetailsReasonLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(280, 280, 280)))
-                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrRDetailsStatusLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrRDetailsPositionLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                        .addGap(16, 16, 16)
-                                        .addComponent(hrRDetailsStatusFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(hrRDetailsPositionFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addComponent(hrRDetailsUndertimeRBtn1)))
-                    .addComponent(hrRDetailsReasonFld1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                        .addGap(6, 6, 6)
+                        .addComponent(hrRDetailsReasonFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
+                            .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(hrRDetailsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(46, 46, 46)
+                            .addComponent(hrRDetailsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
+                            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
+                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(hrRDetailsENameLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(hrRDetailsENumberLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(18, 18, 18)
+                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
+                                            .addGap(0, 0, Short.MAX_VALUE)
+                                            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(hrRDetailsOvertimeRBtn1)
+                                                .addComponent(hrRDetailsENumberFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(hrRDetailsENameFld1))
+                                    .addGap(34, 34, 34))
+                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
+                                    .addComponent(hrRDetailsReasonLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(280, 280, 280)))
+                            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
+                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(hrRDetailsStatusLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(hrRDetailsPositionLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
+                                            .addGap(16, 16, 16)
+                                            .addComponent(hrRDetailsStatusFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(hrRDetailsPositionFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(hrRDetailsUndertimeRBtn1)))))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         hrRDetailsFARequestBrdrPnl1Layout.setVerticalGroup(
             hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -352,19 +365,19 @@ public class HRRequestListUI extends javax.swing.JFrame {
                         .addComponent(hrRDetailsENumberLbl1)
                         .addComponent(hrRDetailsPositionLbl1))
                     .addComponent(hrRDetailsPositionFld1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(hrRDetailsOvertimeRBtn1)
                             .addComponent(hrRDetailsUndertimeRBtn1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE))
                     .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                        .addComponent(hrRDetailsReasonLbl1)
-                        .addGap(12, 12, 12)))
+                        .addGap(0, 22, Short.MAX_VALUE)
+                        .addComponent(hrRDetailsReasonLbl1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(hrRDetailsReasonFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
+                .addGap(34, 34, 34))
         );
 
         hrRDetailsFARequestPnl.getAccessibleContext().setAccessibleName("hrRDetailsFARequestPnl1");
@@ -426,6 +439,8 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsENameFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsENameFld2.setText(" ");
         hrRDetailsENameFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsENameFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsENameFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsENameFld2.setEnabled(false);
         hrRDetailsENameFld2.addActionListener(this::hrRDetailsENameFld2ActionPerformed);
 
@@ -440,18 +455,24 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsENumberFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsENumberFld2.setText(" ");
         hrRDetailsENumberFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsENumberFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsENumberFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsENumberFld2.setEnabled(false);
         hrRDetailsENumberFld2.addActionListener(this::hrRDetailsENumberFld2ActionPerformed);
 
         hrRDetailsReasonFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsReasonFld2.setText(" ");
         hrRDetailsReasonFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsReasonFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsReasonFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsReasonFld2.setEnabled(false);
         hrRDetailsReasonFld2.addActionListener(this::hrRDetailsReasonFld2ActionPerformed);
 
         hrRDetailsStatusFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsStatusFld2.setText(" ");
         hrRDetailsStatusFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsStatusFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsStatusFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsStatusFld2.setEnabled(false);
         hrRDetailsStatusFld2.addActionListener(this::hrRDetailsStatusFld2ActionPerformed);
 
@@ -466,6 +487,8 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsPositionFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsPositionFld2.setText(" ");
         hrRDetailsPositionFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsPositionFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsPositionFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsPositionFld2.setEnabled(false);
         hrRDetailsPositionFld2.addActionListener(this::hrRDetailsPositionFld2ActionPerformed);
 
@@ -513,17 +536,15 @@ public class HRRequestListUI extends javax.swing.JFrame {
                                 .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(hrRDetailsENameLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(hrRDetailsENumberLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
                                 .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(hrRDetailsENameFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGap(0, 0, Short.MAX_VALUE)
                                         .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(hrRDetailsOvertimeRBtn2)
-                                            .addComponent(hrRDetailsENumberFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(34, 34, 34))))
+                                            .addComponent(hrRDetailsENumberFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(hrRDetailsENameFld2))
+                                .addGap(34, 34, 34))
                             .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
                                 .addComponent(hrRDetailsReasonLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(280, 280, 280)))
@@ -541,7 +562,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
                                         .addComponent(hrRDetailsPositionFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addComponent(hrRDetailsUndertimeRBtn2)))
                     .addComponent(hrRDetailsReasonFld2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         hrRDetailsFARequestBrdrPnl2Layout.setVerticalGroup(
             hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -638,6 +659,8 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsENameFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsENameFld3.setText(" ");
         hrRDetailsENameFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsENameFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsENameFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsENameFld3.setEnabled(false);
         hrRDetailsENameFld3.addActionListener(this::hrRDetailsENameFld3ActionPerformed);
 
@@ -652,18 +675,24 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsENumberFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsENumberFld3.setText(" ");
         hrRDetailsENumberFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsENumberFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsENumberFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsENumberFld3.setEnabled(false);
         hrRDetailsENumberFld3.addActionListener(this::hrRDetailsENumberFld3ActionPerformed);
 
         hrRDetailsReasonFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsReasonFld3.setText(" ");
         hrRDetailsReasonFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsReasonFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsReasonFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsReasonFld3.setEnabled(false);
         hrRDetailsReasonFld3.addActionListener(this::hrRDetailsReasonFld3ActionPerformed);
 
         hrRDetailsStatusFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsStatusFld3.setText(" ");
         hrRDetailsStatusFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsStatusFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrRDetailsStatusFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsStatusFld3.setEnabled(false);
         hrRDetailsStatusFld3.addActionListener(this::hrRDetailsStatusFld3ActionPerformed);
 
@@ -678,6 +707,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsPositionFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsPositionFld3.setText(" ");
         hrRDetailsPositionFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsPositionFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrRDetailsPositionFld3.setEnabled(false);
         hrRDetailsPositionFld3.addActionListener(this::hrRDetailsPositionFld3ActionPerformed);
 
@@ -725,17 +755,15 @@ public class HRRequestListUI extends javax.swing.JFrame {
                                 .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(hrRDetailsENameLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(hrRDetailsENumberLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
                                 .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(hrRDetailsENameFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGap(0, 0, Short.MAX_VALUE)
                                         .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(hrRDetailsOvertimeRBtn3)
-                                            .addComponent(hrRDetailsENumberFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(34, 34, 34))))
+                                            .addComponent(hrRDetailsENumberFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(hrRDetailsENameFld3))
+                                .addGap(34, 34, 34))
                             .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
                                 .addComponent(hrRDetailsReasonLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(280, 280, 280)))
@@ -753,7 +781,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
                                         .addComponent(hrRDetailsPositionFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addComponent(hrRDetailsUndertimeRBtn3)))
                     .addComponent(hrRDetailsReasonFld3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         hrRDetailsFARequestBrdrPnl3Layout.setVerticalGroup(
             hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -818,7 +846,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
                     .addComponent(hrRDetailsFARequestBrdrPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrRDetailsFARequestBrdrPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrRDetailsFARequestBrdrPnl1, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         hrRDetailsRListBrdrPnlLayout.setVerticalGroup(
             hrRDetailsRListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -847,17 +875,21 @@ public class HRRequestListUI extends javax.swing.JFrame {
                 .addComponent(hrRDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrRDetailsRListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 693, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrRDetailsRListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(hrRDetailsRListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hrRDetailsRListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(hrRDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(hrRDetailsRListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrRDetailsRListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 576, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(hrRDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(hrRDetailsRListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(hrRDetailsRListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(14, 14, 14))
         );
 
         hrRDetailsSidebarPnl.getAccessibleContext().setAccessibleName("hrRDetailsSidebarPnl");

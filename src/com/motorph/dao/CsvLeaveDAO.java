@@ -1,5 +1,3 @@
-
-
 package com.motorph.dao;
 
 import com.motorph.model.LeaveRequest;

@@ -41,6 +41,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
         mainDashboardDDetailsImgLbl = new javax.swing.JLabel();
         mainDashboardActLogsImgLbl = new javax.swing.JLabel();
         mainDashboardLogoutLbl = new javax.swing.JLabel();
+        mainDashboardDashboardImgFld = new javax.swing.JTextField();
         mainDashboardAttLogsImgFld = new javax.swing.JTextField();
         mainDashboardPylImgFld = new javax.swing.JTextField();
         mainDashboardPrlImgFld = new javax.swing.JTextField();
@@ -65,7 +66,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         mainDashboardDashboardImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/DashboardImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardDashboardImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, -1, -1));
+        getContentPane().add(mainDashboardDashboardImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, -1, -1));
         mainDashboardDashboardImgLbl.getAccessibleContext().setAccessibleName("mainDashboardDashboardImgLbl");
 
         mainDashboardAttLogsImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/AttendanceLogsImg.png"))); // NOI18N
@@ -103,6 +104,12 @@ public class MainDashboardUI extends javax.swing.JFrame {
         mainDashboardLogoutLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/LogoutImg.png"))); // NOI18N
         getContentPane().add(mainDashboardLogoutLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 640, 40, 30));
         mainDashboardLogoutLbl.getAccessibleContext().setAccessibleName("LogoutImg");
+
+        mainDashboardDashboardImgFld.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardDashboardImgFld.setEnabled(false);
+        mainDashboardDashboardImgFld.addActionListener(this::mainDashboardDashboardImgFldActionPerformed);
+        getContentPane().add(mainDashboardDashboardImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 23, 169, 131));
+        mainDashboardDashboardImgFld.getAccessibleContext().setAccessibleName("mainDashboardDashboardImgFld");
 
         mainDashboardAttLogsImgFld.setBackground(new java.awt.Color(233, 233, 233));
         mainDashboardAttLogsImgFld.setEnabled(false);
@@ -254,13 +261,13 @@ public class MainDashboardUI extends javax.swing.JFrame {
     private void mainDashboardLogoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardLogoutBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        
+        Session.clear();
         new LoginUI().setVisible(true);
     }//GEN-LAST:event_mainDashboardLogoutBtnActionPerformed
 
     private void mainDashboardPylImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardPylImgBtnActionPerformed
         // TODO add your handling code here:
-        GuiUtil.openFrame(this, new EmployeePayslipRecordFrame());
+        GuiUtil.openFrame(this, new EmployeePayslipRecordUI());
     }//GEN-LAST:event_mainDashboardPylImgBtnActionPerformed
 
     private void mainDashboardLDetailsImgFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardLDetailsImgFldActionPerformed
@@ -340,6 +347,10 @@ public class MainDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_mainDashboardPylImgFldActionPerformed
 
+    private void mainDashboardDashboardImgFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardDashboardImgFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mainDashboardDashboardImgFldActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -382,6 +393,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
     private javax.swing.JTextField mainDashboardDDetailsImgFld;
     private javax.swing.JLabel mainDashboardDDetailsImgLbl;
     private javax.swing.JButton mainDashboardDashboardImgBtn;
+    private javax.swing.JTextField mainDashboardDashboardImgFld;
     private javax.swing.JLabel mainDashboardDashboardImgLbl;
     private javax.swing.JButton mainDashboardEDetailsImgBtn;
     private javax.swing.JTextField mainDashboardEDetailsImgFld;

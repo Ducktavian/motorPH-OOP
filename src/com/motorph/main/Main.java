@@ -43,17 +43,7 @@ public class Main {
             loginFrame.setVisible(true);
             
                     
-        });
-        
-        // TESTING
-        EmployeeDAO empDao = new CsvEmployeeDAO();
-        EmployeeService empService = new EmployeeService(empDao);
-        
-        
-        //testingAddEmployee(empService);
-        //testingDeleteEmployee(empService, "10035");
-        
-        
+        });  
     }
     
     private static void testingAddEmployee(EmployeeService empService) {

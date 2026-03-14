@@ -113,6 +113,12 @@ public class PayrollService {
         return payslipDAO.findPayslipsByEmployee(employeeNumber);
     }
     
+    public Payslip findPayslipsById(String payslipId) {
+        return payslipDAO.findPayslipById(payslipId);
+    }
+    
+
+    
     
     // Divide allowances by 2 (semi monthly)
     public AllowanceBreakdown computeAllowances(Employee employee) {
@@ -161,6 +167,10 @@ public class PayrollService {
                 "-C" + cutoff;
     }
     
+    
+    
+    
+    
     // Helper
     private double round(double value) {
         return Math.round(value * 100.0) / 100.0;
@@ -169,6 +179,9 @@ public class PayrollService {
     private boolean isSecondCutoff(LocalDate periodEnd) {
         return periodEnd.getDayOfMonth() == periodEnd.lengthOfMonth();
     }
+    
+    
+    
     
     
     // THIS WAS ONLY USED ONCE 
