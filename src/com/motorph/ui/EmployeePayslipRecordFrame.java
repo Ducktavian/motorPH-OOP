@@ -67,7 +67,7 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
                 p.getPayslipId(),
                 p.getPeriodStart() + " - " + p.getPeriodEnd(), // Date
                 p.getNetPay(),
-                "OK"
+                "VIEW"
             };
 
             model.addRow(row);
@@ -292,7 +292,7 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Payslip ID", "Payroll Date", "Net Pay", "Status"
+                "Payslip ID", "Payroll Date", "Net Pay", "Action"
             }
         ) {
             Class[] types = new Class [] {

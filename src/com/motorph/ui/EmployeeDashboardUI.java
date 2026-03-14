@@ -4,8 +4,11 @@
  */
 package com.motorph.ui;
 
+import com.motorph.dao.CsvEmployeeDAO;
 import com.motorph.model.Employee;
+import com.motorph.service.EmployeeService;
 import com.motorph.util.DateUtils;
+import com.motorph.util.Session;
 
 /**
  *
@@ -14,23 +17,29 @@ import com.motorph.util.DateUtils;
 public class EmployeeDashboardUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeeDashboardUI.class.getName());
-
+    private final EmployeeService empService;
     /**
      * Creates new form EmployeeDashboardFrame
      */
     public EmployeeDashboardUI() {
         initComponents();
+        
+        this.empService = new EmployeeService(new CsvEmployeeDAO());
+        
+        populateFields();
         setExtendedState(EmployeeDashboardUI.MAXIMIZED_BOTH);
     }
     
     
-    private void populateFields(Employee emp) {
+    private void populateFields() {
+        Employee emp = empService.findEmployee(Session.getCurrentUser().getEmployeeNumber());
+        
         employeeDashboardENumberFld.setText(emp.getEmployeeNumber());
         employeeDashboardFNameFld.setText(emp.getFirstName());
         employeeDashboardLNameFld.setText(emp.getLastName());
         employeeDashboardBirthdayFld.setText(DateUtils.dateToString(emp.getBirthday()));
         employeeDashboardAddressFld.setText(emp.getAddress());
-        employeeDashboardPNumberFld.setText(emp.getPhoneNumber());
+        employeeDashboardPhnNumberFld.setText(emp.getPhoneNumber());
         employeeDashboardSSSFld.setText(emp.getSSSNumber());
         employeeDashboardPhilHealthFld.setText(emp.getPhilhealthNumber());
         employeeDashboardTINFld.setText(emp.getTIN());
@@ -40,7 +49,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         employeeDashboardISupervisorFld.setText(emp.getImmediateSupervisor());
         employeeDashboardBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
         employeeDashboardRiceSubsidyFld.setText(String.valueOf(emp.getRiceSubsidy()));
-        employeeDashboardPAllowanceFld.setText(String.valueOf(emp.getPhoneAllowance()));
+        employeeDashboardPhnAllowanceFld.setText(String.valueOf(emp.getPhoneAllowance()));
         employeeDashboardCAllowanceFld.setText(String.valueOf(emp.getClothingAllowance()));
     }
     /**
