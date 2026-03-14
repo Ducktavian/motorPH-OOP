@@ -33,7 +33,6 @@ public class CsvAttendanceDAO implements AttendanceDAO {
             }
             if (!file.exists()) {
                 try (CSVWriter writer = new CSVWriter(new FileWriter(file))) {
-                    // Typical attendance header based on your indices (0, 3, 4, 5)
                     String[] header = {"Employee #", "Last Name", "First Name", "Date", "Time-in", "Time-out"};
                     writer.writeNext(header);
                 }
@@ -149,18 +148,54 @@ public class CsvAttendanceDAO implements AttendanceDAO {
     
     @Override
     public void timeOut(String employeeNumber) {
-        
+
         AttendanceRecord open = getOpenSession(employeeNumber);
-        
+
         if (open == null) {
-            throw new IllegalStateException("No active session found");
+            throw new IllegalStateException("No active session found.");
         }
-        
+
         List<String[]> allRows = new ArrayList<>();
         LocalDate today = LocalDate.now();
         LocalTime now = LocalTime.now();
-        
-        
+
+        try (CSVReader reader = new CSVReader(new FileReader(FILE_PATH))) {
+
+            String[] header = reader.readNext();
+            allRows.add(header);
+
+            String[] line;
+
+            while ((line = reader.readNext()) != null) {
+
+                if (line.length >= 6) {
+
+                    String empNo = line[0];
+                    LocalDate date = DateUtils.stringToDate(line[3]);
+                    String timeOut = line[5];
+
+                    // Match the open session
+                    if (empNo.equals(employeeNumber)
+                            && date.equals(today)
+                            && (timeOut == null || timeOut.isEmpty())) {
+
+                        line[5] = DateUtils.timeToString(now); // set timeout
+                    }
+                }
+
+                allRows.add(line); // Add each line to the list
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // Rewrite file
+        try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH))) {
+            writer.writeAll(allRows);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     
     
