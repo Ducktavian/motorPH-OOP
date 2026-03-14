@@ -406,6 +406,12 @@
                 </LineBorder>
               </Border>
             </Property>
+            <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
@@ -427,6 +433,12 @@
                 </LineBorder>
               </Border>
             </Property>
+            <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
@@ -447,6 +459,12 @@
                   <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                 </LineBorder>
               </Border>
+            </Property>
+            <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
@@ -511,6 +529,12 @@
                 </LineBorder>
               </Border>
             </Property>
+            <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
@@ -531,6 +555,12 @@
                   <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                 </LineBorder>
               </Border>
+            </Property>
+            <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
@@ -566,6 +596,12 @@
                   <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                 </LineBorder>
               </Border>
+            </Property>
+            <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
@@ -711,6 +747,12 @@
                     </LineBorder>
                   </Border>
                 </Property>
+                <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="37" green="29" red="1f" type="rgb"/>
+                </Property>
+                <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="37" green="29" red="1f" type="rgb"/>
+                </Property>
               </Properties>
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserUsernameFld"/>
@@ -744,6 +786,12 @@
                       <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                     </LineBorder>
                   </Border>
+                </Property>
+                <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="37" green="29" red="1f" type="rgb"/>
+                </Property>
+                <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="37" green="29" red="1f" type="rgb"/>
                 </Property>
               </Properties>
               <AccessibilityProperties>

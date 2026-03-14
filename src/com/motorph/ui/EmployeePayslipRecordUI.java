@@ -20,16 +20,16 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Lenovo
  */
-public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
+public class EmployeePayslipRecordUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayslipRecordFrame.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayslipRecordUI.class.getName());
 
     private PayslipDAO payslipDAO;
     private PayrollService payrollService;
     /**
      * Creates new form EmployeePayslipRecordFrame
      */
-    public EmployeePayslipRecordFrame() {
+    public EmployeePayslipRecordUI() {
         initComponents();
         
         initDataEngine();
@@ -94,6 +94,9 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
         employeePylRecordBrdrPnl = new javax.swing.JPanel();
         employeePylRecordBrdrScrlPnl = new javax.swing.JScrollPane();
         employeePylRecordTbl = new javax.swing.JTable();
+        employeePylSearchPnl = new javax.swing.JPanel();
+        employeePylEntENumberFld = new javax.swing.JTextField();
+        employeePylSearchIconImgLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -327,20 +330,36 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
         employeePylRecordBrdrPnl.setLayout(employeePylRecordBrdrPnlLayout);
         employeePylRecordBrdrPnlLayout.setHorizontalGroup(
             employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePylRecordBrdrPnlLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordBrdrPnlLayout.createSequentialGroup()
+                .addContainerGap(18, Short.MAX_VALUE)
                 .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addGap(14, 14, 14))
         );
         employeePylRecordBrdrPnlLayout.setVerticalGroup(
             employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+            .addGroup(employeePylRecordBrdrPnlLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         employeePylRecordBrdrScrlPnl.getAccessibleContext().setAccessibleName("employeePylRecordBrdrScrlPnl");
+
+        employeePylSearchPnl.setBackground(new java.awt.Color(146, 192, 253));
+        employeePylSearchPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylSearchPnl.setForeground(new java.awt.Color(146, 192, 253));
+        employeePylSearchPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        employeePylEntENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeePylEntENumberFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeePylEntENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylEntENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylEntENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        employeePylEntENumberFld.addActionListener(this::employeePylEntENumberFldActionPerformed);
+        employeePylSearchPnl.add(employeePylEntENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+
+        employeePylSearchIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
+        employeePylSearchPnl.add(employeePylSearchIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -350,7 +369,10 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
                 .addComponent(employeePylRecordSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(employeePylRecordPylRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(employeePylRecordPylRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(employeePylSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(employeePylRecordBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
@@ -361,7 +383,9 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
                     .addComponent(employeePylRecordSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(employeePylRecordPylRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(employeePylRecordPylRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeePylSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(employeePylRecordBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(14, 14, 14))
@@ -408,12 +432,17 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_employeePylRecordTblMouseClicked
 
+    private void employeePylEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylEntENumberFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_employeePylEntENumberFldActionPerformed
+
     /**
      * @param args the command line arguments
      */
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField employeePylEntENumberFld;
     private javax.swing.JPanel employeePylRecordBrdrPnl;
     private javax.swing.JScrollPane employeePylRecordBrdrScrlPnl;
     private javax.swing.JButton employeePylRecordMainDashboardBtn;
@@ -425,6 +454,8 @@ public class EmployeePayslipRecordFrame extends javax.swing.JFrame {
     private javax.swing.JPanel employeePylRecordPylRecordPnl;
     private javax.swing.JPanel employeePylRecordSidebarPnl;
     private javax.swing.JTable employeePylRecordTbl;
+    private javax.swing.JLabel employeePylSearchIconImgLbl;
+    private javax.swing.JPanel employeePylSearchPnl;
     // End of variables declaration//GEN-END:variables
 
    

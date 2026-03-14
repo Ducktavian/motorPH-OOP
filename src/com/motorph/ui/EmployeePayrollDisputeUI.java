@@ -772,7 +772,7 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeePayslipRecordFrame().setVisible(true);
+        new EmployeePayslipRecordUI().setVisible(true);
     }//GEN-LAST:event_employeePrlDisputePylRecordBtnActionPerformed
 
     private void employeePrlDisputeMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlDisputeMainDashboardBtnActionPerformed

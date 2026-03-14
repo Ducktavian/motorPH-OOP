@@ -98,6 +98,8 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financePrlENumberFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlENumberFld.setEnabled(false);
         financePrlENumberFld.addActionListener(this::financePrlENumberFldActionPerformed);
 
@@ -115,6 +117,8 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financePrlENameFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlENameFld.setEnabled(false);
         financePrlENameFld.addActionListener(this::financePrlENameFldActionPerformed);
 
@@ -135,16 +139,22 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financePrlStatusFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlStatusFld.setEnabled(false);
         financePrlStatusFld.addActionListener(this::financePrlStatusFldActionPerformed);
 
         financePrlPositionFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlPositionFld.setEnabled(false);
         financePrlPositionFld.addActionListener(this::financePrlPositionFldActionPerformed);
 
         financePrlPrlDateFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlPrlDateFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPrlDateFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlPrlDateFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlPrlDateFld.setEnabled(false);
         financePrlPrlDateFld.addActionListener(this::financePrlPrlDateFldActionPerformed);
 
@@ -257,41 +267,57 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financePrlBasicSalaryFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlBasicSalaryFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlBasicSalaryFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlBasicSalaryFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlBasicSalaryFld.setEnabled(false);
         financePrlBasicSalaryFld.addActionListener(this::financePrlBasicSalaryFldActionPerformed);
 
         financePrlOvertimeFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlOvertimeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlOvertimeFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlOvertimeFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlOvertimeFld.setEnabled(false);
         financePrlOvertimeFld.addActionListener(this::financePrlOvertimeFldActionPerformed);
 
         financePrlHolidayFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlHolidayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlHolidayFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlHolidayFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlHolidayFld.setEnabled(false);
         financePrlHolidayFld.addActionListener(this::financePrlHolidayFldActionPerformed);
 
         financePrlRiceSubsidyFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlRiceSubsidyFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlRiceSubsidyFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlRiceSubsidyFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlRiceSubsidyFld.setEnabled(false);
         financePrlRiceSubsidyFld.addActionListener(this::financePrlRiceSubsidyFldActionPerformed);
 
         financePrlPhnAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlPhnAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPhnAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlPhnAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlPhnAllowanceFld.setEnabled(false);
         financePrlPhnAllowanceFld.addActionListener(this::financePrlPhnAllowanceFldActionPerformed);
 
         financePrlCltAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlCltAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlCltAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlCltAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlCltAllowanceFld.setEnabled(false);
         financePrlCltAllowanceFld.addActionListener(this::financePrlCltAllowanceFldActionPerformed);
 
         financePrlBonusTypeFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlBonusTypeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlBonusTypeFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlBonusTypeFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlBonusTypeFld.setEnabled(false);
         financePrlBonusTypeFld.addActionListener(this::financePrlBonusTypeFldActionPerformed);
 
         financePrlTGrossFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlTGrossFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlTGrossFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlTGrossFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlTGrossFld.setEnabled(false);
         financePrlTGrossFld.addActionListener(this::financePrlTGrossFldActionPerformed);
 
@@ -453,31 +479,43 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financePrlSSSFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlSSSFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlSSSFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlSSSFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlSSSFld.setEnabled(false);
         financePrlSSSFld.addActionListener(this::financePrlSSSFldActionPerformed);
 
         financePrlTINFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlTINFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlTINFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlTINFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlTINFld.setEnabled(false);
         financePrlTINFld.addActionListener(this::financePrlTINFldActionPerformed);
 
         financePrlPhilHealthFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlPhilHealthFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPhilHealthFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlPhilHealthFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlPhilHealthFld.setEnabled(false);
         financePrlPhilHealthFld.addActionListener(this::financePrlPhilHealthFldActionPerformed);
 
         financePrlPagIbigFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlPagIbigFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlPagIbigFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlPagIbigFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlPagIbigFld.setEnabled(false);
         financePrlPagIbigFld.addActionListener(this::financePrlPagIbigFldActionPerformed);
 
         financePrlLateFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlLateFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlLateFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlLateFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlLateFld.setEnabled(false);
         financePrlLateFld.addActionListener(this::financePrlLateFldActionPerformed);
 
         financePrlUndertimeFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlUndertimeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlUndertimeFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlUndertimeFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlUndertimeFld.setEnabled(false);
         financePrlUndertimeFld.addActionListener(this::financePrlUndertimeFldActionPerformed);
 
@@ -487,11 +525,15 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financePrlAbsentFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlAbsentFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlAbsentFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlAbsentFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlAbsentFld.setEnabled(false);
         financePrlAbsentFld.addActionListener(this::financePrlAbsentFldActionPerformed);
 
         financePrlTDeductionFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlTDeductionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlTDeductionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlTDeductionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlTDeductionFld.setEnabled(false);
         financePrlTDeductionFld.addActionListener(this::financePrlTDeductionFldActionPerformed);
 
@@ -617,6 +659,8 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financePrlNetPayFld.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         financePrlNetPayFld.setForeground(new java.awt.Color(255, 255, 255));
         financePrlNetPayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlNetPayFld.setCaretColor(new java.awt.Color(255, 255, 255));
+        financePrlNetPayFld.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         financePrlNetPayFld.setEnabled(false);
         financePrlNetPayFld.addActionListener(this::financePrlNetPayFldActionPerformed);
 
@@ -656,7 +700,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                         .addGroup(financePrlCalculatorBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(financePrlNetPayLbl)
                             .addComponent(financePrlNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         financePrlCalculatorLbl.getAccessibleContext().setAccessibleName("financePrlCalculatorLbl");
@@ -687,8 +731,9 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financePrlEntENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         financePrlEntENumberFld.setForeground(new java.awt.Color(31, 41, 55));
-        financePrlEntENumberFld.setText("   Enter Employee #");
         financePrlEntENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlEntENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financePrlEntENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financePrlEntENumberFld.addActionListener(this::financePrlEntENumberFldActionPerformed);
         financePrlSearchPnl.add(financePrlEntENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
         financePrlEntENumberFld.getAccessibleContext().setAccessibleName("financePrlEntENumberFld");
@@ -795,8 +840,8 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                             .addComponent(financePrlPositionLbl)
                             .addComponent(financePrlStatusLbl))))
                 .addGap(18, 18, 18)
-                .addComponent(financePrlCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(financePrlCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(financePrlPDFBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(financePrlSendPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))

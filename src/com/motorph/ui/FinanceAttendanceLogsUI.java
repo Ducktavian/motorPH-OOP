@@ -169,8 +169,9 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
 
         financeAttLogsEntENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         financeAttLogsEntENumberFld.setForeground(new java.awt.Color(31, 41, 55));
-        financeAttLogsEntENumberFld.setText("   Enter Employee #");
         financeAttLogsEntENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsEntENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeAttLogsEntENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeAttLogsEntENumberFld.addActionListener(this::financeAttLogsEntENumberFldActionPerformed);
         financeAttLogsSearchPnl.add(financeAttLogsEntENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
         financeAttLogsEntENumberFld.getAccessibleContext().setAccessibleName("financeAttLogsEntENumberFld");
@@ -458,6 +459,8 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
         financeAttLogsENameFld1.setForeground(new java.awt.Color(31, 41, 55));
         financeAttLogsENameFld1.setText(" ");
         financeAttLogsENameFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsENameFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeAttLogsENameFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeAttLogsENameFld1.setEnabled(false);
         financeAttLogsENameFld1.addActionListener(this::financeAttLogsENameFld1ActionPerformed);
 
@@ -468,6 +471,8 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
         financeAttLogsReasonFld1.setForeground(new java.awt.Color(31, 41, 55));
         financeAttLogsReasonFld1.setText(" ");
         financeAttLogsReasonFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsReasonFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeAttLogsReasonFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeAttLogsReasonFld1.setEnabled(false);
         financeAttLogsReasonFld1.addActionListener(this::financeAttLogsReasonFld1ActionPerformed);
 
@@ -482,12 +487,16 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
         financeAttLogsENumberFld1.setForeground(new java.awt.Color(31, 41, 55));
         financeAttLogsENumberFld1.setText(" ");
         financeAttLogsENumberFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsENumberFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeAttLogsENumberFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeAttLogsENumberFld1.setEnabled(false);
         financeAttLogsENumberFld1.addActionListener(this::financeAttLogsENumberFld1ActionPerformed);
 
         financeAttLogsPositionFld1.setForeground(new java.awt.Color(31, 41, 55));
         financeAttLogsPositionFld1.setText(" ");
         financeAttLogsPositionFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPositionFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeAttLogsPositionFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeAttLogsPositionFld1.setEnabled(false);
         financeAttLogsPositionFld1.addActionListener(this::financeAttLogsPositionFld1ActionPerformed);
 
@@ -515,21 +524,29 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
 
         financeAttLogsStatusFld1.setForeground(new java.awt.Color(31, 41, 55));
         financeAttLogsStatusFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsStatusFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeAttLogsStatusFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeAttLogsStatusFld1.setEnabled(false);
 
         financeAttLogsPrlDateFld1.setForeground(new java.awt.Color(31, 41, 55));
         financeAttLogsPrlDateFld1.setText(" ");
         financeAttLogsPrlDateFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPrlDateFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlDateFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeAttLogsPrlDateFld1.setEnabled(false);
         financeAttLogsPrlDateFld1.addActionListener(this::financeAttLogsPrlDateFld1ActionPerformed);
 
         financeAttLogsTicketFld1.setForeground(new java.awt.Color(31, 41, 55));
         financeAttLogsTicketFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsTicketFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeAttLogsTicketFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeAttLogsTicketFld1.setEnabled(false);
 
         financeAttLogsPrlPeiodFld1.setForeground(new java.awt.Color(31, 41, 55));
         financeAttLogsPrlPeiodFld1.setText(" ");
         financeAttLogsPrlPeiodFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeAttLogsPrlPeiodFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        financeAttLogsPrlPeiodFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         financeAttLogsPrlPeiodFld1.setEnabled(false);
         financeAttLogsPrlPeiodFld1.addActionListener(this::financeAttLogsPrlPeiodFld1ActionPerformed);
 

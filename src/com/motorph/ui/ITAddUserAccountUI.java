@@ -163,16 +163,22 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
         itAUserENumberFld.setForeground(new java.awt.Color(30, 42, 56));
         itAUserENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itAUserENumberFld.setEnabled(false);
         itAUserENumberFld.addActionListener(this::itAUserENumberFldActionPerformed);
 
         itAUserENameFld.setForeground(new java.awt.Color(30, 42, 56));
         itAUserENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itAUserENameFld.setEnabled(false);
         itAUserENameFld.addActionListener(this::itAUserENameFldActionPerformed);
 
         itAUserPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
         itAUserPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itAUserPhnNumberFld.setEnabled(false);
         itAUserPhnNumberFld.addActionListener(this::itAUserPhnNumberFldActionPerformed);
 
@@ -190,11 +196,15 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
         itAUserISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
         itAUserISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itAUserISupervisorFld.setEnabled(false);
         itAUserISupervisorFld.addActionListener(this::itAUserISupervisorFldActionPerformed);
 
         itAUserPositionFld.setForeground(new java.awt.Color(30, 42, 56));
         itAUserPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itAUserPositionFld.setEnabled(false);
         itAUserPositionFld.addActionListener(this::itAUserPositionFldActionPerformed);
 
@@ -204,6 +214,8 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
         itAUserStatusFld.setForeground(new java.awt.Color(30, 42, 56));
         itAUserStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itAUserStatusFld.setEnabled(false);
         itAUserStatusFld.addActionListener(this::itAUserStatusFldActionPerformed);
 
@@ -244,6 +256,8 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
         itAUserUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
         itAUserUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itAUserUsernameFld.addActionListener(this::itAUserUsernameFldActionPerformed);
 
         itAUserPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -252,6 +266,8 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
         itAUserPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
         itAUserPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itAUserPasswordFld.addActionListener(this::itAUserPasswordFldActionPerformed);
 
         javax.swing.GroupLayout itAUserUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itAUserUAccDetailsBrdrPnl);

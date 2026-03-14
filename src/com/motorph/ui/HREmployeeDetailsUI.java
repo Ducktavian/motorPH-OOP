@@ -339,6 +339,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsENumberFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsENumberFld1.setText(" ");
         hrEDetailsENumberFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsENumberFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsENumberFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsENumberFld1.setEnabled(false);
         hrEDetailsENumberFld1.addActionListener(this::hrEDetailsENumberFld1ActionPerformed);
 
@@ -377,6 +379,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
         hrEDetailsENameFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsENameFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsENameFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsENameFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsENameFld1.setEnabled(false);
         hrEDetailsENameFld1.addActionListener(this::hrEDetailsENameFld1ActionPerformed);
 
@@ -387,6 +391,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsPositionFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsPositionFld1.setText(" ");
         hrEDetailsPositionFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsPositionFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsPositionFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsPositionFld1.setEnabled(false);
         hrEDetailsPositionFld1.addActionListener(this::hrEDetailsPositionFld1ActionPerformed);
 
@@ -397,6 +403,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsStatusFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsStatusFld1.setText(" ");
         hrEDetailsStatusFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsStatusFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsStatusFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsStatusFld1.setEnabled(false);
         hrEDetailsStatusFld1.addActionListener(this::hrEDetailsStatusFld1ActionPerformed);
 
@@ -407,6 +415,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsReasonFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsReasonFld1.setText(" ");
         hrEDetailsReasonFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsReasonFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsReasonFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsReasonFld1.setEnabled(false);
         hrEDetailsReasonFld1.addActionListener(this::hrEDetailsReasonFld1ActionPerformed);
 
@@ -431,6 +441,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsTicketFld1.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsTicketFld1.setText(" ");
         hrEDetailsTicketFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsTicketFld1.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsTicketFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsTicketFld1.setEnabled(false);
         hrEDetailsTicketFld1.addActionListener(this::hrEDetailsTicketFld1ActionPerformed);
 
@@ -535,6 +547,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsENumberFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsENumberFld2.setText(" ");
         hrEDetailsENumberFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsENumberFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsENumberFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsENumberFld2.setEnabled(false);
         hrEDetailsENumberFld2.addActionListener(this::hrEDetailsENumberFld2ActionPerformed);
 
@@ -573,6 +587,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
         hrEDetailsENameFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsENameFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsENameFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsENameFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsENameFld2.setEnabled(false);
         hrEDetailsENameFld2.addActionListener(this::hrEDetailsENameFld2ActionPerformed);
 
@@ -583,6 +599,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsPositionFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsPositionFld2.setText(" ");
         hrEDetailsPositionFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsPositionFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsPositionFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsPositionFld2.setEnabled(false);
         hrEDetailsPositionFld2.addActionListener(this::hrEDetailsPositionFld2ActionPerformed);
 
@@ -593,6 +611,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsStatusFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsStatusFld2.setText(" ");
         hrEDetailsStatusFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsStatusFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsStatusFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsStatusFld2.setEnabled(false);
         hrEDetailsStatusFld2.addActionListener(this::hrEDetailsStatusFld2ActionPerformed);
 
@@ -603,6 +623,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsReasonFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsReasonFld2.setText(" ");
         hrEDetailsReasonFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsReasonFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsReasonFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsReasonFld2.setEnabled(false);
         hrEDetailsReasonFld2.addActionListener(this::hrEDetailsReasonFld2ActionPerformed);
 
@@ -627,6 +649,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsTicketFld2.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsTicketFld2.setText(" ");
         hrEDetailsTicketFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsTicketFld2.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsTicketFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsTicketFld2.setEnabled(false);
         hrEDetailsTicketFld2.addActionListener(this::hrEDetailsTicketFld2ActionPerformed);
 
@@ -731,6 +755,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsENumberFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsENumberFld3.setText(" ");
         hrEDetailsENumberFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsENumberFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsENumberFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsENumberFld3.setEnabled(false);
         hrEDetailsENumberFld3.addActionListener(this::hrEDetailsENumberFld3ActionPerformed);
 
@@ -769,6 +795,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
         hrEDetailsENameFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsENameFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsENameFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsENameFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsENameFld3.setEnabled(false);
         hrEDetailsENameFld3.addActionListener(this::hrEDetailsENameFld3ActionPerformed);
 
@@ -779,6 +807,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsPositionFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsPositionFld3.setText(" ");
         hrEDetailsPositionFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsPositionFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsPositionFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsPositionFld3.setEnabled(false);
         hrEDetailsPositionFld3.addActionListener(this::hrEDetailsPositionFld3ActionPerformed);
 
@@ -789,6 +819,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsStatusFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsStatusFld3.setText(" ");
         hrEDetailsStatusFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsStatusFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsStatusFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsStatusFld3.setEnabled(false);
         hrEDetailsStatusFld3.addActionListener(this::hrEDetailsStatusFld3ActionPerformed);
 
@@ -799,6 +831,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsReasonFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsReasonFld3.setText(" ");
         hrEDetailsReasonFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsReasonFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsReasonFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsReasonFld3.setEnabled(false);
         hrEDetailsReasonFld3.addActionListener(this::hrEDetailsReasonFld3ActionPerformed);
 
@@ -823,6 +857,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsTicketFld3.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsTicketFld3.setText(" ");
         hrEDetailsTicketFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsTicketFld3.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsTicketFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsTicketFld3.setEnabled(false);
         hrEDetailsTicketFld3.addActionListener(this::hrEDetailsTicketFld3ActionPerformed);
 
@@ -983,36 +1019,50 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
         hrEDetailsENumberFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsENumberFld.setEnabled(false);
         hrEDetailsENumberFld.addActionListener(this::hrEDetailsENumberFldActionPerformed);
 
         hrEDetailsAddressFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsAddressFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsAddressFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsAddressFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsAddressFld.setEnabled(false);
         hrEDetailsAddressFld.addActionListener(this::hrEDetailsAddressFldActionPerformed);
 
         hrEDetailsLNameFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsLNameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsLNameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsLNameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsLNameFld.setEnabled(false);
         hrEDetailsLNameFld.addActionListener(this::hrEDetailsLNameFldActionPerformed);
 
         hrEDetailsBirthdayFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsBirthdayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsBirthdayFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsBirthdayFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsBirthdayFld.setEnabled(false);
         hrEDetailsBirthdayFld.addActionListener(this::hrEDetailsBirthdayFldActionPerformed);
 
         hrEDetailsPositionFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsPositionFld.setEnabled(false);
         hrEDetailsPositionFld.addActionListener(this::hrEDetailsPositionFldActionPerformed);
 
         hrEDetailsBasicSalaryFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsBasicSalaryFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsBasicSalaryFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsBasicSalaryFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsBasicSalaryFld.setEnabled(false);
         hrEDetailsBasicSalaryFld.addActionListener(this::hrEDetailsBasicSalaryFldActionPerformed);
 
         hrEDetailsPhnAllowanceFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsPhnAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsPhnAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsPhnAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsPhnAllowanceFld.setEnabled(false);
         hrEDetailsPhnAllowanceFld.addActionListener(this::hrEDetailsPhnAllowanceFldActionPerformed);
 
@@ -1030,11 +1080,14 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
         hrEDetailsSSSFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsSSSFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsSSSFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsSSSFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsSSSFld.setEnabled(false);
         hrEDetailsSSSFld.addActionListener(this::hrEDetailsSSSFldActionPerformed);
 
         hrEDetailsPhilHealthFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsPhilHealthFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsPhilHealthFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsPhilHealthFld.setEnabled(false);
         hrEDetailsPhilHealthFld.addActionListener(this::hrEDetailsPhilHealthFldActionPerformed);
 
@@ -1048,6 +1101,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
         hrEDetailsIFNameFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsIFNameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsIFNameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsIFNameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsIFNameFld.setEnabled(false);
         hrEDetailsIFNameFld.addActionListener(this::hrEDetailsIFNameFldActionPerformed);
 
@@ -1057,31 +1112,43 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
         hrEDetailsIPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsIPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsIPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsIPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsIPhnNumberFld.setEnabled(false);
         hrEDetailsIPhnNumberFld.addActionListener(this::hrEDetailsIPhnNumberFldActionPerformed);
 
         hrEDetailsISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsISupervisorFld.setEnabled(false);
         hrEDetailsISupervisorFld.addActionListener(this::hrEDetailsISupervisorFldActionPerformed);
 
         hrEDetailsRiceSubsidyFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsRiceSubsidyFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsRiceSubsidyFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsRiceSubsidyFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsRiceSubsidyFld.setEnabled(false);
         hrEDetailsRiceSubsidyFld.addActionListener(this::hrEDetailsRiceSubsidyFldActionPerformed);
 
         hrEDetailsCltAllowanceFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsCltAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsCltAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsCltAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsCltAllowanceFld.setEnabled(false);
         hrEDetailsCltAllowanceFld.addActionListener(this::hrEDetailsCltAllowanceFldActionPerformed);
 
         hrEDetailsTINFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsTINFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsTINFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsTINFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsTINFld.setEnabled(false);
         hrEDetailsTINFld.addActionListener(this::hrEDetailsTINFldActionPerformed);
 
         hrEDetailsPagIbigFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsPagIbigFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsPagIbigFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsPagIbigFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsPagIbigFld.setEnabled(false);
         hrEDetailsPagIbigFld.addActionListener(this::hrEDetailsPagIbigFldActionPerformed);
 
@@ -1111,7 +1178,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
         hrEDetailsIStatusFld.setForeground(new java.awt.Color(30, 42, 56));
         hrEDetailsIStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrEDetailsIStatusFld.setDisabledTextColor(new java.awt.Color(30, 42, 56));
+        hrEDetailsIStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsIStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         hrEDetailsIStatusFld.setEnabled(false);
         hrEDetailsIStatusFld.addActionListener(this::hrEDetailsIStatusFldActionPerformed);
 
@@ -1159,24 +1227,20 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
                                     .addComponent(hrEDetailsPagIbigLbl)
                                     .addComponent(hrEDetailsIStatusLbl)
                                     .addComponent(hrEDetailsISupervisorLbl))))
-                        .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
-                                .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrEDetailsPagIbigFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrEDetailsTINFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrEDetailsCltAllowanceFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrEDetailsRiceSubsidyFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrEDetailsISupervisorFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrEDetailsIPhnNumberFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addGap(74, 74, 74)
-                                .addComponent(hrEDetailsIStatusFld))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(hrEDetailsPagIbigFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                            .addComponent(hrEDetailsTINFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                            .addComponent(hrEDetailsCltAllowanceFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                            .addComponent(hrEDetailsRiceSubsidyFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                            .addComponent(hrEDetailsISupervisorFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                            .addComponent(hrEDetailsIPhnNumberFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                            .addComponent(hrEDetailsIStatusFld, javax.swing.GroupLayout.Alignment.TRAILING)))
                     .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addComponent(hrEDetailsLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(hrEDetailsIFNameLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
                         .addComponent(hrEDetailsIFNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(hrEDetailsAddressFld))
                 .addGap(16, 16, 16))

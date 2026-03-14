@@ -222,6 +222,8 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylPrlDateFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylPrlDateFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylPrlDateFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylPrlDateFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylPrlDateFld.setEnabled(false);
         employeePylPrlDateFld.addActionListener(this::employeePylPrlDateFldActionPerformed);
 
@@ -231,6 +233,8 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylENameFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylENameFld.setEnabled(false);
         employeePylENameFld.addActionListener(this::employeePylENameFldActionPerformed);
 
@@ -298,41 +302,57 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylBasicSalaryFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylBasicSalaryFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylBasicSalaryFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylBasicSalaryFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylBasicSalaryFld.setEnabled(false);
         employeePylBasicSalaryFld.addActionListener(this::employeePylBasicSalaryFldActionPerformed);
 
         employeePylOvertimeFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylOvertimeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylOvertimeFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylOvertimeFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylOvertimeFld.setEnabled(false);
         employeePylOvertimeFld.addActionListener(this::employeePylOvertimeFldActionPerformed);
 
         employeePylHolidayFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylHolidayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylHolidayFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylHolidayFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylHolidayFld.setEnabled(false);
         employeePylHolidayFld.addActionListener(this::employeePylHolidayFldActionPerformed);
 
         employeePylRiceSubsidyFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylRiceSubsidyFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylRiceSubsidyFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylRiceSubsidyFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylRiceSubsidyFld.setEnabled(false);
         employeePylRiceSubsidyFld.addActionListener(this::employeePylRiceSubsidyFldActionPerformed);
 
         employeePylPhnAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylPhnAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylPhnAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylPhnAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylPhnAllowanceFld.setEnabled(false);
         employeePylPhnAllowanceFld.addActionListener(this::employeePylPhnAllowanceFldActionPerformed);
 
         employeePylCltAllowanceFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylCltAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylCltAllowanceFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylCltAllowanceFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylCltAllowanceFld.setEnabled(false);
         employeePylCltAllowanceFld.addActionListener(this::employeePylCltAllowanceFldActionPerformed);
 
         employeePylBonusTypeFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylBonusTypeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylBonusTypeFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylBonusTypeFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylBonusTypeFld.setEnabled(false);
         employeePylBonusTypeFld.addActionListener(this::employeePylBonusTypeFldActionPerformed);
 
         employeePylTGrossFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylTGrossFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylTGrossFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylTGrossFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylTGrossFld.setEnabled(false);
         employeePylTGrossFld.addActionListener(this::employeePylTGrossFldActionPerformed);
 
@@ -494,31 +514,43 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylSSSFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylSSSFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylSSSFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylSSSFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylSSSFld.setEnabled(false);
         employeePylSSSFld.addActionListener(this::employeePylSSSFldActionPerformed);
 
         employeePylTINFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylTINFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylTINFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylTINFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylTINFld.setEnabled(false);
         employeePylTINFld.addActionListener(this::employeePylTINFldActionPerformed);
 
         employeePylPhilHealthFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylPhilHealthFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylPhilHealthFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylPhilHealthFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylPhilHealthFld.setEnabled(false);
         employeePylPhilHealthFld.addActionListener(this::employeePylPhilHealthFldActionPerformed);
 
         employeePylPagIbigFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylPagIbigFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylPagIbigFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylPagIbigFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylPagIbigFld.setEnabled(false);
         employeePylPagIbigFld.addActionListener(this::employeePylPagIbigFldActionPerformed);
 
         employeePylLateFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylLateFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylLateFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylLateFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylLateFld.setEnabled(false);
         employeePylLateFld.addActionListener(this::employeePylLateFldActionPerformed);
 
         employeePylUndertimeFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylUndertimeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylUndertimeFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylUndertimeFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylUndertimeFld.setEnabled(false);
         employeePylUndertimeFld.addActionListener(this::employeePylUndertimeFldActionPerformed);
 
@@ -528,11 +560,15 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylAbsentFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylAbsentFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylAbsentFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylAbsentFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylAbsentFld.setEnabled(false);
         employeePylAbsentFld.addActionListener(this::employeePylAbsentFldActionPerformed);
 
         employeePylTDeductionFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylTDeductionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylTDeductionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylTDeductionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylTDeductionFld.setEnabled(false);
         employeePylTDeductionFld.addActionListener(this::employeePylTDeductionFldActionPerformed);
 
@@ -658,6 +694,8 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         employeePylNetPayFld.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         employeePylNetPayFld.setForeground(new java.awt.Color(255, 255, 255));
         employeePylNetPayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylNetPayFld.setCaretColor(new java.awt.Color(255, 255, 255));
+        employeePylNetPayFld.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         employeePylNetPayFld.setEnabled(false);
         employeePylNetPayFld.addActionListener(this::employeePylNetPayFldActionPerformed);
 
@@ -676,7 +714,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(employeePylTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(employeePylCalculatorLbl)
@@ -696,7 +734,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                         .addGroup(employeePylCalculatorBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(employeePylNetPayLbl)
                             .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         employeePylCalculatorLbl.getAccessibleContext().setAccessibleName("employeePylCalculatorLbl");
@@ -722,16 +760,22 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylENumberFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylENumberFld.setEnabled(false);
         employeePylENumberFld.addActionListener(this::employeePylENumberFldActionPerformed);
 
         employeePylPositionFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylPositionFld.setEnabled(false);
         employeePylPositionFld.addActionListener(this::employeePylPositionFldActionPerformed);
 
         employeePylStatusFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylStatusFld.setEnabled(false);
         employeePylStatusFld.addActionListener(this::employeePylStatusFldActionPerformed);
 
@@ -752,6 +796,8 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylPrlPeriodFld.setForeground(new java.awt.Color(31, 41, 55));
         employeePylPrlPeriodFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylPrlPeriodFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylPrlPeriodFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylPrlPeriodFld.setEnabled(false);
         employeePylPrlPeriodFld.addActionListener(this::employeePylPrlPeriodFldActionPerformed);
 
@@ -762,8 +808,9 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylEntENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         employeePylEntENumberFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylEntENumberFld.setText("   Enter Employee #");
         employeePylEntENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePylEntENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePylEntENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylEntENumberFld.addActionListener(this::employeePylEntENumberFldActionPerformed);
         employeePylSearchPnl.add(employeePylEntENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
         employeePylEntENumberFld.getAccessibleContext().setAccessibleName("employeePylEntENumberFld");
@@ -860,8 +907,8 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                         .addComponent(employeePylPositionLbl))
                     .addComponent(employeePylStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(employeePylCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(employeePylCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(employeePylPDFBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(employeePylSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -892,7 +939,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeePayslipRecordFrame().setVisible(true);
+        new EmployeePayslipRecordUI().setVisible(true);
                 
                 
     }//GEN-LAST:event_employeePylPylRecordBtnActionPerformed
