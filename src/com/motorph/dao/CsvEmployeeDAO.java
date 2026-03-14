@@ -225,6 +225,6 @@ public class CsvEmployeeDAO implements EmployeeDAO {
     private String formatTIN(String tin) {
         if (tin == null || tin.length() != 12) return tin;
         return tin.substring(0, 3) + "-" + tin.substring(3, 6) + "-" + 
-           tin.substring(6, 9) + "-" + tin.substring(9, 11);
+           tin.substring(6, 9) + "-" + tin.substring(9, 11) + tin.substring(11);
     }
 }

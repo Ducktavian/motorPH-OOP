@@ -4,8 +4,15 @@
  */
 package com.motorph.ui;
 
+import com.motorph.dao.CsvEmployeeDAO;
 import com.motorph.model.Employee;
+import com.motorph.model.RegularEmployee;
+import com.motorph.service.EmployeeService;
 import com.motorph.util.DateUtils;
+import com.motorph.util.GuiUtil;
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,14 +21,20 @@ import com.motorph.util.DateUtils;
 public class HREditEmployeeUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(HREditEmployeeUI.class.getName());
-
+    Employee empToEdit;
+    
+    private EmployeeService empService;
     /**
      * Creates new form HREditEmployeeFrame
      */
     public HREditEmployeeUI(Employee emp) {
         initComponents();
         
-        populateFields(emp);
+        this.empToEdit = emp;
+        
+        empService = new EmployeeService(new CsvEmployeeDAO());
+        
+        populateFields(this.empToEdit);
     }
     
     private void populateFields(Employee emp) {
@@ -564,6 +577,83 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
 
     private void hrEditEmployeeUpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeUpdateBtnActionPerformed
         // TODO add your handling code here:
+        
+       try {
+            String employeeNumber = empToEdit.getEmployeeNumber();
+            // LastName
+            String lastName = hrEditEmployeeLNameFld.getText().trim();
+            // FirstName
+            String firstName = hrEditEmployeeFNameFld.getText().trim();
+            // Bday
+            LocalDate bday = DateUtils.stringToDate(hrEditEmployeeBirthdayFld.getText());
+            // Address
+            String address = hrEditEmployeeAddressFld.getText().trim();
+            // Phone Number
+            String phoneNumber = hrEditEmployeePhnNumberFld.getText().trim();
+            // SSS
+            String sssNo = hrEditEmployeeSSSFld.getText().trim().replaceAll("[^0-9]", "");
+            // Philhealth
+            String philhealthNo = hrEditEmployeePhilHealthFld.getText().trim().replaceAll("[^0-9]", "");
+            // Tin
+            String TIN = hrEditEmployeeTINFld.getText().trim().replaceAll("[^0-9]", "");
+            
+            System.out.println(TIN);
+            // PagIbig
+            String pagIbigNo = hrEditEmployeePagIbigFld.getText().trim().replaceAll("[^0-9]", "");
+            // Status
+            Object selectedItem = hrEditEmployeeStatusCbx.getSelectedItem();
+            // Check if an item is selected to avoid a NullPointerException
+            String status = null;
+            if (selectedItem != null) {
+                // Convert the selected item to a String
+                status = selectedItem.toString();
+
+                // Now you can use the 'selectedValue' string (e.g., print it, save to a database)
+                System.out.println("Selected Value: " + status);
+                // You can also display it in a text field, for example:
+                // myTextField.setText(selectedValue);
+            }
+            // Position
+            String position = hrEditEmployeePositionFld.getText();
+            // Immediate Supervisor
+            String immediateSupervisor = hrEditEmployeeISupervisorFld.getText();
+            // Basic Salary
+            double basicSalary = GuiUtil.getDoubleFromField(hrEditEmployeeBasicSalaryFld);
+            // Rice Subisdy
+            double riceSubsidy = GuiUtil.getDoubleFromField(hrEditEmployeeRiceSubsidyFld);
+            // Phone Allowance 
+            double phoneAllowance = GuiUtil.getDoubleFromField(hrEditEmployeePhnAllowanceFld);
+            // Clothing Allowance
+            double clothingAllowance = GuiUtil.getDoubleFromField(hrEditEmployeeCltAllowanceFld);
+                   
+            
+            // Default Regular Employee -> Converted to correct type in service
+            Employee emp = new RegularEmployee(
+                    employeeNumber, lastName, firstName, bday, address,
+                    phoneNumber, sssNo, philhealthNo, TIN, pagIbigNo,
+                    status, position, immediateSupervisor, basicSalary, 
+                    riceSubsidy, phoneAllowance, clothingAllowance
+            );
+                        
+            empService.updateEmployee(emp);
+            
+            
+            JOptionPane.showMessageDialog(this, "Employee " + employeeNumber + " updated successfully!");
+            GuiUtil.openFrame(this, new HREmployeeDetailsUI());
+                       
+            
+        } catch (DateTimeParseException e) {
+            JOptionPane.showMessageDialog(this, "Please enter the birthday in MM/DD/YYYY format.", "Date Error", JOptionPane.ERROR_MESSAGE);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Please enter numeric values for Salary and Allowances.", "Number Error", JOptionPane.ERROR_MESSAGE);
+        } catch (IllegalArgumentException e) {
+            // This catches your specific validation rules (e.g., SSS must be 10 digits)
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Validation Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "An unexpected error occurred: " + e.getMessage());
+        }
+        
+        
     }//GEN-LAST:event_hrEditEmployeeUpdateBtnActionPerformed
 
     private void hrEditEmployeeLNameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeLNameFldActionPerformed
@@ -573,10 +663,6 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
     private void hrEditEmployeeAddressFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeAddressFldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hrEditEmployeeAddressFldActionPerformed
-
-    private void hrEditEmployeeBirthdayFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeBirthdayFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrEditEmployeeBirthdayFldActionPerformed
 
     private void hrEditEmployeePositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeePositionFldActionPerformed
         // TODO add your handling code here:
@@ -629,6 +715,10 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
     private void hrEditEmployeeCltAllowanceFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeCltAllowanceFldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hrEditEmployeeCltAllowanceFldActionPerformed
+
+    private void hrEditEmployeeBirthdayFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeBirthdayFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrEditEmployeeBirthdayFldActionPerformed
 
     /**
      * @param args the command line arguments

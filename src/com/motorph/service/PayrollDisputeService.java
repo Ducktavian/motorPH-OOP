@@ -66,7 +66,7 @@ public class PayrollDisputeService {
             throw new IllegalStateException("Dispute already reviewed.");
         }
         
-        dispute.setStatus(DisputeStatus.REJECTED);
+        dispute.setStatus(DisputeStatus.DENIED);
         dispute.setReviewedBy(user.getEmployeeNumber());
         dispute.setDateReviewed(LocalDate.now());
     }

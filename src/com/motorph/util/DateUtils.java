@@ -28,7 +28,7 @@ public class DateUtils {
     }
     
     // Used in Jcalendar formatting
-    public static String formatUtilDate(Date date) {
+    public static String convertDateToString(Date date) {
         if (date == null) return "";
 
         LocalDate localDate = date.toInstant()
@@ -36,6 +36,18 @@ public class DateUtils {
                 .toLocalDate();
 
         return localDate.format(FORMATTER);
+    }
+    
+    public static LocalDate convertDateToLocalDate(Date date) {
+        if (date == null) {
+            return null;
+        }
+        // Convert the Calendar to an Instant, apply the ZoneId, and extract the LocalDate
+        LocalDate localDate = date.toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDate();
+        
+        return localDate;
     }
 
 }

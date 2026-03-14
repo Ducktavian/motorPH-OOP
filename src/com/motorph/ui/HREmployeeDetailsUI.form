@@ -2070,7 +2070,7 @@
                           <Component id="hrEDetailsLNameFld" min="-2" pref="158" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="hrEDetailsIFNameLbl" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="148" max="32767" attributes="0"/>
+                          <EmptySpace pref="147" max="32767" attributes="0"/>
                           <Component id="hrEDetailsIFNameFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Component id="hrEDetailsAddressFld" max="32767" attributes="0"/>

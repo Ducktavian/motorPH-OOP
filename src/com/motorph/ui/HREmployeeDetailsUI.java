@@ -56,6 +56,7 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
     }
 
     private void clearFields() {
+        hrEDetailsENumberFld.setText("");
         hrEDetailsIFNameFld.setText("");
         hrEDetailsLNameFld.setText("");
         hrEDetailsBirthdayFld.setText("");
@@ -1434,6 +1435,40 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
     private void hrEDetailsDeleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEDetailsDeleteBtnActionPerformed
         // TODO add your handling code here:
+        try { 
+            String employeeNumber = hrEDetailsENumberFld.getText().trim();
+            
+            if (employeeNumber == null || employeeNumber.isEmpty()) {
+                throw new IllegalArgumentException("Enter employee number to delete.");
+            }
+            
+            
+             // The message you want to display in the dialog
+            String message = "Do you want to delete " + employeeNumber + " ?";
+            // The title for the dialog window
+            String title = "Confirmation";
+
+            // Display the dialog and store the result
+            int reply = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);
+
+            // Check the user's choice
+            if (reply == JOptionPane.YES_OPTION) {
+                empService.deleteEmployee(employeeNumber);
+                JOptionPane.showMessageDialog(null, "Deleted employee " + employeeNumber);
+                
+            } else if (reply == JOptionPane.NO_OPTION) {
+                JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
+                
+            } else {
+                // This handles the case where the user closes the dialog without pressing Yes or No
+                JOptionPane.showMessageDialog(null, "Dialog closed without a choice.");
+            }
+        
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
+        
     }//GEN-LAST:event_hrEDetailsDeleteBtnActionPerformed
 
     private void hrEDetailsEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEDetailsEntENumberFldActionPerformed

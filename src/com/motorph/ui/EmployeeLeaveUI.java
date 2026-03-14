@@ -68,8 +68,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveSickRBtn = new javax.swing.JRadioButton();
         employeeLeaveVacationRBtn = new javax.swing.JRadioButton();
         employeeLeaveEmergencyRBtn = new javax.swing.JRadioButton();
-        fromDateChooser = new com.toedter.calendar.JDateChooser();
-        toDateChooser = new com.toedter.calendar.JDateChooser();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
         employeeLeaveRecordsBrdrPnl = new javax.swing.JPanel();
         employeeLeaveRecordsLbl = new javax.swing.JLabel();
         employeeLeaveRecordsBrdrScrlLbl = new javax.swing.JScrollPane();
@@ -277,8 +277,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                                             .addComponent(employeeLeaveToLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(18, 18, 18)
                                         .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(fromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(toDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addComponent(employeeLeaveReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 21, Short.MAX_VALUE))
@@ -297,13 +297,13 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                         .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(employeeLeaveENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(employeeLeaveENameLbl)))
-                    .addComponent(fromDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(employeeLeaveENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeLeaveENumberLbl)
                     .addComponent(employeeLeaveToLbl)
-                    .addComponent(toDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -560,10 +560,6 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         new MainDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeeLeaveMainDashboardBtnActionPerformed
 
-    private void employeeLeaveENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveENameFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeLeaveENameFldActionPerformed
-
     private void employeeLeaveSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveSubmitBtnActionPerformed
         // TODO add your handling code here:
         
@@ -571,8 +567,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         try {
             employeeLeaveENameFld.getText();
             employeeLeaveENumberFld.getText();
-            String to = DateUtils.formatUtilDate(toDateChooser.getDate());
-            String from = DateUtils.formatUtilDate(fromDateChooser.getDate());
+            String to = DateUtils.convertDateToString(jDateChooser2.getDate());
+            String from = DateUtils.convertDateToString(jDateChooser1.getDate());
             employeeLeaveReasonFld.getText();
             
             System.out.println(from + " - " + to);
@@ -586,10 +582,6 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_employeeLeaveSubmitBtnActionPerformed
 
-    private void employeeLeaveENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveENumberFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeLeaveENumberFldActionPerformed
-
     private void employeeLeaveReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveReasonFldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_employeeLeaveReasonFldActionPerformed
@@ -600,6 +592,14 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         
         new HRLeaveListUI().setVisible(true);
     }//GEN-LAST:event_employeeLeaveLListBtnActionPerformed
+
+    private void employeeLeaveENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveENameFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_employeeLeaveENameFldActionPerformed
+
+    private void employeeLeaveENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveENumberFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_employeeLeaveENumberFldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -658,7 +658,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private javax.swing.JButton employeeLeaveSubmitBtn;
     private javax.swing.JLabel employeeLeaveToLbl;
     private javax.swing.JRadioButton employeeLeaveVacationRBtn;
-    private com.toedter.calendar.JDateChooser fromDateChooser;
-    private com.toedter.calendar.JDateChooser toDateChooser;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
     // End of variables declaration//GEN-END:variables
 }

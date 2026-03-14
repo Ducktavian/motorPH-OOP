@@ -379,8 +379,8 @@
                                               </Group>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="fromDateChooser" min="-2" pref="129" max="-2" attributes="0"/>
-                                                  <Component id="toDateChooser" min="-2" pref="129" max="-2" attributes="0"/>
+                                                  <Component id="jDateChooser1" min="-2" pref="129" max="-2" attributes="0"/>
+                                                  <Component id="jDateChooser2" min="-2" pref="129" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -411,14 +411,14 @@
                                   <Component id="employeeLeaveENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="fromDateChooser" max="32767" attributes="0"/>
+                          <Component id="jDateChooser1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="employeeLeaveENumberFld" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="employeeLeaveENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="employeeLeaveToLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="toDateChooser" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jDateChooser2" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -707,9 +707,9 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeLeaveEmergencyRBtn"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="fromDateChooser">
+            <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
             </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="toDateChooser">
+            <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser2">
             </Component>
           </SubComponents>
         </Container>

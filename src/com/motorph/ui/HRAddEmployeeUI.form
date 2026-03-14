@@ -357,10 +357,10 @@
                                               <Group type="102" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" attributes="0">
-                                                          <Group type="103" groupAlignment="1" attributes="0">
-                                                              <Component id="hrAEmployeePositionFld" min="-2" pref="151" max="-2" attributes="0"/>
-                                                              <Component id="hrAEmployeeBirthdayFld" min="-2" pref="150" max="-2" attributes="0"/>
-                                                              <Component id="hrAEmployeeBasicSalaryFld" alignment="1" min="-2" pref="151" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                              <Component id="hrAEmployeePositionFld" alignment="0" pref="151" max="32767" attributes="0"/>
+                                                              <Component id="hrAEmployeeBasicSalaryFld" alignment="0" pref="151" max="32767" attributes="0"/>
+                                                              <Component id="bdayChooser" alignment="0" max="32767" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" groupAlignment="0" attributes="0">
                                                               <Group type="102" alignment="0" attributes="0">
@@ -436,19 +436,19 @@
                   </Group>
                   <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="hrAEmployeeBirthdayLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="hrAEmployeePhnNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="hrAEmployeeBirthdayFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="hrAEmployeePhnNumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="hrAEmployeePositionLbl" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="hrAEmployeePhnNumberFld" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="hrAEmployeePhnNumberFld" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="bdayChooser" min="-2" pref="29" max="-2" attributes="0"/>
+                          </Group>
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="hrAEmployeePositionFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
@@ -769,29 +769,6 @@
           </AccessibilityProperties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrAEmployeeAddressFldActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="hrAEmployeeBirthdayFld">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="15" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="37" green="29" red="1f" type="rgb"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder roundedCorners="true">
-                  <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
-                </LineBorder>
-              </Border>
-            </Property>
-          </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrAEmployeeBirthdayFld"/>
-          </AccessibilityProperties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrAEmployeeBirthdayFldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="hrAEmployeePositionFld">
@@ -1136,6 +1113,8 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrAEmployeeCltAllowanceFldActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="bdayChooser">
         </Component>
       </SubComponents>
     </Container>
