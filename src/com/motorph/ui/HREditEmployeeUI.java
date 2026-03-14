@@ -399,7 +399,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
                         .addGroup(hrEditEmployeeEEDetailsBrdrLblLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(hrEditEmployeeStatusCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(hrEditEmployeeFNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
         hrEditEmployeeEEDetailsBrdrLblLayout.setVerticalGroup(
             hrEditEmployeeEEDetailsBrdrLblLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -456,12 +456,16 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
                     .addComponent(hrEditEmployeeSSSFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrEditEmployeeTINLbl)
                     .addComponent(hrEditEmployeeTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
                 .addGroup(hrEditEmployeeEEDetailsBrdrLblLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrEditEmployeePhilHealthLbl)
-                    .addComponent(hrEditEmployeePhilHealthFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrEditEmployeePagIbigLbl)
-                    .addComponent(hrEditEmployeePagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(hrEditEmployeeEEDetailsBrdrLblLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(hrEditEmployeeEEDetailsBrdrLblLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(hrEditEmployeePhilHealthLbl)
+                            .addComponent(hrEditEmployeePagIbigLbl)
+                            .addComponent(hrEditEmployeePagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(hrEditEmployeeEEDetailsBrdrLblLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(hrEditEmployeePhilHealthFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         hrEditEmployeeENumberLbl.getAccessibleContext().setAccessibleName("hrEditEmployeeENumberLbl");

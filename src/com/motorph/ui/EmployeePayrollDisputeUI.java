@@ -290,9 +290,9 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
                 .addComponent(employeePrlDisputePylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(employeePrlDisputePylDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(307, 307, 307)
+                .addGap(282, 282, 282)
                 .addComponent(employeePrlDisputeMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         employeePrlDisputePylRecordBtn.getAccessibleContext().setAccessibleName("employeePrlDisputePylRecordBtn");
@@ -366,7 +366,7 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
             .addGroup(employeePrlDisputeFADisputePnlLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(employeePrlDisputeFADisputeLbl)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         employeePrlDisputeFADisputePnlLayout.setVerticalGroup(
             employeePrlDisputeFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -557,9 +557,9 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
             .addGroup(employeePrlDisputeDFormBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(employeePrlDisputeFADisputeBrdPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePrlDisputeDFormBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(264, Short.MAX_VALUE)
                 .addComponent(employeePrlDisputeDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(252, 252, 252))
         );
