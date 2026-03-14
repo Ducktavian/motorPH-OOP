@@ -512,7 +512,7 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
             .addGroup(itActLogsFADisputePnl1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(itActLogsFADisputeLbl1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         itActLogsFADisputePnl1Layout.setVerticalGroup(
             itActLogsFADisputePnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -710,7 +710,7 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
             .addGroup(itActLogsFADisputePnl2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(itActLogsFADisputeLbl2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         itActLogsFADisputePnl2Layout.setVerticalGroup(
             itActLogsFADisputePnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -908,7 +908,7 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
             .addGroup(itActLogsFADisputePnl3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(itActLogsFADisputeLbl3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         itActLogsFADisputePnl3Layout.setVerticalGroup(
             itActLogsFADisputePnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

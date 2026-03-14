@@ -90,7 +90,6 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsDenyBtn3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 700));
 
         hrRDetailsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
