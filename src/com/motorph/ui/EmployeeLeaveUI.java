@@ -4,7 +4,10 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.DateUtils;
 import com.motorph.util.Session;
+import java.time.LocalDate;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -38,6 +41,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         employeeLeaveSidebarPnl = new javax.swing.JPanel();
         employeeLeaveLDetailsBtn = new javax.swing.JButton();
         employeeLeaveLListBtn = new javax.swing.JButton();
@@ -58,13 +63,13 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveFromLbl = new javax.swing.JLabel();
         employeeLeaveENumberFld = new javax.swing.JTextField();
         employeeLeaveReasonFld = new javax.swing.JTextField();
-        employeeLeaveFromFld = new javax.swing.JTextField();
         employeeLeaveENumberLbl = new javax.swing.JLabel();
         employeeLeaveENameLbl = new javax.swing.JLabel();
-        employeeLeaveToFld = new javax.swing.JTextField();
         employeeLeaveSickRBtn = new javax.swing.JRadioButton();
         employeeLeaveVacationRBtn = new javax.swing.JRadioButton();
         employeeLeaveEmergencyRBtn = new javax.swing.JRadioButton();
+        fromDateChooser = new com.toedter.calendar.JDateChooser();
+        toDateChooser = new com.toedter.calendar.JDateChooser();
         employeeLeaveRecordsBrdrPnl = new javax.swing.JPanel();
         employeeLeaveRecordsLbl = new javax.swing.JLabel();
         employeeLeaveRecordsBrdrScrlLbl = new javax.swing.JScrollPane();
@@ -216,11 +221,6 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         employeeLeaveReasonFld.addActionListener(this::employeeLeaveReasonFldActionPerformed);
 
-        employeeLeaveFromFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeeLeaveFromFld.setText(" ");
-        employeeLeaveFromFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeeLeaveFromFld.addActionListener(this::employeeLeaveFromFldActionPerformed);
-
         employeeLeaveENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         employeeLeaveENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
         employeeLeaveENumberLbl.setText("Employee #");
@@ -228,11 +228,6 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         employeeLeaveENameLbl.setForeground(new java.awt.Color(31, 41, 55));
         employeeLeaveENameLbl.setText("Employee Name");
-
-        employeeLeaveToFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeeLeaveToFld.setText(" ");
-        employeeLeaveToFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeeLeaveToFld.addActionListener(this::employeeLeaveToFldActionPerformed);
 
         employeeLeaveSickRBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         employeeLeaveSickRBtn.setForeground(new java.awt.Color(31, 41, 55));
@@ -261,26 +256,30 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                             .addComponent(employeeLeaveReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(employeeLeaveSickRBtn)
-                                .addGap(86, 86, 86)
-                                .addComponent(employeeLeaveVacationRBtn)
-                                .addGap(66, 66, 66)
-                                .addComponent(employeeLeaveEmergencyRBtn))
-                            .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
-                                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(employeeLeaveENumberFld, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                    .addComponent(employeeLeaveENameFld))
-                                .addGap(18, 18, 18)
                                 .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(employeeLeaveToLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(employeeLeaveFromLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(employeeLeaveToFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(employeeLeaveFromFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                                        .addComponent(employeeLeaveSickRBtn)
+                                        .addGap(86, 86, 86)
+                                        .addComponent(employeeLeaveVacationRBtn)
+                                        .addGap(66, 66, 66)
+                                        .addComponent(employeeLeaveEmergencyRBtn))
+                                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                                        .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(employeeLeaveENumberFld, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+                                            .addComponent(employeeLeaveENameFld))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(employeeLeaveFromLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(employeeLeaveToLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(fromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(toDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addComponent(employeeLeaveReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 21, Short.MAX_VALUE))
         );
@@ -293,18 +292,18 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                     .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(employeeLeaveFromLbl)
-                        .addComponent(employeeLeaveFromFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(employeeLeaveENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(employeeLeaveENameLbl)))
+                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(employeeLeaveFromLbl, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(employeeLeaveENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeLeaveENameLbl)))
+                    .addComponent(fromDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(employeeLeaveENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeLeaveENumberLbl)
-                    .addComponent(employeeLeaveToFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(employeeLeaveToLbl))
+                    .addComponent(employeeLeaveToLbl)
+                    .addComponent(toDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -329,10 +328,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveFromLbl.getAccessibleContext().setAccessibleName("employeeLeaveFromLbl");
         employeeLeaveENumberFld.getAccessibleContext().setAccessibleName("employeeLeaveENumberFld");
         employeeLeaveReasonFld.getAccessibleContext().setAccessibleName("employeeLeaveReasonFld");
-        employeeLeaveFromFld.getAccessibleContext().setAccessibleName("employeeLeaveFromFld");
         employeeLeaveENumberLbl.getAccessibleContext().setAccessibleName("employeeLeaveENumberLbl");
         employeeLeaveENameLbl.getAccessibleContext().setAccessibleName("employeeLeaveENameLbl");
-        employeeLeaveToFld.getAccessibleContext().setAccessibleName("employeeLeaveToFld");
         employeeLeaveSickRBtn.getAccessibleContext().setAccessibleName("employeeLeaveSickRBtn");
         employeeLeaveVacationRBtn.getAccessibleContext().setAccessibleName("employeeLeaveVacationRBtn");
         employeeLeaveEmergencyRBtn.getAccessibleContext().setAccessibleName("employeeLeaveEmergencyRBtn");
@@ -569,6 +566,24 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
 
     private void employeeLeaveSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveSubmitBtnActionPerformed
         // TODO add your handling code here:
+        
+        
+        try {
+            employeeLeaveENameFld.getText();
+            employeeLeaveENumberFld.getText();
+            String to = DateUtils.formatUtilDate(toDateChooser.getDate());
+            String from = DateUtils.formatUtilDate(fromDateChooser.getDate());
+            employeeLeaveReasonFld.getText();
+            
+            System.out.println(from + " - " + to);
+            
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, JOptionPane.ERROR_MESSAGE);
+        }
+        
+        
+        
     }//GEN-LAST:event_employeeLeaveSubmitBtnActionPerformed
 
     private void employeeLeaveENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveENumberFldActionPerformed
@@ -578,14 +593,6 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private void employeeLeaveReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveReasonFldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_employeeLeaveReasonFldActionPerformed
-
-    private void employeeLeaveFromFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveFromFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeLeaveFromFldActionPerformed
-
-    private void employeeLeaveToFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveToFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeLeaveToFldActionPerformed
 
     private void employeeLeaveLListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveLListBtnActionPerformed
         // TODO add your handling code here:
@@ -620,6 +627,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JTextField employeeLeaveENameFld;
     private javax.swing.JLabel employeeLeaveENameLbl;
     private javax.swing.JTextField employeeLeaveENumberFld;
@@ -628,7 +637,6 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private javax.swing.JPanel employeeLeaveFALeaveBrdrPnl;
     private javax.swing.JLabel employeeLeaveFALeaveLbl;
     private javax.swing.JPanel employeeLeaveFALeavePnl;
-    private javax.swing.JTextField employeeLeaveFromFld;
     private javax.swing.JLabel employeeLeaveFromLbl;
     private javax.swing.JButton employeeLeaveLDetailsBtn;
     private javax.swing.JLabel employeeLeaveLDetailsLbl;
@@ -648,8 +656,9 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private javax.swing.JRadioButton employeeLeaveSickRBtn;
     private javax.swing.JPanel employeeLeaveSidebarPnl;
     private javax.swing.JButton employeeLeaveSubmitBtn;
-    private javax.swing.JTextField employeeLeaveToFld;
     private javax.swing.JLabel employeeLeaveToLbl;
     private javax.swing.JRadioButton employeeLeaveVacationRBtn;
+    private com.toedter.calendar.JDateChooser fromDateChooser;
+    private com.toedter.calendar.JDateChooser toDateChooser;
     // End of variables declaration//GEN-END:variables
 }

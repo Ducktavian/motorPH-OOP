@@ -2,7 +2,9 @@ package com.motorph.util;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 
 public class DateUtils {
@@ -23,6 +25,17 @@ public class DateUtils {
     
     public static LocalTime stringToTime(String timeStr) {
         return (timeStr == null || timeStr.isEmpty()) ? null : LocalTime.parse(timeStr, TIME_FORMAT);
+    }
+    
+    // Used in Jcalendar formatting
+    public static String formatUtilDate(Date date) {
+        if (date == null) return "";
+
+        LocalDate localDate = date.toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDate();
+
+        return localDate.format(FORMATTER);
     }
 
 }
