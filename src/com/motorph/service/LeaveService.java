@@ -59,5 +59,9 @@ public class LeaveService {
         }
     }
     
+    public LeaveRequest findById(String requestId) {
+        return leaveDAO.findById(requestId);
+    }
+    
     
 }

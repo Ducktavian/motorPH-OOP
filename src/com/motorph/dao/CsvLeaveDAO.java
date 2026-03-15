@@ -75,7 +75,7 @@ public class CsvLeaveDAO implements LeaveDAO {
             String[] row;
             while ((row = reader.readNext()) != null) {
                 // Skip empty or malformed rows
-                if (row.length >= 8) {
+                if (row.length >= 9) {
                     requests.add(mapRowToLeaveRequest(row));
                 }
             }

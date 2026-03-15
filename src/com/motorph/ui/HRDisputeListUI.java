@@ -4,6 +4,10 @@
  */
 package com.motorph.ui;
 
+import com.motorph.service.LeaveService;
+import com.motorph.util.AppContext;
+import com.motorph.util.GuiUtil;
+
 /**
  *
  * @author Lenovo
@@ -11,12 +15,14 @@ package com.motorph.ui;
 public class HRDisputeListUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(HRDisputeListUI.class.getName());
-
+    private LeaveService leaveService;
     /**
      * Creates new form HRDisputeList
      */
     public HRDisputeListUI() {
         initComponents();
+        
+        this.leaveService = AppContext.getLeaveService();
     }
 
     /**
@@ -279,7 +285,9 @@ public class HRDisputeListUI extends javax.swing.JFrame {
 
     private void hrDDetailsDListTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hrDDetailsDListTblMouseClicked
         // TODO add your handling code here:
-
+  
+        
+    
     }//GEN-LAST:event_hrDDetailsDListTblMouseClicked
 
     private void hrDDetailsDDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsDDetailsBtnActionPerformed

@@ -36,27 +36,27 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccAddUAccBtn = new javax.swing.JButton();
         itAddUAccAddUAccPnl = new javax.swing.JPanel();
         itAddUAccAddUAccLbl = new javax.swing.JLabel();
-        itAUserEDetailsBrdrPnl = new javax.swing.JPanel();
-        itAddUAccENumberLbl = new javax.swing.JLabel();
-        itAddUAccENameLbl = new javax.swing.JLabel();
-        itAddUAccENumberFld = new javax.swing.JTextField();
-        itAddUAccENameFld = new javax.swing.JTextField();
-        itAddUAccPhnNumberFld = new javax.swing.JTextField();
-        itAddUAccPositionLbl = new javax.swing.JLabel();
-        itAddUAccPhnNumberLbl = new javax.swing.JLabel();
-        itAddUAccISupervisorLbl = new javax.swing.JLabel();
-        itAddUAccISupervisorFld = new javax.swing.JTextField();
-        itAddUAccPositionFld = new javax.swing.JTextField();
-        itAddUAccStatusLbl = new javax.swing.JLabel();
-        itAddUAccStatusFld = new javax.swing.JTextField();
-        itAddUAccUAccDetailsPnl = new javax.swing.JPanel();
-        itAddUAccUAccDetailsLbl = new javax.swing.JLabel();
-        itAddUAccUAccDetailsBrdrPnl = new javax.swing.JPanel();
-        itAddUAccUsernameLbl = new javax.swing.JLabel();
-        itAddUAccUsernameFld = new javax.swing.JTextField();
-        itAddUAccPasswordLbl = new javax.swing.JLabel();
-        itAddUAccPasswordFld = new javax.swing.JTextField();
         itAUserActivateBtn = new javax.swing.JButton();
+        itSysToolsUserEDetailsBrdrPnl = new javax.swing.JPanel();
+        itSysToolsENumberLbl = new javax.swing.JLabel();
+        itSysToolsENameLbl = new javax.swing.JLabel();
+        itSysToolsENumberFld = new javax.swing.JTextField();
+        itSysToolsENameFld = new javax.swing.JTextField();
+        itSysToolsPhnNumberFld = new javax.swing.JTextField();
+        itSysToolsPositionLbl = new javax.swing.JLabel();
+        itSysToolsPhnNumberLbl = new javax.swing.JLabel();
+        itSysToolsISupervisorLbl = new javax.swing.JLabel();
+        itSysToolsISupervisorFld = new javax.swing.JTextField();
+        itSysToolsPositionFld = new javax.swing.JTextField();
+        itSysToolsStatusLbl = new javax.swing.JLabel();
+        itSysToolsStatusFld = new javax.swing.JTextField();
+        itSysToolsUAccDetailsPnl = new javax.swing.JPanel();
+        itSysToolsUAccDetailsLbl = new javax.swing.JLabel();
+        itSysToolsUAccDetailsBrdrPnl = new javax.swing.JPanel();
+        itSysToolsUsernameLbl = new javax.swing.JLabel();
+        itSysToolsUsernameFld = new javax.swing.JTextField();
+        itSysToolsPasswordLbl = new javax.swing.JLabel();
+        itSysToolsPasswordFld = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -145,245 +145,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccAddUAccPnl.add(itAddUAccAddUAccLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 220, 46));
         itAddUAccAddUAccLbl.getAccessibleContext().setAccessibleName("itAddUAccAddUAccLbl");
 
-        itAUserEDetailsBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
-        itAUserEDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
-        itAUserEDetailsBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
-        itAUserEDetailsBrdrPnl.setFocusable(false);
-        itAUserEDetailsBrdrPnl.setPreferredSize(new java.awt.Dimension(700, 469));
-        itAUserEDetailsBrdrPnl.setRequestFocusEnabled(false);
-
-        itAddUAccENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAddUAccENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccENumberLbl.setText("Employee #");
-
-        itAddUAccENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAddUAccENameLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccENameLbl.setText("Employee Name");
-
-        itAddUAccENumberFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAddUAccENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAddUAccENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAddUAccENumberFld.setEnabled(false);
-        itAddUAccENumberFld.addActionListener(this::itAddUAccENumberFldActionPerformed);
-
-        itAddUAccENameFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAddUAccENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAddUAccENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAddUAccENameFld.setEnabled(false);
-        itAddUAccENameFld.addActionListener(this::itAddUAccENameFldActionPerformed);
-
-        itAddUAccPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAddUAccPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAddUAccPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAddUAccPhnNumberFld.setEnabled(false);
-        itAddUAccPhnNumberFld.addActionListener(this::itAddUAccPhnNumberFldActionPerformed);
-
-        itAddUAccPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAddUAccPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccPositionLbl.setText("Position");
-
-        itAddUAccPhnNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAddUAccPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccPhnNumberLbl.setText("Phone Number");
-
-        itAddUAccISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAddUAccISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccISupervisorLbl.setText("Immediate Supervisor");
-
-        itAddUAccISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAddUAccISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAddUAccISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAddUAccISupervisorFld.setEnabled(false);
-        itAddUAccISupervisorFld.addActionListener(this::itAddUAccISupervisorFldActionPerformed);
-
-        itAddUAccPositionFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAddUAccPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAddUAccPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAddUAccPositionFld.setEnabled(false);
-        itAddUAccPositionFld.addActionListener(this::itAddUAccPositionFldActionPerformed);
-
-        itAddUAccStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAddUAccStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccStatusLbl.setText("Status");
-
-        itAddUAccStatusFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAddUAccStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAddUAccStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAddUAccStatusFld.setEnabled(false);
-        itAddUAccStatusFld.addActionListener(this::itAddUAccStatusFldActionPerformed);
-
-        itAddUAccUAccDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
-        itAddUAccUAccDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccUAccDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        itAddUAccUAccDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
-
-        itAddUAccUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
-        itAddUAccUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        itAddUAccUAccDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccUAccDetailsLbl.setText("User Account Details");
-        itAddUAccUAccDetailsLbl.setToolTipText("");
-
-        javax.swing.GroupLayout itAddUAccUAccDetailsPnlLayout = new javax.swing.GroupLayout(itAddUAccUAccDetailsPnl);
-        itAddUAccUAccDetailsPnl.setLayout(itAddUAccUAccDetailsPnlLayout);
-        itAddUAccUAccDetailsPnlLayout.setHorizontalGroup(
-            itAddUAccUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAddUAccUAccDetailsPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(itAddUAccUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        itAddUAccUAccDetailsPnlLayout.setVerticalGroup(
-            itAddUAccUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAddUAccUAccDetailsPnlLayout.createSequentialGroup()
-                .addComponent(itAddUAccUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1, Short.MAX_VALUE))
-        );
-
-        itAddUAccUAccDetailsLbl.getAccessibleContext().setAccessibleName("itAddUAccUAccDetailsLbl");
-
-        itAddUAccUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-
-        itAddUAccUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itAddUAccUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccUsernameLbl.setText("Username");
-
-        itAddUAccUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAddUAccUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAddUAccUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAddUAccUsernameFld.addActionListener(this::itAddUAccUsernameFldActionPerformed);
-
-        itAddUAccPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itAddUAccPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccPasswordLbl.setText("Password");
-
-        itAddUAccPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAddUAccPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAddUAccPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAddUAccPasswordFld.addActionListener(this::itAddUAccPasswordFldActionPerformed);
-
-        javax.swing.GroupLayout itAddUAccUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itAddUAccUAccDetailsBrdrPnl);
-        itAddUAccUAccDetailsBrdrPnl.setLayout(itAddUAccUAccDetailsBrdrPnlLayout);
-        itAddUAccUAccDetailsBrdrPnlLayout.setHorizontalGroup(
-            itAddUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAddUAccUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(itAddUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itAddUAccPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAddUAccPasswordLbl)
-                    .addComponent(itAddUAccUsernameLbl)
-                    .addComponent(itAddUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
-        );
-        itAddUAccUAccDetailsBrdrPnlLayout.setVerticalGroup(
-            itAddUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAddUAccUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(itAddUAccUsernameLbl)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(itAddUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(itAddUAccPasswordLbl)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itAddUAccPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-
-        itAddUAccUsernameLbl.getAccessibleContext().setAccessibleName("itAddUAccUsernameLbl");
-        itAddUAccUsernameFld.getAccessibleContext().setAccessibleName("itAddUAccUsernameFld");
-        itAddUAccPasswordLbl.getAccessibleContext().setAccessibleName("itAddUAccPasswordLbl");
-        itAddUAccPasswordFld.getAccessibleContext().setAccessibleName("itAddUAccPasswordFld");
-
-        javax.swing.GroupLayout itAUserEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itAUserEDetailsBrdrPnl);
-        itAUserEDetailsBrdrPnl.setLayout(itAUserEDetailsBrdrPnlLayout);
-        itAUserEDetailsBrdrPnlLayout.setHorizontalGroup(
-            itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itAddUAccENumberLbl)
-                    .addComponent(itAddUAccENameLbl)
-                    .addComponent(itAddUAccPhnNumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itAddUAccENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAddUAccPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAddUAccENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itAddUAccStatusLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itAddUAccStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itAddUAccPositionLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itAddUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itAddUAccISupervisorLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                        .addComponent(itAddUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18))
-            .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGap(242, 242, 242)
-                        .addComponent(itAddUAccUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGap(205, 205, 205)
-                        .addComponent(itAddUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        itAUserEDetailsBrdrPnlLayout.setVerticalGroup(
-            itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itAddUAccENumberLbl)
-                    .addComponent(itAddUAccENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAddUAccISupervisorLbl)
-                    .addComponent(itAddUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itAddUAccENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAddUAccENameLbl)
-                    .addComponent(itAddUAccPositionLbl)
-                    .addComponent(itAddUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itAddUAccPhnNumberLbl)
-                    .addComponent(itAddUAccPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAddUAccStatusLbl)
-                    .addComponent(itAddUAccStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(36, 36, 36)
-                .addComponent(itAddUAccUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(itAddUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
-        itAddUAccENumberLbl.getAccessibleContext().setAccessibleName("itAddUAccENumberLbl");
-        itAddUAccENameLbl.getAccessibleContext().setAccessibleName("itAddUAccENameLbl");
-        itAddUAccENumberFld.getAccessibleContext().setAccessibleName("itAddUAccENumberFld");
-        itAddUAccENameFld.getAccessibleContext().setAccessibleName("itAddUAccENameFld");
-        itAddUAccPhnNumberFld.getAccessibleContext().setAccessibleName("itAddUAccPhnNumberFld");
-        itAddUAccPositionLbl.getAccessibleContext().setAccessibleName("itAddUAccPositionLbl");
-        itAddUAccPhnNumberLbl.getAccessibleContext().setAccessibleName("itAddUAccPhnNumberLbl");
-        itAddUAccISupervisorLbl.getAccessibleContext().setAccessibleName("itAddUAccISupervisorLbl");
-        itAddUAccISupervisorFld.getAccessibleContext().setAccessibleName("itAddUAccISupervisorFld");
-        itAddUAccPositionFld.getAccessibleContext().setAccessibleName("itAddUAccPositionFld");
-        itAddUAccStatusLbl.getAccessibleContext().setAccessibleName("itAddUAccStatusLbl");
-        itAddUAccStatusFld.getAccessibleContext().setAccessibleName("itAddUAccStatusFld");
-        itAddUAccUAccDetailsPnl.getAccessibleContext().setAccessibleName("itAddUAccUAccDetailsPnl");
-        itAddUAccUAccDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itAddUAccUAccDetailsBrdrPnl");
-
         itAUserActivateBtn.setBackground(new java.awt.Color(34, 197, 94));
         itAUserActivateBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         itAUserActivateBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -391,26 +152,245 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAUserActivateBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         itAUserActivateBtn.addActionListener(this::itAUserActivateBtnActionPerformed);
 
+        itSysToolsUserEDetailsBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
+        itSysToolsUserEDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        itSysToolsUserEDetailsBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsUserEDetailsBrdrPnl.setFocusable(false);
+        itSysToolsUserEDetailsBrdrPnl.setPreferredSize(new java.awt.Dimension(700, 469));
+        itSysToolsUserEDetailsBrdrPnl.setRequestFocusEnabled(false);
+
+        itSysToolsENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itSysToolsENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsENumberLbl.setText("Employee #");
+
+        itSysToolsENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itSysToolsENameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsENameLbl.setText("Employee Name");
+
+        itSysToolsENumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itSysToolsENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itSysToolsENumberFld.setEnabled(false);
+        itSysToolsENumberFld.addActionListener(this::itSysToolsENumberFldActionPerformed);
+
+        itSysToolsENameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itSysToolsENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itSysToolsENameFld.setEnabled(false);
+        itSysToolsENameFld.addActionListener(this::itSysToolsENameFldActionPerformed);
+
+        itSysToolsPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itSysToolsPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itSysToolsPhnNumberFld.setEnabled(false);
+        itSysToolsPhnNumberFld.addActionListener(this::itSysToolsPhnNumberFldActionPerformed);
+
+        itSysToolsPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itSysToolsPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsPositionLbl.setText("Position");
+
+        itSysToolsPhnNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itSysToolsPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsPhnNumberLbl.setText("Phone Number");
+
+        itSysToolsISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itSysToolsISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsISupervisorLbl.setText("Immediate Supervisor");
+
+        itSysToolsISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itSysToolsISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itSysToolsISupervisorFld.setEnabled(false);
+        itSysToolsISupervisorFld.addActionListener(this::itSysToolsISupervisorFldActionPerformed);
+
+        itSysToolsPositionFld.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itSysToolsPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itSysToolsPositionFld.setEnabled(false);
+        itSysToolsPositionFld.addActionListener(this::itSysToolsPositionFldActionPerformed);
+
+        itSysToolsStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itSysToolsStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsStatusLbl.setText("Status");
+
+        itSysToolsStatusFld.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itSysToolsStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itSysToolsStatusFld.setEnabled(false);
+        itSysToolsStatusFld.addActionListener(this::itSysToolsStatusFldActionPerformed);
+
+        itSysToolsUAccDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
+        itSysToolsUAccDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsUAccDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itSysToolsUAccDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
+
+        itSysToolsUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
+        itSysToolsUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        itSysToolsUAccDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsUAccDetailsLbl.setText("User Account Details");
+        itSysToolsUAccDetailsLbl.setToolTipText("");
+
+        javax.swing.GroupLayout itSysToolsUAccDetailsPnlLayout = new javax.swing.GroupLayout(itSysToolsUAccDetailsPnl);
+        itSysToolsUAccDetailsPnl.setLayout(itSysToolsUAccDetailsPnlLayout);
+        itSysToolsUAccDetailsPnlLayout.setHorizontalGroup(
+            itSysToolsUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itSysToolsUAccDetailsPnlLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(itSysToolsUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        itSysToolsUAccDetailsPnlLayout.setVerticalGroup(
+            itSysToolsUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itSysToolsUAccDetailsPnlLayout.createSequentialGroup()
+                .addComponent(itSysToolsUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 1, Short.MAX_VALUE))
+        );
+
+        itSysToolsUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+
+        itSysToolsUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itSysToolsUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsUsernameLbl.setText("Username");
+
+        itSysToolsUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itSysToolsUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itSysToolsUsernameFld.addActionListener(this::itSysToolsUsernameFldActionPerformed);
+
+        itSysToolsPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itSysToolsPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsPasswordLbl.setText("Password");
+
+        itSysToolsPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itSysToolsPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itSysToolsPasswordFld.addActionListener(this::itSysToolsPasswordFldActionPerformed);
+
+        javax.swing.GroupLayout itSysToolsUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itSysToolsUAccDetailsBrdrPnl);
+        itSysToolsUAccDetailsBrdrPnl.setLayout(itSysToolsUAccDetailsBrdrPnlLayout);
+        itSysToolsUAccDetailsBrdrPnlLayout.setHorizontalGroup(
+            itSysToolsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itSysToolsUAccDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(itSysToolsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itSysToolsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itSysToolsPasswordLbl)
+                    .addComponent(itSysToolsUsernameLbl)
+                    .addComponent(itSysToolsUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+        itSysToolsUAccDetailsBrdrPnlLayout.setVerticalGroup(
+            itSysToolsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itSysToolsUAccDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(itSysToolsUsernameLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(itSysToolsUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(itSysToolsPasswordLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(itSysToolsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout itSysToolsUserEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itSysToolsUserEDetailsBrdrPnl);
+        itSysToolsUserEDetailsBrdrPnl.setLayout(itSysToolsUserEDetailsBrdrPnlLayout);
+        itSysToolsUserEDetailsBrdrPnlLayout.setHorizontalGroup(
+            itSysToolsUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itSysToolsENumberLbl)
+                    .addComponent(itSysToolsENameLbl)
+                    .addComponent(itSysToolsPhnNumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itSysToolsENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itSysToolsPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itSysToolsENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(itSysToolsStatusLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itSysToolsStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(itSysToolsPositionLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itSysToolsPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(itSysToolsISupervisorLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                        .addComponent(itSysToolsISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18))
+            .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(itSysToolsUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGap(205, 205, 205)
+                        .addComponent(itSysToolsUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        itSysToolsUserEDetailsBrdrPnlLayout.setVerticalGroup(
+            itSysToolsUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itSysToolsENumberLbl)
+                    .addComponent(itSysToolsENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itSysToolsISupervisorLbl)
+                    .addComponent(itSysToolsISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itSysToolsENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itSysToolsENameLbl)
+                    .addComponent(itSysToolsPositionLbl)
+                    .addComponent(itSysToolsPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itSysToolsPhnNumberLbl)
+                    .addComponent(itSysToolsPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itSysToolsStatusLbl)
+                    .addComponent(itSysToolsStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addComponent(itSysToolsUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(itSysToolsUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(itAddUAccSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itAUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAddUAccAddUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserActivateBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(itAUserActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(itAddUAccSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itAddUAccAddUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itSysToolsUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(itAddUAccAddUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itAUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(itSysToolsUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itAUserActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -419,7 +399,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
         itAddUAccSidebarPnl.getAccessibleContext().setAccessibleName("itAddUAccSidebarPnl");
         itAddUAccAddUAccPnl.getAccessibleContext().setAccessibleName("itAddUAccAddUAccPnl");
-        itAUserEDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itAUserEDetailsBrdrPnl");
         itAUserActivateBtn.getAccessibleContext().setAccessibleName("itAUserActivateBtn");
 
         pack();
@@ -428,38 +407,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
     private void itAUserActivateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserActivateBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_itAUserActivateBtnActionPerformed
-
-    private void itAddUAccENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccENumberFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itAddUAccENumberFldActionPerformed
-
-    private void itAddUAccENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccENameFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itAddUAccENameFldActionPerformed
-
-    private void itAddUAccPhnNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccPhnNumberFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itAddUAccPhnNumberFldActionPerformed
-
-    private void itAddUAccISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccISupervisorFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itAddUAccISupervisorFldActionPerformed
-
-    private void itAddUAccPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccPositionFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itAddUAccPositionFldActionPerformed
-
-    private void itAddUAccStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccStatusFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itAddUAccStatusFldActionPerformed
-
-    private void itAddUAccUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccUsernameFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itAddUAccUsernameFldActionPerformed
-
-    private void itAddUAccPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccPasswordFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itAddUAccPasswordFldActionPerformed
 
     private void itAddUAccActLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccActLogsBtnActionPerformed
         // TODO add your handling code here:
@@ -481,6 +428,38 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
     private void itAddUAccAddUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccAddUAccBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_itAddUAccAddUAccBtnActionPerformed
+
+    private void itSysToolsENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsENumberFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itSysToolsENumberFldActionPerformed
+
+    private void itSysToolsENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsENameFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itSysToolsENameFldActionPerformed
+
+    private void itSysToolsPhnNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsPhnNumberFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itSysToolsPhnNumberFldActionPerformed
+
+    private void itSysToolsISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsISupervisorFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itSysToolsISupervisorFldActionPerformed
+
+    private void itSysToolsPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsPositionFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itSysToolsPositionFldActionPerformed
+
+    private void itSysToolsStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsStatusFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itSysToolsStatusFldActionPerformed
+
+    private void itSysToolsUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsUsernameFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itSysToolsUsernameFldActionPerformed
+
+    private void itSysToolsPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsPasswordFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itSysToolsPasswordFldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -509,33 +488,33 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton itAUserActivateBtn;
-    private javax.swing.JPanel itAUserEDetailsBrdrPnl;
     private javax.swing.JButton itAddUAccActLogsBtn;
     private javax.swing.JButton itAddUAccAddUAccBtn;
     private javax.swing.JLabel itAddUAccAddUAccLbl;
     private javax.swing.JPanel itAddUAccAddUAccPnl;
-    private javax.swing.JTextField itAddUAccENameFld;
-    private javax.swing.JLabel itAddUAccENameLbl;
-    private javax.swing.JTextField itAddUAccENumberFld;
-    private javax.swing.JLabel itAddUAccENumberLbl;
     private javax.swing.JButton itAddUAccEditUAccBtn;
-    private javax.swing.JTextField itAddUAccISupervisorFld;
-    private javax.swing.JLabel itAddUAccISupervisorLbl;
     private javax.swing.JButton itAddUAccMainDashboardBtn;
     private javax.swing.JLabel itAddUAccMotorPHIconImgLbl;
-    private javax.swing.JTextField itAddUAccPasswordFld;
-    private javax.swing.JLabel itAddUAccPasswordLbl;
-    private javax.swing.JTextField itAddUAccPhnNumberFld;
-    private javax.swing.JLabel itAddUAccPhnNumberLbl;
-    private javax.swing.JTextField itAddUAccPositionFld;
-    private javax.swing.JLabel itAddUAccPositionLbl;
     private javax.swing.JPanel itAddUAccSidebarPnl;
-    private javax.swing.JTextField itAddUAccStatusFld;
-    private javax.swing.JLabel itAddUAccStatusLbl;
-    private javax.swing.JPanel itAddUAccUAccDetailsBrdrPnl;
-    private javax.swing.JLabel itAddUAccUAccDetailsLbl;
-    private javax.swing.JPanel itAddUAccUAccDetailsPnl;
-    private javax.swing.JTextField itAddUAccUsernameFld;
-    private javax.swing.JLabel itAddUAccUsernameLbl;
+    private javax.swing.JTextField itSysToolsENameFld;
+    private javax.swing.JLabel itSysToolsENameLbl;
+    private javax.swing.JTextField itSysToolsENumberFld;
+    private javax.swing.JLabel itSysToolsENumberLbl;
+    private javax.swing.JTextField itSysToolsISupervisorFld;
+    private javax.swing.JLabel itSysToolsISupervisorLbl;
+    private javax.swing.JTextField itSysToolsPasswordFld;
+    private javax.swing.JLabel itSysToolsPasswordLbl;
+    private javax.swing.JTextField itSysToolsPhnNumberFld;
+    private javax.swing.JLabel itSysToolsPhnNumberLbl;
+    private javax.swing.JTextField itSysToolsPositionFld;
+    private javax.swing.JLabel itSysToolsPositionLbl;
+    private javax.swing.JTextField itSysToolsStatusFld;
+    private javax.swing.JLabel itSysToolsStatusLbl;
+    private javax.swing.JPanel itSysToolsUAccDetailsBrdrPnl;
+    private javax.swing.JLabel itSysToolsUAccDetailsLbl;
+    private javax.swing.JPanel itSysToolsUAccDetailsPnl;
+    private javax.swing.JPanel itSysToolsUserEDetailsBrdrPnl;
+    private javax.swing.JTextField itSysToolsUsernameFld;
+    private javax.swing.JLabel itSysToolsUsernameLbl;
     // End of variables declaration//GEN-END:variables
 }
