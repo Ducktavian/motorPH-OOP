@@ -266,7 +266,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUserUpdateBtn1.setBackground(new java.awt.Color(239, 68, 68));
         itEditUserUpdateBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         itEditUserUpdateBtn1.setForeground(new java.awt.Color(255, 255, 255));
-        itEditUserUpdateBtn1.setText("Reset Default Password");
+        itEditUserUpdateBtn1.setText("Reset Password");
         itEditUserUpdateBtn1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         itEditUserUpdateBtn1.addActionListener(this::itEditUserUpdateBtn1ActionPerformed);
 
