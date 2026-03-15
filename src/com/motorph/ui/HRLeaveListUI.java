@@ -4,8 +4,16 @@
  */
 package com.motorph.ui;
 
+import com.motorph.model.Employee;
+import com.motorph.model.LeaveRequest;
 import com.motorph.model.Payslip;
+import com.motorph.service.EmployeeService;
+import com.motorph.service.LeaveService;
+import com.motorph.util.AppContext;
 import com.motorph.util.GuiUtil;
+import com.motorph.util.Session;
+import java.util.List;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -14,12 +22,51 @@ import com.motorph.util.GuiUtil;
 public class HRLeaveListUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(HRLeaveListUI.class.getName());
-
+    private LeaveService leaveService;
+    private EmployeeService empService;
     /**
      * Creates new form HRLeaveListFrame
      */
     public HRLeaveListUI() {
+        this.leaveService = AppContext.getLeaveService();
+        this.empService = AppContext.getEmployeeService();
         initComponents();
+        
+        if (leaveService != null && Session.getCurrentUser() != null) {
+            populateLeaveRecords();
+        } else {
+            logger.warning("Service or Session is null! Cannot populate table.");
+        }
+    }
+    
+    private void populateLeaveRecords() {
+        try {
+            
+            String employeeNumber = Session.getCurrentUser().getEmployeeNumber();
+            Employee emp = empService.findEmployee(employeeNumber);
+            
+            List<LeaveRequest> list = leaveService.getAllLeave(Session.getCurrentUser().getEmployeeNumber());
+
+            // Ensure the table model exists
+            DefaultTableModel model = (DefaultTableModel) hrLDetailsLListTbl.getModel();
+            model.setRowCount(0);
+
+            // 4. Fill the rows
+            for (LeaveRequest r : list) {
+
+                Object[] row = {
+                    r.getEmployeeNumber(),
+                    emp.getFullName(),
+                    r.getStatus(),
+                    "VIEW"
+                };
+
+                model.addRow(row);
+            }
+        } catch (Exception e) {
+            logger.severe("Failed to populate table: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     /**

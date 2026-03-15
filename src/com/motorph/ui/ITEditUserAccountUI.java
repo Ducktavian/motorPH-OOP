@@ -4,10 +4,7 @@
  */
 package com.motorph.ui;
 
-/**///
- *
- * @author Lenovo
- */
+
 public class ITEditUserAccountUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITEditUserAccountUI.class.getName());
@@ -330,19 +327,11 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                     .addGroup(itEditUAccDetailsBrdrPnlLayout.createSequentialGroup()
                         .addComponent(itEditUAccPositionLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-<<<<<<< HEAD
-                        .addComponent(itEditUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(itEditUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itEditUAccISupervisorLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                        .addComponent(itEditUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-=======
                         .addComponent(itEditUserPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itEditUserEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addComponent(itEditUserISupervisorLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                         .addComponent(itEditUserISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
->>>>>>> b79e58462ca09cd5828e123a6bf2a69415345a1c
                 .addGap(18, 18, 18))
             .addGroup(itEditUAccDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGroup(itEditUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -491,12 +480,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itEditUAccUpdateBtnActionPerformed
 
-<<<<<<< HEAD
-    private void itEditUAccResetPasswordBtnActionPerformed(java.awt.event.ActionEvent evt) {                                                           
-=======
 
     private void itEditUserUpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {                                                     
->>>>>>> b79e58462ca09cd5828e123a6bf2a69415345a1c
         // TODO add your handling code here:
     }                                                          
 
