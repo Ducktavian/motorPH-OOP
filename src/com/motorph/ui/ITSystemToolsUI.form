@@ -24,23 +24,23 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="itActLogsSidebarPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="itSysToolsSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="itActLogsEditBtn" min="-2" pref="65" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="itActLogsAddBtn" min="-2" pref="65" max="-2" attributes="0"/>
+                      <Component id="itSysToolsAddBtn" min="-2" pref="65" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="438" max="-2" attributes="0"/>
-                      <Component id="itActLogsDeleteBtn" min="-2" pref="65" max="-2" attributes="0"/>
+                      <Component id="itSysToolsDeleteBtn" min="-2" pref="65" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="itActLogsActLogsPnl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsActLogsPnl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                      <Component id="itActLogsSearchPnl" min="-2" pref="220" max="-2" attributes="0"/>
+                      <Component id="itSysToolsSearchPnl" min="-2" pref="220" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="293" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="itAUserEDetailsBrdrPnl" pref="702" max="32767" attributes="0"/>
+                  <Component id="itSysToolsUserEDetailsBrdrPnl" pref="702" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="14" max="32767" attributes="0"/>
           </Group>
@@ -49,22 +49,22 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Component id="itActLogsSidebarPnl" min="-2" pref="700" max="-2" attributes="0"/>
+              <Component id="itSysToolsSidebarPnl" min="-2" pref="700" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="itActLogsActLogsPnl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="itActLogsSearchPnl" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
+                  <Component id="itSysToolsActLogsPnl" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="itSysToolsSearchPnl" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="itAUserEDetailsBrdrPnl" min="-2" pref="427" max="-2" attributes="0"/>
+              <Component id="itSysToolsUserEDetailsBrdrPnl" min="-2" pref="427" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="itActLogsEditBtn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="itActLogsAddBtn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="itActLogsDeleteBtn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="itSysToolsAddBtn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="itSysToolsDeleteBtn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="60" max="32767" attributes="0"/>
           </Group>
@@ -72,21 +72,21 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="itActLogsSidebarPnl">
+    <Container class="javax.swing.JPanel" name="itSysToolsSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsSidebarPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsSidebarPnl"/>
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="itActLogsActLogsBtn">
+        <Component class="javax.swing.JButton" name="itSysToolsActLogsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -101,10 +101,10 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsActLogsBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsActLogsBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itActLogsActLogsBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsActLogsBtnActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -112,7 +112,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="itActLogsMainDashboardBtn">
+        <Component class="javax.swing.JButton" name="itSysToolsMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -128,10 +128,10 @@
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsMainDashboardBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itActLogsMainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsMainDashboardBtnActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -139,14 +139,14 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="itActLogsMotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="itSysToolsMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsMotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsMotorPHIconImgLbl"/>
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -156,7 +156,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="itActLogsActLogsPnl">
+    <Container class="javax.swing.JPanel" name="itSysToolsActLogsPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -173,14 +173,14 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsActLogsPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsActLogsPnl"/>
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="itActLogsActLogsLbl">
+        <Component class="javax.swing.JLabel" name="itSysToolsActLogsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -191,7 +191,7 @@
             <Property name="text" type="java.lang.String" value=" Activity Logs"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsActLogsLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsActLogsLbl"/>
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -201,7 +201,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="itActLogsSearchPnl">
+    <Container class="javax.swing.JPanel" name="itSysToolsSearchPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -218,14 +218,14 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsSearchPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsSearchPnl"/>
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="itActLogsEntENumberPnl">
+        <Component class="javax.swing.JTextField" name="itSysToolsEntENumberPnl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -248,10 +248,10 @@
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsEntENumberPnl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsEntENumberPnl"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itActLogsEntENumberPnlActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsEntENumberPnlActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -259,7 +259,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JLabel" name="itActLogsSearchIconImgLbl">
+        <Component class="javax.swing.JLabel" name="itSysToolsSearchIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/SearchIconImg.png"/>
@@ -276,7 +276,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="itActLogsDeleteBtn">
+    <Component class="javax.swing.JButton" name="itSysToolsDeleteBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="44" green="44" red="ef" type="rgb"/>
@@ -297,10 +297,10 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsDeleteBtn"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsDeleteBtn"/>
       </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itActLogsDeleteBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsDeleteBtnActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="itActLogsEditBtn">
@@ -330,7 +330,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itActLogsEditBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="itActLogsAddBtn">
+    <Component class="javax.swing.JButton" name="itSysToolsAddBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -351,13 +351,13 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsAddBtn"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsAddBtn"/>
       </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itActLogsAddBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsAddBtnActionPerformed"/>
       </Events>
     </Component>
-    <Container class="javax.swing.JPanel" name="itAUserEDetailsBrdrPnl">
+    <Container class="javax.swing.JPanel" name="itSysToolsUserEDetailsBrdrPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -378,6 +378,9 @@
         </Property>
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsUserEDetailsBrdrPnl"/>
+      </AccessibilityProperties>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -385,15 +388,15 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itAUserENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserENameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsENameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="itAUserPhnNumberLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="itAUserENameFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
                       <Component id="itAUserPhnNumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
-                      <Component id="itAUserENumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="itSysToolsENumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -435,15 +438,15 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="itAUserENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itSysToolsENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="itAUserISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="itAUserISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="itAUserENameFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itAUserENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="itAUserPositionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="itAUserPositionFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
@@ -464,7 +467,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="itAUserENumberLbl">
+        <Component class="javax.swing.JLabel" name="itSysToolsENumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -474,8 +477,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Employee #"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsENumberLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserENameLbl">
+        <Component class="javax.swing.JLabel" name="itSysToolsENameLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -485,8 +491,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Employee Name"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsENameLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserENumberFld">
+        <Component class="javax.swing.JTextField" name="itSysToolsENumberFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -506,8 +515,11 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsENumberFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserENumberFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsENumberFldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="itAUserENameFld">
