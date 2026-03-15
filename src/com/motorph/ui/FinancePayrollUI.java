@@ -745,6 +745,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financePrlStatusCbx.setForeground(new java.awt.Color(31, 41, 55));
         financePrlStatusCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Regular", "Probationary" }));
         financePrlStatusCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 1, true));
+        financePrlStatusCbx.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -33,28 +33,27 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
-        employeePrlDisputeSidebarPnl = new javax.swing.JPanel();
+        financePrlDDetailsSidebarPnl = new javax.swing.JPanel();
         employeePrlDisputeMainDashboardBtn = new javax.swing.JButton();
         employeePrlDisputeMotorPHIconImgLbl = new javax.swing.JLabel();
-        employeePrlDisputePrlDisputePnl = new javax.swing.JPanel();
-        employeePrlDisputePrlDisputeLbl = new javax.swing.JLabel();
-        employeePrlDisputeDFormBrdrPnl = new javax.swing.JPanel();
-        employeePrlDisputeDFormPnl = new javax.swing.JPanel();
-        employeePrlDisputeDFormLbl = new javax.swing.JLabel();
-        employeePrlDisputeFADisputeBrdPnl = new javax.swing.JPanel();
-        employeePrlDisputeFADisputePnl = new javax.swing.JPanel();
-        employeePrlDisputeFADisputeLbl = new javax.swing.JLabel();
-        employeePrlDisputeReasonLbl = new javax.swing.JLabel();
-        employeePrlDisputeReasonFld = new javax.swing.JTextField();
-        employeePrlDisputeSubmitBtn = new javax.swing.JButton();
-        employeePrlDisputePrlDateCbx = new javax.swing.JComboBox<>();
-        financePrlPrlDateDtChsr = new com.toedter.calendar.JDateChooser();
+        financePrlDDetailsPrlDDetailsPnl = new javax.swing.JPanel();
+        financePrlDDetailsPrlDDetailsLbl = new javax.swing.JLabel();
+        financePrlDDetailsApproveBtn = new javax.swing.JButton();
+        financePrlDDetailsDenyBtn = new javax.swing.JButton();
+        financePrlDDetailsBackBtn = new javax.swing.JButton();
+        employeeLeaveLFormBrdrPnl = new javax.swing.JPanel();
+        employeeLeaveLFormPnl = new javax.swing.JPanel();
+        employeeLeaveLFormLbl = new javax.swing.JLabel();
+        employeeLeaveFALeaveBrdrPnl = new javax.swing.JPanel();
+        employeeLeaveFALeavePnl = new javax.swing.JPanel();
+        employeeLeaveFALeaveLbl = new javax.swing.JLabel();
+        employeeLeaveReasonLbl = new javax.swing.JLabel();
+        employeeLeaveSubmitBtn = new javax.swing.JButton();
+        employeeLeaveFromLbl = new javax.swing.JLabel();
+        employeeLeaveReasonFld = new javax.swing.JTextField();
+        employeeLeaveENameLbl = new javax.swing.JLabel();
+        employeeLeaveFmDtChsr = new com.toedter.calendar.JDateChooser();
         financePrlPrlPeriodCbx = new javax.swing.JComboBox<>();
-        financePrlPrlPeriodLbl = new javax.swing.JLabel();
-        financePrlPrlDateLbl = new javax.swing.JLabel();
-        hrDDetailsApproveBtn = new javax.swing.JButton();
-        hrDDetailsDenyBtn = new javax.swing.JButton();
-        hrDDetailsBackBtn = new javax.swing.JButton();
 
         jScrollPane3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
@@ -213,8 +212,8 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        employeePrlDisputeSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
-        employeePrlDisputeSidebarPnl.setPreferredSize(new java.awt.Dimension(262, 700));
+        financePrlDDetailsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financePrlDDetailsSidebarPnl.setPreferredSize(new java.awt.Dimension(262, 700));
 
         employeePrlDisputeMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         employeePrlDisputeMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -226,22 +225,22 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
 
         employeePrlDisputeMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        javax.swing.GroupLayout employeePrlDisputeSidebarPnlLayout = new javax.swing.GroupLayout(employeePrlDisputeSidebarPnl);
-        employeePrlDisputeSidebarPnl.setLayout(employeePrlDisputeSidebarPnlLayout);
-        employeePrlDisputeSidebarPnlLayout.setHorizontalGroup(
-            employeePrlDisputeSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePrlDisputeSidebarPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout financePrlDDetailsSidebarPnlLayout = new javax.swing.GroupLayout(financePrlDDetailsSidebarPnl);
+        financePrlDDetailsSidebarPnl.setLayout(financePrlDDetailsSidebarPnlLayout);
+        financePrlDDetailsSidebarPnlLayout.setHorizontalGroup(
+            financePrlDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financePrlDDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(92, 92, 92)
                 .addComponent(employeePrlDisputeMainDashboardBtn)
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(employeePrlDisputeSidebarPnlLayout.createSequentialGroup()
+            .addGroup(financePrlDDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(employeePrlDisputeMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        employeePrlDisputeSidebarPnlLayout.setVerticalGroup(
-            employeePrlDisputeSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePrlDisputeSidebarPnlLayout.createSequentialGroup()
+        financePrlDDetailsSidebarPnlLayout.setVerticalGroup(
+            financePrlDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financePrlDDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(employeePrlDisputeMotorPHIconImgLbl)
                 .addGap(422, 422, 422)
@@ -252,269 +251,238 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
         employeePrlDisputeMainDashboardBtn.getAccessibleContext().setAccessibleName("employeePrlDisputeMainDashboardBtn");
         employeePrlDisputeMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("employeePrlDisputeMotorPHIconImgLbl");
 
-        employeePrlDisputePrlDisputePnl.setBackground(new java.awt.Color(30, 58, 138));
-        employeePrlDisputePrlDisputePnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePrlDisputePrlDisputePnl.setForeground(new java.awt.Color(30, 58, 138));
-        employeePrlDisputePrlDisputePnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        financePrlDDetailsPrlDDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financePrlDDetailsPrlDDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlDDetailsPrlDDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        financePrlDDetailsPrlDDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        employeePrlDisputePrlDisputeLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        employeePrlDisputePrlDisputeLbl.setForeground(new java.awt.Color(255, 255, 255));
-        employeePrlDisputePrlDisputeLbl.setText(" Payroll Dispute");
-        employeePrlDisputePrlDisputePnl.add(employeePrlDisputePrlDisputeLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 200, 46));
-        employeePrlDisputePrlDisputeLbl.getAccessibleContext().setAccessibleName("employeePrlDisputePrlDisputeLbl");
+        financePrlDDetailsPrlDDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        financePrlDDetailsPrlDDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlDDetailsPrlDDetailsLbl.setText(" Payroll Dispute Details");
+        financePrlDDetailsPrlDDetailsPnl.add(financePrlDDetailsPrlDDetailsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 290, 46));
+        financePrlDDetailsPrlDDetailsLbl.getAccessibleContext().setAccessibleName("financePrlDDetailsPrlDDetailsLbl");
 
-        employeePrlDisputeDFormBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        financePrlDDetailsApproveBtn.setBackground(new java.awt.Color(34, 197, 94));
+        financePrlDDetailsApproveBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlDDetailsApproveBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlDDetailsApproveBtn.setText("Approve");
+        financePrlDDetailsApproveBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financePrlDDetailsApproveBtn.addActionListener(this::financePrlDDetailsApproveBtnActionPerformed);
 
-        employeePrlDisputeDFormPnl.setBackground(new java.awt.Color(30, 58, 138));
-        employeePrlDisputeDFormPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePrlDisputeDFormPnl.setForeground(new java.awt.Color(30, 58, 138));
-        employeePrlDisputeDFormPnl.setPreferredSize(new java.awt.Dimension(126, 40));
+        financePrlDDetailsDenyBtn.setBackground(new java.awt.Color(239, 68, 68));
+        financePrlDDetailsDenyBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlDDetailsDenyBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlDDetailsDenyBtn.setText("Deny");
+        financePrlDDetailsDenyBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financePrlDDetailsDenyBtn.addActionListener(this::financePrlDDetailsDenyBtnActionPerformed);
 
-        employeePrlDisputeDFormLbl.setBackground(new java.awt.Color(255, 255, 255));
-        employeePrlDisputeDFormLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        employeePrlDisputeDFormLbl.setForeground(new java.awt.Color(255, 255, 255));
-        employeePrlDisputeDFormLbl.setText("Payroll Dispute Form");
-        employeePrlDisputeDFormLbl.setToolTipText("");
+        financePrlDDetailsBackBtn.setBackground(new java.awt.Color(30, 58, 138));
+        financePrlDDetailsBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlDDetailsBackBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlDDetailsBackBtn.setText("Back");
+        financePrlDDetailsBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlDDetailsBackBtn.addActionListener(this::financePrlDDetailsBackBtnActionPerformed);
 
-        javax.swing.GroupLayout employeePrlDisputeDFormPnlLayout = new javax.swing.GroupLayout(employeePrlDisputeDFormPnl);
-        employeePrlDisputeDFormPnl.setLayout(employeePrlDisputeDFormPnlLayout);
-        employeePrlDisputeDFormPnlLayout.setHorizontalGroup(
-            employeePrlDisputeDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePrlDisputeDFormPnlLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(employeePrlDisputeDFormLbl)
-                .addContainerGap(14, Short.MAX_VALUE))
+        employeeLeaveLFormBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLFormBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+
+        employeeLeaveLFormPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeLeaveLFormPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveLFormPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeLeaveLFormPnl.setPreferredSize(new java.awt.Dimension(126, 40));
+
+        employeeLeaveLFormLbl.setBackground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLFormLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeeLeaveLFormLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLFormLbl.setText("Payroll Dispute Form");
+        employeeLeaveLFormLbl.setToolTipText("");
+
+        javax.swing.GroupLayout employeeLeaveLFormPnlLayout = new javax.swing.GroupLayout(employeeLeaveLFormPnl);
+        employeeLeaveLFormPnl.setLayout(employeeLeaveLFormPnlLayout);
+        employeeLeaveLFormPnlLayout.setHorizontalGroup(
+            employeeLeaveLFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveLFormPnlLayout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addComponent(employeeLeaveLFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
-        employeePrlDisputeDFormPnlLayout.setVerticalGroup(
-            employeePrlDisputeDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePrlDisputeDFormPnlLayout.createSequentialGroup()
+        employeeLeaveLFormPnlLayout.setVerticalGroup(
+            employeeLeaveLFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveLFormPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(employeePrlDisputeDFormLbl)
+                .addComponent(employeeLeaveLFormLbl)
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        employeePrlDisputeDFormLbl.getAccessibleContext().setAccessibleName("employeePrlDisputeDFormLbl");
+        employeeLeaveFALeaveBrdrPnl.setBackground(new java.awt.Color(233, 233, 233));
+        employeeLeaveFALeaveBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveFALeaveBrdrPnl.setForeground(new java.awt.Color(178, 178, 178));
 
-        employeePrlDisputeFADisputeBrdPnl.setBackground(new java.awt.Color(233, 233, 233));
-        employeePrlDisputeFADisputeBrdPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePrlDisputeFADisputeBrdPnl.setForeground(new java.awt.Color(178, 178, 178));
+        employeeLeaveFALeavePnl.setBackground(new java.awt.Color(146, 192, 253));
+        employeeLeaveFALeavePnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveFALeavePnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeeLeaveFALeavePnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        employeePrlDisputeFADisputePnl.setBackground(new java.awt.Color(146, 192, 253));
-        employeePrlDisputeFADisputePnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePrlDisputeFADisputePnl.setForeground(new java.awt.Color(30, 58, 138));
-        employeePrlDisputeFADisputePnl.setPreferredSize(new java.awt.Dimension(126, 40));
+        employeeLeaveFALeaveLbl.setBackground(new java.awt.Color(255, 255, 255));
+        employeeLeaveFALeaveLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        employeeLeaveFALeaveLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveFALeaveLbl.setText(" File A Payroll Dispute");
+        employeeLeaveFALeaveLbl.setToolTipText("");
 
-        employeePrlDisputeFADisputeLbl.setBackground(new java.awt.Color(255, 255, 255));
-        employeePrlDisputeFADisputeLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        employeePrlDisputeFADisputeLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeePrlDisputeFADisputeLbl.setText("File A Dispute");
-        employeePrlDisputeFADisputeLbl.setToolTipText("");
-
-        javax.swing.GroupLayout employeePrlDisputeFADisputePnlLayout = new javax.swing.GroupLayout(employeePrlDisputeFADisputePnl);
-        employeePrlDisputeFADisputePnl.setLayout(employeePrlDisputeFADisputePnlLayout);
-        employeePrlDisputeFADisputePnlLayout.setHorizontalGroup(
-            employeePrlDisputeFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePrlDisputeFADisputePnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(employeePrlDisputeFADisputeLbl)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        javax.swing.GroupLayout employeeLeaveFALeavePnlLayout = new javax.swing.GroupLayout(employeeLeaveFALeavePnl);
+        employeeLeaveFALeavePnl.setLayout(employeeLeaveFALeavePnlLayout);
+        employeeLeaveFALeavePnlLayout.setHorizontalGroup(
+            employeeLeaveFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveFALeavePnlLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19))
         );
-        employeePrlDisputeFADisputePnlLayout.setVerticalGroup(
-            employeePrlDisputeFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePrlDisputeFADisputePnlLayout.createSequentialGroup()
-                .addComponent(employeePrlDisputeFADisputeLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
+        employeeLeaveFALeavePnlLayout.setVerticalGroup(
+            employeeLeaveFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
-        employeePrlDisputeFADisputeLbl.getAccessibleContext().setAccessibleName("employeePrlDisputeFADisputeLbl");
+        employeeLeaveReasonLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveReasonLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveReasonLbl.setText("Reason");
 
-        employeePrlDisputeReasonLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        employeePrlDisputeReasonLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeePrlDisputeReasonLbl.setText("Reason");
+        employeeLeaveSubmitBtn.setBackground(new java.awt.Color(59, 130, 246));
+        employeeLeaveSubmitBtn.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        employeeLeaveSubmitBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeeLeaveSubmitBtn.setText("Submit");
+        employeeLeaveSubmitBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        employeeLeaveSubmitBtn.addActionListener(this::employeeLeaveSubmitBtnActionPerformed);
 
-        employeePrlDisputeReasonFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeePrlDisputeReasonFld.setText(" ");
-        employeePrlDisputeReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePrlDisputeReasonFld.addActionListener(this::employeePrlDisputeReasonFldActionPerformed);
+        employeeLeaveFromLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveFromLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveFromLbl.setText("Payroll Period");
 
-        employeePrlDisputeSubmitBtn.setBackground(new java.awt.Color(59, 130, 246));
-        employeePrlDisputeSubmitBtn.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        employeePrlDisputeSubmitBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePrlDisputeSubmitBtn.setText("Submit");
-        employeePrlDisputeSubmitBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        employeePrlDisputeSubmitBtn.addActionListener(this::employeePrlDisputeSubmitBtnActionPerformed);
+        employeeLeaveReasonFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveReasonFld.setText(" ");
+        employeeLeaveReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveReasonFld.addActionListener(this::employeeLeaveReasonFldActionPerformed);
 
-        employeePrlDisputePrlDateCbx.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        employeePrlDisputePrlDateCbx.setForeground(new java.awt.Color(31, 41, 55));
-        employeePrlDisputePrlDateCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "HR", "IT" }));
-        employeePrlDisputePrlDateCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePrlDisputePrlDateCbx.addActionListener(this::employeePrlDisputePrlDateCbxActionPerformed);
+        employeeLeaveENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeLeaveENameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveENameLbl.setText("Payroll Date");
 
-        financePrlPrlDateDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 1, true));
-        financePrlPrlDateDtChsr.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveFmDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveFmDtChsr.setForeground(new java.awt.Color(31, 41, 55));
 
         financePrlPrlPeriodCbx.setForeground(new java.awt.Color(31, 41, 55));
         financePrlPrlPeriodCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "1st cutoff", "2nd cutoff" }));
         financePrlPrlPeriodCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 1, true));
-        financePrlPrlPeriodCbx.addActionListener(this::financePrlPrlPeriodCbxActionPerformed);
 
-        financePrlPrlPeriodLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        financePrlPrlPeriodLbl.setForeground(new java.awt.Color(31, 41, 55));
-        financePrlPrlPeriodLbl.setText("Payroll Period");
-
-        financePrlPrlDateLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        financePrlPrlDateLbl.setForeground(new java.awt.Color(31, 41, 55));
-        financePrlPrlDateLbl.setText("Payroll Date");
-
-        javax.swing.GroupLayout employeePrlDisputeFADisputeBrdPnlLayout = new javax.swing.GroupLayout(employeePrlDisputeFADisputeBrdPnl);
-        employeePrlDisputeFADisputeBrdPnl.setLayout(employeePrlDisputeFADisputeBrdPnlLayout);
-        employeePrlDisputeFADisputeBrdPnlLayout.setHorizontalGroup(
-            employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createSequentialGroup()
-                .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createSequentialGroup()
-                        .addGap(182, 182, 182)
-                        .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createSequentialGroup()
-                                .addComponent(financePrlPrlDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(financePrlPrlPeriodLbl)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                                .addComponent(financePrlPrlPeriodCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createSequentialGroup()
-                                .addComponent(employeePrlDisputePrlDateCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(employeePrlDisputeSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(employeePrlDisputeReasonFld)
-                            .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createSequentialGroup()
-                                .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(employeePrlDisputeReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createSequentialGroup()
-                                        .addGap(1, 1, 1)
-                                        .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(employeePrlDisputeFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(financePrlPrlDateLbl))))
-                                .addGap(0, 0, Short.MAX_VALUE)))))
-                .addGap(21, 21, 21))
+        javax.swing.GroupLayout employeeLeaveFALeaveBrdrPnlLayout = new javax.swing.GroupLayout(employeeLeaveFALeaveBrdrPnl);
+        employeeLeaveFALeaveBrdrPnl.setLayout(employeeLeaveFALeaveBrdrPnlLayout);
+        employeeLeaveFALeaveBrdrPnlLayout.setHorizontalGroup(
+            employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(employeeLeaveReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 638, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                        .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(employeeLeaveENameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(employeeLeaveFmDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(employeeLeaveReasonLbl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeLeaveFALeavePnl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(37, 37, 37)
+                        .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(employeeLeaveFromLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(financePrlPrlPeriodCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
-        employeePrlDisputeFADisputeBrdPnlLayout.setVerticalGroup(
-            employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePrlDisputeFADisputeBrdPnlLayout.createSequentialGroup()
-                        .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(employeePrlDisputeFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(employeePrlDisputeSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(employeePrlDisputePrlDateCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(financePrlPrlDateLbl)
-                            .addComponent(financePrlPrlDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePrlDisputeFADisputeBrdPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(financePrlPrlPeriodCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(financePrlPrlPeriodLbl)))
+        employeeLeaveFALeaveBrdrPnlLayout.setVerticalGroup(
+            employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(employeeLeaveFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(employeeLeaveENameLbl)
+                        .addComponent(employeeLeaveFmDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(financePrlPrlPeriodCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(employeeLeaveFromLbl)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(employeePrlDisputeReasonLbl)
+                .addComponent(employeeLeaveReasonLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(employeePrlDisputeReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22))
+                .addComponent(employeeLeaveReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        employeePrlDisputeFADisputePnl.getAccessibleContext().setAccessibleName("employeePrlDisputeFADisputePnl");
-        employeePrlDisputeReasonLbl.getAccessibleContext().setAccessibleName("employeePrlDisputeReasonLbl");
-        employeePrlDisputeReasonFld.getAccessibleContext().setAccessibleName("employeePrlDisputeReasonFld");
-        employeePrlDisputeSubmitBtn.getAccessibleContext().setAccessibleName("employeePrlDisputeSubmitBtn");
-        employeePrlDisputePrlDateCbx.getAccessibleContext().setAccessibleName("employeePrlDisputePrlDateCbx");
-
-        javax.swing.GroupLayout employeePrlDisputeDFormBrdrPnlLayout = new javax.swing.GroupLayout(employeePrlDisputeDFormBrdrPnl);
-        employeePrlDisputeDFormBrdrPnl.setLayout(employeePrlDisputeDFormBrdrPnlLayout);
-        employeePrlDisputeDFormBrdrPnlLayout.setHorizontalGroup(
-            employeePrlDisputeDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePrlDisputeDFormBrdrPnlLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(employeePrlDisputeFADisputeBrdPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePrlDisputeDFormBrdrPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout employeeLeaveLFormBrdrPnlLayout = new javax.swing.GroupLayout(employeeLeaveLFormBrdrPnl);
+        employeeLeaveLFormBrdrPnl.setLayout(employeeLeaveLFormBrdrPnlLayout);
+        employeeLeaveLFormBrdrPnlLayout.setHorizontalGroup(
+            employeeLeaveLFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveLFormBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(employeePrlDisputeDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(211, 211, 211))
+                .addComponent(employeeLeaveLFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(206, 206, 206))
+            .addGroup(employeeLeaveLFormBrdrPnlLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(employeeLeaveFALeaveBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        employeePrlDisputeDFormBrdrPnlLayout.setVerticalGroup(
-            employeePrlDisputeDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePrlDisputeDFormBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
-                .addComponent(employeePrlDisputeDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+        employeeLeaveLFormBrdrPnlLayout.setVerticalGroup(
+            employeeLeaveLFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveLFormBrdrPnlLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(employeeLeaveLFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(employeePrlDisputeFADisputeBrdPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                .addComponent(employeeLeaveFALeaveBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
-
-        employeePrlDisputeDFormPnl.getAccessibleContext().setAccessibleName("employeePrlDisputeDFormPnl");
-        employeePrlDisputeFADisputeBrdPnl.getAccessibleContext().setAccessibleName("employeePrlDisputeFADisputeBrdPnl");
-
-        hrDDetailsApproveBtn.setBackground(new java.awt.Color(34, 197, 94));
-        hrDDetailsApproveBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsApproveBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsApproveBtn.setText("Approve");
-        hrDDetailsApproveBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrDDetailsApproveBtn.addActionListener(this::hrDDetailsApproveBtnActionPerformed);
-
-        hrDDetailsDenyBtn.setBackground(new java.awt.Color(239, 68, 68));
-        hrDDetailsDenyBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsDenyBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsDenyBtn.setText("Deny");
-        hrDDetailsDenyBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrDDetailsDenyBtn.addActionListener(this::hrDDetailsDenyBtnActionPerformed);
-
-        hrDDetailsBackBtn.setBackground(new java.awt.Color(30, 58, 138));
-        hrDDetailsBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsBackBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsBackBtn.setText("Back");
-        hrDDetailsBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsBackBtn.addActionListener(this::hrDDetailsBackBtnActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(employeePrlDisputeSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financePrlDDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(employeePrlDisputePrlDisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(hrDDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(43, 43, 43)
-                            .addComponent(hrDDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(hrDDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(employeePrlDisputeDFormBrdrPnl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(financePrlDDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43)
+                        .addComponent(financePrlDDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(370, 370, 370)
+                        .addComponent(financePrlDDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financePrlDDetailsPrlDDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeLeaveLFormBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(employeePrlDisputePrlDisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(employeePrlDisputeDFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financePrlDDetailsPrlDDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(employeeLeaveLFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrDDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrDDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrDDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financePrlDDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlDDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlDDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(employeePrlDisputeSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(financePrlDDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        employeePrlDisputeSidebarPnl.getAccessibleContext().setAccessibleName("employeePrlDisputeSidebarPnl");
-        employeePrlDisputePrlDisputePnl.getAccessibleContext().setAccessibleName("employeePrlDisputePrlDisputePnl");
-        employeePrlDisputeDFormBrdrPnl.getAccessibleContext().setAccessibleName("employeePrlDisputeDFormBrdrPnl");
+        financePrlDDetailsSidebarPnl.getAccessibleContext().setAccessibleName("financePrlDDetailsSidebarPnl");
+        financePrlDDetailsPrlDDetailsPnl.getAccessibleContext().setAccessibleName("financePrlDDetailsPrlDDetailsPnl");
+        financePrlDDetailsApproveBtn.getAccessibleContext().setAccessibleName("financePrlDDetailsApproveBtn");
+        financePrlDDetailsDenyBtn.getAccessibleContext().setAccessibleName("financePrlDDetailsDenyBtn");
+        financePrlDDetailsBackBtn.getAccessibleContext().setAccessibleName("financePrlDDetailsBackBtn");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -525,31 +493,15 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
         new MainDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeePrlDisputeMainDashboardBtnActionPerformed
 
-    private void employeePrlDisputeReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlDisputeReasonFldActionPerformed
+    private void financePrlDDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDDetailsApproveBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_employeePrlDisputeReasonFldActionPerformed
+    }//GEN-LAST:event_financePrlDDetailsApproveBtnActionPerformed
 
-    private void employeePrlDisputeSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlDisputeSubmitBtnActionPerformed
+    private void financePrlDDetailsDenyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDDetailsDenyBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_employeePrlDisputeSubmitBtnActionPerformed
+    }//GEN-LAST:event_financePrlDDetailsDenyBtnActionPerformed
 
-    private void employeePrlDisputePrlDateCbxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlDisputePrlDateCbxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeePrlDisputePrlDateCbxActionPerformed
-
-    private void financePrlPrlPeriodCbxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPrlPeriodCbxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_financePrlPrlPeriodCbxActionPerformed
-
-    private void hrDDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsApproveBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrDDetailsApproveBtnActionPerformed
-
-    private void hrDDetailsDenyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsDenyBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrDDetailsDenyBtnActionPerformed
-
-    private void hrDDetailsBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsBackBtnActionPerformed
+    private void financePrlDDetailsBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDDetailsBackBtnActionPerformed
         // TODO add your handling code here:
         try {
             // EmployeeNumber
@@ -621,7 +573,28 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "An unexpected error occurred: " + e.getMessage());
         }
-    }//GEN-LAST:event_hrDDetailsBackBtnActionPerformed
+    }//GEN-LAST:event_financePrlDDetailsBackBtnActionPerformed
+
+    private void employeeLeaveSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveSubmitBtnActionPerformed
+        // TODO add your handling code here:
+
+        try {
+            employeeLeaveENameFld.getText();
+            employeeLeaveENumberFld.getText();
+            String to = DateUtils.convertDateToString(employeeLeaveToDtChsr.getDate());
+            String from = DateUtils.convertDateToString(employeeLeaveFmDtChsr.getDate());
+            employeeLeaveReasonFld.getText();
+
+            System.out.println(from + " - " + to);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_employeeLeaveSubmitBtnActionPerformed
+
+    private void employeeLeaveReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveReasonFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_employeeLeaveReasonFldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -649,28 +622,27 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel employeePrlDisputeDFormBrdrPnl;
-    private javax.swing.JLabel employeePrlDisputeDFormLbl;
-    private javax.swing.JPanel employeePrlDisputeDFormPnl;
-    private javax.swing.JPanel employeePrlDisputeFADisputeBrdPnl;
-    private javax.swing.JLabel employeePrlDisputeFADisputeLbl;
-    private javax.swing.JPanel employeePrlDisputeFADisputePnl;
+    private javax.swing.JLabel employeeLeaveENameLbl;
+    private javax.swing.JPanel employeeLeaveFALeaveBrdrPnl;
+    private javax.swing.JLabel employeeLeaveFALeaveLbl;
+    private javax.swing.JPanel employeeLeaveFALeavePnl;
+    private com.toedter.calendar.JDateChooser employeeLeaveFmDtChsr;
+    private javax.swing.JLabel employeeLeaveFromLbl;
+    private javax.swing.JPanel employeeLeaveLFormBrdrPnl;
+    private javax.swing.JLabel employeeLeaveLFormLbl;
+    private javax.swing.JPanel employeeLeaveLFormPnl;
+    private javax.swing.JTextField employeeLeaveReasonFld;
+    private javax.swing.JLabel employeeLeaveReasonLbl;
+    private javax.swing.JButton employeeLeaveSubmitBtn;
     private javax.swing.JButton employeePrlDisputeMainDashboardBtn;
     private javax.swing.JLabel employeePrlDisputeMotorPHIconImgLbl;
-    private javax.swing.JComboBox<String> employeePrlDisputePrlDateCbx;
-    private javax.swing.JLabel employeePrlDisputePrlDisputeLbl;
-    private javax.swing.JPanel employeePrlDisputePrlDisputePnl;
-    private javax.swing.JTextField employeePrlDisputeReasonFld;
-    private javax.swing.JLabel employeePrlDisputeReasonLbl;
-    private javax.swing.JPanel employeePrlDisputeSidebarPnl;
-    private javax.swing.JButton employeePrlDisputeSubmitBtn;
-    private com.toedter.calendar.JDateChooser financePrlPrlDateDtChsr;
-    private javax.swing.JLabel financePrlPrlDateLbl;
+    private javax.swing.JButton financePrlDDetailsApproveBtn;
+    private javax.swing.JButton financePrlDDetailsBackBtn;
+    private javax.swing.JButton financePrlDDetailsDenyBtn;
+    private javax.swing.JLabel financePrlDDetailsPrlDDetailsLbl;
+    private javax.swing.JPanel financePrlDDetailsPrlDDetailsPnl;
+    private javax.swing.JPanel financePrlDDetailsSidebarPnl;
     private javax.swing.JComboBox<String> financePrlPrlPeriodCbx;
-    private javax.swing.JLabel financePrlPrlPeriodLbl;
-    private javax.swing.JButton hrDDetailsApproveBtn;
-    private javax.swing.JButton hrDDetailsBackBtn;
-    private javax.swing.JButton hrDDetailsDenyBtn;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
