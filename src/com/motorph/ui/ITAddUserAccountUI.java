@@ -28,122 +28,122 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        itAUserSidebarPnl = new javax.swing.JPanel();
-        itAUserActLogsBtn = new javax.swing.JButton();
-        itAUserMainDashboardBtn = new javax.swing.JButton();
-        itAUserMotorPHIconImgLbl = new javax.swing.JLabel();
-        itAUserEditUAccBtn = new javax.swing.JButton();
-        itAUserAddUAccBtn = new javax.swing.JButton();
-        itAUserAddUAccPnl = new javax.swing.JPanel();
-        itAUserAddUAccLbl = new javax.swing.JLabel();
+        itAddUAccSidebarPnl = new javax.swing.JPanel();
+        itAddUAccActLogsBtn = new javax.swing.JButton();
+        itAddUAccMainDashboardBtn = new javax.swing.JButton();
+        itAddUAccMotorPHIconImgLbl = new javax.swing.JLabel();
+        itAddUAccEditUAccBtn = new javax.swing.JButton();
+        itAddUAccAddUAccBtn = new javax.swing.JButton();
+        itAddUAccAddUAccPnl = new javax.swing.JPanel();
+        itAddUAccAddUAccLbl = new javax.swing.JLabel();
         itAUserEDetailsBrdrPnl = new javax.swing.JPanel();
-        itAUserENumberLbl = new javax.swing.JLabel();
-        itAUserENameLbl = new javax.swing.JLabel();
-        itAUserENumberFld = new javax.swing.JTextField();
-        itAUserENameFld = new javax.swing.JTextField();
-        itAUserPhnNumberFld = new javax.swing.JTextField();
-        itAUserPositionLbl = new javax.swing.JLabel();
-        itAUserPhnNumberLbl = new javax.swing.JLabel();
-        itAUserISupervisorLbl = new javax.swing.JLabel();
-        itAUserISupervisorFld = new javax.swing.JTextField();
-        itAUserPositionFld = new javax.swing.JTextField();
-        itAUserStatusLbl = new javax.swing.JLabel();
-        itAUserStatusFld = new javax.swing.JTextField();
-        itAUserUAccDetailsPnl = new javax.swing.JPanel();
-        itAUserUAccDetailsLbl = new javax.swing.JLabel();
-        itAUserUAccDetailsBrdrPnl = new javax.swing.JPanel();
-        itAUserUsernameLbl = new javax.swing.JLabel();
-        itAUserUsernameFld = new javax.swing.JTextField();
-        itAUserPasswordLbl = new javax.swing.JLabel();
-        itAUserPasswordFld = new javax.swing.JTextField();
+        itAddUAccENumberLbl = new javax.swing.JLabel();
+        itAddUAccENameLbl = new javax.swing.JLabel();
+        itAddUAccENumberFld = new javax.swing.JTextField();
+        itAddUAccENameFld = new javax.swing.JTextField();
+        itAddUAccPhnNumberFld = new javax.swing.JTextField();
+        itAddUAccPositionLbl = new javax.swing.JLabel();
+        itAddUAccPhnNumberLbl = new javax.swing.JLabel();
+        itAddUAccISupervisorLbl = new javax.swing.JLabel();
+        itAddUAccISupervisorFld = new javax.swing.JTextField();
+        itAddUAccPositionFld = new javax.swing.JTextField();
+        itAddUAccStatusLbl = new javax.swing.JLabel();
+        itAddUAccStatusFld = new javax.swing.JTextField();
+        itAddUAccUAccDetailsPnl = new javax.swing.JPanel();
+        itAddUAccUAccDetailsLbl = new javax.swing.JLabel();
+        itAddUAccUAccDetailsBrdrPnl = new javax.swing.JPanel();
+        itAddUAccUsernameLbl = new javax.swing.JLabel();
+        itAddUAccUsernameFld = new javax.swing.JTextField();
+        itAddUAccPasswordLbl = new javax.swing.JLabel();
+        itAddUAccPasswordFld = new javax.swing.JTextField();
         itAUserActivateBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        itAUserSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itAddUAccSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        itAUserActLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        itAUserActLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itAUserActLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itAUserActLogsBtn.setText("Activity Logs");
-        itAUserActLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        itAUserActLogsBtn.addActionListener(this::itAUserActLogsBtnActionPerformed);
+        itAddUAccActLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itAddUAccActLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itAddUAccActLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itAddUAccActLogsBtn.setText("Activity Logs");
+        itAddUAccActLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        itAddUAccActLogsBtn.addActionListener(this::itAddUAccActLogsBtnActionPerformed);
 
-        itAUserMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        itAUserMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itAUserMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itAUserMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        itAUserMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        itAUserMainDashboardBtn.setLabel("Main Dashboard");
-        itAUserMainDashboardBtn.addActionListener(this::itAUserMainDashboardBtnActionPerformed);
+        itAddUAccMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itAddUAccMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itAddUAccMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itAddUAccMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        itAddUAccMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        itAddUAccMainDashboardBtn.setLabel("Main Dashboard");
+        itAddUAccMainDashboardBtn.addActionListener(this::itAddUAccMainDashboardBtnActionPerformed);
 
-        itAUserMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        itAddUAccMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        itAUserEditUAccBtn.setBackground(new java.awt.Color(30, 42, 56));
-        itAUserEditUAccBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itAUserEditUAccBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itAUserEditUAccBtn.setText("Edit User Account");
-        itAUserEditUAccBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        itAUserEditUAccBtn.addActionListener(this::itAUserEditUAccBtnActionPerformed);
+        itAddUAccEditUAccBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itAddUAccEditUAccBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itAddUAccEditUAccBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itAddUAccEditUAccBtn.setText("Edit User Account");
+        itAddUAccEditUAccBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        itAddUAccEditUAccBtn.addActionListener(this::itAddUAccEditUAccBtnActionPerformed);
 
-        itAUserAddUAccBtn.setBackground(new java.awt.Color(30, 42, 56));
-        itAUserAddUAccBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itAUserAddUAccBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itAUserAddUAccBtn.setText("Add User Account");
-        itAUserAddUAccBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        itAUserAddUAccBtn.addActionListener(this::itAUserAddUAccBtnActionPerformed);
+        itAddUAccAddUAccBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itAddUAccAddUAccBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itAddUAccAddUAccBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itAddUAccAddUAccBtn.setText("Add User Account");
+        itAddUAccAddUAccBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        itAddUAccAddUAccBtn.addActionListener(this::itAddUAccAddUAccBtnActionPerformed);
 
-        javax.swing.GroupLayout itAUserSidebarPnlLayout = new javax.swing.GroupLayout(itAUserSidebarPnl);
-        itAUserSidebarPnl.setLayout(itAUserSidebarPnlLayout);
-        itAUserSidebarPnlLayout.setHorizontalGroup(
-            itAUserSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAUserSidebarPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itAddUAccSidebarPnlLayout = new javax.swing.GroupLayout(itAddUAccSidebarPnl);
+        itAddUAccSidebarPnl.setLayout(itAddUAccSidebarPnlLayout);
+        itAddUAccSidebarPnlLayout.setHorizontalGroup(
+            itAddUAccSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAddUAccSidebarPnlLayout.createSequentialGroup()
                 .addGap(92, 92, 92)
-                .addComponent(itAUserMainDashboardBtn))
-            .addGroup(itAUserSidebarPnlLayout.createSequentialGroup()
+                .addComponent(itAddUAccMainDashboardBtn))
+            .addGroup(itAddUAccSidebarPnlLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(itAUserSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itAUserAddUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserEditUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserActLogsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(itAUserSidebarPnlLayout.createSequentialGroup()
+                .addGroup(itAddUAccSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itAddUAccAddUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccEditUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccActLogsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(itAddUAccSidebarPnlLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(itAUserMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(itAddUAccMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
-        itAUserSidebarPnlLayout.setVerticalGroup(
-            itAUserSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAUserSidebarPnlLayout.createSequentialGroup()
+        itAddUAccSidebarPnlLayout.setVerticalGroup(
+            itAddUAccSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAddUAccSidebarPnlLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(itAUserSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itAUserMotorPHIconImgLbl)
-                    .addGroup(itAUserSidebarPnlLayout.createSequentialGroup()
+                .addGroup(itAddUAccSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itAddUAccMotorPHIconImgLbl)
+                    .addGroup(itAddUAccSidebarPnlLayout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(itAUserActLogsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itAddUAccActLogsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itAUserEditUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccEditUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itAUserAddUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccAddUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(307, 307, 307)
-                .addComponent(itAUserMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        itAUserActLogsBtn.getAccessibleContext().setAccessibleName("itAUserActLogsBtn");
-        itAUserMainDashboardBtn.getAccessibleContext().setAccessibleName("itAUserMainDashboardBtn");
-        itAUserMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("itAUserMotorPHIconImgLbl");
-        itAUserEditUAccBtn.getAccessibleContext().setAccessibleName("itAUserEditUAccBtn");
-        itAUserAddUAccBtn.getAccessibleContext().setAccessibleName("itAUserAddUAccBtn");
+        itAddUAccActLogsBtn.getAccessibleContext().setAccessibleName("itAddUAccActLogsBtn");
+        itAddUAccMainDashboardBtn.getAccessibleContext().setAccessibleName("itAddUAccMainDashboardBtn");
+        itAddUAccMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("itAddUAccMotorPHIconImgLbl");
+        itAddUAccEditUAccBtn.getAccessibleContext().setAccessibleName("itAddUAccEditUAccBtn");
+        itAddUAccAddUAccBtn.getAccessibleContext().setAccessibleName("itAddUAccAddUAccBtn");
 
-        itAUserAddUAccPnl.setBackground(new java.awt.Color(30, 58, 138));
-        itAUserAddUAccPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserAddUAccPnl.setForeground(new java.awt.Color(30, 58, 138));
-        itAUserAddUAccPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        itAddUAccAddUAccPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itAddUAccAddUAccPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccAddUAccPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itAddUAccAddUAccPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        itAUserAddUAccLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        itAUserAddUAccLbl.setForeground(new java.awt.Color(255, 255, 255));
-        itAUserAddUAccLbl.setText("Add User Account");
-        itAUserAddUAccPnl.add(itAUserAddUAccLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 220, 46));
-        itAUserAddUAccLbl.getAccessibleContext().setAccessibleName("itAUserAddUAccLbl");
+        itAddUAccAddUAccLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        itAddUAccAddUAccLbl.setForeground(new java.awt.Color(255, 255, 255));
+        itAddUAccAddUAccLbl.setText("Add User Account");
+        itAddUAccAddUAccPnl.add(itAddUAccAddUAccLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 220, 46));
+        itAddUAccAddUAccLbl.getAccessibleContext().setAccessibleName("itAddUAccAddUAccLbl");
 
         itAUserEDetailsBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
         itAUserEDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
@@ -152,154 +152,154 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAUserEDetailsBrdrPnl.setPreferredSize(new java.awt.Dimension(700, 469));
         itAUserEDetailsBrdrPnl.setRequestFocusEnabled(false);
 
-        itAUserENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAUserENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAUserENumberLbl.setText("Employee #");
+        itAddUAccENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAddUAccENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccENumberLbl.setText("Employee #");
 
-        itAUserENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAUserENameLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAUserENameLbl.setText("Employee Name");
+        itAddUAccENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAddUAccENameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccENameLbl.setText("Employee Name");
 
-        itAUserENumberFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAUserENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAUserENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAUserENumberFld.setEnabled(false);
-        itAUserENumberFld.addActionListener(this::itAUserENumberFldActionPerformed);
+        itAddUAccENumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccENumberFld.setEnabled(false);
+        itAddUAccENumberFld.addActionListener(this::itAddUAccENumberFldActionPerformed);
 
-        itAUserENameFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAUserENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAUserENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAUserENameFld.setEnabled(false);
-        itAUserENameFld.addActionListener(this::itAUserENameFldActionPerformed);
+        itAddUAccENameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccENameFld.setEnabled(false);
+        itAddUAccENameFld.addActionListener(this::itAddUAccENameFldActionPerformed);
 
-        itAUserPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAUserPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAUserPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAUserPhnNumberFld.setEnabled(false);
-        itAUserPhnNumberFld.addActionListener(this::itAUserPhnNumberFldActionPerformed);
+        itAddUAccPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccPhnNumberFld.setEnabled(false);
+        itAddUAccPhnNumberFld.addActionListener(this::itAddUAccPhnNumberFldActionPerformed);
 
-        itAUserPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAUserPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAUserPositionLbl.setText("Position");
+        itAddUAccPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAddUAccPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccPositionLbl.setText("Position");
 
-        itAUserPhnNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAUserPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAUserPhnNumberLbl.setText("Phone Number");
+        itAddUAccPhnNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAddUAccPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccPhnNumberLbl.setText("Phone Number");
 
-        itAUserISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAUserISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAUserISupervisorLbl.setText("Immediate Supervisor");
+        itAddUAccISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAddUAccISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccISupervisorLbl.setText("Immediate Supervisor");
 
-        itAUserISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAUserISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAUserISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAUserISupervisorFld.setEnabled(false);
-        itAUserISupervisorFld.addActionListener(this::itAUserISupervisorFldActionPerformed);
+        itAddUAccISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccISupervisorFld.setEnabled(false);
+        itAddUAccISupervisorFld.addActionListener(this::itAddUAccISupervisorFldActionPerformed);
 
-        itAUserPositionFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAUserPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAUserPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAUserPositionFld.setEnabled(false);
-        itAUserPositionFld.addActionListener(this::itAUserPositionFldActionPerformed);
+        itAddUAccPositionFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccPositionFld.setEnabled(false);
+        itAddUAccPositionFld.addActionListener(this::itAddUAccPositionFldActionPerformed);
 
-        itAUserStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAUserStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAUserStatusLbl.setText("Status");
+        itAddUAccStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAddUAccStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccStatusLbl.setText("Status");
 
-        itAUserStatusFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAUserStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAUserStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAUserStatusFld.setEnabled(false);
-        itAUserStatusFld.addActionListener(this::itAUserStatusFldActionPerformed);
+        itAddUAccStatusFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccStatusFld.setEnabled(false);
+        itAddUAccStatusFld.addActionListener(this::itAddUAccStatusFldActionPerformed);
 
-        itAUserUAccDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
-        itAUserUAccDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserUAccDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        itAUserUAccDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
+        itAddUAccUAccDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
+        itAddUAccUAccDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccUAccDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itAddUAccUAccDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        itAUserUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
-        itAUserUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        itAUserUAccDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAUserUAccDetailsLbl.setText("User Account Details");
-        itAUserUAccDetailsLbl.setToolTipText("");
+        itAddUAccUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
+        itAddUAccUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        itAddUAccUAccDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccUAccDetailsLbl.setText("User Account Details");
+        itAddUAccUAccDetailsLbl.setToolTipText("");
 
-        javax.swing.GroupLayout itAUserUAccDetailsPnlLayout = new javax.swing.GroupLayout(itAUserUAccDetailsPnl);
-        itAUserUAccDetailsPnl.setLayout(itAUserUAccDetailsPnlLayout);
-        itAUserUAccDetailsPnlLayout.setHorizontalGroup(
-            itAUserUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAUserUAccDetailsPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itAddUAccUAccDetailsPnlLayout = new javax.swing.GroupLayout(itAddUAccUAccDetailsPnl);
+        itAddUAccUAccDetailsPnl.setLayout(itAddUAccUAccDetailsPnlLayout);
+        itAddUAccUAccDetailsPnlLayout.setHorizontalGroup(
+            itAddUAccUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAddUAccUAccDetailsPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(itAUserUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        itAUserUAccDetailsPnlLayout.setVerticalGroup(
-            itAUserUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAUserUAccDetailsPnlLayout.createSequentialGroup()
-                .addComponent(itAUserUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+        itAddUAccUAccDetailsPnlLayout.setVerticalGroup(
+            itAddUAccUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAddUAccUAccDetailsPnlLayout.createSequentialGroup()
+                .addComponent(itAddUAccUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 1, Short.MAX_VALUE))
         );
 
-        itAUserUAccDetailsLbl.getAccessibleContext().setAccessibleName("itAUserUAccDetailsLbl");
+        itAddUAccUAccDetailsLbl.getAccessibleContext().setAccessibleName("itAddUAccUAccDetailsLbl");
 
-        itAUserUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        itAUserUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itAUserUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAUserUsernameLbl.setText("Username");
+        itAddUAccUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itAddUAccUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccUsernameLbl.setText("Username");
 
-        itAUserUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAUserUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAUserUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAUserUsernameFld.addActionListener(this::itAUserUsernameFldActionPerformed);
+        itAddUAccUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccUsernameFld.addActionListener(this::itAddUAccUsernameFldActionPerformed);
 
-        itAUserPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itAUserPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAUserPasswordLbl.setText("Password");
+        itAddUAccPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itAddUAccPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccPasswordLbl.setText("Password");
 
-        itAUserPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAUserPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAUserPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAUserPasswordFld.addActionListener(this::itAUserPasswordFldActionPerformed);
+        itAddUAccPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccPasswordFld.addActionListener(this::itAddUAccPasswordFldActionPerformed);
 
-        javax.swing.GroupLayout itAUserUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itAUserUAccDetailsBrdrPnl);
-        itAUserUAccDetailsBrdrPnl.setLayout(itAUserUAccDetailsBrdrPnlLayout);
-        itAUserUAccDetailsBrdrPnlLayout.setHorizontalGroup(
-            itAUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAUserUAccDetailsBrdrPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itAddUAccUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itAddUAccUAccDetailsBrdrPnl);
+        itAddUAccUAccDetailsBrdrPnl.setLayout(itAddUAccUAccDetailsBrdrPnlLayout);
+        itAddUAccUAccDetailsBrdrPnlLayout.setHorizontalGroup(
+            itAddUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAddUAccUAccDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addGroup(itAUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itAUserPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserPasswordLbl)
-                    .addComponent(itAUserUsernameLbl)
-                    .addComponent(itAUserUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itAddUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itAddUAccPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccPasswordLbl)
+                    .addComponent(itAddUAccUsernameLbl)
+                    .addComponent(itAddUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
-        itAUserUAccDetailsBrdrPnlLayout.setVerticalGroup(
-            itAUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itAUserUAccDetailsBrdrPnlLayout.createSequentialGroup()
+        itAddUAccUAccDetailsBrdrPnlLayout.setVerticalGroup(
+            itAddUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAddUAccUAccDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(itAUserUsernameLbl)
+                .addComponent(itAddUAccUsernameLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(itAUserUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(itAUserPasswordLbl)
+                .addComponent(itAddUAccPasswordLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itAUserPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        itAUserUsernameLbl.getAccessibleContext().setAccessibleName("itAUserUsernameLbl");
-        itAUserUsernameFld.getAccessibleContext().setAccessibleName("itAUserUsernameFld");
-        itAUserPasswordLbl.getAccessibleContext().setAccessibleName("itAUserPasswordLbl");
-        itAUserPasswordFld.getAccessibleContext().setAccessibleName("itAUserPasswordFld");
+        itAddUAccUsernameLbl.getAccessibleContext().setAccessibleName("itAddUAccUsernameLbl");
+        itAddUAccUsernameFld.getAccessibleContext().setAccessibleName("itAddUAccUsernameFld");
+        itAddUAccPasswordLbl.getAccessibleContext().setAccessibleName("itAddUAccPasswordLbl");
+        itAddUAccPasswordFld.getAccessibleContext().setAccessibleName("itAddUAccPasswordFld");
 
         javax.swing.GroupLayout itAUserEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itAUserEDetailsBrdrPnl);
         itAUserEDetailsBrdrPnl.setLayout(itAUserEDetailsBrdrPnlLayout);
@@ -308,37 +308,37 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
             .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itAUserENumberLbl)
-                    .addComponent(itAUserENameLbl)
-                    .addComponent(itAUserPhnNumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itAddUAccENumberLbl)
+                    .addComponent(itAddUAccENameLbl)
+                    .addComponent(itAddUAccPhnNumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itAUserENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itAddUAccENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itAUserStatusLbl)
+                        .addComponent(itAddUAccStatusLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itAUserStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(itAddUAccStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itAUserPositionLbl)
+                        .addComponent(itAddUAccPositionLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itAUserPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(itAddUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itAUserISupervisorLbl)
+                        .addComponent(itAddUAccISupervisorLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                        .addComponent(itAUserISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itAddUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18))
             .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGap(242, 242, 242)
-                        .addComponent(itAUserUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(itAddUAccUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGap(205, 205, 205)
-                        .addComponent(itAUserUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itAddUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         itAUserEDetailsBrdrPnlLayout.setVerticalGroup(
@@ -346,43 +346,43 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
             .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itAUserENumberLbl)
-                    .addComponent(itAUserENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserISupervisorLbl)
-                    .addComponent(itAUserISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itAddUAccENumberLbl)
+                    .addComponent(itAddUAccENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccISupervisorLbl)
+                    .addComponent(itAddUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itAUserENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserENameLbl)
-                    .addComponent(itAUserPositionLbl)
-                    .addComponent(itAUserPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itAddUAccENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccENameLbl)
+                    .addComponent(itAddUAccPositionLbl)
+                    .addComponent(itAddUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itAUserPhnNumberLbl)
-                    .addComponent(itAUserPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserStatusLbl)
-                    .addComponent(itAUserStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itAddUAccPhnNumberLbl)
+                    .addComponent(itAddUAccPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccStatusLbl)
+                    .addComponent(itAddUAccStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
-                .addComponent(itAUserUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(itAUserUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        itAUserENumberLbl.getAccessibleContext().setAccessibleName("itAUserENumberLbl");
-        itAUserENameLbl.getAccessibleContext().setAccessibleName("itAUserENameLbl");
-        itAUserENumberFld.getAccessibleContext().setAccessibleName("itAUserENumberFld");
-        itAUserENameFld.getAccessibleContext().setAccessibleName("itAUserENameFld");
-        itAUserPhnNumberFld.getAccessibleContext().setAccessibleName("itAUserPhnNumberFld");
-        itAUserPositionLbl.getAccessibleContext().setAccessibleName("itAUserPositionLbl");
-        itAUserPhnNumberLbl.getAccessibleContext().setAccessibleName("itAUserPhnNumberLbl");
-        itAUserISupervisorLbl.getAccessibleContext().setAccessibleName("itAUserISupervisorLbl");
-        itAUserISupervisorFld.getAccessibleContext().setAccessibleName("itAUserISupervisorFld");
-        itAUserPositionFld.getAccessibleContext().setAccessibleName("itAUserPositionFld");
-        itAUserStatusLbl.getAccessibleContext().setAccessibleName("itAUserStatusLbl");
-        itAUserStatusFld.getAccessibleContext().setAccessibleName("itAUserStatusFld");
-        itAUserUAccDetailsPnl.getAccessibleContext().setAccessibleName("itAUserUAccDetailsPnl");
-        itAUserUAccDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itAUserUAccDetailsBrdrPnl");
+        itAddUAccENumberLbl.getAccessibleContext().setAccessibleName("itAddUAccENumberLbl");
+        itAddUAccENameLbl.getAccessibleContext().setAccessibleName("itAddUAccENameLbl");
+        itAddUAccENumberFld.getAccessibleContext().setAccessibleName("itAddUAccENumberFld");
+        itAddUAccENameFld.getAccessibleContext().setAccessibleName("itAddUAccENameFld");
+        itAddUAccPhnNumberFld.getAccessibleContext().setAccessibleName("itAddUAccPhnNumberFld");
+        itAddUAccPositionLbl.getAccessibleContext().setAccessibleName("itAddUAccPositionLbl");
+        itAddUAccPhnNumberLbl.getAccessibleContext().setAccessibleName("itAddUAccPhnNumberLbl");
+        itAddUAccISupervisorLbl.getAccessibleContext().setAccessibleName("itAddUAccISupervisorLbl");
+        itAddUAccISupervisorFld.getAccessibleContext().setAccessibleName("itAddUAccISupervisorFld");
+        itAddUAccPositionFld.getAccessibleContext().setAccessibleName("itAddUAccPositionFld");
+        itAddUAccStatusLbl.getAccessibleContext().setAccessibleName("itAddUAccStatusLbl");
+        itAddUAccStatusFld.getAccessibleContext().setAccessibleName("itAddUAccStatusFld");
+        itAddUAccUAccDetailsPnl.getAccessibleContext().setAccessibleName("itAddUAccUAccDetailsPnl");
+        itAddUAccUAccDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itAddUAccUAccDetailsBrdrPnl");
 
         itAUserActivateBtn.setBackground(new java.awt.Color(34, 197, 94));
         itAUserActivateBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -396,11 +396,11 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(itAUserSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(itAUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserAddUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccAddUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itAUserActivateBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
@@ -408,17 +408,17 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(itAUserAddUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccAddUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itAUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itAUserActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(itAUserSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(itAddUAccSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        itAUserSidebarPnl.getAccessibleContext().setAccessibleName("itAUserSidebarPnl");
-        itAUserAddUAccPnl.getAccessibleContext().setAccessibleName("itAUserAddUAccPnl");
+        itAddUAccSidebarPnl.getAccessibleContext().setAccessibleName("itAddUAccSidebarPnl");
+        itAddUAccAddUAccPnl.getAccessibleContext().setAccessibleName("itAddUAccAddUAccPnl");
         itAUserEDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itAUserEDetailsBrdrPnl");
         itAUserActivateBtn.getAccessibleContext().setAccessibleName("itAUserActivateBtn");
 
@@ -429,58 +429,58 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itAUserActivateBtnActionPerformed
 
-    private void itAUserENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserENumberFldActionPerformed
+    private void itAddUAccENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserENumberFldActionPerformed
+    }//GEN-LAST:event_itAddUAccENumberFldActionPerformed
 
-    private void itAUserENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserENameFldActionPerformed
+    private void itAddUAccENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccENameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserENameFldActionPerformed
+    }//GEN-LAST:event_itAddUAccENameFldActionPerformed
 
-    private void itAUserPhnNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserPhnNumberFldActionPerformed
+    private void itAddUAccPhnNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccPhnNumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserPhnNumberFldActionPerformed
+    }//GEN-LAST:event_itAddUAccPhnNumberFldActionPerformed
 
-    private void itAUserISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserISupervisorFldActionPerformed
+    private void itAddUAccISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccISupervisorFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserISupervisorFldActionPerformed
+    }//GEN-LAST:event_itAddUAccISupervisorFldActionPerformed
 
-    private void itAUserPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserPositionFldActionPerformed
+    private void itAddUAccPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccPositionFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserPositionFldActionPerformed
+    }//GEN-LAST:event_itAddUAccPositionFldActionPerformed
 
-    private void itAUserStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserStatusFldActionPerformed
+    private void itAddUAccStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccStatusFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserStatusFldActionPerformed
+    }//GEN-LAST:event_itAddUAccStatusFldActionPerformed
 
-    private void itAUserUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserUsernameFldActionPerformed
+    private void itAddUAccUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccUsernameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserUsernameFldActionPerformed
+    }//GEN-LAST:event_itAddUAccUsernameFldActionPerformed
 
-    private void itAUserPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserPasswordFldActionPerformed
+    private void itAddUAccPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccPasswordFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserPasswordFldActionPerformed
+    }//GEN-LAST:event_itAddUAccPasswordFldActionPerformed
 
-    private void itAUserActLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserActLogsBtnActionPerformed
+    private void itAddUAccActLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccActLogsBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserActLogsBtnActionPerformed
+    }//GEN-LAST:event_itAddUAccActLogsBtnActionPerformed
 
-    private void itAUserMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserMainDashboardBtnActionPerformed
+    private void itAddUAccMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardUI().setVisible(true);
-    }//GEN-LAST:event_itAUserMainDashboardBtnActionPerformed
+    }//GEN-LAST:event_itAddUAccMainDashboardBtnActionPerformed
 
-    private void itAUserEditUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserEditUAccBtnActionPerformed
+    private void itAddUAccEditUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccEditUAccBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         
         new ITEditUserAccountUI().setVisible(true);
-    }//GEN-LAST:event_itAUserEditUAccBtnActionPerformed
+    }//GEN-LAST:event_itAddUAccEditUAccBtnActionPerformed
 
-    private void itAUserAddUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserAddUAccBtnActionPerformed
+    private void itAddUAccAddUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccAddUAccBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserAddUAccBtnActionPerformed
+    }//GEN-LAST:event_itAddUAccAddUAccBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -508,34 +508,34 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton itAUserActLogsBtn;
     private javax.swing.JButton itAUserActivateBtn;
-    private javax.swing.JButton itAUserAddUAccBtn;
-    private javax.swing.JLabel itAUserAddUAccLbl;
-    private javax.swing.JPanel itAUserAddUAccPnl;
     private javax.swing.JPanel itAUserEDetailsBrdrPnl;
-    private javax.swing.JTextField itAUserENameFld;
-    private javax.swing.JLabel itAUserENameLbl;
-    private javax.swing.JTextField itAUserENumberFld;
-    private javax.swing.JLabel itAUserENumberLbl;
-    private javax.swing.JButton itAUserEditUAccBtn;
-    private javax.swing.JTextField itAUserISupervisorFld;
-    private javax.swing.JLabel itAUserISupervisorLbl;
-    private javax.swing.JButton itAUserMainDashboardBtn;
-    private javax.swing.JLabel itAUserMotorPHIconImgLbl;
-    private javax.swing.JTextField itAUserPasswordFld;
-    private javax.swing.JLabel itAUserPasswordLbl;
-    private javax.swing.JTextField itAUserPhnNumberFld;
-    private javax.swing.JLabel itAUserPhnNumberLbl;
-    private javax.swing.JTextField itAUserPositionFld;
-    private javax.swing.JLabel itAUserPositionLbl;
-    private javax.swing.JPanel itAUserSidebarPnl;
-    private javax.swing.JTextField itAUserStatusFld;
-    private javax.swing.JLabel itAUserStatusLbl;
-    private javax.swing.JPanel itAUserUAccDetailsBrdrPnl;
-    private javax.swing.JLabel itAUserUAccDetailsLbl;
-    private javax.swing.JPanel itAUserUAccDetailsPnl;
-    private javax.swing.JTextField itAUserUsernameFld;
-    private javax.swing.JLabel itAUserUsernameLbl;
+    private javax.swing.JButton itAddUAccActLogsBtn;
+    private javax.swing.JButton itAddUAccAddUAccBtn;
+    private javax.swing.JLabel itAddUAccAddUAccLbl;
+    private javax.swing.JPanel itAddUAccAddUAccPnl;
+    private javax.swing.JTextField itAddUAccENameFld;
+    private javax.swing.JLabel itAddUAccENameLbl;
+    private javax.swing.JTextField itAddUAccENumberFld;
+    private javax.swing.JLabel itAddUAccENumberLbl;
+    private javax.swing.JButton itAddUAccEditUAccBtn;
+    private javax.swing.JTextField itAddUAccISupervisorFld;
+    private javax.swing.JLabel itAddUAccISupervisorLbl;
+    private javax.swing.JButton itAddUAccMainDashboardBtn;
+    private javax.swing.JLabel itAddUAccMotorPHIconImgLbl;
+    private javax.swing.JTextField itAddUAccPasswordFld;
+    private javax.swing.JLabel itAddUAccPasswordLbl;
+    private javax.swing.JTextField itAddUAccPhnNumberFld;
+    private javax.swing.JLabel itAddUAccPhnNumberLbl;
+    private javax.swing.JTextField itAddUAccPositionFld;
+    private javax.swing.JLabel itAddUAccPositionLbl;
+    private javax.swing.JPanel itAddUAccSidebarPnl;
+    private javax.swing.JTextField itAddUAccStatusFld;
+    private javax.swing.JLabel itAddUAccStatusLbl;
+    private javax.swing.JPanel itAddUAccUAccDetailsBrdrPnl;
+    private javax.swing.JLabel itAddUAccUAccDetailsLbl;
+    private javax.swing.JPanel itAddUAccUAccDetailsPnl;
+    private javax.swing.JTextField itAddUAccUsernameFld;
+    private javax.swing.JLabel itAddUAccUsernameLbl;
     // End of variables declaration//GEN-END:variables
 }

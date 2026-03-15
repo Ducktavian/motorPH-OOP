@@ -24,12 +24,12 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="itEditUserSidebarPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="itEditUAccSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="itEditUserEditUAccPnl" min="-2" max="-2" attributes="0"/>
-                  <Component id="itEditUserEDetailsBrdrPnl" alignment="0" min="-2" pref="710" max="-2" attributes="0"/>
-                  <Component id="itEditUserUpdateBtn" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
+                  <Component id="itEditUAccEditUAccPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itEditUAccDetailsBrdrPnl" alignment="0" min="-2" pref="710" max="-2" attributes="0"/>
+                  <Component id="itEditUAccUpdateBtn" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="16" max="32767" attributes="0"/>
           </Group>
@@ -39,26 +39,26 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-              <Component id="itEditUserEditUAccPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="itEditUAccEditUAccPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="itEditUserEDetailsBrdrPnl" min="-2" pref="427" max="-2" attributes="0"/>
+              <Component id="itEditUAccDetailsBrdrPnl" min="-2" pref="427" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="itEditUserUpdateBtn" min="-2" pref="40" max="-2" attributes="0"/>
+              <Component id="itEditUAccUpdateBtn" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
-          <Component id="itEditUserSidebarPnl" alignment="0" max="32767" attributes="0"/>
+          <Component id="itEditUAccSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="itEditUserSidebarPnl">
+    <Container class="javax.swing.JPanel" name="itEditUAccSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserSidebarPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccSidebarPnl"/>
       </AccessibilityProperties>
 
       <Layout>
@@ -66,17 +66,17 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="itEditUserMainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="itEditUAccMainDashboardBtn" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itEditUserAddUAccBtn" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="itEditUserEditUAccBtn" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="itEditUserActLogsBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="itEditUAccAddUAccBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="itEditUAccEditUAccBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="itEditUAccActLogsBtn" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                          <Component id="itEditUserMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="itEditUAccMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -87,25 +87,25 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itEditUserMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
-                          <Component id="itEditUserActLogsBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="itEditUAccActLogsBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="itEditUserEditUAccBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="itEditUAccEditUAccBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="itEditUserAddUAccBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="itEditUAccAddUAccBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="307" max="-2" attributes="0"/>
-                  <Component id="itEditUserMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="itEditUAccMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="itEditUserActLogsBtn">
+        <Component class="javax.swing.JButton" name="itEditUAccActLogsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -120,13 +120,13 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserActLogsBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccActLogsBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserActLogsBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccActLogsBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="itEditUserMainDashboardBtn">
+        <Component class="javax.swing.JButton" name="itEditUAccMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -142,23 +142,23 @@
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccMainDashboardBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserMainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="itEditUserMotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="itEditUAccMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserMotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JButton" name="itEditUserEditUAccBtn">
+        <Component class="javax.swing.JButton" name="itEditUAccEditUAccBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -173,13 +173,13 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserEditUAccBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccEditUAccBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserEditUAccBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccEditUAccBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="itEditUserAddUAccBtn">
+        <Component class="javax.swing.JButton" name="itEditUAccAddUAccBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -194,15 +194,15 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserAddUAccBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccAddUAccBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserAddUAccBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccAddUAccBtnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="itEditUserEditUAccPnl">
+    <Container class="javax.swing.JPanel" name="itEditUAccEditUAccPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -219,14 +219,14 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserEditUAccPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccEditUAccPnl"/>
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="itEditUserEditUAccLbl">
+        <Component class="javax.swing.JLabel" name="itEditUAccEditUAccLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -237,7 +237,7 @@
             <Property name="text" type="java.lang.String" value="Edit User Account"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserEditUAccLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccEditUAccLbl"/>
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -247,7 +247,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="itEditUserEDetailsBrdrPnl">
+    <Container class="javax.swing.JPanel" name="itEditUAccDetailsBrdrPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -269,7 +269,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserEDetailsBrdrPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccDetailsBrdrPnl"/>
       </AccessibilityProperties>
 
       <Layout>
@@ -278,32 +278,32 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itEditUserENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="itEditUserENameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="itEditUserPhnNumberLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                      <Component id="itEditUAccENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccENameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccPhnNumberLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itEditUserENameFld" min="-2" pref="158" max="-2" attributes="0"/>
-                      <Component id="itEditUserPhnNumberFld" min="-2" pref="158" max="-2" attributes="0"/>
-                      <Component id="itEditUserENumberFld" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="itEditUAccENameFld" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="itEditUAccPhnNumberFld" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="itEditUAccENumberFld" min="-2" pref="158" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="itEditUserStatusLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itEditUAccStatusLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="itEditUserStatusFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itEditUAccStatusFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="itEditUserPositionLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itEditUAccPositionLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="itEditUserPositionFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itEditUAccPositionFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="itEditUserISupervisorLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itEditUAccISupervisorLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="49" max="32767" attributes="0"/>
-                          <Component id="itEditUserISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itEditUAccISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -312,11 +312,11 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="242" max="-2" attributes="0"/>
-                          <Component id="itEditUserUAccDetailsPnl" min="-2" pref="214" max="-2" attributes="0"/>
+                          <Component id="itEditUAccUAccDetailsPnl" min="-2" pref="214" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="205" max="-2" attributes="0"/>
-                          <Component id="itEditUserUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itEditUAccUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -328,36 +328,36 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="itEditUserENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itEditUserENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itEditUserISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itEditUserISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itEditUAccENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itEditUAccISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="itEditUserENameFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itEditUserENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itEditUserPositionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itEditUserPositionFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itEditUAccENameFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itEditUAccENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccPositionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccPositionFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="itEditUserPhnNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itEditUserPhnNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itEditUserStatusLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itEditUserStatusFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itEditUAccPhnNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccPhnNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itEditUAccStatusLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccStatusFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                  <Component id="itEditUserUAccDetailsPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itEditUAccUAccDetailsPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="itEditUserUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itEditUAccUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="24" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="itEditUserENumberLbl">
+        <Component class="javax.swing.JLabel" name="itEditUAccENumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -368,10 +368,10 @@
             <Property name="text" type="java.lang.String" value="Employee #"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserENumberLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccENumberLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itEditUserENameLbl">
+        <Component class="javax.swing.JLabel" name="itEditUAccENameLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -382,10 +382,10 @@
             <Property name="text" type="java.lang.String" value="Employee Name"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserENameLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccENameLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itEditUserENumberFld">
+        <Component class="javax.swing.JTextField" name="itEditUAccENumberFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -406,13 +406,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserENumberFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccENumberFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserENumberFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccENumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="itEditUserENameFld">
+        <Component class="javax.swing.JTextField" name="itEditUAccENameFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -433,13 +433,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserENameFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccENameFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserENameFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccENameFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="itEditUserPhnNumberFld">
+        <Component class="javax.swing.JTextField" name="itEditUAccPhnNumberFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -460,13 +460,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserPhnNumberFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccPhnNumberFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserPhnNumberFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccPhnNumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="itEditUserPositionLbl">
+        <Component class="javax.swing.JLabel" name="itEditUAccPositionLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -477,10 +477,10 @@
             <Property name="text" type="java.lang.String" value="Position"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserPositionLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccPositionLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itEditUserPhnNumberLbl">
+        <Component class="javax.swing.JLabel" name="itEditUAccPhnNumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -491,10 +491,10 @@
             <Property name="text" type="java.lang.String" value="Phone Number"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserPhnNumberLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccPhnNumberLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itEditUserISupervisorLbl">
+        <Component class="javax.swing.JLabel" name="itEditUAccISupervisorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -505,10 +505,10 @@
             <Property name="text" type="java.lang.String" value="Immediate Supervisor"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserISupervisorLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccISupervisorLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itEditUserISupervisorFld">
+        <Component class="javax.swing.JTextField" name="itEditUAccISupervisorFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -529,13 +529,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserISupervisorFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccISupervisorFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserISupervisorFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccISupervisorFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="itEditUserPositionFld">
+        <Component class="javax.swing.JTextField" name="itEditUAccPositionFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -556,13 +556,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserPositionFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccPositionFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserPositionFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccPositionFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="itEditUserStatusLbl">
+        <Component class="javax.swing.JLabel" name="itEditUAccStatusLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -573,10 +573,10 @@
             <Property name="text" type="java.lang.String" value="Status"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserStatusLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccStatusLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itEditUserStatusFld">
+        <Component class="javax.swing.JTextField" name="itEditUAccStatusFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -597,13 +597,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserStatusFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccStatusFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserStatusFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccStatusFldActionPerformed"/>
           </Events>
         </Component>
-        <Container class="javax.swing.JPanel" name="itEditUserUAccDetailsPnl">
+        <Container class="javax.swing.JPanel" name="itEditUAccUAccDetailsPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -623,7 +623,7 @@
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserUAccDetailsPnl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccUAccDetailsPnl"/>
           </AccessibilityProperties>
 
           <Layout>
@@ -631,7 +631,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="itEditUserUAccDetailsLbl" min="-2" pref="206" max="-2" attributes="0"/>
+                      <Component id="itEditUAccUAccDetailsLbl" min="-2" pref="206" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -639,14 +639,14 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="itEditUserUAccDetailsLbl" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="itEditUAccUAccDetailsLbl" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="itEditUserUAccDetailsLbl">
+            <Component class="javax.swing.JLabel" name="itEditUAccUAccDetailsLbl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -661,12 +661,12 @@
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserUAccDetailsLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccUAccDetailsLbl"/>
               </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="itEditUserUAccDetailsBrdrPnl">
+        <Container class="javax.swing.JPanel" name="itEditUAccUAccDetailsBrdrPnl">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -677,7 +677,7 @@
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserUAccDetailsBrdrPnl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccUAccDetailsBrdrPnl"/>
           </AccessibilityProperties>
 
           <Layout>
@@ -695,7 +695,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                              <Component id="itEditUserUpdateBtn1" min="-2" pref="186" max="-2" attributes="0"/>
+                              <Component id="itEditUAccResetPasswordBtn" min="-2" pref="186" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="22" max="32767" attributes="0"/>
@@ -712,7 +712,7 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="itEditUAccPasswordLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="itEditUserUpdateBtn1" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="itEditUAccResetPasswordBtn" min="-2" pref="34" max="-2" attributes="0"/>
                       <EmptySpace pref="22" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -770,10 +770,10 @@
                 <Property name="text" type="java.lang.String" value="Password"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserPasswordLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccPasswordLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JButton" name="itEditUserUpdateBtn1">
+            <Component class="javax.swing.JButton" name="itEditUAccResetPasswordBtn">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="44" green="44" red="ef" type="rgb"/>
@@ -793,15 +793,18 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccResetPasswordBtn"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserUpdateBtn1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccResetPasswordBtnActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="itEditUserUpdateBtn">
+    <Component class="javax.swing.JButton" name="itEditUAccUpdateBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="5e" green="c5" red="22" type="rgb"/>
@@ -822,10 +825,10 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserUpdateBtn"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccUpdateBtn"/>
       </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserUpdateBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccUpdateBtnActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

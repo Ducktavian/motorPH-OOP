@@ -24,11 +24,11 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="itAUserSidebarPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="itAddUAccSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="itAUserEDetailsBrdrPnl" alignment="0" min="-2" pref="710" max="-2" attributes="0"/>
-                  <Component id="itAUserAddUAccPnl" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="itAddUAccAddUAccPnl" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="itAUserActivateBtn" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="16" max="32767" attributes="0"/>
@@ -39,26 +39,26 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-              <Component id="itAUserAddUAccPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="itAddUAccAddUAccPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="itAUserEDetailsBrdrPnl" min="-2" pref="427" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="itAUserActivateBtn" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
-          <Component id="itAUserSidebarPnl" alignment="0" max="32767" attributes="0"/>
+          <Component id="itAddUAccSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="itAUserSidebarPnl">
+    <Container class="javax.swing.JPanel" name="itAddUAccSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserSidebarPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccSidebarPnl"/>
       </AccessibilityProperties>
 
       <Layout>
@@ -66,17 +66,17 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="itAUserMainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="itAddUAccMainDashboardBtn" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itAUserAddUAccBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="itAUserEditUAccBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="itAUserActLogsBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="itAddUAccAddUAccBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="itAddUAccEditUAccBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="itAddUAccActLogsBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                          <Component id="itAUserMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="itAddUAccMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -87,25 +87,25 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itAUserMotorPHIconImgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccMotorPHIconImgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
-                          <Component id="itAUserActLogsBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="itAddUAccActLogsBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="itAUserEditUAccBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="itAddUAccEditUAccBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="itAUserAddUAccBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="itAddUAccAddUAccBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="307" max="-2" attributes="0"/>
-                  <Component id="itAUserMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="itAddUAccMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="itAUserActLogsBtn">
+        <Component class="javax.swing.JButton" name="itAddUAccActLogsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -120,13 +120,13 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserActLogsBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccActLogsBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserActLogsBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccActLogsBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="itAUserMainDashboardBtn">
+        <Component class="javax.swing.JButton" name="itAddUAccMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -142,23 +142,23 @@
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccMainDashboardBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserMainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserMotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="itAddUAccMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserMotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JButton" name="itAUserEditUAccBtn">
+        <Component class="javax.swing.JButton" name="itAddUAccEditUAccBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -173,13 +173,13 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserEditUAccBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccEditUAccBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserEditUAccBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccEditUAccBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="itAUserAddUAccBtn">
+        <Component class="javax.swing.JButton" name="itAddUAccAddUAccBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -194,15 +194,15 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserAddUAccBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccAddUAccBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserAddUAccBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccAddUAccBtnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="itAUserAddUAccPnl">
+    <Container class="javax.swing.JPanel" name="itAddUAccAddUAccPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -219,14 +219,14 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserAddUAccPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccAddUAccPnl"/>
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="itAUserAddUAccLbl">
+        <Component class="javax.swing.JLabel" name="itAddUAccAddUAccLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -237,7 +237,7 @@
             <Property name="text" type="java.lang.String" value="Add User Account"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserAddUAccLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccAddUAccLbl"/>
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -278,32 +278,32 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itAUserENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserENameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserPhnNumberLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                      <Component id="itAddUAccENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccENameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccPhnNumberLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itAUserENameFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
-                      <Component id="itAUserPhnNumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
-                      <Component id="itAUserENumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="itAddUAccENameFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="itAddUAccPhnNumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="itAddUAccENumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="itAUserStatusLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccStatusLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="itAUserStatusFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itAddUAccStatusFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="itAUserPositionLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccPositionLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="itAUserPositionFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itAddUAccPositionFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="itAUserISupervisorLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccISupervisorLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="49" max="32767" attributes="0"/>
-                          <Component id="itAUserISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itAddUAccISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -312,11 +312,11 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="242" max="-2" attributes="0"/>
-                          <Component id="itAUserUAccDetailsPnl" min="-2" pref="214" max="-2" attributes="0"/>
+                          <Component id="itAddUAccUAccDetailsPnl" min="-2" pref="214" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="205" max="-2" attributes="0"/>
-                          <Component id="itAUserUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -328,36 +328,36 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="itAUserENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itAUserISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itAddUAccENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itAddUAccISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="itAUserENameFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itAUserENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserPositionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserPositionFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itAddUAccENameFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itAddUAccENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccPositionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccPositionFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="itAUserPhnNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserPhnNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itAUserStatusLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserStatusFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itAddUAccPhnNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccPhnNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itAddUAccStatusLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccStatusFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                  <Component id="itAUserUAccDetailsPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itAddUAccUAccDetailsPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="itAUserUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itAddUAccUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="20" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="itAUserENumberLbl">
+        <Component class="javax.swing.JLabel" name="itAddUAccENumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -368,10 +368,10 @@
             <Property name="text" type="java.lang.String" value="Employee #"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserENumberLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccENumberLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserENameLbl">
+        <Component class="javax.swing.JLabel" name="itAddUAccENameLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -382,10 +382,10 @@
             <Property name="text" type="java.lang.String" value="Employee Name"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserENameLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccENameLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserENumberFld">
+        <Component class="javax.swing.JTextField" name="itAddUAccENumberFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -406,13 +406,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserENumberFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccENumberFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserENumberFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccENumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserENameFld">
+        <Component class="javax.swing.JTextField" name="itAddUAccENameFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -433,13 +433,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserENameFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccENameFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserENameFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccENameFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserPhnNumberFld">
+        <Component class="javax.swing.JTextField" name="itAddUAccPhnNumberFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -460,13 +460,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserPhnNumberFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccPhnNumberFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserPhnNumberFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccPhnNumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserPositionLbl">
+        <Component class="javax.swing.JLabel" name="itAddUAccPositionLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -477,10 +477,10 @@
             <Property name="text" type="java.lang.String" value="Position"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserPositionLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccPositionLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserPhnNumberLbl">
+        <Component class="javax.swing.JLabel" name="itAddUAccPhnNumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -491,10 +491,10 @@
             <Property name="text" type="java.lang.String" value="Phone Number"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserPhnNumberLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccPhnNumberLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserISupervisorLbl">
+        <Component class="javax.swing.JLabel" name="itAddUAccISupervisorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -505,10 +505,10 @@
             <Property name="text" type="java.lang.String" value="Immediate Supervisor"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserISupervisorLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccISupervisorLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserISupervisorFld">
+        <Component class="javax.swing.JTextField" name="itAddUAccISupervisorFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -529,13 +529,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserISupervisorFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccISupervisorFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserISupervisorFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccISupervisorFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserPositionFld">
+        <Component class="javax.swing.JTextField" name="itAddUAccPositionFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -556,13 +556,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserPositionFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccPositionFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserPositionFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccPositionFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserStatusLbl">
+        <Component class="javax.swing.JLabel" name="itAddUAccStatusLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -573,10 +573,10 @@
             <Property name="text" type="java.lang.String" value="Status"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserStatusLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccStatusLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserStatusFld">
+        <Component class="javax.swing.JTextField" name="itAddUAccStatusFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -597,13 +597,13 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserStatusFld"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccStatusFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserStatusFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccStatusFldActionPerformed"/>
           </Events>
         </Component>
-        <Container class="javax.swing.JPanel" name="itAUserUAccDetailsPnl">
+        <Container class="javax.swing.JPanel" name="itAddUAccUAccDetailsPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -623,7 +623,7 @@
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserUAccDetailsPnl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccUAccDetailsPnl"/>
           </AccessibilityProperties>
 
           <Layout>
@@ -631,7 +631,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="itAUserUAccDetailsLbl" min="-2" pref="206" max="-2" attributes="0"/>
+                      <Component id="itAddUAccUAccDetailsLbl" min="-2" pref="206" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -639,14 +639,14 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="itAUserUAccDetailsLbl" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="itAddUAccUAccDetailsLbl" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="itAUserUAccDetailsLbl">
+            <Component class="javax.swing.JLabel" name="itAddUAccUAccDetailsLbl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -661,12 +661,12 @@
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserUAccDetailsLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccUAccDetailsLbl"/>
               </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="itAUserUAccDetailsBrdrPnl">
+        <Container class="javax.swing.JPanel" name="itAddUAccUAccDetailsBrdrPnl">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -677,7 +677,7 @@
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserUAccDetailsBrdrPnl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccUAccDetailsBrdrPnl"/>
           </AccessibilityProperties>
 
           <Layout>
@@ -686,10 +686,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="itAUserPasswordFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
-                          <Component id="itAUserPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="itAUserUsernameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="itAUserUsernameFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itAddUAccPasswordFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itAddUAccPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccUsernameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccUsernameFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="22" max="32767" attributes="0"/>
                   </Group>
@@ -699,20 +699,20 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="itAUserUsernameLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccUsernameLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="itAUserUsernameFld" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itAddUAccUsernameFld" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="itAUserPasswordLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccPasswordLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="itAUserPasswordFld" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itAddUAccPasswordFld" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace pref="24" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="itAUserUsernameLbl">
+            <Component class="javax.swing.JLabel" name="itAddUAccUsernameLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -723,10 +723,10 @@
                 <Property name="text" type="java.lang.String" value="Username"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserUsernameLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccUsernameLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="itAUserUsernameFld">
+            <Component class="javax.swing.JTextField" name="itAddUAccUsernameFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -746,13 +746,13 @@
                 </Property>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserUsernameFld"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccUsernameFld"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserUsernameFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccUsernameFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="itAUserPasswordLbl">
+            <Component class="javax.swing.JLabel" name="itAddUAccPasswordLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -763,10 +763,10 @@
                 <Property name="text" type="java.lang.String" value="Password"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserPasswordLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccPasswordLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="itAUserPasswordFld">
+            <Component class="javax.swing.JTextField" name="itAddUAccPasswordFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -786,10 +786,10 @@
                 </Property>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAUserPasswordFld"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccPasswordFld"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserPasswordFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccPasswordFldActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

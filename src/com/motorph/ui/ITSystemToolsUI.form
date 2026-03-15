@@ -28,7 +28,7 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="itActLogsEditBtn" min="-2" pref="65" max="-2" attributes="0"/>
+                      <Component id="itSysToolsEditBtn" min="-2" pref="65" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="itSysToolsAddBtn" min="-2" pref="65" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="438" max="-2" attributes="0"/>
@@ -62,7 +62,7 @@
               <Component id="itSysToolsUserEDetailsBrdrPnl" min="-2" pref="427" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="itActLogsEditBtn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="itSysToolsEditBtn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                   <Component id="itSysToolsAddBtn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                   <Component id="itSysToolsDeleteBtn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
               </Group>
@@ -303,7 +303,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsDeleteBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="itActLogsEditBtn">
+    <Component class="javax.swing.JButton" name="itSysToolsEditBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="f6" green="82" red="3b" type="rgb"/>
@@ -324,10 +324,10 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itActLogsEditBtn"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsEditBtn"/>
       </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itActLogsEditBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsEditBtnActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="itSysToolsAddBtn">
@@ -390,30 +390,30 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="itSysToolsENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="itSysToolsENameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserPhnNumberLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                      <Component id="itSysToolsPhnNumberLbl" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itAUserENameFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
-                      <Component id="itAUserPhnNumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="itSysToolsENameFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="itSysToolsPhnNumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
                       <Component id="itSysToolsENumberFld" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="itAUserStatusLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itSysToolsStatusLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="itAUserStatusFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itSysToolsStatusFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="itAUserPositionLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itSysToolsPositionLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="itAUserPositionFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itSysToolsPositionFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="itAUserISupervisorLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itSysToolsISupervisorLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="itAUserISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itSysToolsISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -422,11 +422,11 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="242" max="-2" attributes="0"/>
-                          <Component id="itAUserUAccDetailsPnl" min="-2" pref="214" max="-2" attributes="0"/>
+                          <Component id="itSysToolsUAccDetailsPnl" min="-2" pref="214" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="205" max="-2" attributes="0"/>
-                          <Component id="itAUserUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itSysToolsUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -440,27 +440,27 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="itSysToolsENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="itSysToolsENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itAUserISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itSysToolsISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="itAUserENameFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itSysToolsENameFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="itSysToolsENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserPositionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserPositionFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itSysToolsPositionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsPositionFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="itAUserPhnNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserPhnNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itAUserStatusLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAUserStatusFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itSysToolsPhnNumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsPhnNumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itSysToolsStatusLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsStatusFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                  <Component id="itAUserUAccDetailsPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itSysToolsUAccDetailsPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="itAUserUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itSysToolsUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="20" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -522,7 +522,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsENumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserENameFld">
+        <Component class="javax.swing.JTextField" name="itSysToolsENameFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -542,11 +542,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsENameFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserENameFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsENameFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserPhnNumberFld">
+        <Component class="javax.swing.JTextField" name="itSysToolsPhnNumberFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -566,11 +569,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsPhnNumberFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserPhnNumberFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsPhnNumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserPositionLbl">
+        <Component class="javax.swing.JLabel" name="itSysToolsPositionLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -580,8 +586,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Position"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsPositionLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserPhnNumberLbl">
+        <Component class="javax.swing.JLabel" name="itSysToolsPhnNumberLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -591,8 +600,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Phone Number"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsPhnNumberLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserISupervisorLbl">
+        <Component class="javax.swing.JLabel" name="itSysToolsISupervisorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -602,8 +614,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Immediate Supervisor"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsISupervisorLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserISupervisorFld">
+        <Component class="javax.swing.JTextField" name="itSysToolsISupervisorFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -623,11 +638,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsISupervisorFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserISupervisorFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsISupervisorFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserPositionFld">
+        <Component class="javax.swing.JTextField" name="itSysToolsPositionFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -647,11 +665,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsPositionFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserPositionFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsPositionFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAUserStatusLbl">
+        <Component class="javax.swing.JLabel" name="itSysToolsStatusLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -661,8 +682,11 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Status"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsStatusLbl"/>
+          </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAUserStatusFld">
+        <Component class="javax.swing.JTextField" name="itSysToolsStatusFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -682,11 +706,14 @@
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsStatusFld"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserStatusFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsStatusFldActionPerformed"/>
           </Events>
         </Component>
-        <Container class="javax.swing.JPanel" name="itAUserUAccDetailsPnl">
+        <Container class="javax.swing.JPanel" name="itSysToolsUAccDetailsPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -705,13 +732,16 @@
               <Dimension value="[126, 40]"/>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsUAccDetailsPnl"/>
+          </AccessibilityProperties>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="itAUserUAccDetailsLbl" min="-2" pref="206" max="-2" attributes="0"/>
+                      <Component id="itSysToolsUAccDetailsLbl" min="-2" pref="206" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -719,14 +749,14 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="itAUserUAccDetailsLbl" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="itSysToolsUAccDetailsLbl" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="itAUserUAccDetailsLbl">
+            <Component class="javax.swing.JLabel" name="itSysToolsUAccDetailsLbl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -740,10 +770,13 @@
                 <Property name="text" type="java.lang.String" value="User Account Details"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsUAccDetailsLbl"/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="itAUserUAccDetailsBrdrPnl">
+        <Container class="javax.swing.JPanel" name="itSysToolsUAccDetailsBrdrPnl">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -753,6 +786,9 @@
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsUAccDetailsBrdrPnl"/>
+          </AccessibilityProperties>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -760,10 +796,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="itAUserPasswordFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
-                          <Component id="itAUserPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="itAUserUsernameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="itAUserUsernameFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itSysToolsPasswordFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itSysToolsPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="itSysToolsUsernameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="itSysToolsUsernameFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="22" max="32767" attributes="0"/>
                   </Group>
@@ -773,20 +809,20 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="itAUserUsernameLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsUsernameLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="itAUserUsernameFld" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itSysToolsUsernameFld" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="itAUserPasswordLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itSysToolsPasswordLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="itAUserPasswordFld" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itSysToolsPasswordFld" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace pref="24" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="itAUserUsernameLbl">
+            <Component class="javax.swing.JLabel" name="itSysToolsUsernameLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -796,8 +832,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Username"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsUsernameLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="itAUserUsernameFld">
+            <Component class="javax.swing.JTextField" name="itSysToolsUsernameFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -817,11 +856,14 @@
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsUsernameFld"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserUsernameFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsUsernameFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="itAUserPasswordLbl">
+            <Component class="javax.swing.JLabel" name="itSysToolsPasswordLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -831,8 +873,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Password"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsPasswordLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="itAUserPasswordFld">
+            <Component class="javax.swing.JTextField" name="itSysToolsPasswordFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -852,8 +897,11 @@
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsPasswordFld"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAUserPasswordFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsPasswordFldActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
