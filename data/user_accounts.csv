@@ -1,35 +1,35 @@
-"userId","Employee #","username","passwordHash","active"
-"1","10001","Garcia","XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=","true"
-"2","10002","Lim","MDipkMWtYQVrujW3BTTAdg==:9SYrnKHpn2+hEAmCEcLKQQYNWmV8C9RvMcECf73ec0E=","true"
-"3","10003","Aquino","XO2aRxjGwk0aKOKL8iAbSQ==:BNsz6SWkKEPpedfBEY4r5YYdyud8yg3Hph4hymaJ5JU=","true"
-"4","10004","Reyes","bRM6phA+VDqxljGj6BwrWw==:Rqxuy3zIGK5KFLczuytALtyad3jwMbkeLx6gzV0RZ9w=","true"
-"5","10005","Hernandez","tl15rNlblVW1gorfy0EM/g==:hoFwWKQE8hwT7xVBRpYu3A+SiiroNlhsLTBiuKvVOXc=","true"
-"6","10006","Villanueva","YTOl0ugTE8oLgTqgtcVKAg==:RUyckMhGEf51er3elqfl90AacxSSAE2iIvhfcv9iF0E=","true"
-"7","10007","San Jose","t6lG4u10u19TA1F4pfN5mg==:gYPQFlIxIWzcv3YeU/AO9PZJ/WbS6FBBESQ6ropHKBw=","true"
-"8","10008","Romualdez","r8aL+U+6i3eDi0Cryf8q+A==:P20kAJ2aU6KAzPnWtbahQwDf0EcA0VMsvryDuLj9jpQ=","true"
-"9","10009","Atienza","M/NiYlus/cMw9ABCLx9NrA==:MMvf/W99lyd9lSk7zbNQSfPLLjQ11DvRPu2Xxhoo8C0=","true"
-"10","10010","Alvaro","9bQR1p2J8FO2h7wTpIHc6w==:BeCg+R7FJmZ7bI6eL7/wyrK45Jv8vyzTkOYYXTEmXxY=","true"
-"11","10011","Salcedo","0CdZnC/l2ShapjwrCPUNxA==:+0Uiq5t+l4WHOZfE7n8mE7waScYogswYL0jHdgmJ2cw=","true"
-"12","10012","Lopez","clrrrvwoQt6kc3b9PiYiiQ==:65qDtcZHcxmcOrVXU/BgI1gGR3NlhWpuOT7HweZzdbs=","true"
-"13","10013","Farala","2/8L7Pnaz4CP/SIoAvfLuQ==:9z9NgRYE/paoOq1GL+JrtGWLFd6oDSTuhSazuYycYE8=","true"
-"14","10014","Martinez","vu4fSUOnvK3+IXpzKD22KQ==:Zp06gN85QtkPpqLkElfhQpsXsjC0C9r6429xO1UdKT8=","true"
-"15","10015","Romualdez","xW4/9bIrYLUJiDqq1jYRMw==:ac30V7ZLWHG7fcwDQ2it71sAwIM9ak0MZCJarT9oId8=","true"
-"16","10016","Mata","K7dyCvL3NSkbBAeA54c2Vg==:ZrCTrO/nxt/bTHwXjS899/PASIHtcwAg1Zu8YjYt/u4=","true"
-"17","10017","De Leon","GLZ+U+0SA/CCc7h72cV6wg==:tQoqy3oYQzj+loMW+UgkAEsqRcAxMRx3FTr7f1NzD7o=","true"
-"18","10018","San Jose","TNZUktr9GgUn1eTovp4+UQ==:XOKgpj1IT3cIwCipP1H58oU3N1cs1LfSRsLs5vdoxHs=","true"
-"19","10019","Rosario","pz76vUhDsyTopTM3bs8ZGQ==:gZCjVuPOkNK9mS968RdE6z7yzAzERvNpjcpQlzyZS8A=","true"
-"20","10020","Bautista","fM7lLX8bpncPQ43qM3RjvA==:+bLkpV3lhEqPDuQH3UEkNRYLGj7asszyBrfBC2tGr3k=","true"
-"21","10021","Lazaro","IUp5j9DxmOtvW7adabRnUg==:fnP32VcvYC7LllFDvd7YI1UEoma9fp8EHeEKUBbv6u4=","true"
-"22","10022","Delos Santos","wqHgdtSuD52X8Jc3FPXEKQ==:W7sZ6AwcwcscJmXTXV4nBcEKy5/mjQ7oryz4h9HuBTk=","true"
-"23","10023","Santos","l+SPHtDoYtEnU45aGgz0vQ==:r6gIflr0Pdo0mDdLZL9mjNCV79BSaxxhs0PmoWZL+BA=","true"
-"24","10024","Del Rosario","Z9a7tck7dviDQIOzzlVzzg==:yHPmQveBQg01KNIm7vCDLxkPOKrHK3UEJrYfKNuHTqM=","true"
-"25","10025","Tolentino","glQzfF38LVzLKrA16Q79cA==:z5PHpCOStjxnE64pkYTq/58joaTprmoQEB0DwyvMKlY=","true"
-"26","10026","Gutierrez","NAwE7D5MwN8T5+jX9mjc1w==:qQR2+nUjaIzBF55hucqfkfu2qhuaRjH+IOjk1Vn9oEc=","true"
-"27","10027","Manalaysay","Bl+diZEOFyHaGlFrLMbUGw==:V1ALuWQH8nnI7f67RBWCtzDHboYP23InmmP4zeWf3gk=","true"
-"28","10028","Villegas","nRbggvpA0AFsVDuO/B8gVg==:eMlFf4HKIJx88XNJo0s0VPFIapYkotTkIdCDYNcbtyA=","true"
-"29","10029","Ramos","Gycb23uJ/Ts/SqIsIj+mEg==:jfWSgx5flRrI4sKxNeNlk/juWWAzpT8l+ppjEUqc16k=","true"
-"30","10030","Maceda","h/z4Jjqvqk1IbxcJclXvLw==:EtRj1MLU6JNvHIBZkhA70zUsjjS4kdUsDdycC59RSdY=","true"
-"31","10031","Aguilar","6fCIBkvkqzRkSuWpgA7amg==:c37KiacpBiFJCtosQJk7riQV+2qWioNwqkfPra+ZKhI=","true"
-"32","10032","Castro","QL2785s9N5Qx6MhmXZqeyA==:oBMHfcuJ2oX8sNrBFd3EwiNs+fRepUWp1QFHrFanm10=","true"
-"33","10033","Martinez","Dmj7bty1SL8q7ptCuvfU3Q==:tr0xPvBs8D4fo+WlAZeMvj8f1tDqZj9ioH5juiLTKMM=","true"
-"34","10034","Santos","95d+5GW/Gqe5LbevHf0HFQ==:t3+oa8ROGcRaWoF1hkVjOaase8XJra5rPjZlue22V1s=","true"
+userId,Employee #,username,passwordHash,role,Active
+1,10001,Garcia,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,admin,TRUE
+2,10002,Lim,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,admin,TRUE
+3,10003,Aquino,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+4,10004,Reyes,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,employee,TRUE
+5,10005,Hernandez,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,it,TRUE
+6,10006,Villanueva,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,hr,TRUE
+7,10007,San Jose,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,hr,TRUE
+8,10008,Romualdez,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,hr,TRUE
+9,10009,Atienza,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,hr,TRUE
+10,10010,Alvaro,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+11,10011,Salcedo,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+12,10012,Lopez,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+13,10013,Farala,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+14,10014,Martinez,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+15,10015,Romualdez,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+16,10016,Mata,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+17,10017,De Leon,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+18,10018,San Jose,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+19,10019,Rosario,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+20,10020,Bautista,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+21,10021,Lazaro,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+22,10022,Delos Santos,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+23,10023,Santos,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+24,10024,Del Rosario,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+25,10025,Tolentino,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+26,10026,Gutierrez,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+27,10027,Manalaysay,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+28,10028,Villegas,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+29,10029,Ramos,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+30,10030,Maceda,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+31,10031,Aguilar,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,finance,TRUE
+32,10032,Castro,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,employee,TRUE
+33,10033,Martinez,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,employee,TRUE
+34,10034,Santos,XHFZSnSQPRlm7I06PRXfyA==:xxnt4HxfqaNlj9y05aH4WwHdxCTl5QmpWwpLXi4qBsM=,employee,TRUE

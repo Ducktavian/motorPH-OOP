@@ -11,7 +11,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -197,11 +196,5 @@ public class CsvAttendanceDAO implements AttendanceDAO {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-    
-    
-    
-    
-    
-    
+    }  
 }

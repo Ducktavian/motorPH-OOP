@@ -26,7 +26,6 @@ public class MainDashboardUI extends javax.swing.JFrame {
         
         
         mainDashboardActLogsImgLbl.setLocation(740, 420);
-        mainDashboardActLogsImgFld.setLocation(739, 433);
         
         System.out.print("DONE 2!");
         
@@ -262,7 +261,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
         openFrame(new FinanceAttendanceLogsUI());
     }//GEN-LAST:event_mainDashboardAttLogsImgBtnActionPerformed
 
-<<<<<<< HEAD
+
     private void mainDashboardPylImgFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardPylImgFldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_mainDashboardPylImgFldActionPerformed
@@ -276,8 +275,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
         ///
     }//GEN-LAST:event_mainDashboardDashboardImgFld1ActionPerformed
 
-=======
->>>>>>> a5752a95cf670cf89c52c55841eb13d278833d3e
+
     /**
      * @param args the command line arguments
      */

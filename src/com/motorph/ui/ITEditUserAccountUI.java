@@ -57,7 +57,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUserPasswordLbl = new javax.swing.JLabel();
         itEditUserPasswordFld = new javax.swing.JTextField();
         itEditUserUpdateBtn = new javax.swing.JButton();
-        itEditUserSendAccBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -329,7 +328,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                         .addComponent(itEditUserPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itEditUserEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addComponent(itEditUserISupervisorLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                         .addComponent(itEditUserISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18))
             .addGroup(itEditUserEDetailsBrdrPnlLayout.createSequentialGroup()
@@ -392,13 +391,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUserUpdateBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         itEditUserUpdateBtn.addActionListener(this::itEditUserUpdateBtnActionPerformed);
 
-        itEditUserSendAccBtn.setBackground(new java.awt.Color(30, 58, 138));
-        itEditUserSendAccBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itEditUserSendAccBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itEditUserSendAccBtn.setText("Send Account");
-        itEditUserSendAccBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itEditUserSendAccBtn.addActionListener(this::itEditUserSendAccBtnActionPerformed);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -408,11 +400,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(itEditUserEditUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(itEditUserUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(itEditUserSendAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(itEditUserUpdateBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(itEditUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
@@ -424,9 +413,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itEditUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itEditUserUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itEditUserSendAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(itEditUserUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(itEditUserSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -435,7 +422,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUserEditUAccPnl.getAccessibleContext().setAccessibleName("itEditUserEditUAccPnl");
         itEditUserEDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itEditUserEDetailsBrdrPnl");
         itEditUserUpdateBtn.getAccessibleContext().setAccessibleName("itEditUserUpdateBtn");
-        itEditUserSendAccBtn.getAccessibleContext().setAccessibleName("itEditUserSendAccBtn");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -497,10 +483,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itEditUserUpdateBtnActionPerformed
 
-    private void itEditUserSendAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUserSendAccBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUserSendAccBtnActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -547,7 +529,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itEditUserPhnNumberLbl;
     private javax.swing.JTextField itEditUserPositionFld;
     private javax.swing.JLabel itEditUserPositionLbl;
-    private javax.swing.JButton itEditUserSendAccBtn;
     private javax.swing.JPanel itEditUserSidebarPnl;
     private javax.swing.JTextField itEditUserStatusFld;
     private javax.swing.JLabel itEditUserStatusLbl;

@@ -1,10 +1,8 @@
 
 package com.motorph.dao;
 
-import com.motorph.model.Employee;
 import com.motorph.model.Role;
 import com.motorph.model.UserAccount;
-import com.motorph.util.PasswordUtil;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import java.io.File;
@@ -19,12 +17,10 @@ public class CsvUserAccountDAO implements UserAccountDAO {
     
     private static final String FILE_PATH = "data/user_accounts.csv";
     private List<UserAccount> users; // Lists of user accounts
-    private EmployeeDAO csvEmpDao;
     
     // Constructor
     public CsvUserAccountDAO() {
         this.users = new ArrayList<>();
-        this.csvEmpDao  = new CsvEmployeeDAO();
         ensureFileExists();
         loadUsers();
         
@@ -60,9 +56,10 @@ public class CsvUserAccountDAO implements UserAccountDAO {
                 String employeeNumber = data[1].trim();
                 String userName = data[2].trim();
                 String passwordHash = data[3].trim();
-                boolean active = Boolean.parseBoolean(data[4].trim());
+                String stringRole = data[4].trim();
+                boolean active = Boolean.parseBoolean(data[5].trim());
                 
-                Role role = getRole(employeeNumber);
+                Role role = getRole(stringRole.toLowerCase());
                 users.add(new UserAccount(userId, employeeNumber, userName, passwordHash, role, active));
             }
         } catch (Exception e) {
@@ -101,27 +98,21 @@ public class CsvUserAccountDAO implements UserAccountDAO {
     }
     
     @Override
-    public Role getRole(String employeeNumber) {
-        Employee employee = csvEmpDao.findEmployee(employeeNumber);
-        
-        if (employee == null) return Role.EMPLOYEE;
-        
-        String position = employee.getPosition().toLowerCase();
-        
-        if (position.contains("hr")) {
+    public Role getRole(String stringRole) {
+        if (stringRole.equals("hr")) {
             return Role.HR;
         }
-        else if (position.contains("it")) {
+        else if (stringRole.equals("it")) {
             return Role.IT;
         }
-        else if (position.contains("finance")){
+        else if (stringRole.equals("finance")){
             return Role.FINANCE;
+        } else if (stringRole.equals("admin")) {
+            return Role.ADMIN;
         }
         else {
             return Role.EMPLOYEE;
         } 
-        
-        
     }    
     
     
