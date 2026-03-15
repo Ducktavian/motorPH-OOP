@@ -4,7 +4,7 @@
  */
 package com.motorph.ui;
 
-/**
+/**///
  *
  * @author Lenovo
  */
@@ -492,13 +492,13 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     }//GEN-LAST:event_itEditUAccUpdateBtnActionPerformed
 
 <<<<<<< HEAD
-    private void itEditUAccResetPasswordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccResetPasswordBtnActionPerformed
+    private void itEditUAccResetPasswordBtnActionPerformed(java.awt.event.ActionEvent evt) {                                                           
 =======
 
-    private void itEditUserUpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUserUpdateBtn1ActionPerformed
+    private void itEditUserUpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {                                                     
 >>>>>>> b79e58462ca09cd5828e123a6bf2a69415345a1c
         // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUAccResetPasswordBtnActionPerformed
+    }                                                          
 
     
     public static void main(String args[]) {
