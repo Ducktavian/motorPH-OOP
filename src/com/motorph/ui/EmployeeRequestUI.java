@@ -42,18 +42,13 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestFARequestPnl = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
         employeeRequestHourLbl = new javax.swing.JLabel();
-        employeeRequestENameFld = new javax.swing.JTextField();
         employeeRequestReasonLbl = new javax.swing.JLabel();
         employeeRequestSubmitBtn = new javax.swing.JButton();
         employeeRequestDateLbl = new javax.swing.JLabel();
-        employeeRequestENumberFld = new javax.swing.JTextField();
         employeeRequestReasonFld = new javax.swing.JTextField();
         employeeRequestDateFld = new javax.swing.JTextField();
-        employeeRequestENumberLbl = new javax.swing.JLabel();
-        employeeRequestENameLbl = new javax.swing.JLabel();
-        employeeRequestHourFld = new javax.swing.JTextField();
-        employeeRequestOvertimeRBtn = new javax.swing.JRadioButton();
-        employeeRequestUndertimeRBtn = new javax.swing.JRadioButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         employeeRequestRecordsBrdrPnl = new javax.swing.JPanel();
         employeeRequestRecordsLbl = new javax.swing.JLabel();
         employeeRequestRecordsScrlPnl = new javax.swing.JScrollPane();
@@ -175,11 +170,6 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestHourLbl.setForeground(new java.awt.Color(31, 41, 55));
         employeeRequestHourLbl.setText("Hour");
 
-        employeeRequestENameFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeeRequestENameFld.setText(" ");
-        employeeRequestENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeeRequestENameFld.addActionListener(this::employeeRequestENameFldActionPerformed);
-
         employeeRequestReasonLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         employeeRequestReasonLbl.setForeground(new java.awt.Color(31, 41, 55));
         employeeRequestReasonLbl.setText("Reason");
@@ -195,11 +185,6 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestDateLbl.setForeground(new java.awt.Color(31, 41, 55));
         employeeRequestDateLbl.setText("Date");
 
-        employeeRequestENumberFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeeRequestENumberFld.setText(" ");
-        employeeRequestENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeeRequestENumberFld.addActionListener(this::employeeRequestENumberFldActionPerformed);
-
         employeeRequestReasonFld.setForeground(new java.awt.Color(31, 41, 55));
         employeeRequestReasonFld.setText(" ");
         employeeRequestReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -210,26 +195,12 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestDateFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         employeeRequestDateFld.addActionListener(this::employeeRequestDateFldActionPerformed);
 
-        employeeRequestENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        employeeRequestENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeeRequestENumberLbl.setText("Employee #");
+        jComboBox1.setForeground(new java.awt.Color(31, 41, 55));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Overtime", "Undertime" }));
+        jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        employeeRequestENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        employeeRequestENameLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeeRequestENameLbl.setText("Employee Name");
-
-        employeeRequestHourFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeeRequestHourFld.setText(" ");
-        employeeRequestHourFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeeRequestHourFld.addActionListener(this::employeeRequestHourFldActionPerformed);
-
-        employeeRequestOvertimeRBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        employeeRequestOvertimeRBtn.setForeground(new java.awt.Color(31, 41, 55));
-        employeeRequestOvertimeRBtn.setText("Overtime");
-
-        employeeRequestUndertimeRBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        employeeRequestUndertimeRBtn.setForeground(new java.awt.Color(31, 41, 55));
-        employeeRequestUndertimeRBtn.setText("Undertime");
+        jDateChooser1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        jDateChooser1.setForeground(new java.awt.Color(31, 41, 55));
 
         javax.swing.GroupLayout employeeRequestFARequestBrdrPnlLayout = new javax.swing.GroupLayout(employeeRequestFARequestBrdrPnl);
         employeeRequestFARequestBrdrPnl.setLayout(employeeRequestFARequestBrdrPnlLayout);
@@ -239,34 +210,24 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(employeeRequestReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(employeeRequestReasonFld)
+                    .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
+                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(employeeRequestSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
-                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(employeeRequestENameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(employeeRequestENumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(employeeRequestReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(employeeRequestENumberFld, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                .addComponent(employeeRequestENameFld))
-                            .addComponent(employeeRequestOvertimeRBtn))
-                        .addGap(18, 18, 18)
-                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(employeeRequestDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
-                                .addComponent(employeeRequestDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(employeeRequestUndertimeRBtn)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(employeeRequestHourLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(employeeRequestHourFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(employeeRequestReasonFld))
+                        .addComponent(employeeRequestDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(254, 254, 254)
+                        .addComponent(employeeRequestHourLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                        .addComponent(employeeRequestDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(16, 16, 16))
         );
         employeeRequestFARequestBrdrPnlLayout.setVerticalGroup(
@@ -274,51 +235,33 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
             .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(employeeRequestSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(employeeRequestDateLbl)
-                        .addComponent(employeeRequestDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(employeeRequestENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(employeeRequestENameLbl)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(employeeRequestENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(employeeRequestENumberLbl)
-                    .addComponent(employeeRequestHourFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(employeeRequestHourLbl))
-                .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(employeeRequestOvertimeRBtn)
-                            .addComponent(employeeRequestUndertimeRBtn))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(employeeRequestReasonLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addComponent(employeeRequestReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(employeeRequestSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeRequestDateLbl)))
+                    .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(employeeRequestDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(employeeRequestHourLbl)))
+                .addGap(18, 18, 18)
+                .addComponent(employeeRequestReasonLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(employeeRequestReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         employeeRequestFARequestPnl.getAccessibleContext().setAccessibleName("employeeRequestFARequestPnl");
         employeeRequestHourLbl.getAccessibleContext().setAccessibleName("employeeRequestHourLbl");
-        employeeRequestENameFld.getAccessibleContext().setAccessibleName("employeeRequestENameFld");
         employeeRequestReasonLbl.getAccessibleContext().setAccessibleName("employeeRequestReasonLbl");
         employeeRequestSubmitBtn.getAccessibleContext().setAccessibleName("employeeRequestSubmitBtn");
         employeeRequestDateLbl.getAccessibleContext().setAccessibleName("employeeRequestDateLbl");
-        employeeRequestENumberFld.getAccessibleContext().setAccessibleName("employeeRequestENumberFld");
         employeeRequestReasonFld.getAccessibleContext().setAccessibleName("employeeRequestReasonFld");
         employeeRequestDateFld.getAccessibleContext().setAccessibleName("employeeRequestDateFld");
-        employeeRequestENumberLbl.getAccessibleContext().setAccessibleName("employeeRequestENumberLbl");
-        employeeRequestENameLbl.getAccessibleContext().setAccessibleName("employeeRequestENameLbl");
-        employeeRequestHourFld.getAccessibleContext().setAccessibleName("employeeRequestHourFld");
-        employeeRequestOvertimeRBtn.getAccessibleContext().setAccessibleName("employeeRequestOvertimeRBtn");
-        employeeRequestUndertimeRBtn.getAccessibleContext().setAccessibleName("employeeRequestUndertimeRBtn");
 
         javax.swing.GroupLayout employeeRequestRFormBrdrPnlLayout = new javax.swing.GroupLayout(employeeRequestRFormBrdrPnl);
         employeeRequestRFormBrdrPnl.setLayout(employeeRequestRFormBrdrPnlLayout);
@@ -340,7 +283,7 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
                 .addComponent(employeeRequestRFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(employeeRequestFARequestBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         employeeRequestRFormPnl.getAccessibleContext().setAccessibleName("employeeRequestRFormPnl");
@@ -460,11 +403,11 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Employee Name", "Employee #", "Position", "Date", "Type", "Hour", "Remarks"
+                "Employee #", "Employee Name", "Request Type", "Date", "Hour", "Reason", "Remarks"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -496,8 +439,8 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addComponent(employeeRequestRecordsLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(employeeRequestRecordsScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addComponent(employeeRequestRecordsScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         employeeRequestRecordsLbl.getAccessibleContext().setAccessibleName("employeeRequestRecordsLbl");
@@ -519,16 +462,16 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(employeeRequestSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(employeeRequestRDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(employeeRequestRecordsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(employeeRequestRFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(employeeRequestSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(employeeRequestRDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(employeeRequestRecordsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(employeeRequestRFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
         );
 
         employeeRequestSidebarPnl.getAccessibleContext().setAccessibleName("employeeRequestSidebarPnl");
@@ -553,10 +496,6 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         new MainDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeeRequestMainDashboardBtnActionPerformed
 
-    private void employeeRequestHourFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestHourFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeRequestHourFldActionPerformed
-
     private void employeeRequestDateFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestDateFldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_employeeRequestDateFldActionPerformed
@@ -565,17 +504,9 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_employeeRequestReasonFldActionPerformed
 
-    private void employeeRequestENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestENumberFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeRequestENumberFldActionPerformed
-
     private void employeeRequestSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestSubmitBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_employeeRequestSubmitBtnActionPerformed
-
-    private void employeeRequestENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestENameFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeRequestENameFldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -605,17 +536,11 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField employeeRequestDateFld;
     private javax.swing.JLabel employeeRequestDateLbl;
-    private javax.swing.JTextField employeeRequestENameFld;
-    private javax.swing.JLabel employeeRequestENameLbl;
-    private javax.swing.JTextField employeeRequestENumberFld;
-    private javax.swing.JLabel employeeRequestENumberLbl;
     private javax.swing.JPanel employeeRequestFARequestBrdrPnl;
     private javax.swing.JPanel employeeRequestFARequestPnl;
-    private javax.swing.JTextField employeeRequestHourFld;
     private javax.swing.JLabel employeeRequestHourLbl;
     private javax.swing.JButton employeeRequestMainDashboardBtn;
     private javax.swing.JLabel employeeRequestMotorPHIconImgLbl;
-    private javax.swing.JRadioButton employeeRequestOvertimeRBtn;
     private javax.swing.JButton employeeRequestRDetailsBtn;
     private javax.swing.JLabel employeeRequestRDetailsLbl;
     private javax.swing.JPanel employeeRequestRDetailsPnl;
@@ -631,7 +556,8 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
     private javax.swing.JTable employeeRequestRecordsTbl;
     private javax.swing.JPanel employeeRequestSidebarPnl;
     private javax.swing.JButton employeeRequestSubmitBtn;
-    private javax.swing.JRadioButton employeeRequestUndertimeRBtn;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel21;
     // End of variables declaration//GEN-END:variables
 }

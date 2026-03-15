@@ -41,15 +41,6 @@ public class MainDashboardUI extends javax.swing.JFrame {
         mainDashboardDDetailsImgLbl = new javax.swing.JLabel();
         mainDashboardActLogsImgLbl = new javax.swing.JLabel();
         mainDashboardLogoutLbl = new javax.swing.JLabel();
-        mainDashboardDashboardImgFld = new javax.swing.JTextField();
-        mainDashboardAttLogsImgFld = new javax.swing.JTextField();
-        mainDashboardPylImgFld = new javax.swing.JTextField();
-        mainDashboardPrlImgFld = new javax.swing.JTextField();
-        mainDashboardEDetailsImgFld = new javax.swing.JTextField();
-        mainDashboardRDetailsImgFld = new javax.swing.JTextField();
-        mainDashboardLDetailsImgFld = new javax.swing.JTextField();
-        mainDashboardDDetailsImgFld = new javax.swing.JTextField();
-        mainDashboardActLogsImgFld = new javax.swing.JTextField();
         mainDashboardDashboardImgBtn = new javax.swing.JButton();
         mainDashboardAttLogsImgBtn = new javax.swing.JButton();
         mainDashboardPylImgBtn = new javax.swing.JButton();
@@ -60,104 +51,59 @@ public class MainDashboardUI extends javax.swing.JFrame {
         mainDashboardDDetailsImgBtn = new javax.swing.JButton();
         mainDashboardActLogsImgBtn = new javax.swing.JButton();
         mainDashboardLogoutBtn = new javax.swing.JButton();
-        MainDashboardImg = new javax.swing.JLabel();
+        mainDashboardDashboardImgFld1 = new javax.swing.JTextField();
+        mainDashboardAttLogsImgFld = new javax.swing.JTextField();
+        mainDashboardPylImgFld = new javax.swing.JTextField();
+        mainDashboardPrlImgFld = new javax.swing.JTextField();
+        mainDashboardEDetailsImgFld = new javax.swing.JTextField();
+        mainDashboardRDetailsImgFld = new javax.swing.JTextField();
+        mainDashboardLDetailsImgFld = new javax.swing.JTextField();
+        mainDashboardDDetailsImgFld = new javax.swing.JTextField();
+        mainDashboardActLogsImgFld = new javax.swing.JTextField();
+        mainDashboardMainDashboardImgLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         mainDashboardDashboardImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/DashboardImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardDashboardImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, -1, -1));
+        getContentPane().add(mainDashboardDashboardImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 150, -1));
         mainDashboardDashboardImgLbl.getAccessibleContext().setAccessibleName("mainDashboardDashboardImgLbl");
 
         mainDashboardAttLogsImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/AttendanceLogsImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardAttLogsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, 170));
+        getContentPane().add(mainDashboardAttLogsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 150, 170));
         mainDashboardAttLogsImgLbl.getAccessibleContext().setAccessibleName("mainDashboardAttLogsImgLbl");
 
         mainDashboardPylImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/PayslipImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardPylImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 0, -1, -1));
+        getContentPane().add(mainDashboardPylImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 0, 150, -1));
         mainDashboardPylImgLbl.getAccessibleContext().setAccessibleName("mainDashboardPylImgLbl");
 
         mainDashboardPrlImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/PayrollDetailsImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardPrlImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, -1, -1));
+        getContentPane().add(mainDashboardPrlImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, 150, -1));
         mainDashboardPrlImgLbl.getAccessibleContext().setAccessibleName("mainDashboardPrlImgLbl");
 
         mainDashboardEDetailsImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/EmployeeDetailsImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardEDetailsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, -1));
+        getContentPane().add(mainDashboardEDetailsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 150, -1));
         mainDashboardEDetailsImgLbl.getAccessibleContext().setAccessibleName("mainDashboardEDetailsImgLbl");
 
         mainDashboardRDetailsImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/RequestDetailsImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardRDetailsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 170, -1));
+        getContentPane().add(mainDashboardRDetailsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 150, -1));
         mainDashboardRDetailsImgLbl.getAccessibleContext().setAccessibleName("mainDashboardRDetailsImgLbl");
 
         mainDashboardLDetailsImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/LeaveDetailsImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardLDetailsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, -1, -1));
+        getContentPane().add(mainDashboardLDetailsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 150, -1));
         mainDashboardLDetailsImgLbl.getAccessibleContext().setAccessibleName("mainDashboardLDetailsImgLbl");
 
         mainDashboardDDetailsImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/DisputeDetailsImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardDDetailsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 210, -1, -1));
+        getContentPane().add(mainDashboardDDetailsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 210, 150, -1));
         mainDashboardDDetailsImgLbl.getAccessibleContext().setAccessibleName("mainDashboardDDetailsImgLbl");
 
         mainDashboardActLogsImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/ActivityLogsImg.png"))); // NOI18N
-        getContentPane().add(mainDashboardActLogsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, -1, -1));
+        getContentPane().add(mainDashboardActLogsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 150, -1));
         mainDashboardActLogsImgLbl.getAccessibleContext().setAccessibleName("mainDashboardActLogsImgLbl");
 
         mainDashboardLogoutLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/LogoutImg.png"))); // NOI18N
         getContentPane().add(mainDashboardLogoutLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 640, 40, 30));
         mainDashboardLogoutLbl.getAccessibleContext().setAccessibleName("LogoutImg");
-
-        mainDashboardDashboardImgFld.setBackground(new java.awt.Color(233, 233, 233));
-        mainDashboardDashboardImgFld.setEnabled(false);
-        mainDashboardDashboardImgFld.addActionListener(this::mainDashboardDashboardImgFldActionPerformed);
-        getContentPane().add(mainDashboardDashboardImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 23, 169, 131));
-        mainDashboardDashboardImgFld.getAccessibleContext().setAccessibleName("mainDashboardDashboardImgFld");
-
-        mainDashboardAttLogsImgFld.setBackground(new java.awt.Color(233, 233, 233));
-        mainDashboardAttLogsImgFld.setEnabled(false);
-        mainDashboardAttLogsImgFld.addActionListener(this::mainDashboardAttLogsImgFldActionPerformed);
-        getContentPane().add(mainDashboardAttLogsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 23, 169, 131));
-        mainDashboardAttLogsImgFld.getAccessibleContext().setAccessibleName("mainDashboardAttLogsImgFld");
-
-        mainDashboardPylImgFld.setBackground(new java.awt.Color(233, 233, 233));
-        mainDashboardPylImgFld.setEnabled(false);
-        mainDashboardPylImgFld.addActionListener(this::mainDashboardPylImgFldActionPerformed);
-        getContentPane().add(mainDashboardPylImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 23, 169, 131));
-        mainDashboardPylImgFld.getAccessibleContext().setAccessibleName("mainDashboardPylImgFld");
-
-        mainDashboardPrlImgFld.setBackground(new java.awt.Color(233, 233, 233));
-        mainDashboardPrlImgFld.setEnabled(false);
-        mainDashboardPrlImgFld.addActionListener(this::mainDashboardPrlImgFldActionPerformed);
-        getContentPane().add(mainDashboardPrlImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 23, 169, 131));
-        mainDashboardPrlImgFld.getAccessibleContext().setAccessibleName("mainDashboardPrlImgFld");
-
-        mainDashboardEDetailsImgFld.setBackground(new java.awt.Color(233, 233, 233));
-        mainDashboardEDetailsImgFld.setEnabled(false);
-        mainDashboardEDetailsImgFld.addActionListener(this::mainDashboardEDetailsImgFldActionPerformed);
-        getContentPane().add(mainDashboardEDetailsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 223, 169, 131));
-        mainDashboardEDetailsImgFld.getAccessibleContext().setAccessibleName("mainDashboardEDetailsImgFld");
-
-        mainDashboardRDetailsImgFld.setBackground(new java.awt.Color(233, 233, 233));
-        mainDashboardRDetailsImgFld.setEnabled(false);
-        mainDashboardRDetailsImgFld.addActionListener(this::mainDashboardRDetailsImgFldActionPerformed);
-        getContentPane().add(mainDashboardRDetailsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 223, 169, 131));
-        mainDashboardRDetailsImgFld.getAccessibleContext().setAccessibleName("mainDashboardRDetailsImgFld");
-
-        mainDashboardLDetailsImgFld.setBackground(new java.awt.Color(233, 233, 233));
-        mainDashboardLDetailsImgFld.setEnabled(false);
-        mainDashboardLDetailsImgFld.addActionListener(this::mainDashboardLDetailsImgFldActionPerformed);
-        getContentPane().add(mainDashboardLDetailsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 223, 169, 131));
-        mainDashboardLDetailsImgFld.getAccessibleContext().setAccessibleName("mainDashboardLDetailsImgFld");
-
-        mainDashboardDDetailsImgFld.setBackground(new java.awt.Color(233, 233, 233));
-        mainDashboardDDetailsImgFld.setEnabled(false);
-        mainDashboardDDetailsImgFld.addActionListener(this::mainDashboardDDetailsImgFldActionPerformed);
-        getContentPane().add(mainDashboardDDetailsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 223, 169, 131));
-        mainDashboardDDetailsImgFld.getAccessibleContext().setAccessibleName("mainDashboardDDetailsImgFld");
-
-        mainDashboardActLogsImgFld.setBackground(new java.awt.Color(233, 233, 233));
-        mainDashboardActLogsImgFld.setEnabled(false);
-        mainDashboardActLogsImgFld.addActionListener(this::mainDashboardActLogsImgFldActionPerformed);
-        getContentPane().add(mainDashboardActLogsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 423, 169, 131));
-        mainDashboardActLogsImgFld.getAccessibleContext().setAccessibleName("mainDashboardActLogsImgFld");
 
         mainDashboardDashboardImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardDashboardImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
@@ -240,9 +186,62 @@ public class MainDashboardUI extends javax.swing.JFrame {
         getContentPane().add(mainDashboardLogoutBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 632, 130, 45));
         mainDashboardLogoutBtn.getAccessibleContext().setAccessibleName("mainDashboardLogoutLbl");
 
-        MainDashboardImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MainDashboardImg.png"))); // NOI18N
-        getContentPane().add(MainDashboardImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
-        MainDashboardImg.getAccessibleContext().setAccessibleName("MainDashboardImg");
+        mainDashboardDashboardImgFld1.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardDashboardImgFld1.setEnabled(false);
+        mainDashboardDashboardImgFld1.addActionListener(this::mainDashboardDashboardImgFld1ActionPerformed);
+        getContentPane().add(mainDashboardDashboardImgFld1, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 23, 169, 131));
+
+        mainDashboardAttLogsImgFld.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardAttLogsImgFld.setEnabled(false);
+        mainDashboardAttLogsImgFld.addActionListener(this::mainDashboardAttLogsImgFldActionPerformed);
+        getContentPane().add(mainDashboardAttLogsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 23, 169, 131));
+        mainDashboardAttLogsImgFld.getAccessibleContext().setAccessibleName("mainDashboardAttLogsImgFld");
+
+        mainDashboardPylImgFld.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardPylImgFld.setEnabled(false);
+        mainDashboardPylImgFld.addActionListener(this::mainDashboardPylImgFldActionPerformed);
+        getContentPane().add(mainDashboardPylImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 23, 169, 131));
+        mainDashboardPylImgFld.getAccessibleContext().setAccessibleName("mainDashboardPylImgFld");
+
+        mainDashboardPrlImgFld.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardPrlImgFld.setEnabled(false);
+        mainDashboardPrlImgFld.addActionListener(this::mainDashboardPrlImgFldActionPerformed);
+        getContentPane().add(mainDashboardPrlImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 23, 169, 131));
+        mainDashboardPrlImgFld.getAccessibleContext().setAccessibleName("mainDashboardPrlImgFld");
+
+        mainDashboardEDetailsImgFld.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardEDetailsImgFld.setEnabled(false);
+        mainDashboardEDetailsImgFld.addActionListener(this::mainDashboardEDetailsImgFldActionPerformed);
+        getContentPane().add(mainDashboardEDetailsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 223, 169, 131));
+        mainDashboardEDetailsImgFld.getAccessibleContext().setAccessibleName("mainDashboardEDetailsImgFld");
+
+        mainDashboardRDetailsImgFld.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardRDetailsImgFld.setEnabled(false);
+        mainDashboardRDetailsImgFld.addActionListener(this::mainDashboardRDetailsImgFldActionPerformed);
+        getContentPane().add(mainDashboardRDetailsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 223, 169, 131));
+        mainDashboardRDetailsImgFld.getAccessibleContext().setAccessibleName("mainDashboardRDetailsImgFld");
+
+        mainDashboardLDetailsImgFld.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardLDetailsImgFld.setEnabled(false);
+        mainDashboardLDetailsImgFld.addActionListener(this::mainDashboardLDetailsImgFldActionPerformed);
+        getContentPane().add(mainDashboardLDetailsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 223, 169, 131));
+        mainDashboardLDetailsImgFld.getAccessibleContext().setAccessibleName("mainDashboardLDetailsImgFld");
+
+        mainDashboardDDetailsImgFld.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardDDetailsImgFld.setEnabled(false);
+        mainDashboardDDetailsImgFld.addActionListener(this::mainDashboardDDetailsImgFldActionPerformed);
+        getContentPane().add(mainDashboardDDetailsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(739, 223, 169, 131));
+        mainDashboardDDetailsImgFld.getAccessibleContext().setAccessibleName("mainDashboardDDetailsImgFld");
+
+        mainDashboardActLogsImgFld.setBackground(new java.awt.Color(233, 233, 233));
+        mainDashboardActLogsImgFld.setEnabled(false);
+        mainDashboardActLogsImgFld.addActionListener(this::mainDashboardActLogsImgFldActionPerformed);
+        getContentPane().add(mainDashboardActLogsImgFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 423, 169, 131));
+        mainDashboardActLogsImgFld.getAccessibleContext().setAccessibleName("mainDashboardActLogsImgFld");
+
+        mainDashboardMainDashboardImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MainDashboardImg.png"))); // NOI18N
+        getContentPane().add(mainDashboardMainDashboardImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        mainDashboardMainDashboardImgLbl.getAccessibleContext().setAccessibleName("mainDashboardMainDashboardImgLbl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -382,7 +381,6 @@ public class MainDashboardUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MainDashboardImg;
     private javax.swing.JButton mainDashboardActLogsImgBtn;
     private javax.swing.JTextField mainDashboardActLogsImgFld;
     private javax.swing.JLabel mainDashboardActLogsImgLbl;
@@ -393,7 +391,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
     private javax.swing.JTextField mainDashboardDDetailsImgFld;
     private javax.swing.JLabel mainDashboardDDetailsImgLbl;
     private javax.swing.JButton mainDashboardDashboardImgBtn;
-    private javax.swing.JTextField mainDashboardDashboardImgFld;
+    private javax.swing.JTextField mainDashboardDashboardImgFld1;
     private javax.swing.JLabel mainDashboardDashboardImgLbl;
     private javax.swing.JButton mainDashboardEDetailsImgBtn;
     private javax.swing.JTextField mainDashboardEDetailsImgFld;
@@ -403,6 +401,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
     private javax.swing.JLabel mainDashboardLDetailsImgLbl;
     private javax.swing.JButton mainDashboardLogoutBtn;
     private javax.swing.JLabel mainDashboardLogoutLbl;
+    private javax.swing.JLabel mainDashboardMainDashboardImgLbl;
     private javax.swing.JButton mainDashboardPrlImgBtn;
     private javax.swing.JTextField mainDashboardPrlImgFld;
     private javax.swing.JLabel mainDashboardPrlImgLbl;

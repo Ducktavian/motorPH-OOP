@@ -33,13 +33,13 @@ public class HRLeaveListUI extends javax.swing.JFrame {
 
         hrLDetailsSidebarPnl = new javax.swing.JPanel();
         hrLDetailsLDetailsBtn = new javax.swing.JButton();
-        mainDashboardBtn = new javax.swing.JButton();
+        hrLDetailsMainDashboardBtn = new javax.swing.JButton();
         hrLDetailsMotorPHIconImgLbl = new javax.swing.JLabel();
         hrLDetailsLListBtn = new javax.swing.JButton();
         hrLDetailsLListPnl = new javax.swing.JPanel();
         hrLDetailsLListLbl = new javax.swing.JLabel();
         hrLDetailsLListBrdrScrlPnl = new javax.swing.JScrollPane();
-        employeePylRecordTbl = new javax.swing.JTable();
+        hrLDetailsLListTbl = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,13 +52,13 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         hrLDetailsLDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         hrLDetailsLDetailsBtn.addActionListener(this::hrLDetailsLDetailsBtnActionPerformed);
 
-        mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        mainDashboardBtn.setLabel("Main Dashboard");
-        mainDashboardBtn.addActionListener(this::mainDashboardBtnActionPerformed);
+        hrLDetailsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        hrLDetailsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        hrLDetailsMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        hrLDetailsMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        hrLDetailsMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        hrLDetailsMainDashboardBtn.setLabel("Main Dashboard");
+        hrLDetailsMainDashboardBtn.addActionListener(this::hrLDetailsMainDashboardBtnActionPerformed);
 
         hrLDetailsMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
@@ -75,7 +75,7 @@ public class HRLeaveListUI extends javax.swing.JFrame {
             hrLDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hrLDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(92, 92, 92)
-                .addComponent(mainDashboardBtn))
+                .addComponent(hrLDetailsMainDashboardBtn))
             .addGroup(hrLDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(hrLDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -96,12 +96,13 @@ public class HRLeaveListUI extends javax.swing.JFrame {
                         .addComponent(hrLDetailsLDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(hrLDetailsLListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(mainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 353, Short.MAX_VALUE)
+                .addComponent(hrLDetailsMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
         );
 
         hrLDetailsLDetailsBtn.getAccessibleContext().setAccessibleName("hrLDetailsLDetailsBtn");
+        hrLDetailsMainDashboardBtn.getAccessibleContext().setAccessibleName("hrLDetailsMainDashboardBtn");
         hrLDetailsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("hrLDetailsMotorPHIconImgLbl");
         hrLDetailsLListBtn.getAccessibleContext().setAccessibleName("hrLDetailsLListBtn");
 
@@ -118,141 +119,135 @@ public class HRLeaveListUI extends javax.swing.JFrame {
 
         hrLDetailsLListBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        employeePylRecordTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePylRecordTbl.setForeground(new java.awt.Color(30, 42, 56));
-        employeePylRecordTbl.setModel(new javax.swing.table.DefaultTableModel(
+        hrLDetailsLListTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsLListTbl.setForeground(new java.awt.Color(30, 42, 56));
+        hrLDetailsLListTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Employee #", "From", "To", "Status", "Action"
+                "Employee #", "Employee Name", "Leave Details"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, true, false
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
         });
-        employeePylRecordTbl.setColumnSelectionAllowed(true);
-        employeePylRecordTbl.setGridColor(new java.awt.Color(178, 178, 178));
-        employeePylRecordTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
-        employeePylRecordTbl.getTableHeader().setReorderingAllowed(false);
-        employeePylRecordTbl.addMouseListener(new java.awt.event.MouseAdapter() {
+        hrLDetailsLListTbl.setColumnSelectionAllowed(true);
+        hrLDetailsLListTbl.setGridColor(new java.awt.Color(178, 178, 178));
+        hrLDetailsLListTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
+        hrLDetailsLListTbl.getTableHeader().setReorderingAllowed(false);
+        hrLDetailsLListTbl.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                employeePylRecordTblMouseClicked(evt);
+                hrLDetailsLListTblMouseClicked(evt);
             }
         });
-        hrLDetailsLListBrdrScrlPnl.setViewportView(employeePylRecordTbl);
-        employeePylRecordTbl.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        hrLDetailsLListBrdrScrlPnl.setViewportView(hrLDetailsLListTbl);
+        hrLDetailsLListTbl.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        hrLDetailsLListTbl.getAccessibleContext().setAccessibleName("hrLDetailsLListTbl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -272,8 +267,8 @@ public class HRLeaveListUI extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addComponent(hrLDetailsLListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrLDetailsLListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 608, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addComponent(hrLDetailsLListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 603, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(hrLDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -291,21 +286,21 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         new EmployeeLeaveUI().setVisible(true);
     }//GEN-LAST:event_hrLDetailsLDetailsBtnActionPerformed
 
-    private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
+    private void hrLDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardUI().setVisible(true);
-    }//GEN-LAST:event_mainDashboardBtnActionPerformed
+    }//GEN-LAST:event_hrLDetailsMainDashboardBtnActionPerformed
 
     private void hrLDetailsLListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsLListBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hrLDetailsLListBtnActionPerformed
 
-    private void employeePylRecordTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeePylRecordTblMouseClicked
+    private void hrLDetailsLListTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hrLDetailsLListTblMouseClicked
         // TODO add your handling code here:
 
   
-    }//GEN-LAST:event_employeePylRecordTblMouseClicked
+    }//GEN-LAST:event_hrLDetailsLListTblMouseClicked
 
     /**
      * @param args the command line arguments
@@ -333,15 +328,14 @@ public class HRLeaveListUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane employeePylRecordBrdrScrlPnl;
-    private javax.swing.JTable employeePylRecordTbl;
     private javax.swing.JButton hrLDetailsLDetailsBtn;
     private javax.swing.JScrollPane hrLDetailsLListBrdrScrlPnl;
     private javax.swing.JButton hrLDetailsLListBtn;
     private javax.swing.JLabel hrLDetailsLListLbl;
     private javax.swing.JPanel hrLDetailsLListPnl;
+    private javax.swing.JTable hrLDetailsLListTbl;
+    private javax.swing.JButton hrLDetailsMainDashboardBtn;
     private javax.swing.JLabel hrLDetailsMotorPHIconImgLbl;
     private javax.swing.JPanel hrLDetailsSidebarPnl;
-    private javax.swing.JButton mainDashboardBtn;
     // End of variables declaration//GEN-END:variables
 }

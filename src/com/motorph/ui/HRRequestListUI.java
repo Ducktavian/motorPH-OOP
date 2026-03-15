@@ -13,7 +13,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(HRRequestListUI.class.getName());
 
     /**
-     * Creates new form HRRequestListFrame
+     * Creates new form HRRequestTableUI
      */
     public HRRequestListUI() {
         initComponents();
@@ -36,58 +36,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsRListPnl = new javax.swing.JPanel();
         hrRDetailsRListLbl = new javax.swing.JLabel();
         hrRDetailsRListBrdrScrlPnl = new javax.swing.JScrollPane();
-        hrRDetailsRListBrdrPnl = new javax.swing.JPanel();
-        hrRDetailsFARequestBrdrPnl1 = new javax.swing.JPanel();
-        hrRDetailsFARequestPnl = new javax.swing.JPanel();
-        hrRDetailsFARequestLbl1 = new javax.swing.JLabel();
-        hrRDetailsPositionLbl1 = new javax.swing.JLabel();
-        hrRDetailsENameFld1 = new javax.swing.JTextField();
-        hrRDetailsReasonLbl1 = new javax.swing.JLabel();
-        hrRDetailsStatusLbl1 = new javax.swing.JLabel();
-        hrRDetailsENumberFld1 = new javax.swing.JTextField();
-        hrRDetailsReasonFld1 = new javax.swing.JTextField();
-        hrRDetailsStatusFld1 = new javax.swing.JTextField();
-        hrRDetailsENumberLbl1 = new javax.swing.JLabel();
-        hrRDetailsENameLbl1 = new javax.swing.JLabel();
-        hrRDetailsPositionFld1 = new javax.swing.JTextField();
-        hrRDetailsOvertimeRBtn1 = new javax.swing.JRadioButton();
-        hrRDetailsUndertimeRBtn1 = new javax.swing.JRadioButton();
-        hrRDetailsApproveBtn1 = new javax.swing.JButton();
-        hrRDetailsDenyBtn1 = new javax.swing.JButton();
-        hrRDetailsFARequestBrdrPnl2 = new javax.swing.JPanel();
-        hrRDetailsFARequestPnl2 = new javax.swing.JPanel();
-        hrRDetailsFARequestLbl2 = new javax.swing.JLabel();
-        hrRDetailsPositionLbl2 = new javax.swing.JLabel();
-        hrRDetailsENameFld2 = new javax.swing.JTextField();
-        hrRDetailsReasonLbl2 = new javax.swing.JLabel();
-        hrRDetailsStatusLbl2 = new javax.swing.JLabel();
-        hrRDetailsENumberFld2 = new javax.swing.JTextField();
-        hrRDetailsReasonFld2 = new javax.swing.JTextField();
-        hrRDetailsStatusFld2 = new javax.swing.JTextField();
-        hrRDetailsENumberLbl2 = new javax.swing.JLabel();
-        hrRDetailsENameLbl2 = new javax.swing.JLabel();
-        hrRDetailsPositionFld2 = new javax.swing.JTextField();
-        hrRDetailsOvertimeRBtn2 = new javax.swing.JRadioButton();
-        hrRDetailsUndertimeRBtn2 = new javax.swing.JRadioButton();
-        hrRDetailsApproveBtn2 = new javax.swing.JButton();
-        hrRDetailsDenyBtn2 = new javax.swing.JButton();
-        hrRDetailsFARequestBrdrPnl3 = new javax.swing.JPanel();
-        hrRDetailsFARequestPnl3 = new javax.swing.JPanel();
-        hrRDetailsFARequestLbl3 = new javax.swing.JLabel();
-        hrRDetailsPositionLbl3 = new javax.swing.JLabel();
-        hrRDetailsENameFld3 = new javax.swing.JTextField();
-        hrRDetailsReasonLbl3 = new javax.swing.JLabel();
-        hrRDetailsStatusLbl3 = new javax.swing.JLabel();
-        hrRDetailsENumberFld3 = new javax.swing.JTextField();
-        hrRDetailsReasonFld3 = new javax.swing.JTextField();
-        hrRDetailsStatusFld3 = new javax.swing.JTextField();
-        hrRDetailsENumberLbl3 = new javax.swing.JLabel();
-        hrRDetailsENameLbl3 = new javax.swing.JLabel();
-        hrRDetailsPositionFld3 = new javax.swing.JTextField();
-        hrRDetailsOvertimeRBtn3 = new javax.swing.JRadioButton();
-        hrRDetailsUndertimeRBtn3 = new javax.swing.JRadioButton();
-        hrRDetailsApproveBtn = new javax.swing.JButton();
-        hrRDetailsDenyBtn3 = new javax.swing.JButton();
+        hrRDetailsRListTbl = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -144,15 +93,10 @@ public class HRRequestListUI extends javax.swing.JFrame {
                         .addComponent(hrRDetailsRDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(hrRDetailsRListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 319, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 354, Short.MAX_VALUE)
                 .addComponent(hrRDetailsMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39))
+                .addGap(18, 18, 18))
         );
-
-        hrRDetailsRDetailsBtn.getAccessibleContext().setAccessibleName("hrRDetailsRDetailsBtn");
-        hrRDetailsMainDashboardBtn.getAccessibleContext().setAccessibleName("hrRDetailsMainDashboardBtn");
-        hrRDetailsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("hrRDetailsMotorPHIconImgLbl");
-        hrRDetailsRListBtn.getAccessibleContext().setAccessibleName("hrRDetailsRListBtn");
 
         hrRDetailsRListPnl.setBackground(new java.awt.Color(30, 58, 138));
         hrRDetailsRListPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -163,708 +107,145 @@ public class HRRequestListUI extends javax.swing.JFrame {
         hrRDetailsRListLbl.setForeground(new java.awt.Color(255, 255, 255));
         hrRDetailsRListLbl.setText(" Request List");
         hrRDetailsRListPnl.add(hrRDetailsRListLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 170, 46));
-        hrRDetailsRListLbl.getAccessibleContext().setAccessibleName("hrRDetailsRListLbl");
 
         hrRDetailsRListBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
-        hrRDetailsRListBrdrScrlPnl.setPreferredSize(new java.awt.Dimension(1000, 700));
 
-        hrRDetailsRListBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
-        hrRDetailsRListBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
-        hrRDetailsRListBrdrPnl.setPreferredSize(new java.awt.Dimension(650, 930));
-
-        hrRDetailsFARequestBrdrPnl1.setBackground(new java.awt.Color(233, 233, 233));
-        hrRDetailsFARequestBrdrPnl1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsFARequestBrdrPnl1.setForeground(new java.awt.Color(178, 178, 178));
-        hrRDetailsFARequestBrdrPnl1.setEnabled(false);
-        hrRDetailsFARequestBrdrPnl1.setPreferredSize(new java.awt.Dimension(661, 257));
-
-        hrRDetailsFARequestPnl.setBackground(new java.awt.Color(146, 192, 253));
-        hrRDetailsFARequestPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsFARequestPnl.setForeground(new java.awt.Color(30, 58, 138));
-        hrRDetailsFARequestPnl.setPreferredSize(new java.awt.Dimension(126, 40));
-
-        hrRDetailsFARequestLbl1.setBackground(new java.awt.Color(255, 255, 255));
-        hrRDetailsFARequestLbl1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        hrRDetailsFARequestLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsFARequestLbl1.setText(" File A Request");
-        hrRDetailsFARequestLbl1.setToolTipText("");
-
-        javax.swing.GroupLayout hrRDetailsFARequestPnlLayout = new javax.swing.GroupLayout(hrRDetailsFARequestPnl);
-        hrRDetailsFARequestPnl.setLayout(hrRDetailsFARequestPnlLayout);
-        hrRDetailsFARequestPnlLayout.setHorizontalGroup(
-            hrRDetailsFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsFARequestPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hrRDetailsFARequestLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        hrRDetailsFARequestPnlLayout.setVerticalGroup(
-            hrRDetailsFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestPnlLayout.createSequentialGroup()
-                .addComponent(hrRDetailsFARequestLbl1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        hrRDetailsFARequestLbl1.getAccessibleContext().setAccessibleName("hrRDetailsFARequestLbl1");
-
-        hrRDetailsPositionLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsPositionLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionLbl1.setText("Position");
-
-        hrRDetailsENameFld1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameFld1.setText(" ");
-        hrRDetailsENameFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsENameFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameFld1.setEnabled(false);
-        hrRDetailsENameFld1.addActionListener(this::hrRDetailsENameFld1ActionPerformed);
-
-        hrRDetailsReasonLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsReasonLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonLbl1.setText("Reason");
-
-        hrRDetailsStatusLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsStatusLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusLbl1.setText("Status");
-
-        hrRDetailsENumberFld1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberFld1.setText(" ");
-        hrRDetailsENumberFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsENumberFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberFld1.setEnabled(false);
-        hrRDetailsENumberFld1.addActionListener(this::hrRDetailsENumberFld1ActionPerformed);
-
-        hrRDetailsReasonFld1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonFld1.setText(" ");
-        hrRDetailsReasonFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsReasonFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonFld1.setEnabled(false);
-        hrRDetailsReasonFld1.addActionListener(this::hrRDetailsReasonFld1ActionPerformed);
-
-        hrRDetailsStatusFld1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusFld1.setText(" ");
-        hrRDetailsStatusFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsStatusFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusFld1.setEnabled(false);
-        hrRDetailsStatusFld1.addActionListener(this::hrRDetailsStatusFld1ActionPerformed);
-
-        hrRDetailsENumberLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsENumberLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberLbl1.setText("Employee #");
-
-        hrRDetailsENameLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsENameLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameLbl1.setText("Employee Name");
-
-        hrRDetailsPositionFld1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionFld1.setText(" ");
-        hrRDetailsPositionFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsPositionFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionFld1.setEnabled(false);
-        hrRDetailsPositionFld1.addActionListener(this::hrRDetailsPositionFld1ActionPerformed);
-
-        hrRDetailsOvertimeRBtn1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsOvertimeRBtn1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsOvertimeRBtn1.setText("Overtime");
-        hrRDetailsOvertimeRBtn1.setEnabled(false);
-        hrRDetailsOvertimeRBtn1.addActionListener(this::hrRDetailsOvertimeRBtn1ActionPerformed);
-
-        hrRDetailsUndertimeRBtn1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsUndertimeRBtn1.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsUndertimeRBtn1.setText("Undertime");
-        hrRDetailsUndertimeRBtn1.setEnabled(false);
-
-        hrRDetailsApproveBtn1.setBackground(new java.awt.Color(34, 197, 94));
-        hrRDetailsApproveBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        hrRDetailsApproveBtn1.setForeground(new java.awt.Color(255, 255, 255));
-        hrRDetailsApproveBtn1.setText("Approve");
-        hrRDetailsApproveBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrRDetailsApproveBtn1.addActionListener(this::hrRDetailsApproveBtn1ActionPerformed);
-
-        hrRDetailsDenyBtn1.setBackground(new java.awt.Color(239, 68, 68));
-        hrRDetailsDenyBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        hrRDetailsDenyBtn1.setForeground(new java.awt.Color(255, 255, 255));
-        hrRDetailsDenyBtn1.setText("Deny");
-        hrRDetailsDenyBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrRDetailsDenyBtn1.addActionListener(this::hrRDetailsDenyBtn1ActionPerformed);
-
-        javax.swing.GroupLayout hrRDetailsFARequestBrdrPnl1Layout = new javax.swing.GroupLayout(hrRDetailsFARequestBrdrPnl1);
-        hrRDetailsFARequestBrdrPnl1.setLayout(hrRDetailsFARequestBrdrPnl1Layout);
-        hrRDetailsFARequestBrdrPnl1Layout.setHorizontalGroup(
-            hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(hrRDetailsReasonFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                            .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(hrRDetailsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(46, 46, 46)
-                            .addComponent(hrRDetailsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(hrRDetailsENameLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(hrRDetailsENumberLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                            .addGap(0, 0, Short.MAX_VALUE)
-                                            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(hrRDetailsOvertimeRBtn1)
-                                                .addComponent(hrRDetailsENumberFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addComponent(hrRDetailsENameFld1))
-                                    .addGap(34, 34, 34))
-                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                    .addComponent(hrRDetailsReasonLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(280, 280, 280)))
-                            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(hrRDetailsStatusLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(hrRDetailsPositionLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                            .addGap(16, 16, 16)
-                                            .addComponent(hrRDetailsStatusFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(hrRDetailsPositionFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addComponent(hrRDetailsUndertimeRBtn1)))))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
-        hrRDetailsFARequestBrdrPnl1Layout.setVerticalGroup(
-            hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(hrRDetailsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(hrRDetailsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrRDetailsENameFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrRDetailsENameLbl1)
-                    .addComponent(hrRDetailsStatusLbl1)
-                    .addComponent(hrRDetailsStatusFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(hrRDetailsENumberFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(hrRDetailsENumberLbl1)
-                        .addComponent(hrRDetailsPositionLbl1))
-                    .addComponent(hrRDetailsPositionFld1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                        .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrRDetailsOvertimeRBtn1)
-                            .addComponent(hrRDetailsUndertimeRBtn1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE))
-                    .addGroup(hrRDetailsFARequestBrdrPnl1Layout.createSequentialGroup()
-                        .addGap(0, 22, Short.MAX_VALUE)
-                        .addComponent(hrRDetailsReasonLbl1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(hrRDetailsReasonFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34))
-        );
-
-        hrRDetailsFARequestPnl.getAccessibleContext().setAccessibleName("hrRDetailsFARequestPnl1");
-        hrRDetailsPositionLbl1.getAccessibleContext().setAccessibleName("hrRDetailsPositionLbl1");
-        hrRDetailsPositionLbl1.getAccessibleContext().setAccessibleDescription("");
-        hrRDetailsENameFld1.getAccessibleContext().setAccessibleName("hrRDetailsENameFld1");
-        hrRDetailsReasonLbl1.getAccessibleContext().setAccessibleName("hrRDetailsReasonLbl1");
-        hrRDetailsStatusLbl1.getAccessibleContext().setAccessibleName("hrRDetailsStatusLbl1");
-        hrRDetailsENumberFld1.getAccessibleContext().setAccessibleName("hrRDetailsENumberFld1");
-        hrRDetailsReasonFld1.getAccessibleContext().setAccessibleName("hrRDetailsReasonFld1");
-        hrRDetailsStatusFld1.getAccessibleContext().setAccessibleName("hrRDetailsStatusFld1");
-        hrRDetailsENumberLbl1.getAccessibleContext().setAccessibleName("hrRDetailsENumberLbl1");
-        hrRDetailsENameLbl1.getAccessibleContext().setAccessibleName("hrRDetailsENameLbl1");
-        hrRDetailsPositionFld1.getAccessibleContext().setAccessibleName("hrRDetailsPositionFld1");
-        hrRDetailsOvertimeRBtn1.getAccessibleContext().setAccessibleName("hrRDetailsOvertimeRBtn1");
-        hrRDetailsUndertimeRBtn1.getAccessibleContext().setAccessibleName("hrRDetailsUndertimeRBtn1");
-        hrRDetailsApproveBtn1.getAccessibleContext().setAccessibleName("hrRDetailsApproveBtn1");
-        hrRDetailsDenyBtn1.getAccessibleContext().setAccessibleName("hrRDetailsDenyBtn1");
-
-        hrRDetailsFARequestBrdrPnl2.setBackground(new java.awt.Color(233, 233, 233));
-        hrRDetailsFARequestBrdrPnl2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsFARequestBrdrPnl2.setForeground(new java.awt.Color(178, 178, 178));
-        hrRDetailsFARequestBrdrPnl2.setEnabled(false);
-        hrRDetailsFARequestBrdrPnl2.setPreferredSize(new java.awt.Dimension(661, 257));
-
-        hrRDetailsFARequestPnl2.setBackground(new java.awt.Color(146, 192, 253));
-        hrRDetailsFARequestPnl2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsFARequestPnl2.setForeground(new java.awt.Color(30, 58, 138));
-        hrRDetailsFARequestPnl2.setPreferredSize(new java.awt.Dimension(126, 40));
-
-        hrRDetailsFARequestLbl2.setBackground(new java.awt.Color(255, 255, 255));
-        hrRDetailsFARequestLbl2.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        hrRDetailsFARequestLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsFARequestLbl2.setText(" File A Request");
-        hrRDetailsFARequestLbl2.setToolTipText("");
-
-        javax.swing.GroupLayout hrRDetailsFARequestPnl2Layout = new javax.swing.GroupLayout(hrRDetailsFARequestPnl2);
-        hrRDetailsFARequestPnl2.setLayout(hrRDetailsFARequestPnl2Layout);
-        hrRDetailsFARequestPnl2Layout.setHorizontalGroup(
-            hrRDetailsFARequestPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsFARequestPnl2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hrRDetailsFARequestLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        hrRDetailsFARequestPnl2Layout.setVerticalGroup(
-            hrRDetailsFARequestPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestPnl2Layout.createSequentialGroup()
-                .addComponent(hrRDetailsFARequestLbl2, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        hrRDetailsFARequestLbl2.getAccessibleContext().setAccessibleName("hrRDetailsFARequestLbl2");
-
-        hrRDetailsPositionLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsPositionLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionLbl2.setText("Position");
-
-        hrRDetailsENameFld2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameFld2.setText(" ");
-        hrRDetailsENameFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsENameFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameFld2.setEnabled(false);
-        hrRDetailsENameFld2.addActionListener(this::hrRDetailsENameFld2ActionPerformed);
-
-        hrRDetailsReasonLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsReasonLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonLbl2.setText("Reason");
-
-        hrRDetailsStatusLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsStatusLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusLbl2.setText("Status");
-
-        hrRDetailsENumberFld2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberFld2.setText(" ");
-        hrRDetailsENumberFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsENumberFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberFld2.setEnabled(false);
-        hrRDetailsENumberFld2.addActionListener(this::hrRDetailsENumberFld2ActionPerformed);
-
-        hrRDetailsReasonFld2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonFld2.setText(" ");
-        hrRDetailsReasonFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsReasonFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonFld2.setEnabled(false);
-        hrRDetailsReasonFld2.addActionListener(this::hrRDetailsReasonFld2ActionPerformed);
-
-        hrRDetailsStatusFld2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusFld2.setText(" ");
-        hrRDetailsStatusFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsStatusFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusFld2.setEnabled(false);
-        hrRDetailsStatusFld2.addActionListener(this::hrRDetailsStatusFld2ActionPerformed);
-
-        hrRDetailsENumberLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsENumberLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberLbl2.setText("Employee #");
-
-        hrRDetailsENameLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsENameLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameLbl2.setText("Employee Name");
-
-        hrRDetailsPositionFld2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionFld2.setText(" ");
-        hrRDetailsPositionFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsPositionFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionFld2.setEnabled(false);
-        hrRDetailsPositionFld2.addActionListener(this::hrRDetailsPositionFld2ActionPerformed);
-
-        hrRDetailsOvertimeRBtn2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsOvertimeRBtn2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsOvertimeRBtn2.setText("Overtime");
-        hrRDetailsOvertimeRBtn2.setEnabled(false);
-        hrRDetailsOvertimeRBtn2.addActionListener(this::hrRDetailsOvertimeRBtn2ActionPerformed);
-
-        hrRDetailsUndertimeRBtn2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsUndertimeRBtn2.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsUndertimeRBtn2.setText("Undertime");
-        hrRDetailsUndertimeRBtn2.setEnabled(false);
-
-        hrRDetailsApproveBtn2.setBackground(new java.awt.Color(34, 197, 94));
-        hrRDetailsApproveBtn2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        hrRDetailsApproveBtn2.setForeground(new java.awt.Color(255, 255, 255));
-        hrRDetailsApproveBtn2.setText("Approve");
-        hrRDetailsApproveBtn2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrRDetailsApproveBtn2.addActionListener(this::hrRDetailsApproveBtn2ActionPerformed);
-
-        hrRDetailsDenyBtn2.setBackground(new java.awt.Color(239, 68, 68));
-        hrRDetailsDenyBtn2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        hrRDetailsDenyBtn2.setForeground(new java.awt.Color(255, 255, 255));
-        hrRDetailsDenyBtn2.setText("Deny");
-        hrRDetailsDenyBtn2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrRDetailsDenyBtn2.addActionListener(this::hrRDetailsDenyBtn2ActionPerformed);
-
-        javax.swing.GroupLayout hrRDetailsFARequestBrdrPnl2Layout = new javax.swing.GroupLayout(hrRDetailsFARequestBrdrPnl2);
-        hrRDetailsFARequestBrdrPnl2.setLayout(hrRDetailsFARequestBrdrPnl2Layout);
-        hrRDetailsFARequestBrdrPnl2Layout.setHorizontalGroup(
-            hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                        .addComponent(hrRDetailsFARequestPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(hrRDetailsApproveBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46)
-                        .addComponent(hrRDetailsDenyBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                        .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                                .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrRDetailsENameLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrRDetailsENumberLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(hrRDetailsOvertimeRBtn2)
-                                            .addComponent(hrRDetailsENumberFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(hrRDetailsENameFld2))
-                                .addGap(34, 34, 34))
-                            .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                                .addComponent(hrRDetailsReasonLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(280, 280, 280)))
-                        .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                                .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrRDetailsStatusLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrRDetailsPositionLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                                        .addGap(16, 16, 16)
-                                        .addComponent(hrRDetailsStatusFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(hrRDetailsPositionFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addComponent(hrRDetailsUndertimeRBtn2)))
-                    .addComponent(hrRDetailsReasonFld2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
-        hrRDetailsFARequestBrdrPnl2Layout.setVerticalGroup(
-            hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(hrRDetailsFARequestPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(hrRDetailsDenyBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(hrRDetailsApproveBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrRDetailsENameFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrRDetailsENameLbl2)
-                    .addComponent(hrRDetailsStatusLbl2)
-                    .addComponent(hrRDetailsStatusFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(hrRDetailsENumberFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(hrRDetailsENumberLbl2)
-                        .addComponent(hrRDetailsPositionLbl2))
-                    .addComponent(hrRDetailsPositionFld2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrRDetailsOvertimeRBtn2)
-                            .addComponent(hrRDetailsUndertimeRBtn2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(hrRDetailsFARequestBrdrPnl2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                        .addComponent(hrRDetailsReasonLbl2)
-                        .addGap(12, 12, 12)))
-                .addComponent(hrRDetailsReasonFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
-        );
-
-        hrRDetailsFARequestPnl2.getAccessibleContext().setAccessibleName("hrRDetailsFARequestPnl2");
-        hrRDetailsPositionLbl2.getAccessibleContext().setAccessibleName("hrRDetailsPositionLbl2");
-        hrRDetailsENameFld2.getAccessibleContext().setAccessibleName("hrRDetailsENameFld2");
-        hrRDetailsReasonLbl2.getAccessibleContext().setAccessibleName("hrRDetailsReasonLbl2");
-        hrRDetailsStatusLbl2.getAccessibleContext().setAccessibleName("hrRDetailsStatusLbl2");
-        hrRDetailsENumberFld2.getAccessibleContext().setAccessibleName("hrRDetailsENumberFld2");
-        hrRDetailsReasonFld2.getAccessibleContext().setAccessibleName("hrRDetailsReasonFld2");
-        hrRDetailsStatusFld2.getAccessibleContext().setAccessibleName("hrRDetailsStatusFld2");
-        hrRDetailsENumberLbl2.getAccessibleContext().setAccessibleName("hrRDetailsENumberLbl2");
-        hrRDetailsENameLbl2.getAccessibleContext().setAccessibleName("hrRDetailsENameLbl2");
-        hrRDetailsPositionFld2.getAccessibleContext().setAccessibleName("hrRDetailsPositionFld2");
-        hrRDetailsOvertimeRBtn2.getAccessibleContext().setAccessibleName("hrRDetailsOvertimeRBtn2");
-        hrRDetailsUndertimeRBtn2.getAccessibleContext().setAccessibleName("hrRDetailsUndertimeRBtn2");
-        hrRDetailsApproveBtn2.getAccessibleContext().setAccessibleName("hrRDetailsApproveBtn2");
-        hrRDetailsDenyBtn2.getAccessibleContext().setAccessibleName("hrRDetailsDenyBtn2");
-
-        hrRDetailsFARequestBrdrPnl3.setBackground(new java.awt.Color(233, 233, 233));
-        hrRDetailsFARequestBrdrPnl3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsFARequestBrdrPnl3.setForeground(new java.awt.Color(178, 178, 178));
-        hrRDetailsFARequestBrdrPnl3.setEnabled(false);
-        hrRDetailsFARequestBrdrPnl3.setPreferredSize(new java.awt.Dimension(661, 257));
-
-        hrRDetailsFARequestPnl3.setBackground(new java.awt.Color(146, 192, 253));
-        hrRDetailsFARequestPnl3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsFARequestPnl3.setForeground(new java.awt.Color(30, 58, 138));
-        hrRDetailsFARequestPnl3.setPreferredSize(new java.awt.Dimension(126, 40));
-
-        hrRDetailsFARequestLbl3.setBackground(new java.awt.Color(255, 255, 255));
-        hrRDetailsFARequestLbl3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        hrRDetailsFARequestLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsFARequestLbl3.setText(" File A Request");
-        hrRDetailsFARequestLbl3.setToolTipText("");
-
-        javax.swing.GroupLayout hrRDetailsFARequestPnl3Layout = new javax.swing.GroupLayout(hrRDetailsFARequestPnl3);
-        hrRDetailsFARequestPnl3.setLayout(hrRDetailsFARequestPnl3Layout);
-        hrRDetailsFARequestPnl3Layout.setHorizontalGroup(
-            hrRDetailsFARequestPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsFARequestPnl3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hrRDetailsFARequestLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        hrRDetailsFARequestPnl3Layout.setVerticalGroup(
-            hrRDetailsFARequestPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestPnl3Layout.createSequentialGroup()
-                .addComponent(hrRDetailsFARequestLbl3, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        hrRDetailsFARequestLbl3.getAccessibleContext().setAccessibleName("hrRDetailsFARequestLbl3");
-
-        hrRDetailsPositionLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsPositionLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionLbl3.setText("Position");
-
-        hrRDetailsENameFld3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameFld3.setText(" ");
-        hrRDetailsENameFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsENameFld3.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameFld3.setEnabled(false);
-        hrRDetailsENameFld3.addActionListener(this::hrRDetailsENameFld3ActionPerformed);
-
-        hrRDetailsReasonLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsReasonLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonLbl3.setText("Reason");
-
-        hrRDetailsStatusLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsStatusLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusLbl3.setText("Status");
-
-        hrRDetailsENumberFld3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberFld3.setText(" ");
-        hrRDetailsENumberFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsENumberFld3.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberFld3.setEnabled(false);
-        hrRDetailsENumberFld3.addActionListener(this::hrRDetailsENumberFld3ActionPerformed);
-
-        hrRDetailsReasonFld3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonFld3.setText(" ");
-        hrRDetailsReasonFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsReasonFld3.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsReasonFld3.setEnabled(false);
-        hrRDetailsReasonFld3.addActionListener(this::hrRDetailsReasonFld3ActionPerformed);
-
-        hrRDetailsStatusFld3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusFld3.setText(" ");
-        hrRDetailsStatusFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsStatusFld3.setCaretColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsStatusFld3.setEnabled(false);
-        hrRDetailsStatusFld3.addActionListener(this::hrRDetailsStatusFld3ActionPerformed);
-
-        hrRDetailsENumberLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsENumberLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENumberLbl3.setText("Employee #");
-
-        hrRDetailsENameLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsENameLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsENameLbl3.setText("Employee Name");
-
-        hrRDetailsPositionFld3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionFld3.setText(" ");
-        hrRDetailsPositionFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsPositionFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        hrRDetailsPositionFld3.setEnabled(false);
-        hrRDetailsPositionFld3.addActionListener(this::hrRDetailsPositionFld3ActionPerformed);
-
-        hrRDetailsOvertimeRBtn3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsOvertimeRBtn3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsOvertimeRBtn3.setText("Overtime");
-        hrRDetailsOvertimeRBtn3.setEnabled(false);
-        hrRDetailsOvertimeRBtn3.addActionListener(this::hrRDetailsOvertimeRBtn3ActionPerformed);
-
-        hrRDetailsUndertimeRBtn3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrRDetailsUndertimeRBtn3.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsUndertimeRBtn3.setText("Undertime");
-        hrRDetailsUndertimeRBtn3.setEnabled(false);
-
-        hrRDetailsApproveBtn.setBackground(new java.awt.Color(34, 197, 94));
-        hrRDetailsApproveBtn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        hrRDetailsApproveBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrRDetailsApproveBtn.setText("Approve");
-        hrRDetailsApproveBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrRDetailsApproveBtn.addActionListener(this::hrRDetailsApproveBtnActionPerformed);
-
-        hrRDetailsDenyBtn3.setBackground(new java.awt.Color(239, 68, 68));
-        hrRDetailsDenyBtn3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        hrRDetailsDenyBtn3.setForeground(new java.awt.Color(255, 255, 255));
-        hrRDetailsDenyBtn3.setText("Deny");
-        hrRDetailsDenyBtn3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrRDetailsDenyBtn3.addActionListener(this::hrRDetailsDenyBtn3ActionPerformed);
-
-        javax.swing.GroupLayout hrRDetailsFARequestBrdrPnl3Layout = new javax.swing.GroupLayout(hrRDetailsFARequestBrdrPnl3);
-        hrRDetailsFARequestBrdrPnl3.setLayout(hrRDetailsFARequestBrdrPnl3Layout);
-        hrRDetailsFARequestBrdrPnl3Layout.setHorizontalGroup(
-            hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                        .addComponent(hrRDetailsFARequestPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(hrRDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46)
-                        .addComponent(hrRDetailsDenyBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                        .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                                .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrRDetailsENameLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrRDetailsENumberLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(hrRDetailsOvertimeRBtn3)
-                                            .addComponent(hrRDetailsENumberFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(hrRDetailsENameFld3))
-                                .addGap(34, 34, 34))
-                            .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                                .addComponent(hrRDetailsReasonLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(280, 280, 280)))
-                        .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                                .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hrRDetailsStatusLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(hrRDetailsPositionLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                                        .addGap(16, 16, 16)
-                                        .addComponent(hrRDetailsStatusFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(hrRDetailsPositionFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addComponent(hrRDetailsUndertimeRBtn3)))
-                    .addComponent(hrRDetailsReasonFld3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
-        hrRDetailsFARequestBrdrPnl3Layout.setVerticalGroup(
-            hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(hrRDetailsFARequestPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(hrRDetailsDenyBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(hrRDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrRDetailsENameFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrRDetailsENameLbl3)
-                    .addComponent(hrRDetailsStatusLbl3)
-                    .addComponent(hrRDetailsStatusFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(hrRDetailsENumberFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(hrRDetailsENumberLbl3)
-                        .addComponent(hrRDetailsPositionLbl3))
-                    .addComponent(hrRDetailsPositionFld3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrRDetailsOvertimeRBtn3)
-                            .addComponent(hrRDetailsUndertimeRBtn3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(hrRDetailsFARequestBrdrPnl3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                        .addComponent(hrRDetailsReasonLbl3)
-                        .addGap(12, 12, 12)))
-                .addComponent(hrRDetailsReasonFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
-        );
-
-        hrRDetailsFARequestPnl3.getAccessibleContext().setAccessibleName("hrRDetailsFARequestPnl3");
-        hrRDetailsPositionLbl3.getAccessibleContext().setAccessibleName("hrRDetailsPositionLbl3");
-        hrRDetailsENameFld3.getAccessibleContext().setAccessibleName("hrRDetailsENameFld3");
-        hrRDetailsReasonLbl3.getAccessibleContext().setAccessibleName("hrRDetailsReasonLbl3");
-        hrRDetailsStatusLbl3.getAccessibleContext().setAccessibleName("hrRDetailsStatusLbl3");
-        hrRDetailsENumberFld3.getAccessibleContext().setAccessibleName("hrRDetailsENumberFld3");
-        hrRDetailsReasonFld3.getAccessibleContext().setAccessibleName("hrRDetailsReasonFld3");
-        hrRDetailsStatusFld3.getAccessibleContext().setAccessibleName("hrRDetailsStatusFld3");
-        hrRDetailsENumberLbl3.getAccessibleContext().setAccessibleName("hrRDetailsENumberLbl3");
-        hrRDetailsENameLbl3.getAccessibleContext().setAccessibleName("hrRDetailsENameLbl3");
-        hrRDetailsPositionFld3.getAccessibleContext().setAccessibleName("hrRDetailsPositionFld3");
-        hrRDetailsOvertimeRBtn3.getAccessibleContext().setAccessibleName("hrRDetailsOvertimeRBtn3");
-        hrRDetailsUndertimeRBtn3.getAccessibleContext().setAccessibleName("hrRDetailsUndertimeRBtn3");
-        hrRDetailsApproveBtn.getAccessibleContext().setAccessibleName("hrRDetailsApproveBtn3");
-        hrRDetailsDenyBtn3.getAccessibleContext().setAccessibleName("hrRDetailsDenyBtn3");
-
-        javax.swing.GroupLayout hrRDetailsRListBrdrPnlLayout = new javax.swing.GroupLayout(hrRDetailsRListBrdrPnl);
-        hrRDetailsRListBrdrPnl.setLayout(hrRDetailsRListBrdrPnlLayout);
-        hrRDetailsRListBrdrPnlLayout.setHorizontalGroup(
-            hrRDetailsRListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsRListBrdrPnlLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(hrRDetailsRListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrRDetailsFARequestBrdrPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrRDetailsFARequestBrdrPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrRDetailsFARequestBrdrPnl1, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
-        );
-        hrRDetailsRListBrdrPnlLayout.setVerticalGroup(
-            hrRDetailsRListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsRListBrdrPnlLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(hrRDetailsFARequestBrdrPnl1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrRDetailsFARequestBrdrPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrRDetailsFARequestBrdrPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
-
-        hrRDetailsFARequestBrdrPnl1.getAccessibleContext().setAccessibleName("hrRDetailsFARequestBrdrPnl1");
-        hrRDetailsFARequestBrdrPnl2.getAccessibleContext().setAccessibleName("hrRDetailsFARequestBrdrPnl2");
-        hrRDetailsFARequestBrdrPnl3.getAccessibleContext().setAccessibleName("hrRDetailsFARequestBrdrPnl3");
-
-        hrRDetailsRListBrdrScrlPnl.setViewportView(hrRDetailsRListBrdrPnl);
-        hrRDetailsRListBrdrPnl.getAccessibleContext().setAccessibleName("hrRDetailsRListBrdrPnl");
+        hrRDetailsRListTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsRListTbl.setForeground(new java.awt.Color(30, 42, 56));
+        hrRDetailsRListTbl.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Employee #", "Employee Name", "Request Details"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, true, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        hrRDetailsRListTbl.setColumnSelectionAllowed(true);
+        hrRDetailsRListTbl.setGridColor(new java.awt.Color(178, 178, 178));
+        hrRDetailsRListTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
+        hrRDetailsRListTbl.getTableHeader().setReorderingAllowed(false);
+        hrRDetailsRListTbl.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                hrRDetailsRListTblMouseClicked(evt);
+            }
+        });
+        hrRDetailsRListBrdrScrlPnl.setViewportView(hrRDetailsRListTbl);
+        hrRDetailsRListTbl.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        hrRDetailsRListTbl.getAccessibleContext().setAccessibleName("hrRDetailsRListTbl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -872,28 +253,25 @@ public class HRRequestListUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(hrRDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(hrRDetailsRListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrRDetailsRListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addComponent(hrRDetailsRListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 711, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(hrRDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrRDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(hrRDetailsRListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(hrRDetailsRListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(14, 14, 14))
+                .addGap(14, 14, 14)
+                .addComponent(hrRDetailsRListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(hrRDetailsRListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        hrRDetailsSidebarPnl.getAccessibleContext().setAccessibleName("hrRDetailsSidebarPnl");
-        hrRDetailsRListPnl.getAccessibleContext().setAccessibleName("hrRDetailsRListPnl");
         hrRDetailsRListBrdrScrlPnl.getAccessibleContext().setAccessibleName("hrRDetailsRListBrdrScrlPnl");
+        hrRDetailsRListBrdrScrlPnl.getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -908,105 +286,14 @@ public class HRRequestListUI extends javax.swing.JFrame {
         new MainDashboardUI().setVisible(true);
     }//GEN-LAST:event_hrRDetailsMainDashboardBtnActionPerformed
 
-    private void hrRDetailsENameFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsENameFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsENameFld1ActionPerformed
-
-    private void hrRDetailsENumberFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsENumberFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsENumberFld1ActionPerformed
-
-    private void hrRDetailsReasonFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsReasonFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsReasonFld1ActionPerformed
-
-    private void hrRDetailsStatusFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsStatusFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsStatusFld1ActionPerformed
-
-    private void hrRDetailsPositionFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsPositionFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsPositionFld1ActionPerformed
-
-    private void hrRDetailsApproveBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsApproveBtn1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsApproveBtn1ActionPerformed
-
-    private void hrRDetailsDenyBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsDenyBtn1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsDenyBtn1ActionPerformed
-
-    private void hrRDetailsOvertimeRBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsOvertimeRBtn1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsOvertimeRBtn1ActionPerformed
-
-    private void hrRDetailsENameFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsENameFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsENameFld2ActionPerformed
-
-    private void hrRDetailsENumberFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsENumberFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsENumberFld2ActionPerformed
-
-    private void hrRDetailsReasonFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsReasonFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsReasonFld2ActionPerformed
-
-    private void hrRDetailsStatusFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsStatusFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsStatusFld2ActionPerformed
-
-    private void hrRDetailsPositionFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsPositionFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsPositionFld2ActionPerformed
-
-    private void hrRDetailsOvertimeRBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsOvertimeRBtn2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsOvertimeRBtn2ActionPerformed
-
-    private void hrRDetailsApproveBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsApproveBtn2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsApproveBtn2ActionPerformed
-
-    private void hrRDetailsDenyBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsDenyBtn2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsDenyBtn2ActionPerformed
-
-    private void hrRDetailsENameFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsENameFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsENameFld3ActionPerformed
-
-    private void hrRDetailsENumberFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsENumberFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsENumberFld3ActionPerformed
-
-    private void hrRDetailsReasonFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsReasonFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsReasonFld3ActionPerformed
-
-    private void hrRDetailsStatusFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsStatusFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsStatusFld3ActionPerformed
-
-    private void hrRDetailsPositionFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsPositionFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsPositionFld3ActionPerformed
-
-    private void hrRDetailsOvertimeRBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsOvertimeRBtn3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsOvertimeRBtn3ActionPerformed
-
-    private void hrRDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsApproveBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsApproveBtnActionPerformed
-
-    private void hrRDetailsDenyBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsDenyBtn3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsDenyBtn3ActionPerformed
-
     private void hrRDetailsRListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsRListBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hrRDetailsRListBtnActionPerformed
+
+    private void hrRDetailsRListTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hrRDetailsRListTblMouseClicked
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_hrRDetailsRListTblMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1034,65 +321,14 @@ public class HRRequestListUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton hrRDetailsApproveBtn;
-    private javax.swing.JButton hrRDetailsApproveBtn1;
-    private javax.swing.JButton hrRDetailsApproveBtn2;
-    private javax.swing.JButton hrRDetailsDenyBtn1;
-    private javax.swing.JButton hrRDetailsDenyBtn2;
-    private javax.swing.JButton hrRDetailsDenyBtn3;
-    private javax.swing.JTextField hrRDetailsENameFld1;
-    private javax.swing.JTextField hrRDetailsENameFld2;
-    private javax.swing.JTextField hrRDetailsENameFld3;
-    private javax.swing.JLabel hrRDetailsENameLbl1;
-    private javax.swing.JLabel hrRDetailsENameLbl2;
-    private javax.swing.JLabel hrRDetailsENameLbl3;
-    private javax.swing.JTextField hrRDetailsENumberFld1;
-    private javax.swing.JTextField hrRDetailsENumberFld2;
-    private javax.swing.JTextField hrRDetailsENumberFld3;
-    private javax.swing.JLabel hrRDetailsENumberLbl1;
-    private javax.swing.JLabel hrRDetailsENumberLbl2;
-    private javax.swing.JLabel hrRDetailsENumberLbl3;
-    private javax.swing.JPanel hrRDetailsFARequestBrdrPnl1;
-    private javax.swing.JPanel hrRDetailsFARequestBrdrPnl2;
-    private javax.swing.JPanel hrRDetailsFARequestBrdrPnl3;
-    private javax.swing.JLabel hrRDetailsFARequestLbl1;
-    private javax.swing.JLabel hrRDetailsFARequestLbl2;
-    private javax.swing.JLabel hrRDetailsFARequestLbl3;
-    private javax.swing.JPanel hrRDetailsFARequestPnl;
-    private javax.swing.JPanel hrRDetailsFARequestPnl2;
-    private javax.swing.JPanel hrRDetailsFARequestPnl3;
     private javax.swing.JButton hrRDetailsMainDashboardBtn;
     private javax.swing.JLabel hrRDetailsMotorPHIconImgLbl;
-    private javax.swing.JRadioButton hrRDetailsOvertimeRBtn1;
-    private javax.swing.JRadioButton hrRDetailsOvertimeRBtn2;
-    private javax.swing.JRadioButton hrRDetailsOvertimeRBtn3;
-    private javax.swing.JTextField hrRDetailsPositionFld1;
-    private javax.swing.JTextField hrRDetailsPositionFld2;
-    private javax.swing.JTextField hrRDetailsPositionFld3;
-    private javax.swing.JLabel hrRDetailsPositionLbl1;
-    private javax.swing.JLabel hrRDetailsPositionLbl2;
-    private javax.swing.JLabel hrRDetailsPositionLbl3;
     private javax.swing.JButton hrRDetailsRDetailsBtn;
-    private javax.swing.JPanel hrRDetailsRListBrdrPnl;
     private javax.swing.JScrollPane hrRDetailsRListBrdrScrlPnl;
     private javax.swing.JButton hrRDetailsRListBtn;
     private javax.swing.JLabel hrRDetailsRListLbl;
     private javax.swing.JPanel hrRDetailsRListPnl;
-    private javax.swing.JTextField hrRDetailsReasonFld1;
-    private javax.swing.JTextField hrRDetailsReasonFld2;
-    private javax.swing.JTextField hrRDetailsReasonFld3;
-    private javax.swing.JLabel hrRDetailsReasonLbl1;
-    private javax.swing.JLabel hrRDetailsReasonLbl2;
-    private javax.swing.JLabel hrRDetailsReasonLbl3;
+    private javax.swing.JTable hrRDetailsRListTbl;
     private javax.swing.JPanel hrRDetailsSidebarPnl;
-    private javax.swing.JTextField hrRDetailsStatusFld1;
-    private javax.swing.JTextField hrRDetailsStatusFld2;
-    private javax.swing.JTextField hrRDetailsStatusFld3;
-    private javax.swing.JLabel hrRDetailsStatusLbl1;
-    private javax.swing.JLabel hrRDetailsStatusLbl2;
-    private javax.swing.JLabel hrRDetailsStatusLbl3;
-    private javax.swing.JRadioButton hrRDetailsUndertimeRBtn1;
-    private javax.swing.JRadioButton hrRDetailsUndertimeRBtn2;
-    private javax.swing.JRadioButton hrRDetailsUndertimeRBtn3;
     // End of variables declaration//GEN-END:variables
 }
