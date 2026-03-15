@@ -28,29 +28,20 @@ public class NewMainDash extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        LoginBrdrPnl = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
         LoginMotorPHBackgroundImgLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        LoginBrdrPnl.setBackground(new java.awt.Color(245, 247, 250));
+        jButton1.setBackground(new java.awt.Color(30, 42, 56));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Dashboard");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 160, 50));
 
-        javax.swing.GroupLayout LoginBrdrPnlLayout = new javax.swing.GroupLayout(LoginBrdrPnl);
-        LoginBrdrPnl.setLayout(LoginBrdrPnlLayout);
-        LoginBrdrPnlLayout.setHorizontalGroup(
-            LoginBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
-        );
-        LoginBrdrPnlLayout.setVerticalGroup(
-            LoginBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(LoginBrdrPnl, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 380, 400));
-
-        LoginMotorPHBackgroundImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHBackgroundImg.png"))); // NOI18N
-        getContentPane().add(LoginMotorPHBackgroundImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        LoginMotorPHBackgroundImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MainDashboardImg.png"))); // NOI18N
+        getContentPane().add(LoginMotorPHBackgroundImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -81,7 +72,7 @@ public class NewMainDash extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel LoginBrdrPnl;
     private javax.swing.JLabel LoginMotorPHBackgroundImgLbl;
+    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
