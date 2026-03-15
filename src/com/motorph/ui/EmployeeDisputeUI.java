@@ -45,6 +45,8 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
         employeeDisputeReasonLbl = new javax.swing.JLabel();
         employeeDisputeReasonFld = new javax.swing.JTextField();
         employeeDisputeSubmitBtn = new javax.swing.JButton();
+        employeeDisputeDateDtChsr = new com.toedter.calendar.JDateChooser();
+        employeeDisputeDateLbl = new javax.swing.JLabel();
         employeeDisputeRecordBrdrPnl = new javax.swing.JPanel();
         employeeDisputeRecordsScrlPnl = new javax.swing.JScrollPane();
         employeeDisputeRecordsTbl = new javax.swing.JTable();
@@ -218,6 +220,13 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
         employeeDisputeSubmitBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
         employeeDisputeSubmitBtn.addActionListener(this::employeeDisputeSubmitBtnActionPerformed);
 
+        employeeDisputeDateDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeDisputeDateDtChsr.setForeground(new java.awt.Color(31, 41, 55));
+
+        employeeDisputeDateLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        employeeDisputeDateLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeDisputeDateLbl.setText("Date");
+
         javax.swing.GroupLayout employeeDisputeFADisputeBrdrPnlLayout = new javax.swing.GroupLayout(employeeDisputeFADisputeBrdrPnl);
         employeeDisputeFADisputeBrdrPnl.setLayout(employeeDisputeFADisputeBrdrPnlLayout);
         employeeDisputeFADisputeBrdrPnlLayout.setHorizontalGroup(
@@ -225,16 +234,19 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
             .addGroup(employeeDisputeFADisputeBrdrPnlLayout.createSequentialGroup()
                 .addGap(18, 20, Short.MAX_VALUE)
                 .addGroup(employeeDisputeFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(employeeDisputeReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeDisputeReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(employeeDisputeFADisputeBrdrPnlLayout.createSequentialGroup()
                         .addGroup(employeeDisputeFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(employeeDisputeReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDisputeFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeDisputeDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(27, 27, 27)
+                        .addGroup(employeeDisputeFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(employeeDisputeDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(employeeDisputeFADisputeBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(employeeDisputeFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(27, 27, 27)
-                                .addComponent(employeeDisputeTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(207, 207, 207)
-                        .addComponent(employeeDisputeSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(employeeDisputeTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(207, 207, 207)
+                                .addComponent(employeeDisputeSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
         employeeDisputeFADisputeBrdrPnlLayout.setVerticalGroup(
@@ -246,9 +258,13 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
                     .addComponent(employeeDisputeSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeDisputeTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(employeeDisputeFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(employeeDisputeDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeDisputeDateLbl))
+                .addGap(5, 5, 5)
                 .addComponent(employeeDisputeReasonLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(employeeDisputeReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeDisputeReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
 
@@ -257,6 +273,8 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
         employeeDisputeReasonLbl.getAccessibleContext().setAccessibleName("employeeDisputeReasonLbl");
         employeeDisputeReasonFld.getAccessibleContext().setAccessibleName("employeeDisputeReasonFld");
         employeeDisputeSubmitBtn.getAccessibleContext().setAccessibleName("employeeDisputeSubmitBtn");
+        employeeDisputeDateDtChsr.getAccessibleContext().setAccessibleName("employeeDisputeDateDtChsr");
+        employeeDisputeDateLbl.getAccessibleContext().setAccessibleName("employeeDisputeDateLbl");
 
         javax.swing.GroupLayout employeeDisputeDFormBrdrPnlLayout = new javax.swing.GroupLayout(employeeDisputeDFormBrdrPnl);
         employeeDisputeDFormBrdrPnl.setLayout(employeeDisputeDFormBrdrPnlLayout);
@@ -396,7 +414,7 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
                 {null, null}
             },
             new String [] {
-                "Reason", "Status"
+                "Date", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -542,6 +560,8 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
     private javax.swing.JLabel employeeDisputeDFormLbl;
     private javax.swing.JPanel employeeDisputeDFormPnl;
     private javax.swing.JButton employeeDisputeDListBtn;
+    private com.toedter.calendar.JDateChooser employeeDisputeDateDtChsr;
+    private javax.swing.JLabel employeeDisputeDateLbl;
     private javax.swing.JPanel employeeDisputeFADisputeBrdrPnl;
     private javax.swing.JLabel employeeDisputeFADisputeLbl;
     private javax.swing.JPanel employeeDisputeFADisputePnl;

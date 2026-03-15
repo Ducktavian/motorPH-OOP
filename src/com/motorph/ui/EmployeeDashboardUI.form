@@ -34,8 +34,8 @@
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Component id="employeeDashboardTimeOutBtn" min="-2" pref="110" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="employeeDashboardAttLogsBrdrPnl" max="32767" attributes="0"/>
                   <Component id="hrEDetailsEDetailsBrdrPnl" alignment="0" pref="707" max="32767" attributes="0"/>
+                  <Component id="employeeDashboardAttLogsBrdrPnl" alignment="1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="19" max="32767" attributes="0"/>
           </Group>
@@ -961,7 +961,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Component id="employeeDashboardAttLogsBrdrScrlPnl" min="-2" pref="672" max="-2" attributes="0"/>
-                  <EmptySpace pref="17" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
