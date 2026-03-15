@@ -19,7 +19,17 @@ public class MainDashboardUI extends javax.swing.JFrame {
      * Creates new form MainDashboardFrame
      */
     public MainDashboardUI() {
+        System.out.print("DONE1!");
         initComponents();
+        
+        System.out.print("DONE INIT!");
+        
+        
+        mainDashboardActLogsImgLbl.setLocation(740, 420);
+        mainDashboardActLogsImgFld.setLocation(739, 433);
+        
+        System.out.print("DONE 2!");
+        
     }
 
     /**
@@ -349,6 +359,11 @@ public class MainDashboardUI extends javax.swing.JFrame {
     private void mainDashboardDashboardImgFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardDashboardImgFldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_mainDashboardDashboardImgFldActionPerformed
+
+    private void mainDashboardDashboardImgFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardDashboardImgFld1ActionPerformed
+        // TODO add your handling code here:
+        ///
+    }//GEN-LAST:event_mainDashboardDashboardImgFld1ActionPerformed
 
     /**
      * @param args the command line arguments

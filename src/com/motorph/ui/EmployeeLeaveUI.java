@@ -510,8 +510,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         
         
         try {
-            employeeLeaveENameFld.getText();
-            employeeLeaveENumberFld.getText();
+           
             String to = DateUtils.convertDateToString(employeeLeaveToDtChsr.getDate());
             String from = DateUtils.convertDateToString(employeeLeaveFromDtChsr.getDate());
             employeeLeaveReasonFld.getText();

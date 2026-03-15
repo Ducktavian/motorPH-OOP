@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.DateUtils;
+
 /**
  *
  * @author Lenovo
@@ -412,18 +414,7 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
     private void hrLDetailsSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsSubmitBtnActionPerformed
         // TODO add your handling code here:
 
-        try {
-            employeeLeaveENameFld.getText();
-            employeeLeaveENumberFld.getText();
-            String to = DateUtils.convertDateToString(hrLDetailsToDtChsr.getDate());
-            String from = DateUtils.convertDateToString(hrLDetailsFromDtChsr.getDate());
-            hrLDetailsReasonFld.getText();
-
-            System.out.println(from + " - " + to);
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, JOptionPane.ERROR_MESSAGE);
-        }
+     
 
     }//GEN-LAST:event_hrLDetailsSubmitBtnActionPerformed
 
@@ -441,76 +432,7 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
 
     private void hrLDetailsBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsBackBtnActionPerformed
         // TODO add your handling code here:
-        try {
-            // EmployeeNumber
-            String employeeNumber = empService.generateNextEmployeeNumber();
-            // LastName
-            String lastName = hrAEmployeeLNameFld.getText().trim();
-            // FirstName
-            String firstName = hrAEmployeeFNameFld.getText().trim();
-            // Bday
-            LocalDate bday = DateUtils.convertDateToLocalDate(bdayChooser.getDate());
-            // Address
-            String address = hrAEmployeeAddressFld.getText().trim();
-            // Phone Number
-            String phoneNumber = hrAEmployeePhnNumberFld.getText().trim();
-            // SSS
-            String sssNo = hrAEmployeeSSSFld.getText().trim().replaceAll("[^0-9]", "");
-            // Philhealth
-            String philhealthNo = hrAEmployeePhilHealthFld.getText().trim().replaceAll("[^0-9]", "");
-            // Tin
-            String TIN = hrAEmployeeTINFld.getText().trim().replaceAll("[^0-9]", "");
-            // PagIbig
-            String pagIbigNo = hrAEmployeePagIbigFld.getText().trim().replaceAll("[^0-9]", "");
-            // Status
-            Object selectedItem = hrAEmployeeStatusCbx.getSelectedItem();
-            // Check if an item is selected to avoid a NullPointerException
-            String status = null;
-            if (selectedItem != null) {
-                // Convert the selected item to a String
-                status = selectedItem.toString();
-
-                // Now you can use the 'selectedValue' string (e.g., print it, save to a database)
-                System.out.println("Selected Value: " + status);
-                // You can also display it in a text field, for example:
-                // myTextField.setText(selectedValue);
-            }
-            // Position
-            String position = hrAEmployeePositionFld.getText();
-            // Immediate Supervisor
-            String immediateSupervisor = hrAEmployeeISupervisorFld.getText();
-            // Basic Salary
-            double basicSalary = GuiUtil.getDoubleFromField(hrAEmployeeBasicSalaryFld);
-            // Rice Subisdy
-            double riceSubsidy = GuiUtil.getDoubleFromField(hrAEmployeeRiceSubsidyFld);
-            // Phone Allowance
-            double phoneAllowance = GuiUtil.getDoubleFromField(hrAEmployeePhnAllowanceFld);
-            // Clothing Allowance
-            double clothingAllowance = GuiUtil.getDoubleFromField(hrAEmployeeCltAllowanceFld);
-
-            // Default Regular Employee -> Converted to correct type in service
-            Employee emp = new RegularEmployee(
-                employeeNumber, lastName, firstName, bday, address,
-                phoneNumber, sssNo, philhealthNo, TIN, pagIbigNo,
-                status, position, immediateSupervisor, basicSalary,
-                riceSubsidy, phoneAllowance, clothingAllowance
-            );
-
-            empService.addEmployee(emp);
-
-            JOptionPane.showMessageDialog(this, "Employee " + employeeNumber + " added successfully!");
-            GuiUtil.openFrame(this, new HREmployeeDetailsUI());
-
-        } catch (DateTimeParseException e) {
-            JOptionPane.showMessageDialog(this, "Please enter the birthday in MM/DD/YYYY format.", "Date Error", JOptionPane.ERROR_MESSAGE);
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Please enter numeric values for Salary and Allowances.", "Number Error", JOptionPane.ERROR_MESSAGE);
-        } catch (IllegalArgumentException e) {
-            // This catches your specific validation rules (e.g., SSS must be 10 digits)
-            JOptionPane.showMessageDialog(this, e.getMessage(), "Validation Error", JOptionPane.ERROR_MESSAGE);
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "An unexpected error occurred: " + e.getMessage());
-        }
+       
     }//GEN-LAST:event_hrLDetailsBackBtnActionPerformed
 
     /**

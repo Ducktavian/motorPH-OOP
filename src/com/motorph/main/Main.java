@@ -44,36 +44,25 @@ public class Main {
             
                     
         });  
+        
+        int action;
+        
+        while (true) {
+            
+        }
+        
     }
-    
-    private static void testingAddEmployee(EmployeeService empService) {
-        String employeeNumber = empService.generateNextEmployeeNumber();
-        String lastName = "Human";
-        String firstName = "Human";
-        LocalDate birthday = LocalDate.parse("3/30/1930");
-        String address = "Korea";
-        String phoneNumber = "09";
-        String SSSNumber = "4234324";
-        String philhealthNumber = "676767";
-        String TIN = "676767";
-        String pagIbigNumber = "6767767";
-        String status = "Regualar";
-        String position = "Manager";
-        String immediateSupervisor = "Manuel";
 
-        double basicSalary = 67000.00;
-        double riceSubsidy = 670;
-        double phoneAllowance = 670;
-        double clothingAllowance = 670;
+    private void timeIn() {
         
-        Employee employee = new RegularEmployee(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
-        
-        empService.addEmployee(employee);
     }
     
-    private static void testingDeleteEmployee(EmployeeService empService, String employeeNumber) {
-        empService.deleteEmployee(employeeNumber);
+    private void timeOut() {
+        
     }
+    
+    
+    
 }
         
      

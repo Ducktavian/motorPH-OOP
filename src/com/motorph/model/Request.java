@@ -65,7 +65,7 @@ public abstract class Request implements Requestable {
     @Override
     public void reject(String approverId) {
         if (this.status == RequestStatus.PENDING) {
-            this.status = RequestStatus.REJECTED;
+            this.status = RequestStatus.DENIED;
             this.approvedBy = approverId;
 
         }
