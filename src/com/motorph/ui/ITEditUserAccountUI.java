@@ -52,10 +52,10 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUserUAccDetailsPnl = new javax.swing.JPanel();
         itEditUserUAccDetailsLbl = new javax.swing.JLabel();
         itEditUserUAccDetailsBrdrPnl = new javax.swing.JPanel();
-        itEditUserUsernameLbl = new javax.swing.JLabel();
-        itEditUserUsernameFld = new javax.swing.JTextField();
-        itEditUserPasswordLbl = new javax.swing.JLabel();
-        itEditUserPasswordFld = new javax.swing.JTextField();
+        itEditUAccUsernameLbl = new javax.swing.JLabel();
+        itEditUAccUsernameFld = new javax.swing.JTextField();
+        itEditUAccPasswordLbl = new javax.swing.JLabel();
+        itEditUserUpdateBtn1 = new javax.swing.JButton();
         itEditUserUpdateBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -249,57 +249,61 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
         itEditUserUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        itEditUserUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itEditUserUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itEditUserUsernameLbl.setText("Username");
+        itEditUAccUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itEditUAccUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itEditUAccUsernameLbl.setText("Username");
 
-        itEditUserUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
-        itEditUserUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itEditUserUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itEditUserUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itEditUserUsernameFld.addActionListener(this::itEditUserUsernameFldActionPerformed);
+        itEditUAccUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itEditUAccUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUAccUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUAccUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itEditUAccUsernameFld.addActionListener(this::itEditUAccUsernameFldActionPerformed);
 
-        itEditUserPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itEditUserPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itEditUserPasswordLbl.setText("Password");
+        itEditUAccPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itEditUAccPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itEditUAccPasswordLbl.setText("Password");
 
-        itEditUserPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
-        itEditUserPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itEditUserPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itEditUserPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itEditUserPasswordFld.addActionListener(this::itEditUserPasswordFldActionPerformed);
+        itEditUserUpdateBtn1.setBackground(new java.awt.Color(239, 68, 68));
+        itEditUserUpdateBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        itEditUserUpdateBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        itEditUserUpdateBtn1.setText("Reset Default Password");
+        itEditUserUpdateBtn1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUserUpdateBtn1.addActionListener(this::itEditUserUpdateBtn1ActionPerformed);
 
         javax.swing.GroupLayout itEditUserUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itEditUserUAccDetailsBrdrPnl);
         itEditUserUAccDetailsBrdrPnl.setLayout(itEditUserUAccDetailsBrdrPnlLayout);
         itEditUserUAccDetailsBrdrPnlLayout.setHorizontalGroup(
             itEditUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itEditUserUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
                 .addGroup(itEditUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itEditUserPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itEditUserPasswordLbl)
-                    .addComponent(itEditUserUsernameLbl)
-                    .addComponent(itEditUserUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(itEditUserUAccDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addGroup(itEditUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itEditUAccPasswordLbl)
+                            .addComponent(itEditUAccUsernameLbl)
+                            .addComponent(itEditUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(itEditUserUAccDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(itEditUserUpdateBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         itEditUserUAccDetailsBrdrPnlLayout.setVerticalGroup(
             itEditUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itEditUserUAccDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(itEditUserUsernameLbl)
+                .addComponent(itEditUAccUsernameLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(itEditUserUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itEditUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(itEditUserPasswordLbl)
+                .addComponent(itEditUAccPasswordLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itEditUserPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addComponent(itEditUserUpdateBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        itEditUserUsernameLbl.getAccessibleContext().setAccessibleName("itEditUserUsernameLbl");
-        itEditUserUsernameFld.getAccessibleContext().setAccessibleName("itEditUserUsernameFld");
-        itEditUserPasswordLbl.getAccessibleContext().setAccessibleName("itEditUserPasswordLbl");
-        itEditUserPasswordFld.getAccessibleContext().setAccessibleName("itEditUserPasswordFld");
+        itEditUAccUsernameLbl.getAccessibleContext().setAccessibleName("itEditUAccUsernameLbl");
+        itEditUAccUsernameFld.getAccessibleContext().setAccessibleName("itEditUAccUsernameFld");
+        itEditUAccPasswordLbl.getAccessibleContext().setAccessibleName("itEditUserPasswordLbl");
 
         javax.swing.GroupLayout itEditUserEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itEditUserEDetailsBrdrPnl);
         itEditUserEDetailsBrdrPnl.setLayout(itEditUserEDetailsBrdrPnlLayout);
@@ -366,7 +370,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addComponent(itEditUserUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(itEditUserUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         itEditUserENumberLbl.getAccessibleContext().setAccessibleName("itEditUserENumberLbl");
@@ -400,9 +404,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(itEditUserEditUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(itEditUserUpdateBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(itEditUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(itEditUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itEditUserUpdateBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -450,13 +453,9 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itEditUserPositionFldActionPerformed
 
-    private void itEditUserUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUserUsernameFldActionPerformed
+    private void itEditUAccUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUsernameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUserUsernameFldActionPerformed
-
-    private void itEditUserPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUserPasswordFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUserPasswordFldActionPerformed
+    }//GEN-LAST:event_itEditUAccUsernameFldActionPerformed
 
     private void itEditUserActLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUserActLogsBtnActionPerformed
         // TODO add your handling code here:
@@ -483,12 +482,14 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itEditUserUpdateBtnActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+
+    private void itEditUserUpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUserUpdateBtn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itEditUserUpdateBtn1ActionPerformed
+
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
@@ -509,6 +510,9 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel itEditUAccPasswordLbl;
+    private javax.swing.JTextField itEditUAccUsernameFld;
+    private javax.swing.JLabel itEditUAccUsernameLbl;
     private javax.swing.JButton itEditUserActLogsBtn;
     private javax.swing.JButton itEditUserAddUAccBtn;
     private javax.swing.JPanel itEditUserEDetailsBrdrPnl;
@@ -523,8 +527,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itEditUserISupervisorLbl;
     private javax.swing.JButton itEditUserMainDashboardBtn;
     private javax.swing.JLabel itEditUserMotorPHIconImgLbl;
-    private javax.swing.JTextField itEditUserPasswordFld;
-    private javax.swing.JLabel itEditUserPasswordLbl;
     private javax.swing.JTextField itEditUserPhnNumberFld;
     private javax.swing.JLabel itEditUserPhnNumberLbl;
     private javax.swing.JTextField itEditUserPositionFld;
@@ -536,7 +538,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itEditUserUAccDetailsLbl;
     private javax.swing.JPanel itEditUserUAccDetailsPnl;
     private javax.swing.JButton itEditUserUpdateBtn;
-    private javax.swing.JTextField itEditUserUsernameFld;
-    private javax.swing.JLabel itEditUserUsernameLbl;
+    private javax.swing.JButton itEditUserUpdateBtn1;
     // End of variables declaration//GEN-END:variables
 }

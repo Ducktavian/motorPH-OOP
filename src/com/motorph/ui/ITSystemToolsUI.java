@@ -8,14 +8,14 @@ package com.motorph.ui;
  *
  * @author Lenovo
  */
-public class ITActivityLogsUI extends javax.swing.JFrame {
+public class ITSystemToolsUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITActivityLogsUI.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITSystemToolsUI.class.getName());
 
     /**
      * Creates new form ITDashboardFrame
      */
-    public ITActivityLogsUI() {
+    public ITSystemToolsUI() {
         initComponents();
     }
 
@@ -512,7 +512,7 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
             .addGroup(itActLogsFADisputePnl1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(itActLogsFADisputeLbl1)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         itActLogsFADisputePnl1Layout.setVerticalGroup(
             itActLogsFADisputePnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -710,7 +710,7 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
             .addGroup(itActLogsFADisputePnl2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(itActLogsFADisputeLbl2)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         itActLogsFADisputePnl2Layout.setVerticalGroup(
             itActLogsFADisputePnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -908,7 +908,7 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
             .addGroup(itActLogsFADisputePnl3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(itActLogsFADisputeLbl3)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         itActLogsFADisputePnl3Layout.setVerticalGroup(
             itActLogsFADisputePnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1217,101 +1217,101 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itActLogsPasswordFldActionPerformed
 
-    private void itActLogsENameFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld1ActionPerformed
+    private void itActLogsENameFld6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld1ActionPerformed
-
-    private void itActLogsReasonFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsReasonFld1ActionPerformed
-
-    private void itActLogsENumberFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENumberFld1ActionPerformed
-
-    private void itActLogsPositionFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsPositionFld1ActionPerformed
-
-    private void itActLogsDenyBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsDenyBtn1ActionPerformed
-
-    private void itActLogsApproveBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsApproveBtn1ActionPerformed
-
-    private void itActLogsENameFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld3ActionPerformed
-
-    private void itActLogsReasonFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsReasonFld3ActionPerformed
-
-    private void itActLogsENumberFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENumberFld3ActionPerformed
-
-    private void itActLogsPositionFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsPositionFld3ActionPerformed
-
-    private void itActLogsDenyBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsDenyBtn3ActionPerformed
-
-    private void itActLogsApproveBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsApproveBtn3ActionPerformed
+    }//GEN-LAST:event_itActLogsENameFld6ActionPerformed
 
     private void itActLogsStatusFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_itActLogsStatusFld3ActionPerformed
 
-    private void itActLogsENameFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld2ActionPerformed
+    private void itActLogsApproveBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld2ActionPerformed
+    }//GEN-LAST:event_itActLogsApproveBtn3ActionPerformed
 
-    private void itActLogsReasonFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld2ActionPerformed
+    private void itActLogsDenyBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsReasonFld2ActionPerformed
+    }//GEN-LAST:event_itActLogsDenyBtn3ActionPerformed
 
-    private void itActLogsENumberFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld2ActionPerformed
+    private void itActLogsPositionFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENumberFld2ActionPerformed
+    }//GEN-LAST:event_itActLogsPositionFld3ActionPerformed
 
-    private void itActLogsPositionFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld2ActionPerformed
+    private void itActLogsENumberFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsPositionFld2ActionPerformed
+    }//GEN-LAST:event_itActLogsENumberFld3ActionPerformed
 
-    private void itActLogsDenyBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn2ActionPerformed
+    private void itActLogsReasonFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsDenyBtn2ActionPerformed
+    }//GEN-LAST:event_itActLogsReasonFld3ActionPerformed
 
-    private void itActLogsApproveBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn2ActionPerformed
+    private void itActLogsENameFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsApproveBtn2ActionPerformed
-
-    private void itActLogsStatusFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsStatusFld2ActionPerformed
-
-    private void itActLogsENameFld4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld4ActionPerformed
+    }//GEN-LAST:event_itActLogsENameFld3ActionPerformed
 
     private void itActLogsENameFld5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_itActLogsENameFld5ActionPerformed
 
-    private void itActLogsENameFld6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld6ActionPerformed
+    private void itActLogsStatusFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld6ActionPerformed
+    }//GEN-LAST:event_itActLogsStatusFld2ActionPerformed
+
+    private void itActLogsApproveBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsApproveBtn2ActionPerformed
+
+    private void itActLogsDenyBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsDenyBtn2ActionPerformed
+
+    private void itActLogsPositionFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsPositionFld2ActionPerformed
+
+    private void itActLogsENumberFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsENumberFld2ActionPerformed
+
+    private void itActLogsReasonFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsReasonFld2ActionPerformed
+
+    private void itActLogsENameFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsENameFld2ActionPerformed
+
+    private void itActLogsENameFld4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsENameFld4ActionPerformed
 
     private void itActLogsStatusFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_itActLogsStatusFld1ActionPerformed
+
+    private void itActLogsApproveBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsApproveBtn1ActionPerformed
+
+    private void itActLogsDenyBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsDenyBtn1ActionPerformed
+
+    private void itActLogsPositionFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsPositionFld1ActionPerformed
+
+    private void itActLogsENumberFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsENumberFld1ActionPerformed
+
+    private void itActLogsReasonFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsReasonFld1ActionPerformed
+
+    private void itActLogsENameFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itActLogsENameFld1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1335,7 +1335,7 @@ public class ITActivityLogsUI extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new ITActivityLogsUI().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new ITSystemToolsUI().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

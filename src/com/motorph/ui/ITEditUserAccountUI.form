@@ -28,10 +28,8 @@
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="itEditUserEditUAccPnl" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                      <Component id="itEditUserUpdateBtn" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
-                      <Component id="itEditUserEDetailsBrdrPnl" min="-2" pref="710" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="itEditUserEDetailsBrdrPnl" alignment="0" min="-2" pref="710" max="-2" attributes="0"/>
+                  <Component id="itEditUserUpdateBtn" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="16" max="32767" attributes="0"/>
           </Group>
@@ -353,7 +351,7 @@
                   <Component id="itEditUserUAccDetailsPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="itEditUserUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <EmptySpace pref="24" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -685,13 +683,20 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="itEditUserPasswordFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
-                          <Component id="itEditUserPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="itEditUserUsernameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="itEditUserUsernameFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="itEditUAccPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="itEditUAccUsernameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="itEditUAccUsernameFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                              <Component id="itEditUserUpdateBtn1" min="-2" pref="186" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace pref="22" max="32767" attributes="0"/>
                   </Group>
@@ -701,20 +706,20 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="itEditUserUsernameLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccUsernameLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="itEditUserUsernameFld" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itEditUAccUsernameFld" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="itEditUserPasswordLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccPasswordLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="itEditUserPasswordFld" min="-2" pref="36" max="-2" attributes="0"/>
-                      <EmptySpace pref="24" max="32767" attributes="0"/>
+                      <Component id="itEditUserUpdateBtn1" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace pref="22" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="itEditUserUsernameLbl">
+            <Component class="javax.swing.JLabel" name="itEditUAccUsernameLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -725,10 +730,10 @@
                 <Property name="text" type="java.lang.String" value="Username"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserUsernameLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccUsernameLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="itEditUserUsernameFld">
+            <Component class="javax.swing.JTextField" name="itEditUAccUsernameFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -748,13 +753,13 @@
                 </Property>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserUsernameFld"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccUsernameFld"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserUsernameFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccUsernameFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="itEditUserPasswordLbl">
+            <Component class="javax.swing.JLabel" name="itEditUAccPasswordLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -768,11 +773,18 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserPasswordLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="itEditUserPasswordFld">
+            <Component class="javax.swing.JButton" name="itEditUserUpdateBtn1">
               <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="38" green="2a" red="1e" type="rgb"/>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="44" green="44" red="ef" type="rgb"/>
                 </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="15" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Reset Default Password"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                     <LineBorder roundedCorners="true">
@@ -780,18 +792,9 @@
                     </LineBorder>
                   </Border>
                 </Property>
-                <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
-                </Property>
-                <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
-                </Property>
               </Properties>
-              <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUserPasswordFld"/>
-              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserPasswordFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUserUpdateBtn1ActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

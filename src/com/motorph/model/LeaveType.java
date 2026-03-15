@@ -3,7 +3,19 @@ package com.motorph.model;
 
 
 public enum LeaveType {
-    SICK_LEAVE,
-    VACATION_LEAVE,
-    EMERGENCY_LEAVE
+
+    SICK("Sick Leave"),
+    VACATION("Vacation Leave"),
+    MATERNITY("Maternity Leave");
+
+    private final String label;
+
+    LeaveType(String label) {
+        this.label = label;
+    }
+
+    @Override
+    public String toString() {
+        return label;
+    }
 }

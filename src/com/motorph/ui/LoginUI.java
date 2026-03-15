@@ -4,6 +4,7 @@ package com.motorph.ui;
 
 import com.motorph.model.UserAccount;
 import com.motorph.service.AuthService;
+import com.motorph.util.AppContext;
 import com.motorph.util.Session;
 
 
@@ -172,7 +173,7 @@ public class LoginUI extends javax.swing.JFrame {
         String username = LoginUsernameFld.getText();
         String password = new String(LoginPasswordFld.getPassword());
         
-        AuthService authService = new AuthService();
+        AuthService authService = AppContext.getAuthService();
         
         try {
             

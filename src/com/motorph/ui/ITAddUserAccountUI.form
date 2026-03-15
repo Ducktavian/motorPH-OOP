@@ -26,12 +26,10 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="itAUserSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="itAUserEDetailsBrdrPnl" alignment="0" min="-2" pref="710" max="-2" attributes="0"/>
-                      <Component id="itAUserAddUAccPnl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="itAUserActivateBtn" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="itAUserEDetailsBrdrPnl" alignment="0" min="-2" pref="710" max="-2" attributes="0"/>
+                  <Component id="itAUserAddUAccPnl" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="itAUserActivateBtn" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="16" max="32767" attributes="0"/>
           </Group>

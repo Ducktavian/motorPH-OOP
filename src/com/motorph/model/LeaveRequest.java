@@ -62,5 +62,7 @@ public class LeaveRequest extends Request {
     public double calculateImpact() {
         return 0; // default
     }
-
+    
+    
+   
 }

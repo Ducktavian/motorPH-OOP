@@ -4,10 +4,18 @@
  */
 package com.motorph.ui;
 
+import com.motorph.model.LeaveRequest;
+import com.motorph.model.LeaveType;
+import com.motorph.service.LeaveService;
+import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
 import com.motorph.util.Session;
 import java.time.LocalDate;
+import java.util.Date;
+import java.util.List;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -16,19 +24,60 @@ import javax.swing.JOptionPane;
 public class EmployeeLeaveUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeeLeaveUI.class.getName());
-
+    private LeaveService leaveService;
     /**
      * Creates new form EmployeeLeaveFrame
      */
     public EmployeeLeaveUI() {
+        
+        this.leaveService = AppContext.getLeaveService();
+        
         initComponents();
+        initComboBox();
         
-        String role = Session.getCurrentUser().getRole().name();
-        
-        if (role.equals("HR")) {
-            this.employeeLeaveLListBtn.setVisible(true);
+        if (leaveService != null && Session.getCurrentUser() != null) {
+            populateLeaveRecords();
         } else {
-            this.employeeLeaveLListBtn.setVisible(false);
+            logger.warning("Service or Session is null! Cannot populate table.");
+        }
+    }
+    
+    // Initializes leave type dropdown
+    private void initComboBox() {
+        LeaveType[] types = LeaveType.values();
+        DefaultComboBoxModel<Object> model = new DefaultComboBoxModel<>();
+        model.addElement("Select Leave Type");
+        for (LeaveType type : types) {
+            model.addElement(type);
+        }
+        employeeLeaveTTypeCbx.setModel(model);
+    }
+    
+    
+    private void populateLeaveRecords() {
+        try {
+            
+            List<LeaveRequest> list = leaveService.getAllLeave(Session.getCurrentUser().getEmployeeNumber());
+
+            // Ensure the table model exists
+            DefaultTableModel model = (DefaultTableModel) employeeLeaveRecordsTbl.getModel();
+            model.setRowCount(0);
+
+            // 4. Fill the rows
+            for (LeaveRequest q : list) {
+
+                Object[] row = {
+                    q.getLeaveType() != null ? q.getLeaveType().toString() : "N/A",
+                    q.getStartDate(),
+                    q.getEndDate(),
+                    q.getStatus()
+                };
+
+                model.addRow(row);
+            }
+        } catch (Exception e) {
+            logger.severe("Failed to populate table: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -63,7 +112,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveENameLbl = new javax.swing.JLabel();
         employeeLeaveFromDtChsr = new com.toedter.calendar.JDateChooser();
         employeeLeaveToDtChsr = new com.toedter.calendar.JDateChooser();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        employeeLeaveTTypeCbx = new javax.swing.JComboBox<>();
         employeeLeaveRecordsBrdrPnl = new javax.swing.JPanel();
         employeeLeaveRecordsLbl = new javax.swing.JLabel();
         employeeLeaveRecordsBrdrScrlPnl = new javax.swing.JScrollPane();
@@ -174,9 +223,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         );
         employeeLeaveFALeavePnlLayout.setVerticalGroup(
             employeeLeaveFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveFALeavePnlLayout.createSequentialGroup()
-                .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
         employeeLeaveFALeaveLbl.getAccessibleContext().setAccessibleName("employeeLeaveFALeaveLbl");
@@ -211,9 +258,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveToDtChsr.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
         employeeLeaveToDtChsr.setForeground(new java.awt.Color(31, 41, 55));
 
-        jComboBox1.setForeground(new java.awt.Color(31, 41, 55));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Sick", "Vacation", "Emergency", " " }));
-        jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveTTypeCbx.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveTTypeCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
         javax.swing.GroupLayout employeeLeaveFALeaveBrdrPnlLayout = new javax.swing.GroupLayout(employeeLeaveFALeaveBrdrPnl);
         employeeLeaveFALeaveBrdrPnl.setLayout(employeeLeaveFALeaveBrdrPnlLayout);
@@ -234,7 +280,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                                 .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
                                 .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(employeeLeaveTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(employeeLeaveFromDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addComponent(employeeLeaveFromLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -253,7 +299,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                             .addComponent(employeeLeaveFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(employeeLeaveTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(employeeLeaveFromLbl, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -275,6 +321,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveENameLbl.getAccessibleContext().setAccessibleName("employeeLeaveENameLbl");
         employeeLeaveFromDtChsr.getAccessibleContext().setAccessibleName("employeeLeaveFromDtChsr");
         employeeLeaveToDtChsr.getAccessibleContext().setAccessibleName("employeeLeaveToDtChsr");
+        employeeLeaveTTypeCbx.getAccessibleContext().setAccessibleName("employeeLeaveTTypeCbx");
 
         javax.swing.GroupLayout employeeLeaveLFormBrdrPnlLayout = new javax.swing.GroupLayout(employeeLeaveLFormBrdrPnl);
         employeeLeaveLFormBrdrPnl.setLayout(employeeLeaveLFormBrdrPnlLayout);
@@ -508,20 +555,57 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private void employeeLeaveSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveSubmitBtnActionPerformed
         // TODO add your handling code here:
         
+        String employeeNumber = Session.getCurrentUser().getEmployeeNumber();
         
         try {
-           
-            String to = DateUtils.convertDateToString(employeeLeaveToDtChsr.getDate());
-            String from = DateUtils.convertDateToString(employeeLeaveFromDtChsr.getDate());
-            employeeLeaveReasonFld.getText();
             
-            System.out.println(from + " - " + to);
-            
-            
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, JOptionPane.ERROR_MESSAGE);
-        }
+            String requestId = leaveService.generateNextLeaveId(employeeNumber);
+            LocalDate dateFiled = LocalDate.now();
         
+            // Leave Type
+            LeaveType selectedLeaveType = null;
+            Object selectedItem = employeeLeaveTTypeCbx.getSelectedItem();
+
+            if (selectedItem instanceof LeaveType) {
+                selectedLeaveType = (LeaveType) selectedItem;
+            } else {
+                throw new IllegalArgumentException("Please select a valid leave type.");
+            }
+           
+            Date fromDate = employeeLeaveFromDtChsr.getDate();
+            Date toDate = employeeLeaveToDtChsr.getDate();
+
+            if (fromDate == null || toDate == null) {
+                throw new IllegalArgumentException("Please select both Start and End dates.");
+            }
+
+            LocalDate startDate = DateUtils.convertDateToLocalDate(fromDate);
+            LocalDate endDate = DateUtils.convertDateToLocalDate(toDate);
+            
+            String reason = employeeLeaveReasonFld.getText();
+            if (reason == null || reason.isEmpty() || reason.isBlank()) {
+                throw new IllegalArgumentException("Please provide a reason for the leave.");
+            }
+            
+            LeaveRequest leaveRequest = new LeaveRequest(requestId, employeeNumber, dateFiled, startDate, endDate, selectedLeaveType,  reason);
+            
+            
+            // Submit Leave
+            leaveService.submitLeaveRequest(leaveRequest);
+         
+            JOptionPane.showMessageDialog(this, "Leave request submitted successfully!");
+            
+            populateLeaveRecords();
+
+        } catch (IllegalArgumentException e) {
+            // Catch your custom validation errors and show the specific message
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Input Error", JOptionPane.WARNING_MESSAGE);
+        } catch (Exception e) {
+            // Catch unexpected system errors
+            JOptionPane.showMessageDialog(this, "An error occurred: " + e.getMessage(), "System Error", JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace(); 
+        }
+
         
         
     }//GEN-LAST:event_employeeLeaveSubmitBtnActionPerformed
@@ -588,7 +672,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private javax.swing.JTable employeeLeaveRecordsTbl;
     private javax.swing.JPanel employeeLeaveSidebarPnl;
     private javax.swing.JButton employeeLeaveSubmitBtn;
+    private javax.swing.JComboBox<Object> employeeLeaveTTypeCbx;
     private com.toedter.calendar.JDateChooser employeeLeaveToDtChsr;
-    private javax.swing.JComboBox<String> jComboBox1;
     // End of variables declaration//GEN-END:variables
 }

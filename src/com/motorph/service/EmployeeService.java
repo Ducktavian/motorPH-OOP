@@ -107,7 +107,6 @@ public class EmployeeService {
         }
 
 
-        
         // Basic Salary
         if(employee.getBasicSalary() <= 0){
             throw new IllegalArgumentException("Basic Salary must be greater than 0.");
@@ -128,6 +127,7 @@ public class EmployeeService {
         }
     }
     
+    // Converts to EMPLOYEE type
     private Employee convertToSpecificType(Employee draft) {
         String pos = draft.getPosition().toLowerCase();
 

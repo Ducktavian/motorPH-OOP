@@ -16,4 +16,6 @@ public interface LeaveDAO {
     
     void updateRequest(LeaveRequest request);
     
+    String generateNextLeaveId(String employeeNumber, List<LeaveRequest> allLeaves);
+    
 }
