@@ -796,7 +796,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="itSysToolsPasswordFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itSysToolsPasswordFld" min="-2" pref="253" max="-2" attributes="0"/>
                           <Component id="itSysToolsPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="itSysToolsUsernameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="itSysToolsUsernameFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
@@ -877,7 +877,7 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsPasswordLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="itSysToolsPasswordFld">
+            <Component class="javax.swing.JPasswordField" name="itSysToolsPasswordFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -888,12 +888,6 @@
                       <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                     </LineBorder>
                   </Border>
-                </Property>
-                <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
-                </Property>
-                <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>

@@ -28,26 +28,26 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        hrDDetailsApproveBtn = new javax.swing.JButton();
-        hrDDetailsDenyBtn = new javax.swing.JButton();
-        hrDDetailsBackBtn = new javax.swing.JButton();
-        hrDDetailsSidebarPnl = new javax.swing.JPanel();
-        hrDDetailsMainDashboardBtn = new javax.swing.JButton();
-        hrDDetailsMotorPHIconImgLbl = new javax.swing.JLabel();
-        hrDDetailsDDetailsPnl = new javax.swing.JPanel();
-        hrDDetailsDDetailsLbl = new javax.swing.JLabel();
-        hrDDetailsDFormBrdrPnl = new javax.swing.JPanel();
-        hrDDetailsDFormPnl = new javax.swing.JPanel();
-        hrDDetailsDFormLbl = new javax.swing.JLabel();
-        hrDDetailsFADisputeBrdrPnl = new javax.swing.JPanel();
-        hrDDetailsFADisputePnl = new javax.swing.JPanel();
-        hrDDetailsFADisputeLbl = new javax.swing.JLabel();
-        hrDDetailsTTypeCbx = new javax.swing.JComboBox<>();
-        hrDDetailsReasonLbl = new javax.swing.JLabel();
-        hrDDetailsReasonFld = new javax.swing.JTextField();
-        hrDDetailsSubmitBtn = new javax.swing.JButton();
-        hrDDetailsDateDtChsr = new com.toedter.calendar.JDateChooser();
-        hrDDetailsDateLbl = new javax.swing.JLabel();
+        itDDetailsApproveBtn = new javax.swing.JButton();
+        itDDetailsDenyBtn = new javax.swing.JButton();
+        itDDetailsBackBtn = new javax.swing.JButton();
+        itDDetailsSidebarPnl = new javax.swing.JPanel();
+        itDDetailsMainDashboardBtn = new javax.swing.JButton();
+        itDDetailsMotorPHIconImgLbl = new javax.swing.JLabel();
+        itDDetailsDDetailsPnl = new javax.swing.JPanel();
+        itDDetailsDDetailsLbl = new javax.swing.JLabel();
+        itDDetailsDFormBrdrPnl = new javax.swing.JPanel();
+        itDDetailsDFormPnl = new javax.swing.JPanel();
+        itDDetailsDFormLbl = new javax.swing.JLabel();
+        itDDetailsFADisputeBrdrPnl = new javax.swing.JPanel();
+        itDDetailsFADisputePnl = new javax.swing.JPanel();
+        itDDetailsFADisputeLbl = new javax.swing.JLabel();
+        itDDetailsTTypeCbx = new javax.swing.JComboBox<>();
+        itDDetailsReasonLbl = new javax.swing.JLabel();
+        itDDetailsReasonFld = new javax.swing.JTextField();
+        itDDetailsSubmitBtn = new javax.swing.JButton();
+        itDDetailsDateDtChsr = new com.toedter.calendar.JDateChooser();
+        itDDetailsDateLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1000, 700));
@@ -57,325 +57,325 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
             }
         });
 
-        hrDDetailsApproveBtn.setBackground(new java.awt.Color(34, 197, 94));
-        hrDDetailsApproveBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsApproveBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsApproveBtn.setText("Approve");
-        hrDDetailsApproveBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrDDetailsApproveBtn.addActionListener(this::hrDDetailsApproveBtnActionPerformed);
+        itDDetailsApproveBtn.setBackground(new java.awt.Color(34, 197, 94));
+        itDDetailsApproveBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itDDetailsApproveBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itDDetailsApproveBtn.setText("Approve");
+        itDDetailsApproveBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        itDDetailsApproveBtn.addActionListener(this::itDDetailsApproveBtnActionPerformed);
 
-        hrDDetailsDenyBtn.setBackground(new java.awt.Color(239, 68, 68));
-        hrDDetailsDenyBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsDenyBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsDenyBtn.setText("Deny");
-        hrDDetailsDenyBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrDDetailsDenyBtn.addActionListener(this::hrDDetailsDenyBtnActionPerformed);
+        itDDetailsDenyBtn.setBackground(new java.awt.Color(239, 68, 68));
+        itDDetailsDenyBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itDDetailsDenyBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itDDetailsDenyBtn.setText("Deny");
+        itDDetailsDenyBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        itDDetailsDenyBtn.addActionListener(this::itDDetailsDenyBtnActionPerformed);
 
-        hrDDetailsBackBtn.setBackground(new java.awt.Color(30, 58, 138));
-        hrDDetailsBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsBackBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsBackBtn.setText("Back");
-        hrDDetailsBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsBackBtn.addActionListener(this::hrDDetailsBackBtnActionPerformed);
+        itDDetailsBackBtn.setBackground(new java.awt.Color(30, 58, 138));
+        itDDetailsBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itDDetailsBackBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itDDetailsBackBtn.setText("Back");
+        itDDetailsBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDDetailsBackBtn.addActionListener(this::itDDetailsBackBtnActionPerformed);
 
-        hrDDetailsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itDDetailsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        hrDDetailsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrDDetailsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        hrDDetailsMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        hrDDetailsMainDashboardBtn.setLabel("Main Dashboard");
-        hrDDetailsMainDashboardBtn.addActionListener(this::hrDDetailsMainDashboardBtnActionPerformed);
+        itDDetailsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itDDetailsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itDDetailsMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itDDetailsMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        itDDetailsMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        itDDetailsMainDashboardBtn.setLabel("Main Dashboard");
+        itDDetailsMainDashboardBtn.addActionListener(this::itDDetailsMainDashboardBtnActionPerformed);
 
-        hrDDetailsMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        itDDetailsMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        javax.swing.GroupLayout hrDDetailsSidebarPnlLayout = new javax.swing.GroupLayout(hrDDetailsSidebarPnl);
-        hrDDetailsSidebarPnl.setLayout(hrDDetailsSidebarPnlLayout);
-        hrDDetailsSidebarPnlLayout.setHorizontalGroup(
-            hrDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsSidebarPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itDDetailsSidebarPnlLayout = new javax.swing.GroupLayout(itDDetailsSidebarPnl);
+        itDDetailsSidebarPnl.setLayout(itDDetailsSidebarPnlLayout);
+        itDDetailsSidebarPnlLayout.setHorizontalGroup(
+            itDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itDDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(92, 92, 92)
-                .addComponent(hrDDetailsMainDashboardBtn))
-            .addGroup(hrDDetailsSidebarPnlLayout.createSequentialGroup()
+                .addComponent(itDDetailsMainDashboardBtn))
+            .addGroup(itDDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(hrDDetailsMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(itDDetailsMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        hrDDetailsSidebarPnlLayout.setVerticalGroup(
-            hrDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsSidebarPnlLayout.createSequentialGroup()
+        itDDetailsSidebarPnlLayout.setVerticalGroup(
+            itDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itDDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(hrDDetailsMotorPHIconImgLbl)
+                .addComponent(itDDetailsMotorPHIconImgLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(hrDDetailsMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDDetailsMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
         );
 
-        hrDDetailsMainDashboardBtn.getAccessibleContext().setAccessibleName("hrDDetailsMainDashboardBtn");
-        hrDDetailsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("hrDDetailsMotorPHIconImgLbl");
+        itDDetailsMainDashboardBtn.getAccessibleContext().setAccessibleName("itDDetailsMainDashboardBtn");
+        itDDetailsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("itDDetailsMotorPHIconImgLbl");
 
-        hrDDetailsDDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
-        hrDDetailsDDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsDDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        hrDDetailsDDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        itDDetailsDDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itDDetailsDDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDDetailsDDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itDDetailsDDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        hrDDetailsDDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        hrDDetailsDDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsDDetailsLbl.setText(" Dispute Details");
-        hrDDetailsDDetailsPnl.add(hrDDetailsDDetailsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 200, 46));
-        hrDDetailsDDetailsLbl.getAccessibleContext().setAccessibleName("hrDDetailsDDetailsLbl");
+        itDDetailsDDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        itDDetailsDDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        itDDetailsDDetailsLbl.setText(" Dispute Details");
+        itDDetailsDDetailsPnl.add(itDDetailsDDetailsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 200, 46));
+        itDDetailsDDetailsLbl.getAccessibleContext().setAccessibleName("itDDetailsDDetailsLbl");
 
-        hrDDetailsDFormBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        itDDetailsDFormBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        hrDDetailsDFormPnl.setBackground(new java.awt.Color(30, 58, 138));
-        hrDDetailsDFormPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsDFormPnl.setForeground(new java.awt.Color(30, 58, 138));
-        hrDDetailsDFormPnl.setPreferredSize(new java.awt.Dimension(126, 40));
+        itDDetailsDFormPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itDDetailsDFormPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDDetailsDFormPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itDDetailsDFormPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        hrDDetailsDFormLbl.setBackground(new java.awt.Color(255, 255, 255));
-        hrDDetailsDFormLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        hrDDetailsDFormLbl.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsDFormLbl.setText("Dispute Form");
-        hrDDetailsDFormLbl.setToolTipText("");
+        itDDetailsDFormLbl.setBackground(new java.awt.Color(255, 255, 255));
+        itDDetailsDFormLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        itDDetailsDFormLbl.setForeground(new java.awt.Color(255, 255, 255));
+        itDDetailsDFormLbl.setText("Dispute Form");
+        itDDetailsDFormLbl.setToolTipText("");
 
-        javax.swing.GroupLayout hrDDetailsDFormPnlLayout = new javax.swing.GroupLayout(hrDDetailsDFormPnl);
-        hrDDetailsDFormPnl.setLayout(hrDDetailsDFormPnlLayout);
-        hrDDetailsDFormPnlLayout.setHorizontalGroup(
-            hrDDetailsDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrDDetailsDFormPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itDDetailsDFormPnlLayout = new javax.swing.GroupLayout(itDDetailsDFormPnl);
+        itDDetailsDFormPnl.setLayout(itDDetailsDFormPnlLayout);
+        itDDetailsDFormPnlLayout.setHorizontalGroup(
+            itDDetailsDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsDFormPnlLayout.createSequentialGroup()
                 .addGap(0, 12, Short.MAX_VALUE)
-                .addComponent(hrDDetailsDFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(itDDetailsDFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        hrDDetailsDFormPnlLayout.setVerticalGroup(
-            hrDDetailsDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsDFormPnlLayout.createSequentialGroup()
+        itDDetailsDFormPnlLayout.setVerticalGroup(
+            itDDetailsDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itDDetailsDFormPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(hrDDetailsDFormLbl)
+                .addComponent(itDDetailsDFormLbl)
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        hrDDetailsDFormLbl.getAccessibleContext().setAccessibleName("hrDDetailsDFormLbl");
+        itDDetailsDFormLbl.getAccessibleContext().setAccessibleName("itDDetailsDFormLbl");
 
-        hrDDetailsFADisputeBrdrPnl.setBackground(new java.awt.Color(233, 233, 233));
-        hrDDetailsFADisputeBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsFADisputeBrdrPnl.setForeground(new java.awt.Color(178, 178, 178));
+        itDDetailsFADisputeBrdrPnl.setBackground(new java.awt.Color(233, 233, 233));
+        itDDetailsFADisputeBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDDetailsFADisputeBrdrPnl.setForeground(new java.awt.Color(178, 178, 178));
 
-        hrDDetailsFADisputePnl.setBackground(new java.awt.Color(146, 192, 253));
-        hrDDetailsFADisputePnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsFADisputePnl.setForeground(new java.awt.Color(30, 58, 138));
-        hrDDetailsFADisputePnl.setPreferredSize(new java.awt.Dimension(126, 40));
+        itDDetailsFADisputePnl.setBackground(new java.awt.Color(146, 192, 253));
+        itDDetailsFADisputePnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDDetailsFADisputePnl.setForeground(new java.awt.Color(30, 58, 138));
+        itDDetailsFADisputePnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        hrDDetailsFADisputeLbl.setBackground(new java.awt.Color(255, 255, 255));
-        hrDDetailsFADisputeLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        hrDDetailsFADisputeLbl.setForeground(new java.awt.Color(31, 41, 55));
-        hrDDetailsFADisputeLbl.setText("File A Dispute");
-        hrDDetailsFADisputeLbl.setToolTipText("");
+        itDDetailsFADisputeLbl.setBackground(new java.awt.Color(255, 255, 255));
+        itDDetailsFADisputeLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        itDDetailsFADisputeLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itDDetailsFADisputeLbl.setText("File A Dispute");
+        itDDetailsFADisputeLbl.setToolTipText("");
 
-        javax.swing.GroupLayout hrDDetailsFADisputePnlLayout = new javax.swing.GroupLayout(hrDDetailsFADisputePnl);
-        hrDDetailsFADisputePnl.setLayout(hrDDetailsFADisputePnlLayout);
-        hrDDetailsFADisputePnlLayout.setHorizontalGroup(
-            hrDDetailsFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsFADisputePnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itDDetailsFADisputePnlLayout = new javax.swing.GroupLayout(itDDetailsFADisputePnl);
+        itDDetailsFADisputePnl.setLayout(itDDetailsFADisputePnlLayout);
+        itDDetailsFADisputePnlLayout.setHorizontalGroup(
+            itDDetailsFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itDDetailsFADisputePnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(hrDDetailsFADisputeLbl)
+                .addComponent(itDDetailsFADisputeLbl)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        hrDDetailsFADisputePnlLayout.setVerticalGroup(
-            hrDDetailsFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrDDetailsFADisputePnlLayout.createSequentialGroup()
-                .addComponent(hrDDetailsFADisputeLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+        itDDetailsFADisputePnlLayout.setVerticalGroup(
+            itDDetailsFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsFADisputePnlLayout.createSequentialGroup()
+                .addComponent(itDDetailsFADisputeLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        hrDDetailsFADisputeLbl.getAccessibleContext().setAccessibleName("hrDDetailsFADisputeLbl");
+        itDDetailsFADisputeLbl.getAccessibleContext().setAccessibleName("itDDetailsFADisputeLbl");
 
-        hrDDetailsTTypeCbx.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrDDetailsTTypeCbx.setForeground(new java.awt.Color(31, 41, 55));
-        hrDDetailsTTypeCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "HR", "IT" }));
-        hrDDetailsTTypeCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsTTypeCbx.setEnabled(false);
-        hrDDetailsTTypeCbx.addActionListener(this::hrDDetailsTTypeCbxActionPerformed);
+        itDDetailsTTypeCbx.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itDDetailsTTypeCbx.setForeground(new java.awt.Color(31, 41, 55));
+        itDDetailsTTypeCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "HR", "IT" }));
+        itDDetailsTTypeCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDDetailsTTypeCbx.setEnabled(false);
+        itDDetailsTTypeCbx.addActionListener(this::itDDetailsTTypeCbxActionPerformed);
 
-        hrDDetailsReasonLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrDDetailsReasonLbl.setForeground(new java.awt.Color(31, 41, 55));
-        hrDDetailsReasonLbl.setText("Reason");
+        itDDetailsReasonLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itDDetailsReasonLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itDDetailsReasonLbl.setText("Reason");
 
-        hrDDetailsReasonFld.setForeground(new java.awt.Color(31, 41, 55));
-        hrDDetailsReasonFld.setText(" ");
-        hrDDetailsReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsReasonFld.setEnabled(false);
-        hrDDetailsReasonFld.addActionListener(this::hrDDetailsReasonFldActionPerformed);
+        itDDetailsReasonFld.setForeground(new java.awt.Color(31, 41, 55));
+        itDDetailsReasonFld.setText(" ");
+        itDDetailsReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDDetailsReasonFld.setEnabled(false);
+        itDDetailsReasonFld.addActionListener(this::itDDetailsReasonFldActionPerformed);
 
-        hrDDetailsSubmitBtn.setBackground(new java.awt.Color(59, 130, 246));
-        hrDDetailsSubmitBtn.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        hrDDetailsSubmitBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsSubmitBtn.setText("Submit");
-        hrDDetailsSubmitBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        hrDDetailsSubmitBtn.addActionListener(this::hrDDetailsSubmitBtnActionPerformed);
+        itDDetailsSubmitBtn.setBackground(new java.awt.Color(59, 130, 246));
+        itDDetailsSubmitBtn.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        itDDetailsSubmitBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itDDetailsSubmitBtn.setText("Submit");
+        itDDetailsSubmitBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        itDDetailsSubmitBtn.addActionListener(this::itDDetailsSubmitBtnActionPerformed);
 
-        hrDDetailsDateDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsDateDtChsr.setForeground(new java.awt.Color(31, 41, 55));
-        hrDDetailsDateDtChsr.setEnabled(false);
+        itDDetailsDateDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDDetailsDateDtChsr.setForeground(new java.awt.Color(31, 41, 55));
+        itDDetailsDateDtChsr.setEnabled(false);
 
-        hrDDetailsDateLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrDDetailsDateLbl.setForeground(new java.awt.Color(31, 41, 55));
-        hrDDetailsDateLbl.setText("Date");
+        itDDetailsDateLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itDDetailsDateLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itDDetailsDateLbl.setText("Date");
 
-        javax.swing.GroupLayout hrDDetailsFADisputeBrdrPnlLayout = new javax.swing.GroupLayout(hrDDetailsFADisputeBrdrPnl);
-        hrDDetailsFADisputeBrdrPnl.setLayout(hrDDetailsFADisputeBrdrPnlLayout);
-        hrDDetailsFADisputeBrdrPnlLayout.setHorizontalGroup(
-            hrDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itDDetailsFADisputeBrdrPnlLayout = new javax.swing.GroupLayout(itDDetailsFADisputeBrdrPnl);
+        itDDetailsFADisputeBrdrPnl.setLayout(itDDetailsFADisputeBrdrPnlLayout);
+        itDDetailsFADisputeBrdrPnlLayout.setHorizontalGroup(
+            itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
                 .addGap(18, 20, Short.MAX_VALUE)
-                .addGroup(hrDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrDDetailsReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrDDetailsReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(hrDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
-                        .addGroup(hrDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrDDetailsDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itDDetailsReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itDDetailsReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(itDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
+                        .addGroup(itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itDDetailsDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(27, 27, 27)
-                        .addGroup(hrDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrDDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(hrDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(hrDDetailsTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itDDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(itDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(itDDetailsTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(207, 207, 207)
-                                .addComponent(hrDDetailsSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(itDDetailsSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
-        hrDDetailsFADisputeBrdrPnlLayout.setVerticalGroup(
-            hrDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
+        itDDetailsFADisputeBrdrPnlLayout.setVerticalGroup(
+            itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
-                .addGroup(hrDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(hrDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrDDetailsSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrDDetailsTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(itDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itDDetailsSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itDDetailsTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(hrDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrDDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrDDetailsDateLbl))
+                .addGroup(itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itDDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itDDetailsDateLbl))
                 .addGap(5, 5, 5)
-                .addComponent(hrDDetailsReasonLbl)
+                .addComponent(itDDetailsReasonLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(hrDDetailsReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDDetailsReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
 
-        hrDDetailsFADisputePnl.getAccessibleContext().setAccessibleName("hrDDetailsFADisputePnl");
-        hrDDetailsTTypeCbx.getAccessibleContext().setAccessibleName("hrDDetailsTTypeCbx");
-        hrDDetailsReasonLbl.getAccessibleContext().setAccessibleName("hrDDetailsReasonLbl");
-        hrDDetailsReasonFld.getAccessibleContext().setAccessibleName("hrDDetailsReasonFld");
-        hrDDetailsSubmitBtn.getAccessibleContext().setAccessibleName("hrDDetailsSubmitBtn");
-        hrDDetailsDateDtChsr.getAccessibleContext().setAccessibleName("hrDDetailsDateDtChsr");
-        hrDDetailsDateLbl.getAccessibleContext().setAccessibleName("hrDDetailsDateLbl");
+        itDDetailsFADisputePnl.getAccessibleContext().setAccessibleName("itDDetailsFADisputePnl");
+        itDDetailsTTypeCbx.getAccessibleContext().setAccessibleName("itDDetailsTTypeCbx");
+        itDDetailsReasonLbl.getAccessibleContext().setAccessibleName("itDDetailsReasonLbl");
+        itDDetailsReasonFld.getAccessibleContext().setAccessibleName("itDDetailsReasonFld");
+        itDDetailsSubmitBtn.getAccessibleContext().setAccessibleName("itDDetailsSubmitBtn");
+        itDDetailsDateDtChsr.getAccessibleContext().setAccessibleName("itDDetailsDateDtChsr");
+        itDDetailsDateLbl.getAccessibleContext().setAccessibleName("itDDetailsDateLbl");
 
-        javax.swing.GroupLayout hrDDetailsDFormBrdrPnlLayout = new javax.swing.GroupLayout(hrDDetailsDFormBrdrPnl);
-        hrDDetailsDFormBrdrPnl.setLayout(hrDDetailsDFormBrdrPnlLayout);
-        hrDDetailsDFormBrdrPnlLayout.setHorizontalGroup(
-            hrDDetailsDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsDFormBrdrPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itDDetailsDFormBrdrPnlLayout = new javax.swing.GroupLayout(itDDetailsDFormBrdrPnl);
+        itDDetailsDFormBrdrPnl.setLayout(itDDetailsDFormBrdrPnlLayout);
+        itDDetailsDFormBrdrPnlLayout.setHorizontalGroup(
+            itDDetailsDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itDDetailsDFormBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(hrDDetailsFADisputeBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDDetailsFADisputeBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(19, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrDDetailsDFormBrdrPnlLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsDFormBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(hrDDetailsDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDDetailsDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(257, 257, 257))
         );
-        hrDDetailsDFormBrdrPnlLayout.setVerticalGroup(
-            hrDDetailsDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrDDetailsDFormBrdrPnlLayout.createSequentialGroup()
+        itDDetailsDFormBrdrPnlLayout.setVerticalGroup(
+            itDDetailsDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsDFormBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(22, Short.MAX_VALUE)
-                .addComponent(hrDDetailsDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDDetailsDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(hrDDetailsFADisputeBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDDetailsFADisputeBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
         );
 
-        hrDDetailsDFormPnl.getAccessibleContext().setAccessibleName("hrDDetailsDFormPnl");
-        hrDDetailsFADisputeBrdrPnl.getAccessibleContext().setAccessibleName("hrDDetailsFADisputeBrdrPnl");
+        itDDetailsDFormPnl.getAccessibleContext().setAccessibleName("itDDetailsDFormPnl");
+        itDDetailsFADisputeBrdrPnl.getAccessibleContext().setAccessibleName("itDDetailsFADisputeBrdrPnl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(hrDDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrDDetailsDDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itDDetailsDDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(hrDDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itDDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(43, 43, 43)
-                            .addComponent(hrDDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itDDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(hrDDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(hrDDetailsDFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(itDDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(itDDetailsDFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(hrDDetailsDDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDDetailsDDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrDDetailsDFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDDetailsDFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hrDDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrDDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrDDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itDDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itDDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itDDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(237, Short.MAX_VALUE))
-            .addComponent(hrDDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(itDDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        hrDDetailsApproveBtn.getAccessibleContext().setAccessibleName("hrDDetailsApproveBtn");
-        hrDDetailsDenyBtn.getAccessibleContext().setAccessibleName("hrDDetailsDenyBtn");
-        hrDDetailsBackBtn.getAccessibleContext().setAccessibleName("hrDDetailsBackBtn");
-        hrDDetailsSidebarPnl.getAccessibleContext().setAccessibleName("hrDDetailsSidebarPnl");
-        hrDDetailsDDetailsPnl.getAccessibleContext().setAccessibleName("hrDDetailsDDetailsPnl");
-        hrDDetailsDFormBrdrPnl.getAccessibleContext().setAccessibleName("hrDDetailsDFormBrdrPnl");
+        itDDetailsApproveBtn.getAccessibleContext().setAccessibleName("itDDetailsApproveBtn");
+        itDDetailsDenyBtn.getAccessibleContext().setAccessibleName("itDDetailsDenyBtn");
+        itDDetailsBackBtn.getAccessibleContext().setAccessibleName("itDDetailsBackBtn");
+        itDDetailsSidebarPnl.getAccessibleContext().setAccessibleName("itDDetailsSidebarPnl");
+        itDDetailsDDetailsPnl.getAccessibleContext().setAccessibleName("itDDetailsDDetailsPnl");
+        itDDetailsDFormBrdrPnl.getAccessibleContext().setAccessibleName("itDDetailsDFormBrdrPnl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void hrDDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsMainDashboardBtnActionPerformed
+    private void itDDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDDetailsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         
         new MainDashboardUI().setVisible(true);
-    }//GEN-LAST:event_hrDDetailsMainDashboardBtnActionPerformed
+    }//GEN-LAST:event_itDDetailsMainDashboardBtnActionPerformed
 
     private void formComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentHidden
         // TODO add your handling code here:
     }//GEN-LAST:event_formComponentHidden
 
-    private void hrDDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsApproveBtnActionPerformed
+    private void itDDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDDetailsApproveBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrDDetailsApproveBtnActionPerformed
+    }//GEN-LAST:event_itDDetailsApproveBtnActionPerformed
 
-    private void hrDDetailsDenyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsDenyBtnActionPerformed
+    private void itDDetailsDenyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDDetailsDenyBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrDDetailsDenyBtnActionPerformed
+    }//GEN-LAST:event_itDDetailsDenyBtnActionPerformed
 
-    private void hrDDetailsBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsBackBtnActionPerformed
+    private void itDDetailsBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDDetailsBackBtnActionPerformed
         // TODO add your handling code here:
       
-    }//GEN-LAST:event_hrDDetailsBackBtnActionPerformed
+    }//GEN-LAST:event_itDDetailsBackBtnActionPerformed
 
-    private void hrDDetailsTTypeCbxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsTTypeCbxActionPerformed
+    private void itDDetailsTTypeCbxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDDetailsTTypeCbxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrDDetailsTTypeCbxActionPerformed
+    }//GEN-LAST:event_itDDetailsTTypeCbxActionPerformed
 
-    private void hrDDetailsReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsReasonFldActionPerformed
+    private void itDDetailsReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDDetailsReasonFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrDDetailsReasonFldActionPerformed
+    }//GEN-LAST:event_itDDetailsReasonFldActionPerformed
 
-    private void hrDDetailsSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsSubmitBtnActionPerformed
+    private void itDDetailsSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDDetailsSubmitBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrDDetailsSubmitBtnActionPerformed
+    }//GEN-LAST:event_itDDetailsSubmitBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -403,25 +403,25 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton hrDDetailsApproveBtn;
-    private javax.swing.JButton hrDDetailsBackBtn;
-    private javax.swing.JLabel hrDDetailsDDetailsLbl;
-    private javax.swing.JPanel hrDDetailsDDetailsPnl;
-    private javax.swing.JPanel hrDDetailsDFormBrdrPnl;
-    private javax.swing.JLabel hrDDetailsDFormLbl;
-    private javax.swing.JPanel hrDDetailsDFormPnl;
-    private com.toedter.calendar.JDateChooser hrDDetailsDateDtChsr;
-    private javax.swing.JLabel hrDDetailsDateLbl;
-    private javax.swing.JButton hrDDetailsDenyBtn;
-    private javax.swing.JPanel hrDDetailsFADisputeBrdrPnl;
-    private javax.swing.JLabel hrDDetailsFADisputeLbl;
-    private javax.swing.JPanel hrDDetailsFADisputePnl;
-    private javax.swing.JButton hrDDetailsMainDashboardBtn;
-    private javax.swing.JLabel hrDDetailsMotorPHIconImgLbl;
-    private javax.swing.JTextField hrDDetailsReasonFld;
-    private javax.swing.JLabel hrDDetailsReasonLbl;
-    private javax.swing.JPanel hrDDetailsSidebarPnl;
-    private javax.swing.JButton hrDDetailsSubmitBtn;
-    private javax.swing.JComboBox<String> hrDDetailsTTypeCbx;
+    private javax.swing.JButton itDDetailsApproveBtn;
+    private javax.swing.JButton itDDetailsBackBtn;
+    private javax.swing.JLabel itDDetailsDDetailsLbl;
+    private javax.swing.JPanel itDDetailsDDetailsPnl;
+    private javax.swing.JPanel itDDetailsDFormBrdrPnl;
+    private javax.swing.JLabel itDDetailsDFormLbl;
+    private javax.swing.JPanel itDDetailsDFormPnl;
+    private com.toedter.calendar.JDateChooser itDDetailsDateDtChsr;
+    private javax.swing.JLabel itDDetailsDateLbl;
+    private javax.swing.JButton itDDetailsDenyBtn;
+    private javax.swing.JPanel itDDetailsFADisputeBrdrPnl;
+    private javax.swing.JLabel itDDetailsFADisputeLbl;
+    private javax.swing.JPanel itDDetailsFADisputePnl;
+    private javax.swing.JButton itDDetailsMainDashboardBtn;
+    private javax.swing.JLabel itDDetailsMotorPHIconImgLbl;
+    private javax.swing.JTextField itDDetailsReasonFld;
+    private javax.swing.JLabel itDDetailsReasonLbl;
+    private javax.swing.JPanel itDDetailsSidebarPnl;
+    private javax.swing.JButton itDDetailsSubmitBtn;
+    private javax.swing.JComboBox<String> itDDetailsTTypeCbx;
     // End of variables declaration//GEN-END:variables
 }

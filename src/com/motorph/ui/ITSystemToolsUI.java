@@ -59,7 +59,7 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
         itSysToolsUsernameLbl = new javax.swing.JLabel();
         itSysToolsUsernameFld = new javax.swing.JTextField();
         itSysToolsPasswordLbl = new javax.swing.JLabel();
-        itSysToolsPasswordFld = new javax.swing.JTextField();
+        itSysToolsPasswordFld = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -260,8 +260,6 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
 
         itSysToolsPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
         itSysToolsPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itSysToolsPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itSysToolsPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         itSysToolsPasswordFld.setEnabled(false);
         itSysToolsPasswordFld.addActionListener(this::itSysToolsPasswordFldActionPerformed);
 
@@ -532,7 +530,7 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
     private javax.swing.JLabel itSysToolsISupervisorLbl;
     private javax.swing.JButton itSysToolsMainDashboardBtn;
     private javax.swing.JLabel itSysToolsMotorPHIconImgLbl;
-    private javax.swing.JTextField itSysToolsPasswordFld;
+    private javax.swing.JPasswordField itSysToolsPasswordFld;
     private javax.swing.JLabel itSysToolsPasswordLbl;
     private javax.swing.JTextField itSysToolsPhnNumberFld;
     private javax.swing.JLabel itSysToolsPhnNumberLbl;

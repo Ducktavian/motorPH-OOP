@@ -30,19 +30,19 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Component id="hrDDetailsSidebarPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="itDDetailsSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="hrDDetailsDDetailsPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itDDetailsDDetailsPnl" min="-2" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="hrDDetailsApproveBtn" min="-2" pref="104" max="-2" attributes="0"/>
+                          <Component id="itDDetailsApproveBtn" min="-2" pref="104" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                          <Component id="hrDDetailsDenyBtn" min="-2" pref="104" max="-2" attributes="0"/>
+                          <Component id="itDDetailsDenyBtn" min="-2" pref="104" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="hrDDetailsBackBtn" min="-2" pref="88" max="-2" attributes="0"/>
+                          <Component id="itDDetailsBackBtn" min="-2" pref="88" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="hrDDetailsDFormBrdrPnl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itDDetailsDFormBrdrPnl" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="15" max="32767" attributes="0"/>
@@ -53,23 +53,23 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-              <Component id="hrDDetailsDDetailsPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="itDDetailsDDetailsPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="hrDDetailsDFormBrdrPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="itDDetailsDFormBrdrPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="hrDDetailsBackBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="hrDDetailsApproveBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="hrDDetailsDenyBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="itDDetailsBackBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="itDDetailsApproveBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="itDDetailsDenyBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="237" max="32767" attributes="0"/>
           </Group>
-          <Component id="hrDDetailsSidebarPnl" alignment="0" max="32767" attributes="0"/>
+          <Component id="itDDetailsSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="hrDDetailsApproveBtn">
+    <Component class="javax.swing.JButton" name="itDDetailsApproveBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="5e" green="c5" red="22" type="rgb"/>
@@ -90,13 +90,13 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsApproveBtn"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsApproveBtn"/>
       </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrDDetailsApproveBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itDDetailsApproveBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hrDDetailsDenyBtn">
+    <Component class="javax.swing.JButton" name="itDDetailsDenyBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="44" green="44" red="ef" type="rgb"/>
@@ -117,13 +117,13 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsDenyBtn"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsDenyBtn"/>
       </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrDDetailsDenyBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itDDetailsDenyBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="hrDDetailsBackBtn">
+    <Component class="javax.swing.JButton" name="itDDetailsBackBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -144,20 +144,20 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsBackBtn"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsBackBtn"/>
       </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrDDetailsBackBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itDDetailsBackBtnActionPerformed"/>
       </Events>
     </Component>
-    <Container class="javax.swing.JPanel" name="hrDDetailsSidebarPnl">
+    <Container class="javax.swing.JPanel" name="itDDetailsSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsSidebarPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsSidebarPnl"/>
       </AccessibilityProperties>
 
       <Layout>
@@ -165,11 +165,11 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="hrDDetailsMainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="itDDetailsMainDashboardBtn" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="hrDDetailsMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                  <Component id="itDDetailsMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -177,16 +177,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                  <Component id="hrDDetailsMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itDDetailsMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="hrDDetailsMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="itDDetailsMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="hrDDetailsMainDashboardBtn">
+        <Component class="javax.swing.JButton" name="itDDetailsMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -202,25 +202,25 @@
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsMainDashboardBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrDDetailsMainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itDDetailsMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="hrDDetailsMotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="itDDetailsMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsMotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="hrDDetailsDDetailsPnl">
+    <Container class="javax.swing.JPanel" name="itDDetailsDDetailsPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -237,14 +237,14 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsDDetailsPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsDDetailsPnl"/>
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="hrDDetailsDDetailsLbl">
+        <Component class="javax.swing.JLabel" name="itDDetailsDDetailsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -255,7 +255,7 @@
             <Property name="text" type="java.lang.String" value=" Dispute Details"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsDDetailsLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsDDetailsLbl"/>
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -265,7 +265,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="hrDDetailsDFormBrdrPnl">
+    <Container class="javax.swing.JPanel" name="itDDetailsDFormBrdrPnl">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -276,7 +276,7 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsDFormBrdrPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsDFormBrdrPnl"/>
       </AccessibilityProperties>
 
       <Layout>
@@ -284,12 +284,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                  <Component id="hrDDetailsFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itDDetailsFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="hrDDetailsDFormPnl" min="-2" pref="184" max="-2" attributes="0"/>
+                  <Component id="itDDetailsDFormPnl" min="-2" pref="184" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="257" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -298,16 +298,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="22" max="32767" attributes="0"/>
-                  <Component id="hrDDetailsDFormPnl" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="itDDetailsDFormPnl" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="hrDDetailsFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itDDetailsFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="hrDDetailsDFormPnl">
+        <Container class="javax.swing.JPanel" name="itDDetailsDFormPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -327,7 +327,7 @@
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsDFormPnl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsDFormPnl"/>
           </AccessibilityProperties>
 
           <Layout>
@@ -335,7 +335,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
-                      <Component id="hrDDetailsDFormLbl" min="-2" pref="170" max="-2" attributes="0"/>
+                      <Component id="itDDetailsDFormLbl" min="-2" pref="170" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -343,14 +343,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="hrDDetailsDFormLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itDDetailsDFormLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="hrDDetailsDFormLbl">
+            <Component class="javax.swing.JLabel" name="itDDetailsDFormLbl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -365,12 +365,12 @@
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsDFormLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsDFormLbl"/>
               </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="hrDDetailsFADisputeBrdrPnl">
+        <Container class="javax.swing.JPanel" name="itDDetailsFADisputeBrdrPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="e9" green="e9" red="e9" type="rgb"/>
@@ -387,7 +387,7 @@
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsFADisputeBrdrPnl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsFADisputeBrdrPnl"/>
           </AccessibilityProperties>
 
           <Layout>
@@ -396,20 +396,20 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="18" pref="20" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="hrDDetailsReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                          <Component id="hrDDetailsReasonFld" alignment="0" min="-2" pref="630" max="-2" attributes="0"/>
+                          <Component id="itDDetailsReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                          <Component id="itDDetailsReasonFld" alignment="0" min="-2" pref="630" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="hrDDetailsFADisputePnl" alignment="0" min="-2" pref="146" max="-2" attributes="0"/>
-                                  <Component id="hrDDetailsDateLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Component id="itDDetailsFADisputePnl" alignment="0" min="-2" pref="146" max="-2" attributes="0"/>
+                                  <Component id="itDDetailsDateLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="hrDDetailsDateDtChsr" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="itDDetailsDateDtChsr" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="hrDDetailsTTypeCbx" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="itDDetailsTTypeCbx" min="-2" pref="150" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="207" max="-2" attributes="0"/>
-                                      <Component id="hrDDetailsSubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Component id="itDDetailsSubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -423,26 +423,26 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace pref="14" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="hrDDetailsFADisputePnl" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="hrDDetailsSubmitBtn" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="hrDDetailsTTypeCbx" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="itDDetailsFADisputePnl" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="itDDetailsSubmitBtn" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="itDDetailsTTypeCbx" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="hrDDetailsDateDtChsr" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="hrDDetailsDateLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="itDDetailsDateDtChsr" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="itDDetailsDateLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                      <Component id="hrDDetailsReasonLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itDDetailsReasonLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="hrDDetailsReasonFld" min="-2" pref="66" max="-2" attributes="0"/>
+                      <Component id="itDDetailsReasonFld" min="-2" pref="66" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JPanel" name="hrDDetailsFADisputePnl">
+            <Container class="javax.swing.JPanel" name="itDDetailsFADisputePnl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -462,7 +462,7 @@
                 </Property>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsFADisputePnl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsFADisputePnl"/>
               </AccessibilityProperties>
 
               <Layout>
@@ -470,22 +470,22 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="hrDDetailsFADisputeLbl" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="7" max="32767" attributes="0"/>
+                          <Component id="itDDetailsFADisputeLbl" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="hrDDetailsFADisputeLbl" pref="32" max="32767" attributes="0"/>
+                          <Component id="itDDetailsFADisputeLbl" pref="32" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="hrDDetailsFADisputeLbl">
+                <Component class="javax.swing.JLabel" name="itDDetailsFADisputeLbl">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -500,12 +500,12 @@
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <AccessibilityProperties>
-                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsFADisputeLbl"/>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsFADisputeLbl"/>
                   </AccessibilityProperties>
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JComboBox" name="hrDDetailsTTypeCbx">
+            <Component class="javax.swing.JComboBox" name="itDDetailsTTypeCbx">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -530,16 +530,16 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsTTypeCbx"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsTTypeCbx"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrDDetailsTTypeCbxActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itDDetailsTTypeCbxActionPerformed"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="hrDDetailsReasonLbl">
+            <Component class="javax.swing.JLabel" name="itDDetailsReasonLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -550,10 +550,10 @@
                 <Property name="text" type="java.lang.String" value="Reason"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsReasonLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsReasonLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="hrDDetailsReasonFld">
+            <Component class="javax.swing.JTextField" name="itDDetailsReasonFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -569,13 +569,13 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsReasonFld"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsReasonFld"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrDDetailsReasonFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itDDetailsReasonFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="hrDDetailsSubmitBtn">
+            <Component class="javax.swing.JButton" name="itDDetailsSubmitBtn">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f6" green="82" red="3b" type="rgb"/>
@@ -596,13 +596,13 @@
                 </Property>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsSubmitBtn"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsSubmitBtn"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrDDetailsSubmitBtnActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itDDetailsSubmitBtnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="hrDDetailsDateDtChsr">
+            <Component class="com.toedter.calendar.JDateChooser" name="itDDetailsDateDtChsr">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -617,10 +617,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsDateDtChsr"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsDateDtChsr"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="hrDDetailsDateLbl">
+            <Component class="javax.swing.JLabel" name="itDDetailsDateLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -631,7 +631,7 @@
                 <Property name="text" type="java.lang.String" value="Date"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrDDetailsDateLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itDDetailsDateLbl"/>
               </AccessibilityProperties>
             </Component>
           </SubComponents>

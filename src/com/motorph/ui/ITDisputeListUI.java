@@ -28,34 +28,34 @@ public class ITDisputeListUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        hrDDetailsDListPnl = new javax.swing.JPanel();
-        hrDDetailsDListLbl = new javax.swing.JLabel();
-        hrDDetailsDListBrdrScrlPnl = new javax.swing.JScrollPane();
-        hrDDetailsDListTbl = new javax.swing.JTable();
-        hrDDetailsSidebarPnl = new javax.swing.JPanel();
-        hrDDetailsDDetailsBtn = new javax.swing.JButton();
-        hrDDetailsMainDashboardBtn = new javax.swing.JButton();
-        hrDDetailsMotorPHIconImgLbl = new javax.swing.JLabel();
-        hrDDetailsDListBtn = new javax.swing.JButton();
+        itDListDListPnl = new javax.swing.JPanel();
+        itDListDListLbl = new javax.swing.JLabel();
+        itDListDListBrdrScrlPnl = new javax.swing.JScrollPane();
+        itDListDListTbl = new javax.swing.JTable();
+        itDListSidebarPnl = new javax.swing.JPanel();
+        itDListDDetailsBtn = new javax.swing.JButton();
+        itDListMainDashboardBtn = new javax.swing.JButton();
+        itDListMotorPHIconImgLbl = new javax.swing.JLabel();
+        itDListDListBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        hrDDetailsDListPnl.setBackground(new java.awt.Color(30, 58, 138));
-        hrDDetailsDListPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsDListPnl.setForeground(new java.awt.Color(30, 58, 138));
-        hrDDetailsDListPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        itDListDListPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itDListDListPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDListDListPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itDListDListPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        hrDDetailsDListLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        hrDDetailsDListLbl.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsDListLbl.setText("Dispute List");
-        hrDDetailsDListPnl.add(hrDDetailsDListLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 150, 46));
-        hrDDetailsDListLbl.getAccessibleContext().setAccessibleName("hrDDetailsDListLbl");
+        itDListDListLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        itDListDListLbl.setForeground(new java.awt.Color(255, 255, 255));
+        itDListDListLbl.setText("Dispute List");
+        itDListDListPnl.add(itDListDListLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 150, 46));
+        itDListDListLbl.getAccessibleContext().setAccessibleName("itDListDListLbl");
 
-        hrDDetailsDListBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        itDListDListBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
-        hrDDetailsDListTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrDDetailsDListTbl.setForeground(new java.awt.Color(30, 42, 56));
-        hrDDetailsDListTbl.setModel(new javax.swing.table.DefaultTableModel(
+        itDListDListTbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itDListDListTbl.setForeground(new java.awt.Color(30, 42, 56));
+        itDListDListTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -159,145 +159,145 @@ public class ITDisputeListUI extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Employee #", "Employee Name", "Status", "Ticket Details"
+                "Employee #", "Employee Name", "Ticket Details", "Status"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
             };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
         });
-        hrDDetailsDListTbl.setColumnSelectionAllowed(true);
-        hrDDetailsDListTbl.setGridColor(new java.awt.Color(178, 178, 178));
-        hrDDetailsDListTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
-        hrDDetailsDListTbl.getTableHeader().setReorderingAllowed(false);
-        hrDDetailsDListTbl.addMouseListener(new java.awt.event.MouseAdapter() {
+        itDListDListTbl.setColumnSelectionAllowed(true);
+        itDListDListTbl.setGridColor(new java.awt.Color(178, 178, 178));
+        itDListDListTbl.setSelectionForeground(new java.awt.Color(30, 42, 56));
+        itDListDListTbl.getTableHeader().setReorderingAllowed(false);
+        itDListDListTbl.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                hrDDetailsDListTblMouseClicked(evt);
+                itDListDListTblMouseClicked(evt);
             }
         });
-        hrDDetailsDListBrdrScrlPnl.setViewportView(hrDDetailsDListTbl);
-        hrDDetailsDListTbl.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
-        hrDDetailsDListTbl.getAccessibleContext().setAccessibleName("hrDDetailsDListTbl");
+        itDListDListBrdrScrlPnl.setViewportView(itDListDListTbl);
+        itDListDListTbl.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        itDListDListTbl.getAccessibleContext().setAccessibleName("itDListDListTbl");
 
-        hrDDetailsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itDListSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        hrDDetailsDDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrDDetailsDDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsDDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsDDetailsBtn.setText("Dispute Details");
-        hrDDetailsDDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        hrDDetailsDDetailsBtn.addActionListener(this::hrDDetailsDDetailsBtnActionPerformed);
+        itDListDDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itDListDDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itDListDDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itDListDDetailsBtn.setText("Dispute Details");
+        itDListDDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        itDListDDetailsBtn.addActionListener(this::itDListDDetailsBtnActionPerformed);
 
-        hrDDetailsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrDDetailsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        hrDDetailsMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        hrDDetailsMainDashboardBtn.setLabel("Main Dashboard");
-        hrDDetailsMainDashboardBtn.addActionListener(this::hrDDetailsMainDashboardBtnActionPerformed);
+        itDListMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itDListMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itDListMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itDListMainDashboardBtn.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        itDListMainDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        itDListMainDashboardBtn.setLabel("Main Dashboard");
+        itDListMainDashboardBtn.addActionListener(this::itDListMainDashboardBtnActionPerformed);
 
-        hrDDetailsMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
+        itDListMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        hrDDetailsDListBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrDDetailsDListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrDDetailsDListBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrDDetailsDListBtn.setText("Dispute List");
-        hrDDetailsDListBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        hrDDetailsDListBtn.addActionListener(this::hrDDetailsDListBtnActionPerformed);
+        itDListDListBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itDListDListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itDListDListBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itDListDListBtn.setText("Dispute List");
+        itDListDListBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        itDListDListBtn.addActionListener(this::itDListDListBtnActionPerformed);
 
-        javax.swing.GroupLayout hrDDetailsSidebarPnlLayout = new javax.swing.GroupLayout(hrDDetailsSidebarPnl);
-        hrDDetailsSidebarPnl.setLayout(hrDDetailsSidebarPnlLayout);
-        hrDDetailsSidebarPnlLayout.setHorizontalGroup(
-            hrDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsSidebarPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itDListSidebarPnlLayout = new javax.swing.GroupLayout(itDListSidebarPnl);
+        itDListSidebarPnl.setLayout(itDListSidebarPnlLayout);
+        itDListSidebarPnlLayout.setHorizontalGroup(
+            itDListSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itDListSidebarPnlLayout.createSequentialGroup()
                 .addGap(92, 92, 92)
-                .addComponent(hrDDetailsMainDashboardBtn))
-            .addGroup(hrDDetailsSidebarPnlLayout.createSequentialGroup()
+                .addComponent(itDListMainDashboardBtn))
+            .addGroup(itDListSidebarPnlLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(hrDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrDDetailsDListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(hrDDetailsSidebarPnlLayout.createSequentialGroup()
+                .addGroup(itDListSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itDListDListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(itDListSidebarPnlLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(hrDDetailsMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(hrDDetailsDDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itDListMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itDListDDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
-        hrDDetailsSidebarPnlLayout.setVerticalGroup(
-            hrDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsSidebarPnlLayout.createSequentialGroup()
+        itDListSidebarPnlLayout.setVerticalGroup(
+            itDListSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itDListSidebarPnlLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(hrDDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrDDetailsMotorPHIconImgLbl)
-                    .addGroup(hrDDetailsSidebarPnlLayout.createSequentialGroup()
+                .addGroup(itDListSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itDListMotorPHIconImgLbl)
+                    .addGroup(itDListSidebarPnlLayout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(hrDDetailsDDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itDListDDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrDDetailsDListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDListDListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 353, Short.MAX_VALUE)
-                .addComponent(hrDDetailsMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDListMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
         );
 
-        hrDDetailsDDetailsBtn.getAccessibleContext().setAccessibleName("hrDDetailsDDetailsBtn");
-        hrDDetailsMainDashboardBtn.getAccessibleContext().setAccessibleName("hrDDetailsMainDashboardBtn");
-        hrDDetailsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("hrDDetailsMotorPHIconImgLbl");
-        hrDDetailsDListBtn.getAccessibleContext().setAccessibleName("hrDDetailsDListBtn");
+        itDListDDetailsBtn.getAccessibleContext().setAccessibleName("itDListDDetailsBtn");
+        itDListMainDashboardBtn.getAccessibleContext().setAccessibleName("itDListMainDashboardBtn");
+        itDListMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("itDListMotorPHIconImgLbl");
+        itDListDListBtn.getAccessibleContext().setAccessibleName("itDListDListBtn");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(hrDDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDListSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrDDetailsDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrDDetailsDListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 711, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itDListDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itDListDListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 711, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(hrDDetailsDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDListDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrDDetailsDListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 603, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itDListDListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 603, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(hrDDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(itDListSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        hrDDetailsDListPnl.getAccessibleContext().setAccessibleName("hrDDetailsDListPnl");
-        hrDDetailsDListPnl.getAccessibleContext().setAccessibleDescription("");
-        hrDDetailsDListBrdrScrlPnl.getAccessibleContext().setAccessibleName("hrDDetailsDListBrdrScrlPnl");
-        hrDDetailsSidebarPnl.getAccessibleContext().setAccessibleName("hrDDetailsSidebarPnl");
+        itDListDListPnl.getAccessibleContext().setAccessibleName("itDListDListPnl");
+        itDListDListPnl.getAccessibleContext().setAccessibleDescription("");
+        itDListDListBrdrScrlPnl.getAccessibleContext().setAccessibleName("itDListDListBrdrScrlPnl");
+        itDListSidebarPnl.getAccessibleContext().setAccessibleName("itDListSidebarPnl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void hrDDetailsDListTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hrDDetailsDListTblMouseClicked
+    private void itDListDListTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_itDListDListTblMouseClicked
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_hrDDetailsDListTblMouseClicked
+    }//GEN-LAST:event_itDListDListTblMouseClicked
 
-    private void hrDDetailsDDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsDDetailsBtnActionPerformed
+    private void itDListDDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDListDDetailsBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
 
         new EmployeeLeaveUI().setVisible(true);
-    }//GEN-LAST:event_hrDDetailsDDetailsBtnActionPerformed
+    }//GEN-LAST:event_itDListDDetailsBtnActionPerformed
 
-    private void hrDDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsMainDashboardBtnActionPerformed
+    private void itDListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDListMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardUI().setVisible(true);
-    }//GEN-LAST:event_hrDDetailsMainDashboardBtnActionPerformed
+    }//GEN-LAST:event_itDListMainDashboardBtnActionPerformed
 
-    private void hrDDetailsDListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsDListBtnActionPerformed
+    private void itDListDListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDListDListBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrDDetailsDListBtnActionPerformed
+    }//GEN-LAST:event_itDListDListBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -325,14 +325,14 @@ public class ITDisputeListUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton hrDDetailsDDetailsBtn;
-    private javax.swing.JScrollPane hrDDetailsDListBrdrScrlPnl;
-    private javax.swing.JButton hrDDetailsDListBtn;
-    private javax.swing.JLabel hrDDetailsDListLbl;
-    private javax.swing.JPanel hrDDetailsDListPnl;
-    private javax.swing.JTable hrDDetailsDListTbl;
-    private javax.swing.JButton hrDDetailsMainDashboardBtn;
-    private javax.swing.JLabel hrDDetailsMotorPHIconImgLbl;
-    private javax.swing.JPanel hrDDetailsSidebarPnl;
+    private javax.swing.JButton itDListDDetailsBtn;
+    private javax.swing.JScrollPane itDListDListBrdrScrlPnl;
+    private javax.swing.JButton itDListDListBtn;
+    private javax.swing.JLabel itDListDListLbl;
+    private javax.swing.JPanel itDListDListPnl;
+    private javax.swing.JTable itDListDListTbl;
+    private javax.swing.JButton itDListMainDashboardBtn;
+    private javax.swing.JLabel itDListMotorPHIconImgLbl;
+    private javax.swing.JPanel itDListSidebarPnl;
     // End of variables declaration//GEN-END:variables
 }
