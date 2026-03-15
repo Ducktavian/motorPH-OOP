@@ -667,13 +667,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
             // Check if an item is selected to avoid a NullPointerException
             String status = null;
             if (selectedItem != null) {
-                // Convert the selected item to a String
                 status = selectedItem.toString();
-
-                // Now you can use the 'selectedValue' string (e.g., print it, save to a database)
-                System.out.println("Selected Value: " + status);
-                // You can also display it in a text field, for example:
-                // myTextField.setText(selectedValue);
             }
             // Position
             String position = hrAEmployeePositionFld.getText();

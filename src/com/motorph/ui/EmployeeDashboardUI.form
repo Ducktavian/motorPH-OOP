@@ -216,7 +216,7 @@
                               <Component id="employeeDashboardISupervisorLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="employeeDashboardPhnNumberLbl" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="57" max="32767" attributes="0"/>
+                          <EmptySpace pref="56" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="employeeDashboardPagIbigFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
                               <Component id="employeeDashboardTINFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>

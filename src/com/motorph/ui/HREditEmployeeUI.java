@@ -41,7 +41,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
         hrEditEmployeeENumberFld.setText(emp.getEmployeeNumber());
         hrEditEmployeeFNameFld.setText(emp.getFirstName());
         hrEditEmployeeLNameFld.setText(emp.getLastName());
-        hrEditEmployeeBirthdayFld.setText(DateUtils.dateToString(emp.getBirthday()));
+        hrEditEmployeeBirthdayDtChsr.setDate(DateUtils.localDateToUtilDate(emp.getBirthday()));
         hrEditEmployeeAddressFld.setText(emp.getAddress());
         hrEditEmployeePhnNumberFld.setText(emp.getPhoneNumber());
         hrEditEmployeeSSSFld.setText(emp.getSSSNumber());
@@ -580,7 +580,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
             // FirstName
             String firstName = hrEditEmployeeFNameFld.getText().trim();
             // Bday
-            LocalDate bday = DateUtils.stringToDate(hrEditEmployeeBirthdayFld.getText());
+            LocalDate bday = DateUtils.convertDateToLocalDate(hrEditEmployeeBirthdayDtChsr.getDate());
             // Address
             String address = hrEditEmployeeAddressFld.getText().trim();
             // Phone Number

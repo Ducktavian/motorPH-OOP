@@ -20,6 +20,9 @@ public class MainDashboardUI extends javax.swing.JFrame {
      */
     public MainDashboardUI() {
         initComponents();
+        
+   
+        
     }
 
     /**
@@ -251,6 +254,21 @@ public class MainDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         openFrame(new FinanceAttendanceLogsUI());
     }//GEN-LAST:event_mainDashboardAttLogsImgBtnActionPerformed
+
+
+    private void mainDashboardPylImgFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardPylImgFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mainDashboardPylImgFldActionPerformed
+
+    private void mainDashboardDashboardImgFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardDashboardImgFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mainDashboardDashboardImgFldActionPerformed
+
+    private void mainDashboardDashboardImgFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardDashboardImgFld1ActionPerformed
+        // TODO add your handling code here:
+        ///
+    }//GEN-LAST:event_mainDashboardDashboardImgFld1ActionPerformed
+
 
     /**
      * @param args the command line arguments

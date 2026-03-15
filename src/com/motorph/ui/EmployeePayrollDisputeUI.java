@@ -695,18 +695,7 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
     private void employeePrlDisputeSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlDisputeSubmitBtnActionPerformed
         // TODO add your handling code here:
 
-        try {
-            employeeLeaveENameFld.getText();
-            employeeLeaveENumberFld.getText();
-            String to = DateUtils.convertDateToString(employeeLeaveToDtChsr.getDate());
-            String from = DateUtils.convertDateToString(employeePrlDisputePrlDateDtChsr.getDate());
-            employeePrlDisputeReasonFld.getText();
-
-            System.out.println(from + " - " + to);
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, JOptionPane.ERROR_MESSAGE);
-        }
+     
 
     }//GEN-LAST:event_employeePrlDisputeSubmitBtnActionPerformed
 

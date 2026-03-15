@@ -11,7 +11,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,7 +74,7 @@ public class CsvAttendanceDAO implements AttendanceDAO {
                 if (line.length >= 6) {
                     try {
                         String employeeNumber = line[0];
-                        LocalDate date = DateUtils.stringToDate(line[3]);
+                        LocalDate date = DateUtils.stringToLocalDate(line[3]);
                         LocalTime logIn = DateUtils.stringToTime(line[4]);
                         LocalTime logOut = DateUtils.stringToTime(line[5]);
 
@@ -172,7 +171,7 @@ public class CsvAttendanceDAO implements AttendanceDAO {
                 if (line.length >= 6) {
 
                     String empNo = line[0];
-                    LocalDate date = DateUtils.stringToDate(line[3]);
+                    LocalDate date = DateUtils.stringToLocalDate(line[3]);
                     String timeOut = line[5];
 
                     // Match the open session
@@ -197,11 +196,5 @@ public class CsvAttendanceDAO implements AttendanceDAO {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-    
-    
-    
-    
-    
-    
+    }  
 }

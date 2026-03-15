@@ -78,7 +78,7 @@ public class CsvEmployeeDAO implements EmployeeDAO {
         String employeeNumber = data[0];
         String lastName = data[1];
         String firstName = data[2];
-        LocalDate birthday = DateUtils.stringToDate(data[3]);
+        LocalDate birthday = DateUtils.stringToLocalDate(data[3]);
         String address = data[4];
         String phoneNumber = data[5];
         String SSSNumber = data[6];

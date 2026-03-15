@@ -11,6 +11,7 @@ import com.motorph.service.AttendanceService;
 import com.motorph.service.DeductionService;
 import com.motorph.service.PayrollService;
 import com.motorph.service.RateService;
+import com.motorph.util.AppContext;
 import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
 import java.util.List;
@@ -24,7 +25,6 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayslipRecordUI.class.getName());
 
-    private PayslipDAO payslipDAO;
     private PayrollService payrollService;
     /**
      * Creates new form EmployeePayslipRecordFrame
@@ -39,21 +39,14 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
     
      private void initDataEngine() {
          
-         this.payslipDAO = new CsvPayslipDAO();
          
-         this.payrollService = new PayrollService(
-                 new AttendanceService(),
-                 new RateService(),
-                 new DeductionService(),
-                 this.payslipDAO
-         );
+         this.payrollService = AppContext.getPayrollService();
      
      }
      
      private void refreshTableData(String empNumber) {
          
-        System.out.println("OK");
-        
+       
         List<Payslip> list = payrollService.findPayslipsByEmployee(empNumber);
 
         DefaultTableModel model = (DefaultTableModel) employeePylRecordTbl.getModel();
@@ -427,7 +420,7 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
         if (evt.getClickCount() == 2) { // Check for double click
             int row = employeePylRecordTbl.getSelectedRow();
             String payslipId = employeePylRecordTbl.getValueAt(row, 0).toString();
-            Payslip payslip = payslipDAO.findPayslipById(payslipId.trim());
+            Payslip payslip = payrollService.findPayslipsById(payslipId.trim());
             GuiUtil.openFrame(this, new EmployeePayslipUI(payslip));
         }
     }//GEN-LAST:event_employeePylRecordTblMouseClicked

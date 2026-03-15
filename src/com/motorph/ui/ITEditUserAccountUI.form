@@ -301,9 +301,15 @@
                           <Component id="itEditUAccPositionFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                           <Component id="itEditUAccISupervisorLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="49" max="32767" attributes="0"/>
                           <Component id="itEditUAccISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
+=======
+                          <Component id="itEditUserISupervisorLbl" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="48" max="32767" attributes="0"/>
+                          <Component id="itEditUserISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
+>>>>>>> b79e58462ca09cd5828e123a6bf2a69415345a1c
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>

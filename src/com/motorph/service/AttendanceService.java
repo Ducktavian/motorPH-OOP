@@ -11,10 +11,11 @@ import java.util.List;
 
 public class AttendanceService {
     
-    private AttendanceDAO attendanceDAO = new CsvAttendanceDAO();
+    private AttendanceDAO attendanceDAO;
     
     // Constructor
-    public AttendanceService() {
+    public AttendanceService(AttendanceDAO attendanceDAO ) {
+        this.attendanceDAO = attendanceDAO;
     }
     
     // Computes hours worked for a single attendance record ( helper function)

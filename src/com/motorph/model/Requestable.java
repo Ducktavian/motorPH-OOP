@@ -22,5 +22,5 @@ interface Requestable {
     
     void approve(String approverId);
     
-    void reject(String approverId);
+    void deny(String approverId);
 }

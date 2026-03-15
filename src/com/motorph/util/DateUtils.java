@@ -19,7 +19,7 @@ public class DateUtils {
         return (time == null) ? "" : time.format(TIME_FORMAT);
     }
     
-    public static LocalDate stringToDate(String dateStr) {
+    public static LocalDate stringToLocalDate(String dateStr) {
         return (dateStr == null || dateStr.isEmpty()) ? null : LocalDate.parse(dateStr, FORMATTER);
     }
     
@@ -38,6 +38,7 @@ public class DateUtils {
         return localDate.format(FORMATTER);
     }
     
+    // Used in Jcalendar formatting
     public static LocalDate convertDateToLocalDate(Date date) {
         if (date == null) {
             return null;
@@ -50,4 +51,20 @@ public class DateUtils {
         return localDate;
     }
 
+    // Used in Jcalendar formatting
+    public static Date stringToUtilDate(String dateStr) {
+        if (dateStr == null || dateStr.isEmpty()) return null;
+        
+        LocalDate localDate = LocalDate.parse(dateStr, FORMATTER);
+        
+        return Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
+    }
+    
+    // Used in Jcalendar formatting
+    public static Date localDateToUtilDate(LocalDate localDate) {
+        if (localDate == null) return null;
+        
+        return Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
+
+    }
 }

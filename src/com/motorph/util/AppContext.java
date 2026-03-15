@@ -1,46 +1,62 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.motorph.util;
 
-import com.motorph.dao.AttendanceDAO;
-import com.motorph.dao.CsvAttendanceDAO;
-import com.motorph.dao.CsvEmployeeDAO;
-import com.motorph.dao.CsvPayslipDAO;
-import com.motorph.dao.EmployeeDAO;
-import com.motorph.dao.PayslipDAO;
-import com.motorph.service.AttendanceService;
-import com.motorph.service.DeductionService;
-import com.motorph.service.PayrollService;
-import com.motorph.service.RateService;
+import com.motorph.dao.*;
+import com.motorph.service.*;
 
-/**
- *
- * @author Lenovo
- */
 public class AppContext {
 
-    private static PayrollService payrollService;
-    private static EmployeeDAO employeeDAO;
+    // --- DAOs ---
+    private static final AttendanceDAO attendanceDAO = new CsvAttendanceDAO();
+    private static final EmployeeDAO employeeDAO = new CsvEmployeeDAO();
+    private static final LeaveDAO leaveDAO = new CsvLeaveDAO();
+    private static final PayslipDAO payslipDAO = new CsvPayslipDAO();
+    private static final UserAccountDAO userAccountDAO = new CsvUserAccountDAO();
 
-    static {
-        AttendanceDAO attendanceDAO = new CsvAttendanceDAO();
-        AttendanceService attendanceService = new AttendanceService();
-        RateService rateService = new RateService();
-        DeductionService deductionService = new DeductionService();
-        PayslipDAO payslipDAO = new CsvPayslipDAO();
+    // --- Services ---
+    private static final AttendanceService attendanceService =
+            new AttendanceService(attendanceDAO);
 
-        payrollService = new PayrollService(attendanceService, rateService, deductionService, payslipDAO);
-        employeeDAO = new CsvEmployeeDAO();
-    }
+    private static final EmployeeService employeeService =
+            new EmployeeService(employeeDAO);
 
+    private static final LeaveService leaveService =
+            new LeaveService(leaveDAO);
+
+    private static final RateService rateService = new RateService();
+    private static final DeductionService deductionService = new DeductionService();
+
+    private static final PayrollService payrollService =
+            new PayrollService(attendanceService, rateService, deductionService, payslipDAO);
+
+    private static final AuthService authService =
+            new AuthService(userAccountDAO);
+
+    private static final UserManagementService userManagementService =
+            new UserManagementService(userAccountDAO);
+
+    
+    // ---Getters---
     public static PayrollService getPayrollService() {
         return payrollService;
     }
 
-    public static EmployeeDAO getEmployeeDAO() {
-        return employeeDAO;
+    public static EmployeeService getEmployeeService() {
+        return employeeService;
+    }
+
+    public static AttendanceService getAttendanceService() {
+        return attendanceService;
+    }
+
+    public static LeaveService getLeaveService() {
+        return leaveService;
+    }
+
+    public static AuthService getAuthService() {
+        return authService;
+    }
+
+    public static UserManagementService getUserManagementService() {
+        return userManagementService;
     }
 }
-

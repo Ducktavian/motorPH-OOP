@@ -3,6 +3,7 @@ package com.motorph.dao;
 import com.motorph.model.LeaveRequest;
 import com.motorph.model.LeaveType;
 import com.motorph.model.RequestStatus;
+import com.motorph.util.DateUtils;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
@@ -10,7 +11,6 @@ import java.io.File;
 
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +22,6 @@ public class CsvLeaveDAO implements LeaveDAO {
     
     
     public CsvLeaveDAO() {
-        
         // Initialize the file and directories as soon as DAO is created
         initializeFile();
     }
@@ -52,6 +51,7 @@ public class CsvLeaveDAO implements LeaveDAO {
     }
     
     
+    // EMPLOYEE VIEW
     @Override
     public void submitLeaveRequest(LeaveRequest leave) {
         try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH, true))) {
@@ -61,6 +61,7 @@ public class CsvLeaveDAO implements LeaveDAO {
         }
     }
     
+    // FOR HR VIEW
     @Override
     public List<LeaveRequest> getAllRequests() {
         List<LeaveRequest> requests = new ArrayList<>();
@@ -84,6 +85,7 @@ public class CsvLeaveDAO implements LeaveDAO {
         return requests;
     }
     
+    // User view their own history
     @Override
     public List<LeaveRequest> getRequestsByEmployee(String employeeNumber) {
         List<LeaveRequest> result = new ArrayList<>();
@@ -95,6 +97,7 @@ public class CsvLeaveDAO implements LeaveDAO {
         return result;
     }
     
+    // 
     @Override
     public LeaveRequest findById(String requestId) {
         for (LeaveRequest req : getAllRequests()) {
@@ -102,7 +105,6 @@ public class CsvLeaveDAO implements LeaveDAO {
                 return req;
             }
         }
-        
         return null;
     }
     
@@ -135,9 +137,9 @@ public class CsvLeaveDAO implements LeaveDAO {
         LeaveRequest request = new LeaveRequest(
                 row[0],
                 row[1],
-                LocalDate.parse(row[2]),
-                LocalDate.parse(row[3]),
-                LocalDate.parse(row[4]),
+                DateUtils.stringToLocalDate(row[2]),
+                DateUtils.stringToLocalDate(row[3]),
+                DateUtils.stringToLocalDate(row[4]),
                 LeaveType.valueOf(row[5]),
                 row[6]
         );
@@ -150,14 +152,32 @@ public class CsvLeaveDAO implements LeaveDAO {
         return request;
     }
     
+    @Override
+    public String generateNextLeaveId(String employeeNumber, List<LeaveRequest> allLeaves) {
+        int count = 0;
+
+        // Look through existing leaves to see how many this specific employee has
+        for (LeaveRequest record : allLeaves) {
+            if (record.getEmployeeNumber().equals(employeeNumber)) {
+                count++;
+            }
+        }
+
+        // The next ID is the count + 1
+        int nextIncrement = count + 1;
+
+        // Result: "10001-1"
+        return employeeNumber + "-" + nextIncrement;
+    }
+    
     // Helper to keep logic clean and reusable
     private String[] mapLeaveRequestToRow(LeaveRequest leave) {
         return new String[] {
             leave.getRequestId(),
             leave.getEmployeeNumber(),
-            leave.getDateFiled().toString(),
-            leave.getStartDate().toString(),
-            leave.getEndDate().toString(),
+            DateUtils.dateToString(leave.getDateFiled()),
+            DateUtils.dateToString(leave.getStartDate()),
+            DateUtils.dateToString(leave.getEndDate()),
             leave.getLeaveType().name(),
             leave.getReason(),
             leave.getStatus().name(),

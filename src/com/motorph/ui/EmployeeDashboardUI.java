@@ -9,6 +9,7 @@ import com.motorph.model.AttendanceRecord;
 import com.motorph.model.Employee;
 import com.motorph.service.AttendanceService;
 import com.motorph.service.EmployeeService;
+import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
 import com.motorph.util.Session;
 import java.util.List;
@@ -23,6 +24,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeeDashboardUI.class.getName());
     private EmployeeService empService;
     private AttendanceService attendanceService;
+    
 
     /**
      * Creates new form EMPLOYEEDASH
@@ -30,8 +32,8 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
     public EmployeeDashboardUI() {
         initComponents();
         
-        this.empService = new EmployeeService(new CsvEmployeeDAO());
-        this.attendanceService = new AttendanceService();
+        this.empService = AppContext.getEmployeeService();
+        this.attendanceService = AppContext.getAttendanceService();
                 
         populateFields();
         populateAttendanceLogs();
@@ -43,14 +45,14 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
             employeeDashboardENumberFld.setText(emp.getEmployeeNumber());
             employeeDashboardFNameFld.setText(emp.getFirstName());
             employeeDashboardLNameFld.setText(emp.getLastName());
-            hrEDetailsBirthdayFld.setText(DateUtils.dateToString(emp.getBirthday()));
+            employeeDashboardBirthdayDtChsr.setDate(DateUtils.localDateToUtilDate(emp.getBirthday()));
             employeeDashboardAddressFld.setText(emp.getAddress());
             employeeDashboardPhnNumberFld.setText(emp.getPhoneNumber());
             employeeDashboardSSSFld.setText(emp.getSSSNumber());
             employeeDashboardPhilHealthFld.setText(emp.getPhilhealthNumber());
             employeeDashboardTINFld.setText(emp.getTIN());
             employeeDashboardPagIbigFld.setText(emp.getPagIbigNumber());
-            employeeDashboardStatusFld.setText(emp.getStatus());
+            employeeDashboardStatusCbx.setSelectedItem(emp.getStatus());
             employeeDashboardPositionFld.setText(emp.getPosition());
             employeeDashboardISupervisorFld.setText(emp.getImmediateSupervisor());
             employeeDashboardBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
