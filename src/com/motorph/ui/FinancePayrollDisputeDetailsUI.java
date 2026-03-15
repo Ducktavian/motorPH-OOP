@@ -365,6 +365,7 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
         financePrlDDetailsReasonFld.setForeground(new java.awt.Color(31, 41, 55));
         financePrlDDetailsReasonFld.setText(" ");
         financePrlDDetailsReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financePrlDDetailsReasonFld.setEnabled(false);
         financePrlDDetailsReasonFld.addActionListener(this::financePrlDDetailsReasonFldActionPerformed);
 
         financePrlDDetailsPrlDateLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -373,10 +374,12 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
 
         financePrlDDetailsPrlDateDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         financePrlDDetailsPrlDateDtChsr.setForeground(new java.awt.Color(31, 41, 55));
+        financePrlDDetailsPrlDateDtChsr.setEnabled(false);
 
         financePrlDDetailsPrlPeriodCbx.setForeground(new java.awt.Color(31, 41, 55));
         financePrlDDetailsPrlPeriodCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "1st cutoff", "2nd cutoff" }));
         financePrlDDetailsPrlPeriodCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 1, true));
+        financePrlDDetailsPrlPeriodCbx.setEnabled(false);
 
         javax.swing.GroupLayout financePrlDDetailsFADisputeBrdrPnlLayout = new javax.swing.GroupLayout(financePrlDDetailsFADisputeBrdrPnl);
         financePrlDDetailsFADisputeBrdrPnl.setLayout(financePrlDDetailsFADisputeBrdrPnlLayout);
