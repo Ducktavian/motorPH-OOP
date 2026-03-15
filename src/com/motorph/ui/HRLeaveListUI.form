@@ -24,11 +24,11 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Component id="hrLDetailsSidebarPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="hrLListSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="hrLDetailsLListPnl" min="-2" max="-2" attributes="0"/>
-                  <Component id="hrLDetailsLListBrdrScrlPnl" min="-2" pref="711" max="-2" attributes="0"/>
+                  <Component id="hrLListLListPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="hrLListLListBrdrScrlPnl" min="-2" pref="711" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="15" max="32767" attributes="0"/>
           </Group>
@@ -38,24 +38,24 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-              <Component id="hrLDetailsLListPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="hrLListLListPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="hrLDetailsLListBrdrScrlPnl" min="-2" pref="603" max="-2" attributes="0"/>
+              <Component id="hrLListLListBrdrScrlPnl" min="-2" pref="603" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
-          <Component id="hrLDetailsSidebarPnl" alignment="0" max="32767" attributes="0"/>
+          <Component id="hrLListSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="hrLDetailsSidebarPnl">
+    <Container class="javax.swing.JPanel" name="hrLListSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsSidebarPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLListSidebarPnl"/>
       </AccessibilityProperties>
 
       <Layout>
@@ -63,17 +63,17 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="hrLDetailsMainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="hrLListMainDashboardBtn" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="hrLDetailsLListBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="hrLListLListBtn" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                          <Component id="hrLDetailsMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="hrLListMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="hrLDetailsLDetailsBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="hrLListLDetailsBtn" min="-2" pref="216" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -83,23 +83,23 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="hrLDetailsMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrLListMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
-                          <Component id="hrLDetailsLDetailsBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="hrLListLDetailsBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="hrLDetailsLListBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="hrLListLListBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace pref="353" max="32767" attributes="0"/>
-                  <Component id="hrLDetailsMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="hrLListMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="hrLDetailsLDetailsBtn">
+        <Component class="javax.swing.JButton" name="hrLListLDetailsBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -114,13 +114,13 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsLDetailsBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLListLDetailsBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrLDetailsLDetailsBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrLListLDetailsBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="hrLDetailsMainDashboardBtn">
+        <Component class="javax.swing.JButton" name="hrLListMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -136,23 +136,23 @@
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLListMainDashboardBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrLDetailsMainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrLListMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="hrLDetailsMotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="hrLListMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsMotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLListMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JButton" name="hrLDetailsLListBtn">
+        <Component class="javax.swing.JButton" name="hrLListLListBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -167,15 +167,15 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsLListBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLListLListBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrLDetailsLListBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrLListLListBtnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="hrLDetailsLListPnl">
+    <Container class="javax.swing.JPanel" name="hrLListLListPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -192,14 +192,14 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsLListPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLListLListPnl"/>
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="hrLDetailsLListLbl">
+        <Component class="javax.swing.JLabel" name="hrLListLListLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -210,7 +210,7 @@
             <Property name="text" type="java.lang.String" value=" Leave List"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsLListLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLListLListLbl"/>
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -220,7 +220,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JScrollPane" name="hrLDetailsLListBrdrScrlPnl">
+    <Container class="javax.swing.JScrollPane" name="hrLListLListBrdrScrlPnl">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -231,12 +231,12 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsLListBrdrScrlPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLListLListBrdrScrlPnl"/>
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="hrLDetailsLListTbl">
+        <Component class="javax.swing.JTable" name="hrLListLListTbl">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -252,8 +252,8 @@
               <Table columnCount="4" rowCount="100">
                 <Column editable="true" title="Employee #" type="java.lang.Integer"/>
                 <Column editable="true" title="Employee Name" type="java.lang.String"/>
-                <Column editable="true" title="Status" type="java.lang.Object"/>
                 <Column editable="true" title="Leave Details" type="java.lang.String"/>
+                <Column editable="true" title="Status" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -292,10 +292,10 @@
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsLListTbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLListLListTbl"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="hrLDetailsLListTblMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="hrLListLListTblMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>
