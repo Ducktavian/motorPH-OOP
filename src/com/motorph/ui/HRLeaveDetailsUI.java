@@ -195,6 +195,7 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         hrLDetailsReasonFld.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsReasonFld.setText(" ");
         hrLDetailsReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsReasonFld.setEnabled(false);
         hrLDetailsReasonFld.addActionListener(this::hrLDetailsReasonFldActionPerformed);
 
         hrLDetailsFromLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N

@@ -34,84 +34,32 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
         itActLogsMotorPHIconImgLbl = new javax.swing.JLabel();
         itActLogsActLogsPnl = new javax.swing.JPanel();
         itActLogsActLogsLbl = new javax.swing.JLabel();
-        itActLogsUAccDetailsBrdrPnl = new javax.swing.JPanel();
-        itActLogsENumberLbl = new javax.swing.JLabel();
-        itActLogsENameLbl = new javax.swing.JLabel();
-        itActLogsENumberFld = new javax.swing.JTextField();
-        itActLogsENameFld = new javax.swing.JTextField();
-        itActLogsPhnNumberFld = new javax.swing.JTextField();
-        itActLogsPositionLbl = new javax.swing.JLabel();
-        itActLogsPhnNumberLbl = new javax.swing.JLabel();
-        itActLogsISupervisorLbl = new javax.swing.JLabel();
-        itActLogsISupervisorFld = new javax.swing.JTextField();
-        itActLogsStatusFld = new javax.swing.JTextField();
-        itActLogsPositionFld = new javax.swing.JTextField();
-        itActLogsStatusLbl = new javax.swing.JLabel();
-        itActLogsUActDetailsPnl = new javax.swing.JPanel();
-        itActLogsUActDetailsLbl = new javax.swing.JLabel();
-        itActLogsUActDetailsBrdrPnl = new javax.swing.JPanel();
-        itActLogsUsernameLbl = new javax.swing.JLabel();
-        itActLogsUsernameFld = new javax.swing.JTextField();
-        itActLogsPasswordLbl = new javax.swing.JLabel();
-        itActLogsPasswordFld = new javax.swing.JTextField();
-        itActLogsEditBtn = new javax.swing.JButton();
-        itActLogsAddBtn = new javax.swing.JButton();
-        itActLogsDeleteBtn = new javax.swing.JButton();
         itActLogsSearchPnl = new javax.swing.JPanel();
         itActLogsEntENumberPnl = new javax.swing.JTextField();
         itActLogsSearchIconImgLbl = new javax.swing.JLabel();
-        itActLogsDListBrdrScrlPnl = new javax.swing.JScrollPane();
-        itActLogsDListBrdrPnl = new javax.swing.JPanel();
-        itActLogsDListPnl = new javax.swing.JPanel();
-        itActLogsDListLbl = new javax.swing.JLabel();
-        itActLogsFADisputeBrdrPnl1 = new javax.swing.JPanel();
-        itActLogsFADisputePnl1 = new javax.swing.JPanel();
-        itActLogsFADisputeLbl1 = new javax.swing.JLabel();
-        itActLogsPositionLbl1 = new javax.swing.JLabel();
-        itActLogsENameFld1 = new javax.swing.JTextField();
-        itActLogsReasonLbl1 = new javax.swing.JLabel();
-        itActLogsReasonFld1 = new javax.swing.JTextField();
-        itActLogsStatusLbl1 = new javax.swing.JLabel();
-        itActLogsENumberFld1 = new javax.swing.JTextField();
-        itActLogsPositionFld1 = new javax.swing.JTextField();
-        itActLogsENumberLbl1 = new javax.swing.JLabel();
-        itActLogsENameLbl1 = new javax.swing.JLabel();
-        itActLogsDenyBtn1 = new javax.swing.JButton();
-        itActLogsApproveBtn1 = new javax.swing.JButton();
-        itActLogsStatusFld1 = new javax.swing.JTextField();
-        itActLogsENameFld4 = new javax.swing.JTextField();
-        itActLogsFADisputeBrdrPnl2 = new javax.swing.JPanel();
-        itActLogsFADisputePnl2 = new javax.swing.JPanel();
-        itActLogsFADisputeLbl2 = new javax.swing.JLabel();
-        itActLogsPositionLbl2 = new javax.swing.JLabel();
-        itActLogsENameFld2 = new javax.swing.JTextField();
-        itActLogsReasonLbl2 = new javax.swing.JLabel();
-        itActLogsReasonFld2 = new javax.swing.JTextField();
-        itActLogsStatusLbl2 = new javax.swing.JLabel();
-        itActLogsENumberFld2 = new javax.swing.JTextField();
-        itActLogsPositionFld2 = new javax.swing.JTextField();
-        itActLogsENumberLbl2 = new javax.swing.JLabel();
-        itActLogsENameLbl2 = new javax.swing.JLabel();
-        itActLogsDenyBtn2 = new javax.swing.JButton();
-        itActLogsApproveBtn2 = new javax.swing.JButton();
-        itActLogsStatusFld2 = new javax.swing.JTextField();
-        itActLogsENameFld5 = new javax.swing.JTextField();
-        itActLogsFADisputeBrdrPnl3 = new javax.swing.JPanel();
-        itActLogsFADisputePnl3 = new javax.swing.JPanel();
-        itActLogsFADisputeLbl3 = new javax.swing.JLabel();
-        itActLogsPositionLbl3 = new javax.swing.JLabel();
-        itActLogsENameFld3 = new javax.swing.JTextField();
-        itActLogsReasonLbl3 = new javax.swing.JLabel();
-        itActLogsReasonFld3 = new javax.swing.JTextField();
-        itActLogsStatusLbl3 = new javax.swing.JLabel();
-        itActLogsENumberFld3 = new javax.swing.JTextField();
-        itActLogsPositionFld3 = new javax.swing.JTextField();
-        itActLogsENumberLbl3 = new javax.swing.JLabel();
-        itActLogsENameLbl3 = new javax.swing.JLabel();
-        itActLogsDenyBtn3 = new javax.swing.JButton();
-        itActLogsApproveBtn3 = new javax.swing.JButton();
-        itActLogsStatusFld3 = new javax.swing.JTextField();
-        itActLogsENameFld6 = new javax.swing.JTextField();
+        itActLogsDeleteBtn = new javax.swing.JButton();
+        itActLogsEditBtn = new javax.swing.JButton();
+        itActLogsAddBtn = new javax.swing.JButton();
+        itAUserEDetailsBrdrPnl = new javax.swing.JPanel();
+        itAUserENumberLbl = new javax.swing.JLabel();
+        itAUserENameLbl = new javax.swing.JLabel();
+        itAUserENumberFld = new javax.swing.JTextField();
+        itAUserENameFld = new javax.swing.JTextField();
+        itAUserPhnNumberFld = new javax.swing.JTextField();
+        itAUserPositionLbl = new javax.swing.JLabel();
+        itAUserPhnNumberLbl = new javax.swing.JLabel();
+        itAUserISupervisorLbl = new javax.swing.JLabel();
+        itAUserISupervisorFld = new javax.swing.JTextField();
+        itAUserPositionFld = new javax.swing.JTextField();
+        itAUserStatusLbl = new javax.swing.JLabel();
+        itAUserStatusFld = new javax.swing.JTextField();
+        itAUserUAccDetailsPnl = new javax.swing.JPanel();
+        itAUserUAccDetailsLbl = new javax.swing.JLabel();
+        itAUserUAccDetailsBrdrPnl = new javax.swing.JPanel();
+        itAUserUsernameLbl = new javax.swing.JLabel();
+        itAUserUsernameFld = new javax.swing.JTextField();
+        itAUserPasswordLbl = new javax.swing.JLabel();
+        itAUserPasswordFld = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -152,292 +100,6 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
         itActLogsActLogsPnl.add(itActLogsActLogsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 170, 46));
         itActLogsActLogsLbl.getAccessibleContext().setAccessibleName("itActLogsActLogsLbl");
 
-        itActLogsUAccDetailsBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
-        itActLogsUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
-        itActLogsUAccDetailsBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
-        itActLogsUAccDetailsBrdrPnl.setFocusable(false);
-        itActLogsUAccDetailsBrdrPnl.setPreferredSize(new java.awt.Dimension(700, 469));
-        itActLogsUAccDetailsBrdrPnl.setRequestFocusEnabled(false);
-
-        itActLogsENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itActLogsENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENumberLbl.setText("Employee #");
-
-        itActLogsENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itActLogsENameLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameLbl.setText("Employee Name");
-
-        itActLogsENumberFld.setForeground(new java.awt.Color(30, 42, 56));
-        itActLogsENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld.setEnabled(false);
-        itActLogsENumberFld.addActionListener(this::itActLogsENumberFldActionPerformed);
-
-        itActLogsENameFld.setForeground(new java.awt.Color(30, 42, 56));
-        itActLogsENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld.setEnabled(false);
-        itActLogsENameFld.addActionListener(this::itActLogsENameFldActionPerformed);
-
-        itActLogsPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
-        itActLogsPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsPhnNumberFld.setEnabled(false);
-        itActLogsPhnNumberFld.addActionListener(this::itActLogsPhnNumberFldActionPerformed);
-
-        itActLogsPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itActLogsPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsPositionLbl.setText("Position");
-
-        itActLogsPhnNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itActLogsPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsPhnNumberLbl.setText("Phone Number");
-
-        itActLogsISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itActLogsISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsISupervisorLbl.setText("Immediate Supervisor");
-
-        itActLogsISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
-        itActLogsISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsISupervisorFld.setEnabled(false);
-        itActLogsISupervisorFld.addActionListener(this::itActLogsISupervisorFldActionPerformed);
-
-        itActLogsStatusFld.setForeground(new java.awt.Color(30, 42, 56));
-        itActLogsStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld.setEnabled(false);
-        itActLogsStatusFld.addActionListener(this::itActLogsStatusFldActionPerformed);
-
-        itActLogsPositionFld.setForeground(new java.awt.Color(30, 42, 56));
-        itActLogsPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsPositionFld.setEnabled(false);
-        itActLogsPositionFld.addActionListener(this::itActLogsPositionFldActionPerformed);
-
-        itActLogsStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itActLogsStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsStatusLbl.setText("Status");
-
-        itActLogsUActDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
-        itActLogsUActDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsUActDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        itActLogsUActDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
-
-        itActLogsUActDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
-        itActLogsUActDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        itActLogsUActDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsUActDetailsLbl.setText("User Account Details");
-        itActLogsUActDetailsLbl.setToolTipText("");
-
-        javax.swing.GroupLayout itActLogsUActDetailsPnlLayout = new javax.swing.GroupLayout(itActLogsUActDetailsPnl);
-        itActLogsUActDetailsPnl.setLayout(itActLogsUActDetailsPnlLayout);
-        itActLogsUActDetailsPnlLayout.setHorizontalGroup(
-            itActLogsUActDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsUActDetailsPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(itActLogsUActDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        itActLogsUActDetailsPnlLayout.setVerticalGroup(
-            itActLogsUActDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsUActDetailsPnlLayout.createSequentialGroup()
-                .addGap(0, 1, Short.MAX_VALUE)
-                .addComponent(itActLogsUActDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        itActLogsUActDetailsLbl.getAccessibleContext().setAccessibleName("itActLogsUActDetailsLbl");
-
-        itActLogsUActDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-
-        itActLogsUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsUsernameLbl.setText("Username");
-
-        itActLogsUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
-        itActLogsUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsUsernameFld.addActionListener(this::itActLogsUsernameFldActionPerformed);
-
-        itActLogsPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsPasswordLbl.setText("Password");
-
-        itActLogsPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
-        itActLogsPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsPasswordFld.addActionListener(this::itActLogsPasswordFldActionPerformed);
-
-        javax.swing.GroupLayout itActLogsUActDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itActLogsUActDetailsBrdrPnl);
-        itActLogsUActDetailsBrdrPnl.setLayout(itActLogsUActDetailsBrdrPnlLayout);
-        itActLogsUActDetailsBrdrPnlLayout.setHorizontalGroup(
-            itActLogsUActDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsUActDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(itActLogsUActDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itActLogsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsPasswordLbl)
-                    .addComponent(itActLogsUsernameLbl)
-                    .addComponent(itActLogsUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
-        );
-        itActLogsUActDetailsBrdrPnlLayout.setVerticalGroup(
-            itActLogsUActDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsUActDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(itActLogsUsernameLbl)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(itActLogsUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(itActLogsPasswordLbl)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itActLogsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-
-        itActLogsUsernameLbl.getAccessibleContext().setAccessibleName("itActLogsUsernameLbl");
-        itActLogsUsernameFld.getAccessibleContext().setAccessibleName("itActLogsUsernameFld");
-        itActLogsPasswordLbl.getAccessibleContext().setAccessibleName("itActLogsPasswordLbl");
-        itActLogsPasswordFld.getAccessibleContext().setAccessibleName("itActLogsPasswordFld");
-
-        itActLogsEditBtn.setBackground(new java.awt.Color(59, 130, 246));
-        itActLogsEditBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itActLogsEditBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsEditBtn.setText("Edit");
-        itActLogsEditBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsEditBtn.addActionListener(this::itActLogsEditBtnActionPerformed);
-
-        itActLogsAddBtn.setBackground(new java.awt.Color(30, 58, 138));
-        itActLogsAddBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itActLogsAddBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsAddBtn.setText("Add");
-        itActLogsAddBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsAddBtn.addActionListener(this::itActLogsAddBtnActionPerformed);
-
-        itActLogsDeleteBtn.setBackground(new java.awt.Color(239, 68, 68));
-        itActLogsDeleteBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itActLogsDeleteBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsDeleteBtn.setText("Delete");
-        itActLogsDeleteBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsDeleteBtn.addActionListener(this::itActLogsDeleteBtnActionPerformed);
-
-        javax.swing.GroupLayout itActLogsUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itActLogsUAccDetailsBrdrPnl);
-        itActLogsUAccDetailsBrdrPnl.setLayout(itActLogsUAccDetailsBrdrPnlLayout);
-        itActLogsUAccDetailsBrdrPnlLayout.setHorizontalGroup(
-            itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(itActLogsENumberLbl)
-                            .addComponent(itActLogsENameLbl)
-                            .addComponent(itActLogsPositionLbl)
-                            .addComponent(itActLogsPhnNumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsStatusLbl))
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(itActLogsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(itActLogsENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                                        .addGap(29, 29, 29)
-                                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(itActLogsStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(itActLogsPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(itActLogsENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(itActLogsUActDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(56, 56, 56))))
-                    .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(itActLogsISupervisorLbl)
-                                .addGap(18, 18, 18)
-                                .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(itActLogsISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(itActLogsPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(itActLogsDeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(itActLogsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addComponent(itActLogsUActDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))))
-        );
-        itActLogsUAccDetailsBrdrPnlLayout.setVerticalGroup(
-            itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsENumberLbl)
-                            .addComponent(itActLogsENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsENameLbl))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsPhnNumberLbl)
-                            .addComponent(itActLogsPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(9, 9, 9)
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsISupervisorLbl))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsPositionLbl)
-                            .addComponent(itActLogsPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsStatusLbl))
-                        .addGap(18, 18, 18)
-                        .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsDeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(itActLogsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itActLogsUActDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(itActLogsUActDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(21, Short.MAX_VALUE))
-        );
-
-        itActLogsENumberLbl.getAccessibleContext().setAccessibleName("itActLogsENumberLbl");
-        itActLogsENameLbl.getAccessibleContext().setAccessibleName("itActLogsENameLbl");
-        itActLogsENumberFld.getAccessibleContext().setAccessibleName("itActLogsENumberFld");
-        itActLogsENameFld.getAccessibleContext().setAccessibleName("itActLogsENameFld");
-        itActLogsPhnNumberFld.getAccessibleContext().setAccessibleName("itActLogsPhnNumberFld");
-        itActLogsPositionLbl.getAccessibleContext().setAccessibleName("itActLogsPositionLbl");
-        itActLogsPhnNumberLbl.getAccessibleContext().setAccessibleName("itActLogsPhnNumberLbl");
-        itActLogsISupervisorLbl.getAccessibleContext().setAccessibleName("itActLogsISupervisorLbl");
-        itActLogsISupervisorFld.getAccessibleContext().setAccessibleName("itActLogsISupervisorFld");
-        itActLogsStatusFld.getAccessibleContext().setAccessibleName("itActLogsStatusFld");
-        itActLogsPositionFld.getAccessibleContext().setAccessibleName("itActLogsPositionFld");
-        itActLogsStatusLbl.getAccessibleContext().setAccessibleName("itActLogsStatusLbl");
-        itActLogsUActDetailsPnl.getAccessibleContext().setAccessibleName("itActLogsUActDetailsPnl");
-        itActLogsUActDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itActLogsUActDetailsBrdrPnl");
-        itActLogsEditBtn.getAccessibleContext().setAccessibleName("itActLogsEditBtn");
-        itActLogsAddBtn.getAccessibleContext().setAccessibleName("itActLogsAddBtn");
-        itActLogsDeleteBtn.getAccessibleContext().setAccessibleName("itActLogsDeleteBtn");
-
         itActLogsSearchPnl.setBackground(new java.awt.Color(146, 192, 253));
         itActLogsSearchPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         itActLogsSearchPnl.setForeground(new java.awt.Color(146, 192, 253));
@@ -456,666 +118,245 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
         itActLogsSearchPnl.add(itActLogsSearchIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
         itActLogsSearchIconImgLbl.getAccessibleContext().setAccessibleName("itActLogsSearchIconImgLbl");
 
-        itActLogsDListBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        itActLogsDeleteBtn.setBackground(new java.awt.Color(239, 68, 68));
+        itActLogsDeleteBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsDeleteBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsDeleteBtn.setText("Delete");
+        itActLogsDeleteBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsDeleteBtn.addActionListener(this::itActLogsDeleteBtnActionPerformed);
 
-        itActLogsDListBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
-        itActLogsDListBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
+        itActLogsEditBtn.setBackground(new java.awt.Color(59, 130, 246));
+        itActLogsEditBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsEditBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsEditBtn.setText("Edit");
+        itActLogsEditBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsEditBtn.addActionListener(this::itActLogsEditBtnActionPerformed);
 
-        itActLogsDListPnl.setBackground(new java.awt.Color(30, 58, 138));
-        itActLogsDListPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsDListPnl.setForeground(new java.awt.Color(30, 58, 138));
-        itActLogsDListPnl.setPreferredSize(new java.awt.Dimension(126, 40));
+        itActLogsAddBtn.setBackground(new java.awt.Color(30, 58, 138));
+        itActLogsAddBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itActLogsAddBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itActLogsAddBtn.setText("Add");
+        itActLogsAddBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itActLogsAddBtn.addActionListener(this::itActLogsAddBtnActionPerformed);
 
-        itActLogsDListLbl.setBackground(new java.awt.Color(255, 255, 255));
-        itActLogsDListLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        itActLogsDListLbl.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsDListLbl.setText("Dispute List");
-        itActLogsDListLbl.setToolTipText("");
+        itAUserEDetailsBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
+        itAUserEDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
+        itAUserEDetailsBrdrPnl.setForeground(new java.awt.Color(30, 42, 56));
+        itAUserEDetailsBrdrPnl.setFocusable(false);
+        itAUserEDetailsBrdrPnl.setPreferredSize(new java.awt.Dimension(700, 469));
+        itAUserEDetailsBrdrPnl.setRequestFocusEnabled(false);
 
-        javax.swing.GroupLayout itActLogsDListPnlLayout = new javax.swing.GroupLayout(itActLogsDListPnl);
-        itActLogsDListPnl.setLayout(itActLogsDListPnlLayout);
-        itActLogsDListPnlLayout.setHorizontalGroup(
-            itActLogsDListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsDListPnlLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(itActLogsDListLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        itActLogsDListPnlLayout.setVerticalGroup(
-            itActLogsDListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsDListPnlLayout.createSequentialGroup()
+        itAUserENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAUserENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAUserENumberLbl.setText("Employee #");
+
+        itAUserENameLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAUserENameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAUserENameLbl.setText("Employee Name");
+
+        itAUserENumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAUserENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAUserENumberFld.setEnabled(false);
+        itAUserENumberFld.addActionListener(this::itAUserENumberFldActionPerformed);
+
+        itAUserENameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAUserENameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserENameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserENameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAUserENameFld.setEnabled(false);
+        itAUserENameFld.addActionListener(this::itAUserENameFldActionPerformed);
+
+        itAUserPhnNumberFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAUserPhnNumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserPhnNumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserPhnNumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAUserPhnNumberFld.setEnabled(false);
+        itAUserPhnNumberFld.addActionListener(this::itAUserPhnNumberFldActionPerformed);
+
+        itAUserPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAUserPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAUserPositionLbl.setText("Position");
+
+        itAUserPhnNumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAUserPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAUserPhnNumberLbl.setText("Phone Number");
+
+        itAUserISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAUserISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAUserISupervisorLbl.setText("Immediate Supervisor");
+
+        itAUserISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAUserISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAUserISupervisorFld.setEnabled(false);
+        itAUserISupervisorFld.addActionListener(this::itAUserISupervisorFldActionPerformed);
+
+        itAUserPositionFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAUserPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAUserPositionFld.setEnabled(false);
+        itAUserPositionFld.addActionListener(this::itAUserPositionFldActionPerformed);
+
+        itAUserStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAUserStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAUserStatusLbl.setText("Status");
+
+        itAUserStatusFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAUserStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAUserStatusFld.setEnabled(false);
+        itAUserStatusFld.addActionListener(this::itAUserStatusFldActionPerformed);
+
+        itAUserUAccDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
+        itAUserUAccDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserUAccDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itAUserUAccDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
+
+        itAUserUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
+        itAUserUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        itAUserUAccDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAUserUAccDetailsLbl.setText("User Account Details");
+        itAUserUAccDetailsLbl.setToolTipText("");
+
+        javax.swing.GroupLayout itAUserUAccDetailsPnlLayout = new javax.swing.GroupLayout(itAUserUAccDetailsPnl);
+        itAUserUAccDetailsPnl.setLayout(itAUserUAccDetailsPnlLayout);
+        itAUserUAccDetailsPnlLayout.setHorizontalGroup(
+            itAUserUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAUserUAccDetailsPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(itActLogsDListLbl)
-                .addContainerGap(8, Short.MAX_VALUE))
-        );
-
-        itActLogsDListLbl.getAccessibleContext().setAccessibleName("itActLogsDListLbl");
-
-        itActLogsFADisputeBrdrPnl1.setBackground(new java.awt.Color(233, 233, 233));
-        itActLogsFADisputeBrdrPnl1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsFADisputeBrdrPnl1.setForeground(new java.awt.Color(178, 178, 178));
-
-        itActLogsFADisputePnl1.setBackground(new java.awt.Color(146, 192, 253));
-        itActLogsFADisputePnl1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsFADisputePnl1.setForeground(new java.awt.Color(30, 58, 138));
-        itActLogsFADisputePnl1.setPreferredSize(new java.awt.Dimension(126, 40));
-
-        itActLogsFADisputeLbl1.setBackground(new java.awt.Color(255, 255, 255));
-        itActLogsFADisputeLbl1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        itActLogsFADisputeLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsFADisputeLbl1.setText("File A Dispute");
-        itActLogsFADisputeLbl1.setToolTipText("");
-
-        javax.swing.GroupLayout itActLogsFADisputePnl1Layout = new javax.swing.GroupLayout(itActLogsFADisputePnl1);
-        itActLogsFADisputePnl1.setLayout(itActLogsFADisputePnl1Layout);
-        itActLogsFADisputePnl1Layout.setHorizontalGroup(
-            itActLogsFADisputePnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsFADisputePnl1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(itActLogsFADisputeLbl1)
+                .addComponent(itAUserUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        itActLogsFADisputePnl1Layout.setVerticalGroup(
-            itActLogsFADisputePnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsFADisputePnl1Layout.createSequentialGroup()
-                .addComponent(itActLogsFADisputeLbl1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
+        itAUserUAccDetailsPnlLayout.setVerticalGroup(
+            itAUserUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAUserUAccDetailsPnlLayout.createSequentialGroup()
+                .addComponent(itAUserUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 1, Short.MAX_VALUE))
         );
 
-        itActLogsFADisputeLbl1.getAccessibleContext().setAccessibleName("itActLogsFADisputeLbl1");
+        itAUserUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        itActLogsPositionLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsPositionLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsPositionLbl1.setText("Position");
+        itAUserUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itAUserUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAUserUsernameLbl.setText("Username");
 
-        itActLogsENameFld1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld1.setText(" ");
-        itActLogsENameFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENameFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld1.setEnabled(false);
-        itActLogsENameFld1.addActionListener(this::itActLogsENameFld1ActionPerformed);
+        itAUserUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAUserUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAUserUsernameFld.setEnabled(false);
+        itAUserUsernameFld.addActionListener(this::itAUserUsernameFldActionPerformed);
 
-        itActLogsReasonLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsReasonLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsReasonLbl1.setText("Reason");
+        itAUserPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itAUserPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAUserPasswordLbl.setText("Password");
 
-        itActLogsReasonFld1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsReasonFld1.setText(" ");
-        itActLogsReasonFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsReasonFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsReasonFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsReasonFld1.setEnabled(false);
-        itActLogsReasonFld1.addActionListener(this::itActLogsReasonFld1ActionPerformed);
+        itAUserPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAUserPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAUserPasswordFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAUserPasswordFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAUserPasswordFld.setEnabled(false);
+        itAUserPasswordFld.addActionListener(this::itAUserPasswordFldActionPerformed);
 
-        itActLogsStatusLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsStatusLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsStatusLbl1.setText("Status");
-
-        itActLogsENumberFld1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld1.setText(" ");
-        itActLogsENumberFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENumberFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld1.setEnabled(false);
-        itActLogsENumberFld1.addActionListener(this::itActLogsENumberFld1ActionPerformed);
-
-        itActLogsPositionFld1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsPositionFld1.setText(" ");
-        itActLogsPositionFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsPositionFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsPositionFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsPositionFld1.setEnabled(false);
-        itActLogsPositionFld1.addActionListener(this::itActLogsPositionFld1ActionPerformed);
-
-        itActLogsENumberLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsENumberLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENumberLbl1.setText("Employee #");
-
-        itActLogsENameLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsENameLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameLbl1.setText("Employee Name");
-
-        itActLogsDenyBtn1.setBackground(new java.awt.Color(239, 68, 68));
-        itActLogsDenyBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        itActLogsDenyBtn1.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsDenyBtn1.setText("Deny");
-        itActLogsDenyBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        itActLogsDenyBtn1.addActionListener(this::itActLogsDenyBtn1ActionPerformed);
-
-        itActLogsApproveBtn1.setBackground(new java.awt.Color(34, 197, 94));
-        itActLogsApproveBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        itActLogsApproveBtn1.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsApproveBtn1.setText("Approve");
-        itActLogsApproveBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        itActLogsApproveBtn1.addActionListener(this::itActLogsApproveBtn1ActionPerformed);
-
-        itActLogsStatusFld1.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsStatusFld1.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld1.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld1.setEnabled(false);
-        itActLogsStatusFld1.addActionListener(this::itActLogsStatusFld1ActionPerformed);
-
-        itActLogsENameFld4.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld4.setText(" ");
-        itActLogsENameFld4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENameFld4.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld4.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld4.setEnabled(false);
-        itActLogsENameFld4.addActionListener(this::itActLogsENameFld4ActionPerformed);
-
-        javax.swing.GroupLayout itActLogsFADisputeBrdrPnl1Layout = new javax.swing.GroupLayout(itActLogsFADisputeBrdrPnl1);
-        itActLogsFADisputeBrdrPnl1.setLayout(itActLogsFADisputeBrdrPnl1Layout);
-        itActLogsFADisputeBrdrPnl1Layout.setHorizontalGroup(
-            itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
+        javax.swing.GroupLayout itAUserUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itAUserUAccDetailsBrdrPnl);
+        itAUserUAccDetailsBrdrPnl.setLayout(itAUserUAccDetailsBrdrPnlLayout);
+        itAUserUAccDetailsBrdrPnlLayout.setHorizontalGroup(
+            itAUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAUserUAccDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(itAUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itAUserPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAUserPasswordLbl)
+                    .addComponent(itAUserUsernameLbl)
+                    .addComponent(itAUserUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+        itAUserUAccDetailsBrdrPnlLayout.setVerticalGroup(
+            itAUserUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAUserUAccDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(itAUserUsernameLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(itAUserUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itActLogsPositionLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsFADisputePnl1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsENumberLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(itActLogsENameLbl1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(itActLogsStatusLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(itActLogsPositionFld1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                        .addComponent(itActLogsENumberFld1, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(itActLogsENameFld1, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(itActLogsStatusFld1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
-                            .addGap(18, 18, 18)
-                            .addComponent(itActLogsReasonFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
-                            .addGap(95, 95, 95)
-                            .addComponent(itActLogsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(itActLogsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(itActLogsReasonLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsENameFld4, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        itActLogsFADisputeBrdrPnl1Layout.setVerticalGroup(
-            itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(itActLogsFADisputePnl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(itActLogsApproveBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(itActLogsDenyBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itActLogsENameFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsENameLbl1)
-                    .addComponent(itActLogsENameFld4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itActLogsENumberFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsReasonLbl1)
-                    .addComponent(itActLogsENumberLbl1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(itActLogsFADisputeBrdrPnl1Layout.createSequentialGroup()
-                        .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsPositionLbl1)
-                            .addComponent(itActLogsPositionFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(itActLogsFADisputeBrdrPnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsStatusLbl1)
-                            .addComponent(itActLogsStatusFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(itActLogsReasonFld1))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
-        itActLogsFADisputePnl1.getAccessibleContext().setAccessibleName("itActLogsFADisputePnl1");
-        itActLogsPositionLbl1.getAccessibleContext().setAccessibleName("itActLogsPositionLbl1");
-        itActLogsENameFld1.getAccessibleContext().setAccessibleName("itActLogsENameFld1");
-        itActLogsReasonLbl1.getAccessibleContext().setAccessibleName("itActLogsReasonLbl1");
-        itActLogsReasonFld1.getAccessibleContext().setAccessibleName("itActLogsReasonFld1");
-        itActLogsStatusLbl1.getAccessibleContext().setAccessibleName("itActLogsStatusLbl1");
-        itActLogsENumberFld1.getAccessibleContext().setAccessibleName("itActLogsENumberFld1");
-        itActLogsPositionFld1.getAccessibleContext().setAccessibleName("itActLogsPositionFld1");
-        itActLogsENumberLbl1.getAccessibleContext().setAccessibleName("itActLogsENumberLbl1");
-        itActLogsENameLbl1.getAccessibleContext().setAccessibleName("itActLogsENameLbl1");
-        itActLogsDenyBtn1.getAccessibleContext().setAccessibleName("itActLogsDenyBtn1");
-        itActLogsApproveBtn1.getAccessibleContext().setAccessibleName("itActLogsApproveBtn1");
-        itActLogsStatusFld1.getAccessibleContext().setAccessibleName("itActLogsStatusFld1");
-
-        itActLogsFADisputeBrdrPnl2.setBackground(new java.awt.Color(233, 233, 233));
-        itActLogsFADisputeBrdrPnl2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsFADisputeBrdrPnl2.setForeground(new java.awt.Color(178, 178, 178));
-
-        itActLogsFADisputePnl2.setBackground(new java.awt.Color(146, 192, 253));
-        itActLogsFADisputePnl2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsFADisputePnl2.setForeground(new java.awt.Color(30, 58, 138));
-        itActLogsFADisputePnl2.setPreferredSize(new java.awt.Dimension(126, 40));
-
-        itActLogsFADisputeLbl2.setBackground(new java.awt.Color(255, 255, 255));
-        itActLogsFADisputeLbl2.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        itActLogsFADisputeLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsFADisputeLbl2.setText("File A Dispute");
-        itActLogsFADisputeLbl2.setToolTipText("");
-
-        javax.swing.GroupLayout itActLogsFADisputePnl2Layout = new javax.swing.GroupLayout(itActLogsFADisputePnl2);
-        itActLogsFADisputePnl2.setLayout(itActLogsFADisputePnl2Layout);
-        itActLogsFADisputePnl2Layout.setHorizontalGroup(
-            itActLogsFADisputePnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsFADisputePnl2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(itActLogsFADisputeLbl2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        itActLogsFADisputePnl2Layout.setVerticalGroup(
-            itActLogsFADisputePnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsFADisputePnl2Layout.createSequentialGroup()
-                .addComponent(itActLogsFADisputeLbl2, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        itActLogsFADisputeLbl2.getAccessibleContext().setAccessibleName("itActLogsFADisputeLbl2");
-
-        itActLogsPositionLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsPositionLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsPositionLbl2.setText("Position");
-
-        itActLogsENameFld2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld2.setText(" ");
-        itActLogsENameFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENameFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld2.setEnabled(false);
-        itActLogsENameFld2.addActionListener(this::itActLogsENameFld2ActionPerformed);
-
-        itActLogsReasonLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsReasonLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsReasonLbl2.setText("Reason");
-
-        itActLogsReasonFld2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsReasonFld2.setText(" ");
-        itActLogsReasonFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsReasonFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsReasonFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsReasonFld2.setEnabled(false);
-        itActLogsReasonFld2.addActionListener(this::itActLogsReasonFld2ActionPerformed);
-
-        itActLogsStatusLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsStatusLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsStatusLbl2.setText("Status");
-
-        itActLogsENumberFld2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld2.setText(" ");
-        itActLogsENumberFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENumberFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld2.setEnabled(false);
-        itActLogsENumberFld2.addActionListener(this::itActLogsENumberFld2ActionPerformed);
-
-        itActLogsPositionFld2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsPositionFld2.setText(" ");
-        itActLogsPositionFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsPositionFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsPositionFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsPositionFld2.setEnabled(false);
-        itActLogsPositionFld2.addActionListener(this::itActLogsPositionFld2ActionPerformed);
-
-        itActLogsENumberLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsENumberLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENumberLbl2.setText("Employee #");
-
-        itActLogsENameLbl2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsENameLbl2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameLbl2.setText("Employee Name");
-
-        itActLogsDenyBtn2.setBackground(new java.awt.Color(239, 68, 68));
-        itActLogsDenyBtn2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        itActLogsDenyBtn2.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsDenyBtn2.setText("Deny");
-        itActLogsDenyBtn2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        itActLogsDenyBtn2.addActionListener(this::itActLogsDenyBtn2ActionPerformed);
-
-        itActLogsApproveBtn2.setBackground(new java.awt.Color(34, 197, 94));
-        itActLogsApproveBtn2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        itActLogsApproveBtn2.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsApproveBtn2.setText("Approve");
-        itActLogsApproveBtn2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        itActLogsApproveBtn2.addActionListener(this::itActLogsApproveBtn2ActionPerformed);
-
-        itActLogsStatusFld2.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsStatusFld2.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld2.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld2.setEnabled(false);
-        itActLogsStatusFld2.addActionListener(this::itActLogsStatusFld2ActionPerformed);
-
-        itActLogsENameFld5.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld5.setText(" ");
-        itActLogsENameFld5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENameFld5.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld5.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld5.setEnabled(false);
-        itActLogsENameFld5.addActionListener(this::itActLogsENameFld5ActionPerformed);
-
-        javax.swing.GroupLayout itActLogsFADisputeBrdrPnl2Layout = new javax.swing.GroupLayout(itActLogsFADisputeBrdrPnl2);
-        itActLogsFADisputeBrdrPnl2.setLayout(itActLogsFADisputeBrdrPnl2Layout);
-        itActLogsFADisputeBrdrPnl2Layout.setHorizontalGroup(
-            itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itActLogsPositionLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsFADisputePnl2, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsENumberLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(itActLogsENameLbl2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(itActLogsStatusLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(itActLogsPositionFld2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                        .addComponent(itActLogsENumberFld2, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(itActLogsENameFld2, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(itActLogsStatusFld2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
-                            .addGap(95, 95, 95)
-                            .addComponent(itActLogsApproveBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(itActLogsDenyBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
-                            .addGap(18, 18, 18)
-                            .addComponent(itActLogsReasonFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(itActLogsReasonLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsENameFld5, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        itActLogsFADisputeBrdrPnl2Layout.setVerticalGroup(
-            itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(itActLogsFADisputePnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(itActLogsApproveBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(itActLogsDenyBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itActLogsENameFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsENameLbl2)
-                    .addComponent(itActLogsENameFld5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itActLogsENumberFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsReasonLbl2)
-                    .addComponent(itActLogsENumberLbl2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(itActLogsFADisputeBrdrPnl2Layout.createSequentialGroup()
-                        .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsPositionLbl2)
-                            .addComponent(itActLogsPositionFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(itActLogsFADisputeBrdrPnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsStatusLbl2)
-                            .addComponent(itActLogsStatusFld2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(itActLogsReasonFld2))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
-        itActLogsFADisputePnl2.getAccessibleContext().setAccessibleName("itActLogsFADisputePnl2");
-        itActLogsPositionLbl2.getAccessibleContext().setAccessibleName("itActLogsPositionLbl2");
-        itActLogsENameFld2.getAccessibleContext().setAccessibleName("itActLogsENameFld2");
-        itActLogsReasonLbl2.getAccessibleContext().setAccessibleName("itActLogsReasonLbl2");
-        itActLogsReasonFld2.getAccessibleContext().setAccessibleName("itActLogsReasonFld2");
-        itActLogsStatusLbl2.getAccessibleContext().setAccessibleName("itActLogsStatusLbl2");
-        itActLogsENumberFld2.getAccessibleContext().setAccessibleName("itActLogsENumberFld2");
-        itActLogsPositionFld2.getAccessibleContext().setAccessibleName("itActLogsPositionFld2");
-        itActLogsENumberLbl2.getAccessibleContext().setAccessibleName("itActLogsENumberLbl2");
-        itActLogsENameLbl2.getAccessibleContext().setAccessibleName("itActLogsENameLbl2");
-        itActLogsDenyBtn2.getAccessibleContext().setAccessibleName("itActLogsDenyBtn2");
-        itActLogsApproveBtn2.getAccessibleContext().setAccessibleName("itActLogsApproveBtn2");
-        itActLogsStatusFld2.getAccessibleContext().setAccessibleName("itActLogsStatusFld2");
-
-        itActLogsFADisputeBrdrPnl3.setBackground(new java.awt.Color(233, 233, 233));
-        itActLogsFADisputeBrdrPnl3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsFADisputeBrdrPnl3.setForeground(new java.awt.Color(178, 178, 178));
-
-        itActLogsFADisputePnl3.setBackground(new java.awt.Color(146, 192, 253));
-        itActLogsFADisputePnl3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsFADisputePnl3.setForeground(new java.awt.Color(30, 58, 138));
-        itActLogsFADisputePnl3.setPreferredSize(new java.awt.Dimension(126, 40));
-
-        itActLogsFADisputeLbl3.setBackground(new java.awt.Color(255, 255, 255));
-        itActLogsFADisputeLbl3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        itActLogsFADisputeLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsFADisputeLbl3.setText("File A Dispute");
-        itActLogsFADisputeLbl3.setToolTipText("");
-
-        javax.swing.GroupLayout itActLogsFADisputePnl3Layout = new javax.swing.GroupLayout(itActLogsFADisputePnl3);
-        itActLogsFADisputePnl3.setLayout(itActLogsFADisputePnl3Layout);
-        itActLogsFADisputePnl3Layout.setHorizontalGroup(
-            itActLogsFADisputePnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsFADisputePnl3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(itActLogsFADisputeLbl3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        itActLogsFADisputePnl3Layout.setVerticalGroup(
-            itActLogsFADisputePnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsFADisputePnl3Layout.createSequentialGroup()
-                .addComponent(itActLogsFADisputeLbl3, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        itActLogsFADisputeLbl3.getAccessibleContext().setAccessibleName("itActLogsFADisputeLbl3");
-
-        itActLogsPositionLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsPositionLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsPositionLbl3.setText("Position");
-
-        itActLogsENameFld3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld3.setText(" ");
-        itActLogsENameFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENameFld3.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld3.setEnabled(false);
-        itActLogsENameFld3.addActionListener(this::itActLogsENameFld3ActionPerformed);
-
-        itActLogsReasonLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsReasonLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsReasonLbl3.setText("Reason");
-
-        itActLogsReasonFld3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsReasonFld3.setText(" ");
-        itActLogsReasonFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsReasonFld3.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsReasonFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsReasonFld3.setEnabled(false);
-        itActLogsReasonFld3.addActionListener(this::itActLogsReasonFld3ActionPerformed);
-
-        itActLogsStatusLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsStatusLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsStatusLbl3.setText("Status");
-
-        itActLogsENumberFld3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld3.setText(" ");
-        itActLogsENumberFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENumberFld3.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENumberFld3.setEnabled(false);
-        itActLogsENumberFld3.addActionListener(this::itActLogsENumberFld3ActionPerformed);
-
-        itActLogsPositionFld3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsPositionFld3.setText(" ");
-        itActLogsPositionFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsPositionFld3.setEnabled(false);
-        itActLogsPositionFld3.addActionListener(this::itActLogsPositionFld3ActionPerformed);
-
-        itActLogsENumberLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsENumberLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENumberLbl3.setText("Employee #");
-
-        itActLogsENameLbl3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itActLogsENameLbl3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameLbl3.setText("Employee Name");
-
-        itActLogsDenyBtn3.setBackground(new java.awt.Color(239, 68, 68));
-        itActLogsDenyBtn3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        itActLogsDenyBtn3.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsDenyBtn3.setText("Deny");
-        itActLogsDenyBtn3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        itActLogsDenyBtn3.addActionListener(this::itActLogsDenyBtn3ActionPerformed);
-
-        itActLogsApproveBtn3.setBackground(new java.awt.Color(34, 197, 94));
-        itActLogsApproveBtn3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        itActLogsApproveBtn3.setForeground(new java.awt.Color(255, 255, 255));
-        itActLogsApproveBtn3.setText("Approve");
-        itActLogsApproveBtn3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        itActLogsApproveBtn3.addActionListener(this::itActLogsApproveBtn3ActionPerformed);
-
-        itActLogsStatusFld3.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsStatusFld3.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld3.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsStatusFld3.setEnabled(false);
-        itActLogsStatusFld3.addActionListener(this::itActLogsStatusFld3ActionPerformed);
-
-        itActLogsENameFld6.setForeground(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld6.setText(" ");
-        itActLogsENameFld6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itActLogsENameFld6.setCaretColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld6.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itActLogsENameFld6.setEnabled(false);
-        itActLogsENameFld6.addActionListener(this::itActLogsENameFld6ActionPerformed);
-
-        javax.swing.GroupLayout itActLogsFADisputeBrdrPnl3Layout = new javax.swing.GroupLayout(itActLogsFADisputeBrdrPnl3);
-        itActLogsFADisputeBrdrPnl3.setLayout(itActLogsFADisputeBrdrPnl3Layout);
-        itActLogsFADisputeBrdrPnl3Layout.setHorizontalGroup(
-            itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itActLogsPositionLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsFADisputePnl3, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsENumberLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(itActLogsENameLbl3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(itActLogsStatusLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(itActLogsPositionFld3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                        .addComponent(itActLogsENumberFld3, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(itActLogsENameFld3, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(itActLogsStatusFld3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(itActLogsApproveBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itActLogsDenyBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(itActLogsReasonLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsReasonFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itActLogsENameFld6, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        itActLogsFADisputeBrdrPnl3Layout.setVerticalGroup(
-            itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(itActLogsFADisputePnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(itActLogsApproveBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(itActLogsDenyBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itActLogsENameFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsENameLbl3)
-                    .addComponent(itActLogsENameFld6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itActLogsENumberFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsReasonLbl3)
-                    .addComponent(itActLogsENumberLbl3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(itActLogsFADisputeBrdrPnl3Layout.createSequentialGroup()
-                        .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsPositionLbl3)
-                            .addComponent(itActLogsPositionFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(itActLogsFADisputeBrdrPnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itActLogsStatusLbl3)
-                            .addComponent(itActLogsStatusFld3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(itActLogsReasonFld3))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
-        itActLogsFADisputePnl3.getAccessibleContext().setAccessibleName("itActLogsFADisputePnl3");
-        itActLogsPositionLbl3.getAccessibleContext().setAccessibleName("itActLogsPositionLbl3");
-        itActLogsENameFld3.getAccessibleContext().setAccessibleName("itActLogsENameFld3");
-        itActLogsReasonLbl3.getAccessibleContext().setAccessibleName("itActLogsReasonLbl3");
-        itActLogsReasonFld3.getAccessibleContext().setAccessibleName("itActLogsReasonFld3");
-        itActLogsStatusLbl3.getAccessibleContext().setAccessibleName("itActLogsStatusLbl3");
-        itActLogsENumberFld3.getAccessibleContext().setAccessibleName("itActLogsENumberFld3");
-        itActLogsPositionFld3.getAccessibleContext().setAccessibleName("itActLogsPositionFld3");
-        itActLogsENumberLbl3.getAccessibleContext().setAccessibleName("itActLogsENumberLbl3");
-        itActLogsENameLbl3.getAccessibleContext().setAccessibleName("itActLogsENameLbl3");
-        itActLogsDenyBtn3.getAccessibleContext().setAccessibleName("itActLogsDenyBtn3");
-        itActLogsApproveBtn3.getAccessibleContext().setAccessibleName("itActLogsApproveBtn3");
-        itActLogsStatusFld3.getAccessibleContext().setAccessibleName("itActLogsStatusFld3");
-
-        javax.swing.GroupLayout itActLogsDListBrdrPnlLayout = new javax.swing.GroupLayout(itActLogsDListBrdrPnl);
-        itActLogsDListBrdrPnl.setLayout(itActLogsDListBrdrPnlLayout);
-        itActLogsDListBrdrPnlLayout.setHorizontalGroup(
-            itActLogsDListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsDListBrdrPnlLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addGroup(itActLogsDListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itActLogsFADisputeBrdrPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsFADisputeBrdrPnl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itActLogsFADisputeBrdrPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(itAUserPasswordLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(itAUserPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(24, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itActLogsDListBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(itActLogsDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(253, 253, 253))
         );
-        itActLogsDListBrdrPnlLayout.setVerticalGroup(
-            itActLogsDListBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itActLogsDListBrdrPnlLayout.createSequentialGroup()
+
+        javax.swing.GroupLayout itAUserEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itAUserEDetailsBrdrPnl);
+        itAUserEDetailsBrdrPnl.setLayout(itAUserEDetailsBrdrPnlLayout);
+        itAUserEDetailsBrdrPnlLayout.setHorizontalGroup(
+            itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itAUserENumberLbl)
+                    .addComponent(itAUserENameLbl)
+                    .addComponent(itAUserPhnNumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itAUserENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAUserPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAUserENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(itActLogsDListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itActLogsFADisputeBrdrPnl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itActLogsFADisputeBrdrPnl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
-                .addComponent(itActLogsFADisputeBrdrPnl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(itAUserStatusLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itAUserStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(itAUserPositionLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itAUserPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(itAUserISupervisorLbl)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itAUserISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18))
+            .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(itAUserUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                        .addGap(205, 205, 205)
+                        .addComponent(itAUserUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        itActLogsDListPnl.getAccessibleContext().setAccessibleName("itActLogsDListPnl");
-        itActLogsFADisputeBrdrPnl1.getAccessibleContext().setAccessibleName("itActLogsFADisputeBrdrPnl1");
-        itActLogsFADisputeBrdrPnl2.getAccessibleContext().setAccessibleName("itActLogsFADisputeBrdrPnl3");
-        itActLogsFADisputeBrdrPnl3.getAccessibleContext().setAccessibleName("itActLogsFADisputeBrdrPnl2");
-
-        itActLogsDListBrdrScrlPnl.setViewportView(itActLogsDListBrdrPnl);
-        itActLogsDListBrdrPnl.getAccessibleContext().setAccessibleName("itActLogsDListBrdrPnl");
+        itAUserEDetailsBrdrPnlLayout.setVerticalGroup(
+            itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAUserEDetailsBrdrPnlLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itAUserENumberLbl)
+                    .addComponent(itAUserENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAUserISupervisorLbl)
+                    .addComponent(itAUserISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itAUserENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAUserENameLbl)
+                    .addComponent(itAUserPositionLbl)
+                    .addComponent(itAUserPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(itAUserEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itAUserPhnNumberLbl)
+                    .addComponent(itAUserPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAUserStatusLbl)
+                    .addComponent(itAUserStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addComponent(itAUserUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(itAUserUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1124,13 +365,19 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(itActLogsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(itActLogsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itActLogsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(438, 438, 438)
+                        .addComponent(itActLogsDeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(itActLogsActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(itActLogsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(itActLogsUAccDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE)
-                    .addComponent(itActLogsDListBrdrScrlPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE))
+                        .addComponent(itActLogsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(293, 293, 293))
+                    .addComponent(itAUserEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -1144,17 +391,21 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
                     .addComponent(itActLogsActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itActLogsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itActLogsUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itActLogsDListBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itActLogsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itActLogsDeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         itActLogsSidebarPnl.getAccessibleContext().setAccessibleName("itActLogsSidebarPnl");
         itActLogsActLogsPnl.getAccessibleContext().setAccessibleName("itActLogsActLogsPnl");
-        itActLogsUAccDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itActLogsUAccDetailsBrdrPnl");
         itActLogsSearchPnl.getAccessibleContext().setAccessibleName("itActLogsSearchPnl");
-        itActLogsDListBrdrScrlPnl.getAccessibleContext().setAccessibleName("itActLogsDListBrdrScrlPnl");
+        itActLogsDeleteBtn.getAccessibleContext().setAccessibleName("itActLogsDeleteBtn");
+        itActLogsEditBtn.getAccessibleContext().setAccessibleName("itActLogsEditBtn");
+        itActLogsAddBtn.getAccessibleContext().setAccessibleName("itActLogsAddBtn");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1168,30 +419,6 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
         this.dispose();
         new MainDashboardUI().setVisible(true);
     }//GEN-LAST:event_itActLogsMainDashboardBtnActionPerformed
-
-    private void itActLogsENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENumberFldActionPerformed
-
-    private void itActLogsENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFldActionPerformed
-
-    private void itActLogsPhnNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPhnNumberFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsPhnNumberFldActionPerformed
-
-    private void itActLogsISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsISupervisorFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsISupervisorFldActionPerformed
-
-    private void itActLogsStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsStatusFldActionPerformed
-
-    private void itActLogsPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsPositionFldActionPerformed
 
     private void itActLogsAddBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsAddBtnActionPerformed
         // TODO add your handling code here:
@@ -1209,109 +436,37 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itActLogsEntENumberPnlActionPerformed
 
-    private void itActLogsUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsUsernameFldActionPerformed
+    private void itAUserENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserENumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsUsernameFldActionPerformed
+    }//GEN-LAST:event_itAUserENumberFldActionPerformed
 
-    private void itActLogsPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPasswordFldActionPerformed
+    private void itAUserENameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserENameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsPasswordFldActionPerformed
+    }//GEN-LAST:event_itAUserENameFldActionPerformed
 
-    private void itActLogsENameFld6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld6ActionPerformed
+    private void itAUserPhnNumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserPhnNumberFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld6ActionPerformed
+    }//GEN-LAST:event_itAUserPhnNumberFldActionPerformed
 
-    private void itActLogsStatusFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld3ActionPerformed
+    private void itAUserISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserISupervisorFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsStatusFld3ActionPerformed
+    }//GEN-LAST:event_itAUserISupervisorFldActionPerformed
 
-    private void itActLogsApproveBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn3ActionPerformed
+    private void itAUserPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserPositionFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsApproveBtn3ActionPerformed
+    }//GEN-LAST:event_itAUserPositionFldActionPerformed
 
-    private void itActLogsDenyBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn3ActionPerformed
+    private void itAUserStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserStatusFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsDenyBtn3ActionPerformed
+    }//GEN-LAST:event_itAUserStatusFldActionPerformed
 
-    private void itActLogsPositionFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld3ActionPerformed
+    private void itAUserUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserUsernameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsPositionFld3ActionPerformed
+    }//GEN-LAST:event_itAUserUsernameFldActionPerformed
 
-    private void itActLogsENumberFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld3ActionPerformed
+    private void itAUserPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserPasswordFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENumberFld3ActionPerformed
-
-    private void itActLogsReasonFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsReasonFld3ActionPerformed
-
-    private void itActLogsENameFld3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld3ActionPerformed
-
-    private void itActLogsENameFld5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld5ActionPerformed
-
-    private void itActLogsStatusFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsStatusFld2ActionPerformed
-
-    private void itActLogsApproveBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsApproveBtn2ActionPerformed
-
-    private void itActLogsDenyBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsDenyBtn2ActionPerformed
-
-    private void itActLogsPositionFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsPositionFld2ActionPerformed
-
-    private void itActLogsENumberFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENumberFld2ActionPerformed
-
-    private void itActLogsReasonFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsReasonFld2ActionPerformed
-
-    private void itActLogsENameFld2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld2ActionPerformed
-
-    private void itActLogsENameFld4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld4ActionPerformed
-
-    private void itActLogsStatusFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsStatusFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsStatusFld1ActionPerformed
-
-    private void itActLogsApproveBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsApproveBtn1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsApproveBtn1ActionPerformed
-
-    private void itActLogsDenyBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsDenyBtn1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsDenyBtn1ActionPerformed
-
-    private void itActLogsPositionFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsPositionFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsPositionFld1ActionPerformed
-
-    private void itActLogsENumberFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENumberFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENumberFld1ActionPerformed
-
-    private void itActLogsReasonFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsReasonFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsReasonFld1ActionPerformed
-
-    private void itActLogsENameFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itActLogsENameFld1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itActLogsENameFld1ActionPerformed
+    }//GEN-LAST:event_itAUserPasswordFldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1339,89 +494,37 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel itAUserEDetailsBrdrPnl;
+    private javax.swing.JTextField itAUserENameFld;
+    private javax.swing.JLabel itAUserENameLbl;
+    private javax.swing.JTextField itAUserENumberFld;
+    private javax.swing.JLabel itAUserENumberLbl;
+    private javax.swing.JTextField itAUserISupervisorFld;
+    private javax.swing.JLabel itAUserISupervisorLbl;
+    private javax.swing.JTextField itAUserPasswordFld;
+    private javax.swing.JLabel itAUserPasswordLbl;
+    private javax.swing.JTextField itAUserPhnNumberFld;
+    private javax.swing.JLabel itAUserPhnNumberLbl;
+    private javax.swing.JTextField itAUserPositionFld;
+    private javax.swing.JLabel itAUserPositionLbl;
+    private javax.swing.JTextField itAUserStatusFld;
+    private javax.swing.JLabel itAUserStatusLbl;
+    private javax.swing.JPanel itAUserUAccDetailsBrdrPnl;
+    private javax.swing.JLabel itAUserUAccDetailsLbl;
+    private javax.swing.JPanel itAUserUAccDetailsPnl;
+    private javax.swing.JTextField itAUserUsernameFld;
+    private javax.swing.JLabel itAUserUsernameLbl;
     private javax.swing.JButton itActLogsActLogsBtn;
     private javax.swing.JLabel itActLogsActLogsLbl;
     private javax.swing.JPanel itActLogsActLogsPnl;
     private javax.swing.JButton itActLogsAddBtn;
-    private javax.swing.JButton itActLogsApproveBtn1;
-    private javax.swing.JButton itActLogsApproveBtn2;
-    private javax.swing.JButton itActLogsApproveBtn3;
-    private javax.swing.JPanel itActLogsDListBrdrPnl;
-    private javax.swing.JScrollPane itActLogsDListBrdrScrlPnl;
-    private javax.swing.JLabel itActLogsDListLbl;
-    private javax.swing.JPanel itActLogsDListPnl;
     private javax.swing.JButton itActLogsDeleteBtn;
-    private javax.swing.JButton itActLogsDenyBtn1;
-    private javax.swing.JButton itActLogsDenyBtn2;
-    private javax.swing.JButton itActLogsDenyBtn3;
-    private javax.swing.JTextField itActLogsENameFld;
-    private javax.swing.JTextField itActLogsENameFld1;
-    private javax.swing.JTextField itActLogsENameFld2;
-    private javax.swing.JTextField itActLogsENameFld3;
-    private javax.swing.JTextField itActLogsENameFld4;
-    private javax.swing.JTextField itActLogsENameFld5;
-    private javax.swing.JTextField itActLogsENameFld6;
-    private javax.swing.JLabel itActLogsENameLbl;
-    private javax.swing.JLabel itActLogsENameLbl1;
-    private javax.swing.JLabel itActLogsENameLbl2;
-    private javax.swing.JLabel itActLogsENameLbl3;
-    private javax.swing.JTextField itActLogsENumberFld;
-    private javax.swing.JTextField itActLogsENumberFld1;
-    private javax.swing.JTextField itActLogsENumberFld2;
-    private javax.swing.JTextField itActLogsENumberFld3;
-    private javax.swing.JLabel itActLogsENumberLbl;
-    private javax.swing.JLabel itActLogsENumberLbl1;
-    private javax.swing.JLabel itActLogsENumberLbl2;
-    private javax.swing.JLabel itActLogsENumberLbl3;
     private javax.swing.JButton itActLogsEditBtn;
     private javax.swing.JTextField itActLogsEntENumberPnl;
-    private javax.swing.JPanel itActLogsFADisputeBrdrPnl1;
-    private javax.swing.JPanel itActLogsFADisputeBrdrPnl2;
-    private javax.swing.JPanel itActLogsFADisputeBrdrPnl3;
-    private javax.swing.JLabel itActLogsFADisputeLbl1;
-    private javax.swing.JLabel itActLogsFADisputeLbl2;
-    private javax.swing.JLabel itActLogsFADisputeLbl3;
-    private javax.swing.JPanel itActLogsFADisputePnl1;
-    private javax.swing.JPanel itActLogsFADisputePnl2;
-    private javax.swing.JPanel itActLogsFADisputePnl3;
-    private javax.swing.JTextField itActLogsISupervisorFld;
-    private javax.swing.JLabel itActLogsISupervisorLbl;
     private javax.swing.JButton itActLogsMainDashboardBtn;
     private javax.swing.JLabel itActLogsMotorPHIconImgLbl;
-    private javax.swing.JTextField itActLogsPasswordFld;
-    private javax.swing.JLabel itActLogsPasswordLbl;
-    private javax.swing.JTextField itActLogsPhnNumberFld;
-    private javax.swing.JLabel itActLogsPhnNumberLbl;
-    private javax.swing.JTextField itActLogsPositionFld;
-    private javax.swing.JTextField itActLogsPositionFld1;
-    private javax.swing.JTextField itActLogsPositionFld2;
-    private javax.swing.JTextField itActLogsPositionFld3;
-    private javax.swing.JLabel itActLogsPositionLbl;
-    private javax.swing.JLabel itActLogsPositionLbl1;
-    private javax.swing.JLabel itActLogsPositionLbl2;
-    private javax.swing.JLabel itActLogsPositionLbl3;
-    private javax.swing.JTextField itActLogsReasonFld1;
-    private javax.swing.JTextField itActLogsReasonFld2;
-    private javax.swing.JTextField itActLogsReasonFld3;
-    private javax.swing.JLabel itActLogsReasonLbl1;
-    private javax.swing.JLabel itActLogsReasonLbl2;
-    private javax.swing.JLabel itActLogsReasonLbl3;
     private javax.swing.JLabel itActLogsSearchIconImgLbl;
     private javax.swing.JPanel itActLogsSearchPnl;
     private javax.swing.JPanel itActLogsSidebarPnl;
-    private javax.swing.JTextField itActLogsStatusFld;
-    private javax.swing.JTextField itActLogsStatusFld1;
-    private javax.swing.JTextField itActLogsStatusFld2;
-    private javax.swing.JTextField itActLogsStatusFld3;
-    private javax.swing.JLabel itActLogsStatusLbl;
-    private javax.swing.JLabel itActLogsStatusLbl1;
-    private javax.swing.JLabel itActLogsStatusLbl2;
-    private javax.swing.JLabel itActLogsStatusLbl3;
-    private javax.swing.JPanel itActLogsUAccDetailsBrdrPnl;
-    private javax.swing.JPanel itActLogsUActDetailsBrdrPnl;
-    private javax.swing.JLabel itActLogsUActDetailsLbl;
-    private javax.swing.JPanel itActLogsUActDetailsPnl;
-    private javax.swing.JTextField itActLogsUsernameFld;
-    private javax.swing.JLabel itActLogsUsernameLbl;
     // End of variables declaration//GEN-END:variables
 }

@@ -8,14 +8,14 @@ package com.motorph.ui;
  *
  * @author Lenovo
  */
-public class HRDisputeDetailsUI extends javax.swing.JFrame {
+public class ITDisputeDetailsUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(HRDisputeDetailsUI.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITDisputeDetailsUI.class.getName());
 
     /**
      * Creates new form EmployeeDisputeFrame
      */
-    public HRDisputeDetailsUI() {
+    public ITDisputeDetailsUI() {
         initComponents();
     }
 
@@ -50,7 +50,6 @@ public class HRDisputeDetailsUI extends javax.swing.JFrame {
         hrDDetailsDateLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setEnabled(false);
         setSize(new java.awt.Dimension(1000, 700));
         addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentHidden(java.awt.event.ComponentEvent evt) {
@@ -363,7 +362,7 @@ public class HRDisputeDetailsUI extends javax.swing.JFrame {
 
     private void hrDDetailsBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsBackBtnActionPerformed
         // TODO add your handling code here:
-        
+      
     }//GEN-LAST:event_hrDDetailsBackBtnActionPerformed
 
     private void hrDDetailsTTypeCbxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDDetailsTTypeCbxActionPerformed
@@ -400,7 +399,7 @@ public class HRDisputeDetailsUI extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new HRDisputeDetailsUI().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new ITDisputeDetailsUI().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

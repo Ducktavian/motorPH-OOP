@@ -134,11 +134,11 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="employeePrlDisputeSidebarPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="financePrlDListSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="employeePrlDisputePrlDisputePnl" min="-2" max="-2" attributes="0"/>
-                  <Component id="hrDDetailsDListBrdrScrlPnl" min="-2" pref="711" max="-2" attributes="0"/>
+                  <Component id="financePrlDListPrlDListPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlDListPrlDListBrdrScrlPnl" min="-2" pref="711" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="15" max="32767" attributes="0"/>
           </Group>
@@ -148,17 +148,17 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-              <Component id="employeePrlDisputePrlDisputePnl" min="-2" max="-2" attributes="0"/>
+              <Component id="financePrlDListPrlDListPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="hrDDetailsDListBrdrScrlPnl" min="-2" pref="603" max="-2" attributes="0"/>
+              <Component id="financePrlDListPrlDListBrdrScrlPnl" min="-2" pref="603" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
-          <Component id="employeePrlDisputeSidebarPnl" alignment="0" max="32767" attributes="0"/>
+          <Component id="financePrlDListSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="employeePrlDisputeSidebarPnl">
+    <Container class="javax.swing.JPanel" name="financePrlDListSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -168,7 +168,7 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeSidebarPnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListSidebarPnl"/>
       </AccessibilityProperties>
 
       <Layout>
@@ -176,19 +176,19 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeMainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlDListMainDashboardBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="employeePrlDisputePylDisputeBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="employeePrlDisputePylRecordBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="financePrlDListPylDisputeBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="financePrlDListPylRecordBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                          <Component id="employeePrlDisputeMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="financePrlDListMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="employeePrlDisputePylBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="financePrlDListPylBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -199,25 +199,25 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="employeePrlDisputeMotorPHIconImgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="financePrlDListMotorPHIconImgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
-                          <Component id="employeePrlDisputePylBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="financePrlDListPylBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputePylRecordBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="financePrlDListPylRecordBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputePylDisputeBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="financePrlDListPylDisputeBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="282" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="financePrlDListMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace pref="39" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="employeePrlDisputePylRecordBtn">
+        <Component class="javax.swing.JButton" name="financePrlDListPylRecordBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -232,13 +232,13 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePylRecordBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListPylRecordBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputePylRecordBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDListPylRecordBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="employeePrlDisputeMainDashboardBtn">
+        <Component class="javax.swing.JButton" name="financePrlDListMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -254,23 +254,23 @@
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListMainDashboardBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputeMainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDListMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="employeePrlDisputeMotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="financePrlDListMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeMotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JButton" name="employeePrlDisputePylBtn">
+        <Component class="javax.swing.JButton" name="financePrlDListPylBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -285,13 +285,13 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePylBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListPylBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputePylBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDListPylBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="employeePrlDisputePylDisputeBtn">
+        <Component class="javax.swing.JButton" name="financePrlDListPylDisputeBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -306,15 +306,15 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePylDisputeBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListPylDisputeBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputePylDisputeBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDListPylDisputeBtnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="employeePrlDisputePrlDisputePnl">
+    <Container class="javax.swing.JPanel" name="financePrlDListPrlDListPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -331,14 +331,14 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlDisputePnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListPrlDListPnl"/>
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="employeePrlDisputePrlDisputeLbl">
+        <Component class="javax.swing.JLabel" name="financePrlDListPrlDisputeLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -349,7 +349,7 @@
             <Property name="text" type="java.lang.String" value=" Payroll Dispute List"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlDisputeLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListPrlDisputeLbl"/>
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -359,7 +359,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JScrollPane" name="hrDDetailsDListBrdrScrlPnl">
+    <Container class="javax.swing.JScrollPane" name="financePrlDListPrlDListBrdrScrlPnl">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -369,10 +369,13 @@
           </Border>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListPrlDListBrdrScrlPnl"/>
+      </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTable" name="hrDDetailsDListTbl">
+        <Component class="javax.swing.JTable" name="financePrlDListPrlDListTbl">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -388,8 +391,8 @@
               <Table columnCount="4" rowCount="100">
                 <Column editable="true" title="Employee #" type="java.lang.Integer"/>
                 <Column editable="true" title="Employee Name" type="java.lang.String"/>
-                <Column editable="true" title="Status" type="java.lang.Object"/>
                 <Column editable="true" title="Payroll Dispute Details Details" type="java.lang.String"/>
+                <Column editable="true" title="Status" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -427,8 +430,11 @@
               <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListPrlDListTbl"/>
+          </AccessibilityProperties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="hrDDetailsDListTblMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="financePrlDListPrlDListTblMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>

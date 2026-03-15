@@ -187,19 +187,23 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         hrRDetailsReasonFld.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsReasonFld.setText(" ");
         hrRDetailsReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsReasonFld.setEnabled(false);
         hrRDetailsReasonFld.addActionListener(this::hrRDetailsReasonFldActionPerformed);
 
         hrRDetailsHourFld.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsHourFld.setText(" ");
         hrRDetailsHourFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsHourFld.setEnabled(false);
         hrRDetailsHourFld.addActionListener(this::hrRDetailsHourFldActionPerformed);
 
         hrRDetailsRTypeCbx.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsRTypeCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Overtime", "Undertime" }));
         hrRDetailsRTypeCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsRTypeCbx.setEnabled(false);
 
         hrRDetailsDateDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrRDetailsDateDtChsr.setForeground(new java.awt.Color(31, 41, 55));
+        hrRDetailsDateDtChsr.setEnabled(false);
 
         javax.swing.GroupLayout hrRDetailsFARequestBrdrPnlLayout = new javax.swing.GroupLayout(hrRDetailsFARequestBrdrPnl);
         hrRDetailsFARequestBrdrPnl.setLayout(hrRDetailsFARequestBrdrPnlLayout);

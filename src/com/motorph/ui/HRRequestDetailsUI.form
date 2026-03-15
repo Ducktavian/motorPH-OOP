@@ -519,6 +519,7 @@
                     </LineBorder>
                   </Border>
                 </Property>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsReasonFld"/>
@@ -540,6 +541,7 @@
                     </LineBorder>
                   </Border>
                 </Property>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsHourFld"/>
@@ -567,6 +569,7 @@
                     </LineBorder>
                   </Border>
                 </Property>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRTypeCbx"/>
@@ -587,6 +590,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
                 </Property>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsDateDtChsr"/>
