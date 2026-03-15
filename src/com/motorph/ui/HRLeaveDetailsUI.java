@@ -29,10 +29,8 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
     private void initComponents() {
 
         hrLDetailsSidebarPnl = new javax.swing.JPanel();
-        hrLDetailsLDetailsBtn = new javax.swing.JButton();
         mainDashboardBtn = new javax.swing.JButton();
         hrLDetailsMotorPHIconImgLbl = new javax.swing.JLabel();
-        hrLDetailsLListBtn = new javax.swing.JButton();
         hrLDetailsLListPnl = new javax.swing.JPanel();
         hrLDetailsLListLbl = new javax.swing.JLabel();
         hrLDetailsLFormBrdrPnl = new javax.swing.JPanel();
@@ -57,13 +55,6 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
 
         hrLDetailsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        hrLDetailsLDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrLDetailsLDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrLDetailsLDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrLDetailsLDetailsBtn.setText(" Leave Details");
-        hrLDetailsLDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        hrLDetailsLDetailsBtn.addActionListener(this::hrLDetailsLDetailsBtnActionPerformed);
-
         mainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         mainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -74,13 +65,6 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
 
         hrLDetailsMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        hrLDetailsLListBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrLDetailsLListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrLDetailsLListBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrLDetailsLListBtn.setText(" Leave List");
-        hrLDetailsLListBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        hrLDetailsLListBtn.addActionListener(this::hrLDetailsLListBtnActionPerformed);
-
         javax.swing.GroupLayout hrLDetailsSidebarPnlLayout = new javax.swing.GroupLayout(hrLDetailsSidebarPnl);
         hrLDetailsSidebarPnl.setLayout(hrLDetailsSidebarPnlLayout);
         hrLDetailsSidebarPnlLayout.setHorizontalGroup(
@@ -89,33 +73,20 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
                 .addGap(92, 92, 92)
                 .addComponent(mainDashboardBtn))
             .addGroup(hrLDetailsSidebarPnlLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(hrLDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrLDetailsLListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(hrLDetailsSidebarPnlLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(hrLDetailsMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(hrLDetailsLDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(40, 40, 40)
+                .addComponent(hrLDetailsMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         hrLDetailsSidebarPnlLayout.setVerticalGroup(
             hrLDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hrLDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(hrLDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrLDetailsMotorPHIconImgLbl)
-                    .addGroup(hrLDetailsSidebarPnlLayout.createSequentialGroup()
-                        .addGap(189, 189, 189)
-                        .addComponent(hrLDetailsLDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrLDetailsLListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 353, Short.MAX_VALUE)
+                .addComponent(hrLDetailsMotorPHIconImgLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(mainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
         );
 
-        hrLDetailsLDetailsBtn.getAccessibleContext().setAccessibleName("hrLDetailsLDetailsBtn");
         hrLDetailsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("hrLDetailsMotorPHIconImgLbl");
-        hrLDetailsLListBtn.getAccessibleContext().setAccessibleName("hrLDetailsLListBtn");
 
         hrLDetailsLListPnl.setBackground(new java.awt.Color(30, 58, 138));
         hrLDetailsLListPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -230,13 +201,16 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
 
         hrLDetailsFromDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrLDetailsFromDtChsr.setForeground(new java.awt.Color(31, 41, 55));
+        hrLDetailsFromDtChsr.setEnabled(false);
 
         hrLDetailsToDtChsr.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
         hrLDetailsToDtChsr.setForeground(new java.awt.Color(31, 41, 55));
+        hrLDetailsToDtChsr.setEnabled(false);
 
         hrLDetailsLTypeCbx.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsLTypeCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Sick", "Vacation", "Emergency", " " }));
         hrLDetailsLTypeCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsLTypeCbx.setEnabled(false);
 
         javax.swing.GroupLayout hrLDetailsFALeaveBrdrPnlLayout = new javax.swing.GroupLayout(hrLDetailsFALeaveBrdrPnl);
         hrLDetailsFALeaveBrdrPnl.setLayout(hrLDetailsFALeaveBrdrPnlLayout);
@@ -378,7 +352,7 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
                     .addComponent(hrLDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrLDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrLDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(250, Short.MAX_VALUE))
             .addComponent(hrLDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -392,22 +366,11 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void hrLDetailsLDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsLDetailsBtnActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        
-        new EmployeeLeaveUI().setVisible(true);
-    }//GEN-LAST:event_hrLDetailsLDetailsBtnActionPerformed
-
     private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardUI().setVisible(true);
     }//GEN-LAST:event_mainDashboardBtnActionPerformed
-
-    private void hrLDetailsLListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsLListBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrLDetailsLListBtnActionPerformed
 
     private void hrLDetailsSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsSubmitBtnActionPerformed
         // TODO add your handling code here:
@@ -547,11 +510,9 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
     private javax.swing.JPanel hrLDetailsFALeavePnl;
     private com.toedter.calendar.JDateChooser hrLDetailsFromDtChsr;
     private javax.swing.JLabel hrLDetailsFromLbl;
-    private javax.swing.JButton hrLDetailsLDetailsBtn;
     private javax.swing.JPanel hrLDetailsLFormBrdrPnl;
     private javax.swing.JLabel hrLDetailsLFormLbl;
     private javax.swing.JPanel hrLDetailsLFormPnl;
-    private javax.swing.JButton hrLDetailsLListBtn;
     private javax.swing.JLabel hrLDetailsLListLbl;
     private javax.swing.JPanel hrLDetailsLListPnl;
     private javax.swing.JComboBox<String> hrLDetailsLTypeCbx;

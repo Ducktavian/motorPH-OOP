@@ -360,7 +360,7 @@
                                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                                               <Component id="hrAEmployeePositionFld" alignment="0" pref="151" max="32767" attributes="0"/>
                                                               <Component id="hrAEmployeeBasicSalaryFld" alignment="0" pref="151" max="32767" attributes="0"/>
-                                                              <Component id="bdayChooser" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="hrAEmployeeBirthdayDtChsr" alignment="0" pref="150" max="32767" attributes="0"/>
                                                           </Group>
                                                           <Group type="103" groupAlignment="0" attributes="0">
                                                               <Group type="102" alignment="0" attributes="0">
@@ -447,7 +447,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="hrAEmployeePhnNumberFld" min="-2" pref="31" max="-2" attributes="0"/>
-                              <Component id="bdayChooser" min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="hrAEmployeeBirthdayDtChsr" min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -1114,7 +1114,22 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrAEmployeeCltAllowanceFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="bdayChooser">
+        <Component class="com.toedter.calendar.JDateChooser" name="hrAEmployeeBirthdayDtChsr">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder roundedCorners="true">
+                  <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="37" green="29" red="1f" type="rgb"/>
+            </Property>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrAEmployeeBirthdayDtChsr"/>
+          </AccessibilityProperties>
         </Component>
       </SubComponents>
     </Container>

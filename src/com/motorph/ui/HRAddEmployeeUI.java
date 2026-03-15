@@ -87,7 +87,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeStatusCbx = new javax.swing.JComboBox<>();
         hrAEmployeeStatusLbl = new javax.swing.JLabel();
         hrAEmployeeCltAllowanceFld = new javax.swing.JTextField();
-        bdayChooser = new com.toedter.calendar.JDateChooser();
+        hrAEmployeeBirthdayDtChsr = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1000, 700));
@@ -337,6 +337,9 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeCltAllowanceFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrAEmployeeCltAllowanceFld.addActionListener(this::hrAEmployeeCltAllowanceFldActionPerformed);
 
+        hrAEmployeeBirthdayDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrAEmployeeBirthdayDtChsr.setForeground(new java.awt.Color(31, 41, 55));
+
         javax.swing.GroupLayout hrAEmployeeEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(hrAEmployeeEDetailsBrdrPnl);
         hrAEmployeeEDetailsBrdrPnl.setLayout(hrAEmployeeEDetailsBrdrPnlLayout);
         hrAEmployeeEDetailsBrdrPnlLayout.setHorizontalGroup(
@@ -389,7 +392,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                                                         .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                                             .addComponent(hrAEmployeePositionFld, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
                                                             .addComponent(hrAEmployeeBasicSalaryFld, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
-                                                            .addComponent(bdayChooser, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                            .addComponent(hrAEmployeeBirthdayDtChsr, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE))
                                                         .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                             .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
                                                                 .addGap(18, 18, 18)
@@ -449,7 +452,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                     .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(hrAEmployeePhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(bdayChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(hrAEmployeeBirthdayDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(14, 14, 14)
                         .addGroup(hrAEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(hrAEmployeePositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -520,6 +523,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeStatusCbx.getAccessibleContext().setAccessibleName("hrAEmployeeStatusCbx");
         hrAEmployeeStatusLbl.getAccessibleContext().setAccessibleName("hrAEmployeeStatusLbl");
         hrAEmployeeCltAllowanceFld.getAccessibleContext().setAccessibleName("hrAEmployeeCltAllowanceFld");
+        hrAEmployeeBirthdayDtChsr.getAccessibleContext().setAccessibleName("hrAEmployeeBirthdayDtChsr");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -645,7 +649,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
             // FirstName
             String firstName = hrAEmployeeFNameFld.getText().trim();
             // Bday
-            LocalDate bday = DateUtils.convertDateToLocalDate(bdayChooser.getDate());
+            LocalDate bday = DateUtils.convertDateToLocalDate(hrAEmployeeBirthdayDtChsr.getDate());
             // Address
             String address = hrAEmployeeAddressFld.getText().trim();
             // Phone Number
@@ -740,7 +744,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser bdayChooser;
     private javax.swing.JButton hrAEmployeeAEDetailsBtn;
     private javax.swing.JLabel hrAEmployeeAEDetailsLbl;
     private javax.swing.JPanel hrAEmployeeAEDetailsPnl;
@@ -749,6 +752,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
     private javax.swing.JLabel hrAEmployeeAddressLbl;
     private javax.swing.JTextField hrAEmployeeBasicSalaryFld;
     private javax.swing.JLabel hrAEmployeeBasicSalaryLbl;
+    private com.toedter.calendar.JDateChooser hrAEmployeeBirthdayDtChsr;
     private javax.swing.JLabel hrAEmployeeBirthdayLbl;
     private javax.swing.JTextField hrAEmployeeCltAllowanceFld;
     private javax.swing.JLabel hrAEmployeeCltAllowanceLbl;

@@ -63,7 +63,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveENameLbl = new javax.swing.JLabel();
         employeeLeaveFromDtChsr = new com.toedter.calendar.JDateChooser();
         employeeLeaveToDtChsr = new com.toedter.calendar.JDateChooser();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        employeeLeaveTTypeCbx = new javax.swing.JComboBox<>();
         employeeLeaveRecordsBrdrPnl = new javax.swing.JPanel();
         employeeLeaveRecordsLbl = new javax.swing.JLabel();
         employeeLeaveRecordsBrdrScrlPnl = new javax.swing.JScrollPane();
@@ -174,9 +174,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         );
         employeeLeaveFALeavePnlLayout.setVerticalGroup(
             employeeLeaveFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveFALeavePnlLayout.createSequentialGroup()
-                .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
         employeeLeaveFALeaveLbl.getAccessibleContext().setAccessibleName("employeeLeaveFALeaveLbl");
@@ -211,9 +209,9 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveToDtChsr.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
         employeeLeaveToDtChsr.setForeground(new java.awt.Color(31, 41, 55));
 
-        jComboBox1.setForeground(new java.awt.Color(31, 41, 55));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Sick", "Vacation", "Emergency", " " }));
-        jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveTTypeCbx.setForeground(new java.awt.Color(31, 41, 55));
+        employeeLeaveTTypeCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Sick", "Vacation", "Emergency", " " }));
+        employeeLeaveTTypeCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
         javax.swing.GroupLayout employeeLeaveFALeaveBrdrPnlLayout = new javax.swing.GroupLayout(employeeLeaveFALeaveBrdrPnl);
         employeeLeaveFALeaveBrdrPnl.setLayout(employeeLeaveFALeaveBrdrPnlLayout);
@@ -234,7 +232,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                                 .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
                                 .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(employeeLeaveTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(employeeLeaveFromDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addComponent(employeeLeaveFromLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -253,7 +251,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                             .addComponent(employeeLeaveFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(employeeLeaveSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(employeeLeaveTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(employeeLeaveFromLbl, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -275,6 +273,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveENameLbl.getAccessibleContext().setAccessibleName("employeeLeaveENameLbl");
         employeeLeaveFromDtChsr.getAccessibleContext().setAccessibleName("employeeLeaveFromDtChsr");
         employeeLeaveToDtChsr.getAccessibleContext().setAccessibleName("employeeLeaveToDtChsr");
+        employeeLeaveTTypeCbx.getAccessibleContext().setAccessibleName("employeeLeaveTTypeCbx");
 
         javax.swing.GroupLayout employeeLeaveLFormBrdrPnlLayout = new javax.swing.GroupLayout(employeeLeaveLFormBrdrPnl);
         employeeLeaveLFormBrdrPnl.setLayout(employeeLeaveLFormBrdrPnlLayout);
@@ -589,7 +588,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private javax.swing.JTable employeeLeaveRecordsTbl;
     private javax.swing.JPanel employeeLeaveSidebarPnl;
     private javax.swing.JButton employeeLeaveSubmitBtn;
+    private javax.swing.JComboBox<String> employeeLeaveTTypeCbx;
     private com.toedter.calendar.JDateChooser employeeLeaveToDtChsr;
-    private javax.swing.JComboBox<String> jComboBox1;
     // End of variables declaration//GEN-END:variables
 }

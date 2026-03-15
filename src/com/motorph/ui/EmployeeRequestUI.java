@@ -40,15 +40,15 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestRFormLbl = new javax.swing.JLabel();
         employeeRequestFARequestBrdrPnl = new javax.swing.JPanel();
         employeeRequestFARequestPnl = new javax.swing.JPanel();
-        jLabel21 = new javax.swing.JLabel();
+        employeeRequestFARequestLbl = new javax.swing.JLabel();
         employeeRequestHourLbl = new javax.swing.JLabel();
         employeeRequestReasonLbl = new javax.swing.JLabel();
         employeeRequestSubmitBtn = new javax.swing.JButton();
         employeeRequestDateLbl = new javax.swing.JLabel();
         employeeRequestReasonFld = new javax.swing.JTextField();
         employeeRequestDateFld = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        employeeRequestTTypeCbx = new javax.swing.JComboBox<>();
+        employeeRequestDateDtChsr = new com.toedter.calendar.JDateChooser();
         employeeRequestRecordsBrdrPnl = new javax.swing.JPanel();
         employeeRequestRecordsLbl = new javax.swing.JLabel();
         employeeRequestRecordsScrlPnl = new javax.swing.JScrollPane();
@@ -144,11 +144,11 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestFARequestPnl.setForeground(new java.awt.Color(30, 58, 138));
         employeeRequestFARequestPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
-        jLabel21.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(31, 41, 55));
-        jLabel21.setText(" File A Request");
-        jLabel21.setToolTipText("");
+        employeeRequestFARequestLbl.setBackground(new java.awt.Color(255, 255, 255));
+        employeeRequestFARequestLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        employeeRequestFARequestLbl.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestFARequestLbl.setText(" File A Request");
+        employeeRequestFARequestLbl.setToolTipText("");
 
         javax.swing.GroupLayout employeeRequestFARequestPnlLayout = new javax.swing.GroupLayout(employeeRequestFARequestPnl);
         employeeRequestFARequestPnl.setLayout(employeeRequestFARequestPnlLayout);
@@ -156,15 +156,15 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
             employeeRequestFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeeRequestFARequestPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
+                .addComponent(employeeRequestFARequestLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
                 .addContainerGap())
         );
         employeeRequestFARequestPnlLayout.setVerticalGroup(
             employeeRequestFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestFARequestPnlLayout.createSequentialGroup()
-                .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(employeeRequestFARequestLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
+
+        employeeRequestFARequestLbl.getAccessibleContext().setAccessibleName("employeeRequestFARequestLbl");
 
         employeeRequestHourLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         employeeRequestHourLbl.setForeground(new java.awt.Color(31, 41, 55));
@@ -195,12 +195,12 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestDateFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         employeeRequestDateFld.addActionListener(this::employeeRequestDateFldActionPerformed);
 
-        jComboBox1.setForeground(new java.awt.Color(31, 41, 55));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Overtime", "Undertime" }));
-        jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestTTypeCbx.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestTTypeCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Overtime", "Undertime" }));
+        employeeRequestTTypeCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        jDateChooser1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jDateChooser1.setForeground(new java.awt.Color(31, 41, 55));
+        employeeRequestDateDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeRequestDateDtChsr.setForeground(new java.awt.Color(31, 41, 55));
 
         javax.swing.GroupLayout employeeRequestFARequestBrdrPnlLayout = new javax.swing.GroupLayout(employeeRequestFARequestBrdrPnl);
         employeeRequestFARequestBrdrPnl.setLayout(employeeRequestFARequestBrdrPnlLayout);
@@ -215,11 +215,11 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
                     .addComponent(employeeRequestReasonFld)
                     .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
                         .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeRequestDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
                                 .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(employeeRequestTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(employeeRequestSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
@@ -240,10 +240,10 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
                             .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(employeeRequestSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(employeeRequestTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeRequestDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(employeeRequestDateLbl)))
                     .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(employeeRequestDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -262,6 +262,8 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestDateLbl.getAccessibleContext().setAccessibleName("employeeRequestDateLbl");
         employeeRequestReasonFld.getAccessibleContext().setAccessibleName("employeeRequestReasonFld");
         employeeRequestDateFld.getAccessibleContext().setAccessibleName("employeeRequestDateFld");
+        employeeRequestTTypeCbx.getAccessibleContext().setAccessibleName("employeeRequestTTypeCbx");
+        employeeRequestDateDtChsr.getAccessibleContext().setAccessibleName("employeeRequestDateDtChsr");
 
         javax.swing.GroupLayout employeeRequestRFormBrdrPnlLayout = new javax.swing.GroupLayout(employeeRequestRFormBrdrPnl);
         employeeRequestRFormBrdrPnl.setLayout(employeeRequestRFormBrdrPnlLayout);
@@ -534,9 +536,11 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.toedter.calendar.JDateChooser employeeRequestDateDtChsr;
     private javax.swing.JTextField employeeRequestDateFld;
     private javax.swing.JLabel employeeRequestDateLbl;
     private javax.swing.JPanel employeeRequestFARequestBrdrPnl;
+    private javax.swing.JLabel employeeRequestFARequestLbl;
     private javax.swing.JPanel employeeRequestFARequestPnl;
     private javax.swing.JLabel employeeRequestHourLbl;
     private javax.swing.JButton employeeRequestMainDashboardBtn;
@@ -556,8 +560,6 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
     private javax.swing.JTable employeeRequestRecordsTbl;
     private javax.swing.JPanel employeeRequestSidebarPnl;
     private javax.swing.JButton employeeRequestSubmitBtn;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
-    private javax.swing.JLabel jLabel21;
+    private javax.swing.JComboBox<String> employeeRequestTTypeCbx;
     // End of variables declaration//GEN-END:variables
 }

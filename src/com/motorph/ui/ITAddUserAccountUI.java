@@ -56,7 +56,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAUserUsernameFld = new javax.swing.JTextField();
         itAUserPasswordLbl = new javax.swing.JLabel();
         itAUserPasswordFld = new javax.swing.JTextField();
-        itAUserSendAccBtn = new javax.swing.JButton();
         itAUserActivateBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -385,13 +384,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAUserUAccDetailsPnl.getAccessibleContext().setAccessibleName("itAUserUAccDetailsPnl");
         itAUserUAccDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itAUserUAccDetailsBrdrPnl");
 
-        itAUserSendAccBtn.setBackground(new java.awt.Color(30, 58, 138));
-        itAUserSendAccBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itAUserSendAccBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itAUserSendAccBtn.setText("Send Account");
-        itAUserSendAccBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAUserSendAccBtn.addActionListener(this::itAUserSendAccBtnActionPerformed);
-
         itAUserActivateBtn.setBackground(new java.awt.Color(34, 197, 94));
         itAUserActivateBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         itAUserActivateBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -406,14 +398,10 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(itAUserSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(itAUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(itAUserAddUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(itAUserActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itAUserSendAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itAUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAUserAddUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAUserActivateBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -424,9 +412,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itAUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itAUserActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAUserSendAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(itAUserActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(itAUserSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -434,7 +420,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAUserSidebarPnl.getAccessibleContext().setAccessibleName("itAUserSidebarPnl");
         itAUserAddUAccPnl.getAccessibleContext().setAccessibleName("itAUserAddUAccPnl");
         itAUserEDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itAUserEDetailsBrdrPnl");
-        itAUserSendAccBtn.getAccessibleContext().setAccessibleName("itAUserSendAccBtn");
         itAUserActivateBtn.getAccessibleContext().setAccessibleName("itAUserActivateBtn");
 
         pack();
@@ -497,10 +482,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itAUserAddUAccBtnActionPerformed
 
-    private void itAUserSendAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAUserSendAccBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itAUserSendAccBtnActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -548,7 +529,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itAUserPhnNumberLbl;
     private javax.swing.JTextField itAUserPositionFld;
     private javax.swing.JLabel itAUserPositionLbl;
-    private javax.swing.JButton itAUserSendAccBtn;
     private javax.swing.JPanel itAUserSidebarPnl;
     private javax.swing.JTextField itAUserStatusFld;
     private javax.swing.JLabel itAUserStatusLbl;

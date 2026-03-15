@@ -29,10 +29,8 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
     private void initComponents() {
 
         hrRDetailsSidebarPnl = new javax.swing.JPanel();
-        hrRDetailsRDetailsBtn = new javax.swing.JButton();
         hrRDetailsMainDashboardBtn = new javax.swing.JButton();
         hrRDetailsMotorPHIconImgLbl = new javax.swing.JLabel();
-        hrRDetailsRListBtn = new javax.swing.JButton();
         hrRDetailsRListPnl = new javax.swing.JPanel();
         hrRDetailsRListLbl = new javax.swing.JLabel();
         hrRDetailsBackBtn = new javax.swing.JButton();
@@ -56,13 +54,6 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
 
         hrRDetailsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        hrRDetailsRDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrRDetailsRDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrRDetailsRDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrRDetailsRDetailsBtn.setText("Request Details");
-        hrRDetailsRDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        hrRDetailsRDetailsBtn.addActionListener(this::hrRDetailsRDetailsBtnActionPerformed);
-
         hrRDetailsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         hrRDetailsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         hrRDetailsMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -73,13 +64,6 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
 
         hrRDetailsMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        hrRDetailsRListBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrRDetailsRListBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrRDetailsRListBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrRDetailsRListBtn.setText("Request List");
-        hrRDetailsRListBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        hrRDetailsRListBtn.addActionListener(this::hrRDetailsRListBtnActionPerformed);
-
         javax.swing.GroupLayout hrRDetailsSidebarPnlLayout = new javax.swing.GroupLayout(hrRDetailsSidebarPnl);
         hrRDetailsSidebarPnl.setLayout(hrRDetailsSidebarPnlLayout);
         hrRDetailsSidebarPnlLayout.setHorizontalGroup(
@@ -88,34 +72,21 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
                 .addGap(92, 92, 92)
                 .addComponent(hrRDetailsMainDashboardBtn))
             .addGroup(hrRDetailsSidebarPnlLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(hrRDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrRDetailsRListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(hrRDetailsSidebarPnlLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(hrRDetailsMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(hrRDetailsRDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(40, 40, 40)
+                .addComponent(hrRDetailsMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         hrRDetailsSidebarPnlLayout.setVerticalGroup(
             hrRDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hrRDetailsSidebarPnlLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(hrRDetailsSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrRDetailsMotorPHIconImgLbl)
-                    .addGroup(hrRDetailsSidebarPnlLayout.createSequentialGroup()
-                        .addGap(189, 189, 189)
-                        .addComponent(hrRDetailsRDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrRDetailsRListBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 354, Short.MAX_VALUE)
+                .addComponent(hrRDetailsMotorPHIconImgLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(hrRDetailsMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18))
         );
 
-        hrRDetailsRDetailsBtn.getAccessibleContext().setAccessibleName("hrRDetailsRDetailsBtn");
         hrRDetailsMainDashboardBtn.getAccessibleContext().setAccessibleName("hrRDetailsMainDashboardBtn");
         hrRDetailsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("hrRDetailsMotorPHIconImgLbl");
-        hrRDetailsRListBtn.getAccessibleContext().setAccessibleName("hrRDetailsRListBtn");
 
         hrRDetailsRListPnl.setBackground(new java.awt.Color(30, 58, 138));
         hrRDetailsRListPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -361,7 +332,7 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
                     .addComponent(hrRDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrRDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrRDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(215, Short.MAX_VALUE))
             .addComponent(hrRDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -375,19 +346,11 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void hrRDetailsRDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsRDetailsBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsRDetailsBtnActionPerformed
-
     private void hrRDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainDashboardUI().setVisible(true);
     }//GEN-LAST:event_hrRDetailsMainDashboardBtnActionPerformed
-
-    private void hrRDetailsRListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsRListBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrRDetailsRListBtnActionPerformed
 
     private void hrRDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsApproveBtnActionPerformed
         // TODO add your handling code here:
@@ -517,11 +480,9 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
     private javax.swing.JLabel hrRDetailsHourLbl;
     private javax.swing.JButton hrRDetailsMainDashboardBtn;
     private javax.swing.JLabel hrRDetailsMotorPHIconImgLbl;
-    private javax.swing.JButton hrRDetailsRDetailsBtn;
     private javax.swing.JPanel hrRDetailsRFormBrdrPnl;
     private javax.swing.JLabel hrRDetailsRFormLbl;
     private javax.swing.JPanel hrRDetailsRFormPnl;
-    private javax.swing.JButton hrRDetailsRListBtn;
     private javax.swing.JLabel hrRDetailsRListLbl;
     private javax.swing.JPanel hrRDetailsRListPnl;
     private javax.swing.JComboBox<String> hrRDetailsRTypeCbx;
