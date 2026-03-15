@@ -145,7 +145,7 @@
                       <Component id="financePrlDDetailsBackBtn" min="-2" pref="88" max="-2" attributes="0"/>
                   </Group>
                   <Component id="financePrlDDetailsPrlDDetailsPnl" min="-2" max="-2" attributes="0"/>
-                  <Component id="employeeLeaveLFormBrdrPnl" max="32767" attributes="0"/>
+                  <Component id="financePrlDDetailsPrlDFormBrdrPnl" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="17" max="32767" attributes="0"/>
           </Group>
@@ -157,7 +157,7 @@
               <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
               <Component id="financePrlDDetailsPrlDDetailsPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-              <Component id="employeeLeaveLFormBrdrPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="financePrlDDetailsPrlDFormBrdrPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="financePrlDDetailsBackBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
@@ -189,12 +189,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeMainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlDDetailsMainDashboardBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                  <Component id="financePrlDDetailsMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -203,16 +203,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlDDetailsMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="422" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="financePrlDDetailsMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace pref="39" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="employeePrlDisputeMainDashboardBtn">
+        <Component class="javax.swing.JButton" name="financePrlDDetailsMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -228,20 +228,20 @@
             <Property name="label" type="java.lang.String" value="Main Dashboard"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsMainDashboardBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputeMainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDDetailsMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="employeePrlDisputeMotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="financePrlDDetailsMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeMotorPHIconImgLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
       </SubComponents>
@@ -372,7 +372,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDDetailsBackBtnActionPerformed"/>
       </Events>
     </Component>
-    <Container class="javax.swing.JPanel" name="employeeLeaveLFormBrdrPnl">
+    <Container class="javax.swing.JPanel" name="financePrlDDetailsPrlDFormBrdrPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -385,18 +385,21 @@
           </Border>
         </Property>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlDFormBrdrPnl"/>
+      </AccessibilityProperties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="employeeLeaveLFormPnl" min="-2" pref="281" max="-2" attributes="0"/>
+                  <Component id="financePrlDDetailsPrlDFormPnl" min="-2" pref="281" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="206" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                  <Component id="employeeLeaveFALeaveBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlDDetailsFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -405,16 +408,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                  <Component id="employeeLeaveLFormPnl" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="financePrlDDetailsPrlDFormPnl" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="employeeLeaveFALeaveBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlDDetailsFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="employeeLeaveLFormPnl">
+        <Container class="javax.swing.JPanel" name="financePrlDDetailsPrlDFormPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -433,13 +436,16 @@
               <Dimension value="[126, 40]"/>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlDFormPnl"/>
+          </AccessibilityProperties>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="15" max="32767" attributes="0"/>
-                      <Component id="employeeLeaveLFormLbl" min="-2" pref="258" max="-2" attributes="0"/>
+                      <Component id="financePrlDDetailsPrlDFormLbl" min="-2" pref="258" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -448,14 +454,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="employeeLeaveLFormLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="financePrlDDetailsPrlDFormLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="employeeLeaveLFormLbl">
+            <Component class="javax.swing.JLabel" name="financePrlDDetailsPrlDFormLbl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -469,10 +475,13 @@
                 <Property name="text" type="java.lang.String" value="Payroll Dispute Form"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlDFormLbl"/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="employeeLeaveFALeaveBrdrPnl">
+        <Container class="javax.swing.JPanel" name="financePrlDDetailsFADisputeBrdrPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="e9" green="e9" red="e9" type="rgb"/>
@@ -488,6 +497,9 @@
               <Color blue="b2" green="b2" red="b2" type="rgb"/>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsFADisputeBrdrPnl"/>
+          </AccessibilityProperties>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -495,25 +507,25 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="employeeLeaveReasonFld" alignment="0" min="-2" pref="638" max="-2" attributes="0"/>
+                          <Component id="financePrlDDetailsReasonFld" alignment="0" min="-2" pref="638" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="employeeLeaveENameLbl" min="-2" pref="160" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="employeeLeaveFmDtChsr" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="financePrlDDetailsPrlDateLbl" min="-2" pref="123" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                      <Component id="financePrlDDetailsPrlDateDtChsr" min="-2" pref="150" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="employeeLeaveReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                                  <Component id="employeeLeaveFALeavePnl" alignment="0" min="-2" pref="231" max="-2" attributes="0"/>
+                                  <Component id="financePrlDDetailsReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Component id="financePrlDDetailsFADisputePnl" alignment="0" min="-2" pref="231" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="employeeLeaveFromLbl" min="-2" pref="122" max="-2" attributes="0"/>
+                                      <Component id="financePrlDDetailsPrlPeriodLbl" min="-2" pref="122" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="financePrlPrlPeriodCbx" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="financePrlDDetailsPrlPeriodCbx" min="-2" pref="150" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="employeeLeaveSubmitBtn" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="financePrlDDetailsSubmitBtn" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -526,31 +538,31 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="employeeLeaveFALeavePnl" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="employeeLeaveSubmitBtn" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="financePrlDDetailsFADisputePnl" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlDDetailsSubmitBtn" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                              <Component id="employeeLeaveENameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="employeeLeaveFmDtChsr" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="financePrlDDetailsPrlDateLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="financePrlDDetailsPrlDateDtChsr" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="financePrlPrlPeriodCbx" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="employeeLeaveFromLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="financePrlDDetailsPrlPeriodCbx" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="financePrlDDetailsPrlPeriodLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="employeeLeaveReasonLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="financePrlDDetailsReasonLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="employeeLeaveReasonFld" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="financePrlDDetailsReasonFld" min="-2" pref="56" max="-2" attributes="0"/>
                       <EmptySpace pref="21" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JPanel" name="employeeLeaveFALeavePnl">
+            <Container class="javax.swing.JPanel" name="financePrlDDetailsFADisputePnl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -569,25 +581,28 @@
                   <Dimension value="[126, 40]"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsFADisputePnl"/>
+              </AccessibilityProperties>
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="employeeLeaveFALeaveLbl" min="-2" pref="221" max="-2" attributes="0"/>
+                          <Component id="financePrlDDetailsFADisputeLbl" min="-2" pref="221" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="employeeLeaveFALeaveLbl" alignment="0" pref="38" max="32767" attributes="0"/>
+                      <Component id="financePrlDDetailsFADisputeLbl" alignment="0" pref="38" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="employeeLeaveFALeaveLbl">
+                <Component class="javax.swing.JLabel" name="financePrlDDetailsFADisputeLbl">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -601,10 +616,13 @@
                     <Property name="text" type="java.lang.String" value=" File A Payroll Dispute"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsFADisputeLbl"/>
+                  </AccessibilityProperties>
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="employeeLeaveReasonLbl">
+            <Component class="javax.swing.JLabel" name="financePrlDDetailsReasonLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -614,8 +632,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reason"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsReasonLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JButton" name="employeeLeaveSubmitBtn">
+            <Component class="javax.swing.JButton" name="financePrlDDetailsSubmitBtn">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f6" green="82" red="3b" type="rgb"/>
@@ -635,11 +656,14 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsSubmitBtn"/>
+              </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeLeaveSubmitBtnActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDDetailsSubmitBtnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="employeeLeaveFromLbl">
+            <Component class="javax.swing.JLabel" name="financePrlDDetailsPrlPeriodLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -649,8 +673,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Payroll Period"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlPeriodLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JTextField" name="employeeLeaveReasonFld">
+            <Component class="javax.swing.JTextField" name="financePrlDDetailsReasonFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -665,10 +692,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeLeaveReasonFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDDetailsReasonFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="employeeLeaveENameLbl">
+            <Component class="javax.swing.JLabel" name="financePrlDDetailsPrlDateLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -678,8 +705,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Payroll Date"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlDateLbl"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="employeeLeaveFmDtChsr">
+            <Component class="com.toedter.calendar.JDateChooser" name="financePrlDDetailsPrlDateDtChsr">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -692,8 +722,11 @@
                   <Color blue="37" green="29" red="1f" type="rgb"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlDateDtChsr"/>
+              </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="financePrlPrlPeriodCbx">
+            <Component class="javax.swing.JComboBox" name="financePrlDDetailsPrlPeriodCbx">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -713,6 +746,9 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlPeriodCbx"/>
+              </AccessibilityProperties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
