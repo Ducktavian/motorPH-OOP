@@ -253,8 +253,8 @@
                 <Column editable="false" title="Leave ID" type="java.lang.String"/>
                 <Column editable="false" title="Employee #" type="java.lang.Integer"/>
                 <Column editable="false" title="Employee Name" type="java.lang.String"/>
-                <Column editable="false" title="Status" type="java.lang.Object"/>
                 <Column editable="false" title="Leave Details" type="java.lang.String"/>
+                <Column editable="false" title="Remarks" type="java.lang.String"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

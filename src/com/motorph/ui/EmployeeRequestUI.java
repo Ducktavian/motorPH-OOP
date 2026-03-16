@@ -405,7 +405,7 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Request Type", "Date", "Hour", "Status"
+                "Request Type", "Date", "Hour", "Remarks"
             }
         ) {
             Class[] types = new Class [] {
