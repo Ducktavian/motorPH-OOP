@@ -138,6 +138,10 @@ public class CsvAttendanceDAO implements AttendanceDAO {
     @Override
     public void timeIn(String employeeNumber) {
         
+        if (this.empService == null) {
+            this.empService = AppContext.getEmployeeService();
+        }
+        
         // Checks if employee already timed in
         if (getOpenSession(employeeNumber) != null) {
             throw new IllegalStateException("Employee already timed in.");
@@ -157,6 +161,10 @@ public class CsvAttendanceDAO implements AttendanceDAO {
     
     @Override
     public void timeOut(String employeeNumber) {
+        
+        if (this.empService == null) {
+            this.empService = AppContext.getEmployeeService();
+        }
         
         // Checks if theres an open session (has time-in but no time-out today in record)
         AttendanceRecord open = getOpenSession(employeeNumber);

@@ -43,6 +43,9 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
     }
     
         private void populateFields() {
+            if (empService == null) {
+                this.empService = AppContext.getEmployeeService();
+            }
             Employee emp = empService.findEmployee(Session.getCurrentUser().getEmployeeNumber());
                     
             employeeDashboardENumberFld.setText(emp.getEmployeeNumber());

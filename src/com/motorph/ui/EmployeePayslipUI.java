@@ -32,10 +32,8 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
     private void populateEmployeeDetails(Payslip payslip) {
         employeePylENameFld.setText(payslip.getEmployeeName());
         employeePylENumberFld.setText(payslip.getEmployeeNumber());
-        employeePylPositionFld.setText(payslip.getPosition());
         employeePylPrlDateFld.setText(payslip.getPeriodStart() + " - " + payslip.getPeriodEnd());
         employeePylPrlPeriodFld.setText("Nothin yet");
-        employeePylStatusFld.setText("IDK");
         
     }
     

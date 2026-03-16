@@ -40,7 +40,6 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     private void populateEmployeeFields(Employee emp) {
         financePrlENameFld.setText(emp.getFullName());
         financePrlENumberFld.setText(emp.getEmployeeNumber());
-        financePrlPositionFld.setText(emp.getPosition());
         
     }
     
