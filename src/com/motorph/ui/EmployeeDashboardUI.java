@@ -37,9 +37,9 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         this.empService = AppContext.getEmployeeService();
         this.attendanceService = AppContext.getAttendanceService();
               
-        refreshAttendanceButtons();
+        
         populateFields();
-        refreshAttendanceLogs();
+        updateDashboardUI();
     }
     
         private void populateFields() {
@@ -88,6 +88,9 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
                 
                 model.addRow(row);
             }
+            
+            
+            refreshAttendanceButtons();
             
         }
 
@@ -833,28 +836,28 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
 
     private void employeeDashboardTimeOutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardTimeOutBtnActionPerformed
         try {
-            // 1. Double check the session
+           
             String empNum = Session.getCurrentUser().getEmployeeNumber();
-
-            // 2. Ask for confirmation
+            
             int confirm = JOptionPane.showConfirmDialog(this, "Record Time Out for today?", "Confirm", JOptionPane.YES_NO_OPTION);
             if (confirm != JOptionPane.YES_OPTION) return;
 
-            // 3. Execute
             Employee emp = empService.findEmployee(empNum);
             attendanceService.timeOut(emp.getEmployeeNumber());
 
-            // 4. Success feedback
             JOptionPane.showMessageDialog(this, "Timed Out successfully at " + DateUtils.timeToString(LocalTime.now()));
 
-            // 5. Update UI buttons
-            refreshAttendanceButtons();
+            
+            updateDashboardUI();
+            
+           
 
-        } catch (IllegalStateException e) { // Your DAO throws this if already timed in
+        } catch (IllegalStateException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Notice", JOptionPane.WARNING_MESSAGE);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "System Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
+        
     }//GEN-LAST:event_employeeDashboardTimeOutBtnActionPerformed
 
     private void employeeDashboardTimeInBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardTimeInBtnActionPerformed
@@ -870,29 +873,32 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(this, "Timed in successfully at " + DateUtils.timeToString(LocalTime.now()));
 
-            refreshAttendanceButtons();
-           
+            updateDashboardUI();
 
         } catch (IllegalStateException e) { // Your DAO throws this if already timed in
             JOptionPane.showMessageDialog(this, e.getMessage(), "Notice", JOptionPane.WARNING_MESSAGE);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "System Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
-        
-       
+      
     }//GEN-LAST:event_employeeDashboardTimeInBtnActionPerformed
 
     private void refreshAttendanceButtons() {
         boolean hasOpenSession = attendanceService.hasOpenSession(Session.getCurrentUser().getEmployeeNumber());
+        
+        System.out.println("has open session" + hasOpenSession);
 
         // If they have an open session, they can't Time In again
         employeeDashboardTimeInBtn.setEnabled(!hasOpenSession);
 
         // If they don't have an open session, they can't Time Out
         employeeDashboardTimeOutBtn.setEnabled(hasOpenSession);
-        
-        
-        refreshAttendanceLogs();
+    }
+    
+    private void updateDashboardUI() {
+        refreshAttendanceLogs(); 
+        employeeDashboardTimeInBtn.repaint();
+        employeeDashboardTimeOutBtn.repaint();
     }
     
     

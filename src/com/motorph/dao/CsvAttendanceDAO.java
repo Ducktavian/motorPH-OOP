@@ -23,20 +23,16 @@ import java.util.Map;
 public class CsvAttendanceDAO implements AttendanceDAO {
     
     private final String FILE_PATH = "data/attendance.csv";
-    private List<AttendanceRecord> attendanceRecords;
+    private List<AttendanceRecord> attendanceRecords = new ArrayList<>();;
     private EmployeeService empService;
     
     // Faster
-    private Map<String, AttendanceRecord> activeSessions;
+    private Map<String, AttendanceRecord> activeSessions = new HashMap<>();
     
     public CsvAttendanceDAO() {
-        this.attendanceRecords = new ArrayList<>();
-        this.activeSessions = new HashMap<>();
         initializeFile();
+        loadAttendances();
     }
-    
-    
-    
     
     private void initializeFile() {
         try {
@@ -74,24 +70,20 @@ public class CsvAttendanceDAO implements AttendanceDAO {
             
             while ((line = reader.readNext()) != null) {
                 if (line.length >= 6) {
-                    try {
-                        AttendanceRecord record =new AttendanceRecord(
-                            line[0],
-                            line[1],
-                            line[2],
-                            DateUtils.stringToLocalDate(line[3]),
-                            DateUtils.stringToTime(line[4]),
-                            DateUtils.stringToTime(line[5])
-                        );
-                        
-                        attendanceRecords.add(record);
-                        
-                        // If record is for today AND hasn't timed out, put it in the Map
-                        if (record.getDate().equals(today) && record.getLogOut() == null) {
-                            activeSessions.put(record.getEmployeeNumber(), record);
-                        }
-                    } catch (Exception parseError) {
-                        System.err.println("Skipping malformed attendance row: " + String.join(",", line));
+                    AttendanceRecord record =new AttendanceRecord(
+                        line[0],
+                        line[1],
+                        line[2],
+                        DateUtils.stringToLocalDate(line[3]),
+                        DateUtils.stringToTime(line[4]),
+                        DateUtils.stringToTime(line[5])
+                    );
+
+                    attendanceRecords.add(record);
+
+                    // If record is for today AND hasn't timed out, put it in the Map
+                    if (record.getDate().equals(today) && record.getLogOut() == null) {
+                        activeSessions.put(record.getEmployeeNumber(), record);
                     }
                 }
             }
@@ -145,7 +137,6 @@ public class CsvAttendanceDAO implements AttendanceDAO {
     
     @Override
     public void timeIn(String employeeNumber) {
-        loadAttendances();
         
         // Checks if employee already timed in
         if (getOpenSession(employeeNumber) != null) {
@@ -153,11 +144,12 @@ public class CsvAttendanceDAO implements AttendanceDAO {
         }
         
         Employee emp = empService.findEmployee(employeeNumber);
-        
-        attendanceRecords.add(new AttendanceRecord(
+        AttendanceRecord newRecord = new AttendanceRecord(
                 employeeNumber, emp.getLastName(), emp.getFirstName(), LocalDate.now(), LocalTime.now(), null
-        ));
+        );
         
+        attendanceRecords.add(newRecord);
+        activeSessions.put(employeeNumber, newRecord);
         
         saveAllAttendances();
     }
@@ -165,7 +157,6 @@ public class CsvAttendanceDAO implements AttendanceDAO {
     
     @Override
     public void timeOut(String employeeNumber) {
-        loadAttendances();
         
         // Checks if theres an open session (has time-in but no time-out today in record)
         AttendanceRecord open = getOpenSession(employeeNumber);
@@ -173,18 +164,17 @@ public class CsvAttendanceDAO implements AttendanceDAO {
         if (open == null) {
             throw new IllegalStateException("No active session found.");
         }
+        
         open.setLogOut(LocalTime.now()); // Set time out now
+        activeSessions.remove(employeeNumber);
         saveAllAttendances();
     }
     
     
     @Override
     public List<AttendanceRecord> getAllAttendance() {
-        if (attendanceRecords.isEmpty()) {
-            loadAttendances();
-        }
-            return attendanceRecords;
-        }
+       return attendanceRecords;
+    }
     
     @Override
     public AttendanceRecord getOpenSession(String employeeNumber) {
