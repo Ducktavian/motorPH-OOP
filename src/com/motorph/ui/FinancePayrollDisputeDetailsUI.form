@@ -509,16 +509,21 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="financePrlDDetailsReasonFld" alignment="0" min="-2" pref="638" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="financePrlDDetailsPrlDateLbl" min="-2" pref="123" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                                       <Component id="financePrlDDetailsPrlDateDtChsr" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="financePrlDDetailsReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                                  <Component id="financePrlDDetailsFADisputePnl" alignment="0" min="-2" pref="231" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="financePrlDDetailsReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                          <Component id="financePrlDDetailsFADisputePnl" alignment="0" min="-2" pref="231" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="financePrlDDetailsPrlPeriodLbl" min="-2" pref="122" max="-2" attributes="0"/>
