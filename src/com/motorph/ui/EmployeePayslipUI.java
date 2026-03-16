@@ -47,16 +47,16 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         employeePylRiceSubsidyFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()));
         employeePylPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()));
         employeePylCltAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()));
-        employeePylBonusTypeFld.setText("");
+       
         employeePylTGrossFld.setText("");
 
         employeePylSSSFld.setText(String.valueOf(payslip.getDeductionBreakdown().getSss()));
         employeePylTWithtaxFld.setText("");
         employeePylPhilHealthFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPhilHealth()));
         employeePylPagIbigFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPagIbig()));
-        employeePylLateFld.setText("");
+      
         employeePylUndertimeFld.setText("");
-        employeePylAbsentFld.setText("");
+      
         employeePylTDeductionFld.setText(String.valueOf(payslip.getDeductionBreakdown().getTotal()));
 
         employeePylNetPayFld.setText(String.valueOf(payslip.getNetPay()));
@@ -416,9 +416,9 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                 .addGap(11, 11, 11)
                 .addComponent(employeePylBenefitLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(employeePylTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(employeePylRiceSubsidyLbl)
-                    .addComponent(employeePylRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(employeePylTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(employeePylRiceSubsidyFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeePylRiceSubsidyLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(employeePylTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(employeePylPhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -637,9 +637,8 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                 .addGroup(employeePylCalculatorBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(employeePylCalculatorBrdrPnlLayout.createSequentialGroup()
                         .addComponent(employeePylTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(19, Short.MAX_VALUE))
+                        .addContainerGap(16, Short.MAX_VALUE))
                     .addGroup(employeePylCalculatorBrdrPnlLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(employeePylNetPayLbl)
                         .addGap(34, 34, 34)
                         .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -663,7 +662,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                             .addComponent(employeePylNetPayLbl)
                             .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(employeePylTGrossBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         employeePylCalculatorLbl.getAccessibleContext().setAccessibleName("employeePylCalculatorLbl");

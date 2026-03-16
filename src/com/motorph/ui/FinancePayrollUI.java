@@ -49,29 +49,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     
     private void populateSalaryCalculations(Payslip payslip) {
         
-        Employee emp = empService.findEmployee(payslip.getEmployeeNumber());
-        
-        String unSupported = "Unsupported";
-        
-        financePrlBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
-        financePrlOvertimeFld.setText(unSupported);
-        financePrlHolidayFld.setText(unSupported);
-        financePrlRiceSubsidyFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()));
-        financePrlPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()));
-        financePrlCltAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()));
-        financePrlBonusTypeFld.setText(unSupported);
-        financePrlTGrossFld.setText("");
-
-        financePrlSSSFld.setText(String.valueOf(payslip.getDeductionBreakdown().getSss()));
-        financePrlTINFld.setText(String.valueOf(payslip.getDeductionBreakdown().getWithholdingTax()));
-        financePrlPhilHealthFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPhilHealth()));
-        financePrlPagIbigFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPagIbig()));
-        financePrlLateFld.setText(unSupported);
-        financePrlUndertimeFld.setText(unSupported);
-        financePrlAbsentFld.setText(unSupported);
-        financePrlTDeductionFld.setText(String.valueOf(payslip.getDeductionBreakdown().getTotal()));
-
-        financePrlNetPayFld.setText(String.valueOf(payslip.getNetPay()));
+      
 
     }
 
@@ -459,9 +437,9 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                 .addGap(11, 11, 11)
                 .addComponent(employeePylBenefitLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(employeePylTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(employeePylRiceSubsidyLbl)
-                    .addComponent(employeePylRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(employeePylTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(employeePylRiceSubsidyFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeePylRiceSubsidyLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(employeePylTGrossBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(employeePylPhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -645,14 +623,12 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                 .addComponent(employeePylTGrossBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(employeePylCalculatorBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(employeePylCalculatorBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(employeePylTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(19, Short.MAX_VALUE))
+                    .addComponent(employeePylTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(employeePylCalculatorBrdrPnlLayout.createSequentialGroup()
                         .addComponent(employeePylNetPayLbl)
                         .addGap(34, 34, 34)
-                        .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(39, 39, 39))))
+                        .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(16, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(employeePylCalculatorLbl)
@@ -672,7 +648,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                             .addComponent(employeePylNetPayLbl)
                             .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(employeePylTGrossBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

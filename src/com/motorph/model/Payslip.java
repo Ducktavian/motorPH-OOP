@@ -98,6 +98,14 @@ public class Payslip {
         return grossPay;
     }
     
+    public double getGrossPay(AllowanceBreakdown breakdown) {
+        if (breakdown == null) {
+            return grossPay;
+        } else {
+            return grossPay + breakdown.getRiceSubsidy() + breakdown.getPhoneAllowance() + breakdown.getClothingAllowance();
+        }
+    }
+    
     public AllowanceBreakdown getAllowanceBreakdown() {
         return allowanceBreakdown;
     }
@@ -116,6 +124,14 @@ public class Payslip {
 
     public double getNetPay() {
         return netPay;
+    }
+    
+    public double getNetPay(AllowanceBreakdown breakdown) {
+        if (breakdown == null) {
+            return netPay;
+        } else {
+            return netPay + breakdown.getRiceSubsidy() + breakdown.getPhoneAllowance() + breakdown.getClothingAllowance();
+        }
     }
     
     
