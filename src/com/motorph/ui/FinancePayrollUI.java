@@ -4,6 +4,11 @@
  */
 package com.motorph.ui;
 
+import com.motorph.model.Employee;
+import com.motorph.model.Payslip;
+import com.motorph.service.EmployeeService;
+import com.motorph.util.AppContext;
+
 /**
  *
  * @author Lenovo
@@ -11,12 +16,64 @@ package com.motorph.ui;
 public class FinancePayrollUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinancePayrollUI.class.getName());
-
-    /**
-     * Creates new form FinancePayrollFrame
-     */
+    private EmployeeService empService;
+    
+   
     public FinancePayrollUI() {
+        this.empService = AppContext.getEmployeeService();
         initComponents();
+    }
+    
+    
+    private void performSearch() {
+        System.out.println("Action Triggered!");
+        String id = financePrlEntENumberFld.getText().trim();
+        System.out.println(id);
+        Employee found = empService.findEmployee(id);
+        if (found != null) {
+            populateEmployeeFields(found);
+        } else {
+            clearFields();
+        }
+    }
+    
+    private void populateEmployeeFields(Employee emp) {
+        financePrlENameFld.setText(emp.getFullName());
+        financePrlENumberFld.setText(emp.getEmployeeNumber());
+        financePrlPositionFld.setText(emp.getPosition());
+        
+    }
+    
+    private void clearFields() {
+        
+    }
+    
+    private void populateSalaryCalculations(Payslip payslip) {
+        
+        Employee emp = empService.findEmployee(payslip.getEmployeeNumber());
+        
+        String unSupported = "Unsupported";
+        
+        financePrlBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
+        financePrlOvertimeFld.setText(unSupported);
+        financePrlHolidayFld.setText(unSupported);
+        financePrlRiceSubsidyFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()));
+        financePrlPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()));
+        financePrlCltAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()));
+        financePrlBonusTypeFld.setText(unSupported);
+        financePrlTGrossFld.setText("");
+
+        financePrlSSSFld.setText(String.valueOf(payslip.getDeductionBreakdown().getSss()));
+        financePrlTINFld.setText(String.valueOf(payslip.getDeductionBreakdown().getWithholdingTax()));
+        financePrlPhilHealthFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPhilHealth()));
+        financePrlPagIbigFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPagIbig()));
+        financePrlLateFld.setText(unSupported);
+        financePrlUndertimeFld.setText(unSupported);
+        financePrlAbsentFld.setText(unSupported);
+        financePrlTDeductionFld.setText(String.valueOf(payslip.getDeductionBreakdown().getTotal()));
+
+        financePrlNetPayFld.setText(String.valueOf(payslip.getNetPay()));
+
     }
 
     /**
@@ -66,7 +123,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financePrlTDeductionBrdrPnl = new javax.swing.JPanel();
         financePrlDeductionLbl = new javax.swing.JLabel();
         financePrlSSSLbl = new javax.swing.JLabel();
-        financePrlTINLbl = new javax.swing.JLabel();
+        taxField = new javax.swing.JLabel();
         financePrlPhilHealthLbl = new javax.swing.JLabel();
         financePrlPagIbigLbl = new javax.swing.JLabel();
         financePrlLateLbl = new javax.swing.JLabel();
@@ -443,9 +500,9 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financePrlSSSLbl.setForeground(new java.awt.Color(31, 41, 55));
         financePrlSSSLbl.setText("SSS");
 
-        financePrlTINLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        financePrlTINLbl.setForeground(new java.awt.Color(31, 41, 55));
-        financePrlTINLbl.setText("TIN");
+        taxField.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        taxField.setForeground(new java.awt.Color(31, 41, 55));
+        taxField.setText("Tax");
 
         financePrlPhilHealthLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         financePrlPhilHealthLbl.setForeground(new java.awt.Color(31, 41, 55));
@@ -545,7 +602,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(financePrlAbsentFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(financePrlTINLbl)
+                                .addComponent(taxField)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(financePrlTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(financePrlTDeductionBrdrPnlLayout.createSequentialGroup()
@@ -593,7 +650,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                             .addComponent(financePrlSSSFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(financePrlTINLbl)
+                            .addComponent(taxField)
                             .addComponent(financePrlTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(financePrlTDeductionBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -621,7 +678,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financePrlDeductionLbl.getAccessibleContext().setAccessibleName("financePrlDeductionLbl");
         financePrlSSSLbl.getAccessibleContext().setAccessibleName("financePrlSSSLbl");
-        financePrlTINLbl.getAccessibleContext().setAccessibleName("financePrlTINLbl");
+        taxField.getAccessibleContext().setAccessibleName("financePrlTINLbl");
         financePrlPhilHealthLbl.getAccessibleContext().setAccessibleName("financePrlPhilHealthLbl");
         financePrlPagIbigLbl.getAccessibleContext().setAccessibleName("financePrlPagIbigLbl");
         financePrlLateLbl.getAccessibleContext().setAccessibleName("financePrlLateLbl");
@@ -666,7 +723,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                     .addGroup(financePrlCalculatorBrdrPnlLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(financePrlTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financePrlCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(financePrlCalculatorLbl)
@@ -959,6 +1016,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
     private void financePrlEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlEntENumberFldActionPerformed
         // TODO add your handling code here:
+        performSearch();
     }//GEN-LAST:event_financePrlEntENumberFldActionPerformed
 
     private void financePrlSendPylBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlSendPylBtnActionPerformed
@@ -1053,8 +1111,8 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     private javax.swing.JTextField financePrlTGrossFld;
     private javax.swing.JLabel financePrlTGrossLbl;
     private javax.swing.JTextField financePrlTINFld;
-    private javax.swing.JLabel financePrlTINLbl;
     private javax.swing.JTextField financePrlUndertimeFld;
     private javax.swing.JLabel financePrlUndertimeLbl;
+    private javax.swing.JLabel taxField;
     // End of variables declaration//GEN-END:variables
 }

@@ -467,7 +467,7 @@
                           <Component id="financePrlTDeductionBrdrPnl" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="18" max="32767" attributes="0"/>
+                  <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
@@ -1086,7 +1086,7 @@
                                       <Component id="financePrlAbsentFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financePrlTINLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="taxField" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Component id="financePrlTINFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
@@ -1149,7 +1149,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="financePrlTINLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="taxField" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="financePrlTINFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
@@ -1214,7 +1214,7 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlSSSLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financePrlTINLbl">
+            <Component class="javax.swing.JLabel" name="taxField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -1222,7 +1222,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="TIN"/>
+                <Property name="text" type="java.lang.String" value="Tax"/>
               </Properties>
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlTINLbl"/>

@@ -63,8 +63,6 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylNetPayFld.setText(String.valueOf(payslip.getNetPay()));
 
-
-        
     }
 
     /**
@@ -494,7 +492,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
         employeePylTINLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         employeePylTINLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylTINLbl.setText("TIN");
+        employeePylTINLbl.setText("Tax");
 
         employeePylPhilHealthLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         employeePylPhilHealthLbl.setForeground(new java.awt.Color(31, 41, 55));
@@ -714,7 +712,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(employeePylTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(employeePylCalculatorLbl)

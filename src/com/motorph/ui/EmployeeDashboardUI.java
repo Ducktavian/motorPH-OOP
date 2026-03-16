@@ -12,7 +12,9 @@ import com.motorph.service.EmployeeService;
 import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
 import com.motorph.util.Session;
+import java.time.LocalTime;
 import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -31,12 +33,12 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
      */
     public EmployeeDashboardUI() {
         initComponents();
-        
         this.empService = AppContext.getEmployeeService();
         this.attendanceService = AppContext.getAttendanceService();
-                
+              
+        refreshAttendanceButtons();
         populateFields();
-        populateAttendanceLogs();
+        refreshAttendanceLogs();
     }
     
         private void populateFields() {
@@ -62,15 +64,16 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         }
         
         
-        private void populateAttendanceLogs() {
+        private void refreshAttendanceLogs() {
             
             String empNumber = Session.getCurrentUser().getEmployeeNumber();
             
-            List<AttendanceRecord> logs = attendanceService.getAttendanceByEmployee(empNumber);
-            Employee emp = empService.findEmployee(empNumber);
+            List<AttendanceRecord> logs = attendanceService.getAllAttendance(empNumber);
+            
+            // Most recent attendance should be shown first
+            java.util.Collections.reverse(logs);
             
             DefaultTableModel model = (DefaultTableModel) employeeDashboardAttLogsTbl.getModel();
-            
             model.setRowCount(0);
             
             for (AttendanceRecord log : logs) {
@@ -828,13 +831,70 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
     }//GEN-LAST:event_employeeDashboardPagIbigFldActionPerformed
 
     private void employeeDashboardTimeOutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardTimeOutBtnActionPerformed
-        // TODO add your handling code here:
+        try {
+            // 1. Double check the session
+            String empNum = Session.getCurrentUser().getEmployeeNumber();
+
+            // 2. Ask for confirmation
+            int confirm = JOptionPane.showConfirmDialog(this, "Record Time Out for today?", "Confirm", JOptionPane.YES_NO_OPTION);
+            if (confirm != JOptionPane.YES_OPTION) return;
+
+            // 3. Execute
+            Employee emp = empService.findEmployee(empNum);
+            attendanceService.timeOut(emp.getEmployeeNumber());
+
+            // 4. Success feedback
+            JOptionPane.showMessageDialog(this, "Timed Out successfully at " + DateUtils.timeToString(LocalTime.now()));
+
+            // 5. Update UI buttons
+            refreshAttendanceButtons();
+
+        } catch (IllegalStateException e) { // Your DAO throws this if already timed in
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Notice", JOptionPane.WARNING_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "System Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_employeeDashboardTimeOutBtnActionPerformed
 
     private void employeeDashboardTimeInBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardTimeInBtnActionPerformed
         // TODO add your handling code here:
+        
+       try {
+            String empNum = Session.getCurrentUser().getEmployeeNumber();
+
+            int confirm = JOptionPane.showConfirmDialog(this, "Record Time In for today?", "Confirm", JOptionPane.YES_NO_OPTION);
+            if (confirm != JOptionPane.YES_OPTION) return;
+
+            attendanceService.timeIn(empNum);
+
+            JOptionPane.showMessageDialog(this, "Timed in successfully at " + DateUtils.timeToString(LocalTime.now()));
+
+            refreshAttendanceButtons();
+           
+
+        } catch (IllegalStateException e) { // Your DAO throws this if already timed in
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Notice", JOptionPane.WARNING_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "System Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        
+       
     }//GEN-LAST:event_employeeDashboardTimeInBtnActionPerformed
 
+    private void refreshAttendanceButtons() {
+        boolean hasOpenSession = attendanceService.hasOpenSession(Session.getCurrentUser().getEmployeeNumber());
+
+        // If they have an open session, they can't Time In again
+        employeeDashboardTimeInBtn.setEnabled(!hasOpenSession);
+
+        // If they don't have an open session, they can't Time Out
+        employeeDashboardTimeOutBtn.setEnabled(hasOpenSession);
+        
+        
+        refreshAttendanceLogs();
+    }
+    
+    
     /**
      * @param args the command line arguments
      */

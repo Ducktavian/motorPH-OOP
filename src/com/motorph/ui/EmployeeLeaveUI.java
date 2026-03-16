@@ -598,10 +598,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
             populateLeaveRecords();
 
         } catch (IllegalArgumentException e) {
-            // Catch your custom validation errors and show the specific message
             JOptionPane.showMessageDialog(this, e.getMessage(), "Input Error", JOptionPane.WARNING_MESSAGE);
         } catch (Exception e) {
-            // Catch unexpected system errors
             JOptionPane.showMessageDialog(this, "An error occurred: " + e.getMessage(), "System Error", JOptionPane.ERROR_MESSAGE);
             e.printStackTrace(); 
         }

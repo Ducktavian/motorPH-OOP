@@ -2,6 +2,9 @@
 package com.motorph.dao;
 
 import com.motorph.model.AttendanceRecord;
+import com.motorph.model.Employee;
+import com.motorph.service.EmployeeService;
+import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
@@ -12,16 +15,27 @@ import java.io.FileWriter;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class CsvAttendanceDAO implements AttendanceDAO {
     
     private final String FILE_PATH = "data/attendance.csv";
+    private List<AttendanceRecord> attendanceRecords;
+    private EmployeeService empService;
+    
+    // Faster
+    private Map<String, AttendanceRecord> activeSessions;
     
     public CsvAttendanceDAO() {
+        this.attendanceRecords = new ArrayList<>();
+        this.activeSessions = new HashMap<>();
         initializeFile();
     }
+    
+    
     
     
     private void initializeFile() {
@@ -42,6 +56,50 @@ public class CsvAttendanceDAO implements AttendanceDAO {
     }
     
     
+    private void loadAttendances() {
+        // Lazy loading
+        if (this.empService == null) {
+            this.empService = AppContext.getEmployeeService();
+        }
+        attendanceRecords.clear();   
+        activeSessions.clear();
+        
+        File file = new File(FILE_PATH);        
+        if (!file.exists()) return;
+        
+        try (CSVReader reader = new CSVReader(new FileReader(FILE_PATH))) {
+            String[] line;
+            reader.readNext(); // skip header
+            LocalDate today = LocalDate.now();
+            
+            while ((line = reader.readNext()) != null) {
+                if (line.length >= 6) {
+                    try {
+                        AttendanceRecord record =new AttendanceRecord(
+                            line[0],
+                            line[1],
+                            line[2],
+                            DateUtils.stringToLocalDate(line[3]),
+                            DateUtils.stringToTime(line[4]),
+                            DateUtils.stringToTime(line[5])
+                        );
+                        
+                        attendanceRecords.add(record);
+                        
+                        // If record is for today AND hasn't timed out, put it in the Map
+                        if (record.getDate().equals(today) && record.getLogOut() == null) {
+                            activeSessions.put(record.getEmployeeNumber(), record);
+                        }
+                    } catch (Exception parseError) {
+                        System.err.println("Skipping malformed attendance row: " + String.join(",", line));
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
 
     @Override
     // return all attendances of this employee
@@ -53,100 +111,61 @@ public class CsvAttendanceDAO implements AttendanceDAO {
                 result.add(record);
             }
         }
-        
         return result;
     }
 
-    @Override
-    public List<AttendanceRecord> getAllAttendance() {
-        List<AttendanceRecord> records = new ArrayList<>();
+    
+    
+    public void saveAllAttendances() {
         
-        File file = new File(FILE_PATH);
+        if (this.empService == null) {
+            this.empService = AppContext.getEmployeeService();
+        }
         
-        if (!file.exists()) return records;
-        
-        try (CSVReader reader = new CSVReader(new FileReader(FILE_PATH))) {
-            String[] line;
-            reader.readNext(); // skip header
-            
-            while ((line = reader.readNext()) != null) {
-                
-                if (line.length >= 6) {
-                    try {
-                        String employeeNumber = line[0];
-                        LocalDate date = DateUtils.stringToLocalDate(line[3]);
-                        LocalTime logIn = DateUtils.stringToTime(line[4]);
-                        LocalTime logOut = DateUtils.stringToTime(line[5]);
+        try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH))) {
+            // Correct Attendance Header
+            String[] header = {"Employee #", "Last Name", "First Name", "Date", "Time-in", "Time-out"};
+            writer.writeNext(header);
 
-                        records.add(new AttendanceRecord(
-                                employeeNumber,
-                                date,
-                                logIn,
-                                logOut
-                        ));
-                    } catch (Exception parseError) {
-                        System.err.println("Skipping malformed attendance row: " + String.join(",", line));
-                    }
-                }
-                
+            for (AttendanceRecord record : attendanceRecords) {
+                String[] row = {
+                    record.getEmployeeNumber(),
+                    record.getLastName(),
+                    record.getFirstName(),
+                    DateUtils.dateToString(record.getDate()),
+                    DateUtils.timeToString(record.getLogIn()),
+                    DateUtils.timeToString(record.getLogOut())
+                };
+                writer.writeNext(row);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        
-        return records;
+        } catch (Exception e) { e.printStackTrace(); }
     }
     
-    @Override
-    public AttendanceRecord getOpenSession(String employeeNumber) {
-        LocalDate today = LocalDate.now();
-        
-        List<AttendanceRecord> records = getAllAttendance();
-        
-        for (int i = records.size() -1; i >= 0; i--) {
-            AttendanceRecord r = records.get(i);
-            
-            if (r.getEmployeeNumber().equals(employeeNumber)
-                    && r.getDate().equals(today)
-                    && r.getLogOut() == null) {
-                return r;            }
-        }
-        return null;
-    }
+    
     
     @Override
-    public void timeIn(String employeeNumber, String lastName, String firstName) {
+    public void timeIn(String employeeNumber) {
+        loadAttendances();
         
         // Checks if employee already timed in
         if (getOpenSession(employeeNumber) != null) {
             throw new IllegalStateException("Employee already timed in.");
         }
         
-        LocalDate today = LocalDate.now();
-        LocalTime now = LocalTime.now();
+        Employee emp = empService.findEmployee(employeeNumber);
         
-        try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH))) {
-            
-            String[] row = {
-                employeeNumber,
-                lastName,
-                firstName,
-                DateUtils.dateToString(today),
-                DateUtils.timeToString(now),
-                "" // Empty time out
-            };
-            
-            writer.writeNext(row);
-            
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        attendanceRecords.add(new AttendanceRecord(
+                employeeNumber, emp.getLastName(), emp.getFirstName(), LocalDate.now(), LocalTime.now(), null
+        ));
         
+        
+        saveAllAttendances();
     }
     
     
     @Override
     public void timeOut(String employeeNumber) {
+        loadAttendances();
         
         // Checks if theres an open session (has time-in but no time-out today in record)
         AttendanceRecord open = getOpenSession(employeeNumber);
@@ -154,47 +173,21 @@ public class CsvAttendanceDAO implements AttendanceDAO {
         if (open == null) {
             throw new IllegalStateException("No active session found.");
         }
-
-        List<String[]> allRows = new ArrayList<>();
-        LocalDate today = LocalDate.now();
-        LocalTime now = LocalTime.now();
-
-        try (CSVReader reader = new CSVReader(new FileReader(FILE_PATH))) {
-
-            String[] header = reader.readNext();
-            allRows.add(header);
-
-            String[] line;
-
-            while ((line = reader.readNext()) != null) {
-
-                if (line.length >= 6) {
-
-                    String empNo = line[0];
-                    LocalDate date = DateUtils.stringToLocalDate(line[3]);
-                    String timeOut = line[5];
-
-                    // Match the open session
-                    if (empNo.equals(employeeNumber)
-                            && date.equals(today)
-                            && (timeOut == null || timeOut.isEmpty())) {
-
-                        line[5] = DateUtils.timeToString(now); // set timeout
-                    }
-                }
-
-                allRows.add(line); // Add each line to the list
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
+        open.setLogOut(LocalTime.now()); // Set time out now
+        saveAllAttendances();
+    }
+    
+    
+    @Override
+    public List<AttendanceRecord> getAllAttendance() {
+        if (attendanceRecords.isEmpty()) {
+            loadAttendances();
         }
-
-        // Rewrite file
-        try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH))) {
-            writer.writeAll(allRows);
-        } catch (Exception e) {
-            e.printStackTrace();
+            return attendanceRecords;
         }
-    }  
+    
+    @Override
+    public AttendanceRecord getOpenSession(String employeeNumber) {
+        return activeSessions.get(employeeNumber);
+    }
 }

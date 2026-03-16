@@ -24,7 +24,6 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
     }
     
     private void performSearch() {
-        System.out.println("Action Triggered!");
         String id = hrEDetailsEntENumberFld.getText().trim();
         System.out.println(id);
         Employee found = empService.findEmployee(id);
@@ -740,7 +739,6 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
     private void hrEDetailsEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEDetailsEntENumberFldActionPerformed
         // TODO add your handling code here:
-        System.out.println("EVENT FIRED!");
         performSearch();
     }//GEN-LAST:event_hrEDetailsEntENumberFldActionPerformed
 

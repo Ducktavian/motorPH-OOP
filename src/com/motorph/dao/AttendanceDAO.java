@@ -13,7 +13,7 @@ public interface AttendanceDAO {
     
     AttendanceRecord getOpenSession(String employeeNumber);
     
-    void timeIn(String employeeNumber, String lastName, String firstName);
+    void timeIn(String employeeNumber);
     
     void timeOut(String employeeNumber);
 }

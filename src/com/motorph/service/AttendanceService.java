@@ -49,11 +49,8 @@ public class AttendanceService {
         List<AttendanceRecord> records = attendanceDAO.getAttendanceByEmployee(employeeNumber);
         
         double total = 0;
-        
         for (AttendanceRecord record: records) {
-            
             LocalDate date = record.getDate();
-            
             boolean withinPeriod = (date.isEqual(periodStart) || date.isAfter(periodStart)) &&
                                     (date.isEqual(periodEnd) || date.isBefore(periodEnd));
             
@@ -61,12 +58,30 @@ public class AttendanceService {
                 total += computeDailyHours(record);
             }
         }
-        
         return Math.round(total * 100.0) / 100.0;
     }
     
-    // Get all atendances of an employee
-    public List<AttendanceRecord> getAttendanceByEmployee(String employeeNumber) {
+    // Get all attendances of all employess
+    public List<AttendanceRecord> getAllAttendance() {
+        return attendanceDAO.getAllAttendance();
+    }
+    
+    // Get all attendances of an employee
+    public List<AttendanceRecord> getAllAttendance(String employeeNumber) {
         return attendanceDAO.getAttendanceByEmployee(employeeNumber);
+    }
+    
+    public void timeIn(String employeeNumber) {
+        attendanceDAO.timeIn(employeeNumber);
+    }
+    
+    public void timeOut(String employeeNumber) {
+        attendanceDAO.timeOut(employeeNumber);
+    }
+    
+    public boolean hasOpenSession(String employeeNumber) {
+        AttendanceRecord attendanceRecord = attendanceDAO.getOpenSession(employeeNumber);
+        boolean hasOpenSession = (attendanceRecord == null) ? false : true;
+        return hasOpenSession;
     }
 }

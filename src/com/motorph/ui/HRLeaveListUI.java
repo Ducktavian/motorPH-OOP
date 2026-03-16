@@ -351,17 +351,17 @@ public class HRLeaveListUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_hrLListLListBtnActionPerformed
 
-    private void hrLListLListTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hrLListLListTblMouseClicked
+    private void hrLListLListTblMouseClicked(java.awt.event.MouseEvent evt) {                                             
         // TODO add your handling code here:
         
         System.out.println("EVENT TRIGGERED");
         if (evt.getClickCount() == 2) { // Check for double click
-            int row = hrLDetailsLListTbl.getSelectedRow();
-            String leaveId = hrLDetailsLListTbl.getValueAt(row, 0).toString().trim();
+            int row = hrLListLListTbl.getSelectedRow();
+            String leaveId = hrLListLListTbl.getValueAt(row, 0).toString().trim();
             LeaveRequest request = leaveService.findById(leaveId.trim());
             GuiUtil.openFrame(this, new HRLeaveDetailsUI(request));
         }
-    }//GEN-LAST:event_hrLDetailsLListTblMouseClicked
+    }                                               
 
     /**
      * @param args the command line arguments

@@ -36,59 +36,16 @@ public class SettingsUI extends javax.swing.JFrame {
         this.attendanceService = AppContext.getAttendanceService();
                 
         populateFields();
-        populateAttendanceLogs();
+       
     }
     
         private void populateFields() {
             Employee emp = empService.findEmployee(Session.getCurrentUser().getEmployeeNumber());
-                    
-            employeeDashboardENumberFld.setText(emp.getEmployeeNumber());
-            employeeDashboardFNameFld.setText(emp.getFirstName());
-            employeeDashboardLNameFld.setText(emp.getLastName());
-            employeeDashboardBirthdayDtChsr.setDate(DateUtils.localDateToUtilDate(emp.getBirthday()));
-            employeeDashboardAddressFld.setText(emp.getAddress());
-            employeeDashboardPhnNumberFld.setText(emp.getPhoneNumber());
-            employeeDashboardSSSFld.setText(emp.getSSSNumber());
-            employeeDashboardPhilHealthFld.setText(emp.getPhilhealthNumber());
-            employeeDashboardTINFld.setText(emp.getTIN());
-            employeeDashboardPagIbigFld.setText(emp.getPagIbigNumber());
-            employeeDashboardStatusCbx.setSelectedItem(emp.getStatus());
-            employeeDashboardPositionFld.setText(emp.getPosition());
-            employeeDashboardISupervisorFld.setText(emp.getImmediateSupervisor());
-            employeeDashboardBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
-            employeeDashboardRiceSubsidyFld.setText(String.valueOf(emp.getRiceSubsidy()));
-            employeeDashboardPhnAllowanceFld.setText(String.valueOf(emp.getPhoneAllowance()));
-            employeeDashboardCltAllowanceFld.setText(String.valueOf(emp.getClothingAllowance()));
+            
         }
         
         
-        private void populateAttendanceLogs() {
-            
-            String empNumber = Session.getCurrentUser().getEmployeeNumber();
-            
-            List<AttendanceRecord> logs = attendanceService.getAttendanceByEmployee(empNumber);
-            Employee emp = empService.findEmployee(empNumber);
-            
-            DefaultTableModel model = (DefaultTableModel) employeeDashboardAttLogsTbl.getModel();
-            
-            model.setRowCount(0);
-            
-            for (AttendanceRecord log : logs) {
-                
-                Object[] row = {
-                    log.getEmployeeNumber(),
-                    emp.getLastName(),
-                    emp.getFirstName(),
-                    String.valueOf(log.getDate()),
-                    String.valueOf(log.getLogIn()),
-                    String.valueOf(log.getLogOut()),
-                    "GOODS :)"
-                };
-                
-                model.addRow(row);
-            }
-            
-        }
+
 
     /**
      * This method is called from within the constructor to initialize the form.

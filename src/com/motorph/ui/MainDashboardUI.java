@@ -205,14 +205,14 @@ public class MainDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeeRequestUI().setVisible(true);
+        GuiUtil.openFrame(this,new EmployeeRequestUI());
     }//GEN-LAST:event_mainDashboardRDetailsImgBtnActionPerformed
 
     private void mainDashboardLogoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardLogoutBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         Session.clear();
-        new LoginUI().setVisible(true);
+        GuiUtil.openFrame(this, new LoginUI());
     }//GEN-LAST:event_mainDashboardLogoutBtnActionPerformed
 
     private void mainDashboardPylImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardPylImgBtnActionPerformed
@@ -224,7 +224,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new HREmployeeDetailsUI().setVisible(true);
+        GuiUtil.openFrame(this, new HREmployeeDetailsUI());
         
         
     }//GEN-LAST:event_mainDashboardEDetailsImgBtnActionPerformed
@@ -233,14 +233,14 @@ public class MainDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeeDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this, new EmployeeDashboardUI());
     }//GEN-LAST:event_mainDashboardDashboardImgBtnActionPerformed
 
     private void mainDashboardSysToolsImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardSysToolsImgBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         
-        new ITSystemToolsUI().setVisible(true);
+        GuiUtil.openFrame(this, new ITSystemToolsUI());
     }//GEN-LAST:event_mainDashboardSysToolsImgBtnActionPerformed
 
     private void mainDashboardDDetailsImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardDDetailsImgBtnActionPerformed
@@ -285,6 +285,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
 
     private void mainDashboardSettingsImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardSettingsImgBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new SettingsUI());
     }//GEN-LAST:event_mainDashboardSettingsImgBtnActionPerformed
 
 
