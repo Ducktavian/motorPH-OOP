@@ -989,6 +989,9 @@
               <Color blue="37" green="29" red="1f" type="rgb"/>
             </Property>
             <Property name="enabled" type="boolean" value="false"/>
+            <Property name="icon" type="javax.swing.ImageIcon" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="default"/>
+            </Property>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeDashboardBirthdayDtChsr"/>
@@ -1161,7 +1164,7 @@
                     <Column editable="true" title="Date" type="java.lang.String"/>
                     <Column editable="true" title="Log In" type="java.lang.String"/>
                     <Column editable="true" title="Log Out" type="java.lang.String"/>
-                    <Column editable="true" title="Status" type="java.lang.String"/>
+                    <Column editable="true" title="Remarks" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

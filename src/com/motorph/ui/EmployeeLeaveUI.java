@@ -463,7 +463,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Leave Type", "From", "To", "Status"
+                "Leave Type", "From", "To", "Remarks"
             }
         ) {
             Class[] types = new Class [] {

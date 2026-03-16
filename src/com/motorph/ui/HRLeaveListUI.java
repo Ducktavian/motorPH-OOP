@@ -273,11 +273,11 @@ public class HRLeaveListUI extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "Leave ID", "Employee #", "Employee Name", "Status", "Leave Details"
+                "Leave ID", "Employee #", "Employee Name", "Leave Details", "Remarks"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class
+                java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
                 false, false, false, false, false

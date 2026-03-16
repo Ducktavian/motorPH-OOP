@@ -128,12 +128,8 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         employeePylNetPayLbl = new javax.swing.JLabel();
         employeePylNetPayFld = new javax.swing.JTextField();
         employeePylPrlDateLbl = new javax.swing.JLabel();
-        employeePylPositionLbl = new javax.swing.JLabel();
         employeePylPDFBtn = new javax.swing.JButton();
         employeePylENumberFld = new javax.swing.JTextField();
-        employeePylPositionFld = new javax.swing.JTextField();
-        employeePylStatusFld = new javax.swing.JTextField();
-        employeePylStatusLbl = new javax.swing.JLabel();
         employeePylEPylPnl = new javax.swing.JPanel();
         employeePylEPylLbl = new javax.swing.JLabel();
         employeePylPrlPeriodFld = new javax.swing.JTextField();
@@ -712,7 +708,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(employeePylNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(employeePylTDeductionBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(employeePylCalculatorLbl)
@@ -745,10 +741,6 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         employeePylPrlDateLbl.setForeground(new java.awt.Color(31, 41, 55));
         employeePylPrlDateLbl.setText("Payroll Date");
 
-        employeePylPositionLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        employeePylPositionLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylPositionLbl.setText("Position");
-
         employeePylPDFBtn.setBackground(new java.awt.Color(30, 58, 138));
         employeePylPDFBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         employeePylPDFBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -762,24 +754,6 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         employeePylENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
         employeePylENumberFld.setEnabled(false);
         employeePylENumberFld.addActionListener(this::employeePylENumberFldActionPerformed);
-
-        employeePylPositionFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePylPositionFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        employeePylPositionFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        employeePylPositionFld.setEnabled(false);
-        employeePylPositionFld.addActionListener(this::employeePylPositionFldActionPerformed);
-
-        employeePylStatusFld.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePylStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        employeePylStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        employeePylStatusFld.setEnabled(false);
-        employeePylStatusFld.addActionListener(this::employeePylStatusFldActionPerformed);
-
-        employeePylStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        employeePylStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeePylStatusLbl.setText("Status");
 
         employeePylEPylPnl.setBackground(new java.awt.Color(30, 58, 138));
         employeePylEPylPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -831,7 +805,6 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                                 .addComponent(employeePylEPylPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(employeePylSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(employeePylCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(45, 45, 45)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -844,27 +817,19 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                                         .addGap(39, 39, 39)
                                         .addComponent(employeePylPrlDateFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(employeePylENumberLbl)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(employeePylENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(employeePylPositionLbl)
-                                                .addGap(86, 86, 86)
-                                                .addComponent(employeePylPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(employeePylENumberLbl)
+                                        .addGap(60, 60, 60)
+                                        .addComponent(employeePylENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(42, 42, 42)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(employeePylStatusLbl)
-                                            .addComponent(employeePylPrlPeriodLbl))
+                                        .addComponent(employeePylPrlPeriodLbl)
                                         .addGap(28, 28, 28)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(employeePylStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(employeePylPrlPeriodFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(295, 295, 295)
-                        .addComponent(employeePylPDFBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                                        .addComponent(employeePylPrlPeriodFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(employeePylCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(17, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(employeePylPDFBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(291, 291, 291))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -895,18 +860,9 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(employeePylENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(employeePylPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(employeePylStatusLbl))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(employeePylPositionLbl))
-                    .addComponent(employeePylStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(employeePylCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(employeePylPDFBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(employeePylSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -920,12 +876,8 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         employeePylENumberLbl.getAccessibleContext().setAccessibleName("employeePylENumberLbl");
         employeePylCalculatorBrdrPnl.getAccessibleContext().setAccessibleName("employeePylCalculatorBrdrPnl");
         employeePylPrlDateLbl.getAccessibleContext().setAccessibleName("employeePylPrlDateLbl");
-        employeePylPositionLbl.getAccessibleContext().setAccessibleName("employeePylPositionLbl");
         employeePylPDFBtn.getAccessibleContext().setAccessibleName("employeePylPDFBtn");
         employeePylENumberFld.getAccessibleContext().setAccessibleName("employeePylENumberFld");
-        employeePylPositionFld.getAccessibleContext().setAccessibleName("employeePylPositionFld");
-        employeePylStatusFld.getAccessibleContext().setAccessibleName("employeePylStatusFld");
-        employeePylStatusLbl.getAccessibleContext().setAccessibleName("employeePylStatusLbl");
         employeePylEPylPnl.getAccessibleContext().setAccessibleName("employeePylEPylPnl");
         employeePylPrlPeriodFld.getAccessibleContext().setAccessibleName("employeePylPrlPeriodFld");
         employeePylSearchPnl.getAccessibleContext().setAccessibleName("employeePylSearchPnl");
@@ -1036,14 +988,6 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_employeePylENumberFldActionPerformed
 
-    private void employeePylPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylPositionFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeePylPositionFldActionPerformed
-
-    private void employeePylStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylStatusFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeePylStatusFldActionPerformed
-
     private void employeePylPrlPeriodFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylPrlPeriodFldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_employeePylPrlPeriodFldActionPerformed
@@ -1104,8 +1048,6 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
     private javax.swing.JLabel employeePylPhilHealthLbl;
     private javax.swing.JTextField employeePylPhnAllowanceFld;
     private javax.swing.JLabel employeePylPhnAllowanceLbl;
-    private javax.swing.JTextField employeePylPositionFld;
-    private javax.swing.JLabel employeePylPositionLbl;
     private javax.swing.JTextField employeePylPrlDateFld;
     private javax.swing.JLabel employeePylPrlDateLbl;
     private javax.swing.JButton employeePylPrlDisputeBtn;
@@ -1120,8 +1062,6 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
     private javax.swing.JLabel employeePylSearchIconImgLbl;
     private javax.swing.JPanel employeePylSearchPnl;
     private javax.swing.JPanel employeePylSidebarPnl;
-    private javax.swing.JTextField employeePylStatusFld;
-    private javax.swing.JLabel employeePylStatusLbl;
     private javax.swing.JPanel employeePylTDeductionBrdrPnl;
     private javax.swing.JTextField employeePylTDeductionFld;
     private javax.swing.JLabel employeePylTDeductionLbl;

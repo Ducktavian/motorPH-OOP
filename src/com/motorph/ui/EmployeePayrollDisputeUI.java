@@ -418,7 +418,7 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Payroll Date", "Payroll Period", "Payroll Dispute Details", "Status"
+                "Payroll Date", "Payroll Period", "Payroll Dispute Details", "Remarks"
             }
         ) {
             Class[] types = new Class [] {
