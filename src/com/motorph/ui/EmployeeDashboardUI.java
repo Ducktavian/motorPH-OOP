@@ -12,6 +12,7 @@ import com.motorph.service.EmployeeService;
 import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
 import com.motorph.util.Session;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -79,9 +80,9 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
             for (AttendanceRecord log : logs) {
                 
                 Object[] row = {
-                    String.valueOf(log.getDate()),
-                    String.valueOf(log.getLogIn()),
-                    String.valueOf(log.getLogOut()),
+                    DateUtils.dateToString(log.getDate()),
+                    DateUtils.timeToString(log.getLogIn()),
+                    DateUtils.timeToString(log.getLogOut()),
                     "GOODS :)"
                 };
                 
