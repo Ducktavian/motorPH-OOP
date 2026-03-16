@@ -1,3 +1,4 @@
 "requestId", "employeeNumber", "dateFiled", "startDate", "endDate", "leaveType", "reason", "status", "approvedBy"
 "10001-1","10001","03/16/2026","03/16/2026","03/16/2026","SICK","No ","PENDING",""
 "10001-2","10001","03/16/2026","03/21/2026","03/31/2026","SICK"," L<","PENDING",""
+"10001-3","10001","03/16/2026","03/27/2026","03/31/2026","VACATION"," hehe","PENDING",""

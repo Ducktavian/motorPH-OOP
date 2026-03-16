@@ -76,9 +76,6 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
             for (AttendanceRecord log : logs) {
                 
                 Object[] row = {
-                    log.getEmployeeNumber(),
-                    emp.getLastName(),
-                    emp.getFirstName(),
                     String.valueOf(log.getDate()),
                     String.valueOf(log.getLogIn()),
                     String.valueOf(log.getLogOut()),

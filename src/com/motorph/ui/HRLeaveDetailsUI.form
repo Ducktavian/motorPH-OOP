@@ -56,7 +56,7 @@
                   <Component id="hrLDetailsApproveBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   <Component id="hrLDetailsDenyBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="250" max="32767" attributes="0"/>
+              <EmptySpace pref="241" max="32767" attributes="0"/>
           </Group>
           <Component id="hrLDetailsSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
@@ -324,21 +324,13 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="hrLDetailsSubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="hrLDetailsLTypeCbx" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                                          <Component id="hrLDetailsFromDtChsr" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                      <Component id="hrLDetailsToLbl" min="-2" pref="80" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="hrLDetailsToDtChsr" min="-2" pref="150" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="hrLDetailsLTypeCbx" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="hrLDetailsFromDtChsr" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="hrLDetailsToLbl" min="-2" pref="80" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="hrLDetailsToDtChsr" min="-2" pref="150" max="-2" attributes="0"/>
                           </Group>
                           <Component id="hrLDetailsReasonFld" alignment="0" min="-2" pref="625" max="-2" attributes="0"/>
                       </Group>
@@ -349,15 +341,12 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="hrLDetailsFALeavePnl" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                      <Component id="hrLDetailsSubmitBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <Component id="hrLDetailsLTypeCbx" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="hrLDetailsLTypeCbx" alignment="1" min="-2" pref="30" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -454,33 +443,6 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsReasonLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JButton" name="hrLDetailsSubmitBtn">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="f6" green="82" red="3b" type="rgb"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="20" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Submit"/>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                    <LineBorder>
-                      <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
-                    </LineBorder>
-                  </Border>
-                </Property>
-              </Properties>
-              <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsSubmitBtn"/>
-              </AccessibilityProperties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrLDetailsSubmitBtnActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JLabel" name="hrLDetailsToLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -573,13 +535,7 @@
                   <Color blue="37" green="29" red="1f" type="rgb"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="5">
-                    <StringItem index="0" value="Choose"/>
-                    <StringItem index="1" value="Sick"/>
-                    <StringItem index="2" value="Vacation"/>
-                    <StringItem index="3" value="Emergency"/>
-                    <StringItem index="4" value=" "/>
-                  </StringArray>
+                  <StringArray count="0"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -593,6 +549,9 @@
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrLDetailsLTypeCbx"/>
               </AccessibilityProperties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrLDetailsLTypeCbxActionPerformed"/>
+              </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>

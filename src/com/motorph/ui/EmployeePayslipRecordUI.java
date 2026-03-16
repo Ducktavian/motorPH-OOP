@@ -44,16 +44,11 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
      
      }
      
-     private void refreshTableData(String empNumber) {
-         
-       
+     private void refreshTableData(String empNumber) {  
         List<Payslip> list = payrollService.findPayslipsByEmployee(empNumber);
-
         DefaultTableModel model = (DefaultTableModel) employeePylRecordTbl.getModel();
 
-        model.setRowCount(0);
-
-        // 4. Fill the rows
+        model.setRowCount(0);     
         for (Payslip p : list) {
             
             Object[] row = {
@@ -62,7 +57,6 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
                 p.getNetPay(),
                 "VIEW"
             };
-
             model.addRow(row);
         }
     }

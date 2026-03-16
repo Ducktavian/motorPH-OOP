@@ -4,7 +4,10 @@
  */
 package com.motorph.ui;
 
-
+/**
+ *
+ * @author Lenovo
+ */
 public class ITAddUserAccountUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITAddUserAccountUI.class.getName());
