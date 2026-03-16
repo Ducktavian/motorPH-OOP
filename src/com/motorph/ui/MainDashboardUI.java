@@ -34,6 +34,7 @@ public class MainDashboardUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        mainDashboardSettingsImgLbl = new javax.swing.JLabel();
         mainDashboardDashboardImgLbl = new javax.swing.JLabel();
         mainDashboardAttLogsImgLbl = new javax.swing.JLabel();
         mainDashboardPylImgLbl = new javax.swing.JLabel();
@@ -53,11 +54,16 @@ public class MainDashboardUI extends javax.swing.JFrame {
         mainDashboardLDetailsImgBtn = new javax.swing.JButton();
         mainDashboardDDetailsImgBtn = new javax.swing.JButton();
         mainDashboardSysToolsImgBtn = new javax.swing.JButton();
+        mainDashboardSettingsImgBtn = new javax.swing.JButton();
         mainDashboardLogoutBtn = new javax.swing.JButton();
         mainDashboardMainDashboardImgLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        mainDashboardSettingsImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SettingsIcon.png"))); // NOI18N
+        getContentPane().add(mainDashboardSettingsImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 420, 170, -1));
+        mainDashboardSettingsImgLbl.getAccessibleContext().setAccessibleName("mainDashboardSettingsImgLbl");
 
         mainDashboardDashboardImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/DashboardIcon.png"))); // NOI18N
         getContentPane().add(mainDashboardDashboardImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 170, -1));
@@ -171,6 +177,14 @@ public class MainDashboardUI extends javax.swing.JFrame {
         getContentPane().add(mainDashboardSysToolsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 560, 169, 45));
         mainDashboardSysToolsImgBtn.getAccessibleContext().setAccessibleName("mainDashboardSysToolsImgBtn");
 
+        mainDashboardSettingsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
+        mainDashboardSettingsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainDashboardSettingsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
+        mainDashboardSettingsImgBtn.setText("Settings");
+        mainDashboardSettingsImgBtn.addActionListener(this::mainDashboardSettingsImgBtnActionPerformed);
+        getContentPane().add(mainDashboardSettingsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 560, 169, 45));
+        mainDashboardSettingsImgBtn.getAccessibleContext().setAccessibleName("mainDashboardSettingsImgBtn");
+
         mainDashboardLogoutBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardLogoutBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         mainDashboardLogoutBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -269,6 +283,10 @@ public class MainDashboardUI extends javax.swing.JFrame {
         ///
     }//GEN-LAST:event_mainDashboardDashboardImgFld1ActionPerformed
 
+    private void mainDashboardSettingsImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardSettingsImgBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mainDashboardSettingsImgBtnActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -320,6 +338,8 @@ public class MainDashboardUI extends javax.swing.JFrame {
     private javax.swing.JLabel mainDashboardPylImgLbl;
     private javax.swing.JButton mainDashboardRDetailsImgBtn;
     private javax.swing.JLabel mainDashboardRDetailsImgLbl;
+    private javax.swing.JButton mainDashboardSettingsImgBtn;
+    private javax.swing.JLabel mainDashboardSettingsImgLbl;
     private javax.swing.JButton mainDashboardSysToolsImgBtn;
     private javax.swing.JLabel mainDashboardSysToolsImgLbl;
     // End of variables declaration//GEN-END:variables
