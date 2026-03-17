@@ -261,7 +261,7 @@ public class MainAdminDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new FinancePayrollUI().setVisible(true);
+        new FinanceGeneratePayrollUI().setVisible(true);
     }//GEN-LAST:event_mainDashboardPrlImgBtnActionPerformed
 
     private void mainDashboardAttLogsImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardAttLogsImgBtnActionPerformed

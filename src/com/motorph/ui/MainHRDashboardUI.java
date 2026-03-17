@@ -227,7 +227,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new FinancePayrollUI().setVisible(true);
+        new FinanceGeneratePayrollUI().setVisible(true);
     }//GEN-LAST:event_mainHDashboardPrlImgBtnActionPerformed
 
 

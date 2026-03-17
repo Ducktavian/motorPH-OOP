@@ -34,7 +34,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
         financePrlDListSidebarPnl = new javax.swing.JPanel();
-        financePrlDListPylRecordBtn = new javax.swing.JButton();
+        financePrlDListGPrlBtn = new javax.swing.JButton();
         financePrlDListMainDashboardBtn = new javax.swing.JButton();
         financePrlDListMotorPHIconImgLbl = new javax.swing.JLabel();
         financePrlDListPylBtn = new javax.swing.JButton();
@@ -204,12 +204,12 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
         financePrlDListSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
         financePrlDListSidebarPnl.setPreferredSize(new java.awt.Dimension(262, 700));
 
-        financePrlDListPylRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
-        financePrlDListPylRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        financePrlDListPylRecordBtn.setForeground(new java.awt.Color(255, 255, 255));
-        financePrlDListPylRecordBtn.setText("Payslip Record");
-        financePrlDListPylRecordBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        financePrlDListPylRecordBtn.addActionListener(this::financePrlDListPylRecordBtnActionPerformed);
+        financePrlDListGPrlBtn.setBackground(new java.awt.Color(30, 42, 56));
+        financePrlDListGPrlBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlDListGPrlBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlDListGPrlBtn.setText("Generate Payroll");
+        financePrlDListGPrlBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        financePrlDListGPrlBtn.addActionListener(this::financePrlDListGPrlBtnActionPerformed);
 
         financePrlDListMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         financePrlDListMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -224,7 +224,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
         financePrlDListPylBtn.setBackground(new java.awt.Color(30, 42, 56));
         financePrlDListPylBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         financePrlDListPylBtn.setForeground(new java.awt.Color(255, 255, 255));
-        financePrlDListPylBtn.setText("Payslip");
+        financePrlDListPylBtn.setText("Payroll Record");
         financePrlDListPylBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         financePrlDListPylBtn.addActionListener(this::financePrlDListPylBtnActionPerformed);
 
@@ -247,7 +247,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(financePrlDListSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(financePrlDListPylDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(financePrlDListPylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlDListGPrlBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(financePrlDListSidebarPnlLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(financePrlDListMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -264,7 +264,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
                         .addGap(189, 189, 189)
                         .addComponent(financePrlDListPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(12, 12, 12)
-                .addComponent(financePrlDListPylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financePrlDListGPrlBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(financePrlDListPylDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(282, 282, 282)
@@ -272,7 +272,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
-        financePrlDListPylRecordBtn.getAccessibleContext().setAccessibleName("financePrlDListPylRecordBtn");
+        financePrlDListGPrlBtn.getAccessibleContext().setAccessibleName("financePrlDListGPrlBtn");
         financePrlDListMainDashboardBtn.getAccessibleContext().setAccessibleName("financePrlDListMainDashboardBtn");
         financePrlDListMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("financePrlDListMotorPHIconImgLbl");
         financePrlDListPylBtn.getAccessibleContext().setAccessibleName("financePrlDListPylBtn");
@@ -451,12 +451,12 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void financePrlDListPylRecordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListPylRecordBtnActionPerformed
+    private void financePrlDListGPrlBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListGPrlBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         
         new EmployeePayslipRecordUI().setVisible(true);
-    }//GEN-LAST:event_financePrlDListPylRecordBtnActionPerformed
+    }//GEN-LAST:event_financePrlDListGPrlBtnActionPerformed
 
     private void financePrlDListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListMainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -502,6 +502,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton financePrlDListGPrlBtn;
     private javax.swing.JButton financePrlDListMainDashboardBtn;
     private javax.swing.JLabel financePrlDListMotorPHIconImgLbl;
     private javax.swing.JScrollPane financePrlDListPrlDListBrdrScrlPnl;
@@ -510,7 +511,6 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
     private javax.swing.JLabel financePrlDListPrlDisputeLbl;
     private javax.swing.JButton financePrlDListPylBtn;
     private javax.swing.JButton financePrlDListPylDisputeBtn;
-    private javax.swing.JButton financePrlDListPylRecordBtn;
     private javax.swing.JPanel financePrlDListSidebarPnl;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel6;

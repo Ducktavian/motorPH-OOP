@@ -29,10 +29,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="financeAttLogsAttLogsBrdrPnl" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="financeAttLogsAttLogsPnl" min="-2" pref="226" max="-2" attributes="0"/>
+                      <Component id="financeAttLogsAttRecordsPnl" min="-2" pref="262" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="financeAttLogsEDetailsPnl" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="financeAttLogsSearchPnl" min="-2" pref="220" max="-2" attributes="0"/>
                   </Group>
                   <Component id="financeAttLogsEditBtn" alignment="1" min="-2" pref="65" max="-2" attributes="0"/>
@@ -48,7 +48,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="financeAttLogsEDetailsPnl" min="-2" max="-2" attributes="0"/>
                   <Component id="financeAttLogsSearchPnl" min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="financeAttLogsAttLogsPnl" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="financeAttLogsAttRecordsPnl" min="-2" pref="50" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
               <Component id="financeAttLogsAttLogsBrdrPnl" max="32767" attributes="0"/>
@@ -395,7 +395,7 @@
         </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="financeAttLogsAttLogsPnl">
+    <Container class="javax.swing.JPanel" name="financeAttLogsAttRecordsPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -421,20 +421,20 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace pref="14" max="32767" attributes="0"/>
-                  <Component id="financeAttLogsAttLogsLbl" min="-2" pref="210" max="-2" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="financeAttLogsAttRecordsLbl" min="-2" pref="264" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="financeAttLogsAttLogsLbl" alignment="0" min="-2" pref="48" max="-2" attributes="0"/>
+              <Component id="financeAttLogsAttRecordsLbl" alignment="0" min="-2" pref="48" max="-2" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="financeAttLogsAttLogsLbl">
+        <Component class="javax.swing.JLabel" name="financeAttLogsAttRecordsLbl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -445,7 +445,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Attendance Logs"/>
+            <Property name="text" type="java.lang.String" value=" Attendance Records"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <AccessibilityProperties>

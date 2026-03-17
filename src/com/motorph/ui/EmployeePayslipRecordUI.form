@@ -37,17 +37,13 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="employeePylRecordSidebarPnl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-                      <Component id="employeePylRecordPylRecordPnl" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="employeePylRecordBrdrPnl" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
+              <Component id="employeePylRecordPylRecordPnl" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="employeePylRecordBrdrPnl" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="52" max="32767" attributes="0"/>
           </Group>
+          <Component id="employeePylRecordSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -65,19 +61,20 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="employeePylRecordMainDashboardBtn" alignment="1" min="-2" max="-2" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="employeePylRecordMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="employeePylRecordPrlDisputeBtn" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="employeePylRecordPylBtn" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                          <Component id="employeePylRecordMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                      <Component id="employeePylRecordMainDashboardBtn" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="employeePylDisputePylRecordBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="employeePylRecordPylRecordBtn" min="-2" pref="216" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -87,62 +84,15 @@
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                   <Component id="employeePylRecordMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="employeePylRecordPylRecordBtn" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="employeePylRecordPylBtn" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="employeePylRecordPrlDisputeBtn" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace pref="260" max="32767" attributes="0"/>
+                  <Component id="employeePylDisputePylRecordBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="employeePylRecordMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="employeePylRecordPylBtn">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="38" green="2a" red="1e" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Payslip"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-          </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylRecordPylBtn"/>
-          </AccessibilityProperties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylRecordPylBtnActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="employeePylRecordPylRecordBtn">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="38" green="2a" red="1e" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Payslip Record"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-          </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylRecordPylRecordBtn"/>
-            <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
-          </AccessibilityProperties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylRecordPylRecordBtnActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JButton" name="employeePylRecordMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -175,7 +125,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylRecordMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JButton" name="employeePylRecordPrlDisputeBtn">
+        <Component class="javax.swing.JButton" name="employeePylDisputePylRecordBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -186,14 +136,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Payslip Dispute"/>
+            <Property name="text" type="java.lang.String" value="Payslip Record"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylRecordPrlDisputeBtn"/>
-          </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylRecordPrlDisputeBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylDisputePylRecordBtnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -221,30 +168,12 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
-      <SubComponents>
-        <Component class="javax.swing.JLabel" name="employeePylRecordPylRecordLbl">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="25" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Payslip Record"/>
-          </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylRecordPylRecordLbl"/>
-          </AccessibilityProperties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="7" y="1" width="180" height="46"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-      </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="employeePylRecordBrdrPnl">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="b2" green="b2" red="b2" type="rgb"/>
+        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder roundedCorners="true" thickness="2">
@@ -260,18 +189,28 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace pref="18" max="32767" attributes="0"/>
-                  <Component id="employeePylRecordBrdrScrlPnl" min="-2" pref="676" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="employeePylRecordBrdrScrlPnl" min="-2" pref="676" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="employeePylDisputeRecordsBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="317" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                  <Component id="employeePylRecordBrdrScrlPnl" min="-2" pref="534" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="employeePylDisputeRecordsBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="employeePylRecordBrdrScrlPnl" min="-2" pref="513" max="-2" attributes="0"/>
                   <EmptySpace pref="21" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -313,7 +252,7 @@
                   <Table columnCount="4" rowCount="100">
                     <Column editable="true" title="Payslip ID" type="java.lang.Integer"/>
                     <Column editable="true" title="Payroll Date" type="java.lang.String"/>
-                    <Column editable="true" title="NetPay" type="java.lang.String"/>
+                    <Column editable="true" title="Net Pay" type="java.lang.String"/>
                     <Column editable="true" title="Payroll Details" type="java.lang.String"/>
                   </Table>
                 </Property>
@@ -361,6 +300,14 @@
             </Component>
           </SubComponents>
         </Container>
+        <Component class="javax.swing.JLabel" name="employeePylDisputeRecordsBtn">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Records"/>
+          </Properties>
+        </Component>
       </SubComponents>
     </Container>
   </SubComponents>

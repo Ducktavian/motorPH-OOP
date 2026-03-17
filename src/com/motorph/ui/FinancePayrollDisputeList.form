@@ -183,7 +183,7 @@
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="financePrlDListPylDisputeBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="financePrlDListPylRecordBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="financePrlDListGPrlBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
                           <Component id="financePrlDListMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
@@ -206,7 +206,7 @@
                       </Group>
                   </Group>
                   <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                  <Component id="financePrlDListPylRecordBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="financePrlDListGPrlBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="financePrlDListPylDisputeBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="282" max="-2" attributes="0"/>
@@ -217,7 +217,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="financePrlDListPylRecordBtn">
+        <Component class="javax.swing.JButton" name="financePrlDListGPrlBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -228,14 +228,14 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Payslip Record"/>
+            <Property name="text" type="java.lang.String" value="Generate Payroll"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListPylRecordBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDListGPrlBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDListPylRecordBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDListGPrlBtnActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="financePrlDListMainDashboardBtn">
@@ -281,7 +281,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Payslip"/>
+            <Property name="text" type="java.lang.String" value="Payroll Record"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>

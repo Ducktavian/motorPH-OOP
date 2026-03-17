@@ -134,34 +134,39 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="employeePrlDisputeSidebarPnl" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="employeePrlDisputePrlDisputePnl" min="-2" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputePrlDFormBrdrPnl" alignment="0" max="32767" attributes="0"/>
-                  <Component id="employeePrlDisputeRecordsBrdrPnl" alignment="0" max="32767" attributes="0"/>
+              <Component id="employeePylDisputeSidebarPnl" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="employeePylDisputePylDRecordsPnl" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeePylDisputePylDFormBrdrPnl" alignment="0" max="32767" attributes="0"/>
+                      <Component id="employeePylDisputeRecordsBrdrPnl" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="employeePylBackBtn" min="-2" pref="72" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
+              <EmptySpace pref="13" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-              <Component id="employeePrlDisputePrlDisputePnl" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Component id="employeePylDisputePylDRecordsPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="employeePrlDisputeRecordsBrdrPnl" max="32767" attributes="0"/>
+              <Component id="employeePylDisputeRecordsBrdrPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="employeePrlDisputePrlDFormBrdrPnl" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="employeePylDisputePylDFormBrdrPnl" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="employeePylBackBtn" min="-2" pref="33" max="-2" attributes="0"/>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
           </Group>
-          <Component id="employeePrlDisputeSidebarPnl" alignment="0" max="32767" attributes="0"/>
+          <Component id="employeePylDisputeSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="employeePrlDisputeSidebarPnl">
+    <Container class="javax.swing.JPanel" name="employeePylDisputeSidebarPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -179,19 +184,17 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeMainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeePylDisputeMainDashboardBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="employeePrlDisputePylDisputeBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="employeePrlDisputePylRecordBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="employeePylDisputePylRecordBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                          <Component id="employeePrlDisputeMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="employeePylDisputeMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="employeePrlDisputePylBtn" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -201,26 +204,18 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="employeePrlDisputeMotorPHIconImgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
-                          <Component id="employeePrlDisputePylBtn" min="-2" pref="39" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputePylRecordBtn" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputePylDisputeBtn" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="282" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace pref="39" max="32767" attributes="0"/>
+                  <Component id="employeePylDisputeMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="employeePylDisputePylRecordBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="employeePylDisputeMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="employeePrlDisputePylRecordBtn">
+        <Component class="javax.swing.JButton" name="employeePylDisputePylRecordBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -238,10 +233,10 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePylRecordBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputePylRecordBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylDisputePylRecordBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="employeePrlDisputeMainDashboardBtn">
+        <Component class="javax.swing.JButton" name="employeePylDisputeMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -260,10 +255,10 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeMainDashboardBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputeMainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylDisputeMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="employeePrlDisputeMotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="employeePylDisputeMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
@@ -273,51 +268,9 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeMotorPHIconImgLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JButton" name="employeePrlDisputePylBtn">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="38" green="2a" red="1e" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Payslip"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-          </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePylBtn"/>
-          </AccessibilityProperties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputePylBtnActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="employeePrlDisputePylDisputeBtn">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="38" green="2a" red="1e" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Payslip Dispute"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-          </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePylDisputeBtn"/>
-          </AccessibilityProperties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputePylDisputeBtnActionPerformed"/>
-          </Events>
-        </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="employeePrlDisputePrlDisputePnl">
+    <Container class="javax.swing.JPanel" name="employeePylDisputePylDRecordsPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -334,14 +287,27 @@
         </Property>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlDisputePnl"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylDisputePylDRecordsPnl"/>
       </AccessibilityProperties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="employeePylDisputePylDRecordsLbl" min="-2" pref="298" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="employeePylDisputePylDRecordsLbl" min="-2" pref="46" max="-2" attributes="0"/>
+          </Group>
+        </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="employeePrlDisputePrlDisputeLbl">
+        <Component class="javax.swing.JLabel" name="employeePylDisputePylDRecordsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -349,20 +315,15 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value=" Payroll Dispute"/>
+            <Property name="text" type="java.lang.String" value=" Payslip Dispute Records"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlDisputeLbl"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylDisputePylDRecordsLbl"/>
           </AccessibilityProperties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="7" y="1" width="200" height="46"/>
-            </Constraint>
-          </Constraints>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="employeePrlDisputeRecordsBrdrPnl">
+    <Container class="javax.swing.JPanel" name="employeePylDisputeRecordsBrdrPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="b2" green="b2" red="b2" type="rgb"/>
@@ -384,13 +345,13 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="employeePrlDisputeRecordsLbl" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeePylDisputeRecordsLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="319" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeRecordsBrdrScrlPnl" min="-2" pref="680" max="-2" attributes="0"/>
-                  <EmptySpace pref="11" max="32767" attributes="0"/>
+                  <Component id="employeePylDisputeRecordsBrdrScrlPnl" min="-2" pref="680" max="-2" attributes="0"/>
+                  <EmptySpace pref="13" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -398,16 +359,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeRecordsLbl" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeePylDisputeRecordsLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeRecordsBrdrScrlPnl" min="-2" pref="184" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="employeePylDisputeRecordsBrdrScrlPnl" min="-2" pref="128" max="-2" attributes="0"/>
+                  <EmptySpace pref="20" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="employeePrlDisputeRecordsLbl">
+        <Component class="javax.swing.JLabel" name="employeePylDisputeRecordsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
@@ -418,7 +379,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeRecordsLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Container class="javax.swing.JScrollPane" name="employeePrlDisputeRecordsBrdrScrlPnl">
+        <Container class="javax.swing.JScrollPane" name="employeePylDisputeRecordsBrdrScrlPnl">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -437,7 +398,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="employeePrlDisputeRecordsTbl">
+            <Component class="javax.swing.JTable" name="employeePylDisputeRecordsTbl">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -450,15 +411,21 @@
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="4" rowCount="100">
+                  <Table columnCount="5" rowCount="100">
                     <Column editable="true" title="Payroll Date" type="java.lang.String"/>
                     <Column editable="true" title="Payroll Period" type="java.lang.String"/>
                     <Column editable="true" title="Payroll Dispute Details" type="java.lang.String"/>
+                    <Column editable="true" title="Date Filed" type="java.lang.String"/>
                     <Column editable="true" title="Remarks" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                   <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                       <Title/>
                       <Editor/>
@@ -499,7 +466,7 @@
         </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="employeePrlDisputePrlDFormBrdrPnl">
+    <Container class="javax.swing.JPanel" name="employeePylDisputePylDFormBrdrPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -521,12 +488,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="employeePrlDisputePrlDFormPnl" min="-2" pref="281" max="-2" attributes="0"/>
+                  <Component id="employeePylDisputePylDFormPnl" min="-2" pref="281" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="206" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeePylDisputeFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -535,16 +502,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputePrlDFormPnl" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="employeePylDisputePylDFormPnl" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="employeePrlDisputeFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeePylDisputeFADisputeBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="employeePrlDisputePrlDFormPnl">
+        <Container class="javax.swing.JPanel" name="employeePylDisputePylDFormPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -572,7 +539,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="15" max="32767" attributes="0"/>
-                      <Component id="employeePrlDisputePrlDFormLbl" min="-2" pref="258" max="-2" attributes="0"/>
+                      <Component id="employeePylDisputePylDFormLbl" min="-2" pref="258" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -581,14 +548,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="employeePrlDisputePrlDFormLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="employeePylDisputePylDFormLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="employeePrlDisputePrlDFormLbl">
+            <Component class="javax.swing.JLabel" name="employeePylDisputePylDFormLbl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -608,7 +575,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="employeePrlDisputeFADisputeBrdrPnl">
+        <Container class="javax.swing.JPanel" name="employeePylDisputeFADisputeBrdrPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="e9" green="e9" red="e9" type="rgb"/>
@@ -634,29 +601,36 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="employeePrlDisputeReasonFld" min="-2" pref="638" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="employeePrlDisputePrlDateLbl" min="-2" pref="123" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                      <Component id="employeePrlDisputePrlDateDtChsr" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="employeePylDisputeReasonLbl" min="-2" pref="80" max="-2" attributes="0"/>
+                              <EmptySpace min="99" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="employeePylDisputeReasonFld" min="-2" pref="638" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="employeePylDisputeFADisputePnl" min="-2" pref="231" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="employeePylDisputeSubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="employeePylDisputePrlDateLbl" min="-2" pref="123" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="financeGPrlMChsr1" min="-2" pref="106" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="financeGPrlYChsr1" min="-2" pref="53" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="employeePylDisputePrlPeriodLbl" min="-2" pref="122" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                          <Component id="employeePrlPrlPeriodCbx" min="-2" pref="170" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Component id="employeePrlDisputeReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                                  <Component id="employeePrlDisputeFADisputePnl" alignment="0" min="-2" pref="231" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="employeePrlDisputePrlPeriodLbl" min="-2" pref="122" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="employeePrlDisputePrlPeriodCbx" min="-2" pref="150" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="employeePrlDisputeSubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
-                              </Group>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="20" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -664,32 +638,31 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="employeePrlDisputeFADisputePnl" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="employeePrlDisputeSubmitBtn" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="employeePylDisputeFADisputePnl" min="-2" max="-2" attributes="0"/>
+                          <Component id="employeePylDisputeSubmitBtn" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="employeePrlDisputePrlDateLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="employeePrlDisputePrlDateDtChsr" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="employeePylDisputePrlDateLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="financeGPrlMChsr1" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="financeGPrlYChsr1" min="-2" pref="29" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="employeePrlDisputePrlPeriodCbx" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="employeePrlDisputePrlPeriodLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="employeePrlPrlPeriodCbx" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="employeePylDisputePrlPeriodLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="employeePrlDisputeReasonLbl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="employeePylDisputeReasonLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="employeePrlDisputeReasonFld" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="employeePylDisputeReasonFld" min="-2" pref="56" max="-2" attributes="0"/>
                       <EmptySpace pref="21" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JPanel" name="employeePrlDisputeFADisputePnl">
+            <Container class="javax.swing.JPanel" name="employeePylDisputeFADisputePnl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -717,19 +690,23 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="employeePrlDisputeFADisputeLbl" min="-2" pref="221" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="employeePylDisputeFADisputeLbl" min="-2" pref="221" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="employeePrlDisputeFADisputeLbl" alignment="0" pref="38" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="employeePylDisputeFADisputeLbl" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="employeePrlDisputeFADisputeLbl">
+                <Component class="javax.swing.JLabel" name="employeePylDisputeFADisputeLbl">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -749,7 +726,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="employeePrlDisputeReasonLbl">
+            <Component class="javax.swing.JLabel" name="employeePylDisputeReasonLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -763,7 +740,105 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeReasonLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JButton" name="employeePrlDisputeSubmitBtn">
+            <Component class="javax.swing.JLabel" name="employeePylDisputePrlPeriodLbl">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="37" green="29" red="1f" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Payroll Period"/>
+              </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlPeriodLbl"/>
+              </AccessibilityProperties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="employeePylDisputeReasonFld">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="37" green="29" red="1f" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value=" "/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder roundedCorners="true">
+                      <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+              </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeReasonFld"/>
+              </AccessibilityProperties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylDisputeReasonFldActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="employeePylDisputePrlDateLbl">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="37" green="29" red="1f" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Payroll Date"/>
+              </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlDateLbl"/>
+              </AccessibilityProperties>
+            </Component>
+            <Component class="com.toedter.calendar.JMonthChooser" name="financeGPrlMChsr1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder roundedCorners="true">
+                      <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="com.toedter.calendar.JYearChooser" name="financeGPrlYChsr1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder roundedCorners="true">
+                      <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="employeePrlPrlPeriodCbx">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="37" green="29" red="1f" type="rgb"/>
+                </Property>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="3">
+                    <StringItem index="0" value="Choose"/>
+                    <StringItem index="1" value="1st cutoff (1st-15th)"/>
+                    <StringItem index="2" value="2nd cutoff (16th-end)"/>
+                  </StringArray>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder roundedCorners="true">
+                      <Color PropertyName="color" blue="37" green="29" red="1f" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+              </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlPrlPeriodCbx"/>
+              </AccessibilityProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="employeePylDisputeSubmitBtn">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f6" green="82" red="3b" type="rgb"/>
@@ -787,105 +862,36 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeSubmitBtn"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputeSubmitBtnActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylDisputeSubmitBtnActionPerformed"/>
               </Events>
-            </Component>
-            <Component class="javax.swing.JLabel" name="employeePrlDisputePrlPeriodLbl">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="18" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Payroll Period"/>
-              </Properties>
-              <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlPeriodLbl"/>
-              </AccessibilityProperties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="employeePrlDisputeReasonFld">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value=" "/>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                    <LineBorder roundedCorners="true">
-                      <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
-                    </LineBorder>
-                  </Border>
-                </Property>
-              </Properties>
-              <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputeReasonFld"/>
-              </AccessibilityProperties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlDisputeReasonFldActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JLabel" name="employeePrlDisputePrlDateLbl">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="18" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Payroll Date"/>
-              </Properties>
-              <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlDateLbl"/>
-              </AccessibilityProperties>
-            </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="employeePrlDisputePrlDateDtChsr">
-              <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                    <LineBorder roundedCorners="true">
-                      <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
-                    </LineBorder>
-                  </Border>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
-                </Property>
-              </Properties>
-              <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlDateDtChsr"/>
-              </AccessibilityProperties>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="employeePrlDisputePrlPeriodCbx">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
-                </Property>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="3">
-                    <StringItem index="0" value="Choose"/>
-                    <StringItem index="1" value="1st cutoff"/>
-                    <StringItem index="2" value="2nd cutoff"/>
-                  </StringArray>
-                </Property>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                    <LineBorder roundedCorners="true">
-                      <Color PropertyName="color" blue="37" green="29" red="1f" type="rgb"/>
-                    </LineBorder>
-                  </Border>
-                </Property>
-              </Properties>
-              <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlDisputePrlPeriodCbx"/>
-              </AccessibilityProperties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-              </AuxValues>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JButton" name="employeePylBackBtn">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="8a" green="3a" red="1e" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Back"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder roundedCorners="true">
+              <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylBackBtnActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>

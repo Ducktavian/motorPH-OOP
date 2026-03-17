@@ -33,7 +33,7 @@
               <Component id="employeeLeaveSidebarPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="employeeLeaveLDetailsPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="employeeLeaveLRecordsPnl" min="-2" max="-2" attributes="0"/>
                   <Component id="employeeLeaveLFormBrdrPnl" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="employeeLeaveRecordsBrdrPnl" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -49,7 +49,7 @@
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-              <Component id="employeeLeaveLDetailsPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="employeeLeaveLRecordsPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="employeeLeaveRecordsBrdrPnl" max="32767" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -170,7 +170,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="employeeLeaveLDetailsPnl">
+    <Container class="javax.swing.JPanel" name="employeeLeaveLRecordsPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -190,11 +190,23 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeLeaveLDetailsPnl"/>
       </AccessibilityProperties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Component id="employeeLeaveLRecordsLbl" min="-2" pref="190" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="employeeLeaveLRecordsLbl" min="-2" pref="46" max="-2" attributes="0"/>
+          </Group>
+        </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="employeeLeaveLDetailsLbl">
+        <Component class="javax.swing.JLabel" name="employeeLeaveLRecordsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -202,16 +214,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value=" Leave Details"/>
+            <Property name="text" type="java.lang.String" value=" Leave Records"/>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeeLeaveLDetailsLbl"/>
           </AccessibilityProperties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="7" y="1" width="180" height="46"/>
-            </Constraint>
-          </Constraints>
         </Component>
       </SubComponents>
     </Container>
@@ -712,15 +719,21 @@
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="4" rowCount="100">
+                  <Table columnCount="5" rowCount="100">
                     <Column editable="true" title="Leave Type" type="java.lang.String"/>
                     <Column editable="true" title="From" type="java.lang.String"/>
                     <Column editable="true" title="To" type="java.lang.String"/>
+                    <Column editable="true" title="Date Filed" type="java.lang.String"/>
                     <Column editable="true" title="Remarks" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                   <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
                     <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                       <Title/>
                       <Editor/>

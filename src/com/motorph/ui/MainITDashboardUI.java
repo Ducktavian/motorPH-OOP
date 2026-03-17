@@ -224,7 +224,7 @@ public class MainITDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new FinancePayrollUI().setVisible(true);
+        new FinanceGeneratePayrollUI().setVisible(true);
     }//GEN-LAST:event_mainIDashboardPrlImgBtnActionPerformed
 
 

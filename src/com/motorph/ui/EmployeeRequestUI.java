@@ -34,7 +34,7 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestMainDashboardBtn = new javax.swing.JButton();
         employeeRequestMotorPHIconImgLbl = new javax.swing.JLabel();
         employeeRequestRDetailsPnl = new javax.swing.JPanel();
-        employeeRequestRDetailsLbl = new javax.swing.JLabel();
+        employeeRequestRRecordsLbl = new javax.swing.JLabel();
         employeeRequestRFormBrdrPnl = new javax.swing.JPanel();
         employeeRequestRFormPnl = new javax.swing.JPanel();
         employeeRequestRFormLbl = new javax.swing.JLabel();
@@ -94,13 +94,26 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestRDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
         employeeRequestRDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         employeeRequestRDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        employeeRequestRDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        employeeRequestRDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        employeeRequestRDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
-        employeeRequestRDetailsLbl.setText(" Request Details");
-        employeeRequestRDetailsPnl.add(employeeRequestRDetailsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 210, 46));
-        employeeRequestRDetailsLbl.getAccessibleContext().setAccessibleName("employeeRequestRDetailsLbl");
+        employeeRequestRRecordsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeeRequestRRecordsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeeRequestRRecordsLbl.setText(" Request Records");
+
+        javax.swing.GroupLayout employeeRequestRDetailsPnlLayout = new javax.swing.GroupLayout(employeeRequestRDetailsPnl);
+        employeeRequestRDetailsPnl.setLayout(employeeRequestRDetailsPnlLayout);
+        employeeRequestRDetailsPnlLayout.setHorizontalGroup(
+            employeeRequestRDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeRequestRDetailsPnlLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(employeeRequestRRecordsLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        employeeRequestRDetailsPnlLayout.setVerticalGroup(
+            employeeRequestRDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(employeeRequestRRecordsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        employeeRequestRRecordsLbl.getAccessibleContext().setAccessibleName("employeeRequestRRecordsLbl");
 
         employeeRequestRFormBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
         employeeRequestRFormBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
@@ -303,113 +316,113 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestRecordsTbl.setForeground(new java.awt.Color(30, 42, 56));
         employeeRequestRecordsTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Request Type", "Date", "Hour", "Remarks"
+                "Request Type", "Date", "Hour", "Date Filed", "Remarks"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -456,9 +469,9 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
                 .addComponent(employeeRequestSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(employeeRequestRDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeRequestRFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(employeeRequestRecordsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(employeeRequestRecordsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeRequestRDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -546,12 +559,12 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
     private javax.swing.JButton employeeRequestMainDashboardBtn;
     private javax.swing.JLabel employeeRequestMotorPHIconImgLbl;
     private javax.swing.JButton employeeRequestRDetailsBtn;
-    private javax.swing.JLabel employeeRequestRDetailsLbl;
     private javax.swing.JPanel employeeRequestRDetailsPnl;
     private javax.swing.JPanel employeeRequestRFormBrdrPnl;
     private javax.swing.JLabel employeeRequestRFormLbl;
     private javax.swing.JPanel employeeRequestRFormPnl;
     private javax.swing.JButton employeeRequestRListBtn;
+    private javax.swing.JLabel employeeRequestRRecordsLbl;
     private javax.swing.JTextField employeeRequestReasonFld;
     private javax.swing.JLabel employeeRequestReasonLbl;
     private javax.swing.JPanel employeeRequestRecordsBrdrPnl;

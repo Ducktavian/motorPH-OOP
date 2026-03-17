@@ -507,31 +507,23 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="financePrlDDetailsReasonFld" alignment="0" min="-2" pref="638" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="financePrlDDetailsPrlDateLbl" min="-2" pref="123" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="financePrlDDetailsPrlDateDtChsr" min="-2" pref="150" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="financePrlDDetailsReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                                          <Component id="financePrlDDetailsFADisputePnl" alignment="0" min="-2" pref="231" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                  </Group>
+                          <Component id="financePrlDDetailsReasonLbl" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="financePrlDDetailsFADisputePnl" min="-2" pref="231" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="financePrlDDetailsSubmitBtn" min="-2" pref="100" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="financePrlDDetailsPrlPeriodLbl" min="-2" pref="122" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="financePrlDDetailsPrlPeriodCbx" min="-2" pref="150" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="financePrlDDetailsSubmitBtn" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="financePrlDDetailsPrlDateLbl" min="-2" pref="123" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="financePrlDDetailsPrlDatePnl" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                                  <Component id="financePrlDDetailsPrlPeriodLbl" min="-2" pref="122" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                  <Component id="financePrlDDetailsPrlPeriodPnl" min="-2" pref="150" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="financePrlDDetailsReasonFld" min="-2" pref="638" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="20" max="32767" attributes="0"/>
@@ -547,17 +539,13 @@
                           <Component id="financePrlDDetailsSubmitBtn" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                              <Component id="financePrlDDetailsPrlDateLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="financePrlDDetailsPrlDateDtChsr" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="financePrlDDetailsPrlPeriodCbx" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="financePrlDDetailsPrlPeriodLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="financePrlDDetailsPrlDateLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlDDetailsPrlDatePnl" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="financePrlDDetailsPrlPeriodLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlDDetailsPrlPeriodPnl" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                       <Component id="financePrlDDetailsReasonLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="financePrlDDetailsReasonFld" min="-2" pref="56" max="-2" attributes="0"/>
@@ -715,8 +703,12 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlDateLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="financePrlDDetailsPrlDateDtChsr">
+            <Component class="javax.swing.JTextField" name="financePrlDDetailsPrlDatePnl">
               <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="37" green="29" red="1f" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value=" "/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                     <LineBorder roundedCorners="true">
@@ -724,42 +716,36 @@
                     </LineBorder>
                   </Border>
                 </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="37" green="29" red="1f" type="rgb"/>
-                </Property>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlDateDtChsr"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlDatePnl"/>
               </AccessibilityProperties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDDetailsPrlDatePnlActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JComboBox" name="financePrlDDetailsPrlPeriodCbx">
+            <Component class="javax.swing.JTextField" name="financePrlDDetailsPrlPeriodPnl">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
                 </Property>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="3">
-                    <StringItem index="0" value="Choose"/>
-                    <StringItem index="1" value="1st cutoff"/>
-                    <StringItem index="2" value="2nd cutoff"/>
-                  </StringArray>
-                </Property>
+                <Property name="text" type="java.lang.String" value=" "/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                     <LineBorder roundedCorners="true">
-                      <Color PropertyName="color" blue="37" green="29" red="1f" type="rgb"/>
+                      <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
                     </LineBorder>
                   </Border>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlPeriodCbx"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlDDetailsPrlPeriodPnl"/>
               </AccessibilityProperties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-              </AuxValues>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlDDetailsPrlPeriodPnlActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

@@ -97,8 +97,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveLListBtn = new javax.swing.JButton();
         employeeLeaveMainDashboardBtn = new javax.swing.JButton();
         employeeLeaveMotorPHIconImgLbl = new javax.swing.JLabel();
-        employeeLeaveLDetailsPnl = new javax.swing.JPanel();
-        employeeLeaveLDetailsLbl = new javax.swing.JLabel();
+        employeeLeaveLRecordsPnl = new javax.swing.JPanel();
+        employeeLeaveLRecordsLbl = new javax.swing.JLabel();
         employeeLeaveLFormBrdrPnl = new javax.swing.JPanel();
         employeeLeaveLFormPnl = new javax.swing.JPanel();
         employeeLeaveLFormLbl = new javax.swing.JLabel();
@@ -155,16 +155,28 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveSidebarPnl.add(employeeLeaveMotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
         employeeLeaveMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("employeeLeaveMotorPHIconImgLbl");
 
-        employeeLeaveLDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
-        employeeLeaveLDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeeLeaveLDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        employeeLeaveLDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        employeeLeaveLRecordsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeeLeaveLRecordsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeeLeaveLRecordsPnl.setForeground(new java.awt.Color(30, 58, 138));
 
-        employeeLeaveLDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        employeeLeaveLDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
-        employeeLeaveLDetailsLbl.setText(" Leave Details");
-        employeeLeaveLDetailsPnl.add(employeeLeaveLDetailsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 180, 46));
-        employeeLeaveLDetailsLbl.getAccessibleContext().setAccessibleName("employeeLeaveLDetailsLbl");
+        employeeLeaveLRecordsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeeLeaveLRecordsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeeLeaveLRecordsLbl.setText(" Leave Records");
+
+        javax.swing.GroupLayout employeeLeaveLRecordsPnlLayout = new javax.swing.GroupLayout(employeeLeaveLRecordsPnl);
+        employeeLeaveLRecordsPnl.setLayout(employeeLeaveLRecordsPnlLayout);
+        employeeLeaveLRecordsPnlLayout.setHorizontalGroup(
+            employeeLeaveLRecordsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeeLeaveLRecordsPnlLayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(employeeLeaveLRecordsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        employeeLeaveLRecordsPnlLayout.setVerticalGroup(
+            employeeLeaveLRecordsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(employeeLeaveLRecordsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        employeeLeaveLRecordsLbl.getAccessibleContext().setAccessibleName("employeeLeaveLDetailsLbl");
 
         employeeLeaveLFormBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
         employeeLeaveLFormBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
@@ -361,113 +373,113 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveRecordsTbl.setForeground(new java.awt.Color(30, 42, 56));
         employeeLeaveRecordsTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Leave Type", "From", "To", "Remarks"
+                "Leave Type", "From", "To", "Date Filed", "Remarks"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -514,7 +526,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                 .addComponent(employeeLeaveSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(employeeLeaveLDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeeLeaveLRecordsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeLeaveLFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeeLeaveRecordsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(13, 13, 13))
@@ -526,7 +538,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(employeeLeaveLDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeeLeaveLRecordsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(employeeLeaveRecordsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -535,16 +547,12 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         );
 
         employeeLeaveSidebarPnl.getAccessibleContext().setAccessibleName("employeeLeaveSidebarPnl");
-        employeeLeaveLDetailsPnl.getAccessibleContext().setAccessibleName("employeeLeaveLDetailsPnl");
+        employeeLeaveLRecordsPnl.getAccessibleContext().setAccessibleName("employeeLeaveLDetailsPnl");
         employeeLeaveLFormBrdrPnl.getAccessibleContext().setAccessibleName("employeeLeaveLFormBrdrPnl");
         employeeLeaveRecordsBrdrPnl.getAccessibleContext().setAccessibleName("employeeLeaveRecordsBrdrPnl");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void employeeLeaveLDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveLDetailsBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeLeaveLDetailsBtnActionPerformed
 
     private void employeeLeaveMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveMainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -615,9 +623,13 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private void employeeLeaveLListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveLListBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        
+
         new HRLeaveListUI().setVisible(true);
     }//GEN-LAST:event_employeeLeaveLListBtnActionPerformed
+
+    private void employeeLeaveLDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveLDetailsBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_employeeLeaveLDetailsBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -654,12 +666,12 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser employeeLeaveFromDtChsr;
     private javax.swing.JLabel employeeLeaveFromLbl;
     private javax.swing.JButton employeeLeaveLDetailsBtn;
-    private javax.swing.JLabel employeeLeaveLDetailsLbl;
-    private javax.swing.JPanel employeeLeaveLDetailsPnl;
     private javax.swing.JPanel employeeLeaveLFormBrdrPnl;
     private javax.swing.JLabel employeeLeaveLFormLbl;
     private javax.swing.JPanel employeeLeaveLFormPnl;
     private javax.swing.JButton employeeLeaveLListBtn;
+    private javax.swing.JLabel employeeLeaveLRecordsLbl;
+    private javax.swing.JPanel employeeLeaveLRecordsPnl;
     private javax.swing.JButton employeeLeaveMainDashboardBtn;
     private javax.swing.JLabel employeeLeaveMotorPHIconImgLbl;
     private javax.swing.JTextField employeeLeaveReasonFld;

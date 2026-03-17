@@ -134,8 +134,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsTINLbl = new javax.swing.JLabel();
         hrEDetailsPagIbigLbl = new javax.swing.JLabel();
         hrEDetailsIStatusLbl = new javax.swing.JLabel();
-        hrAEmployeeBirthdayDtChsr = new com.toedter.calendar.JDateChooser();
-        hrEDetailsIStatusCbx = new javax.swing.JComboBox<>();
+        hrEDetailsBirthdayFld = new javax.swing.JTextField();
+        hrEDetailsIStatusFld = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -255,7 +255,6 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
         hrEDetailsEntENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         hrEDetailsEntENumberFld.setForeground(new java.awt.Color(31, 41, 55));
-        hrEDetailsEntENumberFld.setText("   Enter Employee #");
         hrEDetailsEntENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrEDetailsEntENumberFld.addActionListener(this::hrEDetailsEntENumberFldActionPerformed);
         hrEDetailsSearchPnl.add(hrEDetailsEntENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
@@ -448,15 +447,19 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsIStatusLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrEDetailsIStatusLbl.setText("Status");
 
-        hrAEmployeeBirthdayDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrAEmployeeBirthdayDtChsr.setForeground(new java.awt.Color(31, 41, 55));
-        hrAEmployeeBirthdayDtChsr.setEnabled(false);
+        hrEDetailsBirthdayFld.setForeground(new java.awt.Color(30, 42, 56));
+        hrEDetailsBirthdayFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsBirthdayFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsBirthdayFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsBirthdayFld.setEnabled(false);
+        hrEDetailsBirthdayFld.addActionListener(this::hrEDetailsBirthdayFldActionPerformed);
 
-        hrEDetailsIStatusCbx.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrEDetailsIStatusCbx.setForeground(new java.awt.Color(31, 41, 55));
-        hrEDetailsIStatusCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Regular", "Probationary" }));
-        hrEDetailsIStatusCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrEDetailsIStatusCbx.setEnabled(false);
+        hrEDetailsIStatusFld.setForeground(new java.awt.Color(30, 42, 56));
+        hrEDetailsIStatusFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsIStatusFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsIStatusFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        hrEDetailsIStatusFld.setEnabled(false);
+        hrEDetailsIStatusFld.addActionListener(this::hrEDetailsIStatusFldActionPerformed);
 
         javax.swing.GroupLayout hrEDetailsEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(hrEDetailsEDetailsBrdrPnl);
         hrEDetailsEDetailsBrdrPnl.setLayout(hrEDetailsEDetailsBrdrPnlLayout);
@@ -478,13 +481,13 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
                 .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(hrAEmployeeBirthdayDtChsr, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
                             .addComponent(hrEDetailsPhilHealthFld)
                             .addComponent(hrEDetailsSSSFld)
                             .addComponent(hrEDetailsPhnAllowanceFld)
                             .addComponent(hrEDetailsBasicSalaryFld)
                             .addComponent(hrEDetailsPositionFld)
-                            .addComponent(hrEDetailsENumberFld))
+                            .addComponent(hrEDetailsENumberFld)
+                            .addComponent(hrEDetailsBirthdayFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(hrEDetailsRiceSubsidyLbl)
@@ -494,25 +497,21 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
                             .addComponent(hrEDetailsIStatusLbl)
                             .addComponent(hrEDetailsISupervisorLbl)
                             .addComponent(hrEDetailsIPhnNumberLbl))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(hrEDetailsPagIbigFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
-                                    .addComponent(hrEDetailsTINFld, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(hrEDetailsCltAllowanceFld, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(hrEDetailsRiceSubsidyFld, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(hrEDetailsISupervisorFld, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(hrEDetailsIPhnNumberFld, javax.swing.GroupLayout.Alignment.TRAILING)))
-                            .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addGap(57, 57, 57)
-                                .addComponent(hrEDetailsIStatusCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(hrEDetailsPagIbigFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                                .addComponent(hrEDetailsTINFld, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(hrEDetailsCltAllowanceFld, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(hrEDetailsRiceSubsidyFld, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(hrEDetailsISupervisorFld, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(hrEDetailsIPhnNumberFld, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(hrEDetailsIStatusFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addComponent(hrEDetailsLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(hrEDetailsIFNameLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
                         .addComponent(hrEDetailsIFNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(hrEDetailsAddressFld))
                 .addGap(16, 16, 16))
@@ -520,12 +519,12 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsEDetailsBrdrPnlLayout.setVerticalGroup(
             hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
+                .addGap(14, 14, 14)
                 .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(hrEDetailsENumberLbl)
                     .addComponent(hrEDetailsENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrEDetailsIStatusLbl)
-                    .addComponent(hrEDetailsIStatusCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(hrEDetailsIStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(hrEDetailsLNameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -537,12 +536,11 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
                     .addComponent(hrEDetailsAddressFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrEDetailsAddressLbl))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(hrEDetailsBirthdayLbl)
-                        .addComponent(hrEDetailsIPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(hrEDetailsIPhnNumberLbl))
-                    .addComponent(hrAEmployeeBirthdayDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(hrEDetailsBirthdayLbl)
+                    .addComponent(hrEDetailsIPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hrEDetailsIPhnNumberLbl)
+                    .addComponent(hrEDetailsBirthdayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(hrEDetailsEDetailsBrdrPnlLayout.createSequentialGroup()
@@ -610,7 +608,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsTINLbl.getAccessibleContext().setAccessibleName("hrEDetailsTINLbl");
         hrEDetailsPagIbigLbl.getAccessibleContext().setAccessibleName("hrEDetailsPagIbigLbl");
         hrEDetailsIStatusLbl.getAccessibleContext().setAccessibleName("hrEDetailsIStatusLbl");
-        hrEDetailsIStatusCbx.getAccessibleContext().setAccessibleName("hrEDetailsIStatusCbx");
+        hrEDetailsBirthdayFld.getAccessibleContext().setAccessibleName("hrEDetailsBirthdayFld");
+        hrEDetailsIStatusFld.getAccessibleContext().setAccessibleName("hrEDetailsIStatusFld");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -813,6 +812,14 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_hrEDetailsSearchIconImgLblKeyPressed
 
+    private void hrEDetailsBirthdayFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEDetailsBirthdayFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrEDetailsBirthdayFldActionPerformed
+
+    private void hrEDetailsIStatusFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEDetailsIStatusFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrEDetailsIStatusFldActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -843,12 +850,12 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
-    private com.toedter.calendar.JDateChooser hrAEmployeeBirthdayDtChsr;
     private javax.swing.JButton hrEDetailsAddBtn;
     private javax.swing.JTextField hrEDetailsAddressFld;
     private javax.swing.JLabel hrEDetailsAddressLbl;
     private javax.swing.JTextField hrEDetailsBasicSalaryFld;
     private javax.swing.JLabel hrEDetailsBasicSalaryLbl;
+    private javax.swing.JTextField hrEDetailsBirthdayFld;
     private javax.swing.JLabel hrEDetailsBirthdayLbl;
     private javax.swing.JTextField hrEDetailsCltAllowanceFld;
     private javax.swing.JLabel hrEDetailsCltAllowanceLbl;
@@ -865,7 +872,7 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
     private javax.swing.JLabel hrEDetailsIFNameLbl;
     private javax.swing.JTextField hrEDetailsIPhnNumberFld;
     private javax.swing.JLabel hrEDetailsIPhnNumberLbl;
-    private javax.swing.JComboBox<String> hrEDetailsIStatusCbx;
+    private javax.swing.JTextField hrEDetailsIStatusFld;
     private javax.swing.JLabel hrEDetailsIStatusLbl;
     private javax.swing.JTextField hrEDetailsISupervisorFld;
     private javax.swing.JLabel hrEDetailsISupervisorLbl;

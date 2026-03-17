@@ -71,34 +71,18 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
     private void initComponents() {
 
         employeePylRecordSidebarPnl = new javax.swing.JPanel();
-        employeePylRecordPylBtn = new javax.swing.JButton();
-        employeePylRecordPylRecordBtn = new javax.swing.JButton();
         employeePylRecordMainDashboardBtn = new javax.swing.JButton();
         employeePylRecordMotorPHIconImgLbl = new javax.swing.JLabel();
-        employeePylRecordPrlDisputeBtn = new javax.swing.JButton();
+        employeePylDisputePylRecordBtn = new javax.swing.JButton();
         employeePylRecordPylRecordPnl = new javax.swing.JPanel();
-        employeePylRecordPylRecordLbl = new javax.swing.JLabel();
         employeePylRecordBrdrPnl = new javax.swing.JPanel();
         employeePylRecordBrdrScrlPnl = new javax.swing.JScrollPane();
         employeePylRecordTbl = new javax.swing.JTable();
+        employeePylDisputeRecordsBtn = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         employeePylRecordSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
-
-        employeePylRecordPylBtn.setBackground(new java.awt.Color(30, 42, 56));
-        employeePylRecordPylBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        employeePylRecordPylBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePylRecordPylBtn.setText("Payslip");
-        employeePylRecordPylBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        employeePylRecordPylBtn.addActionListener(this::employeePylRecordPylBtnActionPerformed);
-
-        employeePylRecordPylRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
-        employeePylRecordPylRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        employeePylRecordPylRecordBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePylRecordPylRecordBtn.setText("Payslip Record");
-        employeePylRecordPylRecordBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        employeePylRecordPylRecordBtn.addActionListener(this::employeePylRecordPylRecordBtnActionPerformed);
 
         employeePylRecordMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         employeePylRecordMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -110,28 +94,28 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
 
         employeePylRecordMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        employeePylRecordPrlDisputeBtn.setBackground(new java.awt.Color(30, 42, 56));
-        employeePylRecordPrlDisputeBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        employeePylRecordPrlDisputeBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePylRecordPrlDisputeBtn.setText("Payslip Dispute");
-        employeePylRecordPrlDisputeBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        employeePylRecordPrlDisputeBtn.addActionListener(this::employeePylRecordPrlDisputeBtnActionPerformed);
+        employeePylDisputePylRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeePylDisputePylRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeePylDisputePylRecordBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeePylDisputePylRecordBtn.setText("Payslip Record");
+        employeePylDisputePylRecordBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeePylDisputePylRecordBtn.addActionListener(this::employeePylDisputePylRecordBtnActionPerformed);
 
         javax.swing.GroupLayout employeePylRecordSidebarPnlLayout = new javax.swing.GroupLayout(employeePylRecordSidebarPnl);
         employeePylRecordSidebarPnl.setLayout(employeePylRecordSidebarPnlLayout);
         employeePylRecordSidebarPnlLayout.setHorizontalGroup(
             employeePylRecordSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(employeePylRecordMainDashboardBtn, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(employeePylRecordSidebarPnlLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(40, 40, 40)
+                .addComponent(employeePylRecordMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordSidebarPnlLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(employeePylRecordSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(employeePylRecordPrlDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(employeePylRecordPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(employeePylRecordSidebarPnlLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(employeePylRecordMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(employeePylRecordPylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23))
+                    .addComponent(employeePylRecordMainDashboardBtn, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordSidebarPnlLayout.createSequentialGroup()
+                        .addComponent(employeePylDisputePylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20))))
         );
         employeePylRecordSidebarPnlLayout.setVerticalGroup(
             employeePylRecordSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,34 +123,21 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addComponent(employeePylRecordMotorPHIconImgLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(employeePylRecordPylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(employeePylRecordPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(employeePylRecordPrlDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 260, Short.MAX_VALUE)
+                .addComponent(employeePylDisputePylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(employeePylRecordMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40))
+                .addGap(16, 16, 16))
         );
 
-        employeePylRecordPylBtn.getAccessibleContext().setAccessibleName("employeePylRecordPylBtn");
-        employeePylRecordPylRecordBtn.getAccessibleContext().setAccessibleName("employeePylRecordPylRecordBtn");
-        employeePylRecordPylRecordBtn.getAccessibleContext().setAccessibleDescription("");
         employeePylRecordMainDashboardBtn.getAccessibleContext().setAccessibleName("employeePylRecordMainDashboardBtn");
         employeePylRecordMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("employeePylRecordMotorPHIconImgLbl");
-        employeePylRecordPrlDisputeBtn.getAccessibleContext().setAccessibleName("employeePylRecordPrlDisputeBtn");
 
         employeePylRecordPylRecordPnl.setBackground(new java.awt.Color(30, 58, 138));
         employeePylRecordPylRecordPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         employeePylRecordPylRecordPnl.setForeground(new java.awt.Color(30, 58, 138));
         employeePylRecordPylRecordPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        employeePylRecordPylRecordLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        employeePylRecordPylRecordLbl.setForeground(new java.awt.Color(255, 255, 255));
-        employeePylRecordPylRecordLbl.setText("Payslip Record");
-        employeePylRecordPylRecordPnl.add(employeePylRecordPylRecordLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 180, 46));
-        employeePylRecordPylRecordLbl.getAccessibleContext().setAccessibleName("employeePylRecordPylRecordLbl");
-
+        employeePylRecordBrdrPnl.setBackground(new java.awt.Color(178, 178, 178));
         employeePylRecordBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
         employeePylRecordBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -277,7 +248,7 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Payslip ID", "Payroll Date", "NetPay", "Payroll Details"
+                "Payslip ID", "Payroll Date", "Net Pay", "Payroll Details"
             }
         ) {
             Class[] types = new Class [] {
@@ -301,20 +272,30 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
         employeePylRecordTbl.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         employeePylRecordTbl.getAccessibleContext().setAccessibleName("employeePylRecordTbl");
 
+        employeePylDisputeRecordsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeePylDisputeRecordsBtn.setText("Records");
+
         javax.swing.GroupLayout employeePylRecordBrdrPnlLayout = new javax.swing.GroupLayout(employeePylRecordBrdrPnl);
         employeePylRecordBrdrPnl.setLayout(employeePylRecordBrdrPnlLayout);
         employeePylRecordBrdrPnlLayout.setHorizontalGroup(
             employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordBrdrPnlLayout.createSequentialGroup()
+            .addGroup(employeePylRecordBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(18, Short.MAX_VALUE)
-                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+                .addGroup(employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(employeePylDisputeRecordsBtn)
+                        .addGap(317, 317, 317))))
         );
         employeePylRecordBrdrPnlLayout.setVerticalGroup(
             employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeePylRecordBrdrPnlLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(employeePylDisputeRecordsBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 513, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
@@ -335,14 +316,12 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(employeePylRecordSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(employeePylRecordPylRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(employeePylRecordBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(14, 14, 14))
+                .addGap(14, 14, 14)
+                .addComponent(employeePylRecordPylRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(employeePylRecordBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(employeePylRecordSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         employeePylRecordSidebarPnl.getAccessibleContext().setAccessibleName("employeePylRecordSidebarPnl");
@@ -352,28 +331,11 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void employeePylRecordPylBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPylBtnActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_employeePylRecordPylBtnActionPerformed
-
-    private void employeePylRecordPylRecordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPylRecordBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeePylRecordPylRecordBtnActionPerformed
-
     private void employeePylRecordMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeePylRecordMainDashboardBtnActionPerformed
-
-    private void employeePylRecordPrlDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPrlDisputeBtnActionPerformed
-        // TODO add your handling code here:
-        
-        GuiUtil.openFrame(this, new EmployeePayslipDisputeUI());
-        
-                                                  
-    }//GEN-LAST:event_employeePylRecordPrlDisputeBtnActionPerformed
 
     private void employeePylRecordTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeePylRecordTblMouseClicked
         // TODO add your handling code here:
@@ -386,20 +348,25 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_employeePylRecordTblMouseClicked
 
+    private void employeePylDisputePylRecordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylDisputePylRecordBtnActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+
+        new EmployeePayslipRecordUI().setVisible(true);
+    }//GEN-LAST:event_employeePylDisputePylRecordBtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton employeePylDisputePylRecordBtn;
+    private javax.swing.JLabel employeePylDisputeRecordsBtn;
     private javax.swing.JPanel employeePylRecordBrdrPnl;
     private javax.swing.JScrollPane employeePylRecordBrdrScrlPnl;
     private javax.swing.JButton employeePylRecordMainDashboardBtn;
     private javax.swing.JLabel employeePylRecordMotorPHIconImgLbl;
-    private javax.swing.JButton employeePylRecordPrlDisputeBtn;
-    private javax.swing.JButton employeePylRecordPylBtn;
-    private javax.swing.JButton employeePylRecordPylRecordBtn;
-    private javax.swing.JLabel employeePylRecordPylRecordLbl;
     private javax.swing.JPanel employeePylRecordPylRecordPnl;
     private javax.swing.JPanel employeePylRecordSidebarPnl;
     private javax.swing.JTable employeePylRecordTbl;
