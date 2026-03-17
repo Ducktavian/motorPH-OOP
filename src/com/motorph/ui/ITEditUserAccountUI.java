@@ -31,7 +31,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private void initComponents() {
 
         itEditUAccSidebarPnl = new javax.swing.JPanel();
-        itEditUAccActLogsBtn = new javax.swing.JButton();
+        itEditUAccUManagementBtn = new javax.swing.JButton();
         itEditUAccMainDashboardBtn = new javax.swing.JButton();
         itEditUAccMotorPHIconImgLbl = new javax.swing.JLabel();
         itEditUAccEditUAccBtn = new javax.swing.JButton();
@@ -64,12 +64,12 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
         itEditUAccSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        itEditUAccActLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        itEditUAccActLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itEditUAccActLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itEditUAccActLogsBtn.setText("Activity Logs");
-        itEditUAccActLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        itEditUAccActLogsBtn.addActionListener(this::itEditUAccActLogsBtnActionPerformed);
+        itEditUAccUManagementBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itEditUAccUManagementBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itEditUAccUManagementBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itEditUAccUManagementBtn.setText("User Management");
+        itEditUAccUManagementBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        itEditUAccUManagementBtn.addActionListener(this::itEditUAccUManagementBtnActionPerformed);
 
         itEditUAccMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         itEditUAccMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -107,7 +107,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addGroup(itEditUAccSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(itEditUAccAddUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itEditUAccEditUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itEditUAccActLogsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itEditUAccUManagementBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(itEditUAccSidebarPnlLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(itEditUAccMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -120,7 +120,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                     .addComponent(itEditUAccMotorPHIconImgLbl)
                     .addGroup(itEditUAccSidebarPnlLayout.createSequentialGroup()
                         .addGap(189, 189, 189)
-                        .addComponent(itEditUAccActLogsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itEditUAccUManagementBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itEditUAccEditUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -130,7 +130,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        itEditUAccActLogsBtn.getAccessibleContext().setAccessibleName("itEditUAccActLogsBtn");
+        itEditUAccUManagementBtn.getAccessibleContext().setAccessibleName("itEditUAccActLogsBtn");
         itEditUAccMainDashboardBtn.getAccessibleContext().setAccessibleName("itEditUAccMainDashboardBtn");
         itEditUAccMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("itEditUAccMotorPHIconImgLbl");
         itEditUAccEditUAccBtn.getAccessibleContext().setAccessibleName("itEditUAccEditUAccBtn");
@@ -406,9 +406,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(itEditUAccEditUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(itEditUAccUEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(379, 379, 379)
-                        .addComponent(itEditUAccUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(itEditUAccUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -432,9 +430,9 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void itEditUAccActLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccActLogsBtnActionPerformed
+    private void itEditUAccUManagementBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUManagementBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUAccActLogsBtnActionPerformed
+    }//GEN-LAST:event_itEditUAccUManagementBtnActionPerformed
 
     private void itEditUAccMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccMainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -519,7 +517,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton itEditUAccActLogsBtn;
     private javax.swing.JButton itEditUAccAddUAccBtn;
     private javax.swing.JTextField itEditUAccENameFld;
     private javax.swing.JLabel itEditUAccENameLbl;
@@ -544,6 +541,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itEditUAccUAccDetailsLbl;
     private javax.swing.JPanel itEditUAccUAccDetailsPnl;
     private javax.swing.JPanel itEditUAccUEDetailsBrdrPnl;
+    private javax.swing.JButton itEditUAccUManagementBtn;
     private javax.swing.JButton itEditUAccUpdateBtn;
     private javax.swing.JTextField itEditUAccUsernameFld;
     private javax.swing.JLabel itEditUAccUsernameLbl;

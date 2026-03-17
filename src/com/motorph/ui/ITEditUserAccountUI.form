@@ -77,7 +77,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="itEditUAccAddUAccBtn" min="-2" pref="216" max="-2" attributes="0"/>
                       <Component id="itEditUAccEditUAccBtn" min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="itEditUAccActLogsBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="itEditUAccUManagementBtn" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
                           <Component id="itEditUAccMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
@@ -94,7 +94,7 @@
                       <Component id="itEditUAccMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="189" pref="189" max="-2" attributes="0"/>
-                          <Component id="itEditUAccActLogsBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="itEditUAccUManagementBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -109,7 +109,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="itEditUAccActLogsBtn">
+        <Component class="javax.swing.JButton" name="itEditUAccUManagementBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -120,14 +120,14 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Activity Logs"/>
+            <Property name="text" type="java.lang.String" value="User Management"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccActLogsBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccActLogsBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccUManagementBtnActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="itEditUAccMainDashboardBtn">
@@ -333,7 +333,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="itEditUAccISupervisorLbl" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="50" max="32767" attributes="0"/>
+                          <EmptySpace pref="51" max="32767" attributes="0"/>
                           <Component id="itEditUAccISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                   </Group>
