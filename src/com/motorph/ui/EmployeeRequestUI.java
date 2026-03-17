@@ -495,7 +495,7 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
     private void employeeRequestMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeeRequestMainDashboardBtnActionPerformed
 
     private void employeeRequestDateFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRequestDateFldActionPerformed

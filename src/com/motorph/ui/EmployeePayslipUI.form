@@ -153,7 +153,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="employeePylPrlDisputeBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                      <Component id="employeePylPylDisputeBtn" min="-2" pref="216" max="-2" attributes="0"/>
                       <Component id="employeePylPylRecordBtn" min="-2" pref="216" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
@@ -178,7 +178,7 @@
                   <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                   <Component id="employeePylPylRecordBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="employeePylPrlDisputeBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="employeePylPylDisputeBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="307" max="-2" attributes="0"/>
                   <Component id="employeePylMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
@@ -261,7 +261,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylPylBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="employeePylPrlDisputeBtn">
+        <Component class="javax.swing.JButton" name="employeePylPylDisputeBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -272,14 +272,14 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Payroll Dispute"/>
+            <Property name="text" type="java.lang.String" value="Payslip Dispute"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylPrlDisputeBtn"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePylPylDisputeBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylPrlDisputeBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePylPylDisputeBtnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

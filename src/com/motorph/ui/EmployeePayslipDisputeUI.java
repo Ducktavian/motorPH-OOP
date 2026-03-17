@@ -8,14 +8,14 @@ package com.motorph.ui;
  *
  * @author Lenovo
  */
-public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
+public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayrollDisputeUI.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayslipDisputeUI.class.getName());
 
     /**
      * Creates new form EmployeeePayrollDisputeFrame
      */
-    public EmployeePayrollDisputeUI() {
+    public EmployeePayslipDisputeUI() {
         initComponents();
     }
 
@@ -246,7 +246,7 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
         employeePrlDisputePylDisputeBtn.setBackground(new java.awt.Color(30, 42, 56));
         employeePrlDisputePylDisputeBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         employeePrlDisputePylDisputeBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePrlDisputePylDisputeBtn.setText("Payroll Dispute");
+        employeePrlDisputePylDisputeBtn.setText("Payslip Dispute");
         employeePrlDisputePylDisputeBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         employeePrlDisputePylDisputeBtn.addActionListener(this::employeePrlDisputePylDisputeBtnActionPerformed);
 
@@ -471,7 +471,7 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
         employeePrlDisputePrlDFormLbl.setBackground(new java.awt.Color(255, 255, 255));
         employeePrlDisputePrlDFormLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
         employeePrlDisputePrlDFormLbl.setForeground(new java.awt.Color(255, 255, 255));
-        employeePrlDisputePrlDFormLbl.setText("Payroll Dispute Form");
+        employeePrlDisputePrlDFormLbl.setText("Payslip Dispute Form");
         employeePrlDisputePrlDFormLbl.setToolTipText("");
 
         javax.swing.GroupLayout employeePrlDisputePrlDFormPnlLayout = new javax.swing.GroupLayout(employeePrlDisputePrlDFormPnl);
@@ -505,7 +505,7 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
         employeePrlDisputeFADisputeLbl.setBackground(new java.awt.Color(255, 255, 255));
         employeePrlDisputeFADisputeLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         employeePrlDisputeFADisputeLbl.setForeground(new java.awt.Color(31, 41, 55));
-        employeePrlDisputeFADisputeLbl.setText(" File A Payroll Dispute");
+        employeePrlDisputeFADisputeLbl.setText(" File A Payslip Dispute");
         employeePrlDisputeFADisputeLbl.setToolTipText("");
 
         javax.swing.GroupLayout employeePrlDisputeFADisputePnlLayout = new javax.swing.GroupLayout(employeePrlDisputeFADisputePnl);
@@ -681,7 +681,7 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
     private void employeePrlDisputeMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlDisputeMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeePrlDisputeMainDashboardBtnActionPerformed
 
     private void employeePrlDisputePylBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlDisputePylBtnActionPerformed
@@ -725,7 +725,7 @@ public class EmployeePayrollDisputeUI extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new EmployeePayrollDisputeUI().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new EmployeePayslipDisputeUI().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -291,7 +291,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
     private void hrRListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRListMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_hrRListMainDashboardBtnActionPerformed
 
     private void hrRListRListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRListRListBtnActionPerformed

@@ -300,7 +300,7 @@ public class HRDisputeListUI extends javax.swing.JFrame {
     private void hrDListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDListMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_hrDListMainDashboardBtnActionPerformed
 
     private void hrDListDListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrDListDListBtnActionPerformed

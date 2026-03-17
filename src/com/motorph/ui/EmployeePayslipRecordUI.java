@@ -113,7 +113,7 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
         employeePylRecordPrlDisputeBtn.setBackground(new java.awt.Color(30, 42, 56));
         employeePylRecordPrlDisputeBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         employeePylRecordPrlDisputeBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePylRecordPrlDisputeBtn.setText("Payroll Dispute");
+        employeePylRecordPrlDisputeBtn.setText("Payslip Dispute");
         employeePylRecordPrlDisputeBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         employeePylRecordPrlDisputeBtn.addActionListener(this::employeePylRecordPrlDisputeBtnActionPerformed);
 
@@ -364,13 +364,13 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
     private void employeePylRecordMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeePylRecordMainDashboardBtnActionPerformed
 
     private void employeePylRecordPrlDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPrlDisputeBtnActionPerformed
         // TODO add your handling code here:
         
-        GuiUtil.openFrame(this, new EmployeePayrollDisputeUI());
+        GuiUtil.openFrame(this, new EmployeePayslipDisputeUI());
         
                                                   
     }//GEN-LAST:event_employeePylRecordPrlDisputeBtnActionPerformed

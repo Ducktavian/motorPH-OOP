@@ -512,7 +512,7 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
     private void financePrlDDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDDetailsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_financePrlDDetailsMainDashboardBtnActionPerformed
 
     private void financePrlDDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDDetailsApproveBtnActionPerformed

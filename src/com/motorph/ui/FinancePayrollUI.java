@@ -153,8 +153,8 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financePrlCreatePylLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
         financePrlCreatePylLbl.setForeground(new java.awt.Color(255, 255, 255));
-        financePrlCreatePylLbl.setText("Payroll Record");
-        financePrlCreatePylPnl.add(financePrlCreatePylLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 180, 46));
+        financePrlCreatePylLbl.setText("Generate Payroll");
+        financePrlCreatePylPnl.add(financePrlCreatePylLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 210, 46));
         financePrlCreatePylLbl.getAccessibleContext().setAccessibleName("financePrlCreatePylLbl");
 
         financePrlSidebarBtn.setBackground(new java.awt.Color(30, 58, 138));
@@ -180,7 +180,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financePrlPrlDetailsBtn1.setBackground(new java.awt.Color(30, 42, 56));
         financePrlPrlDetailsBtn1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         financePrlPrlDetailsBtn1.setForeground(new java.awt.Color(255, 255, 255));
-        financePrlPrlDetailsBtn1.setText("Generate Payslip");
+        financePrlPrlDetailsBtn1.setText("Payroll");
         financePrlPrlDetailsBtn1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         financePrlPrlDetailsBtn1.addActionListener(this::financePrlPrlDetailsBtn1ActionPerformed);
 
@@ -649,37 +649,35 @@ public class FinancePayrollUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(financePrlSidebarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(employeePylCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
+                        .addGap(33, 33, 33)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(employeePylCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(financePrlCreatePylPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financePrlENameLbl)
+                            .addComponent(financePrlENumberLbl))
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(financePrlENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financePrlENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(42, 42, 42)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(financePrlPrlPeriodLbl)
+                            .addComponent(financePrlPrlDateLbl))
+                        .addGap(22, 22, 22)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(33, 33, 33)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(financePrlENameLbl)
-                                    .addComponent(financePrlENumberLbl))
-                                .addGap(29, 29, 29)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(financePrlENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(financePrlENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(42, 42, 42)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(financePrlPrlPeriodLbl)
-                                    .addComponent(financePrlPrlDateLbl))
-                                .addGap(22, 22, 22)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jMonthChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jYearChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(financePrlPrlPeriodCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(jMonthChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jYearChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(financePrlPrlPeriodCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(206, 206, 206)
+                        .addGap(194, 194, 194)
                         .addComponent(financePrlPDFBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(39, 39, 39)
-                        .addComponent(financePrlSendPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(financePrlSendPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(financePrlCreatePylPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -687,7 +685,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(financePrlCreatePylPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(9, 9, 9)
@@ -740,7 +738,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     private void financePrlMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_financePrlMainDashboardBtnActionPerformed
 
     private void financePrlPrlDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlPrlDetailsBtnActionPerformed

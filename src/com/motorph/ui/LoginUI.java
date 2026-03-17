@@ -186,7 +186,7 @@ public class LoginUI extends javax.swing.JFrame {
             // Hide current LoginUI
             this.dispose();
             
-            new MainDashboardUI().setVisible(true);
+            new MainAdminDashboardUI().setVisible(true);
             
             String role = user.getRole().toString().trim();
             

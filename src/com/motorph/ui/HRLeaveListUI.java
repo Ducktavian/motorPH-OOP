@@ -344,7 +344,7 @@ public class HRLeaveListUI extends javax.swing.JFrame {
     private void hrLListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLListMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_hrLListMainDashboardBtnActionPerformed
 
     private void hrLListLListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLListLListBtnActionPerformed

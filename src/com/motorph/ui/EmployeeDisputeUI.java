@@ -504,7 +504,7 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeeDisputeMainDashboardBtnActionPerformed
 
     private void formComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentHidden

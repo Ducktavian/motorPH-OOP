@@ -305,7 +305,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Payroll Dispute"/>
+            <Property name="text" type="java.lang.String" value="Payslip Dispute"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
@@ -599,7 +599,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Payroll Dispute Form"/>
+                <Property name="text" type="java.lang.String" value="Payslip Dispute Form"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
               <AccessibilityProperties>
@@ -740,7 +740,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value=" File A Payroll Dispute"/>
+                    <Property name="text" type="java.lang.String" value=" File A Payslip Dispute"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <AccessibilityProperties>

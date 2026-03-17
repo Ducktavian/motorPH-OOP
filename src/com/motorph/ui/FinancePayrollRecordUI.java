@@ -386,13 +386,13 @@ public class FinancePayrollRecordUI extends javax.swing.JFrame {
     private void employeePylRecordMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeePylRecordMainDashboardBtnActionPerformed
 
     private void employeePylRecordPrlDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordPrlDisputeBtnActionPerformed
         // TODO add your handling code here:
         
-        GuiUtil.openFrame(this, new EmployeePayrollDisputeUI());
+        GuiUtil.openFrame(this, new EmployeePayslipDisputeUI());
         
                                                   
     }//GEN-LAST:event_employeePylRecordPrlDisputeBtnActionPerformed

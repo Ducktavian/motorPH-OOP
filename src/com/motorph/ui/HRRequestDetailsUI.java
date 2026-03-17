@@ -353,7 +353,7 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
     private void hrRDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_hrRDetailsMainDashboardBtnActionPerformed
 
     private void hrRDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsApproveBtnActionPerformed

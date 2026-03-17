@@ -461,7 +461,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
     private void financePrlDListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_financePrlDListMainDashboardBtnActionPerformed
 
     private void financePrlDListPylBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListPylBtnActionPerformed

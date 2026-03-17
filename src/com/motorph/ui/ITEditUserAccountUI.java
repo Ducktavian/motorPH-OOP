@@ -437,7 +437,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private void itEditUAccMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_itEditUAccMainDashboardBtnActionPerformed
 
     private void itEditUAccEditUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccEditUAccBtnActionPerformed
@@ -490,7 +490,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
     private void itEditUserUpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {                                                     
         // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUAccResetPasswordBtnActionPerformed
+    }                                                          
 
     /**
      * @param args the command line arguments

@@ -436,7 +436,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
     private void itAddUAccMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_itAddUAccMainDashboardBtnActionPerformed
 
     private void itAddUAccEditUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccEditUAccBtnActionPerformed

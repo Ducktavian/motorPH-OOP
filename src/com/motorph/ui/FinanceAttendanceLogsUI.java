@@ -422,7 +422,7 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
     private void financeAttLogsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_financeAttLogsMainDashboardBtnActionPerformed
 
     private void financeAttLogsEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsEntENumberFldActionPerformed

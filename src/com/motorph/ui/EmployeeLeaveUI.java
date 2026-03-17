@@ -549,7 +549,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
     private void employeeLeaveMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_employeeLeaveMainDashboardBtnActionPerformed
 
     private void employeeLeaveSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveSubmitBtnActionPerformed

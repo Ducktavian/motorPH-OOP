@@ -438,7 +438,7 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
     private void itSysToolsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new MainDashboardUI().setVisible(true);
+        new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_itSysToolsMainDashboardBtnActionPerformed
 
     private void itSysToolsAddBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsAddBtnActionPerformed
