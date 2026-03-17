@@ -76,8 +76,8 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
         employeePrlRecordMainDashboardBtn = new javax.swing.JButton();
         employeePrlRecordMotorPHIconImgLbl = new javax.swing.JLabel();
         employeePrlRecordPrlDisputeBtn = new javax.swing.JButton();
-        employeePrlRecordPrlRecordPnl = new javax.swing.JPanel();
-        employeePrlRecordPrlRecordLbl = new javax.swing.JLabel();
+        employeePrlDetailsPrlRecordsPnl = new javax.swing.JPanel();
+        employeePrlDetailsPrlRecordsLbl = new javax.swing.JLabel();
         employeePrlRecordBrdrPnl = new javax.swing.JPanel();
         employeePrlRecordBrdrScrlPnl = new javax.swing.JScrollPane();
         employeePrlRecordTbl = new javax.swing.JTable();
@@ -162,28 +162,28 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
         employeePrlRecordMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("employeePrlRecordMotorPHIconImgLbl");
         employeePrlRecordPrlDisputeBtn.getAccessibleContext().setAccessibleName("employeePrlRecordPrlDisputeBtn");
 
-        employeePrlRecordPrlRecordPnl.setBackground(new java.awt.Color(30, 58, 138));
-        employeePrlRecordPrlRecordPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        employeePrlRecordPrlRecordPnl.setForeground(new java.awt.Color(30, 58, 138));
+        employeePrlDetailsPrlRecordsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        employeePrlDetailsPrlRecordsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePrlDetailsPrlRecordsPnl.setForeground(new java.awt.Color(30, 58, 138));
 
-        employeePrlRecordPrlRecordLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        employeePrlRecordPrlRecordLbl.setForeground(new java.awt.Color(255, 255, 255));
-        employeePrlRecordPrlRecordLbl.setText("Payroll Record");
+        employeePrlDetailsPrlRecordsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        employeePrlDetailsPrlRecordsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        employeePrlDetailsPrlRecordsLbl.setText("Payroll Records");
 
-        javax.swing.GroupLayout employeePrlRecordPrlRecordPnlLayout = new javax.swing.GroupLayout(employeePrlRecordPrlRecordPnl);
-        employeePrlRecordPrlRecordPnl.setLayout(employeePrlRecordPrlRecordPnlLayout);
-        employeePrlRecordPrlRecordPnlLayout.setHorizontalGroup(
-            employeePrlRecordPrlRecordPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePrlRecordPrlRecordPnlLayout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(employeePrlRecordPrlRecordLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+        javax.swing.GroupLayout employeePrlDetailsPrlRecordsPnlLayout = new javax.swing.GroupLayout(employeePrlDetailsPrlRecordsPnl);
+        employeePrlDetailsPrlRecordsPnl.setLayout(employeePrlDetailsPrlRecordsPnlLayout);
+        employeePrlDetailsPrlRecordsPnlLayout.setHorizontalGroup(
+            employeePrlDetailsPrlRecordsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(employeePrlDetailsPrlRecordsPnlLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(employeePrlDetailsPrlRecordsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        employeePrlRecordPrlRecordPnlLayout.setVerticalGroup(
-            employeePrlRecordPrlRecordPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(employeePrlRecordPrlRecordLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+        employeePrlDetailsPrlRecordsPnlLayout.setVerticalGroup(
+            employeePrlDetailsPrlRecordsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(employeePrlDetailsPrlRecordsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        employeePrlRecordPrlRecordLbl.getAccessibleContext().setAccessibleName("employeePrlRecordPrlRecordLbl");
+        employeePrlDetailsPrlRecordsLbl.getAccessibleContext().setAccessibleName("employeePrlRecordPrlRecordLbl");
 
         employeePrlRecordBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
 
@@ -365,8 +365,8 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(employeePrlRecordPrlRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(64, 64, 64)
+                        .addComponent(employeePrlDetailsPrlRecordsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(employeePrlRecordSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(employeePrlRecordBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(14, Short.MAX_VALUE))
@@ -375,8 +375,8 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(employeePrlRecordPrlRecordPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(employeePrlDetailsPrlRecordsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(employeePrlRecordSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(employeePrlRecordBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -385,7 +385,7 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
         );
 
         employeePrlRecordSidebarPnl.getAccessibleContext().setAccessibleName("employeePrlRecordSidebarPnl");
-        employeePrlRecordPrlRecordPnl.getAccessibleContext().setAccessibleName("employeePrlRecordPrlRecordPnl");
+        employeePrlDetailsPrlRecordsPnl.getAccessibleContext().setAccessibleName("employeePrlRecordPrlRecordPnl");
         employeePrlRecordBrdrPnl.getAccessibleContext().setAccessibleName("employeePrlRecordBrdrPnl");
         employeePrlRecordSearchPnl.getAccessibleContext().setAccessibleName("employeePrlRecordSearchPnl");
 
@@ -435,6 +435,8 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel employeePrlDetailsPrlRecordsLbl;
+    private javax.swing.JPanel employeePrlDetailsPrlRecordsPnl;
     private javax.swing.JPanel employeePrlRecordBrdrPnl;
     private javax.swing.JScrollPane employeePrlRecordBrdrScrlPnl;
     private javax.swing.JTextField employeePrlRecordEntENumberFld;
@@ -442,8 +444,6 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
     private javax.swing.JButton employeePrlRecordMainDashboardBtn;
     private javax.swing.JLabel employeePrlRecordMotorPHIconImgLbl;
     private javax.swing.JButton employeePrlRecordPrlDisputeBtn;
-    private javax.swing.JLabel employeePrlRecordPrlRecordLbl;
-    private javax.swing.JPanel employeePrlRecordPrlRecordPnl;
     private javax.swing.JLabel employeePrlRecordSearchIconImgLbl;
     private javax.swing.JPanel employeePrlRecordSearchPnl;
     private javax.swing.JPanel employeePrlRecordSidebarPnl;

@@ -47,9 +47,6 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
         itDDetailsTTypeCbx = new javax.swing.JComboBox<>();
         itDDetailsReasonLbl = new javax.swing.JLabel();
         itDDetailsReasonFld = new javax.swing.JTextField();
-        itDDetailsSubmitBtn = new javax.swing.JButton();
-        itDDetailsDateDtChsr = new com.toedter.calendar.JDateChooser();
-        itDDetailsDateLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1000, 700));
@@ -208,21 +205,6 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
         itDDetailsReasonFld.setEnabled(false);
         itDDetailsReasonFld.addActionListener(this::itDDetailsReasonFldActionPerformed);
 
-        itDDetailsSubmitBtn.setBackground(new java.awt.Color(59, 130, 246));
-        itDDetailsSubmitBtn.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        itDDetailsSubmitBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itDDetailsSubmitBtn.setText("Submit");
-        itDDetailsSubmitBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
-        itDDetailsSubmitBtn.addActionListener(this::itDDetailsSubmitBtnActionPerformed);
-
-        itDDetailsDateDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itDDetailsDateDtChsr.setForeground(new java.awt.Color(31, 41, 55));
-        itDDetailsDateDtChsr.setEnabled(false);
-
-        itDDetailsDateLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itDDetailsDateLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itDDetailsDateLbl.setText("Date");
-
         javax.swing.GroupLayout itDDetailsFADisputeBrdrPnlLayout = new javax.swing.GroupLayout(itDDetailsFADisputeBrdrPnl);
         itDDetailsFADisputeBrdrPnl.setLayout(itDDetailsFADisputeBrdrPnlLayout);
         itDDetailsFADisputeBrdrPnlLayout.setHorizontalGroup(
@@ -233,66 +215,52 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
                     .addComponent(itDDetailsReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itDDetailsReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(itDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
-                        .addGroup(itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(itDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itDDetailsDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(27, 27, 27)
-                        .addGroup(itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(itDDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(itDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(itDDetailsTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(207, 207, 207)
-                                .addComponent(itDDetailsSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addComponent(itDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(itDDetailsTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
         itDDetailsFADisputeBrdrPnlLayout.setVerticalGroup(
             itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
+                .addGap(16, 16, 16)
                 .addGroup(itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(itDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itDDetailsSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itDDetailsTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(itDDetailsFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itDDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itDDetailsDateLbl))
-                .addGap(5, 5, 5)
+                    .addComponent(itDDetailsTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(itDDetailsReasonLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(itDDetailsReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
+                .addGap(41, 41, 41))
         );
 
         itDDetailsFADisputePnl.getAccessibleContext().setAccessibleName("itDDetailsFADisputePnl");
         itDDetailsTTypeCbx.getAccessibleContext().setAccessibleName("itDDetailsTTypeCbx");
         itDDetailsReasonLbl.getAccessibleContext().setAccessibleName("itDDetailsReasonLbl");
         itDDetailsReasonFld.getAccessibleContext().setAccessibleName("itDDetailsReasonFld");
-        itDDetailsSubmitBtn.getAccessibleContext().setAccessibleName("itDDetailsSubmitBtn");
-        itDDetailsDateDtChsr.getAccessibleContext().setAccessibleName("itDDetailsDateDtChsr");
-        itDDetailsDateLbl.getAccessibleContext().setAccessibleName("itDDetailsDateLbl");
 
         javax.swing.GroupLayout itDDetailsDFormBrdrPnlLayout = new javax.swing.GroupLayout(itDDetailsDFormBrdrPnl);
         itDDetailsDFormBrdrPnl.setLayout(itDDetailsDFormBrdrPnlLayout);
         itDDetailsDFormBrdrPnlLayout.setHorizontalGroup(
             itDDetailsDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itDDetailsDFormBrdrPnlLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(itDDetailsFADisputeBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsDFormBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(itDDetailsDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(257, 257, 257))
+                .addContainerGap(18, Short.MAX_VALUE)
+                .addGroup(itDDetailsDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsDFormBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(itDDetailsFADisputeBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsDFormBrdrPnlLayout.createSequentialGroup()
+                        .addComponent(itDDetailsDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(261, 261, 261))))
         );
         itDDetailsDFormBrdrPnlLayout.setVerticalGroup(
             itDDetailsDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsDFormBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
+                .addContainerGap(24, Short.MAX_VALUE)
                 .addComponent(itDDetailsDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(itDDetailsFADisputeBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
+                .addComponent(itDDetailsFADisputeBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
         );
 
         itDDetailsDFormPnl.getAccessibleContext().setAccessibleName("itDDetailsDFormPnl");
@@ -324,12 +292,12 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
                 .addComponent(itDDetailsDDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itDDetailsDFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itDDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itDDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itDDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(237, Short.MAX_VALUE))
+                .addContainerGap(273, Short.MAX_VALUE))
             .addComponent(itDDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -373,10 +341,6 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itDDetailsReasonFldActionPerformed
 
-    private void itDDetailsSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDDetailsSubmitBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itDDetailsSubmitBtnActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -410,8 +374,6 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
     private javax.swing.JPanel itDDetailsDFormBrdrPnl;
     private javax.swing.JLabel itDDetailsDFormLbl;
     private javax.swing.JPanel itDDetailsDFormPnl;
-    private com.toedter.calendar.JDateChooser itDDetailsDateDtChsr;
-    private javax.swing.JLabel itDDetailsDateLbl;
     private javax.swing.JButton itDDetailsDenyBtn;
     private javax.swing.JPanel itDDetailsFADisputeBrdrPnl;
     private javax.swing.JLabel itDDetailsFADisputeLbl;
@@ -421,7 +383,6 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
     private javax.swing.JTextField itDDetailsReasonFld;
     private javax.swing.JLabel itDDetailsReasonLbl;
     private javax.swing.JPanel itDDetailsSidebarPnl;
-    private javax.swing.JButton itDDetailsSubmitBtn;
     private javax.swing.JComboBox<String> itDDetailsTTypeCbx;
     // End of variables declaration//GEN-END:variables
 }

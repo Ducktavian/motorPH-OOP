@@ -47,8 +47,8 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         hrRDetailsDateLbl = new javax.swing.JLabel();
         hrRDetailsReasonFld = new javax.swing.JTextField();
         hrRDetailsHourFld = new javax.swing.JTextField();
-        hrRDetailsRTypeCbx = new javax.swing.JComboBox<>();
         hrRDetailsDateDtChsr = new com.toedter.calendar.JDateChooser();
+        hrRDetailsRTypeFld = new javax.swing.JTextField();
         hrRDetailsApproveBtn = new javax.swing.JButton();
         hrRDetailsDenyBtn = new javax.swing.JButton();
 
@@ -198,40 +198,44 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         hrRDetailsHourFld.setEnabled(false);
         hrRDetailsHourFld.addActionListener(this::hrRDetailsHourFldActionPerformed);
 
-        hrRDetailsRTypeCbx.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsRTypeCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Overtime", "Undertime" }));
-        hrRDetailsRTypeCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrRDetailsRTypeCbx.setEnabled(false);
-
         hrRDetailsDateDtChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrRDetailsDateDtChsr.setForeground(new java.awt.Color(31, 41, 55));
         hrRDetailsDateDtChsr.setEnabled(false);
+
+        hrRDetailsRTypeFld.setForeground(new java.awt.Color(31, 41, 55));
+        hrRDetailsRTypeFld.setText(" ");
+        hrRDetailsRTypeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsRTypeFld.setEnabled(false);
+        hrRDetailsRTypeFld.addActionListener(this::hrRDetailsRTypeFldActionPerformed);
 
         javax.swing.GroupLayout hrRDetailsFARequestBrdrPnlLayout = new javax.swing.GroupLayout(hrRDetailsFARequestBrdrPnl);
         hrRDetailsFARequestBrdrPnl.setLayout(hrRDetailsFARequestBrdrPnlLayout);
         hrRDetailsFARequestBrdrPnlLayout.setHorizontalGroup(
             hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
+            .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrRDetailsReasonFld)
                     .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(hrRDetailsDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(254, 254, 254)
-                        .addComponent(hrRDetailsHourLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
-                        .addComponent(hrRDetailsHourFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(hrRDetailsReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
                         .addGroup(hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrRDetailsReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(hrRDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
-                                    .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(hrRDetailsRTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(16, 16, 16))
+                            .addComponent(hrRDetailsReasonFld)
+                            .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(hrRDetailsDateLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(254, 254, 254)
+                                .addComponent(hrRDetailsHourLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                                .addComponent(hrRDetailsHourFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
+                                .addGroup(hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(hrRDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
+                                        .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(hrRDetailsRTypeFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(16, 16, 16))))
         );
         hrRDetailsFARequestBrdrPnlLayout.setVerticalGroup(
             hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -241,7 +245,7 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
                     .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
                         .addGroup(hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrRDetailsRTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(hrRDetailsRTypeFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(hrRDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -249,9 +253,9 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
                     .addGroup(hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(hrRDetailsHourFld, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(hrRDetailsHourLbl)))
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addComponent(hrRDetailsReasonLbl)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(hrRDetailsReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(19, Short.MAX_VALUE))
         );
@@ -262,7 +266,6 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         hrRDetailsDateLbl.getAccessibleContext().setAccessibleName("hrRDetailsDateLbl");
         hrRDetailsReasonFld.getAccessibleContext().setAccessibleName("hrRDetailsReasonFld");
         hrRDetailsHourFld.getAccessibleContext().setAccessibleName("hrRDetailsHourFld");
-        hrRDetailsRTypeCbx.getAccessibleContext().setAccessibleName("hrRDetailsRTypeCbx");
         hrRDetailsDateDtChsr.getAccessibleContext().setAccessibleName("hrRDetailsDateDtChsr");
 
         javax.swing.GroupLayout hrRDetailsRFormBrdrPnlLayout = new javax.swing.GroupLayout(hrRDetailsRFormBrdrPnl);
@@ -377,6 +380,10 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_hrRDetailsHourFldActionPerformed
 
+    private void hrRDetailsRTypeFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsRTypeFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrRDetailsRTypeFldActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -420,7 +427,7 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
     private javax.swing.JPanel hrRDetailsRFormPnl;
     private javax.swing.JLabel hrRDetailsRListLbl;
     private javax.swing.JPanel hrRDetailsRListPnl;
-    private javax.swing.JComboBox<String> hrRDetailsRTypeCbx;
+    private javax.swing.JTextField hrRDetailsRTypeFld;
     private javax.swing.JTextField hrRDetailsReasonFld;
     private javax.swing.JLabel hrRDetailsReasonLbl;
     private javax.swing.JPanel hrRDetailsSidebarPnl;
