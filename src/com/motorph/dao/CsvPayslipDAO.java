@@ -214,6 +214,13 @@ public class CsvPayslipDAO implements PayslipDAO {
         return false;
     }
     
+   @Override
+   public List<Payslip> getAllPayslips() {
+       loadAllPayslips();
+       return cache;
+   } 
+    
+    
     // Helper
     public boolean isEmpty() {
         File file = new File(FILE_PATH);

@@ -18,11 +18,17 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinancePayrollUI.class.getName());
     private EmployeeService empService;
+    private Payslip payslip;
     
    
-    public FinancePayrollUI() {
+    public FinancePayrollUI(Payslip payslip) {
         this.empService = AppContext.getEmployeeService();
+        this.payslip = payslip;
         initComponents();
+        
+        Employee emp = empService.findEmployee(payslip.getEmployeeNumber());
+        populateEmployeeFields(emp);
+        populateSalaryCalculations(payslip);
     }
     
   
@@ -30,16 +36,47 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     private void populateEmployeeFields(Employee emp) {
         financeGPrlENameFld.setText(emp.getFullName());
         financeGPrlENumberFld.setText(emp.getEmployeeNumber());
-        
+        financeGPrlPrlPeriodCbx.setSelectedItem(payslip.getPayrollPeriod().toString());
     }
-    
-    private void clearFields() {
-        
-    }
+  
     
     private void populateSalaryCalculations(Payslip payslip) {
         
-      
+        Employee emp = empService.findEmployee(payslip.getEmployeeNumber());
+        
+        financeGPrlBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
+
+        financeGPrlOvertimeFld.setText("");
+
+        financeGPrlHrsWorkedFld.setText("");
+
+        financeGPrlHourlyRateFld.setText(String.valueOf(emp.getHourlyRate()));
+
+        financeGPrlRiceSubsidyFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()));
+
+        financeGPrlPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()))
+;
+        financeGPrlCltAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()));
+
+        financeGPrlTGrossFld.setText("");
+
+
+
+        financeGPrlSSSFld.setText(String.valueOf(payslip.getDeductionBreakdown().getSss()));
+
+        financeGPrlPagIbigFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPhilHealth()));
+
+        financeGPrlPhilHealthFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPagIbig()));
+
+        financeGPrlWithtaxFld.setText(String.valueOf(payslip.getDeductionBreakdown().getWithholdingTax()));
+
+        financeGPrlUndertimeFld.setText("");
+
+        financeGPrlTDeductionFld.setText(String.valueOf(payslip.getDeductionBreakdown().getTotal()));
+
+
+
+        financeGPrlNetPayFld.setText(String.valueOf(payslip.getNetPay()));
 
     }
 
@@ -199,7 +236,6 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financeGPrlENumberLbl.setText("Employee #");
 
         financeGPrlPrlPeriodCbx.setForeground(new java.awt.Color(31, 41, 55));
-        financeGPrlPrlPeriodCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "1st cutoff (1st-15th)", "2nd cutoff (16th-end)" }));
         financeGPrlPrlPeriodCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 1, true));
 
         financeGPrlSCalculatorBrdrPnl.setBackground(new java.awt.Color(146, 192, 253));
@@ -576,7 +612,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                         .addComponent(financeGPrlNetPayLbl)
                         .addGap(32, 32, 32)
                         .addComponent(financeGPrlNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeGPrlSCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(financeGPrlSCalculatorLbl)
@@ -775,30 +811,6 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_financeGPrlBackBtnActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FinancePayrollUI().setVisible(true));
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton financeGPrlBackBtn;
@@ -833,7 +845,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     private javax.swing.JLabel financeGPrlPrlDateLbl;
     private javax.swing.JLabel financeGPrlPrlDetailsLbl;
     private javax.swing.JPanel financeGPrlPrlDetailsPnl;
-    private javax.swing.JComboBox<String> financeGPrlPrlPeriodCbx;
+    private javax.swing.JComboBox<Object> financeGPrlPrlPeriodCbx;
     private javax.swing.JLabel financeGPrlPrlPeriodLbl;
     private javax.swing.JTextField financeGPrlRiceSubsidyFld;
     private javax.swing.JLabel financeGPrlRiceSubsidyLbl;

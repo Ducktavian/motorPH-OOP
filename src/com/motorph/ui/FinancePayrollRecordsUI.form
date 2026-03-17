@@ -140,7 +140,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Payroll Details"/>
+            <Property name="text" type="java.lang.String" value="Payroll Records"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
           <AccessibilityProperties>
@@ -326,11 +326,11 @@
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="5" rowCount="100">
-                    <Column editable="true" title="Payslip ID" type="java.lang.Integer"/>
-                    <Column editable="true" title="Employee #" type="java.lang.String"/>
-                    <Column editable="true" title="Employee Name" type="java.lang.String"/>
-                    <Column editable="true" title="Payroll Date" type="java.lang.String"/>
-                    <Column editable="true" title="Payroll Details" type="java.lang.String"/>
+                    <Column editable="false" title="Payslip ID" type="java.lang.Integer"/>
+                    <Column editable="false" title="Employee #" type="java.lang.String"/>
+                    <Column editable="false" title="Employee Name" type="java.lang.String"/>
+                    <Column editable="false" title="Payroll Date" type="java.lang.String"/>
+                    <Column editable="false" title="Payroll Details" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

@@ -71,6 +71,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                     q.getLeaveType() != null ? q.getLeaveType().toString() : "N/A",
                     q.getStartDate(),
                     q.getEndDate(),
+                    q.getDateFiled(),
                     q.getStatus()
                 };
 

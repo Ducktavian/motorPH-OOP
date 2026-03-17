@@ -18,10 +18,12 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayslipUI.class.getName());
     private EmployeeService empService;
+    private Payslip payslip;
     /**
      * Creates new form EmployeePayslipFrame
      */
     public EmployeePayslipUI(Payslip payslip) {
+        this.payslip = payslip;
         initComponents();
         
         this.empService = new EmployeeService(new CsvEmployeeDAO());
@@ -34,7 +36,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         employeePylENameFld.setText(payslip.getEmployeeName());
         employeePylENumberFld.setText(payslip.getEmployeeNumber());
         employeePylPrlDateFld.setText(payslip.getPeriodStart() + " - " + payslip.getPeriodEnd());
-        employeePylPrlPeriodFld.setText("Nothin yet");
+        employeePylPrlPeriodFld.setText(payslip.getPayrollPeriod().toString());
         
     }
     
@@ -45,6 +47,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         employeePylBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
         employeePylOvertimeFld.setText("");
         employeePylHrsWorkedFld.setText("");
+        employeePylHourlyRateFld.setText(String.valueOf(emp.getHourlyRate()));
         employeePylRiceSubsidyFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()));
         employeePylPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()));
         employeePylCltAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()));
@@ -854,6 +857,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
     private void employeePylFADisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylFADisputeBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new EmployeePayslipDisputeUI(payslip));
     }//GEN-LAST:event_employeePylFADisputeBtnActionPerformed
 
     private void employeePylBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylBackBtnActionPerformed

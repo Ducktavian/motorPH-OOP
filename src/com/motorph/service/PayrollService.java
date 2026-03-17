@@ -78,6 +78,9 @@ public class PayrollService {
         if (isSecondCutoff(periodEnd)) {
             deductionBreakdown = computeMonthlyDeductions(employee, monthlyGross);
             totalDeductions = deductionBreakdown.getTotal();
+        } else {
+            deductionBreakdown = computeMonthlyDeductions();
+            totalDeductions = deductionBreakdown.getTotal();
         }
        
         // Compute Netpay
@@ -117,6 +120,9 @@ public class PayrollService {
         return payslipDAO.findPayslipById(payslipId);
     }
     
+    public List<Payslip> getAllPayslips() {
+        return payslipDAO.getAllPayslips();
+    }
 
     
     
@@ -130,6 +136,13 @@ public class PayrollService {
             );
         
         return allowances;
+    }
+    
+    // If first period return all zero
+    public DeductionBreakdown computeMonthlyDeductions() {
+        return new DeductionBreakdown(
+                0, 0, 0, 0
+        );
     }
     
     // Deductions are computed in monthly and deducted on the second cutoff

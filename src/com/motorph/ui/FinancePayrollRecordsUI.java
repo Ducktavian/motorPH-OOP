@@ -15,37 +15,58 @@ import com.motorph.util.AppContext;
 import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
 import java.util.List;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 /**
  *
  * @author Lenovo
  */
-public class FinancePayrollDetailsUI extends javax.swing.JFrame {
+public class FinancePayrollRecordsUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinancePayrollDetailsUI.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinancePayrollRecordsUI.class.getName());
 
     private PayrollService payrollService;
+    private TableRowSorter<DefaultTableModel> sorter;
+    
     /**
      * Creates new form EmployeePayslipRecordFrame
      */
-    public FinancePayrollDetailsUI() {
+    public FinancePayrollRecordsUI() {
         initComponents();
         
         initDataEngine();
         
         refreshTableData(Session.getCurrentUser().getEmployeeNumber());
+        
+        // Filter for table
+        DefaultTableModel model = (DefaultTableModel) employeePrlRecordTbl.getModel();
+        sorter = new TableRowSorter<>(model);
+        employeePrlRecordTbl.setRowSorter(sorter);
+    }
+    
+    private void performSearch() {
+        System.out.println("EVENT TRIGGERD");
+        String id = employeePrlRecordEntENumberFld.getText().trim();
+        
+        if (id.isEmpty()) {
+            
+            System.out.println("1");
+            sorter.setRowFilter(null);
+        } else {
+            sorter.setRowFilter(RowFilter.regexFilter("(?i)" + id, 0));
+            
+            System.out.println("2");
+        }
     }
     
      private void initDataEngine() {
-         
-         
          this.payrollService = AppContext.getPayrollService();
-     
      }
      
      private void refreshTableData(String empNumber) {  
-        List<Payslip> list = payrollService.findPayslipsByEmployee(empNumber);
+        List<Payslip> list = payrollService.getAllPayslips();
         DefaultTableModel model = (DefaultTableModel) employeePrlRecordTbl.getModel();
 
         model.setRowCount(0);     
@@ -53,8 +74,9 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
             
             Object[] row = {
                 p.getPayslipId(),
+                p.getEmployeeNumber(),
+                p.getEmployeeName(),
                 p.getPeriodStart() + " - " + p.getPeriodEnd(), // Date
-                p.getNetPay(),
                 "VIEW"
             };
             model.addRow(row);
@@ -99,7 +121,7 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
         employeePrllDetailsPrlRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
         employeePrllDetailsPrlRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         employeePrllDetailsPrlRecordBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePrllDetailsPrlRecordBtn.setText("Payroll Details");
+        employeePrllDetailsPrlRecordBtn.setText("Payroll Records");
         employeePrllDetailsPrlRecordBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         employeePrllDetailsPrlRecordBtn.addActionListener(this::employeePrllDetailsPrlRecordBtnActionPerformed);
 
@@ -301,9 +323,16 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
             }
         });
         employeePrlRecordTbl.setColumnSelectionAllowed(true);
@@ -394,7 +423,7 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
 
     private void employeePrlRecordGPrllBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordGPrllBtnActionPerformed
         // TODO add your handling code here:
-        
+        GuiUtil.openFrame(this, new FinanceGeneratePayrollUI());
     }//GEN-LAST:event_employeePrlRecordGPrllBtnActionPerformed
 
     private void employeePrllDetailsPrlRecordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrllDetailsPrlRecordBtnActionPerformed
@@ -408,8 +437,9 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
 
     private void employeePrlRecordPrlDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordPrlDisputeBtnActionPerformed
         // TODO add your handling code here:
+         GuiUtil.openFrame(this, new FinancePayrollDisputeList());
         
-        GuiUtil.openFrame(this, new EmployeePayslipDisputeUI());
+        
         
                                                   
     }//GEN-LAST:event_employeePrlRecordPrlDisputeBtnActionPerformed
@@ -421,12 +451,13 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
             int row = employeePrlRecordTbl.getSelectedRow();
             String payslipId = employeePrlRecordTbl.getValueAt(row, 0).toString();
             Payslip payslip = payrollService.findPayslipsById(payslipId.trim());
-            GuiUtil.openFrame(this, new EmployeePayslipUI(payslip));
+            GuiUtil.openFrame(this, new FinancePayrollUI(payslip));
         }
     }//GEN-LAST:event_employeePrlRecordTblMouseClicked
 
     private void employeePrlRecordEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordEntENumberFldActionPerformed
         // TODO add your handling code here:
+        performSearch();
     }//GEN-LAST:event_employeePrlRecordEntENumberFldActionPerformed
 
     /**

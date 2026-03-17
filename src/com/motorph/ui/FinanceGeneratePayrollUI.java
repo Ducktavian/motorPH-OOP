@@ -5,10 +5,15 @@
 package com.motorph.ui;
 
 import com.motorph.model.Employee;
+import com.motorph.model.PayrollPeriod;
 import com.motorph.model.Payslip;
 import com.motorph.service.EmployeeService;
+import com.motorph.service.PayrollService;
 import com.motorph.util.AppContext;
 import com.motorph.util.GuiUtil;
+import java.time.LocalDate;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -18,11 +23,25 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinanceGeneratePayrollUI.class.getName());
     private EmployeeService empService;
+    private PayrollService payrollService;
     
    
     public FinanceGeneratePayrollUI() {
         this.empService = AppContext.getEmployeeService();
+        this.payrollService = AppContext.getPayrollService();
         initComponents();
+        initComboBox();
+    }
+    
+    // Initializes leave type dropdown
+    private void initComboBox() {
+        PayrollPeriod[] periods = PayrollPeriod.values();
+        DefaultComboBoxModel<Object> model = new DefaultComboBoxModel<>();
+        model.addElement("Select Payroll Period");
+        for (PayrollPeriod period : periods) {
+            model.addElement(period);
+        }
+        financeGPrlPrlPeriodCbx.setModel(model);
     }
     
 
@@ -33,13 +52,91 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
         
     }
     
+    private void performSearch() {
+        String empNum = employeePrlRecordEntENumberFld.getText().trim();
+        Employee emp = empService.findEmployee(empNum);
+        
+        if (emp == null) {
+            clearFields();
+            
+        } else {
+            populateEmployeeFields(emp);
+            
+        }
+        
+    }
+    
     private void clearFields() {
         
     }
     
+    private Payslip generatePayslip(Employee emp) {
+        
+        Object selectedItem = financeGPrlPrlPeriodCbx.getSelectedItem();
+        if (!(selectedItem instanceof PayrollPeriod)) {
+            JOptionPane.showMessageDialog(null, "Please select a valid payroll period.");
+            return null;
+        }
+        
+        try {
+            int month = financeGPrlMChsr.getMonth() + 1; // 0 indexed
+            int year = financeGPrlYChsr.getYear();
+            PayrollPeriod selectedPeriod = (PayrollPeriod) financeGPrlPrlPeriodCbx.getSelectedItem();
+            
+            LocalDate start = selectedPeriod.getStartDate(year, month);
+            LocalDate end = selectedPeriod.getEndDate(year, month);
+            
+            if (start.isAfter(LocalDate.now())) {
+                JOptionPane.showMessageDialog(null, "Cannot generate payroll for a future date.");
+                return null;
+            }
+                        
+            return payrollService.generatePayslip(emp, start, end);
+                  
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error generating payslip: " + e.getMessage());
+            e.printStackTrace();
+            return null;
+        }
+    }
+    
     private void populateSalaryCalculations(Payslip payslip) {
         
-      
+        Employee emp = empService.findEmployee(payslip.getEmployeeNumber());
+        
+        financeGPrlBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
+
+        financeGPrlOvertimeFld.setText("");
+
+        financeGPrlHrsWorkedFld.setText("");
+
+        financeGPrlHourlyRateFld.setText(String.valueOf(emp.getHourlyRate()));
+
+        financeGPrlRiceSubsidyFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()));
+
+        financeGPrlPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()))
+;
+        financeGPrlCltAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()));
+
+        financeGPrlTGrossFld.setText("");
+
+
+
+        financeGPrlSSSFld.setText(String.valueOf(payslip.getDeductionBreakdown().getSss()));
+
+        financeGPrlPagIbigFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPhilHealth()));
+
+        financeGPrlPhilHealthFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPagIbig()));
+
+        financeGPrlWithtaxFld.setText(String.valueOf(payslip.getDeductionBreakdown().getWithholdingTax()));
+
+        financeGPrlUndertimeFld.setText("");
+
+        financeGPrlTDeductionFld.setText(String.valueOf(payslip.getDeductionBreakdown().getTotal()));
+
+
+
+        financeGPrlNetPayFld.setText(String.valueOf(payslip.getNetPay()));
 
     }
 
@@ -179,7 +276,7 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
         financeGPrlPrlDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
         financeGPrlPrlDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         financeGPrlPrlDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        financeGPrlPrlDetailsBtn.setText("Payroll Details");
+        financeGPrlPrlDetailsBtn.setText("Payroll Records");
         financeGPrlPrlDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         financeGPrlPrlDetailsBtn.addActionListener(this::financeGPrlPrlDetailsBtnActionPerformed);
 
@@ -257,7 +354,6 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
         financeGPrlUploadBtn.addActionListener(this::financeGPrlUploadBtnActionPerformed);
 
         financeGPrlPrlPeriodCbx.setForeground(new java.awt.Color(31, 41, 55));
-        financeGPrlPrlPeriodCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "1st cutoff (1st-15th)", "2nd cutoff (16th-end)" }));
         financeGPrlPrlPeriodCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(31, 41, 55), 1, true));
 
         financeGPrlSCalculatorBrdrPnl.setBackground(new java.awt.Color(146, 192, 253));
@@ -634,7 +730,7 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
                         .addComponent(financeGPrlNetPayLbl)
                         .addGap(32, 32, 32)
                         .addComponent(financeGPrlNetPayFld, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financeGPrlSCalculatorBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(financeGPrlSCalculatorLbl)
@@ -791,10 +887,31 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
 
     private void financeGPrlPrlDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlPrlDetailsBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new FinancePayrollRecordsUI());
     }//GEN-LAST:event_financeGPrlPrlDetailsBtnActionPerformed
 
     private void financeGPrlGenerateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlGenerateBtnActionPerformed
         // TODO add your handling code here:
+        try {
+            String employeeNumber = financeGPrlENumberFld.getText().trim();
+            if (employeeNumber == null || employeeNumber.isBlank() || employeeNumber.isEmpty()) {
+                throw new IllegalArgumentException("Search for an Employee first.");
+            }
+            
+            
+            Employee emp = empService.findEmployee(employeeNumber);
+            Payslip payslip = generatePayslip(emp);
+            populateSalaryCalculations(payslip);
+            
+            JOptionPane.showMessageDialog(this, "Payslip Generated Successfully!");
+            
+            
+        } catch (IllegalArgumentException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Validation Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "An unexpected error occurred: " + e.getMessage());
+        }
+       
     }//GEN-LAST:event_financeGPrlGenerateBtnActionPerformed
 
     private void financeGPrlUploadBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlUploadBtnActionPerformed
@@ -867,10 +984,12 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
 
     private void financeGPrlPrlDListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlPrlDListBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new FinancePayrollDisputeList());
     }//GEN-LAST:event_financeGPrlPrlDListBtnActionPerformed
 
     private void employeePrlRecordEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordEntENumberFldActionPerformed
         // TODO add your handling code here:
+        performSearch();
     }//GEN-LAST:event_employeePrlRecordEntENumberFldActionPerformed
 
     /**
@@ -937,7 +1056,7 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
     private javax.swing.JButton financeGPrlPrlDListBtn;
     private javax.swing.JLabel financeGPrlPrlDateLbl;
     private javax.swing.JButton financeGPrlPrlDetailsBtn;
-    private javax.swing.JComboBox<String> financeGPrlPrlPeriodCbx;
+    private javax.swing.JComboBox<Object> financeGPrlPrlPeriodCbx;
     private javax.swing.JLabel financeGPrlPrlPeriodLbl;
     private javax.swing.JTextField financeGPrlRiceSubsidyFld;
     private javax.swing.JLabel financeGPrlRiceSubsidyLbl;

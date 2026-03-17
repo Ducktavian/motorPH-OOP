@@ -682,7 +682,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Please enter numeric values for Salary and Allowances.", "Number Error", JOptionPane.ERROR_MESSAGE);
         } catch (IllegalArgumentException e) {
-            // This catches your specific validation rules (e.g., SSS must be 10 digits)
             JOptionPane.showMessageDialog(this, e.getMessage(), "Validation Error", JOptionPane.ERROR_MESSAGE);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "An unexpected error occurred: " + e.getMessage());

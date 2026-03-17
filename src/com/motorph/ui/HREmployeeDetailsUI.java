@@ -26,7 +26,6 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
     
     private void performSearch() {
         String id = hrEDetailsEntENumberFld.getText().trim();
-        System.out.println(id);
         Employee found = empService.findEmployee(id);
         if (found != null) {
             populateFields(found);
