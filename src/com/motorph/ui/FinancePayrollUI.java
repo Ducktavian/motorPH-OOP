@@ -67,12 +67,11 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financeGPrlPrlDateLbl = new javax.swing.JLabel();
         financeGPrlENameFld = new javax.swing.JTextField();
         financeGPrlPrlPeriodLbl = new javax.swing.JLabel();
-        financeGPrlGPrlPnl = new javax.swing.JPanel();
-        financeGPrlGPrlLbl = new javax.swing.JLabel();
+        financeGPrlPrlDetailsPnl = new javax.swing.JPanel();
+        financeGPrlPrlDetailsLbl = new javax.swing.JLabel();
         financeGPrlSidebarBtn = new javax.swing.JPanel();
         financeGPrlMainDashboardBtn = new javax.swing.JButton();
         financeGPrlMotorPHIconImgLbl = new javax.swing.JLabel();
-        financeGPrlPrlRecordDetailsBtn = new javax.swing.JButton();
         financeGPrlENumberLbl = new javax.swing.JLabel();
         financeGPrlPrlPeriodCbx = new javax.swing.JComboBox<>();
         financeGPrlSCalculatorBrdrPnl = new javax.swing.JPanel();
@@ -114,6 +113,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financeGPrlNetPayFld = new javax.swing.JTextField();
         financeGPrlMChsr = new com.toedter.calendar.JMonthChooser();
         financeGPrlYChsr = new com.toedter.calendar.JYearChooser();
+        financeGPrlBackBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -143,28 +143,29 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financeGPrlPrlPeriodLbl.setForeground(new java.awt.Color(31, 41, 55));
         financeGPrlPrlPeriodLbl.setText("Payroll Period");
 
-        financeGPrlGPrlPnl.setBackground(new java.awt.Color(30, 58, 138));
-        financeGPrlGPrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        financeGPrlGPrlPnl.setForeground(new java.awt.Color(30, 58, 138));
+        financeGPrlPrlDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        financeGPrlPrlDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeGPrlPrlDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
 
-        financeGPrlGPrlLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        financeGPrlGPrlLbl.setForeground(new java.awt.Color(255, 255, 255));
-        financeGPrlGPrlLbl.setText("Generate Payroll");
+        financeGPrlPrlDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        financeGPrlPrlDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        financeGPrlPrlDetailsLbl.setText("Payroll Details");
 
-        javax.swing.GroupLayout financeGPrlGPrlPnlLayout = new javax.swing.GroupLayout(financeGPrlGPrlPnl);
-        financeGPrlGPrlPnl.setLayout(financeGPrlGPrlPnlLayout);
-        financeGPrlGPrlPnlLayout.setHorizontalGroup(
-            financeGPrlGPrlPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(financeGPrlGPrlPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout financeGPrlPrlDetailsPnlLayout = new javax.swing.GroupLayout(financeGPrlPrlDetailsPnl);
+        financeGPrlPrlDetailsPnl.setLayout(financeGPrlPrlDetailsPnlLayout);
+        financeGPrlPrlDetailsPnlLayout.setHorizontalGroup(
+            financeGPrlPrlDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(financeGPrlPrlDetailsPnlLayout.createSequentialGroup()
                 .addGap(9, 9, 9)
-                .addComponent(financeGPrlGPrlLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(financeGPrlPrlDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        financeGPrlGPrlPnlLayout.setVerticalGroup(
-            financeGPrlGPrlPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(financeGPrlGPrlLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+        financeGPrlPrlDetailsPnlLayout.setVerticalGroup(
+            financeGPrlPrlDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(financeGPrlPrlDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        financeGPrlGPrlLbl.getAccessibleContext().setAccessibleName("financePrlGPrlLbl");
+        financeGPrlPrlDetailsLbl.getAccessibleContext().setAccessibleName("financePrlGPrlLbl");
 
         financeGPrlSidebarBtn.setBackground(new java.awt.Color(30, 58, 138));
         financeGPrlSidebarBtn.setPreferredSize(new java.awt.Dimension(262, 700));
@@ -179,13 +180,6 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financeGPrlMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        financeGPrlPrlRecordDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        financeGPrlPrlRecordDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        financeGPrlPrlRecordDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        financeGPrlPrlRecordDetailsBtn.setText("Payroll Record");
-        financeGPrlPrlRecordDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        financeGPrlPrlRecordDetailsBtn.addActionListener(this::financeGPrlPrlRecordDetailsBtnActionPerformed);
-
         javax.swing.GroupLayout financeGPrlSidebarBtnLayout = new javax.swing.GroupLayout(financeGPrlSidebarBtn);
         financeGPrlSidebarBtn.setLayout(financeGPrlSidebarBtnLayout);
         financeGPrlSidebarBtnLayout.setHorizontalGroup(
@@ -194,30 +188,21 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                 .addGap(92, 92, 92)
                 .addComponent(financeGPrlMainDashboardBtn))
             .addGroup(financeGPrlSidebarBtnLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(financeGPrlSidebarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(financeGPrlSidebarBtnLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(financeGPrlMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(financeGPrlPrlRecordDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(40, 40, 40)
+                .addComponent(financeGPrlMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         financeGPrlSidebarBtnLayout.setVerticalGroup(
             financeGPrlSidebarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(financeGPrlSidebarBtnLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(financeGPrlSidebarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(financeGPrlMotorPHIconImgLbl)
-                    .addGroup(financeGPrlSidebarBtnLayout.createSequentialGroup()
-                        .addGap(189, 189, 189)
-                        .addComponent(financeGPrlPrlRecordDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(409, 409, 409)
+                .addComponent(financeGPrlMotorPHIconImgLbl)
+                .addGap(447, 447, 447)
                 .addComponent(financeGPrlMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
         financeGPrlMainDashboardBtn.getAccessibleContext().setAccessibleName("financePrlMainDashboardBtn");
         financeGPrlMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("financePrlMotorPHIconImgLbl");
-        financeGPrlPrlRecordDetailsBtn.getAccessibleContext().setAccessibleName("financePrlPrlRecordDetailsBtn");
 
         financeGPrlENumberLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         financeGPrlENumberLbl.setForeground(new java.awt.Color(31, 41, 55));
@@ -630,6 +615,13 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
         financeGPrlYChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
+        financeGPrlBackBtn.setBackground(new java.awt.Color(30, 58, 138));
+        financeGPrlBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financeGPrlBackBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financeGPrlBackBtn.setText("Back");
+        financeGPrlBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        financeGPrlBackBtn.addActionListener(this::financeGPrlBackBtnActionPerformed);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -637,14 +629,6 @@ public class FinancePayrollUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(financeGPrlSidebarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(financeGPrlSCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(financeGPrlGPrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(488, 488, 488)))
-                        .addContainerGap(17, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(50, 50, 50)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -667,13 +651,20 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(financeGPrlYChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(financeGPrlPrlPeriodCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(48, 48, 48))))
+                        .addGap(48, 48, 48))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(financeGPrlBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financeGPrlSCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(financeGPrlPrlDetailsPnl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(17, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(financeGPrlGPrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financeGPrlPrlDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -697,6 +688,8 @@ public class FinancePayrollUI extends javax.swing.JFrame {
                             .addComponent(financeGPrlENameLbl))))
                 .addGap(18, 18, 18)
                 .addComponent(financeGPrlSCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(financeGPrlBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(financeGPrlSidebarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -706,7 +699,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         financeGPrlPrlDateLbl.getAccessibleContext().setAccessibleName("financePrlPrlDateLbl");
         financeGPrlENameFld.getAccessibleContext().setAccessibleName("financePrlENameFld");
         financeGPrlPrlPeriodLbl.getAccessibleContext().setAccessibleName("financePrlPrlPeriodLbl");
-        financeGPrlGPrlPnl.getAccessibleContext().setAccessibleName("financePrlGPrlPnl");
+        financeGPrlPrlDetailsPnl.getAccessibleContext().setAccessibleName("financePrlGPrlPnl");
         financeGPrlSidebarBtn.getAccessibleContext().setAccessibleName("financePrlSidebarBtn");
         financeGPrlENumberLbl.getAccessibleContext().setAccessibleName("financePrlENumberLbl");
         financeGPrlPrlPeriodCbx.getAccessibleContext().setAccessibleName("financePrlPrlPeriodCbx");
@@ -728,10 +721,6 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         this.dispose();
         new MainAdminDashboardUI().setVisible(true);
     }//GEN-LAST:event_financeGPrlMainDashboardBtnActionPerformed
-
-    private void financeGPrlPrlRecordDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlPrlRecordDetailsBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_financeGPrlPrlRecordDetailsBtnActionPerformed
 
     private void financeGPrlBasicSalaryFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlBasicSalaryFldActionPerformed
         // TODO add your handling code here:
@@ -793,6 +782,10 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_financeGPrlNetPayFldActionPerformed
 
+    private void financeGPrlBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlBackBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_financeGPrlBackBtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -819,6 +812,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton financeGPrlBackBtn;
     private javax.swing.JTextField financeGPrlBasicSalaryFld;
     private javax.swing.JLabel financeGPrlBasicSalaryLbl;
     private javax.swing.JLabel financeGPrlBenefitLbl;
@@ -830,8 +824,6 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     private javax.swing.JTextField financeGPrlENumberFld;
     private javax.swing.JLabel financeGPrlENumberLbl;
     private javax.swing.JLabel financeGPrlEarningLbl;
-    private javax.swing.JLabel financeGPrlGPrlLbl;
-    private javax.swing.JPanel financeGPrlGPrlPnl;
     private javax.swing.JTextField financeGPrlHourlyRateFld;
     private javax.swing.JLabel financeGPrlHourlyRateLbl;
     private javax.swing.JTextField financeGPrlHrsWorkedFld;
@@ -850,9 +842,10 @@ public class FinancePayrollUI extends javax.swing.JFrame {
     private javax.swing.JTextField financeGPrlPhnAllowanceFld;
     private javax.swing.JLabel financeGPrlPhnAllowanceLbl;
     private javax.swing.JLabel financeGPrlPrlDateLbl;
+    private javax.swing.JLabel financeGPrlPrlDetailsLbl;
+    private javax.swing.JPanel financeGPrlPrlDetailsPnl;
     private javax.swing.JComboBox<String> financeGPrlPrlPeriodCbx;
     private javax.swing.JLabel financeGPrlPrlPeriodLbl;
-    private javax.swing.JButton financeGPrlPrlRecordDetailsBtn;
     private javax.swing.JTextField financeGPrlRiceSubsidyFld;
     private javax.swing.JLabel financeGPrlRiceSubsidyLbl;
     private javax.swing.JPanel financeGPrlSCalculatorBrdrPnl;

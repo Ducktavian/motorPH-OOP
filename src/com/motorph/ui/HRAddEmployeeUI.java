@@ -48,8 +48,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeAEDetailsLbl = new javax.swing.JLabel();
         hrAEmployeeSidebarPnl = new javax.swing.JPanel();
         hrAEmployeeEDetailsBtn = new javax.swing.JButton();
-        hrAEmployeeEditEDetailsBtn = new javax.swing.JButton();
-        hrAEmployeeAEDetailsBtn = new javax.swing.JButton();
         hrAEmployeeMainDashboardBtn = new javax.swing.JButton();
         hrAEmployeeMotorPHIconImgLbl = new javax.swing.JLabel();
         hrAEmployeeActivateBtn = new javax.swing.JButton();
@@ -88,6 +86,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeStatusLbl = new javax.swing.JLabel();
         hrAEmployeeCltAllowanceFld = new javax.swing.JTextField();
         hrAEmployeeBirthdayDtChsr = new com.toedter.calendar.JDateChooser();
+        hrAEmployeeBackBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1000, 700));
@@ -112,20 +111,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeEDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         hrAEmployeeEDetailsBtn.addActionListener(this::hrAEmployeeEDetailsBtnActionPerformed);
 
-        hrAEmployeeEditEDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrAEmployeeEditEDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrAEmployeeEditEDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrAEmployeeEditEDetailsBtn.setText("Edit Employee Details");
-        hrAEmployeeEditEDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        hrAEmployeeEditEDetailsBtn.addActionListener(this::hrAEmployeeEditEDetailsBtnActionPerformed);
-
-        hrAEmployeeAEDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrAEmployeeAEDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrAEmployeeAEDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrAEmployeeAEDetailsBtn.setText("Add Employee Details");
-        hrAEmployeeAEDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        hrAEmployeeAEDetailsBtn.addActionListener(this::hrAEmployeeAEDetailsBtnActionPerformed);
-
         hrAEmployeeMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         hrAEmployeeMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         hrAEmployeeMainDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -146,9 +131,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                     .addComponent(hrAEmployeeEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(hrAEmployeeSidebarPnlLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(hrAEmployeeMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(hrAEmployeeEditEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrAEmployeeAEDetailsBtn))
+                        .addComponent(hrAEmployeeMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(23, 23, 23))
             .addComponent(hrAEmployeeMainDashboardBtn, javax.swing.GroupLayout.Alignment.TRAILING)
         );
@@ -161,18 +144,12 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                         .addGap(189, 189, 189)
                         .addComponent(hrAEmployeeEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(hrAEmployeeMotorPHIconImgLbl))
-                .addGap(12, 12, 12)
-                .addComponent(hrAEmployeeEditEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(hrAEmployeeAEDetailsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 264, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 366, Short.MAX_VALUE)
                 .addComponent(hrAEmployeeMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43))
         );
 
         hrAEmployeeEDetailsBtn.getAccessibleContext().setAccessibleName("hrAEmployeeEDetailsBtn");
-        hrAEmployeeEditEDetailsBtn.getAccessibleContext().setAccessibleName("hrAEmployeeEditEDetailsBtn");
-        hrAEmployeeAEDetailsBtn.getAccessibleContext().setAccessibleName("hrAEmployeeAEDetailsBtn");
         hrAEmployeeMainDashboardBtn.getAccessibleContext().setAccessibleName("hrAEmployeeMainDashboardBtn");
         hrAEmployeeMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("hrAEmployeeMotorPHIconImgLbl");
 
@@ -525,19 +502,28 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAEmployeeCltAllowanceFld.getAccessibleContext().setAccessibleName("hrAEmployeeCltAllowanceFld");
         hrAEmployeeBirthdayDtChsr.getAccessibleContext().setAccessibleName("hrAEmployeeBirthdayDtChsr");
 
+        hrAEmployeeBackBtn.setBackground(new java.awt.Color(30, 58, 138));
+        hrAEmployeeBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        hrAEmployeeBackBtn.setForeground(new java.awt.Color(255, 255, 255));
+        hrAEmployeeBackBtn.setText("Back");
+        hrAEmployeeBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrAEmployeeBackBtn.addActionListener(this::hrAEmployeeBackBtnActionPerformed);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(hrAEmployeeActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(hrAEmployeeSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrAEmployeeAEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrAEmployeeEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 688, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addComponent(hrAEmployeeSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(hrAEmployeeAEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addComponent(hrAEmployeeActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(hrAEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(hrAEmployeeEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 688, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(38, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -549,7 +535,9 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addComponent(hrAEmployeeEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(hrAEmployeeActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(hrAEmployeeActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hrAEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         hrAEmployeeAEDetailsPnl.getAccessibleContext().setAccessibleName("hrAEmployeeAEDetailsPnl");
@@ -564,14 +552,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
     private void hrAEmployeeEDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrAEmployeeEDetailsBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hrAEmployeeEDetailsBtnActionPerformed
-
-    private void hrAEmployeeEditEDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrAEmployeeEditEDetailsBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrAEmployeeEditEDetailsBtnActionPerformed
-
-    private void hrAEmployeeAEDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrAEmployeeAEDetailsBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_hrAEmployeeAEDetailsBtnActionPerformed
 
     private void hrAEmployeeMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrAEmployeeMainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -712,6 +692,10 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
 
     }//GEN-LAST:event_hrAEmployeeActivateBtnActionPerformed
 
+    private void hrAEmployeeBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrAEmployeeBackBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrAEmployeeBackBtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -738,12 +722,12 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton hrAEmployeeAEDetailsBtn;
     private javax.swing.JLabel hrAEmployeeAEDetailsLbl;
     private javax.swing.JPanel hrAEmployeeAEDetailsPnl;
     private javax.swing.JButton hrAEmployeeActivateBtn;
     private javax.swing.JTextField hrAEmployeeAddressFld;
     private javax.swing.JLabel hrAEmployeeAddressLbl;
+    private javax.swing.JButton hrAEmployeeBackBtn;
     private javax.swing.JTextField hrAEmployeeBasicSalaryFld;
     private javax.swing.JLabel hrAEmployeeBasicSalaryLbl;
     private com.toedter.calendar.JDateChooser hrAEmployeeBirthdayDtChsr;
@@ -754,7 +738,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
     private javax.swing.JButton hrAEmployeeEDetailsBtn;
     private javax.swing.JTextField hrAEmployeeENumberFld;
     private javax.swing.JLabel hrAEmployeeENumberLbl;
-    private javax.swing.JButton hrAEmployeeEditEDetailsBtn;
     private javax.swing.JTextField hrAEmployeeFNameFld;
     private javax.swing.JLabel hrAEmployeeFNameLbl;
     private javax.swing.JTextField hrAEmployeeISupervisorFld;

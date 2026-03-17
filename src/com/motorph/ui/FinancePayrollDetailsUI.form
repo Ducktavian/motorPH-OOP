@@ -28,8 +28,8 @@
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="employeePrlRecordPrlRecordPnl" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                      <Component id="employeePrlDetailsPrlRecordsPnl" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="employeePrlRecordSearchPnl" min="-2" pref="220" max="-2" attributes="0"/>
                   </Group>
                   <Component id="employeePrlRecordBrdrPnl" min="-2" max="-2" attributes="0"/>
@@ -42,8 +42,8 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="employeePrlRecordPrlRecordPnl" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="employeePrlDetailsPrlRecordsPnl" min="-2" max="-2" attributes="0"/>
                   <Component id="employeePrlRecordSearchPnl" min="-2" pref="47" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -206,7 +206,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="employeePrlRecordPrlRecordPnl">
+    <Container class="javax.swing.JPanel" name="employeePrlDetailsPrlRecordsPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -229,20 +229,20 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="employeePrlRecordPrlRecordLbl" min="-2" pref="180" max="-2" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="employeePrlDetailsPrlRecordsLbl" min="-2" pref="196" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="employeePrlRecordPrlRecordLbl" min="-2" pref="46" max="-2" attributes="0"/>
+              <Component id="employeePrlDetailsPrlRecordsLbl" min="-2" pref="46" max="-2" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="employeePrlRecordPrlRecordLbl">
+        <Component class="javax.swing.JLabel" name="employeePrlDetailsPrlRecordsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -250,7 +250,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Payroll Record"/>
+            <Property name="text" type="java.lang.String" value="Payroll Records"/>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlRecordPrlRecordLbl"/>

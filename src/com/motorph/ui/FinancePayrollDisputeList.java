@@ -224,8 +224,8 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
         financePrlDListPylBtn.setBackground(new java.awt.Color(30, 42, 56));
         financePrlDListPylBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         financePrlDListPylBtn.setForeground(new java.awt.Color(255, 255, 255));
-        financePrlDListPylBtn.setText("Payroll Record");
         financePrlDListPylBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        financePrlDListPylBtn.setLabel("Payroll Details");
         financePrlDListPylBtn.addActionListener(this::financePrlDListPylBtnActionPerformed);
 
         financePrlDListPylDisputeBtn.setBackground(new java.awt.Color(30, 42, 56));
