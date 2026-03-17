@@ -49,7 +49,7 @@ public class MainITDashboardUI extends javax.swing.JFrame {
         mainIDashboardRDetailsImgBtn = new javax.swing.JButton();
         mainIDashboardLDetailsImgBtn = new javax.swing.JButton();
         mainIDashboardDDetailsImgBtn = new javax.swing.JButton();
-        mainIDashboardSysToolsImgBtn = new javax.swing.JButton();
+        mainIDashboardUManagementImgBtn = new javax.swing.JButton();
         mainIDashboardSettingsImgBtn = new javax.swing.JButton();
         mainIDashboardLogoutBtn = new javax.swing.JButton();
         mainIDashboardMainDashboardImgLbl = new javax.swing.JLabel();
@@ -141,13 +141,13 @@ public class MainITDashboardUI extends javax.swing.JFrame {
         getContentPane().add(mainIDashboardDDetailsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 370, 169, 45));
         mainIDashboardDDetailsImgBtn.getAccessibleContext().setAccessibleName("mainIDashboardDDetailsImgBtn");
 
-        mainIDashboardSysToolsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainIDashboardSysToolsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        mainIDashboardSysToolsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainIDashboardSysToolsImgBtn.setText("System Tools");
-        mainIDashboardSysToolsImgBtn.addActionListener(this::mainIDashboardSysToolsImgBtnActionPerformed);
-        getContentPane().add(mainIDashboardSysToolsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, 169, 45));
-        mainIDashboardSysToolsImgBtn.getAccessibleContext().setAccessibleName("mainIDashboardSysToolsImgBtn");
+        mainIDashboardUManagementImgBtn.setBackground(new java.awt.Color(30, 42, 56));
+        mainIDashboardUManagementImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainIDashboardUManagementImgBtn.setForeground(new java.awt.Color(255, 255, 255));
+        mainIDashboardUManagementImgBtn.setText("User Management");
+        mainIDashboardUManagementImgBtn.addActionListener(this::mainIDashboardUManagementImgBtnActionPerformed);
+        getContentPane().add(mainIDashboardUManagementImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, 169, 45));
+        mainIDashboardUManagementImgBtn.getAccessibleContext().setAccessibleName("mainIDashboardSysToolsImgBtn");
 
         mainIDashboardSettingsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainIDashboardSettingsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
@@ -199,12 +199,12 @@ public class MainITDashboardUI extends javax.swing.JFrame {
         GuiUtil.openFrame(this, new EmployeeDashboardUI());
     }//GEN-LAST:event_mainIDashboardDashboardImgBtnActionPerformed
 
-    private void mainIDashboardSysToolsImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainIDashboardSysToolsImgBtnActionPerformed
+    private void mainIDashboardUManagementImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainIDashboardUManagementImgBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         
-        GuiUtil.openFrame(this, new ITSystemToolsUI());
-    }//GEN-LAST:event_mainIDashboardSysToolsImgBtnActionPerformed
+        GuiUtil.openFrame(this, new ITUserManagementUI());
+    }//GEN-LAST:event_mainIDashboardUManagementImgBtnActionPerformed
 
     private void mainIDashboardDDetailsImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainIDashboardDDetailsImgBtnActionPerformed
         // TODO add your handling code here:
@@ -295,7 +295,7 @@ public class MainITDashboardUI extends javax.swing.JFrame {
     private javax.swing.JLabel mainIDashboardRDetailsImgLbl;
     private javax.swing.JButton mainIDashboardSettingsImgBtn;
     private javax.swing.JLabel mainIDashboardSettingsImgLbl;
-    private javax.swing.JButton mainIDashboardSysToolsImgBtn;
     private javax.swing.JLabel mainIDashboardSysToolsImgLbl;
+    private javax.swing.JButton mainIDashboardUManagementImgBtn;
     // End of variables declaration//GEN-END:variables
 }

@@ -53,7 +53,7 @@ public class MainAdminDashboardUI extends javax.swing.JFrame {
         mainDashboardRDetailsImgBtn = new javax.swing.JButton();
         mainDashboardLDetailsImgBtn = new javax.swing.JButton();
         mainDashboardDDetailsImgBtn = new javax.swing.JButton();
-        mainDashboardSysToolsImgBtn = new javax.swing.JButton();
+        mainDashboardUManagementImgBtn = new javax.swing.JButton();
         mainDashboardSettingsImgBtn = new javax.swing.JButton();
         mainDashboardLogoutBtn = new javax.swing.JButton();
         mainDashboardMainDashboardImgLbl = new javax.swing.JLabel();
@@ -169,13 +169,13 @@ public class MainAdminDashboardUI extends javax.swing.JFrame {
         getContentPane().add(mainDashboardDDetailsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 370, 169, 45));
         mainDashboardDDetailsImgBtn.getAccessibleContext().setAccessibleName("mainDashboardDDetailsImgBtn");
 
-        mainDashboardSysToolsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainDashboardSysToolsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        mainDashboardSysToolsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainDashboardSysToolsImgBtn.setText("System Tools");
-        mainDashboardSysToolsImgBtn.addActionListener(this::mainDashboardSysToolsImgBtnActionPerformed);
-        getContentPane().add(mainDashboardSysToolsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 570, 169, 45));
-        mainDashboardSysToolsImgBtn.getAccessibleContext().setAccessibleName("mainDashboardSysToolsImgBtn");
+        mainDashboardUManagementImgBtn.setBackground(new java.awt.Color(30, 42, 56));
+        mainDashboardUManagementImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainDashboardUManagementImgBtn.setForeground(new java.awt.Color(255, 255, 255));
+        mainDashboardUManagementImgBtn.setText("User Management");
+        mainDashboardUManagementImgBtn.addActionListener(this::mainDashboardUManagementImgBtnActionPerformed);
+        getContentPane().add(mainDashboardUManagementImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 570, 169, 45));
+        mainDashboardUManagementImgBtn.getAccessibleContext().setAccessibleName("mainDashboardSysToolsImgBtn");
 
         mainDashboardSettingsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardSettingsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
@@ -236,12 +236,12 @@ public class MainAdminDashboardUI extends javax.swing.JFrame {
         GuiUtil.openFrame(this, new EmployeeDashboardUI());
     }//GEN-LAST:event_mainDashboardDashboardImgBtnActionPerformed
 
-    private void mainDashboardSysToolsImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardSysToolsImgBtnActionPerformed
+    private void mainDashboardUManagementImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardUManagementImgBtnActionPerformed
         // TODO add your handling code here:
         this.dispose();
         
-        GuiUtil.openFrame(this, new ITSystemToolsUI());
-    }//GEN-LAST:event_mainDashboardSysToolsImgBtnActionPerformed
+        GuiUtil.openFrame(this, new ITUserManagementUI());
+    }//GEN-LAST:event_mainDashboardUManagementImgBtnActionPerformed
 
     private void mainDashboardDDetailsImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardDDetailsImgBtnActionPerformed
         // TODO add your handling code here:
@@ -341,7 +341,7 @@ public class MainAdminDashboardUI extends javax.swing.JFrame {
     private javax.swing.JLabel mainDashboardRDetailsImgLbl;
     private javax.swing.JButton mainDashboardSettingsImgBtn;
     private javax.swing.JLabel mainDashboardSettingsImgLbl;
-    private javax.swing.JButton mainDashboardSysToolsImgBtn;
     private javax.swing.JLabel mainDashboardSysToolsImgLbl;
+    private javax.swing.JButton mainDashboardUManagementImgBtn;
     // End of variables declaration//GEN-END:variables
 }

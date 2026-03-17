@@ -10,14 +10,14 @@ import com.motorph.util.GuiUtil;
  *
  * @author Lenovo
  */
-public class ITSystemToolsUI extends javax.swing.JFrame {
+public class ITUserManagementUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITSystemToolsUI.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITUserManagementUI.class.getName());
 
     /**
      * Creates new form ITDashboardFrame
      */
-    public ITSystemToolsUI() {
+    public ITUserManagementUI() {
         initComponents();
     }
 
@@ -31,7 +31,7 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
     private void initComponents() {
 
         itSysToolsSidebarPnl = new javax.swing.JPanel();
-        itSysToolsActLogsBtn = new javax.swing.JButton();
+        itSysToolsUManagementBtn = new javax.swing.JButton();
         itSysToolsMainDashboardBtn = new javax.swing.JButton();
         itSysToolsMotorPHIconImgLbl = new javax.swing.JLabel();
         itSysToolsActLogsPnl = new javax.swing.JPanel();
@@ -68,14 +68,14 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
         itSysToolsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
         itSysToolsSidebarPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        itSysToolsActLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        itSysToolsActLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itSysToolsActLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itSysToolsActLogsBtn.setText("Activity Logs");
-        itSysToolsActLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        itSysToolsActLogsBtn.addActionListener(this::itSysToolsActLogsBtnActionPerformed);
-        itSysToolsSidebarPnl.add(itSysToolsActLogsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
-        itSysToolsActLogsBtn.getAccessibleContext().setAccessibleName("itSysToolsActLogsBtn");
+        itSysToolsUManagementBtn.setBackground(new java.awt.Color(30, 42, 56));
+        itSysToolsUManagementBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itSysToolsUManagementBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itSysToolsUManagementBtn.setText("User Management");
+        itSysToolsUManagementBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        itSysToolsUManagementBtn.addActionListener(this::itSysToolsUManagementBtnActionPerformed);
+        itSysToolsSidebarPnl.add(itSysToolsUManagementBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
+        itSysToolsUManagementBtn.getAccessibleContext().setAccessibleName("itSysToolsActLogsBtn");
 
         itSysToolsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         itSysToolsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -433,9 +433,9 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void itSysToolsActLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsActLogsBtnActionPerformed
+    private void itSysToolsUManagementBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsUManagementBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itSysToolsActLogsBtnActionPerformed
+    }//GEN-LAST:event_itSysToolsUManagementBtnActionPerformed
 
     private void itSysToolsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -512,11 +512,10 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new ITSystemToolsUI().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new ITUserManagementUI().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton itSysToolsActLogsBtn;
     private javax.swing.JLabel itSysToolsActLogsLbl;
     private javax.swing.JPanel itSysToolsActLogsPnl;
     private javax.swing.JButton itSysToolsAddBtn;
@@ -545,6 +544,7 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
     private javax.swing.JPanel itSysToolsUAccDetailsBrdrPnl;
     private javax.swing.JLabel itSysToolsUAccDetailsLbl;
     private javax.swing.JPanel itSysToolsUAccDetailsPnl;
+    private javax.swing.JButton itSysToolsUManagementBtn;
     private javax.swing.JPanel itSysToolsUserEDetailsBrdrPnl;
     private javax.swing.JTextField itSysToolsUsernameFld;
     private javax.swing.JLabel itSysToolsUsernameLbl;

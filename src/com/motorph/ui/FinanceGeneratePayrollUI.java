@@ -108,6 +108,9 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
         financeGPrlNetPayFld = new javax.swing.JTextField();
         financeGPrlMChsr = new com.toedter.calendar.JMonthChooser();
         financeGPrlYChsr = new com.toedter.calendar.JYearChooser();
+        employeePrlRecordSearchPnl = new javax.swing.JPanel();
+        employeePrlRecordEntENumberFld = new javax.swing.JTextField();
+        employeePrlRecordSearchIconImgLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -660,6 +663,22 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
 
         financeGPrlYChsr.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
+        employeePrlRecordSearchPnl.setBackground(new java.awt.Color(146, 192, 253));
+        employeePrlRecordSearchPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePrlRecordSearchPnl.setForeground(new java.awt.Color(146, 192, 253));
+        employeePrlRecordSearchPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        employeePrlRecordEntENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        employeePrlRecordEntENumberFld.setForeground(new java.awt.Color(31, 41, 55));
+        employeePrlRecordEntENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        employeePrlRecordEntENumberFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        employeePrlRecordEntENumberFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        employeePrlRecordEntENumberFld.addActionListener(this::employeePrlRecordEntENumberFldActionPerformed);
+        employeePrlRecordSearchPnl.add(employeePrlRecordEntENumberFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 170, 31));
+
+        employeePrlRecordSearchIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
+        employeePrlRecordSearchPnl.add(employeePrlRecordSearchIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -675,7 +694,9 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
                                     .addComponent(financeGPrlSCalculatorBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addComponent(financeGPrlGPrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(488, 488, 488))))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(employeePrlRecordSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(256, 256, 256))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(234, 234, 234)
                                 .addComponent(financeGPrlGenerateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -710,7 +731,9 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(financeGPrlGPrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(financeGPrlGPrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(employeePrlRecordSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -851,6 +874,10 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_financeGPrlPrlDListBtnActionPerformed
 
+    private void employeePrlRecordEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordEntENumberFldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_employeePrlRecordEntENumberFldActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -877,6 +904,9 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField employeePrlRecordEntENumberFld;
+    private javax.swing.JLabel employeePrlRecordSearchIconImgLbl;
+    private javax.swing.JPanel employeePrlRecordSearchPnl;
     private javax.swing.JTextField financeGPrlBasicSalaryFld;
     private javax.swing.JLabel financeGPrlBasicSalaryLbl;
     private javax.swing.JLabel financeGPrlBenefitLbl;
