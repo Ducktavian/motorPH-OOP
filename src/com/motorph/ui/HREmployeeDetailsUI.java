@@ -39,14 +39,14 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsENumberFld.setText(emp.getEmployeeNumber());
         hrEDetailsIFNameFld.setText(emp.getFirstName());
         hrEDetailsLNameFld.setText(emp.getLastName());
-        //hrEDetailsBirthdayFld.setText(DateUtils.dateToString(emp.getBirthday()));
+        hrEDetailsBirthdayFld.setText(DateUtils.dateToString(emp.getBirthday()));
         hrEDetailsAddressFld.setText(emp.getAddress());
         hrEDetailsIPhnNumberFld.setText(emp.getPhoneNumber());
         hrEDetailsSSSFld.setText(emp.getSSSNumber());
         hrEDetailsPhilHealthFld.setText(emp.getPhilhealthNumber());
         hrEDetailsTINFld.setText(emp.getTIN());
         hrEDetailsPagIbigFld.setText(emp.getPagIbigNumber());
-        //hrEDetailsIStatusFld.setText(emp.getStatus());
+        hrEDetailsIStatusFld.setText(emp.getStatus());
         hrEDetailsPositionFld.setText(emp.getPosition());
         hrEDetailsISupervisorFld.setText(emp.getImmediateSupervisor());
         hrEDetailsBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
@@ -94,8 +94,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsEDetailsBtn = new javax.swing.JButton();
         hrEDetailsMainDashboardBtn = new javax.swing.JButton();
         hrEDetailsMotorPHIconImgLbl = new javax.swing.JLabel();
-        hrEDetailsERecordsPnl = new javax.swing.JPanel();
-        hrEDetailsERecordsLbl = new javax.swing.JLabel();
+        hrEDetailsEDetailsPnl = new javax.swing.JPanel();
+        hrEDetailsEDetailsLbl = new javax.swing.JLabel();
         hrEDetailsAddBtn = new javax.swing.JButton();
         hrEDetailsEditBtn = new javax.swing.JButton();
         hrEDetailsDeleteBtn = new javax.swing.JButton();
@@ -217,29 +217,16 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsMainDashboardBtn.getAccessibleContext().setAccessibleName("hrEDetailsMainDashboardBtn");
         hrEDetailsMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("hrEDetailsMotorPHIconImgLbl");
 
-        hrEDetailsERecordsPnl.setBackground(new java.awt.Color(30, 58, 138));
-        hrEDetailsERecordsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrEDetailsERecordsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        hrEDetailsEDetailsPnl.setBackground(new java.awt.Color(30, 58, 138));
+        hrEDetailsEDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEDetailsEDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        hrEDetailsEDetailsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        hrEDetailsERecordsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        hrEDetailsERecordsLbl.setForeground(new java.awt.Color(255, 255, 255));
-        hrEDetailsERecordsLbl.setText(" Employee Records");
-
-        javax.swing.GroupLayout hrEDetailsERecordsPnlLayout = new javax.swing.GroupLayout(hrEDetailsERecordsPnl);
-        hrEDetailsERecordsPnl.setLayout(hrEDetailsERecordsPnlLayout);
-        hrEDetailsERecordsPnlLayout.setHorizontalGroup(
-            hrEDetailsERecordsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrEDetailsERecordsPnlLayout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(hrEDetailsERecordsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        hrEDetailsERecordsPnlLayout.setVerticalGroup(
-            hrEDetailsERecordsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(hrEDetailsERecordsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        hrEDetailsERecordsLbl.getAccessibleContext().setAccessibleName("hrEDetailsEDetailsLbl");
+        hrEDetailsEDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        hrEDetailsEDetailsLbl.setForeground(new java.awt.Color(255, 255, 255));
+        hrEDetailsEDetailsLbl.setText("Employee Details");
+        hrEDetailsEDetailsPnl.add(hrEDetailsEDetailsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 211, 46));
+        hrEDetailsEDetailsLbl.getAccessibleContext().setAccessibleName("hrEDetailsEDetailsLbl");
 
         hrEDetailsAddBtn.setBackground(new java.awt.Color(30, 58, 138));
         hrEDetailsAddBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -634,8 +621,8 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(hrEDetailsERecordsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(hrEDetailsEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
                         .addComponent(hrEDetailsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createSequentialGroup()
@@ -652,7 +639,7 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hrEDetailsERecordsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hrEDetailsEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrEDetailsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addComponent(hrEDetailsEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -666,7 +653,7 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         );
 
         hrEDetailsSidebarPnl.getAccessibleContext().setAccessibleName("hrEDetailsSidebarPnl");
-        hrEDetailsERecordsPnl.getAccessibleContext().setAccessibleName("hrEDetailsEDetailsPnl");
+        hrEDetailsEDetailsPnl.getAccessibleContext().setAccessibleName("hrEDetailsEDetailsPnl");
         hrEDetailsAddBtn.getAccessibleContext().setAccessibleName("hrEDetailsAddBtn");
         hrEDetailsEditBtn.getAccessibleContext().setAccessibleName("hrEDetailsEditBtn");
         hrEDetailsDeleteBtn.getAccessibleContext().setAccessibleName("hrEDetailsDeleteBtn");
@@ -875,10 +862,10 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
     private javax.swing.JButton hrEDetailsDeleteBtn;
     private javax.swing.JPanel hrEDetailsEDetailsBrdrPnl;
     private javax.swing.JButton hrEDetailsEDetailsBtn;
+    private javax.swing.JLabel hrEDetailsEDetailsLbl;
+    private javax.swing.JPanel hrEDetailsEDetailsPnl;
     private javax.swing.JTextField hrEDetailsENumberFld;
     private javax.swing.JLabel hrEDetailsENumberLbl;
-    private javax.swing.JLabel hrEDetailsERecordsLbl;
-    private javax.swing.JPanel hrEDetailsERecordsPnl;
     private javax.swing.JButton hrEDetailsEditBtn;
     private javax.swing.JTextField hrEDetailsEntENumberFld;
     private javax.swing.JTextField hrEDetailsIFNameFld;

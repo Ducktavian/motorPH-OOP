@@ -25,7 +25,7 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
     }
     
     private void populateFields(LeaveRequest request) {
-        hrLDetailsLTypeCbx.setSelectedItem(request.getLeaveType().name());
+        //hrLDetailsLTypeCbx.setSelectedItem(request.getLeaveType().name());
         hrLDetailsFromDtChsr.setDate(DateUtils.localDateToUtilDate(request.getStartDate()));
         hrLDetailsToDtChsr.setDate(DateUtils.localDateToUtilDate(request.getEndDate()));
         hrLDetailsReasonFld.setText(request.getReason());
