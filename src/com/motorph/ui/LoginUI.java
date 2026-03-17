@@ -5,6 +5,7 @@ package com.motorph.ui;
 import com.motorph.model.UserAccount;
 import com.motorph.service.AuthService;
 import com.motorph.util.AppContext;
+import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
 
 
@@ -180,17 +181,13 @@ public class LoginUI extends javax.swing.JFrame {
             
             UserAccount user = authService.login(username, password);
             
+            // IMPORTANT!!
             Session.setCurrentUser(user);
             System.out.println("Welcome " + user.getUsername() + "!");
             
-            // Hide current LoginUI
-            this.dispose();
+            // Hide current LoginUI            
+            GuiUtil.openFrame(this);
             
-            new MainAdminDashboardUI().setVisible(true);
-            
-            String role = user.getRole().toString().trim();
-            
-            System.out.println("Role: " + role);
             
             
             

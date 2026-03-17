@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.GuiUtil;
+
 /**
  *
  * @author Lenovo
@@ -351,9 +353,7 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void hrRDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsMainDashboardBtnActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_hrRDetailsMainDashboardBtnActionPerformed
 
     private void hrRDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRDetailsApproveBtnActionPerformed

@@ -8,6 +8,7 @@ import com.motorph.model.Employee;
 import com.motorph.model.Payslip;
 import com.motorph.service.EmployeeService;
 import com.motorph.util.AppContext;
+import com.motorph.util.GuiUtil;
 
 /**
  *
@@ -24,18 +25,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
         initComponents();
     }
     
-    
-    private void performSearch() {
-        System.out.println("Action Triggered!");
-        String id = financePrlEntENumberFld.getText().trim();
-        System.out.println(id);
-        Employee found = empService.findEmployee(id);
-        if (found != null) {
-            populateEmployeeFields(found);
-        } else {
-            clearFields();
-        }
-    }
+  
     
     private void populateEmployeeFields(Employee emp) {
         financeGPrlENameFld.setText(emp.getFullName());
@@ -725,8 +715,7 @@ public class FinancePayrollUI extends javax.swing.JFrame {
 
     private void financeGPrlMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_financeGPrlMainDashboardBtnActionPerformed
 
     private void financeGPrlPrlRecordDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlPrlRecordDetailsBtnActionPerformed

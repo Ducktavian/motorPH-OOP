@@ -9,6 +9,7 @@ import com.motorph.model.LeaveType;
 import com.motorph.service.LeaveService;
 import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
+import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
 import java.time.LocalDate;
 import java.util.Date;
@@ -556,8 +557,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
 
     private void employeeLeaveMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_employeeLeaveMainDashboardBtnActionPerformed
 
     private void employeeLeaveSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeLeaveSubmitBtnActionPerformed

@@ -5,6 +5,7 @@ import com.motorph.dao.CsvEmployeeDAO;
 import com.motorph.model.Employee;
 import com.motorph.service.EmployeeService;
 import com.motorph.util.DateUtils;
+import com.motorph.util.GuiUtil;
 import javax.swing.JOptionPane;
 
 
@@ -743,8 +744,7 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
 
     private void hrEDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEDetailsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_hrEDetailsMainDashboardBtnActionPerformed
 
     private void hrEDetailsENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEDetailsENumberFldActionPerformed

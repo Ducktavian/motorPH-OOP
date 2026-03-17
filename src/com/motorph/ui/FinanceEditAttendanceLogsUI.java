@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.GuiUtil;
+
 /**
  *
  * @author Lenovo
@@ -301,8 +303,7 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
 
     private void financeEditAttLogsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEditAttLogsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_financeEditAttLogsMainDashboardBtnActionPerformed
 
     private void financeEditAttLogsApproveAllBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEditAttLogsApproveAllBtnActionPerformed

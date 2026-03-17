@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.GuiUtil;
+
 /**
  *
  * @author Lenovo
@@ -436,8 +438,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
     private void itEditUAccMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_itEditUAccMainDashboardBtnActionPerformed
 
     private void itEditUAccEditUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccEditUAccBtnActionPerformed

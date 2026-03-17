@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.GuiUtil;
+
 /**
  *
  * @author Lenovo
@@ -437,8 +439,7 @@ public class ITSystemToolsUI extends javax.swing.JFrame {
 
     private void itSysToolsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_itSysToolsMainDashboardBtnActionPerformed
 
     private void itSysToolsAddBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsAddBtnActionPerformed

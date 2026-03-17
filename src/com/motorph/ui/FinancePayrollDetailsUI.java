@@ -403,8 +403,7 @@ public class FinancePayrollDetailsUI extends javax.swing.JFrame {
 
     private void employeePrlRecordMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_employeePrlRecordMainDashboardBtnActionPerformed
 
     private void employeePrlRecordPrlDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordPrlDisputeBtnActionPerformed

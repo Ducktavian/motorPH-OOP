@@ -333,8 +333,7 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
 
     private void employeePylRecordMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylRecordMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_employeePylRecordMainDashboardBtnActionPerformed
 
     private void employeePylRecordTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeePylRecordTblMouseClicked

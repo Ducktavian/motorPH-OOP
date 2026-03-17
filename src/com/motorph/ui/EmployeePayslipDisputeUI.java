@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.GuiUtil;
+
 /**
  *
  * @author Lenovo
@@ -689,8 +691,7 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
 
     private void employeePylDisputeMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylDisputeMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_employeePylDisputeMainDashboardBtnActionPerformed
 
     private void employeePylDisputeSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylDisputeSubmitBtnActionPerformed

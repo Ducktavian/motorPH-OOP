@@ -566,8 +566,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
 
     private void hrEditEmployeeMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_hrEditEmployeeMainDashboardBtnActionPerformed
 
     private void hrEditEmployeeUpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeUpdateBtnActionPerformed

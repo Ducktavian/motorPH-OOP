@@ -11,8 +11,8 @@ import com.motorph.service.AttendanceService;
 import com.motorph.service.EmployeeService;
 import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
+import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
-import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -51,14 +51,14 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
             employeeDashboardENumberFld.setText(emp.getEmployeeNumber());
             employeeDashboardFNameFld.setText(emp.getFirstName());
             employeeDashboardLNameFld.setText(emp.getLastName());
-            employeeDashboardBirthdayDtChsr.setDate(DateUtils.localDateToUtilDate(emp.getBirthday()));
+            employeeDashboardBirthdayFld.setText(DateUtils.dateToString(emp.getBirthday()));
             employeeDashboardAddressFld.setText(emp.getAddress());
             employeeDashboardPhnNumberFld.setText(emp.getPhoneNumber());
             employeeDashboardSSSFld.setText(emp.getSSSNumber());
             employeeDashboardPhilHealthFld.setText(emp.getPhilhealthNumber());
             employeeDashboardTINFld.setText(emp.getTIN());
             employeeDashboardPagIbigFld.setText(emp.getPagIbigNumber());
-            employeeDashboardStatusCbx.setSelectedItem(emp.getStatus());
+            employeeDashboardStatusFld.setText(emp.getStatus());
             employeeDashboardPositionFld.setText(emp.getPosition());
             employeeDashboardISupervisorFld.setText(emp.getImmediateSupervisor());
             employeeDashboardBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
@@ -772,8 +772,9 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
 
     private void employeeDashboardMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        
+        GuiUtil.openFrame(this);
+            
     }//GEN-LAST:event_employeeDashboardMainDashboardBtnActionPerformed
 
     private void employeeDashboardENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardENumberFldActionPerformed

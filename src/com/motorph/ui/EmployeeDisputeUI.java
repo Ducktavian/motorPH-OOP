@@ -4,6 +4,9 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.GuiUtil;
+import com.motorph.util.Session;
+
 /**
  *
  * @author Lenovo
@@ -479,9 +482,7 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
 
     private void employeeDisputeMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDisputeMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_employeeDisputeMainDashboardBtnActionPerformed
 
     private void formComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentHidden

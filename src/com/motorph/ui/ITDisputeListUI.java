@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.GuiUtil;
+
 /**
  *
  * @author Lenovo
@@ -291,8 +293,7 @@ public class ITDisputeListUI extends javax.swing.JFrame {
 
     private void itDListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDListMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_itDListMainDashboardBtnActionPerformed
 
     private void itDListDListBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itDListDListBtnActionPerformed

@@ -8,6 +8,7 @@ import com.motorph.dao.CsvEmployeeDAO;
 import com.motorph.model.Employee;
 import com.motorph.model.Payslip;
 import com.motorph.service.EmployeeService;
+import com.motorph.util.GuiUtil;
 
 /**
  *
@@ -772,8 +773,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
     private void employeePylMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_employeePylMainDashboardBtnActionPerformed
 
     private void employeePylPrlDateFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylPrlDateFldActionPerformed

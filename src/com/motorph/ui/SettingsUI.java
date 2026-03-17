@@ -11,6 +11,7 @@ import com.motorph.service.AttendanceService;
 import com.motorph.service.EmployeeService;
 import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
+import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
@@ -270,8 +271,7 @@ public class SettingsUI extends javax.swing.JFrame {
 
     private void SettingsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_SettingsMainDashboardBtnActionPerformed
 
     /**

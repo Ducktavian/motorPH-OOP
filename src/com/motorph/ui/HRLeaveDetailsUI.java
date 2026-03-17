@@ -6,6 +6,7 @@ package com.motorph.ui;
 
 import com.motorph.model.LeaveRequest;
 import com.motorph.util.DateUtils;
+import com.motorph.util.GuiUtil;
 
 /**
  *
@@ -364,8 +365,7 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
 
     private void mainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_mainDashboardBtnActionPerformed
 
     private void hrLDetailsReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsReasonFldActionPerformed

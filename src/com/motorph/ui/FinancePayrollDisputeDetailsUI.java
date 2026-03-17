@@ -4,6 +4,8 @@
  */
 package com.motorph.ui;
 
+import com.motorph.util.GuiUtil;
+
 /**
  *
  * @author Lenovo
@@ -508,8 +510,7 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
 
     private void financePrlDDetailsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDDetailsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_financePrlDDetailsMainDashboardBtnActionPerformed
 
     private void financePrlDDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDDetailsApproveBtnActionPerformed

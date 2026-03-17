@@ -9,6 +9,7 @@ import com.motorph.model.Employee;
 import com.motorph.service.AttendanceService;
 import com.motorph.service.EmployeeService;
 import com.motorph.util.AppContext;
+import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
 import java.util.List;
 import javax.swing.RowFilter;
@@ -421,8 +422,7 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
 
     private void financeAttLogsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new MainAdminDashboardUI().setVisible(true);
+        GuiUtil.openFrame(this);
     }//GEN-LAST:event_financeAttLogsMainDashboardBtnActionPerformed
 
     private void financeAttLogsEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsEntENumberFldActionPerformed
