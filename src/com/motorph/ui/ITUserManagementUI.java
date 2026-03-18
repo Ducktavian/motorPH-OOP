@@ -49,13 +49,15 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         UserAccount user = userService.findByEmployeeNumber(emp.getEmployeeNumber());
         if (user == null) {
             itSysToolsUsernameFld.setText("No account found.");
+            roleField.setText("");
+            activeStatusField.setText("");
         } else {
             itSysToolsUsernameFld.setText(user.getUsername());
-            itSysToolsPasswordFld1.setText(user.getRole().toString());
+            roleField.setText(user.getRole().toString());
             if (user.isActive()) {
-               itSysToolsPasswordFld.setText("Active"); 
+               activeStatusField.setText("Active"); 
             } else {
-                itSysToolsPasswordFld.setText("Inactive");
+                activeStatusField.setText("Inactive");
             }
         }
         
@@ -118,9 +120,9 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsUsernameLbl = new javax.swing.JLabel();
         itSysToolsUsernameFld = new javax.swing.JTextField();
         itSysToolsPasswordLbl = new javax.swing.JLabel();
-        itSysToolsPasswordFld = new javax.swing.JPasswordField();
-        itSysToolsPasswordFld1 = new javax.swing.JPasswordField();
         itSysToolsPasswordLbl1 = new javax.swing.JLabel();
+        roleField = new javax.swing.JTextField();
+        activeStatusField = new javax.swing.JTextField();
         itAddUAccActivateBtn = new javax.swing.JButton();
         itAddUAccActivateBtn1 = new javax.swing.JButton();
 
@@ -314,19 +316,23 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
         itSysToolsPasswordLbl.setText("Active Status");
 
-        itSysToolsPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
-        itSysToolsPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itSysToolsPasswordFld.setEnabled(false);
-        itSysToolsPasswordFld.addActionListener(this::itSysToolsPasswordFldActionPerformed);
-
-        itSysToolsPasswordFld1.setForeground(new java.awt.Color(30, 42, 56));
-        itSysToolsPasswordFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itSysToolsPasswordFld1.setEnabled(false);
-        itSysToolsPasswordFld1.addActionListener(this::itSysToolsPasswordFld1ActionPerformed);
-
         itSysToolsPasswordLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         itSysToolsPasswordLbl1.setForeground(new java.awt.Color(31, 41, 55));
         itSysToolsPasswordLbl1.setText("Role");
+
+        roleField.setForeground(new java.awt.Color(30, 42, 56));
+        roleField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        roleField.setCaretColor(new java.awt.Color(31, 41, 55));
+        roleField.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        roleField.setEnabled(false);
+        roleField.addActionListener(this::roleFieldActionPerformed);
+
+        activeStatusField.setForeground(new java.awt.Color(30, 42, 56));
+        activeStatusField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        activeStatusField.setCaretColor(new java.awt.Color(31, 41, 55));
+        activeStatusField.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        activeStatusField.setEnabled(false);
+        activeStatusField.addActionListener(this::activeStatusFieldActionPerformed);
 
         javax.swing.GroupLayout itSysToolsUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itSysToolsUAccDetailsBrdrPnl);
         itSysToolsUAccDetailsBrdrPnl.setLayout(itSysToolsUAccDetailsBrdrPnlLayout);
@@ -335,9 +341,9 @@ public class ITUserManagementUI extends javax.swing.JFrame {
             .addGroup(itSysToolsUAccDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addGroup(itSysToolsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(activeStatusField, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(roleField, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itSysToolsPasswordLbl1)
-                    .addComponent(itSysToolsPasswordFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itSysToolsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itSysToolsPasswordLbl)
                     .addComponent(itSysToolsUsernameLbl)
                     .addComponent(itSysToolsUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -353,18 +359,17 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(itSysToolsPasswordLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itSysToolsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(activeStatusField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
                 .addComponent(itSysToolsPasswordLbl1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itSysToolsPasswordFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(roleField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         itSysToolsUsernameLbl.getAccessibleContext().setAccessibleName("itSysToolsUsernameLbl");
         itSysToolsUsernameFld.getAccessibleContext().setAccessibleName("itSysToolsUsernameFld");
         itSysToolsPasswordLbl.getAccessibleContext().setAccessibleName("itSysToolsPasswordLbl");
-        itSysToolsPasswordFld.getAccessibleContext().setAccessibleName("itSysToolsPasswordFld");
 
         javax.swing.GroupLayout itSysToolsUserEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itSysToolsUserEDetailsBrdrPnl);
         itSysToolsUserEDetailsBrdrPnl.setLayout(itSysToolsUserEDetailsBrdrPnlLayout);
@@ -531,14 +536,14 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     private void itSysToolsAddBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsAddBtnActionPerformed
         // TODO add your handling code here:
         try {
-            String userName = itSysToolsUsernameFld.getText().trim();
-            if (userName == null || userName.isBlank() || userName.isEmpty()) {
+            String empNum = itSysToolsENumberFld.getText().trim();
+            if (empNum == null || empNum.isBlank() || empNum.isEmpty()) {
                 throw new IllegalArgumentException("Search for a user account to edit.");
             }
             
-            UserAccount user = userService.findByUserName(userName);
-            Employee emp = empService.findEmployee(user.getEmployeeNumber());
-            GuiUtil.openFrame(this, new ITAddUserAccountUI(user, emp));
+            
+            Employee emp = empService.findEmployee(empNum);
+            GuiUtil.openFrame(this, new ITAddUserAccountUI(emp));
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, e.getMessage());
         }
@@ -595,10 +600,6 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itSysToolsUsernameFldActionPerformed
 
-    private void itSysToolsPasswordFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsPasswordFldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itSysToolsPasswordFldActionPerformed
-
     private void itAddUAccActivateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccActivateBtnActionPerformed
         // TODO add your handling code here:
         try {
@@ -636,9 +637,13 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itAddUAccActivateBtn1ActionPerformed
 
-    private void itSysToolsPasswordFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsPasswordFld1ActionPerformed
+    private void roleFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roleFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itSysToolsPasswordFld1ActionPerformed
+    }//GEN-LAST:event_roleFieldActionPerformed
+
+    private void activeStatusFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_activeStatusFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_activeStatusFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -666,6 +671,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField activeStatusField;
     private javax.swing.JButton itAddUAccActivateBtn;
     private javax.swing.JButton itAddUAccActivateBtn1;
     private javax.swing.JLabel itSysToolsActLogsLbl;
@@ -681,8 +687,6 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     private javax.swing.JLabel itSysToolsISupervisorLbl;
     private javax.swing.JButton itSysToolsMainDashboardBtn;
     private javax.swing.JLabel itSysToolsMotorPHIconImgLbl;
-    private javax.swing.JPasswordField itSysToolsPasswordFld;
-    private javax.swing.JPasswordField itSysToolsPasswordFld1;
     private javax.swing.JLabel itSysToolsPasswordLbl;
     private javax.swing.JLabel itSysToolsPasswordLbl1;
     private javax.swing.JTextField itSysToolsPhnNumberFld;
@@ -701,5 +705,6 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     private javax.swing.JPanel itSysToolsUserEDetailsBrdrPnl;
     private javax.swing.JTextField itSysToolsUsernameFld;
     private javax.swing.JLabel itSysToolsUsernameLbl;
+    private javax.swing.JTextField roleField;
     // End of variables declaration//GEN-END:variables
 }

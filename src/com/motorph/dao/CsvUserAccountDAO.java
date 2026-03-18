@@ -35,7 +35,7 @@ public class CsvUserAccountDAO implements UserAccountDAO {
         }
         if (!file.exists()) {
             try (CSVWriter writer = new CSVWriter(new FileWriter(file))) {
-                String[] header = {"userId", "employeeNumber", "username", "passwordHash", "active"};
+                String[] header = {"userId", "employeeNumber", "username", "passwordHash", "role", "active"};
                 writer.writeNext(header);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -90,6 +90,7 @@ public class CsvUserAccountDAO implements UserAccountDAO {
     @Override
     public void save(UserAccount user) {
         users.add(user);
+        saveAll(users);
     }
     
     @Override
@@ -143,7 +144,7 @@ public class CsvUserAccountDAO implements UserAccountDAO {
 
     private void saveAll(List<UserAccount> allUsers) {
         try (CSVWriter writer = new CSVWriter(new FileWriter(FILE_PATH))) {
-            String[] header = {"userId", "Employee #", "username", "passwordHash", "active"};
+            String[] header = {"userId", "Employee #", "username", "passwordHash", "role", "active"};
 
 
             writer.writeNext(header);
@@ -155,6 +156,7 @@ public class CsvUserAccountDAO implements UserAccountDAO {
                     user.getEmployeeNumber(),
                     user.getUsername(),
                     user.getPasswordHash(),
+                    user.getRole().toString().toLowerCase(),
                     String.valueOf(user.isActive())
                 };
                 writer.writeNext(row);
@@ -169,7 +171,7 @@ public class CsvUserAccountDAO implements UserAccountDAO {
    
         int max = 0;
         for (UserAccount user: findAll()) {
-            int current = Integer.parseInt(user.getEmployeeNumber());
+            int current = user.getUserId();
             if (current > max) {
                 max = current;
             }

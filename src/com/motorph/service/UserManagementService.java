@@ -5,6 +5,7 @@ import com.motorph.dao.UserAccountDAO;
 import com.motorph.exception.UnauthorizedException;
 import com.motorph.model.Role;
 import com.motorph.model.UserAccount;
+import com.motorph.util.PasswordUtil;
 import com.motorph.util.Session;
 import java.util.List;
 
@@ -53,17 +54,28 @@ public class UserManagementService {
                 true   
         );
         
-        userDAO.save(newUser);
+        userDAO.save(newUser);;
     }
     
     public void updateUser(UserAccount user) {
         userDAO.update(user);
     }
     
+    public String generateDefaultPassword() {
+        String hashPassword = null;
+        try {
+            String DEFAULT_PASSWORD = "password";
+            hashPassword = PasswordUtil.hashPassword(DEFAULT_PASSWORD);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return hashPassword;
+    }
+    
     public void resetPassword(int userId) {
         authorizeIT();
         
-        String DEFAULT_PASSWORD = "password";
+        String DEFAULT_PASSWORD = generateDefaultPassword();
         
         UserAccount user = userDAO.findById(userId);
         if (user == null) {

@@ -543,6 +543,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
     private void hrEditEmployeeBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeBackBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new ITUserManagementUI());
     }//GEN-LAST:event_hrEditEmployeeBackBtnActionPerformed
 
 

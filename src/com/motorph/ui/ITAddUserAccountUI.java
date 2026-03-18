@@ -20,14 +20,13 @@ import javax.swing.JOptionPane;
 public class ITAddUserAccountUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITAddUserAccountUI.class.getName());
-    private UserAccount user;
+    
     private UserManagementService userService;
   
     /**
      * Creates new form ITAddUserFrame
      */
-    public ITAddUserAccountUI(UserAccount user, Employee emp) {
-        this.user = user;
+    public ITAddUserAccountUI(Employee emp) {
         this.userService = AppContext.getUserManagementService();
         initComponents();
         initComboBox();
@@ -461,15 +460,11 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
             if (selectedItem instanceof Role) {
                 selectedRole  = (Role) selectedItem;
             } else {
-                throw new IllegalArgumentException("Please select a valid leave type.");
+                throw new IllegalArgumentException("Please select a valid user role.");
             }
             
             
             JOptionPane.showMessageDialog(null, "ROLE " + selectedRole);
-            
-            
-            
-            
             
             String message = "Do you want to create and activate " + username + " ?";
             String title = "Confirmation";
@@ -478,9 +473,10 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
             
             if (reply == JOptionPane.YES_OPTION) {
-                
-                userService.createUser(username, message, selectedRole, username);
-                JOptionPane.showMessageDialog(null, "Created and activated user " + user.getUsername());
+                String empNum =  itAddUAccENumberFld.getText().trim();
+                String password = userService.generateDefaultPassword();
+                userService.createUser(username, password, selectedRole, empNum);
+                JOptionPane.showMessageDialog(null, "Created and activated user " + username);
                 
             } else if (reply == JOptionPane.NO_OPTION) {
                 JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
@@ -531,27 +527,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
     private void itSysToolsResetPassBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsResetPassBtnActionPerformed
         // TODO add your handling code here:
-        try {
-            String message = "Do you want to reset password for user " + user.getUsername() + " ?";
-            String title = "Confirmation";
-
-            int reply = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);
-
-            if (reply == JOptionPane.YES_OPTION) {
-                userService.resetPassword(user.getUserId()); // default password is "password"
-                JOptionPane.showMessageDialog(null, "Password reseted for user " + user.getUsername());
-
-            } else if (reply == JOptionPane.NO_OPTION) {
-                JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
-
-            } else {
-                // This handles the case where the user closes the dialog without pressing Yes or No
-                JOptionPane.showMessageDialog(null, "Dialog closed without a choice.");
-            }
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, e.getMessage());
-        }
+        
 
     }//GEN-LAST:event_itSysToolsResetPassBtnActionPerformed
 
