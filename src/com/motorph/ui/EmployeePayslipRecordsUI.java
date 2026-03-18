@@ -21,15 +21,15 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Lenovo
  */
-public class EmployeePayslipRecordUI extends javax.swing.JFrame {
+public class EmployeePayslipRecordsUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayslipRecordUI.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeePayslipRecordsUI.class.getName());
 
     private PayrollService payrollService;
     /**
      * Creates new form EmployeePayslipRecordFrame
      */
-    public EmployeePayslipRecordUI() {
+    public EmployeePayslipRecordsUI() {
         initComponents();
         
         initDataEngine();
@@ -351,7 +351,7 @@ public class EmployeePayslipRecordUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
 
-        new EmployeePayslipRecordUI().setVisible(true);
+        new EmployeePayslipRecordsUI().setVisible(true);
     }//GEN-LAST:event_employeePylDisputePylRecordBtnActionPerformed
 
     /**

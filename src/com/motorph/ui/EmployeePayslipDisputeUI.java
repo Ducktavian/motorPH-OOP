@@ -409,7 +409,7 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "Payroll Date", "Payroll Period", "Payroll Dispute Details", "Date Filed", "Remarks"
+                "Payroll Date", "Payroll Period", "Payroll Dispute Details", "Date Filed", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -444,8 +444,8 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addComponent(employeePylDisputeRecordsLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(employeePylDisputeRecordsBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addComponent(employeePylDisputeRecordsBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         employeePylDisputeRecordsLbl.getAccessibleContext().setAccessibleName("employeePrlDisputeRecordsLbl");
@@ -686,7 +686,7 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeePayslipRecordUI().setVisible(true);
+        new EmployeePayslipRecordsUI().setVisible(true);
     }//GEN-LAST:event_employeePylDisputePylRecordBtnActionPerformed
 
     private void employeePylDisputeMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylDisputeMainDashboardBtnActionPerformed

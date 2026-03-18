@@ -398,7 +398,7 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Department", "Date Filed", "Dispute Details", "Remarks"
+                "Department", "Dispute Details", "Date Filed", "Status"
             }
         ) {
             Class[] types = new Class [] {

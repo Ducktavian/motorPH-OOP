@@ -189,7 +189,7 @@ public class MainITDashboardUI extends javax.swing.JFrame {
 
     private void mainIDashboardPylImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainIDashboardPylImgBtnActionPerformed
         // TODO add your handling code here:
-        GuiUtil.openFrame(this, new EmployeePayslipRecordUI());
+        GuiUtil.openFrame(this, new EmployeePayslipRecordsUI());
     }//GEN-LAST:event_mainIDashboardPylImgBtnActionPerformed
 
     private void mainIDashboardDashboardImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainIDashboardDashboardImgBtnActionPerformed

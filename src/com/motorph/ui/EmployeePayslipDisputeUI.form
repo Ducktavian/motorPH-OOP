@@ -361,8 +361,8 @@
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   <Component id="employeePylDisputeRecordsLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="employeePylDisputeRecordsBrdrScrlPnl" min="-2" pref="128" max="-2" attributes="0"/>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <Component id="employeePylDisputeRecordsBrdrScrlPnl" min="-2" pref="130" max="-2" attributes="0"/>
+                  <EmptySpace pref="18" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -416,7 +416,7 @@
                     <Column editable="true" title="Payroll Period" type="java.lang.String"/>
                     <Column editable="true" title="Payroll Dispute Details" type="java.lang.String"/>
                     <Column editable="true" title="Date Filed" type="java.lang.String"/>
-                    <Column editable="true" title="Remarks" type="java.lang.String"/>
+                    <Column editable="true" title="Status" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

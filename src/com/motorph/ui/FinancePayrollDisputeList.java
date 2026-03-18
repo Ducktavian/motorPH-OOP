@@ -457,7 +457,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        new EmployeePayslipRecordUI().setVisible(true);
+        new EmployeePayslipRecordsUI().setVisible(true);
     }//GEN-LAST:event_financePrlDListGPrlBtnActionPerformed
 
     private void financePrlDListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListMainDashboardBtnActionPerformed

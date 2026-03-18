@@ -476,7 +476,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "Leave Type", "From", "To", "Date Filed", "Remarks"
+                "Leave Type", "From", "To", "Date Filed", "Status"
             }
         ) {
             Class[] types = new Class [] {
