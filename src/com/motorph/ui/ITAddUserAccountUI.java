@@ -10,6 +10,7 @@ import com.motorph.model.UserAccount;
 import com.motorph.service.UserManagementService;
 import com.motorph.util.AppContext;
 import com.motorph.util.GuiUtil;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 /**
@@ -29,7 +30,19 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         this.user = user;
         this.userService = AppContext.getUserManagementService();
         initComponents();
+        initComboBox();
         populateFields(emp);
+    }
+    
+        // Initializes leave type dropdown
+    private void initComboBox() {
+        Role[] types = Role.values();
+        DefaultComboBoxModel<Object> model = new DefaultComboBoxModel<>();
+        model.addElement("Select User Role");
+        for (Role type : types) {
+            model.addElement(type);
+        }
+        jComboBox1.setModel(model);
     }
     
     
@@ -268,7 +281,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itSysToolsPasswordLbl1.setText("Role");
 
         jComboBox1.setForeground(new java.awt.Color(30, 42, 56));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Admin", "Employee", "Finance", "HR", "IT" }));
         jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
         javax.swing.GroupLayout itEditUAccUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itEditUAccUAccDetailsBrdrPnl);
@@ -331,7 +343,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                         .addComponent(itAddUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addComponent(itAddUAccISupervisorLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                         .addComponent(itAddUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18))
             .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
@@ -437,16 +449,25 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             
-            String username = itAddUAccUsernameFld.getText();
+            String username = itEditUAccUsernameFld.getText();
             if (username == null || username.isBlank() || username.isEmpty()) {
                 throw new IllegalArgumentException("Username is required");
             }
             
-            String password = itAddUAccPasswordFld.getPassword().toString();
+            Role selectedRole = null;
+            Object selectedItem = jComboBox1.getSelectedItem();
+
             
-            if (password == null || password.isBlank() || password.isEmpty()) {
-                throw new IllegalArgumentException("Password is required");
+            if (selectedItem instanceof Role) {
+                selectedRole  = (Role) selectedItem;
+            } else {
+                throw new IllegalArgumentException("Please select a valid leave type.");
             }
+            
+            
+            JOptionPane.showMessageDialog(null, "ROLE " + selectedRole);
+            
+            
             
             
             
@@ -458,8 +479,8 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
             
             if (reply == JOptionPane.YES_OPTION) {
                 
-                //userService.createUser(reply, username, password, Role.HR, username);
-                JOptionPane.showMessageDialog(null, "UNSUPPORTED  " + user.getUsername());
+                userService.createUser(username, message, selectedRole, username);
+                JOptionPane.showMessageDialog(null, "Created and activated user " + user.getUsername());
                 
             } else if (reply == JOptionPane.NO_OPTION) {
                 JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
@@ -536,6 +557,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
     private void hrEditEmployeeBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeBackBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new ITUserManagementUI());
     }//GEN-LAST:event_hrEditEmployeeBackBtnActionPerformed
 
 
@@ -568,6 +590,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itEditUAccUsernameLbl;
     private javax.swing.JLabel itSysToolsPasswordLbl1;
     private javax.swing.JButton itSysToolsResetPassBtn;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<Object> jComboBox1;
     // End of variables declaration//GEN-END:variables
 }

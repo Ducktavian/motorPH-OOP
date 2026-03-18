@@ -20,7 +20,7 @@ public class GuiUtil {
     }
     
     public static void openFrame(javax.swing.JFrame oldFrame) {
-        String role = Session.getCurrentUser().getRole().toString().trim();
+        String role = Session.getCurrentUser().getRole().name().trim();
             
             switch (role) {
                 case "ADMIN":

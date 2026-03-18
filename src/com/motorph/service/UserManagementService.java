@@ -23,8 +23,13 @@ public class UserManagementService {
     private void authorizeIT() {
         UserAccount current = Session.getCurrentUser();
         
-        if (current == null || current.getRole() != Role.IT) {
-            throw new UnauthorizedException("Only IT can manage user accounts.");
+        if (current == null) {
+            
+            throw new UnauthorizedException("No active session found.");
+        }
+        
+        if (current.getRole() != Role.IT && current.getRole() != Role.ADMIN) {
+            throw new UnauthorizedException("Only IT or HR can manage user accounts.");
         }
     }
     

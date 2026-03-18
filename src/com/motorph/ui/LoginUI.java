@@ -182,6 +182,7 @@ public class LoginUI extends javax.swing.JFrame {
             // IMPORTANT!!
             Session.setCurrentUser(user);
             System.out.println("Welcome " + user.getUsername() + "!");
+            System.out.println(user.getRole());
             
             // Hide current LoginUI            
             GuiUtil.openFrame(this);

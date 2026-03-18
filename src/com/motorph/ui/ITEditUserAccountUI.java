@@ -5,11 +5,13 @@
 package com.motorph.ui;
 
 import com.motorph.model.Employee;
+import com.motorph.model.Role;
 import com.motorph.model.UserAccount;
 import com.motorph.service.EmployeeService;
 import com.motorph.service.UserManagementService;
 import com.motorph.util.AppContext;
 import com.motorph.util.GuiUtil;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 /**
@@ -31,6 +33,17 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         this.user = user;
         initComponents();
         populateFields(emp);
+        initComboBox();
+    }
+    
+    private void initComboBox() {
+        Role[] types = Role.values();
+        DefaultComboBoxModel<Object> model = new DefaultComboBoxModel<>();
+        model.addElement("Select User Role");
+        for (Role type : types) {
+            model.addElement(type);
+        }
+        jComboBox1.setModel(model);
     }
     
     
@@ -270,7 +283,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itSysToolsPasswordLbl1.setText("Role");
 
         jComboBox1.setForeground(new java.awt.Color(30, 42, 56));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Admin", "Employee", "Finance", "HR", "IT" }));
         jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
         javax.swing.GroupLayout itEditUAccUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itEditUAccUAccDetailsBrdrPnl);
@@ -568,6 +580,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itEditUAccUsernameLbl;
     private javax.swing.JLabel itSysToolsPasswordLbl1;
     private javax.swing.JButton itSysToolsResetPassBtn;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<Object> jComboBox1;
     // End of variables declaration//GEN-END:variables
 }

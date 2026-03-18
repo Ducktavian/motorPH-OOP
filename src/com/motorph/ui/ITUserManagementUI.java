@@ -45,11 +45,13 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     }
     
     private void populateUserData(Employee emp) {
+        
         UserAccount user = userService.findByEmployeeNumber(emp.getEmployeeNumber());
         if (user == null) {
             itSysToolsUsernameFld.setText("No account found.");
         } else {
             itSysToolsUsernameFld.setText(user.getUsername());
+            itSysToolsPasswordFld1.setText(user.getRole().toString());
             if (user.isActive()) {
                itSysToolsPasswordFld.setText("Active"); 
             } else {
