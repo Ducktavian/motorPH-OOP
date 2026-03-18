@@ -145,7 +145,8 @@ public abstract class Employee {
     }
     
     public double getHourlyRate() { 
-        return basicSalary / (21 * 8);
+        double rawRate = basicSalary / (21 * 8);
+        return Math.round(rawRate * 100.0) / 100.0;
     }
     
     public double getDailyRate() {

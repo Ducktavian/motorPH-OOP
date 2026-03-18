@@ -93,12 +93,25 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         hrRDetailsRListPnl.setBackground(new java.awt.Color(30, 58, 138));
         hrRDetailsRListPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrRDetailsRListPnl.setForeground(new java.awt.Color(30, 58, 138));
-        hrRDetailsRListPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         hrRDetailsRListLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
         hrRDetailsRListLbl.setForeground(new java.awt.Color(255, 255, 255));
-        hrRDetailsRListLbl.setText(" Request List");
-        hrRDetailsRListPnl.add(hrRDetailsRListLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 170, 46));
+        hrRDetailsRListLbl.setText(" Request Details");
+
+        javax.swing.GroupLayout hrRDetailsRListPnlLayout = new javax.swing.GroupLayout(hrRDetailsRListPnl);
+        hrRDetailsRListPnl.setLayout(hrRDetailsRListPnlLayout);
+        hrRDetailsRListPnlLayout.setHorizontalGroup(
+            hrRDetailsRListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(hrRDetailsRListPnlLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(hrRDetailsRListLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        hrRDetailsRListPnlLayout.setVerticalGroup(
+            hrRDetailsRListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(hrRDetailsRListLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
         hrRDetailsRListLbl.getAccessibleContext().setAccessibleName("hrRDetailsRListLbl");
 
         hrRDetailsBackBtn.setBackground(new java.awt.Color(30, 58, 138));
@@ -153,7 +166,7 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         hrRDetailsFARequestLbl.setBackground(new java.awt.Color(255, 255, 255));
         hrRDetailsFARequestLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         hrRDetailsFARequestLbl.setForeground(new java.awt.Color(31, 41, 55));
-        hrRDetailsFARequestLbl.setText(" File A Request");
+        hrRDetailsFARequestLbl.setText(" Request Type");
         hrRDetailsFARequestLbl.setToolTipText("");
 
         javax.swing.GroupLayout hrRDetailsFARequestPnlLayout = new javax.swing.GroupLayout(hrRDetailsFARequestPnl);
@@ -162,14 +175,12 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
             hrRDetailsFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hrRDetailsFARequestPnlLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(hrRDetailsFARequestLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
+                .addComponent(hrRDetailsFARequestLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
                 .addContainerGap())
         );
         hrRDetailsFARequestPnlLayout.setVerticalGroup(
             hrRDetailsFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsFARequestPnlLayout.createSequentialGroup()
-                .addComponent(hrRDetailsFARequestLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(hrRDetailsFARequestLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
         hrRDetailsFARequestLbl.getAccessibleContext().setAccessibleName("hrRDetailsFARequestLbl");
@@ -231,8 +242,8 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
                                 .addGroup(hrRDetailsFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(hrRDetailsDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
-                                        .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
                                         .addComponent(hrRDetailsRTypeFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(16, 16, 16))))
@@ -318,8 +329,8 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(hrRDetailsRListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrRDetailsRFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(hrRDetailsRFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hrRDetailsRListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(hrRDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -341,7 +352,7 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
                     .addComponent(hrRDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrRDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hrRDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(215, Short.MAX_VALUE))
+                .addContainerGap(214, Short.MAX_VALUE))
             .addComponent(hrRDetailsSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 

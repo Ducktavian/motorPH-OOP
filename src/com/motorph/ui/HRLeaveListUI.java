@@ -42,10 +42,8 @@ public class HRLeaveListUI extends javax.swing.JFrame {
     private void populateLeaveRecords() {
         try {
             
-            String employeeNumber = Session.getCurrentUser().getEmployeeNumber();
-            Employee emp = empService.findEmployee(employeeNumber);
             
-            List<LeaveRequest> list = leaveService.getAllLeave(Session.getCurrentUser().getEmployeeNumber());
+            List<LeaveRequest> list = leaveService.getAllLeave();
 
             // Ensure the table model exists
             DefaultTableModel model = (DefaultTableModel) hrLListLListTbl.getModel();
@@ -57,7 +55,7 @@ public class HRLeaveListUI extends javax.swing.JFrame {
                 Object[] row = {
                     r.getRequestId(),
                     r.getEmployeeNumber(),
-                    emp.getFullName(),
+                    empService.findEmployee(r.getEmployeeNumber()).getFullName(),
                     r.getStatus(),
                     "VIEW"
                 };

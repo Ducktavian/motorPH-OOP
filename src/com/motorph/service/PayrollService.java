@@ -51,7 +51,7 @@ public class PayrollService {
     // Generate a payslip for a given payroll period
     public Payslip generatePayslip(Employee employee, LocalDate periodStart, LocalDate periodEnd) {
         
-        // get cutoffHours
+        // get cutoffHours (Hours workded)
         double cutoffHours = attendanceService.computeTotalHours(employee.getEmployeeNumber(), periodStart, periodEnd);
         // get hourly rate
         double hourlyRate = rateService.computeHourlyRate(employee);
@@ -60,34 +60,39 @@ public class PayrollService {
         
         // get allowances
         AllowanceBreakdown allowanceBreakdown = computeAllowances(employee);
+        double totalAllowances = allowanceBreakdown.getTotal();
+        
+        // get Total Gross
+        double totalGross = round(cutoffGross + totalAllowances);
         
         
-        // Compute MONTHLY gross for deductions
-        LocalDate monthStart = periodStart.withDayOfMonth(1);
-        LocalDate monthEnd = periodStart.withDayOfMonth(periodStart.lengthOfMonth());
-
-        double monthlyHours = attendanceService.computeTotalHours(employee.getEmployeeNumber(), monthStart, monthEnd);
         
-        double monthlyGross = round(monthlyHours * hourlyRate);
-        
-        // // Compute deductions
+        // Handle Deductions
         DeductionBreakdown deductionBreakdown = null;
         double totalDeductions = 0;
         
         // If second cutoff: Apply deductions
         if (isSecondCutoff(periodEnd)) {
+            // Compute MONTHLY gross for deductions
+            LocalDate monthStart = periodStart.withDayOfMonth(1);
+            LocalDate monthEnd = periodStart.withDayOfMonth(periodStart.lengthOfMonth());
+            double monthlyHours = attendanceService.computeTotalHours(employee.getEmployeeNumber(), monthStart, monthEnd);
+            double monthlyGross = round(monthlyHours * hourlyRate);
+            
             deductionBreakdown = computeMonthlyDeductions(employee, monthlyGross);
+            totalDeductions = deductionBreakdown.getTotal();
+        } else {
+            deductionBreakdown = computeMonthlyDeductions();
             totalDeductions = deductionBreakdown.getTotal();
         }
        
         // Compute Netpay
-        double netPay = cutoffGross + allowanceBreakdown.getTotal() - totalDeductions;
+        double netPay = round(totalGross - totalDeductions);
         
         //Generate payslipId
         String payslipId = generatePayslipId(employee.getEmployeeNumber(), periodEnd);
-        
-        
-        // Return Payslip object
+                
+        // Create Payslip object
         Payslip payslip = new Payslip(
                 payslipId,
                 employee.getEmployeeNumber(),
@@ -97,7 +102,7 @@ public class PayrollService {
                 periodEnd,
                 cutoffHours,
                 hourlyRate,
-                cutoffGross,
+                totalGross,
                 allowanceBreakdown,
                 deductionBreakdown,
                 netPay
@@ -105,9 +110,9 @@ public class PayrollService {
         
         // Write to CSV
         payslipDAO.savePayslip(payslip);
-        
         return payslip;
     }
+    
     
     public List<Payslip> findPayslipsByEmployee(String employeeNumber) {
         return payslipDAO.findPayslipsByEmployee(employeeNumber);
@@ -117,8 +122,10 @@ public class PayrollService {
         return payslipDAO.findPayslipById(payslipId);
     }
     
-
-    
+    public List<Payslip> getAllPayslips() {
+        return payslipDAO.getAllPayslips();
+    }
+   
     
     // Divide allowances by 2 (semi monthly)
     public AllowanceBreakdown computeAllowances(Employee employee) {
@@ -128,8 +135,15 @@ public class PayrollService {
                 round(employee.getPhoneAllowance() / 2),
                 round(employee.getClothingAllowance() / 2)
             );
-        
         return allowances;
+    }
+    
+    
+    // If first period return all zero for Deductions
+    public DeductionBreakdown computeMonthlyDeductions() {
+        return new DeductionBreakdown(
+                0, 0, 0, 0
+        );
     }
     
     // Deductions are computed in monthly and deducted on the second cutoff
@@ -184,7 +198,7 @@ public class PayrollService {
     
     
     
-    // THIS WAS ONLY USED ONCE 
+    // THIS WAS ONLY USED ONCE FOR TESTING: THIS GENERATES ALL THE PAYSLIPS FROM ALL THE AVAILABLE ATTENDANCE RECORDS
     public void generatePayrollHistory(List<Employee> employees, LocalDate from, LocalDate to) {
         LocalDate cursor = from.withDayOfMonth(1);
         

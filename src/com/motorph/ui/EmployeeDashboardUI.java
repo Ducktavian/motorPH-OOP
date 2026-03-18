@@ -658,7 +658,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Date", "Log In", "Log Out", "Remarks"
+                "Date", "Log In", "Log Out", "Status"
             }
         ) {
             Class[] types = new Class [] {

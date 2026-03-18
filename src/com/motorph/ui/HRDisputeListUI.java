@@ -165,11 +165,11 @@ public class HRDisputeListUI extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Dispute ID", "Date Filed", "Employee #", "Employee Name", "Ticket Details", "Remarks"
+                "Dispute ID", "Employee #", "Employee Name", "Ticket Details", "Date Filed", "Status"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {

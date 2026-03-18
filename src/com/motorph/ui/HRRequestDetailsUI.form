@@ -29,8 +29,8 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="hrRDetailsRListPnl" alignment="0" min="-2" pref="175" max="-2" attributes="0"/>
                           <Component id="hrRDetailsRFormBrdrPnl" min="-2" max="-2" attributes="0"/>
+                          <Component id="hrRDetailsRListPnl" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -59,7 +59,7 @@
                   <Component id="hrRDetailsApproveBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   <Component id="hrRDetailsDenyBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="215" max="32767" attributes="0"/>
+              <EmptySpace pref="214" max="32767" attributes="0"/>
           </Group>
           <Component id="hrRDetailsSidebarPnl" alignment="0" max="32767" attributes="0"/>
       </Group>
@@ -156,8 +156,21 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRListPnl"/>
       </AccessibilityProperties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="hrRDetailsRListLbl" pref="199" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="hrRDetailsRListLbl" min="-2" pref="46" max="-2" attributes="0"/>
+          </Group>
+        </DimensionLayout>
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="hrRDetailsRListLbl">
@@ -168,16 +181,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value=" Request List"/>
+            <Property name="text" type="java.lang.String" value=" Request Details"/>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrRDetailsRListLbl"/>
           </AccessibilityProperties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="7" y="1" width="170" height="46"/>
-            </Constraint>
-          </Constraints>
         </Component>
       </SubComponents>
     </Container>
@@ -361,8 +369,8 @@
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Component id="hrRDetailsDateDtChsr" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
                                           <Group type="102" alignment="1" attributes="0">
-                                              <Component id="hrRDetailsFARequestPnl" min="-2" pref="160" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="hrRDetailsFARequestPnl" min="-2" pref="154" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Component id="hrRDetailsRTypeFld" min="-2" pref="150" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -434,17 +442,14 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="hrRDetailsFARequestLbl" pref="146" max="32767" attributes="0"/>
+                          <Component id="hrRDetailsFARequestLbl" pref="140" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="hrRDetailsFARequestLbl" pref="32" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="hrRDetailsFARequestLbl" alignment="0" pref="38" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
@@ -460,7 +465,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="37" green="29" red="1f" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value=" File A Request"/>
+                    <Property name="text" type="java.lang.String" value=" Request Type"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <AccessibilityProperties>

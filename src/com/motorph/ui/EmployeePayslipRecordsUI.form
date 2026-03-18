@@ -250,10 +250,10 @@
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="100">
-                    <Column editable="true" title="Payslip ID" type="java.lang.Integer"/>
-                    <Column editable="true" title="Payroll Date" type="java.lang.String"/>
-                    <Column editable="true" title="Net Pay" type="java.lang.String"/>
-                    <Column editable="true" title="Payroll Details" type="java.lang.String"/>
+                    <Column editable="false" title="Payslip ID" type="java.lang.Integer"/>
+                    <Column editable="false" title="Payroll Date" type="java.lang.String"/>
+                    <Column editable="false" title="Net Pay" type="java.lang.String"/>
+                    <Column editable="false" title="Payroll Details" type="java.lang.String"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

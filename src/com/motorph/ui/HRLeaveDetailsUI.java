@@ -105,19 +105,20 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
 
         hrLDetailsLListLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
         hrLDetailsLListLbl.setForeground(new java.awt.Color(255, 255, 255));
-        hrLDetailsLListLbl.setText("Leave List");
+        hrLDetailsLListLbl.setText(" Leave Details");
 
         javax.swing.GroupLayout hrLDetailsLListPnlLayout = new javax.swing.GroupLayout(hrLDetailsLListPnl);
         hrLDetailsLListPnl.setLayout(hrLDetailsLListPnlLayout);
         hrLDetailsLListPnlLayout.setHorizontalGroup(
             hrLDetailsLListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrLDetailsLListPnlLayout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addComponent(hrLDetailsLListLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrLDetailsLListPnlLayout.createSequentialGroup()
+                .addContainerGap(9, Short.MAX_VALUE)
+                .addComponent(hrLDetailsLListLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         hrLDetailsLListPnlLayout.setVerticalGroup(
             hrLDetailsLListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(hrLDetailsLListLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(hrLDetailsLListLbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         hrLDetailsLListLbl.getAccessibleContext().setAccessibleName("hrLDetailsLListLbl");
@@ -166,22 +167,21 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         hrLDetailsFALeaveLbl.setBackground(new java.awt.Color(255, 255, 255));
         hrLDetailsFALeaveLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         hrLDetailsFALeaveLbl.setForeground(new java.awt.Color(31, 41, 55));
-        hrLDetailsFALeaveLbl.setText(" File A Leave");
+        hrLDetailsFALeaveLbl.setText(" Leave Type");
         hrLDetailsFALeaveLbl.setToolTipText("");
 
         javax.swing.GroupLayout hrLDetailsFALeavePnlLayout = new javax.swing.GroupLayout(hrLDetailsFALeavePnl);
         hrLDetailsFALeavePnl.setLayout(hrLDetailsFALeavePnlLayout);
         hrLDetailsFALeavePnlLayout.setHorizontalGroup(
             hrLDetailsFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrLDetailsFALeavePnlLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrLDetailsFALeavePnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(hrLDetailsFALeaveLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(hrLDetailsFALeaveLbl)
+                .addGap(21, 21, 21))
         );
         hrLDetailsFALeavePnlLayout.setVerticalGroup(
             hrLDetailsFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrLDetailsFALeavePnlLayout.createSequentialGroup()
-                .addComponent(hrLDetailsFALeaveLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(hrLDetailsFALeaveLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
         hrLDetailsFALeaveLbl.getAccessibleContext().setAccessibleName("hrLDetailsFALeaveLbl");
@@ -228,8 +228,8 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
                     .addGroup(hrLDetailsFALeaveBrdrPnlLayout.createSequentialGroup()
                         .addGroup(hrLDetailsFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(hrLDetailsFromLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrLDetailsFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrLDetailsReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(hrLDetailsReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hrLDetailsFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(hrLDetailsFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(hrLDetailsFALeaveBrdrPnlLayout.createSequentialGroup()
@@ -329,15 +329,14 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
                 .addComponent(hrLDetailsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(hrLDetailsLListPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(hrLDetailsLFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(hrLDetailsLFormBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(hrLDetailsApproveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(43, 43, 43)
                         .addComponent(hrLDetailsDenyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(362, 362, 362)
-                        .addComponent(hrLDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(hrLDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(hrLDetailsLListPnl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(19, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

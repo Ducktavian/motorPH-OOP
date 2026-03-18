@@ -224,7 +224,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "Request ID", "Employee #", "Employee Name", "Request Details", "Remarks"
+                "Request ID", "Employee #", "Employee Name", "Request Details", "Status"
             }
         ) {
             Class[] types = new Class [] {

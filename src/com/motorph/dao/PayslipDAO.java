@@ -12,4 +12,6 @@ public interface PayslipDAO {
     List<Payslip> findPayslipsByEmployee(String employeeNumber);
     
     Payslip findPayslipById(String payslipId);
+    
+    List<Payslip> getAllPayslips();
 }

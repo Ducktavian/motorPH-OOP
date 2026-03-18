@@ -24,18 +24,28 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="hrEditEmployeeUpdateBtn" min="-2" pref="110" max="-2" attributes="0"/>
+              <Component id="hrEditEmployeeSidebarPnl" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="hrEditEmployeeSidebarPnl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="hrEditEmployeeEditEDetailsPnl" min="-2" max="-2" attributes="0"/>
-                          <Component id="hrEditEmployeeEDetailsBrdrPnl" min="-2" pref="688" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="hrEditEmployeeEditEDetailsPnl" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="hrEditEmployeeUpdateBtn" min="-2" pref="96" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="hrEditEmployeeBackBtn" min="-2" pref="74" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                      <Component id="hrEditEmployeeEDetailsBrdrPnl" min="-2" pref="703" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="38" max="32767" attributes="0"/>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -51,7 +61,10 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="hrEditEmployeeEDetailsBrdrPnl" min="-2" pref="490" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-              <Component id="hrEditEmployeeUpdateBtn" min="-2" pref="40" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="hrEditEmployeeUpdateBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="hrEditEmployeeBackBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -95,58 +108,6 @@
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="23" y="199" width="216" height="39"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="hrEditEmployeeEditEDetailsBtn">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="38" green="2a" red="1e" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Edit Employee Details"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-          </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEditEmployeeEditEDetailsBtn"/>
-          </AccessibilityProperties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEditEmployeeEditEDetailsBtnActionPerformed"/>
-          </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="23" y="250" width="216" height="39"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="hrEditEmployeeAEDetailsBtn">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="38" green="2a" red="1e" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Add Employee Details"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-          </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEditEmployeeAEDetailsBtn"/>
-          </AccessibilityProperties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEditEmployeeAEDetailsBtnActionPerformed"/>
-          </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="23" y="301" width="-1" height="39"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -297,50 +258,24 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="hrEditEmployeePhnAllowanceLbl" alignment="0" min="-2" pref="154" max="-2" attributes="0"/>
-                              <Component id="hrEditEmployeeBasicSalaryLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="hrEditEmployeeSSSLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="hrEditEmployeePhilHealthLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="hrEditEmployeeENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="hrEditEmployeeLNameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="hrEditEmployeeLNameFld" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                              <Component id="hrEditEmployeeENumberFld" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="hrEditEmployeeStatusLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="hrEditEmployeeFNameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="hrEditEmployeeBirthdayLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="hrEditEmployeePositionLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="hrEditEmployeeAddressLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                          <EmptySpace min="81" pref="81" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="hrEditEmployeePhilHealthFld" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                      <Component id="hrEditEmployeeSSSFld" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="hrEditEmployeePhilHealthFld" min="-2" pref="151" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="hrEditEmployeeAddressFld" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="hrEditEmployeeFNameFld" alignment="1" min="-2" pref="151" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="hrEditEmployeeSSSFld" min="-2" pref="151" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="hrEditEmployeeTINFld" min="-2" pref="151" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Group type="103" groupAlignment="1" attributes="0">
@@ -362,7 +297,7 @@
                                                       </Group>
                                                   </Group>
                                               </Group>
-                                              <Group type="102" alignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
                                                   <Component id="hrEditEmployeePhnAllowanceFld" min="-2" pref="150" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -370,23 +305,57 @@
                                                       <Component id="hrEditEmployeeCltAllowanceLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                                                       <Component id="hrEditEmployeePagIbigLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   </Group>
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="hrEditEmployeePagIbigFld" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                              <Component id="hrEditEmployeeTINFld" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                              <Component id="hrEditEmployeeCltAllowanceFld" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                              <Component id="hrEditEmployeeRiceSubsidyFld" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                              <Component id="hrEditEmployeeISupervisorFld" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                              <Component id="hrEditEmployeePhnNumberFld" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                                  <Component id="hrEditEmployeePagIbigFld" min="-2" pref="151" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="hrEditEmployeeCltAllowanceFld" alignment="1" min="-2" pref="151" max="-2" attributes="0"/>
+                                              <Component id="hrEditEmployeeRiceSubsidyFld" alignment="1" min="-2" pref="151" max="-2" attributes="0"/>
+                                              <Component id="hrEditEmployeeISupervisorFld" alignment="1" min="-2" pref="151" max="-2" attributes="0"/>
+                                              <Component id="hrEditEmployeePhnNumberFld" alignment="1" min="-2" pref="151" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Component id="hrEditEmployeeStatusCbx" alignment="1" min="-2" pref="151" max="-2" attributes="0"/>
+                                      <Component id="hrEditEmployeeAddressFld" max="32767" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="hrEditEmployeeStatusCbx" min="-2" pref="151" max="-2" attributes="0"/>
+                                              <Component id="hrEditEmployeeFNameFld" min="-2" pref="151" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="hrEditEmployeePhnAllowanceLbl" alignment="0" min="-2" pref="154" max="-2" attributes="0"/>
+                              <Component id="hrEditEmployeeBasicSalaryLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrEditEmployeeSSSLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrEditEmployeePhilHealthLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="hrEditEmployeeENumberLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrEditEmployeeLNameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="hrEditEmployeeLNameFld" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="hrEditEmployeeENumberFld" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="hrEditEmployeeFNameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hrEditEmployeeStatusLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="76" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -413,12 +382,12 @@
                           <Component id="hrEditEmployeeFNameFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="hrEditEmployeeAddressLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="hrEditEmployeeAddressFld" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="hrEditEmployeeAddressLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hrEditEmployeeAddressFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -430,10 +399,15 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="hrEditEmployeePhnNumberFld" min="-2" pref="31" max="-2" attributes="0"/>
-                              <Component id="hrEditEmployeeBirthdayDtChsr" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="hrEditEmployeeBirthdayDtChsr" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="hrEditEmployeePhnNumberFld" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="hrEditEmployeePositionFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                               <Component id="hrEditEmployeeISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1117,5 +1091,29 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JButton" name="hrEditEmployeeBackBtn">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="8a" green="3a" red="1e" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Back"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder roundedCorners="true">
+              <Color PropertyName="color" blue="38" green="2a" red="1e" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEditEmployeeBackBtnActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>

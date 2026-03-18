@@ -19,6 +19,7 @@ public class DeductionBreakdown {
         this.withholdingTax = withholdingTax;
     }
 
+    // GETTERS
     public double getSss() {
         return sss;
     }
@@ -34,12 +35,12 @@ public class DeductionBreakdown {
     public double getWithholdingTax() {
         return withholdingTax;
     }
-    
-    
-    
-    
+   
     public double getTotal() {
         return sss + philHealth + pagIbig + withholdingTax;
     }
+
+       
+    
     
 }

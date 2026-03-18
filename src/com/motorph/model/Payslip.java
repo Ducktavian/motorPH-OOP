@@ -22,6 +22,7 @@ public class Payslip {
     private LocalDate periodStart;
     private LocalDate periodEnd;
     
+    
     // Earnings
     private double totalHours;
     private double hourlyRate;
@@ -131,6 +132,14 @@ public class Payslip {
             return netPay;
         } else {
             return netPay + breakdown.getRiceSubsidy() + breakdown.getPhoneAllowance() + breakdown.getClothingAllowance();
+        }
+    }
+    
+    public PayrollPeriod getPayrollPeriod() {
+        if (periodStart.getDayOfMonth() < 15) {
+            return PayrollPeriod.FIRST_PERIOD;
+        } else {
+            return PayrollPeriod.SECOND_PERIOD;
         }
     }
     

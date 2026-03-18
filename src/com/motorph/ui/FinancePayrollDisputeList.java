@@ -226,8 +226,8 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
         financePrlDListPylBtn.setBackground(new java.awt.Color(30, 42, 56));
         financePrlDListPylBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         financePrlDListPylBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlDListPylBtn.setText("Payroll Records");
         financePrlDListPylBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        financePrlDListPylBtn.setLabel("Payroll Details");
         financePrlDListPylBtn.addActionListener(this::financePrlDListPylBtnActionPerformed);
 
         financePrlDListPylDisputeBtn.setBackground(new java.awt.Color(30, 42, 56));
@@ -455,9 +455,13 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
 
     private void financePrlDListGPrlBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListGPrlBtnActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
         this.dispose();
         
         new EmployeePayslipRecordsUI().setVisible(true);
+=======
+        GuiUtil.openFrame(this, new FinanceGeneratePayrollUI());
+>>>>>>> 05aeea79c46668358845efe152232550f1268166
     }//GEN-LAST:event_financePrlDListGPrlBtnActionPerformed
 
     private void financePrlDListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListMainDashboardBtnActionPerformed
@@ -467,10 +471,12 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
 
     private void financePrlDListPylBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListPylBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new FinancePayrollRecordsUI());
     }//GEN-LAST:event_financePrlDListPylBtnActionPerformed
 
     private void financePrlDListPylDisputeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListPylDisputeBtnActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_financePrlDListPylDisputeBtnActionPerformed
 
     private void financePrlDListPrlDListTblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_financePrlDListPrlDListTblMouseClicked

@@ -427,6 +427,7 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
 
     private void financeAttLogsEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsEntENumberFldActionPerformed
         // TODO add your handling code here:
+        performSearch();
     }//GEN-LAST:event_financeAttLogsEntENumberFldActionPerformed
 
     private void financeAttLogsAttLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsAttLogsBtnActionPerformed
@@ -436,7 +437,6 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
     private void financeAttLogsEntENumberFldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_financeAttLogsEntENumberFldMouseClicked
         // TODO add your handling code here:
         
-        performSearch();
         
         
     }//GEN-LAST:event_financeAttLogsEntENumberFldMouseClicked
