@@ -862,7 +862,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
     private void employeePylBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylBackBtnActionPerformed
         // TODO add your handling code here:
-        GuiUtil.openFrame(this, new EmployeePayslipRecordUI());
+        GuiUtil.openFrame(this, new EmployeePayslipRecordsUI());
     }//GEN-LAST:event_employeePylBackBtnActionPerformed
 
     

@@ -6,12 +6,14 @@ package com.motorph.ui;
 
 import com.motorph.dao.CsvEmployeeDAO;
 import com.motorph.model.Employee;
+import com.motorph.model.EmploymentStatus;
 import com.motorph.model.RegularEmployee;
 import com.motorph.service.EmployeeService;
 import com.motorph.util.DateUtils;
 import com.motorph.util.GuiUtil;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 /**
@@ -29,12 +31,23 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
      */
     public HREditEmployeeUI(Employee emp) {
         initComponents();
+        initComboBox();
         
         this.empToEdit = emp;
         
         empService = new EmployeeService(new CsvEmployeeDAO());
         
         populateFields(this.empToEdit);
+    }
+    
+    private void initComboBox() {
+        EmploymentStatus[] types = EmploymentStatus.values();
+        DefaultComboBoxModel<Object> model = new DefaultComboBoxModel<>();
+        model.addElement("Select Status");
+        for (EmploymentStatus type : types) {
+            model.addElement(type);
+        }
+        hrEditEmployeeStatusCbx.setModel(model);
     }
     
     private void populateFields(Employee emp) {
@@ -288,7 +301,6 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
 
         hrEditEmployeeStatusCbx.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         hrEditEmployeeStatusCbx.setForeground(new java.awt.Color(31, 41, 55));
-        hrEditEmployeeStatusCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Regular", "Probationary" }));
         hrEditEmployeeStatusCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
         hrEditEmployeeStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -580,13 +592,10 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
             // Check if an item is selected to avoid a NullPointerException
             String status = null;
             if (selectedItem != null) {
-                // Convert the selected item to a String
                 status = selectedItem.toString();
-
-                // Now you can use the 'selectedValue' string (e.g., print it, save to a database)
-                System.out.println("Selected Value: " + status);
-                // You can also display it in a text field, for example:
-                // myTextField.setText(selectedValue);
+            }
+            if (status == "Select Status") {
+                throw new IllegalArgumentException("Please select an employment status.");
             }
             // Position
             String position = hrEditEmployeePositionFld.getText();
@@ -738,7 +747,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
     private javax.swing.JTextField hrEditEmployeeSSSFld;
     private javax.swing.JLabel hrEditEmployeeSSSLbl;
     private javax.swing.JPanel hrEditEmployeeSidebarPnl;
-    private javax.swing.JComboBox<String> hrEditEmployeeStatusCbx;
+    private javax.swing.JComboBox<Object> hrEditEmployeeStatusCbx;
     private javax.swing.JLabel hrEditEmployeeStatusLbl;
     private javax.swing.JTextField hrEditEmployeeTINFld;
     private javax.swing.JLabel hrEditEmployeeTINLbl;

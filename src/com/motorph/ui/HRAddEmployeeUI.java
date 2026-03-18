@@ -7,12 +7,14 @@ package com.motorph.ui;
 import com.motorph.dao.CsvEmployeeDAO;
 import com.motorph.dao.EmployeeDAO;
 import com.motorph.model.Employee;
+import com.motorph.model.EmploymentStatus;
 import com.motorph.model.RegularEmployee;
 import com.motorph.service.EmployeeService;
 import com.motorph.util.DateUtils;
 import com.motorph.util.GuiUtil;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 /**
@@ -30,9 +32,21 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
      */
     public HRAddEmployeeUI() {
         initComponents();
+        initComboBox();
         
         EmployeeDAO empDao = new CsvEmployeeDAO();
         this.empService = new EmployeeService(empDao);
+    }
+    
+    
+    private void initComboBox() {
+        EmploymentStatus[] types = EmploymentStatus.values();
+        DefaultComboBoxModel<Object> model = new DefaultComboBoxModel<>();
+        model.addElement("Select Status");
+        for (EmploymentStatus type : types) {
+            model.addElement(type);
+        }
+        hrAEmployeeStatusCbx.setModel(model);
     }
 
     /**
@@ -250,7 +264,9 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
 
         hrAEmployeeENumberFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         hrAEmployeeENumberFld.setForeground(new java.awt.Color(31, 41, 55));
+        hrAEmployeeENumberFld.setText("System Generated");
         hrAEmployeeENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrAEmployeeENumberFld.setEnabled(false);
         hrAEmployeeENumberFld.addActionListener(this::hrAEmployeeENumberFldActionPerformed);
 
         hrAEmployeeISupervisorFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -285,7 +301,6 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
 
         hrAEmployeeStatusCbx.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         hrAEmployeeStatusCbx.setForeground(new java.awt.Color(31, 41, 55));
-        hrAEmployeeStatusCbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Regular", "Probationary" }));
         hrAEmployeeStatusCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
         hrAEmployeeStatusLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -627,6 +642,9 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
             if (selectedItem != null) {
                 status = selectedItem.toString();
             }
+            if (status == "Select Status") {
+                throw new IllegalArgumentException("Please select an employment status.");
+            }
             // Position
             String position = hrAEmployeePositionFld.getText();
             // Immediate Supervisor
@@ -737,7 +755,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
     private javax.swing.JTextField hrAEmployeeSSSFld;
     private javax.swing.JLabel hrAEmployeeSSSLbl;
     private javax.swing.JPanel hrAEmployeeSidebarPnl;
-    private javax.swing.JComboBox<String> hrAEmployeeStatusCbx;
+    private javax.swing.JComboBox<Object> hrAEmployeeStatusCbx;
     private javax.swing.JLabel hrAEmployeeStatusLbl;
     private javax.swing.JTextField hrAEmployeeTINFld;
     private javax.swing.JLabel hrAEmployeeTINLbl;

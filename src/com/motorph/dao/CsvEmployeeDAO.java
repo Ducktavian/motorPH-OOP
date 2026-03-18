@@ -86,7 +86,7 @@ public class CsvEmployeeDAO implements EmployeeDAO {
         String TIN = data[8];
         String pagIbigNumber = data[9];
         String status = data[10];
-        String position = data[POSITION_INDEX].toLowerCase();
+        String position = toTitleCase(data[POSITION_INDEX]);
         String immediateSupervisor = data[12];
 
         double basicSalary = parseAmount(data[13]);
@@ -95,15 +95,17 @@ public class CsvEmployeeDAO implements EmployeeDAO {
         double clothingAllowance = parseAmount(data[16]);
 
         Employee employee;
-        if (position.contains("hr")) {
+        
+        String _position = position.toLowerCase();
+        if (_position.contains("hr")) {
             employee = new HR(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
         }
-        else if (position.contains("it")) {
+        else if (_position.contains("it")) {
             employee = new IT(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
         }
-        else if (position.contains("finance")
-            || position.contains("account")
-            || position.contains("payroll")) {
+        else if (_position.contains("finance")
+            || _position.contains("account")
+            || _position.contains("payroll")) {
             employee = new Finance(employeeNumber, lastName, firstName, birthday, address, phoneNumber, SSSNumber, philhealthNumber, TIN, pagIbigNumber, status, position, immediateSupervisor, basicSalary, riceSubsidy, phoneAllowance, clothingAllowance);
         }
         else {
@@ -112,6 +114,33 @@ public class CsvEmployeeDAO implements EmployeeDAO {
         
         return employee;
     }
+    
+    
+    
+    public static String toTitleCase(String input) {
+        if (input == null || input.isEmpty()) {
+            return input;
+        }
+
+        StringBuilder titleCase = new StringBuilder(input.length());
+        boolean nextTitleCase = true;
+
+        for (char c : input.toCharArray()) {
+            if (Character.isSpaceChar(c)) {
+                nextTitleCase = true;
+                titleCase.append(c);
+            } else if (nextTitleCase) {
+                // Character.toTitleCase handles Unicode title case rules
+                titleCase.append(Character.toTitleCase(c));
+                nextTitleCase = false;
+            } else {
+                // Convert subsequent characters to lowercase for standard title case
+                titleCase.append(Character.toLowerCase(c));
+            }
+        }
+        return titleCase.toString();
+    }
+    
     
     // helper to pasrse doubles
     private double parseAmount(String value) {
