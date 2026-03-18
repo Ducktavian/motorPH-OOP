@@ -287,7 +287,7 @@
                     <Column editable="true" title="Date" type="java.lang.String"/>
                     <Column editable="true" title="Log In" type="java.lang.String"/>
                     <Column editable="true" title="Log Out" type="java.lang.String"/>
-                    <Column editable="true" title="Remarks" type="java.lang.Boolean"/>
+                    <Column editable="true" title="Status" type="java.lang.Boolean"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

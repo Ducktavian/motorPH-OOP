@@ -55,11 +55,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private void initComponents() {
 
         itEditUAccSidebarPnl = new javax.swing.JPanel();
-        itEditUAccUManagementBtn = new javax.swing.JButton();
         itEditUAccMainDashboardBtn = new javax.swing.JButton();
         itEditUAccMotorPHIconImgLbl = new javax.swing.JLabel();
-        itEditUAccEditUAccBtn = new javax.swing.JButton();
-        itEditUAccAddUAccBtn = new javax.swing.JButton();
         itEditUAccEditUAccPnl = new javax.swing.JPanel();
         itEditUAccEditUAccLbl = new javax.swing.JLabel();
         itEditUAccUpdateBtn = new javax.swing.JButton();
@@ -83,17 +80,13 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccUsernameFld = new javax.swing.JTextField();
         itEditUAccPasswordLbl = new javax.swing.JLabel();
         itSysToolsResetPassBtn = new javax.swing.JButton();
+        itSysToolsPasswordLbl1 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        hrEditEmployeeBackBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         itEditUAccSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
-
-        itEditUAccUManagementBtn.setBackground(new java.awt.Color(30, 42, 56));
-        itEditUAccUManagementBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itEditUAccUManagementBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itEditUAccUManagementBtn.setText("User Management");
-        itEditUAccUManagementBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        itEditUAccUManagementBtn.addActionListener(this::itEditUAccUManagementBtnActionPerformed);
 
         itEditUAccMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         itEditUAccMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -105,20 +98,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
         itEditUAccMotorPHIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/MotorPHIconImg.png"))); // NOI18N
 
-        itEditUAccEditUAccBtn.setBackground(new java.awt.Color(30, 42, 56));
-        itEditUAccEditUAccBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itEditUAccEditUAccBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itEditUAccEditUAccBtn.setText("Edit User Account");
-        itEditUAccEditUAccBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        itEditUAccEditUAccBtn.addActionListener(this::itEditUAccEditUAccBtnActionPerformed);
-
-        itEditUAccAddUAccBtn.setBackground(new java.awt.Color(30, 42, 56));
-        itEditUAccAddUAccBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        itEditUAccAddUAccBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itEditUAccAddUAccBtn.setText("Add User Account");
-        itEditUAccAddUAccBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        itEditUAccAddUAccBtn.addActionListener(this::itEditUAccAddUAccBtnActionPerformed);
-
         javax.swing.GroupLayout itEditUAccSidebarPnlLayout = new javax.swing.GroupLayout(itEditUAccSidebarPnl);
         itEditUAccSidebarPnl.setLayout(itEditUAccSidebarPnlLayout);
         itEditUAccSidebarPnlLayout.setHorizontalGroup(
@@ -127,38 +106,21 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addGap(92, 92, 92)
                 .addComponent(itEditUAccMainDashboardBtn))
             .addGroup(itEditUAccSidebarPnlLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(itEditUAccSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itEditUAccAddUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itEditUAccEditUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itEditUAccUManagementBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(itEditUAccSidebarPnlLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(itEditUAccMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(40, 40, 40)
+                .addComponent(itEditUAccMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         itEditUAccSidebarPnlLayout.setVerticalGroup(
             itEditUAccSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itEditUAccSidebarPnlLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(itEditUAccSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itEditUAccMotorPHIconImgLbl)
-                    .addGroup(itEditUAccSidebarPnlLayout.createSequentialGroup()
-                        .addGap(189, 189, 189)
-                        .addComponent(itEditUAccUManagementBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itEditUAccEditUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itEditUAccAddUAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(307, 307, 307)
+                .addComponent(itEditUAccMotorPHIconImgLbl)
+                .addGap(447, 447, 447)
                 .addComponent(itEditUAccMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        itEditUAccUManagementBtn.getAccessibleContext().setAccessibleName("itEditUAccActLogsBtn");
         itEditUAccMainDashboardBtn.getAccessibleContext().setAccessibleName("itEditUAccMainDashboardBtn");
         itEditUAccMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("itEditUAccMotorPHIconImgLbl");
-        itEditUAccEditUAccBtn.getAccessibleContext().setAccessibleName("itEditUAccEditUAccBtn");
-        itEditUAccAddUAccBtn.getAccessibleContext().setAccessibleName("itEditUAccAddUAccBtn");
 
         itEditUAccEditUAccPnl.setBackground(new java.awt.Color(30, 58, 138));
         itEditUAccEditUAccPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -303,16 +265,26 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itSysToolsResetPassBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         itSysToolsResetPassBtn.addActionListener(this::itSysToolsResetPassBtnActionPerformed);
 
+        itSysToolsPasswordLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itSysToolsPasswordLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsPasswordLbl1.setText("Role");
+
+        jComboBox1.setForeground(new java.awt.Color(30, 42, 56));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Admin", "Employee", "Finance", "HR", "IT" }));
+        jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+
         javax.swing.GroupLayout itEditUAccUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itEditUAccUAccDetailsBrdrPnl);
         itEditUAccUAccDetailsBrdrPnl.setLayout(itEditUAccUAccDetailsBrdrPnlLayout);
         itEditUAccUAccDetailsBrdrPnlLayout.setHorizontalGroup(
             itEditUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itEditUAccUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addGap(21, 21, 21)
                 .addGroup(itEditUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itEditUAccUsernameLbl)
+                    .addComponent(itSysToolsPasswordLbl1)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itSysToolsResetPassBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itEditUAccPasswordLbl)
-                    .addComponent(itEditUAccUsernameLbl)
                     .addComponent(itEditUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
@@ -327,7 +299,11 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addComponent(itEditUAccPasswordLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itSysToolsResetPassBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(itSysToolsPasswordLbl1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         itEditUAccUsernameLbl.getAccessibleContext().setAccessibleName("itEditUAccUsernameLbl");
@@ -342,38 +318,39 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
             .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itEditUAccENumberLbl)
-                    .addComponent(itEditUAccENameLbl)
-                    .addComponent(itEditUAccPhnNumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itEditUAccENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itEditUAccPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itEditUAccENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itEditUAccStatusLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itEditUAccStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(228, 228, 228)
+                        .addComponent(itEditUAccUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(252, Short.MAX_VALUE))
                     .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itEditUAccPositionLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itEditUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itEditUAccISupervisorLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
-                        .addComponent(itEditUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18))
+                        .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itEditUAccENumberLbl)
+                            .addComponent(itEditUAccENameLbl)
+                            .addComponent(itEditUAccPhnNumberLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(itEditUAccENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itEditUAccPhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itEditUAccENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(itEditUAccStatusLbl)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(itEditUAccStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(itEditUAccPositionLbl)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(itEditUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
+                                .addComponent(itEditUAccISupervisorLbl)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                                .addComponent(itEditUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18))))
             .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGap(242, 242, 242)
-                        .addComponent(itEditUAccUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGap(205, 205, 205)
-                        .addComponent(itEditUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(201, 201, 201)
+                .addComponent(itEditUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         itEditUAccUEDetailsBrdrPnlLayout.setVerticalGroup(
             itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -398,7 +375,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                     .addComponent(itEditUAccStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addComponent(itEditUAccUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itEditUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(23, Short.MAX_VALUE))
         );
@@ -418,19 +395,28 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccUAccDetailsPnl.getAccessibleContext().setAccessibleName("itEditUAccUAccDetailsPnl");
         itEditUAccUAccDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itEditUAccUAccDetailsBrdrPnl");
 
+        hrEditEmployeeBackBtn.setBackground(new java.awt.Color(30, 58, 138));
+        hrEditEmployeeBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        hrEditEmployeeBackBtn.setForeground(new java.awt.Color(255, 255, 255));
+        hrEditEmployeeBackBtn.setText("Back");
+        hrEditEmployeeBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEditEmployeeBackBtn.addActionListener(this::hrEditEmployeeBackBtnActionPerformed);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addComponent(itEditUAccSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(itEditUAccSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(itEditUAccEditUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itEditUAccUEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(itEditUAccUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(hrEditEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itEditUAccUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(itEditUAccEditUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itEditUAccUEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -438,11 +424,13 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(itEditUAccEditUAccPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(itEditUAccUEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(itEditUAccUEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 519, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itEditUAccUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itEditUAccUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hrEditEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54))
             .addComponent(itEditUAccSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -454,23 +442,10 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void itEditUAccUManagementBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUManagementBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUAccUManagementBtnActionPerformed
-
     private void itEditUAccMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccMainDashboardBtnActionPerformed
         // TODO add your handling code here:
         GuiUtil.openFrame(this);
     }//GEN-LAST:event_itEditUAccMainDashboardBtnActionPerformed
-
-    private void itEditUAccEditUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccEditUAccBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUAccEditUAccBtnActionPerformed
-
-    private void itEditUAccAddUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccAddUAccBtnActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_itEditUAccAddUAccBtnActionPerformed
 
     private void itEditUAccUpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUpdateBtnActionPerformed
         // TODO add your handling code here:
@@ -554,6 +529,10 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_itSysToolsResetPassBtnActionPerformed
 
+    private void hrEditEmployeeBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeBackBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_hrEditEmployeeBackBtnActionPerformed
+
 
     private void itEditUserUpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {                                                     
         // TODO add your handling code here:
@@ -561,12 +540,11 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton itEditUAccAddUAccBtn;
+    private javax.swing.JButton hrEditEmployeeBackBtn;
     private javax.swing.JTextField itEditUAccENameFld;
     private javax.swing.JLabel itEditUAccENameLbl;
     private javax.swing.JTextField itEditUAccENumberFld;
     private javax.swing.JLabel itEditUAccENumberLbl;
-    private javax.swing.JButton itEditUAccEditUAccBtn;
     private javax.swing.JLabel itEditUAccEditUAccLbl;
     private javax.swing.JPanel itEditUAccEditUAccPnl;
     private javax.swing.JTextField itEditUAccISupervisorFld;
@@ -585,10 +563,11 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itEditUAccUAccDetailsLbl;
     private javax.swing.JPanel itEditUAccUAccDetailsPnl;
     private javax.swing.JPanel itEditUAccUEDetailsBrdrPnl;
-    private javax.swing.JButton itEditUAccUManagementBtn;
     private javax.swing.JButton itEditUAccUpdateBtn;
     private javax.swing.JTextField itEditUAccUsernameFld;
     private javax.swing.JLabel itEditUAccUsernameLbl;
+    private javax.swing.JLabel itSysToolsPasswordLbl1;
     private javax.swing.JButton itSysToolsResetPassBtn;
+    private javax.swing.JComboBox<String> jComboBox1;
     // End of variables declaration//GEN-END:variables
 }

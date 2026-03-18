@@ -117,6 +117,8 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsUsernameFld = new javax.swing.JTextField();
         itSysToolsPasswordLbl = new javax.swing.JLabel();
         itSysToolsPasswordFld = new javax.swing.JPasswordField();
+        itSysToolsPasswordFld1 = new javax.swing.JPasswordField();
+        itSysToolsPasswordLbl1 = new javax.swing.JLabel();
         itAddUAccActivateBtn = new javax.swing.JButton();
         itAddUAccActivateBtn1 = new javax.swing.JButton();
 
@@ -315,6 +317,15 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsPasswordFld.setEnabled(false);
         itSysToolsPasswordFld.addActionListener(this::itSysToolsPasswordFldActionPerformed);
 
+        itSysToolsPasswordFld1.setForeground(new java.awt.Color(30, 42, 56));
+        itSysToolsPasswordFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itSysToolsPasswordFld1.setEnabled(false);
+        itSysToolsPasswordFld1.addActionListener(this::itSysToolsPasswordFld1ActionPerformed);
+
+        itSysToolsPasswordLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itSysToolsPasswordLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        itSysToolsPasswordLbl1.setText("Role");
+
         javax.swing.GroupLayout itSysToolsUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itSysToolsUAccDetailsBrdrPnl);
         itSysToolsUAccDetailsBrdrPnl.setLayout(itSysToolsUAccDetailsBrdrPnlLayout);
         itSysToolsUAccDetailsBrdrPnlLayout.setHorizontalGroup(
@@ -322,11 +333,13 @@ public class ITUserManagementUI extends javax.swing.JFrame {
             .addGroup(itSysToolsUAccDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addGroup(itSysToolsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itSysToolsPasswordLbl1)
+                    .addComponent(itSysToolsPasswordFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itSysToolsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itSysToolsPasswordLbl)
                     .addComponent(itSysToolsUsernameLbl)
                     .addComponent(itSysToolsUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         itSysToolsUAccDetailsBrdrPnlLayout.setVerticalGroup(
             itSysToolsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -339,7 +352,11 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                 .addComponent(itSysToolsPasswordLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itSysToolsPasswordFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(itSysToolsPasswordLbl1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(itSysToolsPasswordFld1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         itSysToolsUsernameLbl.getAccessibleContext().setAccessibleName("itSysToolsUsernameLbl");
@@ -383,7 +400,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                         .addGap(242, 242, 242)
                         .addComponent(itSysToolsUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itSysToolsUserEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addGap(205, 205, 205)
+                        .addGap(212, 212, 212)
                         .addComponent(itSysToolsUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -412,7 +429,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                 .addComponent(itSysToolsUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(itSysToolsUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         itSysToolsENumberLbl.getAccessibleContext().setAccessibleName("itSysToolsENumberLbl");
@@ -451,21 +468,22 @@ public class ITUserManagementUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(itSysToolsSidebarPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(itSysToolsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(41, 41, 41)
                         .addComponent(itSysToolsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(293, 293, 293)
                         .addComponent(itAddUAccActivateBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(itAddUAccActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(itSysToolsActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addComponent(itSysToolsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(293, 293, 293))
-                    .addComponent(itSysToolsUserEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(itSysToolsActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(12, 12, 12)
+                            .addComponent(itSysToolsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(293, 293, 293))
+                        .addComponent(itSysToolsUserEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -479,19 +497,14 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                     .addComponent(itSysToolsActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itSysToolsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itSysToolsUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itSysToolsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itSysToolsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(itAddUAccActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itAddUAccActivateBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(itSysToolsUserEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 512, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itSysToolsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itSysToolsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccActivateBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(55, 55, 55))
         );
 
         itSysToolsSidebarPnl.getAccessibleContext().setAccessibleName("itSysToolsSidebarPnl");
@@ -621,6 +634,10 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itAddUAccActivateBtn1ActionPerformed
 
+    private void itSysToolsPasswordFld1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsPasswordFld1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itSysToolsPasswordFld1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -663,7 +680,9 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     private javax.swing.JButton itSysToolsMainDashboardBtn;
     private javax.swing.JLabel itSysToolsMotorPHIconImgLbl;
     private javax.swing.JPasswordField itSysToolsPasswordFld;
+    private javax.swing.JPasswordField itSysToolsPasswordFld1;
     private javax.swing.JLabel itSysToolsPasswordLbl;
+    private javax.swing.JLabel itSysToolsPasswordLbl1;
     private javax.swing.JTextField itSysToolsPhnNumberFld;
     private javax.swing.JLabel itSysToolsPhnNumberLbl;
     private javax.swing.JTextField itSysToolsPositionFld;

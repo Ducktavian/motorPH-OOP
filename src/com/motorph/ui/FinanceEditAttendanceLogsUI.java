@@ -196,7 +196,7 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Employee #", "Employee Name", "Date", "Log In", "Log Out", "Remarks"
+                "Employee #", "Employee Name", "Date", "Log In", "Log Out", "Status"
             }
         ) {
             Class[] types = new Class [] {
