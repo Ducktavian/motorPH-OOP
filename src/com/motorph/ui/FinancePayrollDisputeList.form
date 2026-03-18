@@ -394,7 +394,7 @@
                 <Column editable="true" title="Employee #" type="java.lang.Integer"/>
                 <Column editable="true" title="Employee Name" type="java.lang.String"/>
                 <Column editable="true" title="Payroll Dispute Details" type="java.lang.String"/>
-                <Column editable="true" title="Remarks" type="java.lang.String"/>
+                <Column editable="true" title="Status" type="java.lang.String"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

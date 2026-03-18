@@ -31,8 +31,6 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
     private void initComponents() {
 
         financeEditAttLogsSidebarPnl = new javax.swing.JPanel();
-        financeEditAttLogsAttLogsBtn = new javax.swing.JButton();
-        financeEditAttLogsEditAttLogsBtn = new javax.swing.JButton();
         financeEditAttLogsMainDashboardBtn = new javax.swing.JButton();
         financeEditAttLogsMotorPHIconImgLbl = new javax.swing.JLabel();
         financeEditAttLogsEditAttLogsPnl = new javax.swing.JPanel();
@@ -42,30 +40,13 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
         financeEditAttLogsAttLogsBrdrPnl = new javax.swing.JPanel();
         financeEditAttLogsAttLogsBrdrScrlPnl = new javax.swing.JScrollPane();
         financeEditAttLogsAttLogsTbl = new javax.swing.JTable();
+        financeEditAttLogsApproveAllBtn1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         financeEditAttLogsSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
         financeEditAttLogsSidebarPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        financeEditAttLogsAttLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        financeEditAttLogsAttLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        financeEditAttLogsAttLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        financeEditAttLogsAttLogsBtn.setText("Attendance Logs");
-        financeEditAttLogsAttLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        financeEditAttLogsAttLogsBtn.addActionListener(this::financeEditAttLogsAttLogsBtnActionPerformed);
-        financeEditAttLogsSidebarPnl.add(financeEditAttLogsAttLogsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
-        financeEditAttLogsAttLogsBtn.getAccessibleContext().setAccessibleName("financeEditAttLogsAttLogsBtn");
-
-        financeEditAttLogsEditAttLogsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        financeEditAttLogsEditAttLogsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        financeEditAttLogsEditAttLogsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        financeEditAttLogsEditAttLogsBtn.setText("Edit Attendance Logs");
-        financeEditAttLogsEditAttLogsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        financeEditAttLogsEditAttLogsBtn.addActionListener(this::financeEditAttLogsEditAttLogsBtnActionPerformed);
-        financeEditAttLogsSidebarPnl.add(financeEditAttLogsEditAttLogsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 250, 216, 39));
-        financeEditAttLogsEditAttLogsBtn.getAccessibleContext().setAccessibleName("financeEditAttLogsEditAttLogsBtn");
 
         financeEditAttLogsMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         financeEditAttLogsMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -252,6 +233,13 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
 
         financeEditAttLogsAttLogsBrdrScrlPnl.getAccessibleContext().setAccessibleName("financeEditAttLogsAttLogsBrdrScrlPnl");
 
+        financeEditAttLogsApproveAllBtn1.setBackground(new java.awt.Color(30, 58, 138));
+        financeEditAttLogsApproveAllBtn1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        financeEditAttLogsApproveAllBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        financeEditAttLogsApproveAllBtn1.setText("Back");
+        financeEditAttLogsApproveAllBtn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 42, 56)));
+        financeEditAttLogsApproveAllBtn1.addActionListener(this::financeEditAttLogsApproveAllBtn1ActionPerformed);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -263,7 +251,8 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
                     .addComponent(financeEditAttLogsEditAttLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createSequentialGroup()
-                            .addGap(466, 466, 466)
+                            .addComponent(financeEditAttLogsApproveAllBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(403, 403, 403)
                             .addComponent(financeEditAttLogsApproveAllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(financeEditAttLogsDenyAllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -281,7 +270,8 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(financeEditAttLogsDenyAllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(financeEditAttLogsApproveAllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(financeEditAttLogsApproveAllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financeEditAttLogsApproveAllBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         financeEditAttLogsSidebarPnl.getAccessibleContext().setAccessibleName("financeEditAttLogsSidebarPnl");
@@ -292,14 +282,6 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void financeEditAttLogsAttLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEditAttLogsAttLogsBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_financeEditAttLogsAttLogsBtnActionPerformed
-
-    private void financeEditAttLogsEditAttLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEditAttLogsEditAttLogsBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_financeEditAttLogsEditAttLogsBtnActionPerformed
 
     private void financeEditAttLogsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEditAttLogsMainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -313,6 +295,10 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
     private void financeEditAttLogsDenyAllBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEditAttLogsDenyAllBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_financeEditAttLogsDenyAllBtnActionPerformed
+
+    private void financeEditAttLogsApproveAllBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeEditAttLogsApproveAllBtn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_financeEditAttLogsApproveAllBtn1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -341,12 +327,11 @@ public class FinanceEditAttendanceLogsUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton financeEditAttLogsApproveAllBtn;
+    private javax.swing.JButton financeEditAttLogsApproveAllBtn1;
     private javax.swing.JPanel financeEditAttLogsAttLogsBrdrPnl;
     private javax.swing.JScrollPane financeEditAttLogsAttLogsBrdrScrlPnl;
-    private javax.swing.JButton financeEditAttLogsAttLogsBtn;
     private javax.swing.JTable financeEditAttLogsAttLogsTbl;
     private javax.swing.JButton financeEditAttLogsDenyAllBtn;
-    private javax.swing.JButton financeEditAttLogsEditAttLogsBtn;
     private javax.swing.JLabel financeEditAttLogsEditAttLogsLbl;
     private javax.swing.JPanel financeEditAttLogsEditAttLogsPnl;
     private javax.swing.JButton financeEditAttLogsMainDashboardBtn;

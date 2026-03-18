@@ -78,7 +78,6 @@ public class EmployeePayslipRecordsUI extends javax.swing.JFrame {
         employeePylRecordBrdrPnl = new javax.swing.JPanel();
         employeePylRecordBrdrScrlPnl = new javax.swing.JScrollPane();
         employeePylRecordTbl = new javax.swing.JTable();
-        employeePylDisputeRecordsBtn = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,7 +96,7 @@ public class EmployeePayslipRecordsUI extends javax.swing.JFrame {
         employeePylDisputePylRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
         employeePylDisputePylRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         employeePylDisputePylRecordBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePylDisputePylRecordBtn.setText("Payslip Record");
+        employeePylDisputePylRecordBtn.setText("Payslip Records");
         employeePylDisputePylRecordBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         employeePylDisputePylRecordBtn.addActionListener(this::employeePylDisputePylRecordBtnActionPerformed);
 
@@ -124,7 +123,7 @@ public class EmployeePayslipRecordsUI extends javax.swing.JFrame {
                 .addComponent(employeePylRecordMotorPHIconImgLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(employeePylDisputePylRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 307, Short.MAX_VALUE)
                 .addComponent(employeePylRecordMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16))
         );
@@ -279,31 +278,21 @@ public class EmployeePayslipRecordsUI extends javax.swing.JFrame {
         employeePylRecordTbl.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         employeePylRecordTbl.getAccessibleContext().setAccessibleName("employeePylRecordTbl");
 
-        employeePylDisputeRecordsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        employeePylDisputeRecordsBtn.setText("Records");
-
         javax.swing.GroupLayout employeePylRecordBrdrPnlLayout = new javax.swing.GroupLayout(employeePylRecordBrdrPnl);
         employeePylRecordBrdrPnl.setLayout(employeePylRecordBrdrPnlLayout);
         employeePylRecordBrdrPnlLayout.setHorizontalGroup(
             employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeePylRecordBrdrPnlLayout.createSequentialGroup()
                 .addContainerGap(18, Short.MAX_VALUE)
-                .addGroup(employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(14, 14, 14))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylRecordBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(employeePylDisputeRecordsBtn)
-                        .addGap(317, 317, 317))))
+                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
         employeePylRecordBrdrPnlLayout.setVerticalGroup(
             employeePylRecordBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeePylRecordBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(employeePylDisputeRecordsBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 513, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addGap(17, 17, 17)
+                .addComponent(employeePylRecordBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         employeePylRecordBrdrScrlPnl.getAccessibleContext().setAccessibleName("employeePylRecordBrdrScrlPnl");
@@ -368,7 +357,6 @@ public class EmployeePayslipRecordsUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton employeePylDisputePylRecordBtn;
-    private javax.swing.JLabel employeePylDisputeRecordsBtn;
     private javax.swing.JPanel employeePylRecordBrdrPnl;
     private javax.swing.JScrollPane employeePylRecordBrdrScrlPnl;
     private javax.swing.JButton employeePylRecordMainDashboardBtn;

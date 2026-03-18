@@ -113,7 +113,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardPrlImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainHDashboardPrlImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         mainHDashboardPrlImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainHDashboardPrlImgBtn.setText("Payroll Details");
+        mainHDashboardPrlImgBtn.setText("Manage Payroll");
         mainHDashboardPrlImgBtn.addActionListener(this::mainHDashboardPrlImgBtnActionPerformed);
         getContentPane().add(mainHDashboardPrlImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 170, 169, 45));
         mainHDashboardPrlImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardPrlImgBtn");
@@ -121,7 +121,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardEDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainHDashboardEDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         mainHDashboardEDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainHDashboardEDetailsImgBtn.setText("Employee Details");
+        mainHDashboardEDetailsImgBtn.setText("Manage Employees");
         mainHDashboardEDetailsImgBtn.addActionListener(this::mainHDashboardEDetailsImgBtnActionPerformed);
         getContentPane().add(mainHDashboardEDetailsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 170, 169, 45));
         mainHDashboardEDetailsImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardEDetailsImgBtn");
@@ -129,7 +129,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardRDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainHDashboardRDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         mainHDashboardRDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainHDashboardRDetailsImgBtn.setText("Request Details");
+        mainHDashboardRDetailsImgBtn.setText("Manage Requests");
         mainHDashboardRDetailsImgBtn.addActionListener(this::mainHDashboardRDetailsImgBtnActionPerformed);
         getContentPane().add(mainHDashboardRDetailsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 169, 45));
         mainHDashboardRDetailsImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardRDetailsImgBtn");
@@ -137,7 +137,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardLDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainHDashboardLDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         mainHDashboardLDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainHDashboardLDetailsImgBtn.setText("Leave Details");
+        mainHDashboardLDetailsImgBtn.setText("Manage Leave");
         mainHDashboardLDetailsImgBtn.addActionListener(this::mainHDashboardLDetailsImgBtnActionPerformed);
         getContentPane().add(mainHDashboardLDetailsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 370, 169, 45));
         mainHDashboardLDetailsImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardLDetailsImgBtn");
@@ -145,7 +145,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardDDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainHDashboardDDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         mainHDashboardDDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainHDashboardDDetailsImgBtn.setText("Dispute Details");
+        mainHDashboardDDetailsImgBtn.setText("Manage Disputes");
         mainHDashboardDDetailsImgBtn.addActionListener(this::mainHDashboardDDetailsImgBtnActionPerformed);
         getContentPane().add(mainHDashboardDDetailsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, 169, 45));
         mainHDashboardDDetailsImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardDDetailsImgBtn");

@@ -66,7 +66,6 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
     private void initComponents() {
 
         hrEditEmployeeSidebarPnl = new javax.swing.JPanel();
-        hrEditEmployeeEDetailsBtn = new javax.swing.JButton();
         hrEditEmployeeMainDashboardBtn = new javax.swing.JButton();
         hrEditEmployeeMotorPHIconImgLbl = new javax.swing.JLabel();
         hrEditEmployeeUpdateBtn = new javax.swing.JButton();
@@ -113,15 +112,6 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
 
         hrEditEmployeeSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
         hrEditEmployeeSidebarPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        hrEditEmployeeEDetailsBtn.setBackground(new java.awt.Color(30, 42, 56));
-        hrEditEmployeeEDetailsBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrEditEmployeeEDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrEditEmployeeEDetailsBtn.setText("Employee Details");
-        hrEditEmployeeEDetailsBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        hrEditEmployeeEDetailsBtn.addActionListener(this::hrEditEmployeeEDetailsBtnActionPerformed);
-        hrEditEmployeeSidebarPnl.add(hrEditEmployeeEDetailsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
-        hrEditEmployeeEDetailsBtn.getAccessibleContext().setAccessibleName("hrEditEmployeeEDetailsBtn");
 
         hrEditEmployeeMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         hrEditEmployeeMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -520,9 +510,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(hrEditEmployeeEditEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(hrEditEmployeeEditEDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(hrEditEmployeeUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -556,11 +544,6 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void hrEditEmployeeEDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeEDetailsBtnActionPerformed
-        // TODO add your handling code here:
-        GuiUtil.openFrame(this, new HREmployeeDetailsUI());
-    }//GEN-LAST:event_hrEditEmployeeEDetailsBtnActionPerformed
 
     private void hrEditEmployeeMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeMainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -728,7 +711,6 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
     private javax.swing.JTextField hrEditEmployeeCltAllowanceFld;
     private javax.swing.JLabel hrEditEmployeeCltAllowanceLbl;
     private javax.swing.JPanel hrEditEmployeeEDetailsBrdrPnl;
-    private javax.swing.JButton hrEditEmployeeEDetailsBtn;
     private javax.swing.JTextField hrEditEmployeeENumberFld;
     private javax.swing.JLabel hrEditEmployeeENumberLbl;
     private javax.swing.JLabel hrEditEmployeeEditEDetailsLbl;

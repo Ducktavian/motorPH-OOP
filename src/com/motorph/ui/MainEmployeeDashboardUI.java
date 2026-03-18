@@ -100,7 +100,7 @@ public class MainEmployeeDashboardUI extends javax.swing.JFrame {
         mainEDashboardRDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainEDashboardRDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         mainEDashboardRDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainEDashboardRDetailsImgBtn.setText("Request Details");
+        mainEDashboardRDetailsImgBtn.setText("Manage Requests");
         mainEDashboardRDetailsImgBtn.addActionListener(this::mainEDashboardRDetailsImgBtnActionPerformed);
         getContentPane().add(mainEDashboardRDetailsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 170, 169, 45));
         mainEDashboardRDetailsImgBtn.getAccessibleContext().setAccessibleName("mainEDashboardRDetailsImgBtn");
@@ -108,7 +108,7 @@ public class MainEmployeeDashboardUI extends javax.swing.JFrame {
         mainEDashboardLDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainEDashboardLDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         mainEDashboardLDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainEDashboardLDetailsImgBtn.setText("Leave Details");
+        mainEDashboardLDetailsImgBtn.setText("Manage Leave");
         mainEDashboardLDetailsImgBtn.addActionListener(this::mainEDashboardLDetailsImgBtnActionPerformed);
         getContentPane().add(mainEDashboardLDetailsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 170, 169, 45));
         mainEDashboardLDetailsImgBtn.getAccessibleContext().setAccessibleName("mainEDashboardLDetailsImgBtn");
@@ -116,7 +116,7 @@ public class MainEmployeeDashboardUI extends javax.swing.JFrame {
         mainEDashboardDDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainEDashboardDDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         mainEDashboardDDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainEDashboardDDetailsImgBtn.setText("Dispute Details");
+        mainEDashboardDDetailsImgBtn.setText("Manage Disputes");
         mainEDashboardDDetailsImgBtn.addActionListener(this::mainEDashboardDDetailsImgBtnActionPerformed);
         getContentPane().add(mainEDashboardDDetailsImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 169, 45));
         mainEDashboardDDetailsImgBtn.getAccessibleContext().setAccessibleName("mainEDashboardDDetailsImgBtn");

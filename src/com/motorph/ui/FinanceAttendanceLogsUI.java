@@ -304,7 +304,7 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Employee #", "Employee Name", "Date", "Log In", "Log Out", "Remarks"
+                "Employee #", "Employee Name", "Date", "Log In", "Log Out", "Status"
             }
         ) {
             Class[] types = new Class [] {
@@ -430,16 +430,16 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
         performSearch();
     }//GEN-LAST:event_financeAttLogsEntENumberFldActionPerformed
 
-    private void financeAttLogsAttLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsAttLogsBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_financeAttLogsAttLogsBtnActionPerformed
-
     private void financeAttLogsEntENumberFldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_financeAttLogsEntENumberFldMouseClicked
         // TODO add your handling code here:
         
         
         
     }//GEN-LAST:event_financeAttLogsEntENumberFldMouseClicked
+
+    private void financeAttLogsAttLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsAttLogsBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_financeAttLogsAttLogsBtnActionPerformed
 
     /**
      * @param args the command line arguments

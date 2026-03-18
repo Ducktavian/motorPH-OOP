@@ -62,8 +62,6 @@ public class SettingsUI extends javax.swing.JFrame {
         SettingsResetPassPnl = new javax.swing.JPanel();
         employeeDashboardProfileLbl = new javax.swing.JLabel();
         SettingsUAccDetailsBrdrPnl = new javax.swing.JPanel();
-        SettingsUAccDetailsPnl = new javax.swing.JPanel();
-        SettingsUAccDetailsLbl = new javax.swing.JLabel();
         SettingsUAccDetailsPassBrdrPnl = new javax.swing.JPanel();
         SettingsCurrPassLbl = new javax.swing.JLabel();
         SettingsNewPassLbl = new javax.swing.JLabel();
@@ -107,41 +105,12 @@ public class SettingsUI extends javax.swing.JFrame {
 
         employeeDashboardProfileLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
         employeeDashboardProfileLbl.setForeground(new java.awt.Color(255, 255, 255));
-        employeeDashboardProfileLbl.setText(" Reset Password");
-        SettingsResetPassPnl.add(employeeDashboardProfileLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 210, 46));
+        employeeDashboardProfileLbl.setText("User Account Details");
+        SettingsResetPassPnl.add(employeeDashboardProfileLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 260, 46));
         employeeDashboardProfileLbl.getAccessibleContext().setAccessibleName("employeeDashboardProfileLbl");
 
         SettingsUAccDetailsBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
         SettingsUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
-
-        SettingsUAccDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
-        SettingsUAccDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        SettingsUAccDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        SettingsUAccDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
-
-        SettingsUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
-        SettingsUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
-        SettingsUAccDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
-        SettingsUAccDetailsLbl.setText("User Account Details");
-        SettingsUAccDetailsLbl.setToolTipText("");
-
-        javax.swing.GroupLayout SettingsUAccDetailsPnlLayout = new javax.swing.GroupLayout(SettingsUAccDetailsPnl);
-        SettingsUAccDetailsPnl.setLayout(SettingsUAccDetailsPnlLayout);
-        SettingsUAccDetailsPnlLayout.setHorizontalGroup(
-            SettingsUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettingsUAccDetailsPnlLayout.createSequentialGroup()
-                .addGap(0, 16, Short.MAX_VALUE)
-                .addComponent(SettingsUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        SettingsUAccDetailsPnlLayout.setVerticalGroup(
-            SettingsUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettingsUAccDetailsPnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(SettingsUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        SettingsUAccDetailsLbl.getAccessibleContext().setAccessibleName("SettingsUAccDetailsLbl");
 
         SettingsUAccDetailsPassBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
@@ -210,27 +179,19 @@ public class SettingsUI extends javax.swing.JFrame {
         SettingsUAccDetailsBrdrPnl.setLayout(SettingsUAccDetailsBrdrPnlLayout);
         SettingsUAccDetailsBrdrPnlLayout.setHorizontalGroup(
             SettingsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SettingsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(161, Short.MAX_VALUE)
-                .addGroup(SettingsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettingsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(SettingsUAccDetailsPassBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(154, 154, 154))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettingsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(SettingsUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(220, 220, 220))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettingsUAccDetailsBrdrPnlLayout.createSequentialGroup()
+                .addContainerGap(162, Short.MAX_VALUE)
+                .addComponent(SettingsUAccDetailsPassBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(153, 153, 153))
         );
         SettingsUAccDetailsBrdrPnlLayout.setVerticalGroup(
             SettingsUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SettingsUAccDetailsBrdrPnlLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(SettingsUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(55, 55, 55)
                 .addComponent(SettingsUAccDetailsPassBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
-        SettingsUAccDetailsPnl.getAccessibleContext().setAccessibleName("SettingsUAccDetailsPnl");
         SettingsUAccDetailsPassBrdrPnl.getAccessibleContext().setAccessibleName("SettingsUAccDetailsPassBrdrPnl");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -311,9 +272,7 @@ public class SettingsUI extends javax.swing.JFrame {
     private javax.swing.JPanel SettingsResetPassPnl;
     private javax.swing.JPanel SettingsSidebarPnl;
     private javax.swing.JPanel SettingsUAccDetailsBrdrPnl;
-    private javax.swing.JLabel SettingsUAccDetailsLbl;
     private javax.swing.JPanel SettingsUAccDetailsPassBrdrPnl;
-    private javax.swing.JPanel SettingsUAccDetailsPnl;
     private javax.swing.JLabel employeeDashboardProfileLbl;
     // End of variables declaration//GEN-END:variables
 }

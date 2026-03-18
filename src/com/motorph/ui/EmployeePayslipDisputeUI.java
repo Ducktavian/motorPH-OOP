@@ -45,7 +45,6 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
         employeePylDisputePylDRecordsPnl = new javax.swing.JPanel();
         employeePylDisputePylDRecordsLbl = new javax.swing.JLabel();
         employeePylDisputeRecordsBrdrPnl = new javax.swing.JPanel();
-        employeePylDisputeRecordsLbl = new javax.swing.JLabel();
         employeePylDisputeRecordsBrdrScrlPnl = new javax.swing.JScrollPane();
         employeePylDisputeRecordsTbl = new javax.swing.JTable();
         employeePylDisputePylDFormBrdrPnl = new javax.swing.JPanel();
@@ -227,7 +226,7 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
         employeePylDisputePylRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
         employeePylDisputePylRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         employeePylDisputePylRecordBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePylDisputePylRecordBtn.setText("Payslip Record");
+        employeePylDisputePylRecordBtn.setText("Payslip Records");
         employeePylDisputePylRecordBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         employeePylDisputePylRecordBtn.addActionListener(this::employeePylDisputePylRecordBtnActionPerformed);
 
@@ -300,9 +299,6 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
 
         employeePylDisputeRecordsBrdrPnl.setBackground(new java.awt.Color(178, 178, 178));
         employeePylDisputeRecordsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
-
-        employeePylDisputeRecordsLbl.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        employeePylDisputeRecordsLbl.setText("Records");
 
         employeePylDisputeRecordsBrdrScrlPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
@@ -433,10 +429,6 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
         employeePylDisputeRecordsBrdrPnlLayout.setHorizontalGroup(
             employeePylDisputeRecordsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeePylDisputeRecordsBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(employeePylDisputeRecordsLbl)
-                .addGap(319, 319, 319))
-            .addGroup(employeePylDisputeRecordsBrdrPnlLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(employeePylDisputeRecordsBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(13, Short.MAX_VALUE))
@@ -444,14 +436,11 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
         employeePylDisputeRecordsBrdrPnlLayout.setVerticalGroup(
             employeePylDisputeRecordsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeePylDisputeRecordsBrdrPnlLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(employeePylDisputeRecordsLbl)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(employeePylDisputeRecordsBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21)
+                .addComponent(employeePylDisputeRecordsBrdrScrlPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        employeePylDisputeRecordsLbl.getAccessibleContext().setAccessibleName("employeePrlDisputeRecordsLbl");
         employeePylDisputeRecordsBrdrScrlPnl.getAccessibleContext().setAccessibleName("employeePrlDisputeRecordsBrdrScrlPnl");
 
         employeePylDisputePylDFormBrdrPnl.setBackground(new java.awt.Color(255, 255, 255));
@@ -735,7 +724,6 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
     private javax.swing.JLabel employeePylDisputeReasonLbl;
     private javax.swing.JPanel employeePylDisputeRecordsBrdrPnl;
     private javax.swing.JScrollPane employeePylDisputeRecordsBrdrScrlPnl;
-    private javax.swing.JLabel employeePylDisputeRecordsLbl;
     private javax.swing.JTable employeePylDisputeRecordsTbl;
     private javax.swing.JPanel employeePylDisputeSidebarPnl;
     private javax.swing.JButton employeePylDisputeSubmitBtn;

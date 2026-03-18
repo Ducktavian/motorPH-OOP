@@ -399,7 +399,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Payroll Dispute ID", "Date Filed", "Employee #", "Employee Name", "Payroll Dispute Details", "Remarks"
+                "Payroll Dispute ID", "Date Filed", "Employee #", "Employee Name", "Payroll Dispute Details", "Status"
             }
         ) {
             Class[] types = new Class [] {
