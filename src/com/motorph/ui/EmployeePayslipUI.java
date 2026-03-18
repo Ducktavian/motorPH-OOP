@@ -46,16 +46,16 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
         
         employeePylBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
         employeePylOvertimeFld.setText("");
-        employeePylHrsWorkedFld.setText("");
+        employeePylHrsWorkedFld.setText(String.valueOf(payslip.getTotalHours()));
         employeePylHourlyRateFld.setText(String.valueOf(emp.getHourlyRate()));
         employeePylRiceSubsidyFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()));
         employeePylPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()));
         employeePylCltAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()));
        
-        employeePylTGrossFld.setText("");
+        employeePylTGrossFld.setText(String.valueOf(payslip.getGrossPay()));
 
         employeePylSSSFld.setText(String.valueOf(payslip.getDeductionBreakdown().getSss()));
-        employeePylWithtaxFld.setText("");
+        employeePylWithtaxFld.setText(String.valueOf(payslip.getDeductionBreakdown().getWithholdingTax()));
         employeePylPhilHealthFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPhilHealth()));
         employeePylPagIbigFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPagIbig()));
       
@@ -862,6 +862,7 @@ public class EmployeePayslipUI extends javax.swing.JFrame {
 
     private void employeePylBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylBackBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new EmployeePayslipRecordUI());
     }//GEN-LAST:event_employeePylBackBtnActionPerformed
 
     

@@ -7,6 +7,7 @@ package com.motorph.ui;
 import com.motorph.model.Employee;
 import com.motorph.model.PayrollPeriod;
 import com.motorph.model.Payslip;
+import com.motorph.service.AttendanceService;
 import com.motorph.service.EmployeeService;
 import com.motorph.service.PayrollService;
 import com.motorph.util.AppContext;
@@ -24,11 +25,13 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FinanceGeneratePayrollUI.class.getName());
     private EmployeeService empService;
     private PayrollService payrollService;
+    private AttendanceService attendanceService;
     
    
     public FinanceGeneratePayrollUI() {
         this.empService = AppContext.getEmployeeService();
         this.payrollService = AppContext.getPayrollService();
+        this.attendanceService = AppContext.getAttendanceService();
         initComponents();
         initComboBox();
     }
@@ -67,15 +70,15 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
     }
     
     private void clearFields() {
-        
+        financeGPrlENameFld.setText("");
+        financeGPrlENumberFld.setText("");
     }
     
     private Payslip generatePayslip(Employee emp) {
         
         Object selectedItem = financeGPrlPrlPeriodCbx.getSelectedItem();
         if (!(selectedItem instanceof PayrollPeriod)) {
-            JOptionPane.showMessageDialog(null, "Please select a valid payroll period.");
-            return null;
+            throw new IllegalArgumentException("Please select a valid payroll period.");
         }
         
         try {
@@ -87,8 +90,12 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
             LocalDate end = selectedPeriod.getEndDate(year, month);
             
             if (start.isAfter(LocalDate.now())) {
-                JOptionPane.showMessageDialog(null, "Cannot generate payroll for a future date.");
-                return null;
+                throw new IllegalArgumentException("Cannot generate payroll for a future date");
+            }
+            
+            double hours = attendanceService.computeTotalHours(emp.getEmployeeNumber(), start, end);
+            if (hours <= 0) {
+                throw new IllegalArgumentException("No attendance records found for this period.");
             }
                         
             return payrollService.generatePayslip(emp, start, end);
@@ -103,38 +110,24 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
     private void populateSalaryCalculations(Payslip payslip) {
         
         Employee emp = empService.findEmployee(payslip.getEmployeeNumber());
-        
         financeGPrlBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
-
         financeGPrlOvertimeFld.setText("");
-
-        financeGPrlHrsWorkedFld.setText("");
-
+        financeGPrlHrsWorkedFld.setText(String.valueOf(payslip.getTotalHours()));
         financeGPrlHourlyRateFld.setText(String.valueOf(emp.getHourlyRate()));
-
         financeGPrlRiceSubsidyFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getRiceSubsidy()));
-
-        financeGPrlPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()))
-;
+        financeGPrlPhnAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getPhoneAllowance()));
         financeGPrlCltAllowanceFld.setText(String.valueOf(payslip.getAllowanceBreakdown().getClothingAllowance()));
 
-        financeGPrlTGrossFld.setText("");
+        financeGPrlTGrossFld.setText(String.valueOf(payslip.getGrossPay()));
 
 
 
         financeGPrlSSSFld.setText(String.valueOf(payslip.getDeductionBreakdown().getSss()));
-
         financeGPrlPagIbigFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPhilHealth()));
-
         financeGPrlPhilHealthFld.setText(String.valueOf(payslip.getDeductionBreakdown().getPagIbig()));
-
         financeGPrlWithtaxFld.setText(String.valueOf(payslip.getDeductionBreakdown().getWithholdingTax()));
-
         financeGPrlUndertimeFld.setText("");
-
         financeGPrlTDeductionFld.setText(String.valueOf(payslip.getDeductionBreakdown().getTotal()));
-
-
 
         financeGPrlNetPayFld.setText(String.valueOf(payslip.getNetPay()));
 
@@ -901,6 +894,9 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
             
             Employee emp = empService.findEmployee(employeeNumber);
             Payslip payslip = generatePayslip(emp);
+            if (payslip == null) {
+                throw new IllegalArgumentException("Failed to generate payslip");
+            }
             populateSalaryCalculations(payslip);
             
             JOptionPane.showMessageDialog(this, "Payslip Generated Successfully!");
@@ -916,6 +912,7 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
 
     private void financeGPrlUploadBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlUploadBtnActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_financeGPrlUploadBtnActionPerformed
 
     private void financeGPrlBasicSalaryFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlBasicSalaryFldActionPerformed
