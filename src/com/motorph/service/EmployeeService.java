@@ -1,10 +1,14 @@
 package com.motorph.service;
 
 import com.motorph.dao.EmployeeDAO;
+import com.motorph.exception.UnauthorizedException;
 import com.motorph.model.Employee;
 import com.motorph.model.Finance;
 import com.motorph.model.HR;
 import com.motorph.model.IT;
+import com.motorph.model.Role;
+import com.motorph.model.UserAccount;
+import com.motorph.util.Session;
 import java.util.List;
 
 public class EmployeeService {
@@ -13,6 +17,20 @@ public class EmployeeService {
     
     public EmployeeService(EmployeeDAO employeeDAO) {
         this.employeeDAO = employeeDAO;
+    }
+    
+    
+    // Authorize HR
+    private void authorizeHR() {
+        UserAccount current = Session.getCurrentUser();
+        
+        if (current == null) {
+            throw new UnauthorizedException("No active session found.");
+        }
+        
+        if (current.getRole() != Role.HR && current.getRole() != Role.ADMIN) {
+            throw new UnauthorizedException("Only HR or Admin can manage employees.");
+        }
     }
     
     public List<Employee> getAllEmployees() {
@@ -24,17 +42,20 @@ public class EmployeeService {
     }
     
     public void addEmployee(Employee draft) {
+        authorizeHR();
         validateEmployee(draft);
         Employee finalEmployee = convertToSpecificType(draft);
         employeeDAO.addEmployee(finalEmployee);
     }
     
     public void updateEmployee(Employee employee ){
+        authorizeHR();
         validateEmployee(employee);
         employeeDAO.updateEmployee(employee);
     }
     
     public void deleteEmployee(String employeeNumber) {
+        authorizeHR();
         employeeDAO.deleteEmployee(employeeNumber);
     }
     

@@ -4,7 +4,13 @@
  */
 package com.motorph.ui;
 
+import com.motorph.model.Employee;
+import com.motorph.model.Role;
+import com.motorph.model.UserAccount;
+import com.motorph.service.UserManagementService;
+import com.motorph.util.AppContext;
 import com.motorph.util.GuiUtil;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,12 +19,28 @@ import com.motorph.util.GuiUtil;
 public class ITAddUserAccountUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITAddUserAccountUI.class.getName());
-
+    private UserAccount user;
+    private UserManagementService userService;
+  
     /**
      * Creates new form ITAddUserFrame
      */
-    public ITAddUserAccountUI() {
+    public ITAddUserAccountUI(UserAccount user, Employee emp) {
+        this.user = user;
+        this.userService = AppContext.getUserManagementService();
         initComponents();
+        populateFields(emp);
+    }
+    
+    
+    private void populateFields(Employee emp) {
+        
+        itAddUAccENumberFld.setText(emp.getEmployeeNumber());
+        itAddUAccENameFld.setText(emp.getFullName());
+        itAddUAccPhnNumberFld.setText(emp.getPhoneNumber());
+        itAddUAccISupervisorFld.setText(emp.getImmediateSupervisor());
+        itAddUAccPositionFld.setText(emp.getPosition());
+        itAddUAccStatusFld.setText(emp.getStatus());
     }
 
     /**
@@ -273,6 +295,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccPasswordLbl.setText("Password");
 
         itAddUAccPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccPasswordFld.setText("password");
         itAddUAccPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         itAddUAccPasswordFld.addActionListener(this::itAddUAccPasswordFldActionPerformed);
 
@@ -335,7 +358,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                         .addComponent(itAddUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addComponent(itAddUAccISupervisorLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                         .addComponent(itAddUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18))
             .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
@@ -429,6 +452,44 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
     private void itAddUAccActivateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccActivateBtnActionPerformed
         // TODO add your handling code here:
+        try {
+            
+            String username = itAddUAccUsernameFld.getText();
+            if (username == null || username.isBlank() || username.isEmpty()) {
+                throw new IllegalArgumentException("Username is required");
+            }
+            
+            String password = itAddUAccPasswordFld.getPassword().toString();
+            
+            if (password == null || password.isBlank() || password.isEmpty()) {
+                throw new IllegalArgumentException("Password is required");
+            }
+            
+            
+            
+            String message = "Do you want to create and activate " + username + " ?";
+            String title = "Confirmation";
+
+            int reply = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);
+
+            
+            if (reply == JOptionPane.YES_OPTION) {
+                
+                //userService.createUser(reply, username, password, Role.HR, username);
+                JOptionPane.showMessageDialog(null, "UNSUPPORTED  " + user.getUsername());
+                
+            } else if (reply == JOptionPane.NO_OPTION) {
+                JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
+                
+            } else {
+                // This handles the case where the user closes the dialog without pressing Yes or No
+                JOptionPane.showMessageDialog(null, "Dialog closed without a choice.");
+            }
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
+        
     }//GEN-LAST:event_itAddUAccActivateBtnActionPerformed
 
     private void itAddUAccActLogsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccActLogsBtnActionPerformed
@@ -442,9 +503,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
     private void itAddUAccEditUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccEditUAccBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
         
-        new ITEditUserAccountUI().setVisible(true);
     }//GEN-LAST:event_itAddUAccEditUAccBtnActionPerformed
 
     private void itAddUAccAddUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccAddUAccBtnActionPerformed
@@ -483,30 +542,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itAddUAccPasswordFldActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new ITAddUserAccountUI().setVisible(true));
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton itAddUAccActLogsBtn;

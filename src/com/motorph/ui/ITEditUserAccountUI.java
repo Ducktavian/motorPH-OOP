@@ -4,7 +4,13 @@
  */
 package com.motorph.ui;
 
+import com.motorph.model.Employee;
+import com.motorph.model.UserAccount;
+import com.motorph.service.EmployeeService;
+import com.motorph.service.UserManagementService;
+import com.motorph.util.AppContext;
 import com.motorph.util.GuiUtil;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,12 +19,30 @@ import com.motorph.util.GuiUtil;
 public class ITEditUserAccountUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITEditUserAccountUI.class.getName());
-
+    private UserManagementService userService;
+    private EmployeeService empService;
+    private UserAccount user;
     /**
      * Creates new form ITEditUserFrame
      */
-    public ITEditUserAccountUI() {
+    public ITEditUserAccountUI(UserAccount user, Employee emp) {
+        this.userService = AppContext.getUserManagementService();
+        this.empService = AppContext.getEmployeeService();
+        this.user = user;
         initComponents();
+        populateFields(emp);
+    }
+    
+    
+    private void populateFields(Employee emp) {
+        itEditUAccUsernameFld.setText(user.getUsername());
+        
+        itEditUAccENumberFld.setText(emp.getEmployeeNumber());
+        itEditUAccENameFld.setText(emp.getFullName());
+        itEditUAccPhnNumberFld.setText(emp.getPhoneNumber());
+        itEditUAccISupervisorFld.setText(emp.getImmediateSupervisor());
+        itEditUAccPositionFld.setText(emp.getPosition());
+        itEditUAccStatusFld.setText(emp.getStatus());
     }
 
     /**
@@ -445,13 +469,33 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
     private void itEditUAccAddUAccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccAddUAccBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
         
-        new ITAddUserAccountUI().setVisible(true);
     }//GEN-LAST:event_itEditUAccAddUAccBtnActionPerformed
 
     private void itEditUAccUpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUpdateBtnActionPerformed
         // TODO add your handling code here:
+        try {
+            String message = "Do you want to update user " + user.getUsername() + " ?";
+            String title = "Confirmation";
+
+            int reply = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);
+
+            
+            if (reply == JOptionPane.YES_OPTION) {
+                userService.updateUser(user); 
+                JOptionPane.showMessageDialog(null, "Updated user " + user.getUsername());
+                
+            } else if (reply == JOptionPane.NO_OPTION) {
+                JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
+                
+            } else {
+                // This handles the case where the user closes the dialog without pressing Yes or No
+                JOptionPane.showMessageDialog(null, "Dialog closed without a choice.");
+            }
+        
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
     }//GEN-LAST:event_itEditUAccUpdateBtnActionPerformed
 
     private void itEditUAccENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccENumberFldActionPerformed
@@ -484,6 +528,30 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
     private void itSysToolsResetPassBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsResetPassBtnActionPerformed
         // TODO add your handling code here:
+        try {
+            String message = "Do you want to reset password for user " + user.getUsername() + " ?";
+            String title = "Confirmation";
+
+            int reply = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);
+
+            
+            if (reply == JOptionPane.YES_OPTION) {
+                userService.resetPassword(user.getUserId()); // default password is "password"
+                JOptionPane.showMessageDialog(null, "Password reseted for user " + user.getUsername());
+                
+            } else if (reply == JOptionPane.NO_OPTION) {
+                JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
+                
+            } else {
+                // This handles the case where the user closes the dialog without pressing Yes or No
+                JOptionPane.showMessageDialog(null, "Dialog closed without a choice.");
+            }
+        
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
+        
     }//GEN-LAST:event_itSysToolsResetPassBtnActionPerformed
 
 
@@ -491,30 +559,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }                                                          
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new ITEditUserAccountUI().setVisible(true));
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton itEditUAccAddUAccBtn;

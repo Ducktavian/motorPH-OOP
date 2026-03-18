@@ -16,7 +16,11 @@ public interface UserAccountDAO {
     UserAccount findByUsername(String username);
     UserAccount findById(int id);
     List<UserAccount> findAll();
-    void save(UserAccount user);
-    Role getRole(String employeeNumber);
+    int generateNextUserId();
     
+    
+    void save(UserAccount user);
+    void update(UserAccount updatedUser);
+    Role getRole(String employeeNumber);
+    UserAccount findByEmployeeNumber(String employeeNumber);
 }

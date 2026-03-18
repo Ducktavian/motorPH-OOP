@@ -39,7 +39,7 @@ public class PayrollService {
         }
         
         // Use Enum Role
-        if (currentUser.getRole() != Role.FINANCE) {
+        if (currentUser.getRole() != Role.FINANCE && currentUser.getRole() != Role.ADMIN) {
             throw new UnauthorizedException("Only Finance can process payroll.");
         }
         
@@ -50,6 +50,7 @@ public class PayrollService {
     
     // Generate a payslip for a given payroll period
     public Payslip generatePayslip(Employee employee, LocalDate periodStart, LocalDate periodEnd) {
+        processPayroll();
         
         // get cutoffHours (Hours workded)
         double cutoffHours = attendanceService.computeTotalHours(employee.getEmployeeNumber(), periodStart, periodEnd);
@@ -180,9 +181,6 @@ public class PayrollService {
                 String.format("%02d", month) +
                 "-C" + cutoff;
     }
-    
-    
-    
     
     
     // Helper

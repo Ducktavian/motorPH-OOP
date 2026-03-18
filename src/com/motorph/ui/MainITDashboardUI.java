@@ -180,14 +180,12 @@ public class MainITDashboardUI extends javax.swing.JFrame {
 
     private void mainIDashboardDashboardImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainIDashboardDashboardImgBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
         
         GuiUtil.openFrame(this, new EmployeeDashboardUI());
     }//GEN-LAST:event_mainIDashboardDashboardImgBtnActionPerformed
 
     private void mainIDashboardUManagementImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainIDashboardUManagementImgBtnActionPerformed
         // TODO add your handling code here:
-        this.dispose();
         
         GuiUtil.openFrame(this, new ITUserManagementUI());
     }//GEN-LAST:event_mainIDashboardUManagementImgBtnActionPerformed

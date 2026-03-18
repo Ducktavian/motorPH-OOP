@@ -228,13 +228,11 @@ public class CsvEmployeeDAO implements EmployeeDAO {
     
     // Use to auto-generate the employee number of a new employee
     public String generateNextEmployeeNumber() {
-        // If list is empty, start at a default (e.g., 10001)
         if (employees.isEmpty()) {
             return "10001"; 
         }
         
         int max = 0;
-        
         for (Employee emp: employees) {
             int current = Integer.parseInt(emp.getEmployeeNumber());
             if (current > max) {

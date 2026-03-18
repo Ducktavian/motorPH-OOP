@@ -1,12 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package com.motorph.ui;
 
 import com.motorph.model.LeaveRequest;
+import com.motorph.service.LeaveService;
+import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
 import com.motorph.util.GuiUtil;
+import com.motorph.util.Session;
 
 /**
  *
@@ -15,17 +15,20 @@ import com.motorph.util.GuiUtil;
 public class HRLeaveDetailsUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(HRLeaveDetailsUI.class.getName());
-
+    private LeaveService leaveService;
+    private LeaveRequest request;
     /**
      * Creates new form HRLeaveListFrame
      */
     public HRLeaveDetailsUI(LeaveRequest request) {
+        this.leaveService = AppContext.getLeaveService();
+        this.request = request;
         initComponents();
         populateFields(request);
     }
     
     private void populateFields(LeaveRequest request) {
-        //hrLDetailsLTypeCbx.setSelectedItem(request.getLeaveType().name());
+        hrRDetailsLTypeFld.setText(request.getLeaveType().toString());
         hrRDetailsLTypeFld1.setText(DateUtils.dateToString(request.getStartDate()));
         hrRDetailsLTypeFld2.setText(DateUtils.dateToString(request.getEndDate()));
         hrLDetailsReasonFld.setText(request.getReason());
@@ -381,14 +384,17 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
 
     private void hrLDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsApproveBtnActionPerformed
         // TODO add your handling code here:
+        leaveService.approveLeave(request, Session.getCurrentUser().getEmployeeNumber());
     }//GEN-LAST:event_hrLDetailsApproveBtnActionPerformed
 
     private void hrLDetailsDenyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsDenyBtnActionPerformed
         // TODO add your handling code here:
+        leaveService.denyLeave(request, Session.getCurrentUser().getEmployeeNumber());
     }//GEN-LAST:event_hrLDetailsDenyBtnActionPerformed
 
     private void hrLDetailsBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsBackBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new HRLeaveListUI());
        
     }//GEN-LAST:event_hrLDetailsBackBtnActionPerformed
 

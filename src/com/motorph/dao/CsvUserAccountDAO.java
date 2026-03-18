@@ -78,6 +78,16 @@ public class CsvUserAccountDAO implements UserAccountDAO {
     }
     
     @Override
+    public UserAccount findByEmployeeNumber(String employeeNumber) {
+        for (UserAccount user: users) {
+            if (user.getEmployeeNumber().equalsIgnoreCase(employeeNumber.trim())) {
+                return user;
+            }
+        }
+        return null;
+    }
+    
+    @Override
     public void save(UserAccount user) {
         users.add(user);
     }
@@ -116,7 +126,7 @@ public class CsvUserAccountDAO implements UserAccountDAO {
     }    
     
     
-    
+    @Override
     public void update(UserAccount updatedUser) {
         List<UserAccount> allUsers = findAll();
         
@@ -152,8 +162,23 @@ public class CsvUserAccountDAO implements UserAccountDAO {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
+    }
+    
+    @Override
+    public int generateNextUserId() {
+   
+        int max = 0;
+        for (UserAccount user: findAll()) {
+            int current = Integer.parseInt(user.getEmployeeNumber());
+            if (current > max) {
+                max = current;
+            }
+        }
+        
+        int next = max + 1;
+        
+        
+        return next;
     }
     
     

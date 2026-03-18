@@ -177,8 +177,6 @@ public class LoginUI extends javax.swing.JFrame {
         AuthService authService = AppContext.getAuthService();
         
         try {
-            
-            
             UserAccount user = authService.login(username, password);
             
             // IMPORTANT!!
@@ -187,11 +185,6 @@ public class LoginUI extends javax.swing.JFrame {
             
             // Hide current LoginUI            
             GuiUtil.openFrame(this);
-            
-            
-            
-            
-            
         } catch (Exception ex) {
             javax.swing.JOptionPane.showMessageDialog(this,
                     "Invalid username or password",

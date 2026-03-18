@@ -4,7 +4,13 @@
  */
 package com.motorph.ui;
 
+import com.motorph.model.Employee;
+import com.motorph.model.UserAccount;
+import com.motorph.service.EmployeeService;
+import com.motorph.service.UserManagementService;
+import com.motorph.util.AppContext;
 import com.motorph.util.GuiUtil;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,12 +19,62 @@ import com.motorph.util.GuiUtil;
 public class ITUserManagementUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ITUserManagementUI.class.getName());
+    private EmployeeService empService;
+    private UserManagementService userService;
 
     /**
      * Creates new form ITDashboardFrame
      */
     public ITUserManagementUI() {
+        this.empService = AppContext.getEmployeeService();
+        this.userService = AppContext.getUserManagementService();
         initComponents();
+    }
+    
+    
+    private void performSearch() {
+        String id = itSysToolsEntENumberPnl.getText().trim();
+        Employee found = empService.findEmployee(id);
+        if (found != null) {
+            populateEmployeeData(found);
+            populateUserData(found);
+            
+        } else {
+            clearFields();
+        }
+    }
+    
+    private void populateUserData(Employee emp) {
+        UserAccount user = userService.findByEmployeeNumber(emp.getEmployeeNumber());
+        if (user == null) {
+            itSysToolsUsernameFld.setText("No account found.");
+        } else {
+            itSysToolsUsernameFld.setText(user.getUsername());
+            if (user.isActive()) {
+               itSysToolsPasswordFld.setText("Active"); 
+            } else {
+                itSysToolsPasswordFld.setText("Inactive");
+            }
+        }
+        
+    }
+    
+    private void populateEmployeeData(Employee emp) {
+        itSysToolsENumberFld.setText(emp.getEmployeeNumber());
+        itSysToolsENameFld.setText(emp.getFullName());
+        itSysToolsPhnNumberFld.setText(emp.getPhoneNumber());
+        itSysToolsISupervisorFld.setText(emp.getImmediateSupervisor());
+        itSysToolsPositionFld.setText(emp.getPosition());
+        itSysToolsStatusFld.setText(emp.getStatus());
+    }
+    
+    private void clearFields() {
+        itSysToolsENumberFld.setText("");
+        itSysToolsENameFld.setText("");
+        itSysToolsPhnNumberFld.setText("");
+        itSysToolsISupervisorFld.setText("");
+        itSysToolsPositionFld.setText("");
+        itSysToolsStatusFld.setText("");
     }
 
     /**
@@ -39,7 +95,6 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsSearchPnl = new javax.swing.JPanel();
         itSysToolsEntENumberPnl = new javax.swing.JTextField();
         itSysToolsSearchIconImgLbl = new javax.swing.JLabel();
-        itSysToolsDeleteBtn = new javax.swing.JButton();
         itSysToolsEditBtn = new javax.swing.JButton();
         itSysToolsAddBtn = new javax.swing.JButton();
         itSysToolsUserEDetailsBrdrPnl = new javax.swing.JPanel();
@@ -62,6 +117,8 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsUsernameFld = new javax.swing.JTextField();
         itSysToolsPasswordLbl = new javax.swing.JLabel();
         itSysToolsPasswordFld = new javax.swing.JPasswordField();
+        itAddUAccActivateBtn = new javax.swing.JButton();
+        itAddUAccActivateBtn1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -119,13 +176,6 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsSearchIconImgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorph/img/SearchIconImg.png"))); // NOI18N
         itSysToolsSearchPnl.add(itSysToolsSearchIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, -10, 60, 60));
         itSysToolsSearchIconImgLbl.getAccessibleContext().setAccessibleName("itActLogsSearchIconImgLbl");
-
-        itSysToolsDeleteBtn.setBackground(new java.awt.Color(239, 68, 68));
-        itSysToolsDeleteBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itSysToolsDeleteBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itSysToolsDeleteBtn.setText("Delete");
-        itSysToolsDeleteBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itSysToolsDeleteBtn.addActionListener(this::itSysToolsDeleteBtnActionPerformed);
 
         itSysToolsEditBtn.setBackground(new java.awt.Color(59, 130, 246));
         itSysToolsEditBtn.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
@@ -258,7 +308,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
 
         itSysToolsPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         itSysToolsPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itSysToolsPasswordLbl.setText("Password");
+        itSysToolsPasswordLbl.setText("Active Status");
 
         itSysToolsPasswordFld.setForeground(new java.awt.Color(30, 42, 56));
         itSysToolsPasswordFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -380,6 +430,20 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsUAccDetailsPnl.getAccessibleContext().setAccessibleName("itSysToolsUAccDetailsPnl");
         itSysToolsUAccDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itSysToolsUAccDetailsBrdrPnl");
 
+        itAddUAccActivateBtn.setBackground(new java.awt.Color(255, 0, 0));
+        itAddUAccActivateBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itAddUAccActivateBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itAddUAccActivateBtn.setText("Deactivate");
+        itAddUAccActivateBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccActivateBtn.addActionListener(this::itAddUAccActivateBtnActionPerformed);
+
+        itAddUAccActivateBtn1.setBackground(new java.awt.Color(34, 197, 94));
+        itAddUAccActivateBtn1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itAddUAccActivateBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        itAddUAccActivateBtn1.setText("Activate");
+        itAddUAccActivateBtn1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccActivateBtn1.addActionListener(this::itAddUAccActivateBtn1ActionPerformed);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -390,10 +454,12 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(itSysToolsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(41, 41, 41)
                         .addComponent(itSysToolsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(438, 438, 438)
-                        .addComponent(itSysToolsDeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(itAddUAccActivateBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(itAddUAccActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(itSysToolsActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
@@ -414,18 +480,23 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                     .addComponent(itSysToolsSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itSysToolsUserEDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itSysToolsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itSysToolsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itSysToolsDeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itSysToolsEditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itSysToolsAddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(itAddUAccActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itAddUAccActivateBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         itSysToolsSidebarPnl.getAccessibleContext().setAccessibleName("itSysToolsSidebarPnl");
         itSysToolsActLogsPnl.getAccessibleContext().setAccessibleName("itSysToolsActLogsPnl");
         itSysToolsSearchPnl.getAccessibleContext().setAccessibleName("itSysToolsSearchPnl");
-        itSysToolsDeleteBtn.getAccessibleContext().setAccessibleName("itSysToolsDeleteBtn");
         itSysToolsEditBtn.getAccessibleContext().setAccessibleName("itSysToolsEditBtn");
         itSysToolsAddBtn.getAccessibleContext().setAccessibleName("itSysToolsAddBtn");
         itSysToolsUserEDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itSysToolsUserEDetailsBrdrPnl");
@@ -444,18 +515,41 @@ public class ITUserManagementUI extends javax.swing.JFrame {
 
     private void itSysToolsAddBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsAddBtnActionPerformed
         // TODO add your handling code here:
+        try {
+            String userName = itSysToolsUsernameFld.getText().trim();
+            if (userName == null || userName.isBlank() || userName.isEmpty()) {
+                throw new IllegalArgumentException("Search for a user account to edit.");
+            }
+            
+            UserAccount user = userService.findByUserName(userName);
+            Employee emp = empService.findEmployee(user.getEmployeeNumber());
+            GuiUtil.openFrame(this, new ITAddUserAccountUI(user, emp));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
     }//GEN-LAST:event_itSysToolsAddBtnActionPerformed
 
     private void itSysToolsEditBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsEditBtnActionPerformed
         // TODO add your handling code here:
+        
+        try {
+            String userName = itSysToolsUsernameFld.getText().trim();
+            if (userName == null || userName.isBlank() || userName.isEmpty()) {
+                throw new IllegalArgumentException("Search for a user account to edit.");
+            }
+            UserAccount user = userService.findByUserName(userName);
+            Employee emp = empService.findEmployee(user.getEmployeeNumber());
+            GuiUtil.openFrame(this, new ITEditUserAccountUI(user, emp));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
+        
+       
     }//GEN-LAST:event_itSysToolsEditBtnActionPerformed
-
-    private void itSysToolsDeleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsDeleteBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_itSysToolsDeleteBtnActionPerformed
 
     private void itSysToolsEntENumberPnlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsEntENumberPnlActionPerformed
         // TODO add your handling code here:
+        performSearch();
     }//GEN-LAST:event_itSysToolsEntENumberPnlActionPerformed
 
     private void itSysToolsENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsENumberFldActionPerformed
@@ -490,6 +584,43 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itSysToolsPasswordFldActionPerformed
 
+    private void itAddUAccActivateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccActivateBtnActionPerformed
+        // TODO add your handling code here:
+        try {
+            String userName = itSysToolsUsernameFld.getText().trim();
+            if (userName == null || userName.isBlank() || userName.isEmpty()) {
+                throw new IllegalArgumentException("Search for a user account to Deactivate.");
+            }
+            UserAccount user = userService.findByUserName(userName);
+            
+            String message = "Do you want to deactivate " + user.getUsername() + " ?";
+            String title = "Confirmation";
+
+            int reply = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);
+
+            
+            if (reply == JOptionPane.YES_OPTION) {
+                userService.deactivateUser(user.getUserId());
+                JOptionPane.showMessageDialog(null, "Deactivated user " + user.getUsername());
+                
+            } else if (reply == JOptionPane.NO_OPTION) {
+                JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
+                
+            } else {
+                // This handles the case where the user closes the dialog without pressing Yes or No
+                JOptionPane.showMessageDialog(null, "Dialog closed without a choice.");
+            }
+        
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
+    }//GEN-LAST:event_itAddUAccActivateBtnActionPerformed
+
+    private void itAddUAccActivateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccActivateBtn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itAddUAccActivateBtn1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -516,10 +647,11 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton itAddUAccActivateBtn;
+    private javax.swing.JButton itAddUAccActivateBtn1;
     private javax.swing.JLabel itSysToolsActLogsLbl;
     private javax.swing.JPanel itSysToolsActLogsPnl;
     private javax.swing.JButton itSysToolsAddBtn;
-    private javax.swing.JButton itSysToolsDeleteBtn;
     private javax.swing.JTextField itSysToolsENameFld;
     private javax.swing.JLabel itSysToolsENameLbl;
     private javax.swing.JTextField itSysToolsENumberFld;
