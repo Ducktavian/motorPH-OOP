@@ -26,6 +26,7 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
     private EmployeeService empService;
     private PayrollService payrollService;
     private AttendanceService attendanceService;
+    private Payslip payslip;
     
    
     public FinanceGeneratePayrollUI() {
@@ -893,7 +894,7 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
             
             
             Employee emp = empService.findEmployee(employeeNumber);
-            Payslip payslip = generatePayslip(emp);
+            this.payslip = generatePayslip(emp);
             if (payslip == null) {
                 throw new IllegalArgumentException("Failed to generate payslip");
             }
@@ -912,6 +913,13 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
 
     private void financeGPrlUploadBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeGPrlUploadBtnActionPerformed
         // TODO add your handling code here:
+        try {
+            
+            payrollService.savePayslip(payslip);
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
         
     }//GEN-LAST:event_financeGPrlUploadBtnActionPerformed
 
@@ -986,6 +994,7 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
 
     private void employeePrlRecordEntENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordEntENumberFldActionPerformed
         // TODO add your handling code here:
+        this.payslip = null;
         performSearch();
     }//GEN-LAST:event_employeePrlRecordEntENumberFldActionPerformed
 

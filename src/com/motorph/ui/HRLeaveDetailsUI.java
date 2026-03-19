@@ -7,6 +7,7 @@ import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
 import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -160,7 +161,7 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
 
         hrLDetailsFALeaveBrdrPnl.setBackground(new java.awt.Color(233, 233, 233));
         hrLDetailsFALeaveBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrLDetailsFALeaveBrdrPnl.setForeground(new java.awt.Color(178, 178, 178));
+        hrLDetailsFALeaveBrdrPnl.setForeground(new java.awt.Color(0, 0, 0));
 
         hrLDetailsFALeavePnl.setBackground(new java.awt.Color(146, 192, 253));
         hrLDetailsFALeavePnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -200,6 +201,7 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         hrLDetailsReasonFld.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsReasonFld.setText(" ");
         hrLDetailsReasonFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrLDetailsReasonFld.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         hrLDetailsReasonFld.setEnabled(false);
         hrLDetailsReasonFld.addActionListener(this::hrLDetailsReasonFldActionPerformed);
 
@@ -207,22 +209,28 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         hrLDetailsFromLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsFromLbl.setText("From");
 
-        hrRDetailsLTypeFld.setForeground(new java.awt.Color(31, 41, 55));
+        hrRDetailsLTypeFld.setForeground(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld.setText(" ");
         hrRDetailsLTypeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsLTypeFld.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld.setEnabled(false);
+        hrRDetailsLTypeFld.setSelectionColor(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld.addActionListener(this::hrRDetailsLTypeFldActionPerformed);
 
-        hrRDetailsLTypeFld1.setForeground(new java.awt.Color(31, 41, 55));
+        hrRDetailsLTypeFld1.setForeground(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld1.setText(" ");
         hrRDetailsLTypeFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsLTypeFld1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld1.setEnabled(false);
+        hrRDetailsLTypeFld1.setSelectionColor(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld1.addActionListener(this::hrRDetailsLTypeFld1ActionPerformed);
 
-        hrRDetailsLTypeFld2.setForeground(new java.awt.Color(31, 41, 55));
+        hrRDetailsLTypeFld2.setForeground(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld2.setText(" ");
         hrRDetailsLTypeFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrRDetailsLTypeFld2.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld2.setEnabled(false);
+        hrRDetailsLTypeFld2.setSelectionColor(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld2.addActionListener(this::hrRDetailsLTypeFld2ActionPerformed);
 
         javax.swing.GroupLayout hrLDetailsFALeaveBrdrPnlLayout = new javax.swing.GroupLayout(hrLDetailsFALeaveBrdrPnl);
@@ -384,12 +392,26 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
 
     private void hrLDetailsApproveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsApproveBtnActionPerformed
         // TODO add your handling code here:
-        leaveService.approveLeave(request, Session.getCurrentUser().getEmployeeNumber());
+        try {
+            leaveService.approveLeave(request, Session.getCurrentUser().getEmployeeNumber());
+            
+            JOptionPane.showMessageDialog(this, "Leave Approved!");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_hrLDetailsApproveBtnActionPerformed
 
     private void hrLDetailsDenyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsDenyBtnActionPerformed
         // TODO add your handling code here:
-        leaveService.denyLeave(request, Session.getCurrentUser().getEmployeeNumber());
+        try {
+            leaveService.denyLeave(request, Session.getCurrentUser().getEmployeeNumber());
+            
+            JOptionPane.showMessageDialog(this, "Leave Denied!");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+            e.printStackTrace();
+        }
     }//GEN-LAST:event_hrLDetailsDenyBtnActionPerformed
 
     private void hrLDetailsBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrLDetailsBackBtnActionPerformed

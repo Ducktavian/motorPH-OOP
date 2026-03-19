@@ -463,9 +463,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                 throw new IllegalArgumentException("Please select a valid user role.");
             }
             
-            
-            JOptionPane.showMessageDialog(null, "ROLE " + selectedRole);
-            
             String message = "Do you want to create and activate " + username + " ?";
             String title = "Confirmation";
 

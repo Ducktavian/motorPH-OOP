@@ -6,6 +6,7 @@ package com.motorph.ui;
 
 import com.motorph.model.LeaveRequest;
 import com.motorph.model.LeaveType;
+import com.motorph.model.Role;
 import com.motorph.service.LeaveService;
 import com.motorph.util.AppContext;
 import com.motorph.util.DateUtils;
@@ -35,11 +36,21 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         
         initComponents();
         initComboBox();
+        hideLeaveListButton();
         
         if (leaveService != null && Session.getCurrentUser() != null) {
             populateLeaveRecords();
         } else {
             logger.warning("Service or Session is null! Cannot populate table.");
+        }
+    }
+    
+    private void hideLeaveListButton() {
+        Role role = Session.getCurrentUser().getRole();
+        if (role != Role.ADMIN && role != Role.HR) {
+            employeeLeaveLListBtn.setVisible(false);
+        } else {
+            employeeLeaveLListBtn.setVisible(true);
         }
     }
     
