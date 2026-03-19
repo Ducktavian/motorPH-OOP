@@ -4,17 +4,12 @@
  */
 package com.motorph.ui;
 
-import com.motorph.dao.CsvEmployeeDAO;
-import com.motorph.model.AttendanceRecord;
-import com.motorph.model.Employee;
-import com.motorph.service.AttendanceService;
-import com.motorph.service.EmployeeService;
+import com.motorph.service.UserManagementService;
 import com.motorph.util.AppContext;
-import com.motorph.util.DateUtils;
 import com.motorph.util.GuiUtil;
+import com.motorph.util.PasswordUtil;
 import com.motorph.util.Session;
-import java.util.List;
-import javax.swing.table.DefaultTableModel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -23,28 +18,19 @@ import javax.swing.table.DefaultTableModel;
 public class SettingsUI extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(SettingsUI.class.getName());
-    private EmployeeService empService;
-    private AttendanceService attendanceService;
-    
+    private UserManagementService userService;
 
     /**
      * Creates new form EMPLOYEEDASH
      */
     public SettingsUI() {
+        this.userService = AppContext.getUserManagementService();
         initComponents();
-        
-        this.empService = AppContext.getEmployeeService();
-        this.attendanceService = AppContext.getAttendanceService();
-                
-        populateFields();
+       
        
     }
     
-        private void populateFields() {
-            Employee emp = empService.findEmployee(Session.getCurrentUser().getEmployeeNumber());
-            
-        }
-        
+ 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -66,8 +52,10 @@ public class SettingsUI extends javax.swing.JFrame {
         SettingsCurrPassLbl = new javax.swing.JLabel();
         SettingsNewPassLbl = new javax.swing.JLabel();
         SettingsConfirmBtn = new javax.swing.JButton();
-        SettingsNewPassFld = new javax.swing.JPasswordField();
+        confirmPasswordField = new javax.swing.JPasswordField();
         SettingsCurrPassFld = new javax.swing.JPasswordField();
+        SettingsNewPassLbl1 = new javax.swing.JLabel();
+        SettingsNewPassFld = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -120,21 +108,30 @@ public class SettingsUI extends javax.swing.JFrame {
 
         SettingsNewPassLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         SettingsNewPassLbl.setForeground(new java.awt.Color(31, 41, 55));
-        SettingsNewPassLbl.setText("New Password");
+        SettingsNewPassLbl.setText("Confirm New Password");
 
         SettingsConfirmBtn.setBackground(new java.awt.Color(34, 197, 94));
         SettingsConfirmBtn.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         SettingsConfirmBtn.setForeground(new java.awt.Color(255, 255, 255));
         SettingsConfirmBtn.setText("Confirm");
         SettingsConfirmBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        SettingsConfirmBtn.addActionListener(this::SettingsConfirmBtnActionPerformed);
 
-        SettingsNewPassFld.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        SettingsNewPassFld.setForeground(new java.awt.Color(30, 42, 56));
-        SettingsNewPassFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        confirmPasswordField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        confirmPasswordField.setForeground(new java.awt.Color(30, 42, 56));
+        confirmPasswordField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
         SettingsCurrPassFld.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         SettingsCurrPassFld.setForeground(new java.awt.Color(30, 42, 56));
         SettingsCurrPassFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+
+        SettingsNewPassLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        SettingsNewPassLbl1.setForeground(new java.awt.Color(31, 41, 55));
+        SettingsNewPassLbl1.setText("New Password");
+
+        SettingsNewPassFld.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        SettingsNewPassFld.setForeground(new java.awt.Color(30, 42, 56));
+        SettingsNewPassFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
         javax.swing.GroupLayout SettingsUAccDetailsPassBrdrPnlLayout = new javax.swing.GroupLayout(SettingsUAccDetailsPassBrdrPnl);
         SettingsUAccDetailsPassBrdrPnl.setLayout(SettingsUAccDetailsPassBrdrPnlLayout);
@@ -147,10 +144,12 @@ public class SettingsUI extends javax.swing.JFrame {
             .addGroup(SettingsUAccDetailsPassBrdrPnlLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(SettingsUAccDetailsPassBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SettingsNewPassLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SettingsNewPassFld, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SettingsCurrPassFld, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SettingsCurrPassLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SettingsNewPassLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SettingsNewPassFld, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(confirmPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SettingsNewPassLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         SettingsUAccDetailsPassBrdrPnlLayout.setVerticalGroup(
@@ -160,10 +159,14 @@ public class SettingsUI extends javax.swing.JFrame {
                 .addComponent(SettingsCurrPassLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(SettingsCurrPassFld, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                .addComponent(SettingsNewPassLbl)
+                .addGap(18, 18, 18)
+                .addComponent(SettingsNewPassLbl1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(SettingsNewPassFld, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addComponent(SettingsNewPassLbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(confirmPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(SettingsConfirmBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
@@ -172,7 +175,7 @@ public class SettingsUI extends javax.swing.JFrame {
         SettingsCurrPassLbl.getAccessibleContext().setAccessibleName("SettingsCurrPassLbl");
         SettingsNewPassLbl.getAccessibleContext().setAccessibleName("SettingsNewPassLbl");
         SettingsConfirmBtn.getAccessibleContext().setAccessibleName("SettingsConfirmBtn");
-        SettingsNewPassFld.getAccessibleContext().setAccessibleName("SettingsNewPassFld");
+        confirmPasswordField.getAccessibleContext().setAccessibleName("SettingsNewPassFld");
         SettingsCurrPassFld.getAccessibleContext().setAccessibleName("SettingsCurrPassFld");
 
         javax.swing.GroupLayout SettingsUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(SettingsUAccDetailsBrdrPnl);
@@ -189,7 +192,7 @@ public class SettingsUI extends javax.swing.JFrame {
             .addGroup(SettingsUAccDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(55, 55, 55)
                 .addComponent(SettingsUAccDetailsPassBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         SettingsUAccDetailsPassBrdrPnl.getAccessibleContext().setAccessibleName("SettingsUAccDetailsPassBrdrPnl");
@@ -235,6 +238,50 @@ public class SettingsUI extends javax.swing.JFrame {
         GuiUtil.openFrame(this);
     }//GEN-LAST:event_SettingsMainDashboardBtnActionPerformed
 
+    private void SettingsConfirmBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsConfirmBtnActionPerformed
+        // TODO add your handling code here:
+        try {
+            String currentPassword = new String(SettingsCurrPassFld.getPassword());
+            String newPassword = new String(SettingsNewPassFld.getPassword());
+            String confirmNewPassword = new String(confirmPasswordField.getPassword());
+            
+            System.out.println(currentPassword);
+            
+            if (currentPassword == null || currentPassword.isEmpty() || currentPassword.isBlank()) {
+                throw new IllegalArgumentException("Enter current password.");
+            }
+            
+            if (newPassword == null || newPassword.isEmpty() || newPassword.isBlank()) {
+                throw new IllegalArgumentException("Enter new password.");
+            }
+            
+            if (confirmNewPassword == null || confirmNewPassword.isEmpty() || confirmNewPassword.isBlank()) {
+                throw new IllegalArgumentException("Confirm password.");
+            }
+            
+            boolean currentPasswordMatch = PasswordUtil.verifyPassword(currentPassword, Session.getCurrentUser().getPasswordHash());
+            System.out.println(currentPasswordMatch);
+            
+            if (!currentPasswordMatch) {
+                throw new IllegalArgumentException("Current password does not match");
+            }
+            
+            if (!newPassword.equals(confirmNewPassword)) {
+                throw new IllegalArgumentException("Confirm password doesn't match password.");
+            }
+            
+            String newPasswordHash = PasswordUtil.hashPassword(newPassword);
+            
+            userService.resetPassword(Session.getCurrentUser().getUserId(), newPasswordHash);
+            
+            
+            JOptionPane.showMessageDialog(this, "Password updated!");
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
+    }//GEN-LAST:event_SettingsConfirmBtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -268,11 +315,13 @@ public class SettingsUI extends javax.swing.JFrame {
     private javax.swing.JLabel SettingsMotorPHIconImgLbl;
     private javax.swing.JPasswordField SettingsNewPassFld;
     private javax.swing.JLabel SettingsNewPassLbl;
+    private javax.swing.JLabel SettingsNewPassLbl1;
     private javax.swing.JButton SettingsResetPassBtn;
     private javax.swing.JPanel SettingsResetPassPnl;
     private javax.swing.JPanel SettingsSidebarPnl;
     private javax.swing.JPanel SettingsUAccDetailsBrdrPnl;
     private javax.swing.JPanel SettingsUAccDetailsPassBrdrPnl;
+    private javax.swing.JPasswordField confirmPasswordField;
     private javax.swing.JLabel employeeDashboardProfileLbl;
     // End of variables declaration//GEN-END:variables
 }

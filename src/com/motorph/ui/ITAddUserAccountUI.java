@@ -475,7 +475,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
             if (reply == JOptionPane.YES_OPTION) {
                 String empNum =  itAddUAccENumberFld.getText().trim();
                 String password = userService.generateDefaultPassword();
-                userService.createUser(username, password, selectedRole, empNum);
+                userService.createUser(empNum, username, password, selectedRole);
                 JOptionPane.showMessageDialog(null, "Created and activated user " + username);
                 
             } else if (reply == JOptionPane.NO_OPTION) {
