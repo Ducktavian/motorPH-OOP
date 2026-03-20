@@ -234,7 +234,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
         itEditUAccUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         itEditUAccUAccDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itEditUAccUAccDetailsLbl.setText("User Account Details");
+        itEditUAccUAccDetailsLbl.setText(" User Account Details");
         itEditUAccUAccDetailsLbl.setToolTipText("");
 
         javax.swing.GroupLayout itEditUAccUAccDetailsPnlLayout = new javax.swing.GroupLayout(itEditUAccUAccDetailsPnl);
@@ -242,9 +242,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccUAccDetailsPnlLayout.setHorizontalGroup(
             itEditUAccUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itEditUAccUAccDetailsPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(itEditUAccUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(itEditUAccUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 8, Short.MAX_VALUE))
         );
         itEditUAccUAccDetailsPnlLayout.setVerticalGroup(
             itEditUAccUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

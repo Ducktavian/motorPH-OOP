@@ -149,16 +149,13 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestRFormPnlLayout.setHorizontalGroup(
             employeeRequestRFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeeRequestRFormPnlLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(employeeRequestRFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(employeeRequestRFormLbl)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
         employeeRequestRFormPnlLayout.setVerticalGroup(
             employeeRequestRFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeeRequestRFormPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(employeeRequestRFormLbl)
-                .addContainerGap(8, Short.MAX_VALUE))
+            .addComponent(employeeRequestRFormLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
         employeeRequestRFormLbl.getAccessibleContext().setAccessibleName("employeeRequestRFormLbl");
@@ -183,9 +180,8 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestFARequestPnlLayout.setHorizontalGroup(
             employeeRequestFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeeRequestFARequestPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(employeeRequestFARequestLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(employeeRequestFARequestLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 5, Short.MAX_VALUE))
         );
         employeeRequestFARequestPnlLayout.setVerticalGroup(
             employeeRequestFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -245,8 +241,8 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
                         .addGroup(employeeRequestFARequestBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(employeeRequestDateDtChsr, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(employeeRequestFARequestBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(employeeRequestFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
                                 .addComponent(employeeRequestTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(employeeRequestSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -297,14 +293,14 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
         employeeRequestRFormBrdrPnl.setLayout(employeeRequestRFormBrdrPnlLayout);
         employeeRequestRFormBrdrPnlLayout.setHorizontalGroup(
             employeeRequestRFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestRFormBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(employeeRequestRFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(244, 244, 244))
             .addGroup(employeeRequestRFormBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(employeeRequestFARequestBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(17, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeRequestRFormBrdrPnlLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(employeeRequestRFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(246, 246, 246))
         );
         employeeRequestRFormBrdrPnlLayout.setVerticalGroup(
             employeeRequestRFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

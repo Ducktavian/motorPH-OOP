@@ -278,7 +278,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
         itSysToolsUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         itSysToolsUAccDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itSysToolsUAccDetailsLbl.setText("User Account Details");
+        itSysToolsUAccDetailsLbl.setText(" User Account Details");
         itSysToolsUAccDetailsLbl.setToolTipText("");
 
         javax.swing.GroupLayout itSysToolsUAccDetailsPnlLayout = new javax.swing.GroupLayout(itSysToolsUAccDetailsPnl);
@@ -286,9 +286,8 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itSysToolsUAccDetailsPnlLayout.setHorizontalGroup(
             itSysToolsUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itSysToolsUAccDetailsPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(itSysToolsUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(itSysToolsUAccDetailsLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                .addContainerGap())
         );
         itSysToolsUAccDetailsPnlLayout.setVerticalGroup(
             itSysToolsUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

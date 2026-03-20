@@ -305,15 +305,12 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
             financePrlDDetailsPrlDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financePrlDDetailsPrlDFormPnlLayout.createSequentialGroup()
                 .addContainerGap(15, Short.MAX_VALUE)
-                .addComponent(financePrlDDetailsPrlDFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(financePrlDDetailsPrlDFormLbl)
+                .addGap(18, 18, 18))
         );
         financePrlDDetailsPrlDFormPnlLayout.setVerticalGroup(
             financePrlDDetailsPrlDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(financePrlDDetailsPrlDFormPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(financePrlDDetailsPrlDFormLbl)
-                .addContainerGap(8, Short.MAX_VALUE))
+            .addComponent(financePrlDDetailsPrlDFormLbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
         financePrlDDetailsPrlDFormLbl.getAccessibleContext().setAccessibleName("financePrlDDetailsPrlDFormLbl");
@@ -339,8 +336,8 @@ public class FinancePayrollDisputeDetailsUI extends javax.swing.JFrame {
             financePrlDDetailsFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, financePrlDDetailsFADisputePnlLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(financePrlDDetailsFADisputeLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+                .addComponent(financePrlDDetailsFADisputeLbl)
+                .addGap(30, 30, 30))
         );
         financePrlDDetailsFADisputePnlLayout.setVerticalGroup(
             financePrlDDetailsFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

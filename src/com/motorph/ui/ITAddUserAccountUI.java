@@ -231,7 +231,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
         itAddUAccUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         itAddUAccUAccDetailsLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccUAccDetailsLbl.setText("User Account Details");
+        itAddUAccUAccDetailsLbl.setText(" User Account Details");
         itAddUAccUAccDetailsLbl.setToolTipText("");
 
         javax.swing.GroupLayout itAddUAccUAccDetailsPnlLayout = new javax.swing.GroupLayout(itAddUAccUAccDetailsPnl);
@@ -239,9 +239,8 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccUAccDetailsPnlLayout.setHorizontalGroup(
             itAddUAccUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itAddUAccUAccDetailsPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(itAddUAccUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(itAddUAccUAccDetailsLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                .addContainerGap())
         );
         itAddUAccUAccDetailsPnlLayout.setVerticalGroup(
             itAddUAccUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -342,7 +341,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                         .addComponent(itAddUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addComponent(itAddUAccISupervisorLbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                         .addComponent(itAddUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18))
             .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createSequentialGroup()

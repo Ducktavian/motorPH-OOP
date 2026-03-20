@@ -462,16 +462,13 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
         employeePylDisputePylDFormPnlLayout.setHorizontalGroup(
             employeePylDisputePylDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylDisputePylDFormPnlLayout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
-                .addComponent(employeePylDisputePylDFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(employeePylDisputePylDFormLbl)
+                .addGap(17, 17, 17))
         );
         employeePylDisputePylDFormPnlLayout.setVerticalGroup(
             employeePylDisputePylDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePylDisputePylDFormPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(employeePylDisputePylDFormLbl)
-                .addContainerGap(8, Short.MAX_VALUE))
+            .addComponent(employeePylDisputePylDFormLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
         employeePylDisputePylDFormLbl.getAccessibleContext().setAccessibleName("employeePrlDisputePrlDFormLbl");
@@ -495,17 +492,13 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
         employeePylDisputeFADisputePnl.setLayout(employeePylDisputeFADisputePnlLayout);
         employeePylDisputeFADisputePnlLayout.setHorizontalGroup(
             employeePylDisputeFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeePylDisputeFADisputePnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(employeePylDisputeFADisputeLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGroup(employeePylDisputeFADisputePnlLayout.createSequentialGroup()
+                .addComponent(employeePylDisputeFADisputeLbl)
+                .addGap(0, 10, Short.MAX_VALUE))
         );
         employeePylDisputeFADisputePnlLayout.setVerticalGroup(
             employeePylDisputeFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeePylDisputeFADisputePnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(employeePylDisputeFADisputeLbl)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(employeePylDisputeFADisputeLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
         employeePylDisputeFADisputeLbl.getAccessibleContext().setAccessibleName("employeePrlDisputeFADisputeLbl");
@@ -558,7 +551,7 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
                             .addComponent(employeePylDisputeReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 638, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(employeePylDisputeFADisputeBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(employeePylDisputeFADisputeBrdrPnlLayout.createSequentialGroup()
-                                    .addComponent(employeePylDisputeFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(employeePylDisputeFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(employeePylDisputeSubmitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(employeePylDisputeFADisputeBrdrPnlLayout.createSequentialGroup()

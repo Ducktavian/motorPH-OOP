@@ -146,15 +146,13 @@ public class HRDisputeDetailsUI extends javax.swing.JFrame {
         hrDDetailsDFormPnlLayout.setHorizontalGroup(
             hrDDetailsDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrDDetailsDFormPnlLayout.createSequentialGroup()
-                .addGap(0, 12, Short.MAX_VALUE)
-                .addComponent(hrDDetailsDFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(12, Short.MAX_VALUE)
+                .addComponent(hrDDetailsDFormLbl)
+                .addGap(11, 11, 11))
         );
         hrDDetailsDFormPnlLayout.setVerticalGroup(
             hrDDetailsDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrDDetailsDFormPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hrDDetailsDFormLbl)
-                .addContainerGap(8, Short.MAX_VALUE))
+            .addComponent(hrDDetailsDFormLbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
         hrDDetailsDFormLbl.getAccessibleContext().setAccessibleName("hrDDetailsDFormLbl");
@@ -171,7 +169,7 @@ public class HRDisputeDetailsUI extends javax.swing.JFrame {
         hrDDetailsFADisputeLbl.setBackground(new java.awt.Color(255, 255, 255));
         hrDDetailsFADisputeLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         hrDDetailsFADisputeLbl.setForeground(new java.awt.Color(31, 41, 55));
-        hrDDetailsFADisputeLbl.setText("File A Dispute");
+        hrDDetailsFADisputeLbl.setText(" File A Dispute");
         hrDDetailsFADisputeLbl.setToolTipText("");
 
         javax.swing.GroupLayout hrDDetailsFADisputePnlLayout = new javax.swing.GroupLayout(hrDDetailsFADisputePnl);
@@ -179,15 +177,12 @@ public class HRDisputeDetailsUI extends javax.swing.JFrame {
         hrDDetailsFADisputePnlLayout.setHorizontalGroup(
             hrDDetailsFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hrDDetailsFADisputePnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hrDDetailsFADisputeLbl)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(hrDDetailsFADisputeLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 6, Short.MAX_VALUE))
         );
         hrDDetailsFADisputePnlLayout.setVerticalGroup(
             hrDDetailsFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrDDetailsFADisputePnlLayout.createSequentialGroup()
-                .addComponent(hrDDetailsFADisputeLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(hrDDetailsFADisputeLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
         hrDDetailsFADisputeLbl.getAccessibleContext().setAccessibleName("hrDDetailsFADisputeLbl");

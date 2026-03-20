@@ -140,16 +140,13 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         hrRDetailsRFormPnlLayout.setHorizontalGroup(
             hrRDetailsRFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hrRDetailsRFormPnlLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(hrRDetailsRFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(hrRDetailsRFormLbl)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         hrRDetailsRFormPnlLayout.setVerticalGroup(
             hrRDetailsRFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrRDetailsRFormPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hrRDetailsRFormLbl)
-                .addContainerGap(8, Short.MAX_VALUE))
+            .addComponent(hrRDetailsRFormLbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
         hrRDetailsRFormLbl.getAccessibleContext().setAccessibleName("hrRDetailsRFormLbl");
@@ -174,9 +171,8 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         hrRDetailsFARequestPnlLayout.setHorizontalGroup(
             hrRDetailsFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hrRDetailsFARequestPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hrRDetailsFARequestLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(hrRDetailsFARequestLbl)
+                .addGap(0, 9, Short.MAX_VALUE))
         );
         hrRDetailsFARequestPnlLayout.setVerticalGroup(
             hrRDetailsFARequestPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,8 +239,8 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                                 .addComponent(hrRDetailsHourFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(hrRDetailsFARequestBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(hrRDetailsFARequestPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(27, 27, 27)
                                 .addComponent(hrRDetailsRTypeFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(16, 16, 16))))
@@ -282,14 +278,14 @@ public class HRRequestDetailsUI extends javax.swing.JFrame {
         hrRDetailsRFormBrdrPnl.setLayout(hrRDetailsRFormBrdrPnlLayout);
         hrRDetailsRFormBrdrPnlLayout.setHorizontalGroup(
             hrRDetailsRFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsRFormBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(hrRDetailsRFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(244, 244, 244))
             .addGroup(hrRDetailsRFormBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(hrRDetailsFARequestBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(17, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrRDetailsRFormBrdrPnlLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(hrRDetailsRFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(258, 258, 258))
         );
         hrRDetailsRFormBrdrPnlLayout.setVerticalGroup(
             hrRDetailsRFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

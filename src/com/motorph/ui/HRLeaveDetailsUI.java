@@ -145,23 +145,20 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         hrLDetailsLFormPnl.setLayout(hrLDetailsLFormPnlLayout);
         hrLDetailsLFormPnlLayout.setHorizontalGroup(
             hrLDetailsLFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrLDetailsLFormPnlLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrLDetailsLFormPnlLayout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(hrLDetailsLFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(hrLDetailsLFormLbl)
+                .addGap(17, 17, 17))
         );
         hrLDetailsLFormPnlLayout.setVerticalGroup(
             hrLDetailsLFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hrLDetailsLFormPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hrLDetailsLFormLbl)
-                .addContainerGap(8, Short.MAX_VALUE))
+            .addComponent(hrLDetailsLFormLbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
         hrLDetailsLFormLbl.getAccessibleContext().setAccessibleName("hrLDetailsLFormLbl");
 
         hrLDetailsFALeaveBrdrPnl.setBackground(new java.awt.Color(233, 233, 233));
         hrLDetailsFALeaveBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrLDetailsFALeaveBrdrPnl.setForeground(new java.awt.Color(0, 0, 0));
 
         hrLDetailsFALeavePnl.setBackground(new java.awt.Color(146, 192, 253));
         hrLDetailsFALeavePnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -178,10 +175,9 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         hrLDetailsFALeavePnl.setLayout(hrLDetailsFALeavePnlLayout);
         hrLDetailsFALeavePnlLayout.setHorizontalGroup(
             hrLDetailsFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hrLDetailsFALeavePnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(hrLDetailsFALeaveLbl)
-                .addGap(21, 21, 21))
+            .addGroup(hrLDetailsFALeavePnlLayout.createSequentialGroup()
+                .addComponent(hrLDetailsFALeaveLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 9, Short.MAX_VALUE))
         );
         hrLDetailsFALeavePnlLayout.setVerticalGroup(
             hrLDetailsFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -209,7 +205,6 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         hrLDetailsFromLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrLDetailsFromLbl.setText("From");
 
-        hrRDetailsLTypeFld.setForeground(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld.setText(" ");
         hrRDetailsLTypeFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrRDetailsLTypeFld.setDisabledTextColor(new java.awt.Color(0, 0, 0));
@@ -217,7 +212,6 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         hrRDetailsLTypeFld.setSelectionColor(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld.addActionListener(this::hrRDetailsLTypeFldActionPerformed);
 
-        hrRDetailsLTypeFld1.setForeground(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld1.setText(" ");
         hrRDetailsLTypeFld1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrRDetailsLTypeFld1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
@@ -225,7 +219,6 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
         hrRDetailsLTypeFld1.setSelectionColor(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld1.addActionListener(this::hrRDetailsLTypeFld1ActionPerformed);
 
-        hrRDetailsLTypeFld2.setForeground(new java.awt.Color(0, 0, 0));
         hrRDetailsLTypeFld2.setText(" ");
         hrRDetailsLTypeFld2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrRDetailsLTypeFld2.setDisabledTextColor(new java.awt.Color(0, 0, 0));
@@ -244,7 +237,9 @@ public class HRLeaveDetailsUI extends javax.swing.JFrame {
                         .addGroup(hrLDetailsFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(hrLDetailsFromLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(hrLDetailsReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrLDetailsFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(hrLDetailsFALeaveBrdrPnlLayout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(hrLDetailsFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(hrLDetailsFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(hrLDetailsFALeaveBrdrPnlLayout.createSequentialGroup()

@@ -141,16 +141,14 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
         itDDetailsDFormPnl.setLayout(itDDetailsDFormPnlLayout);
         itDDetailsDFormPnlLayout.setHorizontalGroup(
             itDDetailsDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsDFormPnlLayout.createSequentialGroup()
-                .addGap(0, 12, Short.MAX_VALUE)
-                .addComponent(itDDetailsDFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        itDDetailsDFormPnlLayout.setVerticalGroup(
-            itDDetailsDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(itDDetailsDFormPnlLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(itDDetailsDFormLbl)
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        itDDetailsDFormPnlLayout.setVerticalGroup(
+            itDDetailsDFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(itDDetailsDFormLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
         itDDetailsDFormLbl.getAccessibleContext().setAccessibleName("itDDetailsDFormLbl");
@@ -177,13 +175,11 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
             .addGroup(itDDetailsFADisputePnlLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(itDDetailsFADisputeLbl)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         itDDetailsFADisputePnlLayout.setVerticalGroup(
             itDDetailsFADisputePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsFADisputePnlLayout.createSequentialGroup()
-                .addComponent(itDDetailsFADisputeLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(itDDetailsFADisputeLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
         );
 
         itDDetailsFADisputeLbl.getAccessibleContext().setAccessibleName("itDDetailsFADisputeLbl");
@@ -215,8 +211,8 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
                     .addComponent(itDDetailsReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itDDetailsReasonFld, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(itDDetailsFADisputeBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addComponent(itDDetailsFADisputePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(itDDetailsTTypeCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
@@ -250,8 +246,8 @@ public class ITDisputeDetailsUI extends javax.swing.JFrame {
                         .addComponent(itDDetailsFADisputeBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, itDDetailsDFormBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itDDetailsDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(261, 261, 261))))
+                        .addComponent(itDDetailsDFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(272, 272, 272))))
         );
         itDDetailsDFormBrdrPnlLayout.setVerticalGroup(
             itDDetailsDFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

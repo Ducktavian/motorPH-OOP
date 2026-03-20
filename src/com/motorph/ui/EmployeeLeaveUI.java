@@ -210,15 +210,13 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveLFormPnlLayout.setHorizontalGroup(
             employeeLeaveLFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeeLeaveLFormPnlLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(employeeLeaveLFormLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap()
+                .addComponent(employeeLeaveLFormLbl)
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         employeeLeaveLFormPnlLayout.setVerticalGroup(
             employeeLeaveLFormPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeeLeaveLFormPnlLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(employeeLeaveLFormLbl)
-                .addContainerGap(8, Short.MAX_VALUE))
+            .addComponent(employeeLeaveLFormLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
         );
 
         employeeLeaveLFormLbl.getAccessibleContext().setAccessibleName("employeeLeaveLFormLbl");
@@ -242,9 +240,7 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveFALeavePnl.setLayout(employeeLeaveFALeavePnlLayout);
         employeeLeaveFALeavePnlLayout.setHorizontalGroup(
             employeeLeaveFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(employeeLeaveFALeavePnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(employeeLeaveFALeaveLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         employeeLeaveFALeavePnlLayout.setVerticalGroup(
             employeeLeaveFALeavePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -296,8 +292,8 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
                     .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
                         .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(employeeLeaveENameLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(employeeLeaveFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(employeeLeaveReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(employeeLeaveReasonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeLeaveFALeavePnl, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(employeeLeaveFALeaveBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveFALeaveBrdrPnlLayout.createSequentialGroup()
@@ -352,14 +348,14 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
         employeeLeaveLFormBrdrPnl.setLayout(employeeLeaveLFormBrdrPnlLayout);
         employeeLeaveLFormBrdrPnlLayout.setHorizontalGroup(
             employeeLeaveLFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveLFormBrdrPnlLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(employeeLeaveLFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(260, 260, 260))
             .addGroup(employeeLeaveLFormBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(employeeLeaveFALeaveBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(16, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, employeeLeaveLFormBrdrPnlLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(employeeLeaveLFormPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(258, 258, 258))
         );
         employeeLeaveLFormBrdrPnlLayout.setVerticalGroup(
             employeeLeaveLFormBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
