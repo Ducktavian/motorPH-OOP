@@ -4,7 +4,9 @@
  */
 package com.motorph.ui;
 
+import com.motorph.model.Role;
 import com.motorph.util.GuiUtil;
+import com.motorph.util.Session;
 
 /**
  *
@@ -19,6 +21,17 @@ public class EmployeeRequestUI extends javax.swing.JFrame {
      */
     public EmployeeRequestUI() {
         initComponents();
+        hideRequestListButton();
+        
+    }
+    
+    private void hideRequestListButton() {
+        Role role = Session.getCurrentUser().getRole();
+        if (role != Role.ADMIN && role != Role.HR) {
+            employeeRequestRListBtn.setVisible(false);
+        } else {
+            employeeRequestRListBtn.setVisible(true);
+        }
     }
 
     /**
