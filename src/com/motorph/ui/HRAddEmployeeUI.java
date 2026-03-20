@@ -689,6 +689,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
 
     private void hrAEmployeeBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrAEmployeeBackBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new HREmployeeDetailsUI());
     }//GEN-LAST:event_hrAEmployeeBackBtnActionPerformed
 
     /**

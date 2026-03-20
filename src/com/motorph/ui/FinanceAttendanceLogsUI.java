@@ -418,6 +418,7 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
 
     private void financeAttLogsEditBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsEditBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new FinanceEditAttendanceLogsUI());
     }//GEN-LAST:event_financeAttLogsEditBtnActionPerformed
 
     private void financeAttLogsMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financeAttLogsMainDashboardBtnActionPerformed

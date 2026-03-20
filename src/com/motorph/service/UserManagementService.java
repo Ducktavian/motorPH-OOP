@@ -115,6 +115,16 @@ public class UserManagementService {
         updateUser(user);
     }
     
+    public void activateUser(int userId) {
+        authorizeIT();
+        UserAccount user = userDAO.findById(userId);
+        if (user == null) {
+            throw new RuntimeException("User not found.");
+        }
+        user.setActive(true);
+        updateUser(user);
+    }
+    
     public List<UserAccount> listUsers() {
         authorizeIT();
         return userDAO.findAll();

@@ -585,6 +585,8 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
             String TIN = hrEditEmployeeTINFld.getText().trim().replaceAll("[^0-9]", "");
             
             System.out.println(TIN);
+            
+            System.out.println(TIN);
             // PagIbig
             String pagIbigNo = hrEditEmployeePagIbigFld.getText().trim().replaceAll("[^0-9]", "");
             // Status
@@ -702,6 +704,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
 
     private void hrEditEmployeeBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeBackBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new HREmployeeDetailsUI());
     }//GEN-LAST:event_hrEditEmployeeBackBtnActionPerformed
 
     /**

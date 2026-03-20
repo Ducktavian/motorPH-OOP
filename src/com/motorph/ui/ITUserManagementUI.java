@@ -63,6 +63,24 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         
     }
     
+    private void populateUserData(UserAccount user) {
+        
+        if (user == null) {
+            itSysToolsUsernameFld.setText("No account found.");
+            roleField.setText("");
+            activeStatusField.setText("");
+        } else {
+            itSysToolsUsernameFld.setText(user.getUsername());
+            roleField.setText(user.getRole().toString());
+            if (user.isActive()) {
+               activeStatusField.setText("Active"); 
+            } else {
+                activeStatusField.setText("Inactive");
+            }
+        }
+        
+    }
+    
     private void populateEmployeeData(Employee emp) {
         itSysToolsENumberFld.setText(emp.getEmployeeNumber());
         itSysToolsENameFld.setText(emp.getFullName());
@@ -537,7 +555,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         try {
             String empNum = itSysToolsENumberFld.getText().trim();
             if (empNum == null || empNum.isBlank() || empNum.isEmpty()) {
-                throw new IllegalArgumentException("Search for a user account to edit.");
+                throw new IllegalArgumentException("Search for an employee to create an account.");
             }
             
             
@@ -608,6 +626,10 @@ public class ITUserManagementUI extends javax.swing.JFrame {
             }
             UserAccount user = userService.findByUserName(userName);
             
+            if (!user.isActive()) {
+                throw new IllegalArgumentException("User account already deactivated.");
+            }
+            
             String message = "Do you want to deactivate " + user.getUsername() + " ?";
             String title = "Confirmation";
 
@@ -617,6 +639,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
             if (reply == JOptionPane.YES_OPTION) {
                 userService.deactivateUser(user.getUserId());
                 JOptionPane.showMessageDialog(null, "Deactivated user " + user.getUsername());
+                populateUserData(user);
                 
             } else if (reply == JOptionPane.NO_OPTION) {
                 JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
@@ -634,6 +657,40 @@ public class ITUserManagementUI extends javax.swing.JFrame {
 
     private void itAddUAccActivateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccActivateBtn1ActionPerformed
         // TODO add your handling code here:
+         try {
+            String userName = itSysToolsUsernameFld.getText().trim();
+            if (userName == null || userName.isBlank() || userName.isEmpty()) {
+                throw new IllegalArgumentException("Search for a user account to Activate.");
+            }
+            UserAccount user = userService.findByUserName(userName);
+            
+            if (user.isActive()) {
+                throw new IllegalArgumentException("User account still active.");
+            }
+            
+            String message = "Do you want to deactivate " + user.getUsername() + " ?";
+            String title = "Confirmation";
+
+            int reply = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);
+
+            
+            if (reply == JOptionPane.YES_OPTION) {
+                userService.activateUser(user.getUserId());
+                JOptionPane.showMessageDialog(null, "Activated user " + user.getUsername());
+                populateUserData(user);
+                
+            } else if (reply == JOptionPane.NO_OPTION) {
+                JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
+                
+            } else {
+                // This handles the case where the user closes the dialog without pressing Yes or No
+                JOptionPane.showMessageDialog(null, "Dialog closed without a choice.");
+            }
+        
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e.getMessage());
+        }
     }//GEN-LAST:event_itAddUAccActivateBtn1ActionPerformed
 
     private void roleFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roleFieldActionPerformed

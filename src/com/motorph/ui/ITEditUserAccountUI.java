@@ -461,6 +461,22 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private void itEditUAccUpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUpdateBtnActionPerformed
         // TODO add your handling code here:
         try {
+            
+            
+            
+            
+            Role selectedRole = null;
+            Object selectedItem = jComboBox1.getSelectedItem();
+
+            
+            if (selectedItem instanceof Role) {
+                selectedRole  = (Role) selectedItem;
+            } else {
+                throw new IllegalArgumentException("Please select a valid user role.");
+            }
+            
+            
+            
             String message = "Do you want to update user " + user.getUsername() + " ?";
             String title = "Confirmation";
 
@@ -468,6 +484,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
             
             if (reply == JOptionPane.YES_OPTION) {
+                user.setRole(selectedRole);
                 userService.updateUser(user); 
                 JOptionPane.showMessageDialog(null, "Updated user " + user.getUsername());
                 

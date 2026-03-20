@@ -169,12 +169,14 @@ public class CsvEmployeeDAO implements EmployeeDAO {
     
     @Override
     public void addEmployee(Employee employee) {
+        validateUniqueIds(employee);
         employees.add(employee);
         saveAllEmployees();
     }
 
     @Override
     public void updateEmployee(Employee updatedEmployee) {
+        validateUniqueIds(updatedEmployee);
         for (int i = 0; i < employees.size(); i++) {
             if (employees.get(i).getEmployeeNumber().equals(updatedEmployee.getEmployeeNumber())) {
                 employees.set(i, updatedEmployee);
@@ -254,4 +256,26 @@ public class CsvEmployeeDAO implements EmployeeDAO {
         return tin.substring(0, 3) + "-" + tin.substring(3, 6) + "-" + 
            tin.substring(6, 9) + "-" + tin.substring(9, 11) + tin.substring(11);
     }
+    
+    private void validateUniqueIds(Employee employee) throws IllegalArgumentException {
+    for (Employee existing : employees) {
+        // Skip the check if it's the same employee (important for update)
+        if (existing.getEmployeeNumber().equals(employee.getEmployeeNumber())) {
+            continue;
+        }
+
+        if (existing.getSSSNumber().replaceAll("[^0-9]", "").equals(employee.getSSSNumber().replaceAll("[^0-9]", ""))) {
+            throw new IllegalArgumentException("SSS Number " + employee.getSSSNumber() + " already exists.");
+        }
+        if (existing.getPhilhealthNumber().equals(employee.getPhilhealthNumber())) {
+            throw new IllegalArgumentException("PhilHealth Number " + employee.getPhilhealthNumber() + " already exists.");
+        }
+        if (existing.getTIN().replaceAll("[^0-9]", "").equals(employee.getTIN().replaceAll("[^0-9]", ""))) {
+            throw new IllegalArgumentException("TIN " + employee.getTIN() + " already exists.");
+        }
+        if (existing.getPagIbigNumber().equals(employee.getPagIbigNumber())) {
+            throw new IllegalArgumentException("Pag-Ibig Number " + employee.getPagIbigNumber() + " already exists.");
+        }
+    }
+}
 }

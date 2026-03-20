@@ -288,6 +288,7 @@ public class HRRequestListUI extends javax.swing.JFrame {
 
     private void hrRListRDetailsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRListRDetailsBtnActionPerformed
         // TODO add your handling code here:
+        GuiUtil.openFrame(this, new EmployeeRequestUI());
     }//GEN-LAST:event_hrRListRDetailsBtnActionPerformed
 
     private void hrRListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrRListMainDashboardBtnActionPerformed

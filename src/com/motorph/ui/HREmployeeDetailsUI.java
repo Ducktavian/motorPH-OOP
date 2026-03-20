@@ -58,14 +58,14 @@ public class HREmployeeDetailsUI extends javax.swing.JFrame {
         hrEDetailsENumberFld.setText("");
         hrEDetailsIFNameFld.setText("");
         hrEDetailsLNameFld.setText("");
-        //hrEDetailsBirthdayFld.setText("");
+        hrEDetailsBirthdayFld.setText("");
         hrEDetailsAddressFld.setText("");
         hrEDetailsIPhnNumberFld.setText("");
         hrEDetailsSSSFld.setText("");
         hrEDetailsPhilHealthFld.setText("");
         hrEDetailsTINFld.setText("");
         hrEDetailsPagIbigFld.setText("");
-        //hrEDetailsIStatusFld.setText("");
+        hrEDetailsIStatusFld.setText("");
         hrEDetailsPositionFld.setText("");
         hrEDetailsISupervisorFld.setText("");
         hrEDetailsBasicSalaryFld.setText("");
