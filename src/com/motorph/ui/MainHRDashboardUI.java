@@ -94,7 +94,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardLogoutLbl.getAccessibleContext().setAccessibleName("mainHDashboardLogoutLbl");
 
         mainHDashboardDashboardImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainHDashboardDashboardImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainHDashboardDashboardImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainHDashboardDashboardImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainHDashboardDashboardImgBtn.setText("Dashboard");
         mainHDashboardDashboardImgBtn.addActionListener(this::mainHDashboardDashboardImgBtnActionPerformed);
@@ -102,7 +102,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardDashboardImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardDashboardImgBtn");
 
         mainHDashboardPylImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainHDashboardPylImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainHDashboardPylImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainHDashboardPylImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainHDashboardPylImgBtn.setText("Payslip");
         mainHDashboardPylImgBtn.addActionListener(this::mainHDashboardPylImgBtnActionPerformed);
@@ -111,7 +111,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardPylImgBtn.getAccessibleContext().setAccessibleDescription("");
 
         mainHDashboardPrlImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainHDashboardPrlImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainHDashboardPrlImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainHDashboardPrlImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainHDashboardPrlImgBtn.setText("Manage Payroll");
         mainHDashboardPrlImgBtn.addActionListener(this::mainHDashboardPrlImgBtnActionPerformed);
@@ -119,7 +119,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardPrlImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardPrlImgBtn");
 
         mainHDashboardEDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainHDashboardEDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainHDashboardEDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainHDashboardEDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainHDashboardEDetailsImgBtn.setText("Manage Employees");
         mainHDashboardEDetailsImgBtn.addActionListener(this::mainHDashboardEDetailsImgBtnActionPerformed);
@@ -127,7 +127,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardEDetailsImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardEDetailsImgBtn");
 
         mainHDashboardRDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainHDashboardRDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainHDashboardRDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainHDashboardRDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainHDashboardRDetailsImgBtn.setText("Manage Requests");
         mainHDashboardRDetailsImgBtn.addActionListener(this::mainHDashboardRDetailsImgBtnActionPerformed);
@@ -135,7 +135,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardRDetailsImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardRDetailsImgBtn");
 
         mainHDashboardLDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainHDashboardLDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainHDashboardLDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainHDashboardLDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainHDashboardLDetailsImgBtn.setText("Manage Leave");
         mainHDashboardLDetailsImgBtn.addActionListener(this::mainHDashboardLDetailsImgBtnActionPerformed);
@@ -143,7 +143,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardLDetailsImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardLDetailsImgBtn");
 
         mainHDashboardDDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainHDashboardDDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainHDashboardDDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainHDashboardDDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainHDashboardDDetailsImgBtn.setText("Manage Disputes");
         mainHDashboardDDetailsImgBtn.addActionListener(this::mainHDashboardDDetailsImgBtnActionPerformed);
@@ -151,7 +151,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardDDetailsImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardDDetailsImgBtn");
 
         mainHDashboardSettingsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainHDashboardSettingsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainHDashboardSettingsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainHDashboardSettingsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainHDashboardSettingsImgBtn.setText("Settings");
         mainHDashboardSettingsImgBtn.addActionListener(this::mainHDashboardSettingsImgBtnActionPerformed);

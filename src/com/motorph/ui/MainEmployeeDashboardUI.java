@@ -82,7 +82,7 @@ public class MainEmployeeDashboardUI extends javax.swing.JFrame {
         mainEDashboardLogoutLbl.getAccessibleContext().setAccessibleName("mainEDashboardLogoutLbl");
 
         mainEDashboardDashboardImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainEDashboardDashboardImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainEDashboardDashboardImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainEDashboardDashboardImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainEDashboardDashboardImgBtn.setText("Dashboard");
         mainEDashboardDashboardImgBtn.addActionListener(this::mainEDashboardDashboardImgBtnActionPerformed);
@@ -90,7 +90,7 @@ public class MainEmployeeDashboardUI extends javax.swing.JFrame {
         mainEDashboardDashboardImgBtn.getAccessibleContext().setAccessibleName("mainEDashboardDashboardImgBtn");
 
         mainEDashboardPylImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainEDashboardPylImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainEDashboardPylImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainEDashboardPylImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainEDashboardPylImgBtn.setText("Payslip");
         mainEDashboardPylImgBtn.addActionListener(this::mainEDashboardPylImgBtnActionPerformed);
@@ -98,7 +98,7 @@ public class MainEmployeeDashboardUI extends javax.swing.JFrame {
         mainEDashboardPylImgBtn.getAccessibleContext().setAccessibleName("mainEDashboardPylImgBtn");
 
         mainEDashboardRDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainEDashboardRDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainEDashboardRDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainEDashboardRDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainEDashboardRDetailsImgBtn.setText("Manage Requests");
         mainEDashboardRDetailsImgBtn.addActionListener(this::mainEDashboardRDetailsImgBtnActionPerformed);
@@ -106,7 +106,7 @@ public class MainEmployeeDashboardUI extends javax.swing.JFrame {
         mainEDashboardRDetailsImgBtn.getAccessibleContext().setAccessibleName("mainEDashboardRDetailsImgBtn");
 
         mainEDashboardLDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainEDashboardLDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainEDashboardLDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainEDashboardLDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainEDashboardLDetailsImgBtn.setText("Manage Leave");
         mainEDashboardLDetailsImgBtn.addActionListener(this::mainEDashboardLDetailsImgBtnActionPerformed);
@@ -114,7 +114,7 @@ public class MainEmployeeDashboardUI extends javax.swing.JFrame {
         mainEDashboardLDetailsImgBtn.getAccessibleContext().setAccessibleName("mainEDashboardLDetailsImgBtn");
 
         mainEDashboardDDetailsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainEDashboardDDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainEDashboardDDetailsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainEDashboardDDetailsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainEDashboardDDetailsImgBtn.setText("Manage Disputes");
         mainEDashboardDDetailsImgBtn.addActionListener(this::mainEDashboardDDetailsImgBtnActionPerformed);
@@ -122,7 +122,7 @@ public class MainEmployeeDashboardUI extends javax.swing.JFrame {
         mainEDashboardDDetailsImgBtn.getAccessibleContext().setAccessibleName("mainEDashboardDDetailsImgBtn");
 
         mainEDashboardSettingsImgBtn.setBackground(new java.awt.Color(30, 42, 56));
-        mainEDashboardSettingsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        mainEDashboardSettingsImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainEDashboardSettingsImgBtn.setForeground(new java.awt.Color(255, 255, 255));
         mainEDashboardSettingsImgBtn.setText("Settings");
         mainEDashboardSettingsImgBtn.addActionListener(this::mainEDashboardSettingsImgBtnActionPerformed);
