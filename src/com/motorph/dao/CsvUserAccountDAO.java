@@ -178,8 +178,6 @@ public class CsvUserAccountDAO implements UserAccountDAO {
         }
         
         int next = max + 1;
-        
-        
         return next;
     }
     

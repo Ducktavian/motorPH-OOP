@@ -39,7 +39,7 @@ public class UserManagementService {
         return userDAO.generateNextUserId();
     }
     
-    public void createUser(String username, String password, Role role, String employeeNumber) {
+    public void createUser(String employeeNumber, String username, String password, Role role) {
         // Checks IT access
         authorizeIT();
         
@@ -62,14 +62,14 @@ public class UserManagementService {
     }
     
     public String generateDefaultPassword() {
-        String hashPassword = null;
         try {
             String DEFAULT_PASSWORD = "password";
-            hashPassword = PasswordUtil.hashPassword(DEFAULT_PASSWORD);
+            String hashPassword = PasswordUtil.hashPassword(DEFAULT_PASSWORD);
+            return hashPassword;
         } catch (Exception e) {
             e.printStackTrace();
-        }
-        return hashPassword;
+            return null;
+        }        
     }
     
     public void resetPassword(int userId) {

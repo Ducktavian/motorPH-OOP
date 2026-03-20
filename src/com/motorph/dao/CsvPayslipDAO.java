@@ -64,17 +64,17 @@ public class CsvPayslipDAO implements PayslipDAO {
             System.err.println("Could not initialize payslip CSV: " + e.getMessage());
         }
     }
+    
 
     @Override
-    public void savePayslip(Payslip payslip) {
+    public void savePayslip(Payslip payslip) throws Exception {
         
         loadAllPayslips(); // ensure cache is ready
         
         // Duplicate check in cache:
         for (Payslip p : cache) {
             if (p.getPayslipId().equals(payslip.getPayslipId())) {
-                System.out.println("Payslip already exists: " + payslip.getPayslipId()  );
-                return;
+                throw new Exception("Payslip already exists: " + payslip.getPayslipId());
             }
         }
         

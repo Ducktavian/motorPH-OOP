@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface PayslipDAO {
     
-    void savePayslip(Payslip payslip);
+    void savePayslip(Payslip payslip) throws Exception;
     
     List<Payslip> findPayslipsByEmployee(String employeeNumber);
     

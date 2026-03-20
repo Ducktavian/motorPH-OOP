@@ -109,9 +109,14 @@ public class PayrollService {
                 netPay
         );
         
+        
+        return payslip;
+    }
+    
+    public void savePayslip(Payslip payslip) throws Exception {
         // Write to CSV
         payslipDAO.savePayslip(payslip);
-        return payslip;
+        
     }
     
     
