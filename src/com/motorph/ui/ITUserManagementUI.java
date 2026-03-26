@@ -668,7 +668,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                 throw new IllegalArgumentException("User account still active.");
             }
             
-            String message = "Do you want to deactivate " + user.getUsername() + " ?";
+            String message = "Do you want to activate " + user.getUsername() + " ?";
             String title = "Confirmation";
 
             int reply = JOptionPane.showConfirmDialog(null, message, title, JOptionPane.YES_NO_OPTION);

@@ -4,6 +4,7 @@
  */
 package com.motorph.ui;
 
+import com.motorph.model.Role;
 import com.motorph.util.GuiUtil;
 import com.motorph.util.Session;
 
@@ -20,6 +21,20 @@ public class EmployeeDisputeUI extends javax.swing.JFrame {
      */
     public EmployeeDisputeUI() {
         initComponents();
+        initButtons();
+    }
+    
+    private void initButtons() {
+        Role role = Session.getCurrentUser().getRole();
+        
+        if (role != Role.HR && role != Role.ADMIN) {
+            employeeDisputeDDetailsBtn1.setVisible(false);
+        }
+        if (role != Role.IT && role != Role.ADMIN) {
+            
+        employeeDisputeDDetailsBtn2.setVisible(false);
+        }
+            
     }
 
     /**

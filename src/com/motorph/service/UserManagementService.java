@@ -86,7 +86,6 @@ public class UserManagementService {
     }
     
     public void resetPassword(int userId, String newPassword) {
-        authorizeIT();
         UserAccount user = userDAO.findById(userId);
         if (user == null) {
             throw new RuntimeException("User not found.");

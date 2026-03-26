@@ -96,7 +96,7 @@ public class MainFinanceDashboardUI extends javax.swing.JFrame {
         mainFDashboardDashboardImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainFDashboardDashboardImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainFDashboardDashboardImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainFDashboardDashboardImgBtn.setText("Dashboard");
+        mainFDashboardDashboardImgBtn.setText("My Profile");
         mainFDashboardDashboardImgBtn.addActionListener(this::mainFDashboardDashboardImgBtnActionPerformed);
         getContentPane().add(mainFDashboardDashboardImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 169, 45));
         mainFDashboardDashboardImgBtn.getAccessibleContext().setAccessibleName("mainFDashboardDashboardImgBtn");

@@ -108,7 +108,7 @@ public class MainAdminDashboardUI extends javax.swing.JFrame {
         mainDashboardDashboardImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainDashboardDashboardImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainDashboardDashboardImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainDashboardDashboardImgBtn.setText("Dashboard");
+        mainDashboardDashboardImgBtn.setText("My Profile");
         mainDashboardDashboardImgBtn.addActionListener(this::mainDashboardDashboardImgBtnActionPerformed);
         getContentPane().add(mainDashboardDashboardImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 169, 45));
         mainDashboardDashboardImgBtn.getAccessibleContext().setAccessibleName("mainDashboardDashboardImgBtn");

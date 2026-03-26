@@ -96,7 +96,7 @@ public class MainHRDashboardUI extends javax.swing.JFrame {
         mainHDashboardDashboardImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainHDashboardDashboardImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mainHDashboardDashboardImgBtn.setForeground(new java.awt.Color(255, 255, 255));
-        mainHDashboardDashboardImgBtn.setText("Dashboard");
+        mainHDashboardDashboardImgBtn.setText("My Profile");
         mainHDashboardDashboardImgBtn.addActionListener(this::mainHDashboardDashboardImgBtnActionPerformed);
         getContentPane().add(mainHDashboardDashboardImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 169, 45));
         mainHDashboardDashboardImgBtn.getAccessibleContext().setAccessibleName("mainHDashboardDashboardImgBtn");
