@@ -23,8 +23,6 @@ public class CsvUserAccountDAO implements UserAccountDAO {
         this.users = new ArrayList<>();
         ensureFileExists();
         loadUsers();
-        
-        
     }
     
     // Handles directory and file validation
