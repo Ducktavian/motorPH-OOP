@@ -132,7 +132,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementPositionFld = new javax.swing.JTextField();
         itUManagementStatusLbl = new javax.swing.JLabel();
         itUManagementStatusFld = new javax.swing.JTextField();
-        itUManagementUAccDetailsPnl = new javax.swing.JPanel();
+        itUJserManagementUAccDetailsPnl = new javax.swing.JPanel();
         itUManagementUAccDetailsLbl = new javax.swing.JLabel();
         itUManagementUAccDetailsBrdrPnl = new javax.swing.JPanel();
         itUManagementUsernameLbl = new javax.swing.JLabel();
@@ -288,10 +288,10 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementStatusFld.setEnabled(false);
         itUManagementStatusFld.addActionListener(this::itUManagementStatusFldActionPerformed);
 
-        itUManagementUAccDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
-        itUManagementUAccDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itUManagementUAccDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        itUManagementUAccDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
+        itUJserManagementUAccDetailsPnl.setBackground(new java.awt.Color(146, 192, 253));
+        itUJserManagementUAccDetailsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itUJserManagementUAccDetailsPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itUJserManagementUAccDetailsPnl.setPreferredSize(new java.awt.Dimension(126, 40));
 
         itUManagementUAccDetailsLbl.setBackground(new java.awt.Color(255, 255, 255));
         itUManagementUAccDetailsLbl.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
@@ -299,17 +299,17 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementUAccDetailsLbl.setText(" User Account Details");
         itUManagementUAccDetailsLbl.setToolTipText("");
 
-        javax.swing.GroupLayout itUManagementUAccDetailsPnlLayout = new javax.swing.GroupLayout(itUManagementUAccDetailsPnl);
-        itUManagementUAccDetailsPnl.setLayout(itUManagementUAccDetailsPnlLayout);
-        itUManagementUAccDetailsPnlLayout.setHorizontalGroup(
-            itUManagementUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itUManagementUAccDetailsPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itUJserManagementUAccDetailsPnlLayout = new javax.swing.GroupLayout(itUJserManagementUAccDetailsPnl);
+        itUJserManagementUAccDetailsPnl.setLayout(itUJserManagementUAccDetailsPnlLayout);
+        itUJserManagementUAccDetailsPnlLayout.setHorizontalGroup(
+            itUJserManagementUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itUJserManagementUAccDetailsPnlLayout.createSequentialGroup()
                 .addComponent(itUManagementUAccDetailsLbl, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        itUManagementUAccDetailsPnlLayout.setVerticalGroup(
-            itUManagementUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itUManagementUAccDetailsPnlLayout.createSequentialGroup()
+        itUJserManagementUAccDetailsPnlLayout.setVerticalGroup(
+            itUJserManagementUAccDetailsPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itUJserManagementUAccDetailsPnlLayout.createSequentialGroup()
                 .addComponent(itUManagementUAccDetailsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 1, Short.MAX_VALUE))
         );
@@ -422,7 +422,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                 .addGroup(itUManagementUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(itUManagementUEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGap(242, 242, 242)
-                        .addComponent(itUManagementUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(itUJserManagementUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itUManagementUEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGap(212, 212, 212)
                         .addComponent(itUManagementUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -450,7 +450,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                     .addComponent(itUManagementStatusLbl)
                     .addComponent(itUManagementStatusFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
-                .addComponent(itUManagementUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itUJserManagementUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(itUManagementUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -468,7 +468,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementPositionFld.getAccessibleContext().setAccessibleName("itSysToolsPositionFld");
         itUManagementStatusLbl.getAccessibleContext().setAccessibleName("itSysToolsStatusLbl");
         itUManagementStatusFld.getAccessibleContext().setAccessibleName("itSysToolsStatusFld");
-        itUManagementUAccDetailsPnl.getAccessibleContext().setAccessibleName("itSysToolsUAccDetailsPnl");
+        itUJserManagementUAccDetailsPnl.getAccessibleContext().setAccessibleName("itSysToolsUAccDetailsPnl");
         itUManagementUAccDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itSysToolsUAccDetailsBrdrPnl");
 
         itUManagementDeactivateBtn.setBackground(new java.awt.Color(255, 0, 0));
@@ -727,6 +727,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel itUJserManagementUAccDetailsPnl;
     private javax.swing.JLabel itUManagementActLogsLbl;
     private javax.swing.JPanel itUManagementActLogsPnl;
     private javax.swing.JButton itUManagementActivateBtn;
@@ -757,7 +758,6 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     private javax.swing.JLabel itUManagementStatusLbl;
     private javax.swing.JPanel itUManagementUAccDetailsBrdrPnl;
     private javax.swing.JLabel itUManagementUAccDetailsLbl;
-    private javax.swing.JPanel itUManagementUAccDetailsPnl;
     private javax.swing.JPanel itUManagementUEDetailsBrdrPnl;
     private javax.swing.JButton itUManagementUManagementBtn;
     private javax.swing.JTextField itUManagementUsernameFld;

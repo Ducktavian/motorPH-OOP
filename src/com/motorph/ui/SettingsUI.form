@@ -110,6 +110,7 @@
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SettingsMainDashboardBtn"/>
+            <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
           </AccessibilityProperties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SettingsMainDashboardBtnActionPerformed"/>
@@ -245,12 +246,12 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="SettingsNewPassLbl1" alignment="0" min="-2" pref="121" max="-2" attributes="0"/>
+                          <Component id="SettingsNewPassLbl" alignment="0" min="-2" pref="121" max="-2" attributes="0"/>
                           <Component id="SettingsNewPassFld" alignment="0" min="-2" pref="347" max="-2" attributes="0"/>
                           <Component id="SettingsCurrPassFld" min="-2" pref="347" max="-2" attributes="0"/>
                           <Component id="SettingsCurrPassLbl" min="-2" pref="150" max="-2" attributes="0"/>
-                          <Component id="confirmPasswordField" alignment="0" min="-2" pref="347" max="-2" attributes="0"/>
-                          <Component id="SettingsNewPassLbl" alignment="0" min="-2" pref="221" max="-2" attributes="0"/>
+                          <Component id="SettingsConfirmNewPassFld" alignment="0" min="-2" pref="347" max="-2" attributes="0"/>
+                          <Component id="SettingsConfirmNewPassLbl" alignment="0" min="-2" pref="221" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="23" max="32767" attributes="0"/>
                   </Group>
@@ -264,13 +265,13 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="SettingsCurrPassFld" min="-2" pref="40" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="SettingsNewPassLbl1" min="-2" max="-2" attributes="0"/>
+                      <Component id="SettingsNewPassLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="SettingsNewPassFld" min="-2" pref="40" max="-2" attributes="0"/>
                       <EmptySpace pref="15" max="32767" attributes="0"/>
-                      <Component id="SettingsNewPassLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="SettingsConfirmNewPassLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="confirmPasswordField" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="SettingsConfirmNewPassFld" min="-2" pref="40" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="SettingsConfirmBtn" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
@@ -293,7 +294,7 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SettingsCurrPassLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JLabel" name="SettingsNewPassLbl">
+            <Component class="javax.swing.JLabel" name="SettingsConfirmNewPassLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -304,7 +305,7 @@
                 <Property name="text" type="java.lang.String" value="Confirm New Password"/>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SettingsNewPassLbl"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SettingsConfirmNewPassLbl"/>
               </AccessibilityProperties>
             </Component>
             <Component class="javax.swing.JButton" name="SettingsConfirmBtn">
@@ -334,7 +335,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SettingsConfirmBtnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JPasswordField" name="confirmPasswordField">
+            <Component class="javax.swing.JPasswordField" name="SettingsConfirmNewPassFld">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="14" style="0"/>
@@ -351,7 +352,7 @@
                 </Property>
               </Properties>
               <AccessibilityProperties>
-                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SettingsNewPassFld"/>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SettingsConfirmNewPassFld"/>
               </AccessibilityProperties>
             </Component>
             <Component class="javax.swing.JPasswordField" name="SettingsCurrPassFld">
@@ -373,8 +374,11 @@
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SettingsCurrPassFld"/>
               </AccessibilityProperties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SettingsCurrPassFldActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="SettingsNewPassLbl1">
+            <Component class="javax.swing.JLabel" name="SettingsNewPassLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -384,6 +388,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="New Password"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SettingsNewPassLbl"/>
+              </AccessibilityProperties>
             </Component>
             <Component class="javax.swing.JPasswordField" name="SettingsNewPassFld">
               <Properties>
@@ -401,6 +408,9 @@
                   </Border>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="SettingsNewPassFld"/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
