@@ -295,7 +295,7 @@
                                                                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                                       <Component id="hrAddEmployeePhnNumberLbl" min="-2" max="-2" attributes="0"/>
-                                                                      <Component id="hrAddEmployeeISupervisorLbl" min="-2" max="-2" attributes="0"/>
+                                                                      <Component id="hrAddEmployeeImmSupervisorLbl" min="-2" max="-2" attributes="0"/>
                                                                   </Group>
                                                               </Group>
                                                           </Group>
@@ -316,7 +316,7 @@
                                                       <Component id="hrAddEmployeeTINFld" min="-2" pref="151" max="-2" attributes="0"/>
                                                       <Component id="hrAddEmployeeCltAllowanceFld" min="-2" pref="151" max="-2" attributes="0"/>
                                                       <Component id="hrAddEmployeeRiceSubsidyFld" min="-2" pref="151" max="-2" attributes="0"/>
-                                                      <Component id="hrAddEmployeeISupervisorFld" min="-2" pref="151" max="-2" attributes="0"/>
+                                                      <Component id="hrAddEmployeeImmSupervisorFld" min="-2" pref="151" max="-2" attributes="0"/>
                                                       <Component id="hrAddEmployeePhnNumberFld" min="-2" pref="151" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
@@ -376,8 +376,8 @@
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="hrAddEmployeePositionFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                              <Component id="hrAddEmployeeISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="hrAddEmployeeISupervisorFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="hrAddEmployeeImmSupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrAddEmployeeImmSupervisorFld" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -579,7 +579,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrAEmployeePhnNumberLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="hrAddEmployeeISupervisorLbl">
+        <Component class="javax.swing.JLabel" name="hrAddEmployeeImmSupervisorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="0"/>
@@ -835,7 +835,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrAddEmployeeENumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrAddEmployeeISupervisorFld">
+        <Component class="javax.swing.JTextField" name="hrAddEmployeeImmSupervisorFld">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -855,7 +855,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrAEmployeeISupervisorFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrAddEmployeeISupervisorFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrAddEmployeeImmSupervisorFldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="hrAddEmployeeRiceSubsidyFld">

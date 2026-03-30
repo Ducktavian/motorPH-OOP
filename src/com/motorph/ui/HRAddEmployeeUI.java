@@ -76,7 +76,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAddEmployeeCltAllowanceLbl = new javax.swing.JLabel();
         hrAddEmployeeFNameLbl = new javax.swing.JLabel();
         hrAddEmployeePhnNumberLbl = new javax.swing.JLabel();
-        hrAddEmployeeISupervisorLbl = new javax.swing.JLabel();
+        hrAddEmployeeImmSupervisorLbl = new javax.swing.JLabel();
         hrAddEmployeeRiceSubsidyLbl = new javax.swing.JLabel();
         hrAddEmployeeTINLbl = new javax.swing.JLabel();
         hrAddEmployeePagIbigLbl = new javax.swing.JLabel();
@@ -89,7 +89,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAddEmployeeSSSFld = new javax.swing.JTextField();
         hrAddEmployeePhilHealthFld = new javax.swing.JTextField();
         hrAddEmployeeENumberFld = new javax.swing.JTextField();
-        hrAddEmployeeISupervisorFld = new javax.swing.JTextField();
+        hrAddEmployeeImmSupervisorFld = new javax.swing.JTextField();
         hrAddEmployeeRiceSubsidyFld = new javax.swing.JTextField();
         hrAddEmployeeTINFld = new javax.swing.JTextField();
         hrAddEmployeePagIbigFld = new javax.swing.JTextField();
@@ -207,9 +207,9 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAddEmployeePhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrAddEmployeePhnNumberLbl.setText("Phone Number");
 
-        hrAddEmployeeISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrAddEmployeeISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
-        hrAddEmployeeISupervisorLbl.setText("Immediate Supervisor");
+        hrAddEmployeeImmSupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        hrAddEmployeeImmSupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        hrAddEmployeeImmSupervisorLbl.setText("Immediate Supervisor");
 
         hrAddEmployeeRiceSubsidyLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrAddEmployeeRiceSubsidyLbl.setForeground(new java.awt.Color(31, 41, 55));
@@ -269,10 +269,10 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAddEmployeeENumberFld.setEnabled(false);
         hrAddEmployeeENumberFld.addActionListener(this::hrAddEmployeeENumberFldActionPerformed);
 
-        hrAddEmployeeISupervisorFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrAddEmployeeISupervisorFld.setForeground(new java.awt.Color(31, 41, 55));
-        hrAddEmployeeISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrAddEmployeeISupervisorFld.addActionListener(this::hrAddEmployeeISupervisorFldActionPerformed);
+        hrAddEmployeeImmSupervisorFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        hrAddEmployeeImmSupervisorFld.setForeground(new java.awt.Color(31, 41, 55));
+        hrAddEmployeeImmSupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrAddEmployeeImmSupervisorFld.addActionListener(this::hrAddEmployeeImmSupervisorFldActionPerformed);
 
         hrAddEmployeeRiceSubsidyFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         hrAddEmployeeRiceSubsidyFld.setForeground(new java.awt.Color(31, 41, 55));
@@ -376,7 +376,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                                                                 .addGap(18, 18, 18)
                                                                 .addGroup(hrAddEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                     .addComponent(hrAddEmployeePhnNumberLbl)
-                                                                    .addComponent(hrAddEmployeeISupervisorLbl)))))
+                                                                    .addComponent(hrAddEmployeeImmSupervisorLbl)))))
                                                     .addGroup(hrAddEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
                                                         .addComponent(hrAddEmployeePhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGap(18, 18, 18)
@@ -390,7 +390,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                                                     .addComponent(hrAddEmployeeTINFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(hrAddEmployeeCltAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(hrAddEmployeeRiceSubsidyFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(hrAddEmployeeISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(hrAddEmployeeImmSupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(hrAddEmployeePhnNumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                             .addComponent(hrAddEmployeeStatusCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(55, 55, 55))))))
@@ -431,8 +431,8 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
                         .addGap(14, 14, 14)
                         .addGroup(hrAddEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(hrAddEmployeePositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrAddEmployeeISupervisorLbl)
-                            .addComponent(hrAddEmployeeISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(hrAddEmployeeImmSupervisorLbl)
+                            .addComponent(hrAddEmployeeImmSupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(hrAddEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(hrAddEmployeeBasicSalaryFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -476,7 +476,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAddEmployeeCltAllowanceLbl.getAccessibleContext().setAccessibleName("hrAEmployeeCltAllowanceLbl");
         hrAddEmployeeFNameLbl.getAccessibleContext().setAccessibleName("hrAEmployeeFNameLbl");
         hrAddEmployeePhnNumberLbl.getAccessibleContext().setAccessibleName("hrAEmployeePhnNumberLbl");
-        hrAddEmployeeISupervisorLbl.getAccessibleContext().setAccessibleName("hrAEmployeeISupervisorLbl");
+        hrAddEmployeeImmSupervisorLbl.getAccessibleContext().setAccessibleName("hrAEmployeeISupervisorLbl");
         hrAddEmployeeRiceSubsidyLbl.getAccessibleContext().setAccessibleName("hrAEmployeeRiceSubsidyLbl");
         hrAddEmployeeTINLbl.getAccessibleContext().setAccessibleName("hrAEmployeeTINLbl");
         hrAddEmployeePagIbigLbl.getAccessibleContext().setAccessibleName("hrAEmployeePagIbigLbl");
@@ -489,7 +489,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         hrAddEmployeeSSSFld.getAccessibleContext().setAccessibleName("hrAEmployeeSSSFld");
         hrAddEmployeePhilHealthFld.getAccessibleContext().setAccessibleName("hrAEmployeePhilHealthFld");
         hrAddEmployeeENumberFld.getAccessibleContext().setAccessibleName("hrAEmployeeENumberFld");
-        hrAddEmployeeISupervisorFld.getAccessibleContext().setAccessibleName("hrAEmployeeISupervisorFld");
+        hrAddEmployeeImmSupervisorFld.getAccessibleContext().setAccessibleName("hrAEmployeeISupervisorFld");
         hrAddEmployeeRiceSubsidyFld.getAccessibleContext().setAccessibleName("hrAEmployeeRiceSubsidyFld");
         hrAddEmployeeTINFld.getAccessibleContext().setAccessibleName("hrAEmployeeTINFld");
         hrAddEmployeePagIbigFld.getAccessibleContext().setAccessibleName("hrAEmployeePagIbigFld");
@@ -576,9 +576,9 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_hrAddEmployeeRiceSubsidyFldActionPerformed
 
-    private void hrAddEmployeeISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrAddEmployeeISupervisorFldActionPerformed
+    private void hrAddEmployeeImmSupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrAddEmployeeImmSupervisorFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrAddEmployeeISupervisorFldActionPerformed
+    }//GEN-LAST:event_hrAddEmployeeImmSupervisorFldActionPerformed
 
     private void hrAddEmployeeENumberFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrAddEmployeeENumberFldActionPerformed
         // TODO add your handling code here:
@@ -648,7 +648,7 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
             // Position
             String position = hrAddEmployeePositionFld.getText();
             // Immediate Supervisor
-            String immediateSupervisor = hrAddEmployeeISupervisorFld.getText();
+            String immediateSupervisor = hrAddEmployeeImmSupervisorFld.getText();
             // Basic Salary
             double basicSalary = GuiUtil.getDoubleFromField(hrAddEmployeeBasicSalaryFld);
             // Rice Subisdy
@@ -735,8 +735,8 @@ public class HRAddEmployeeUI extends javax.swing.JFrame {
     private javax.swing.JLabel hrAddEmployeeENumberLbl;
     private javax.swing.JTextField hrAddEmployeeFNameFld;
     private javax.swing.JLabel hrAddEmployeeFNameLbl;
-    private javax.swing.JTextField hrAddEmployeeISupervisorFld;
-    private javax.swing.JLabel hrAddEmployeeISupervisorLbl;
+    private javax.swing.JTextField hrAddEmployeeImmSupervisorFld;
+    private javax.swing.JLabel hrAddEmployeeImmSupervisorLbl;
     private javax.swing.JTextField hrAddEmployeeLNameFld;
     private javax.swing.JLabel hrAddEmployeeLNameLbl;
     private javax.swing.JButton hrAddEmployeeMainDashboardBtn;

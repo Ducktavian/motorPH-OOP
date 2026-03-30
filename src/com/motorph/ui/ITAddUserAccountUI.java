@@ -50,7 +50,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccENumberFld.setText(emp.getEmployeeNumber());
         itAddUAccENameFld.setText(emp.getFullName());
         itAddUAccPhnNumberFld.setText(emp.getPhoneNumber());
-        itAddUAccISupervisorFld.setText(emp.getImmediateSupervisor());
+        itAddUAccImmSupervisorFld.setText(emp.getImmediateSupervisor());
         itAddUAccPositionFld.setText(emp.getPosition());
         itAddUAccStatusFld.setText(emp.getStatus());
     }
@@ -78,8 +78,8 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccPhnNumberFld = new javax.swing.JTextField();
         itAddUAccPositionLbl = new javax.swing.JLabel();
         itAddUAccPhnNumberLbl = new javax.swing.JLabel();
-        itAddUAccISupervisorLbl = new javax.swing.JLabel();
-        itAddUAccISupervisorFld = new javax.swing.JTextField();
+        itAddUAccImmSupervisorLbl = new javax.swing.JLabel();
+        itAddUAccImmSupervisorFld = new javax.swing.JTextField();
         itAddUAccPositionFld = new javax.swing.JTextField();
         itAddUAccStatusLbl = new javax.swing.JLabel();
         itAddUAccStatusFld = new javax.swing.JTextField();
@@ -194,16 +194,16 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
         itAddUAccPhnNumberLbl.setText("Phone Number");
 
-        itAddUAccISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itAddUAccISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itAddUAccISupervisorLbl.setText("Immediate Supervisor");
+        itAddUAccImmSupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itAddUAccImmSupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccImmSupervisorLbl.setText("Immediate Supervisor");
 
-        itAddUAccISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
-        itAddUAccISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itAddUAccISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itAddUAccISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itAddUAccISupervisorFld.setEnabled(false);
-        itAddUAccISupervisorFld.addActionListener(this::itAddUAccISupervisorFldActionPerformed);
+        itAddUAccImmSupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccImmSupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccImmSupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccImmSupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccImmSupervisorFld.setEnabled(false);
+        itAddUAccImmSupervisorFld.addActionListener(this::itAddUAccImmSupervisorFldActionPerformed);
 
         itAddUAccPositionFld.setForeground(new java.awt.Color(30, 42, 56));
         itAddUAccPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -340,9 +340,9 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(itAddUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itAddUAccISupervisorLbl)
+                        .addComponent(itAddUAccImmSupervisorLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
-                        .addComponent(itAddUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itAddUAccImmSupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18))
             .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -361,8 +361,8 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                 .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itAddUAccENumberLbl)
                     .addComponent(itAddUAccENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itAddUAccISupervisorLbl)
-                    .addComponent(itAddUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itAddUAccImmSupervisorLbl)
+                    .addComponent(itAddUAccImmSupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itAddUAccENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -389,8 +389,8 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccPhnNumberFld.getAccessibleContext().setAccessibleName("itAddUAccPhnNumberFld");
         itAddUAccPositionLbl.getAccessibleContext().setAccessibleName("itAddUAccPositionLbl");
         itAddUAccPhnNumberLbl.getAccessibleContext().setAccessibleName("itAddUAccPhnNumberLbl");
-        itAddUAccISupervisorLbl.getAccessibleContext().setAccessibleName("itAddUAccISupervisorLbl");
-        itAddUAccISupervisorFld.getAccessibleContext().setAccessibleName("itAddUAccISupervisorFld");
+        itAddUAccImmSupervisorLbl.getAccessibleContext().setAccessibleName("itAddUAccISupervisorLbl");
+        itAddUAccImmSupervisorFld.getAccessibleContext().setAccessibleName("itAddUAccISupervisorFld");
         itAddUAccPositionFld.getAccessibleContext().setAccessibleName("itAddUAccPositionFld");
         itAddUAccStatusLbl.getAccessibleContext().setAccessibleName("itAddUAccStatusLbl");
         itAddUAccStatusFld.getAccessibleContext().setAccessibleName("itAddUAccStatusFld");
@@ -504,9 +504,9 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itAddUAccPhnNumberFldActionPerformed
 
-    private void itAddUAccISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccISupervisorFldActionPerformed
+    private void itAddUAccImmSupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccImmSupervisorFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itAddUAccISupervisorFldActionPerformed
+    }//GEN-LAST:event_itAddUAccImmSupervisorFldActionPerformed
 
     private void itAddUAccPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccPositionFldActionPerformed
         // TODO add your handling code here:
@@ -541,8 +541,8 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itAddUAccENameLbl;
     private javax.swing.JTextField itAddUAccENumberFld;
     private javax.swing.JLabel itAddUAccENumberLbl;
-    private javax.swing.JTextField itAddUAccISupervisorFld;
-    private javax.swing.JLabel itAddUAccISupervisorLbl;
+    private javax.swing.JTextField itAddUAccImmSupervisorFld;
+    private javax.swing.JLabel itAddUAccImmSupervisorLbl;
     private javax.swing.JButton itAddUAccMainDashboardBtn;
     private javax.swing.JLabel itAddUAccMotorPHIconImgLbl;
     private javax.swing.JLabel itAddUAccPasswordLbl;

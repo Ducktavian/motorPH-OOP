@@ -53,7 +53,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccENumberFld.setText(emp.getEmployeeNumber());
         itEditUAccENameFld.setText(emp.getFullName());
         itEditUAccPhnNumberFld.setText(emp.getPhoneNumber());
-        itEditUAccISupervisorFld.setText(emp.getImmediateSupervisor());
+        itEditUAccImmSupervisorFld.setText(emp.getImmediateSupervisor());
         itEditUAccPositionFld.setText(emp.getPosition());
         itEditUAccStatusFld.setText(emp.getStatus());
     }
@@ -81,8 +81,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccPhnNumberFld = new javax.swing.JTextField();
         itEditUAccPositionLbl = new javax.swing.JLabel();
         itEditUAccPhnNumberLbl = new javax.swing.JLabel();
-        itEditUAccISupervisorLbl = new javax.swing.JLabel();
-        itEditUAccISupervisorFld = new javax.swing.JTextField();
+        itEditUAccImmSupervisorLbl = new javax.swing.JLabel();
+        itEditUAccImmSupervisorFld = new javax.swing.JTextField();
         itEditUAccPositionFld = new javax.swing.JTextField();
         itEditUAccStatusLbl = new javax.swing.JLabel();
         itEditUAccStatusFld = new javax.swing.JTextField();
@@ -197,16 +197,16 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
         itEditUAccPhnNumberLbl.setText("Phone Number");
 
-        itEditUAccISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itEditUAccISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itEditUAccISupervisorLbl.setText("Immediate Supervisor");
+        itEditUAccImmSupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itEditUAccImmSupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itEditUAccImmSupervisorLbl.setText("Immediate Supervisor");
 
-        itEditUAccISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
-        itEditUAccISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itEditUAccISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itEditUAccISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itEditUAccISupervisorFld.setEnabled(false);
-        itEditUAccISupervisorFld.addActionListener(this::itEditUAccISupervisorFldActionPerformed);
+        itEditUAccImmSupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
+        itEditUAccImmSupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUAccImmSupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itEditUAccImmSupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itEditUAccImmSupervisorFld.setEnabled(false);
+        itEditUAccImmSupervisorFld.addActionListener(this::itEditUAccImmSupervisorFldActionPerformed);
 
         itEditUAccPositionFld.setForeground(new java.awt.Color(30, 42, 56));
         itEditUAccPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -354,9 +354,9 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(itEditUAccPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
-                                .addComponent(itEditUAccISupervisorLbl)
+                                .addComponent(itEditUAccImmSupervisorLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
-                                .addComponent(itEditUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(itEditUAccImmSupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18))))
             .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(201, 201, 201)
@@ -370,8 +370,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itEditUAccENumberLbl)
                     .addComponent(itEditUAccENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itEditUAccISupervisorLbl)
-                    .addComponent(itEditUAccISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itEditUAccImmSupervisorLbl)
+                    .addComponent(itEditUAccImmSupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(itEditUAccUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itEditUAccENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -398,8 +398,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccPhnNumberFld.getAccessibleContext().setAccessibleName("itEditUAccPhnNumberFld");
         itEditUAccPositionLbl.getAccessibleContext().setAccessibleName("itEditUAccPositionLbl");
         itEditUAccPhnNumberLbl.getAccessibleContext().setAccessibleName("itEditUAccPhnNumberLbl");
-        itEditUAccISupervisorLbl.getAccessibleContext().setAccessibleName("itEditUAccISupervisorLbl");
-        itEditUAccISupervisorFld.getAccessibleContext().setAccessibleName("itEditUAccISupervisorFld");
+        itEditUAccImmSupervisorLbl.getAccessibleContext().setAccessibleName("itEditUAccISupervisorLbl");
+        itEditUAccImmSupervisorFld.getAccessibleContext().setAccessibleName("itEditUAccISupervisorFld");
         itEditUAccPositionFld.getAccessibleContext().setAccessibleName("itEditUAccPositionFld");
         itEditUAccStatusLbl.getAccessibleContext().setAccessibleName("itEditUAccStatusLbl");
         itEditUAccStatusFld.getAccessibleContext().setAccessibleName("itEditUAccStatusFld");
@@ -506,9 +506,9 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itEditUAccPhnNumberFldActionPerformed
 
-    private void itEditUAccISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccISupervisorFldActionPerformed
+    private void itEditUAccImmSupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccImmSupervisorFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUAccISupervisorFldActionPerformed
+    }//GEN-LAST:event_itEditUAccImmSupervisorFldActionPerformed
 
     private void itEditUAccPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccPositionFldActionPerformed
         // TODO add your handling code here:
@@ -568,8 +568,8 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itEditUAccENumberLbl;
     private javax.swing.JLabel itEditUAccEditUAccLbl;
     private javax.swing.JPanel itEditUAccEditUAccPnl;
-    private javax.swing.JTextField itEditUAccISupervisorFld;
-    private javax.swing.JLabel itEditUAccISupervisorLbl;
+    private javax.swing.JTextField itEditUAccImmSupervisorFld;
+    private javax.swing.JLabel itEditUAccImmSupervisorLbl;
     private javax.swing.JButton itEditUAccMainDashboardBtn;
     private javax.swing.JLabel itEditUAccMotorPHIconImgLbl;
     private javax.swing.JLabel itEditUAccPasswordLbl;

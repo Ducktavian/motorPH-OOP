@@ -38,15 +38,15 @@
                   </Group>
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="itUManagementActLogsPnl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itUManagementMngUsersLblPnl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                           <Component id="itUManagementSearchPnl" min="-2" pref="220" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="293" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="itUManagementUEDetailsBrdrPnl" pref="702" max="32767" attributes="0"/>
+                      <Component id="itUManagementUEDetailsBrdrPnl" pref="712" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="14" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -59,7 +59,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="itUManagementActLogsPnl" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="itUManagementMngUsersLblPnl" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="itUManagementSearchPnl" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -161,7 +161,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="itUManagementActLogsPnl">
+    <Container class="javax.swing.JPanel" name="itUManagementMngUsersLblPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -185,7 +185,7 @@
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="itUManagementActLogsLbl">
+        <Component class="javax.swing.JLabel" name="itUManagementMngUsersLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -200,7 +200,7 @@
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="7" y="1" width="170" height="46"/>
+              <AbsoluteConstraints x="7" y="1" width="180" height="46"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -389,9 +389,9 @@
                           <Component id="itUManagementPositionFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="itUManagementISupervisorLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itUManagementImmSupervisorLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="itUManagementISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itUManagementImmSupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -418,8 +418,8 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="itUManagementENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="itUManagementENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itUManagementISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itUManagementISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itUManagementImmSupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itUManagementImmSupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -582,7 +582,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsPhnNumberLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itUManagementISupervisorLbl">
+        <Component class="javax.swing.JLabel" name="itUManagementImmSupervisorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -596,7 +596,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsISupervisorLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itUManagementISupervisorFld">
+        <Component class="javax.swing.JTextField" name="itUManagementImmSupervisorFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -620,7 +620,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsISupervisorFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itUManagementISupervisorFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itUManagementImmSupervisorFldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="itUManagementPositionFld">

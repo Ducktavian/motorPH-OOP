@@ -256,9 +256,9 @@
                           <Component id="itAddUAccPositionFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="itAddUAccISupervisorLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccImmSupervisorLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="51" max="32767" attributes="0"/>
-                          <Component id="itAddUAccISupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="itAddUAccImmSupervisorFld" min="-2" pref="158" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -285,8 +285,8 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="itAddUAccENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="itAddUAccENumberFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="itAddUAccISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="itAddUAccISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="itAddUAccImmSupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccImmSupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -449,7 +449,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccPhnNumberLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JLabel" name="itAddUAccISupervisorLbl">
+        <Component class="javax.swing.JLabel" name="itAddUAccImmSupervisorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -463,7 +463,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccISupervisorLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="itAddUAccISupervisorFld">
+        <Component class="javax.swing.JTextField" name="itAddUAccImmSupervisorFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -487,7 +487,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itAddUAccISupervisorFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccISupervisorFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccImmSupervisorFldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="itAddUAccPositionFld">

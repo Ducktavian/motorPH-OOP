@@ -85,7 +85,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementENumberFld.setText(emp.getEmployeeNumber());
         itUManagementENameFld.setText(emp.getFullName());
         itUManagementPhnNumberFld.setText(emp.getPhoneNumber());
-        itUManagementISupervisorFld.setText(emp.getImmediateSupervisor());
+        itUManagementImmSupervisorFld.setText(emp.getImmediateSupervisor());
         itUManagementPositionFld.setText(emp.getPosition());
         itUManagementStatusFld.setText(emp.getStatus());
     }
@@ -94,7 +94,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementENumberFld.setText("");
         itUManagementENameFld.setText("");
         itUManagementPhnNumberFld.setText("");
-        itUManagementISupervisorFld.setText("");
+        itUManagementImmSupervisorFld.setText("");
         itUManagementPositionFld.setText("");
         itUManagementStatusFld.setText("");
     }
@@ -112,8 +112,8 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementUManagementBtn = new javax.swing.JButton();
         itUManagementMainDashboardBtn = new javax.swing.JButton();
         itUManagementMotorPHIconImgLbl = new javax.swing.JLabel();
-        itUManagementActLogsPnl = new javax.swing.JPanel();
-        itUManagementActLogsLbl = new javax.swing.JLabel();
+        itUManagementMngUsersLblPnl = new javax.swing.JPanel();
+        itUManagementMngUsersLbl = new javax.swing.JLabel();
         itUManagementSearchPnl = new javax.swing.JPanel();
         itUManagementEntENumberPnl = new javax.swing.JTextField();
         itUManagementSearchIconImgLbl = new javax.swing.JLabel();
@@ -127,8 +127,8 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementPhnNumberFld = new javax.swing.JTextField();
         itUManagementPositionLbl = new javax.swing.JLabel();
         itUManagementPhnNumberLbl = new javax.swing.JLabel();
-        itUManagementISupervisorLbl = new javax.swing.JLabel();
-        itUManagementISupervisorFld = new javax.swing.JTextField();
+        itUManagementImmSupervisorLbl = new javax.swing.JLabel();
+        itUManagementImmSupervisorFld = new javax.swing.JTextField();
         itUManagementPositionFld = new javax.swing.JTextField();
         itUManagementStatusLbl = new javax.swing.JLabel();
         itUManagementStatusFld = new javax.swing.JTextField();
@@ -172,16 +172,16 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementSidebarPnl.add(itUManagementMotorPHIconImgLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
         itUManagementMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("itSysToolsMotorPHIconImgLbl");
 
-        itUManagementActLogsPnl.setBackground(new java.awt.Color(30, 58, 138));
-        itUManagementActLogsPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itUManagementActLogsPnl.setForeground(new java.awt.Color(30, 58, 138));
-        itUManagementActLogsPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        itUManagementMngUsersLblPnl.setBackground(new java.awt.Color(30, 58, 138));
+        itUManagementMngUsersLblPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itUManagementMngUsersLblPnl.setForeground(new java.awt.Color(30, 58, 138));
+        itUManagementMngUsersLblPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        itUManagementActLogsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
-        itUManagementActLogsLbl.setForeground(new java.awt.Color(255, 255, 255));
-        itUManagementActLogsLbl.setText("Manage Users");
-        itUManagementActLogsPnl.add(itUManagementActLogsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 170, 46));
-        itUManagementActLogsLbl.getAccessibleContext().setAccessibleName("itSysToolsActLogsLbl");
+        itUManagementMngUsersLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        itUManagementMngUsersLbl.setForeground(new java.awt.Color(255, 255, 255));
+        itUManagementMngUsersLbl.setText("Manage Users");
+        itUManagementMngUsersLblPnl.add(itUManagementMngUsersLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 180, 46));
+        itUManagementMngUsersLbl.getAccessibleContext().setAccessibleName("itSysToolsActLogsLbl");
 
         itUManagementSearchPnl.setBackground(new java.awt.Color(146, 192, 253));
         itUManagementSearchPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -259,16 +259,16 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementPhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
         itUManagementPhnNumberLbl.setText("Phone Number");
 
-        itUManagementISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        itUManagementISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itUManagementISupervisorLbl.setText("Immediate Supervisor");
+        itUManagementImmSupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        itUManagementImmSupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itUManagementImmSupervisorLbl.setText("Immediate Supervisor");
 
-        itUManagementISupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
-        itUManagementISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itUManagementISupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itUManagementISupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itUManagementISupervisorFld.setEnabled(false);
-        itUManagementISupervisorFld.addActionListener(this::itUManagementISupervisorFldActionPerformed);
+        itUManagementImmSupervisorFld.setForeground(new java.awt.Color(30, 42, 56));
+        itUManagementImmSupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itUManagementImmSupervisorFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itUManagementImmSupervisorFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itUManagementImmSupervisorFld.setEnabled(false);
+        itUManagementImmSupervisorFld.addActionListener(this::itUManagementImmSupervisorFldActionPerformed);
 
         itUManagementPositionFld.setForeground(new java.awt.Color(30, 42, 56));
         itUManagementPositionFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
@@ -414,9 +414,9 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(itUManagementPositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itUManagementUEDetailsBrdrPnlLayout.createSequentialGroup()
-                        .addComponent(itUManagementISupervisorLbl)
+                        .addComponent(itUManagementImmSupervisorLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itUManagementISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itUManagementImmSupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18))
             .addGroup(itUManagementUEDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGroup(itUManagementUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -435,8 +435,8 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                 .addGroup(itUManagementUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itUManagementENumberLbl)
                     .addComponent(itUManagementENumberFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itUManagementISupervisorLbl)
-                    .addComponent(itUManagementISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itUManagementImmSupervisorLbl)
+                    .addComponent(itUManagementImmSupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(itUManagementUEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itUManagementENameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -463,8 +463,8 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementPhnNumberFld.getAccessibleContext().setAccessibleName("itSysToolsPhnNumberFld");
         itUManagementPositionLbl.getAccessibleContext().setAccessibleName("itSysToolsPositionLbl");
         itUManagementPhnNumberLbl.getAccessibleContext().setAccessibleName("itSysToolsPhnNumberLbl");
-        itUManagementISupervisorLbl.getAccessibleContext().setAccessibleName("itSysToolsISupervisorLbl");
-        itUManagementISupervisorFld.getAccessibleContext().setAccessibleName("itSysToolsISupervisorFld");
+        itUManagementImmSupervisorLbl.getAccessibleContext().setAccessibleName("itSysToolsISupervisorLbl");
+        itUManagementImmSupervisorFld.getAccessibleContext().setAccessibleName("itSysToolsISupervisorFld");
         itUManagementPositionFld.getAccessibleContext().setAccessibleName("itSysToolsPositionFld");
         itUManagementStatusLbl.getAccessibleContext().setAccessibleName("itSysToolsStatusLbl");
         itUManagementStatusFld.getAccessibleContext().setAccessibleName("itSysToolsStatusFld");
@@ -503,12 +503,12 @@ public class ITUserManagementUI extends javax.swing.JFrame {
                         .addComponent(itUManagementDeactivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(itUManagementActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itUManagementMngUsersLblPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(12, 12, 12)
                             .addComponent(itUManagementSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(293, 293, 293))
-                        .addComponent(itUManagementUEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE)))
-                .addContainerGap(14, Short.MAX_VALUE))
+                        .addComponent(itUManagementUEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 712, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -518,7 +518,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itUManagementActLogsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itUManagementMngUsersLblPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itUManagementSearchPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itUManagementUEDetailsBrdrPnl, javax.swing.GroupLayout.DEFAULT_SIZE, 512, Short.MAX_VALUE)
@@ -532,7 +532,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         );
 
         itUManagementSidebarPnl.getAccessibleContext().setAccessibleName("itSysToolsSidebarPnl");
-        itUManagementActLogsPnl.getAccessibleContext().setAccessibleName("itSysToolsActLogsPnl");
+        itUManagementMngUsersLblPnl.getAccessibleContext().setAccessibleName("itSysToolsActLogsPnl");
         itUManagementSearchPnl.getAccessibleContext().setAccessibleName("itSysToolsSearchPnl");
         itUManagementEditBtn.getAccessibleContext().setAccessibleName("itSysToolsEditBtn");
         itUManagementAddBtn.getAccessibleContext().setAccessibleName("itSysToolsAddBtn");
@@ -601,9 +601,9 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itUManagementPhnNumberFldActionPerformed
 
-    private void itUManagementISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itUManagementISupervisorFldActionPerformed
+    private void itUManagementImmSupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itUManagementImmSupervisorFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itUManagementISupervisorFldActionPerformed
+    }//GEN-LAST:event_itUManagementImmSupervisorFldActionPerformed
 
     private void itUManagementPositionFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itUManagementPositionFldActionPerformed
         // TODO add your handling code here:
@@ -728,8 +728,6 @@ public class ITUserManagementUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel itUJserManagementUAccDetailsPnl;
-    private javax.swing.JLabel itUManagementActLogsLbl;
-    private javax.swing.JPanel itUManagementActLogsPnl;
     private javax.swing.JButton itUManagementActivateBtn;
     private javax.swing.JTextField itUManagementActiveStatusFld;
     private javax.swing.JLabel itUManagementActiveStatusLbl;
@@ -741,9 +739,11 @@ public class ITUserManagementUI extends javax.swing.JFrame {
     private javax.swing.JLabel itUManagementENumberLbl;
     private javax.swing.JButton itUManagementEditBtn;
     private javax.swing.JTextField itUManagementEntENumberPnl;
-    private javax.swing.JTextField itUManagementISupervisorFld;
-    private javax.swing.JLabel itUManagementISupervisorLbl;
+    private javax.swing.JTextField itUManagementImmSupervisorFld;
+    private javax.swing.JLabel itUManagementImmSupervisorLbl;
     private javax.swing.JButton itUManagementMainDashboardBtn;
+    private javax.swing.JLabel itUManagementMngUsersLbl;
+    private javax.swing.JPanel itUManagementMngUsersLblPnl;
     private javax.swing.JLabel itUManagementMotorPHIconImgLbl;
     private javax.swing.JTextField itUManagementPhnNumberFld;
     private javax.swing.JLabel itUManagementPhnNumberLbl;

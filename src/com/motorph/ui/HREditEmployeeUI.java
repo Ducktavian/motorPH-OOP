@@ -63,7 +63,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
         hrEditEmployeePagIbigFld.setText(emp.getPagIbigNumber());
         //statusField.setText(emp.getStatus());
         hrEditEmployeePositionFld.setText(emp.getPosition());
-        hrEditEmployeeISupervisorFld.setText(emp.getImmediateSupervisor());
+        hrEditEmployeeImmSupervisorFld.setText(emp.getImmediateSupervisor());
         hrEditEmployeeBasicSalaryFld.setText(String.valueOf(emp.getBasicSalary()));
         hrEditEmployeeRiceSubsidyFld.setText(String.valueOf(emp.getRiceSubsidy()));
         hrEditEmployeePhnAllowanceFld.setText(String.valueOf(emp.getPhoneAllowance()));
@@ -96,7 +96,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
         hrEditEmployeeCltAllowanceLbl = new javax.swing.JLabel();
         hrEditEmployeeFNameLbl = new javax.swing.JLabel();
         hrEditEmployeePhnNumberLbl = new javax.swing.JLabel();
-        hrEditEmployeeISupervisorLbl = new javax.swing.JLabel();
+        hrEditEmployeeImmSupervisorLbl = new javax.swing.JLabel();
         hrEditEmployeeRiceSubsidyLbl = new javax.swing.JLabel();
         hrEditEmployeeTINLbl = new javax.swing.JLabel();
         hrEditEmployeePagIbigLbl = new javax.swing.JLabel();
@@ -109,7 +109,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
         hrEditEmployeeSSSFld = new javax.swing.JTextField();
         hrEditEmployeePhilHealthFld = new javax.swing.JTextField();
         hrEditEmployeeENumberFld = new javax.swing.JTextField();
-        hrEditEmployeeISupervisorFld = new javax.swing.JTextField();
+        hrEditEmployeeImmSupervisorFld = new javax.swing.JTextField();
         hrEditEmployeeRiceSubsidyFld = new javax.swing.JTextField();
         hrEditEmployeeTINFld = new javax.swing.JTextField();
         hrEditEmployeePagIbigFld = new javax.swing.JTextField();
@@ -209,9 +209,9 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
         hrEditEmployeePhnNumberLbl.setForeground(new java.awt.Color(31, 41, 55));
         hrEditEmployeePhnNumberLbl.setText("Phone Number");
 
-        hrEditEmployeeISupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        hrEditEmployeeISupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
-        hrEditEmployeeISupervisorLbl.setText("Immediate Supervisor");
+        hrEditEmployeeImmSupervisorLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        hrEditEmployeeImmSupervisorLbl.setForeground(new java.awt.Color(31, 41, 55));
+        hrEditEmployeeImmSupervisorLbl.setText("Immediate Supervisor");
 
         hrEditEmployeeRiceSubsidyLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         hrEditEmployeeRiceSubsidyLbl.setForeground(new java.awt.Color(31, 41, 55));
@@ -269,10 +269,10 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
         hrEditEmployeeENumberFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
         hrEditEmployeeENumberFld.addActionListener(this::hrEditEmployeeENumberFldActionPerformed);
 
-        hrEditEmployeeISupervisorFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
-        hrEditEmployeeISupervisorFld.setForeground(new java.awt.Color(31, 41, 55));
-        hrEditEmployeeISupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrEditEmployeeISupervisorFld.addActionListener(this::hrEditEmployeeISupervisorFldActionPerformed);
+        hrEditEmployeeImmSupervisorFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+        hrEditEmployeeImmSupervisorFld.setForeground(new java.awt.Color(31, 41, 55));
+        hrEditEmployeeImmSupervisorFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        hrEditEmployeeImmSupervisorFld.addActionListener(this::hrEditEmployeeImmSupervisorFldActionPerformed);
 
         hrEditEmployeeRiceSubsidyFld.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
         hrEditEmployeeRiceSubsidyFld.setForeground(new java.awt.Color(31, 41, 55));
@@ -353,7 +353,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
                                                         .addGap(18, 18, 18)
                                                         .addGroup(hrEditEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                             .addComponent(hrEditEmployeePhnNumberLbl)
-                                                            .addComponent(hrEditEmployeeISupervisorLbl)))))
+                                                            .addComponent(hrEditEmployeeImmSupervisorLbl)))))
                                             .addGroup(hrEditEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
                                                 .addComponent(hrEditEmployeePhnAllowanceFld, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
@@ -368,7 +368,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
                                                 .addComponent(hrEditEmployeePagIbigFld, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addComponent(hrEditEmployeeCltAllowanceFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(hrEditEmployeeRiceSubsidyFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(hrEditEmployeeISupervisorFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(hrEditEmployeeImmSupervisorFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(hrEditEmployeePhnNumberFld, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addComponent(hrEditEmployeeAddressFld)
                                     .addGroup(hrEditEmployeeEDetailsBrdrPnlLayout.createSequentialGroup()
@@ -436,8 +436,8 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                         .addGroup(hrEditEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(hrEditEmployeePositionFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hrEditEmployeeISupervisorLbl)
-                            .addComponent(hrEditEmployeeISupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(hrEditEmployeeImmSupervisorLbl)
+                            .addComponent(hrEditEmployeeImmSupervisorFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(hrEditEmployeeEDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(hrEditEmployeeBasicSalaryFld, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -481,7 +481,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
         hrEditEmployeeCltAllowanceLbl.getAccessibleContext().setAccessibleName("hrEditEmployeeCltAllowanceLbl");
         hrEditEmployeeFNameLbl.getAccessibleContext().setAccessibleName("hrEditEmployeeFNameLbl");
         hrEditEmployeePhnNumberLbl.getAccessibleContext().setAccessibleName("hrEditEmployeePhnNumberLbl");
-        hrEditEmployeeISupervisorLbl.getAccessibleContext().setAccessibleName("hrEditEmployeeISupervisorLbl");
+        hrEditEmployeeImmSupervisorLbl.getAccessibleContext().setAccessibleName("hrEditEmployeeISupervisorLbl");
         hrEditEmployeeRiceSubsidyLbl.getAccessibleContext().setAccessibleName("hrEditEmployeeRiceSubsidyLbl");
         hrEditEmployeeTINLbl.getAccessibleContext().setAccessibleName("hrEditEmployeeTINLbl");
         hrEditEmployeePagIbigLbl.getAccessibleContext().setAccessibleName("hrEditEmployeePagIbigLbl");
@@ -494,7 +494,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
         hrEditEmployeeSSSFld.getAccessibleContext().setAccessibleName("hrEditEmployeeSSSFld");
         hrEditEmployeePhilHealthFld.getAccessibleContext().setAccessibleName("hrEditEmployeePhilHealthFld");
         hrEditEmployeeENumberFld.getAccessibleContext().setAccessibleName("hrEditEmployeeENumberFld");
-        hrEditEmployeeISupervisorFld.getAccessibleContext().setAccessibleName("hrEditEmployeeISupervisorFld");
+        hrEditEmployeeImmSupervisorFld.getAccessibleContext().setAccessibleName("hrEditEmployeeISupervisorFld");
         hrEditEmployeeRiceSubsidyFld.getAccessibleContext().setAccessibleName("hrEditEmployeeRiceSubsidyFld");
         hrEditEmployeeTINFld.getAccessibleContext().setAccessibleName("hrEditEmployeeTINFld");
         hrEditEmployeePagIbigFld.getAccessibleContext().setAccessibleName("hrEditEmployeePagIbigFld");
@@ -602,7 +602,7 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
             // Position
             String position = hrEditEmployeePositionFld.getText();
             // Immediate Supervisor
-            String immediateSupervisor = hrEditEmployeeISupervisorFld.getText();
+            String immediateSupervisor = hrEditEmployeeImmSupervisorFld.getText();
             // Basic Salary
             double basicSalary = GuiUtil.getDoubleFromField(hrEditEmployeeBasicSalaryFld);
             // Rice Subisdy
@@ -674,9 +674,9 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_hrEditEmployeeENumberFldActionPerformed
 
-    private void hrEditEmployeeISupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeISupervisorFldActionPerformed
+    private void hrEditEmployeeImmSupervisorFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeImmSupervisorFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hrEditEmployeeISupervisorFldActionPerformed
+    }//GEN-LAST:event_hrEditEmployeeImmSupervisorFldActionPerformed
 
     private void hrEditEmployeeRiceSubsidyFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeRiceSubsidyFldActionPerformed
         // TODO add your handling code here:
@@ -729,8 +729,8 @@ public class HREditEmployeeUI extends javax.swing.JFrame {
     private javax.swing.JPanel hrEditEmployeeEditEDetailsPnl;
     private javax.swing.JTextField hrEditEmployeeFNameFld;
     private javax.swing.JLabel hrEditEmployeeFNameLbl;
-    private javax.swing.JTextField hrEditEmployeeISupervisorFld;
-    private javax.swing.JLabel hrEditEmployeeISupervisorLbl;
+    private javax.swing.JTextField hrEditEmployeeImmSupervisorFld;
+    private javax.swing.JLabel hrEditEmployeeImmSupervisorLbl;
     private javax.swing.JTextField hrEditEmployeeLNameFld;
     private javax.swing.JLabel hrEditEmployeeLNameLbl;
     private javax.swing.JButton hrEditEmployeeMainDashboardBtn;

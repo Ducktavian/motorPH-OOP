@@ -472,7 +472,7 @@
                               <Component id="hrEDetailsTINLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="hrEDetailsPagIbigLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="hrEDetailsIStatusLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="hrEDetailsISupervisorLbl" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrEDetailsImmSupervisorLbl" min="-2" max="-2" attributes="0"/>
                               <Component id="hrEDetailsIPhnNumberLbl" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="56" max="32767" attributes="0"/>
@@ -482,7 +482,7 @@
                                   <Component id="hrEDetailsTINFld" alignment="1" max="32767" attributes="0"/>
                                   <Component id="hrEDetailsCltAllowanceFld" alignment="1" max="32767" attributes="0"/>
                                   <Component id="hrEDetailsRiceSubsidyFld" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="hrEDetailsISupervisorFld" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="hrEDetailsImmSupervisorFld" alignment="1" max="32767" attributes="0"/>
                                   <Component id="hrEDetailsIPhnNumberFld" alignment="1" max="32767" attributes="0"/>
                               </Group>
                               <Component id="hrEDetailsIStatusFld" alignment="1" min="-2" pref="158" max="-2" attributes="0"/>
@@ -536,8 +536,8 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="hrEDetailsPositionFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                               <Component id="hrEDetailsPositionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="hrEDetailsISupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                              <Component id="hrEDetailsISupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hrEDetailsImmSupervisorFld" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="hrEDetailsImmSupervisorLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -941,7 +941,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEDetailsIFNameFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="hrEDetailsISupervisorLbl">
+        <Component class="javax.swing.JLabel" name="hrEDetailsImmSupervisorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="15" style="0"/>
@@ -982,7 +982,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEDetailsIPhnNumberFldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="hrEDetailsISupervisorFld">
+        <Component class="javax.swing.JTextField" name="hrEDetailsImmSupervisorFld">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -1006,7 +1006,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="hrEDetailsISupervisorFld"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEDetailsISupervisorFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEDetailsImmSupervisorFldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="hrEDetailsRiceSubsidyFld">
