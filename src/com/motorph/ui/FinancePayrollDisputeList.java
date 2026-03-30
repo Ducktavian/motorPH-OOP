@@ -30,13 +30,8 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jPanel6 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel4 = new javax.swing.JLabel();
         financePrlDListSidebarPnl = new javax.swing.JPanel();
-        financePrlDListGPrlBtn = new javax.swing.JButton();
+        financePrlDListGenPrlBtn = new javax.swing.JButton();
         financePrlDListMainDashboardBtn = new javax.swing.JButton();
         financePrlDListMotorPHIconImgLbl = new javax.swing.JLabel();
         financePrlDListPylBtn = new javax.swing.JButton();
@@ -46,172 +41,17 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
         financePrlDListPrlDListBrdrScrlPnl = new javax.swing.JScrollPane();
         financePrlDListPrlDListTbl = new javax.swing.JTable();
 
-        jScrollPane3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 2, true));
-
-        jPanel6.setBackground(new java.awt.Color(178, 178, 178));
-        jPanel6.setForeground(new java.awt.Color(30, 42, 56));
-
-        jTable1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        jTable1.setForeground(new java.awt.Color(30, 42, 56));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
-            },
-            new String [] {
-                "Employee #", "Employee Name", "From", "To", "Reason", "Remarks"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-        });
-        jTable1.setGridColor(new java.awt.Color(178, 178, 178));
-        jTable1.setSelectionForeground(new java.awt.Color(30, 42, 56));
-        jScrollPane1.setViewportView(jTable1);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setText("Records");
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(328, 328, 328)
-                        .addComponent(jLabel4))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(11, Short.MAX_VALUE))
-        );
-
-        jScrollPane3.setViewportView(jPanel6);
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         financePrlDListSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
         financePrlDListSidebarPnl.setPreferredSize(new java.awt.Dimension(262, 700));
 
-        financePrlDListGPrlBtn.setBackground(new java.awt.Color(30, 42, 56));
-        financePrlDListGPrlBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        financePrlDListGPrlBtn.setForeground(new java.awt.Color(255, 255, 255));
-        financePrlDListGPrlBtn.setText("Generate Payroll");
-        financePrlDListGPrlBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        financePrlDListGPrlBtn.addActionListener(this::financePrlDListGPrlBtnActionPerformed);
+        financePrlDListGenPrlBtn.setBackground(new java.awt.Color(30, 42, 56));
+        financePrlDListGenPrlBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        financePrlDListGenPrlBtn.setForeground(new java.awt.Color(255, 255, 255));
+        financePrlDListGenPrlBtn.setText("Generate Payroll");
+        financePrlDListGenPrlBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        financePrlDListGenPrlBtn.addActionListener(this::financePrlDListGenPrlBtnActionPerformed);
 
         financePrlDListMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         financePrlDListMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -249,7 +89,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(financePrlDListSidebarPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(financePrlDListPylDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(financePrlDListGPrlBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(financePrlDListGenPrlBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(financePrlDListSidebarPnlLayout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(financePrlDListMotorPHIconImgLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -266,7 +106,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
                         .addGap(189, 189, 189)
                         .addComponent(financePrlDListPylBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(12, 12, 12)
-                .addComponent(financePrlDListGPrlBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(financePrlDListGenPrlBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(financePrlDListPylDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(282, 282, 282)
@@ -274,7 +114,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
-        financePrlDListGPrlBtn.getAccessibleContext().setAccessibleName("financePrlDListGPrlBtn");
+        financePrlDListGenPrlBtn.getAccessibleContext().setAccessibleName("financePrlDListGPrlBtn");
         financePrlDListMainDashboardBtn.getAccessibleContext().setAccessibleName("financePrlDListMainDashboardBtn");
         financePrlDListMotorPHIconImgLbl.getAccessibleContext().setAccessibleName("financePrlDListMotorPHIconImgLbl");
         financePrlDListPylBtn.getAccessibleContext().setAccessibleName("financePrlDListPylBtn");
@@ -453,10 +293,10 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void financePrlDListGPrlBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListGPrlBtnActionPerformed
+    private void financePrlDListGenPrlBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListGenPrlBtnActionPerformed
         // TODO add your handling code here:
         GuiUtil.openFrame(this, new FinanceGeneratePayrollUI());
-    }//GEN-LAST:event_financePrlDListGPrlBtnActionPerformed
+    }//GEN-LAST:event_financePrlDListGenPrlBtnActionPerformed
 
     private void financePrlDListMainDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_financePrlDListMainDashboardBtnActionPerformed
         // TODO add your handling code here:
@@ -503,7 +343,7 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton financePrlDListGPrlBtn;
+    private javax.swing.JButton financePrlDListGenPrlBtn;
     private javax.swing.JButton financePrlDListMainDashboardBtn;
     private javax.swing.JLabel financePrlDListMotorPHIconImgLbl;
     private javax.swing.JScrollPane financePrlDListPrlDListBrdrScrlPnl;
@@ -513,10 +353,5 @@ public class FinancePayrollDisputeList extends javax.swing.JFrame {
     private javax.swing.JButton financePrlDListPylBtn;
     private javax.swing.JButton financePrlDListPylDisputeBtn;
     private javax.swing.JPanel financePrlDListSidebarPnl;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

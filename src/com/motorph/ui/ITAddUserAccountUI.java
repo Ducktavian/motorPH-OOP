@@ -41,7 +41,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         for (Role type : types) {
             model.addElement(type);
         }
-        jComboBox1.setModel(model);
+        itAddUAccRoleCbx.setModel(model);
     }
     
     
@@ -85,14 +85,14 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccStatusFld = new javax.swing.JTextField();
         itAddUAccUAccDetailsPnl = new javax.swing.JPanel();
         itAddUAccUAccDetailsLbl = new javax.swing.JLabel();
-        itEditUAccUAccDetailsBrdrPnl = new javax.swing.JPanel();
-        itEditUAccUsernameLbl = new javax.swing.JLabel();
-        itEditUAccUsernameFld = new javax.swing.JTextField();
-        itEditUAccPasswordLbl = new javax.swing.JLabel();
-        itSysToolsResetPassBtn = new javax.swing.JButton();
-        itSysToolsPasswordLbl1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        hrEditEmployeeBackBtn = new javax.swing.JButton();
+        itAddUAccUAccDetailsBrdrPnl = new javax.swing.JPanel();
+        itAddUAccUsernameLbl = new javax.swing.JLabel();
+        itAddUAccUsernameFld = new javax.swing.JTextField();
+        itAddUAccPasswordLbl = new javax.swing.JLabel();
+        itAddUAccSetDefaultPasswordLbl = new javax.swing.JButton();
+        itAddUAccRoleLbl = new javax.swing.JLabel();
+        itAddUAccRoleCbx = new javax.swing.JComboBox<>();
+        itAddUAccBackBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -251,66 +251,66 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
 
         itAddUAccUAccDetailsLbl.getAccessibleContext().setAccessibleName("itAddUAccUAccDetailsLbl");
 
-        itEditUAccUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccUAccDetailsBrdrPnl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        itEditUAccUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itEditUAccUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itEditUAccUsernameLbl.setText("Username");
+        itAddUAccUsernameLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itAddUAccUsernameLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccUsernameLbl.setText("Username");
 
-        itEditUAccUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
-        itEditUAccUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itEditUAccUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
-        itEditUAccUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
-        itEditUAccUsernameFld.addActionListener(this::itEditUAccUsernameFldActionPerformed);
+        itAddUAccUsernameFld.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccUsernameFld.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccUsernameFld.setCaretColor(new java.awt.Color(31, 41, 55));
+        itAddUAccUsernameFld.setDisabledTextColor(new java.awt.Color(31, 41, 55));
+        itAddUAccUsernameFld.addActionListener(this::itAddUAccUsernameFldActionPerformed);
 
-        itEditUAccPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itEditUAccPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
-        itEditUAccPasswordLbl.setText("Password");
+        itAddUAccPasswordLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itAddUAccPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccPasswordLbl.setText("Password");
 
-        itSysToolsResetPassBtn.setBackground(new java.awt.Color(239, 68, 68));
-        itSysToolsResetPassBtn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        itSysToolsResetPassBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itSysToolsResetPassBtn.setText("Set Default Password");
-        itSysToolsResetPassBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itSysToolsResetPassBtn.addActionListener(this::itSysToolsResetPassBtnActionPerformed);
+        itAddUAccSetDefaultPasswordLbl.setBackground(new java.awt.Color(239, 68, 68));
+        itAddUAccSetDefaultPasswordLbl.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        itAddUAccSetDefaultPasswordLbl.setForeground(new java.awt.Color(255, 255, 255));
+        itAddUAccSetDefaultPasswordLbl.setText("Set Default Password");
+        itAddUAccSetDefaultPasswordLbl.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccSetDefaultPasswordLbl.addActionListener(this::itAddUAccSetDefaultPasswordLblActionPerformed);
 
-        itSysToolsPasswordLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itSysToolsPasswordLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        itSysToolsPasswordLbl1.setText("Role");
+        itAddUAccRoleLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itAddUAccRoleLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itAddUAccRoleLbl.setText("Role");
 
-        jComboBox1.setForeground(new java.awt.Color(30, 42, 56));
-        jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccRoleCbx.setForeground(new java.awt.Color(30, 42, 56));
+        itAddUAccRoleCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
-        javax.swing.GroupLayout itEditUAccUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itEditUAccUAccDetailsBrdrPnl);
-        itEditUAccUAccDetailsBrdrPnl.setLayout(itEditUAccUAccDetailsBrdrPnlLayout);
-        itEditUAccUAccDetailsBrdrPnlLayout.setHorizontalGroup(
-            itEditUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itEditUAccUAccDetailsBrdrPnlLayout.createSequentialGroup()
+        javax.swing.GroupLayout itAddUAccUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itAddUAccUAccDetailsBrdrPnl);
+        itAddUAccUAccDetailsBrdrPnl.setLayout(itAddUAccUAccDetailsBrdrPnlLayout);
+        itAddUAccUAccDetailsBrdrPnlLayout.setHorizontalGroup(
+            itAddUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAddUAccUAccDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(itEditUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itEditUAccUsernameLbl)
-                    .addComponent(itSysToolsPasswordLbl1)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itSysToolsResetPassBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itEditUAccPasswordLbl)
-                    .addComponent(itEditUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(itAddUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(itAddUAccUsernameLbl)
+                    .addComponent(itAddUAccRoleLbl)
+                    .addComponent(itAddUAccRoleCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccSetDefaultPasswordLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itAddUAccPasswordLbl)
+                    .addComponent(itAddUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
-        itEditUAccUAccDetailsBrdrPnlLayout.setVerticalGroup(
-            itEditUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itEditUAccUAccDetailsBrdrPnlLayout.createSequentialGroup()
+        itAddUAccUAccDetailsBrdrPnlLayout.setVerticalGroup(
+            itAddUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(itAddUAccUAccDetailsBrdrPnlLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(itEditUAccUsernameLbl)
+                .addComponent(itAddUAccUsernameLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(itEditUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(itEditUAccPasswordLbl)
+                .addComponent(itAddUAccPasswordLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itSysToolsResetPassBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccSetDefaultPasswordLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itSysToolsPasswordLbl1)
+                .addComponent(itAddUAccRoleLbl)
                 .addGap(12, 12, 12)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccRoleCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
@@ -351,7 +351,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                         .addComponent(itAddUAccUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(itAddUAccUEDetailsBrdrPnlLayout.createSequentialGroup()
                         .addGap(198, 198, 198)
-                        .addComponent(itEditUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(itAddUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         itAddUAccUEDetailsBrdrPnlLayout.setVerticalGroup(
@@ -378,7 +378,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addComponent(itAddUAccUAccDetailsPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itEditUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itAddUAccUAccDetailsBrdrPnl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
@@ -396,12 +396,12 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         itAddUAccStatusFld.getAccessibleContext().setAccessibleName("itAddUAccStatusFld");
         itAddUAccUAccDetailsPnl.getAccessibleContext().setAccessibleName("itAddUAccUAccDetailsPnl");
 
-        hrEditEmployeeBackBtn.setBackground(new java.awt.Color(30, 58, 138));
-        hrEditEmployeeBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrEditEmployeeBackBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrEditEmployeeBackBtn.setText("Back");
-        hrEditEmployeeBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrEditEmployeeBackBtn.addActionListener(this::hrEditEmployeeBackBtnActionPerformed);
+        itAddUAccBackBtn.setBackground(new java.awt.Color(30, 58, 138));
+        itAddUAccBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itAddUAccBackBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itAddUAccBackBtn.setText("Back");
+        itAddUAccBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itAddUAccBackBtn.addActionListener(this::itAddUAccBackBtnActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -412,7 +412,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(hrEditEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itAddUAccBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(itAddUAccActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -430,7 +430,7 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itAddUAccActivateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrEditEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itAddUAccBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(49, 49, 49))
             .addComponent(itAddUAccSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -447,13 +447,13 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             
-            String username = itEditUAccUsernameFld.getText();
+            String username = itAddUAccUsernameFld.getText();
             if (username == null || username.isBlank() || username.isEmpty()) {
                 throw new IllegalArgumentException("Username is required");
             }
             
             Role selectedRole = null;
-            Object selectedItem = jComboBox1.getSelectedItem();
+            Object selectedItem = itAddUAccRoleCbx.getSelectedItem();
 
             
             if (selectedItem instanceof Role) {
@@ -517,27 +517,27 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itAddUAccStatusFldActionPerformed
 
-    private void itEditUAccUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUsernameFldActionPerformed
+    private void itAddUAccUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccUsernameFldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itEditUAccUsernameFldActionPerformed
+    }//GEN-LAST:event_itAddUAccUsernameFldActionPerformed
 
-    private void itSysToolsResetPassBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsResetPassBtnActionPerformed
+    private void itAddUAccSetDefaultPasswordLblActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccSetDefaultPasswordLblActionPerformed
         // TODO add your handling code here:
         
 
-    }//GEN-LAST:event_itSysToolsResetPassBtnActionPerformed
+    }//GEN-LAST:event_itAddUAccSetDefaultPasswordLblActionPerformed
 
-    private void hrEditEmployeeBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeBackBtnActionPerformed
+    private void itAddUAccBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itAddUAccBackBtnActionPerformed
         // TODO add your handling code here:
         GuiUtil.openFrame(this, new ITUserManagementUI());
-    }//GEN-LAST:event_hrEditEmployeeBackBtnActionPerformed
+    }//GEN-LAST:event_itAddUAccBackBtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton hrEditEmployeeBackBtn;
     private javax.swing.JButton itAddUAccActivateBtn;
     private javax.swing.JLabel itAddUAccAddUAccLbl;
     private javax.swing.JPanel itAddUAccAddUAccPnl;
+    private javax.swing.JButton itAddUAccBackBtn;
     private javax.swing.JTextField itAddUAccENameFld;
     private javax.swing.JLabel itAddUAccENameLbl;
     private javax.swing.JTextField itAddUAccENumberFld;
@@ -546,22 +546,22 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JLabel itAddUAccISupervisorLbl;
     private javax.swing.JButton itAddUAccMainDashboardBtn;
     private javax.swing.JLabel itAddUAccMotorPHIconImgLbl;
+    private javax.swing.JLabel itAddUAccPasswordLbl;
     private javax.swing.JTextField itAddUAccPhnNumberFld;
     private javax.swing.JLabel itAddUAccPhnNumberLbl;
     private javax.swing.JTextField itAddUAccPositionFld;
     private javax.swing.JLabel itAddUAccPositionLbl;
+    private javax.swing.JComboBox<Object> itAddUAccRoleCbx;
+    private javax.swing.JLabel itAddUAccRoleLbl;
+    private javax.swing.JButton itAddUAccSetDefaultPasswordLbl;
     private javax.swing.JPanel itAddUAccSidebarPnl;
     private javax.swing.JTextField itAddUAccStatusFld;
     private javax.swing.JLabel itAddUAccStatusLbl;
+    private javax.swing.JPanel itAddUAccUAccDetailsBrdrPnl;
     private javax.swing.JLabel itAddUAccUAccDetailsLbl;
     private javax.swing.JPanel itAddUAccUAccDetailsPnl;
     private javax.swing.JPanel itAddUAccUEDetailsBrdrPnl;
-    private javax.swing.JLabel itEditUAccPasswordLbl;
-    private javax.swing.JPanel itEditUAccUAccDetailsBrdrPnl;
-    private javax.swing.JTextField itEditUAccUsernameFld;
-    private javax.swing.JLabel itEditUAccUsernameLbl;
-    private javax.swing.JLabel itSysToolsPasswordLbl1;
-    private javax.swing.JButton itSysToolsResetPassBtn;
-    private javax.swing.JComboBox<Object> jComboBox1;
+    private javax.swing.JTextField itAddUAccUsernameFld;
+    private javax.swing.JLabel itAddUAccUsernameLbl;
     // End of variables declaration//GEN-END:variables
 }

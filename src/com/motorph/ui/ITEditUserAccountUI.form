@@ -28,7 +28,7 @@
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="hrEditEmployeeBackBtn" min="-2" pref="74" max="-2" attributes="0"/>
+                      <Component id="itEditUAccUAccDetailsBackBtn" min="-2" pref="74" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="itEditUAccUpdateBtn" min="-2" pref="110" max="-2" attributes="0"/>
                   </Group>
@@ -51,7 +51,7 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="itEditUAccUpdateBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="hrEditEmployeeBackBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="itEditUAccUAccDetailsBackBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
           </Group>
@@ -642,9 +642,9 @@
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="itEditUAccUsernameLbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="itSysToolsPasswordLbl1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox1" min="-2" pref="253" max="-2" attributes="0"/>
-                          <Component id="itSysToolsResetPassBtn" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itEditUAccUAccDetailsRoleLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itEditUAccUAccDetailsRoleCbx" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itEditUAccUAccDetailsResetPassBtn" min="-2" pref="253" max="-2" attributes="0"/>
                           <Component id="itEditUAccPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="itEditUAccUsernameFld" min="-2" pref="253" max="-2" attributes="0"/>
                       </Group>
@@ -662,11 +662,11 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="itEditUAccPasswordLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="itSysToolsResetPassBtn" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itEditUAccUAccDetailsResetPassBtn" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="itSysToolsPasswordLbl1" min="-2" max="-2" attributes="0"/>
+                      <Component id="itEditUAccUAccDetailsRoleLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox1" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itEditUAccUAccDetailsRoleCbx" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace pref="34" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -727,7 +727,7 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itEditUAccPasswordLbl"/>
               </AccessibilityProperties>
             </Component>
-            <Component class="javax.swing.JButton" name="itSysToolsResetPassBtn">
+            <Component class="javax.swing.JButton" name="itEditUAccUAccDetailsResetPassBtn">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="44" green="44" red="ef" type="rgb"/>
@@ -751,10 +751,10 @@
                 <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="itSysToolsResetPassBtn"/>
               </AccessibilityProperties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsResetPassBtnActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccUAccDetailsResetPassBtnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="itSysToolsPasswordLbl1">
+            <Component class="javax.swing.JLabel" name="itEditUAccUAccDetailsRoleLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -765,7 +765,7 @@
                 <Property name="text" type="java.lang.String" value="Role"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox1">
+            <Component class="javax.swing.JComboBox" name="itEditUAccUAccDetailsRoleCbx">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -789,7 +789,7 @@
         </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="hrEditEmployeeBackBtn">
+    <Component class="javax.swing.JButton" name="itEditUAccUAccDetailsBackBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -810,7 +810,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEditEmployeeBackBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccUAccDetailsBackBtnActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

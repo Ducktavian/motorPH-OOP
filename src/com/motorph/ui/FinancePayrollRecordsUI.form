@@ -78,7 +78,7 @@
               </Group>
               <Group type="102" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
-                  <Component id="employeePrlRecordGPrllBtn" min="-2" pref="216" max="-2" attributes="0"/>
+                  <Component id="employeePrlRecordGenPrllBtn" min="-2" pref="216" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
@@ -98,7 +98,7 @@
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   <Component id="employeePrllDetailsPrlRecordBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                  <Component id="employeePrlRecordGPrllBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="employeePrlRecordGenPrllBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                   <Component id="employeePrlRecordPrlDisputeBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="254" pref="254" max="-2" attributes="0"/>
@@ -108,7 +108,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="employeePrlRecordGPrllBtn">
+        <Component class="javax.swing.JButton" name="employeePrlRecordGenPrllBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -126,7 +126,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="employeePrlRecordGPrllBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlRecordGPrllBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeePrlRecordGenPrllBtnActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="employeePrllDetailsPrlRecordBtn">

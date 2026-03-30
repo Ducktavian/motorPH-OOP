@@ -43,7 +43,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         for (Role type : types) {
             model.addElement(type);
         }
-        jComboBox1.setModel(model);
+        itEditUAccUAccDetailsRoleCbx.setModel(model);
     }
     
     
@@ -92,10 +92,10 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccUsernameLbl = new javax.swing.JLabel();
         itEditUAccUsernameFld = new javax.swing.JTextField();
         itEditUAccPasswordLbl = new javax.swing.JLabel();
-        itSysToolsResetPassBtn = new javax.swing.JButton();
-        itSysToolsPasswordLbl1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        hrEditEmployeeBackBtn = new javax.swing.JButton();
+        itEditUAccUAccDetailsResetPassBtn = new javax.swing.JButton();
+        itEditUAccUAccDetailsRoleLbl = new javax.swing.JLabel();
+        itEditUAccUAccDetailsRoleCbx = new javax.swing.JComboBox<>();
+        itEditUAccUAccDetailsBackBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -270,19 +270,19 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccPasswordLbl.setForeground(new java.awt.Color(31, 41, 55));
         itEditUAccPasswordLbl.setText("Password");
 
-        itSysToolsResetPassBtn.setBackground(new java.awt.Color(239, 68, 68));
-        itSysToolsResetPassBtn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        itSysToolsResetPassBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itSysToolsResetPassBtn.setText("Reset Password");
-        itSysToolsResetPassBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        itSysToolsResetPassBtn.addActionListener(this::itSysToolsResetPassBtnActionPerformed);
+        itEditUAccUAccDetailsResetPassBtn.setBackground(new java.awt.Color(239, 68, 68));
+        itEditUAccUAccDetailsResetPassBtn.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        itEditUAccUAccDetailsResetPassBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itEditUAccUAccDetailsResetPassBtn.setText("Reset Password");
+        itEditUAccUAccDetailsResetPassBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUAccUAccDetailsResetPassBtn.addActionListener(this::itEditUAccUAccDetailsResetPassBtnActionPerformed);
 
-        itSysToolsPasswordLbl1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        itSysToolsPasswordLbl1.setForeground(new java.awt.Color(31, 41, 55));
-        itSysToolsPasswordLbl1.setText("Role");
+        itEditUAccUAccDetailsRoleLbl.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        itEditUAccUAccDetailsRoleLbl.setForeground(new java.awt.Color(31, 41, 55));
+        itEditUAccUAccDetailsRoleLbl.setText("Role");
 
-        jComboBox1.setForeground(new java.awt.Color(30, 42, 56));
-        jComboBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUAccUAccDetailsRoleCbx.setForeground(new java.awt.Color(30, 42, 56));
+        itEditUAccUAccDetailsRoleCbx.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
 
         javax.swing.GroupLayout itEditUAccUAccDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itEditUAccUAccDetailsBrdrPnl);
         itEditUAccUAccDetailsBrdrPnl.setLayout(itEditUAccUAccDetailsBrdrPnlLayout);
@@ -292,9 +292,9 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addGap(21, 21, 21)
                 .addGroup(itEditUAccUAccDetailsBrdrPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(itEditUAccUsernameLbl)
-                    .addComponent(itSysToolsPasswordLbl1)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itSysToolsResetPassBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itEditUAccUAccDetailsRoleLbl)
+                    .addComponent(itEditUAccUAccDetailsRoleCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itEditUAccUAccDetailsResetPassBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(itEditUAccPasswordLbl)
                     .addComponent(itEditUAccUsernameFld, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(22, Short.MAX_VALUE))
@@ -309,18 +309,18 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(itEditUAccPasswordLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(itSysToolsResetPassBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itEditUAccUAccDetailsResetPassBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(itSysToolsPasswordLbl1)
+                .addComponent(itEditUAccUAccDetailsRoleLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(itEditUAccUAccDetailsRoleCbx, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
         itEditUAccUsernameLbl.getAccessibleContext().setAccessibleName("itEditUAccUsernameLbl");
         itEditUAccUsernameFld.getAccessibleContext().setAccessibleName("itEditUAccUsernameFld");
         itEditUAccPasswordLbl.getAccessibleContext().setAccessibleName("itEditUAccPasswordLbl");
-        itSysToolsResetPassBtn.getAccessibleContext().setAccessibleName("itSysToolsResetPassBtn");
+        itEditUAccUAccDetailsResetPassBtn.getAccessibleContext().setAccessibleName("itSysToolsResetPassBtn");
 
         javax.swing.GroupLayout itEditUAccUEDetailsBrdrPnlLayout = new javax.swing.GroupLayout(itEditUAccUEDetailsBrdrPnl);
         itEditUAccUEDetailsBrdrPnl.setLayout(itEditUAccUEDetailsBrdrPnlLayout);
@@ -406,12 +406,12 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         itEditUAccUAccDetailsPnl.getAccessibleContext().setAccessibleName("itEditUAccUAccDetailsPnl");
         itEditUAccUAccDetailsBrdrPnl.getAccessibleContext().setAccessibleName("itEditUAccUAccDetailsBrdrPnl");
 
-        hrEditEmployeeBackBtn.setBackground(new java.awt.Color(30, 58, 138));
-        hrEditEmployeeBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        hrEditEmployeeBackBtn.setForeground(new java.awt.Color(255, 255, 255));
-        hrEditEmployeeBackBtn.setText("Back");
-        hrEditEmployeeBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
-        hrEditEmployeeBackBtn.addActionListener(this::hrEditEmployeeBackBtnActionPerformed);
+        itEditUAccUAccDetailsBackBtn.setBackground(new java.awt.Color(30, 58, 138));
+        itEditUAccUAccDetailsBackBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        itEditUAccUAccDetailsBackBtn.setForeground(new java.awt.Color(255, 255, 255));
+        itEditUAccUAccDetailsBackBtn.setText("Back");
+        itEditUAccUAccDetailsBackBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(30, 42, 56), 1, true));
+        itEditUAccUAccDetailsBackBtn.addActionListener(this::itEditUAccUAccDetailsBackBtnActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -422,7 +422,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(hrEditEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(itEditUAccUAccDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(itEditUAccUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -440,7 +440,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itEditUAccUpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hrEditEmployeeBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(itEditUAccUAccDetailsBackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(54, 54, 54))
             .addComponent(itEditUAccSidebarPnl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -466,7 +466,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
             
             
             Role selectedRole = null;
-            Object selectedItem = jComboBox1.getSelectedItem();
+            Object selectedItem = itEditUAccUAccDetailsRoleCbx.getSelectedItem();
 
             
             if (selectedItem instanceof Role) {
@@ -529,7 +529,7 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_itEditUAccUsernameFldActionPerformed
 
-    private void itSysToolsResetPassBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itSysToolsResetPassBtnActionPerformed
+    private void itEditUAccUAccDetailsResetPassBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUAccDetailsResetPassBtnActionPerformed
         // TODO add your handling code here:
         try {
             String message = "Do you want to reset password for user " + user.getUsername() + " ?";
@@ -555,12 +555,12 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, e.getMessage());
         }
         
-    }//GEN-LAST:event_itSysToolsResetPassBtnActionPerformed
+    }//GEN-LAST:event_itEditUAccUAccDetailsResetPassBtnActionPerformed
 
-    private void hrEditEmployeeBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrEditEmployeeBackBtnActionPerformed
+    private void itEditUAccUAccDetailsBackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUAccDetailsBackBtnActionPerformed
         // TODO add your handling code here:
         GuiUtil.openFrame(this, new ITUserManagementUI());
-    }//GEN-LAST:event_hrEditEmployeeBackBtnActionPerformed
+    }//GEN-LAST:event_itEditUAccUAccDetailsBackBtnActionPerformed
 
 
     private void itEditUserUpdateBtn1ActionPerformed(java.awt.event.ActionEvent evt) {                                                     
@@ -569,7 +569,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton hrEditEmployeeBackBtn;
     private javax.swing.JTextField itEditUAccENameFld;
     private javax.swing.JLabel itEditUAccENameLbl;
     private javax.swing.JTextField itEditUAccENumberFld;
@@ -588,15 +587,16 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private javax.swing.JPanel itEditUAccSidebarPnl;
     private javax.swing.JTextField itEditUAccStatusFld;
     private javax.swing.JLabel itEditUAccStatusLbl;
+    private javax.swing.JButton itEditUAccUAccDetailsBackBtn;
     private javax.swing.JPanel itEditUAccUAccDetailsBrdrPnl;
     private javax.swing.JLabel itEditUAccUAccDetailsLbl;
     private javax.swing.JPanel itEditUAccUAccDetailsPnl;
+    private javax.swing.JButton itEditUAccUAccDetailsResetPassBtn;
+    private javax.swing.JComboBox<Object> itEditUAccUAccDetailsRoleCbx;
+    private javax.swing.JLabel itEditUAccUAccDetailsRoleLbl;
     private javax.swing.JPanel itEditUAccUEDetailsBrdrPnl;
     private javax.swing.JButton itEditUAccUpdateBtn;
     private javax.swing.JTextField itEditUAccUsernameFld;
     private javax.swing.JLabel itEditUAccUsernameLbl;
-    private javax.swing.JLabel itSysToolsPasswordLbl1;
-    private javax.swing.JButton itSysToolsResetPassBtn;
-    private javax.swing.JComboBox<Object> jComboBox1;
     // End of variables declaration//GEN-END:variables
 }

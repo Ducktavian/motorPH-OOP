@@ -28,7 +28,7 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="hrEditEmployeeBackBtn" min="-2" pref="74" max="-2" attributes="0"/>
+                      <Component id="itAddUAccBackBtn" min="-2" pref="74" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="itAddUAccActivateBtn" min="-2" pref="110" max="-2" attributes="0"/>
                   </Group>
@@ -51,7 +51,7 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="itAddUAccActivateBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="hrEditEmployeeBackBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="itAddUAccBackBtn" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
           </Group>
@@ -271,7 +271,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
-                          <Component id="itEditUAccUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -305,7 +305,7 @@
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   <Component id="itAddUAccUAccDetailsPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="itEditUAccUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="itAddUAccUAccDetailsBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="22" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -620,7 +620,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="itEditUAccUAccDetailsBrdrPnl">
+        <Container class="javax.swing.JPanel" name="itAddUAccUAccDetailsBrdrPnl">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -637,12 +637,12 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="itEditUAccUsernameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="itSysToolsPasswordLbl1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox1" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
-                          <Component id="itSysToolsResetPassBtn" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
-                          <Component id="itEditUAccPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="itEditUAccUsernameFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itAddUAccUsernameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccRoleLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccRoleCbx" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itAddUAccSetDefaultPasswordLbl" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="itAddUAccPasswordLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="itAddUAccUsernameFld" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="22" max="32767" attributes="0"/>
                   </Group>
@@ -652,24 +652,24 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="itEditUAccUsernameLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccUsernameLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="itEditUAccUsernameFld" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itAddUAccUsernameFld" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="itEditUAccPasswordLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccPasswordLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="itSysToolsResetPassBtn" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itAddUAccSetDefaultPasswordLbl" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="itSysToolsPasswordLbl1" min="-2" max="-2" attributes="0"/>
+                      <Component id="itAddUAccRoleLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="itAddUAccRoleCbx" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace pref="34" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="itEditUAccUsernameLbl">
+            <Component class="javax.swing.JLabel" name="itAddUAccUsernameLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -680,7 +680,7 @@
                 <Property name="text" type="java.lang.String" value="Username"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="itEditUAccUsernameFld">
+            <Component class="javax.swing.JTextField" name="itAddUAccUsernameFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -700,10 +700,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itEditUAccUsernameFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccUsernameFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="itEditUAccPasswordLbl">
+            <Component class="javax.swing.JLabel" name="itAddUAccPasswordLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -714,7 +714,7 @@
                 <Property name="text" type="java.lang.String" value="Password"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="itSysToolsResetPassBtn">
+            <Component class="javax.swing.JButton" name="itAddUAccSetDefaultPasswordLbl">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="44" green="44" red="ef" type="rgb"/>
@@ -735,10 +735,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itSysToolsResetPassBtnActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccSetDefaultPasswordLblActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="itSysToolsPasswordLbl1">
+            <Component class="javax.swing.JLabel" name="itAddUAccRoleLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
@@ -749,7 +749,7 @@
                 <Property name="text" type="java.lang.String" value="Role"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox1">
+            <Component class="javax.swing.JComboBox" name="itAddUAccRoleCbx">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -773,7 +773,7 @@
         </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="hrEditEmployeeBackBtn">
+    <Component class="javax.swing.JButton" name="itAddUAccBackBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -794,7 +794,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hrEditEmployeeBackBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itAddUAccBackBtnActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

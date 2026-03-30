@@ -24,14 +24,14 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="financeGPrlSidebarBtn" min="-2" max="-2" attributes="0"/>
+              <Component id="financePrlSidebarBtn" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="financeGPrlBackBtn" min="-2" pref="72" max="-2" attributes="0"/>
-                          <Component id="financeGPrlSCalculatorBrdrPnl" min="-2" pref="709" max="-2" attributes="0"/>
-                          <Component id="financeGPrlPrlDetailsPnl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlBackBtn" min="-2" pref="72" max="-2" attributes="0"/>
+                          <Component id="financePrlSCalculatorBrdrPnl" min="-2" pref="709" max="-2" attributes="0"/>
+                          <Component id="financePrlPrlDetailsPnl" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="17" max="32767" attributes="0"/>
                   </Group>
@@ -39,25 +39,25 @@
                       <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="financeGPrlENameLbl" min="-2" max="-2" attributes="0"/>
+                              <Component id="financePrlENameLbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="financeGPrlENameFld" min="-2" pref="170" max="-2" attributes="0"/>
+                              <Component id="financePrlENameFld" min="-2" pref="170" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="financeGPrlENumberLbl" min="-2" max="-2" attributes="0"/>
+                              <Component id="financePrlENumberLbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="financeGPrlENumberFld" min="-2" pref="170" max="-2" attributes="0"/>
+                              <Component id="financePrlENumberFld" min="-2" pref="170" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="financeGPrlPrlDateLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlPrlPeriodLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlPrlDateLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlPrlPeriodLbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="payrollDateField" min="-2" pref="170" max="-2" attributes="0"/>
-                          <Component id="payrollPeriodField" min="-2" pref="170" max="-2" attributes="0"/>
+                          <Component id="financePrlPrlDateField" min="-2" pref="170" max="-2" attributes="0"/>
+                          <Component id="financePrlPrlPeriodField" min="-2" pref="170" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
@@ -69,44 +69,44 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-              <Component id="financeGPrlPrlDetailsPnl" min="-2" max="-2" attributes="0"/>
+              <Component id="financePrlPrlDetailsPnl" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="financeGPrlPrlDateLbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="payrollDateField" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="financePrlPrlDateLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlPrlDateField" min="-2" pref="29" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="financeGPrlPrlPeriodLbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="payrollPeriodField" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="financePrlPrlPeriodLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlPrlPeriodField" min="-2" pref="29" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlENumberFld" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                          <Component id="financeGPrlENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlENumberFld" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="financePrlENumberLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlENameFld" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                          <Component id="financeGPrlENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlENameFld" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="financePrlENameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="financeGPrlSCalculatorBrdrPnl" min="-2" pref="393" max="-2" attributes="0"/>
+              <Component id="financePrlSCalculatorBrdrPnl" min="-2" pref="393" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="financeGPrlBackBtn" min="-2" pref="33" max="-2" attributes="0"/>
+              <Component id="financePrlBackBtn" min="-2" pref="33" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
-          <Component id="financeGPrlSidebarBtn" alignment="0" max="32767" attributes="0"/>
+          <Component id="financePrlSidebarBtn" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="financeGPrlENumberFld">
+    <Component class="javax.swing.JTextField" name="financePrlENumberFld">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -130,10 +130,10 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financeGPrlENumberFld"/>
       </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlENumberFldActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlENumberFldActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="financeGPrlENameLbl">
+    <Component class="javax.swing.JLabel" name="financePrlENameLbl">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="15" style="0"/>
@@ -147,7 +147,7 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlENameLbl"/>
       </AccessibilityProperties>
     </Component>
-    <Component class="javax.swing.JLabel" name="financeGPrlPrlDateLbl">
+    <Component class="javax.swing.JLabel" name="financePrlPrlDateLbl">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="15" style="0"/>
@@ -161,7 +161,7 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlPrlDateLbl"/>
       </AccessibilityProperties>
     </Component>
-    <Component class="javax.swing.JTextField" name="financeGPrlENameFld">
+    <Component class="javax.swing.JTextField" name="financePrlENameFld">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -185,10 +185,10 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlENameFld"/>
       </AccessibilityProperties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlENameFldActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlENameFldActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="financeGPrlPrlPeriodLbl">
+    <Component class="javax.swing.JLabel" name="financePrlPrlPeriodLbl">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="15" style="0"/>
@@ -202,7 +202,7 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlPrlPeriodLbl"/>
       </AccessibilityProperties>
     </Component>
-    <Container class="javax.swing.JPanel" name="financeGPrlPrlDetailsPnl">
+    <Container class="javax.swing.JPanel" name="financePrlPrlDetailsPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -227,19 +227,19 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                  <Component id="financeGPrlPrlDetailsLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                  <Component id="financePrlPrlDetailsLbl" min="-2" pref="180" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="financeGPrlPrlDetailsLbl" min="-2" pref="46" max="-2" attributes="0"/>
+              <Component id="financePrlPrlDetailsLbl" min="-2" pref="46" max="-2" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="financeGPrlPrlDetailsLbl">
+        <Component class="javax.swing.JLabel" name="financePrlPrlDetailsLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="25" style="1"/>
@@ -255,7 +255,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="financeGPrlSidebarBtn">
+    <Container class="javax.swing.JPanel" name="financePrlSidebarBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -273,11 +273,11 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="92" pref="92" max="-2" attributes="0"/>
-                  <Component id="financeGPrlMainDashboardBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlMainDashboardBtn" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="financeGPrlMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
+                  <Component id="financePrlMotorPHIconImgLbl" min="-2" pref="180" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -285,16 +285,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                  <Component id="financeGPrlMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlMotorPHIconImgLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="447" max="-2" attributes="0"/>
-                  <Component id="financeGPrlMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="financePrlMainDashboardBtn" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="financeGPrlMainDashboardBtn">
+        <Component class="javax.swing.JButton" name="financePrlMainDashboardBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="38" green="2a" red="1e" type="rgb"/>
@@ -313,10 +313,10 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlMainDashboardBtn"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlMainDashboardBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlMainDashboardBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="financeGPrlMotorPHIconImgLbl">
+        <Component class="javax.swing.JLabel" name="financePrlMotorPHIconImgLbl">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/com/motorph/img/MotorPHIconImg.png"/>
@@ -328,7 +328,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="financeGPrlENumberLbl">
+    <Component class="javax.swing.JLabel" name="financePrlENumberLbl">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="15" style="0"/>
@@ -342,7 +342,7 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financePrlENumberLbl"/>
       </AccessibilityProperties>
     </Component>
-    <Container class="javax.swing.JPanel" name="financeGPrlSCalculatorBrdrPnl">
+    <Container class="javax.swing.JPanel" name="financePrlSCalculatorBrdrPnl">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="fd" green="c0" red="92" type="rgb"/>
@@ -370,21 +370,21 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                  <Component id="financeGPrlTGrossBrdrPnl" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlTGrossBrdrPnl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="financeGPrlTDeductionBrdrPnl" min="-2" max="-2" attributes="0"/>
+                      <Component id="financePrlTDeductionBrdrPnl" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="financeGPrlNetPayLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlNetPayLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="financeGPrlNetPayFld" min="-2" pref="99" max="-2" attributes="0"/>
+                          <Component id="financePrlNetPayFld" min="-2" pref="99" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                  <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="financeGPrlSCalculatorLbl" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlSCalculatorLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="283" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -393,18 +393,18 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="financeGPrlSCalculatorLbl" min="-2" max="-2" attributes="0"/>
+                  <Component id="financePrlSCalculatorLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="financeGPrlTDeductionBrdrPnl" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlTDeductionBrdrPnl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="financeGPrlNetPayFld" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="financeGPrlNetPayLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="financePrlNetPayFld" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                              <Component id="financePrlNetPayLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="financeGPrlTGrossBrdrPnl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="financePrlTGrossBrdrPnl" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>
@@ -412,7 +412,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="financeGPrlSCalculatorLbl">
+        <Component class="javax.swing.JLabel" name="financePrlSCalculatorLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
@@ -426,7 +426,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="financeGPrlSCalculatorLbl"/>
           </AccessibilityProperties>
         </Component>
-        <Container class="javax.swing.JPanel" name="financeGPrlTGrossBrdrPnl">
+        <Container class="javax.swing.JPanel" name="financePrlTGrossBrdrPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="e9" green="e9" red="e9" type="rgb"/>
@@ -451,8 +451,8 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="financeGPrlEarningLbl" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="financeGPrlBenefitLbl" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="financePrlEarningLbl" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="financePrlBenefitLbl" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
@@ -460,45 +460,45 @@
                               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlHourlyRateLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlHourlyRateLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlHourlyRateFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlHourlyRateFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlOvertimeLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlOvertimeLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlOvertimeFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlOvertimeFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlBasicSalaryLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlBasicSalaryLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlBasicSalaryFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlBasicSalaryFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlHrsWorkedLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlHrsWorkedLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="78" max="32767" attributes="0"/>
-                                      <Component id="financeGPrlHrsWorkedFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlHrsWorkedFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlRiceSubsidyLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlRiceSubsidyLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlRiceSubsidyFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlRiceSubsidyFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="financeGPrlTGrossLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlTGrossLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="financeGPrlTGrossFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlTGrossFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="financeGPrlCltAllowanceLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlCltAllowanceLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlCltAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlCltAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="financeGPrlPhnAllowanceLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlPhnAllowanceLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlPhnAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlPhnAllowanceFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -511,48 +511,48 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="financeGPrlEarningLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="financePrlEarningLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlBasicSalaryLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlBasicSalaryFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlBasicSalaryLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlBasicSalaryFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlOvertimeLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlOvertimeFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlOvertimeLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlOvertimeFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlHrsWorkedLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlHrsWorkedFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlHrsWorkedLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlHrsWorkedFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlHourlyRateLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlHourlyRateFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlHourlyRateLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlHourlyRateFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                      <Component id="financeGPrlBenefitLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="financePrlBenefitLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="financeGPrlRiceSubsidyFld" alignment="1" min="-2" pref="21" max="-2" attributes="0"/>
-                          <Component id="financeGPrlRiceSubsidyLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlRiceSubsidyFld" alignment="1" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlRiceSubsidyLbl" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlPhnAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
-                          <Component id="financeGPrlPhnAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlPhnAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlPhnAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlCltAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
-                          <Component id="financeGPrlCltAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlCltAllowanceFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlCltAllowanceLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlTGrossLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlTGrossFld" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="financePrlTGrossLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlTGrossFld" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="12" max="32767" attributes="0"/>
                   </Group>
@@ -560,7 +560,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="financeGPrlEarningLbl">
+            <Component class="javax.swing.JLabel" name="financePrlEarningLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="1"/>
@@ -571,7 +571,7 @@
                 <Property name="text" type="java.lang.String" value="Earning"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlBasicSalaryLbl">
+            <Component class="javax.swing.JLabel" name="financePrlBasicSalaryLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -582,7 +582,7 @@
                 <Property name="text" type="java.lang.String" value="Basic Salary"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlOvertimeLbl">
+            <Component class="javax.swing.JLabel" name="financePrlOvertimeLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -593,7 +593,7 @@
                 <Property name="text" type="java.lang.String" value="Overtime"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlHrsWorkedLbl">
+            <Component class="javax.swing.JLabel" name="financePrlHrsWorkedLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -604,7 +604,7 @@
                 <Property name="text" type="java.lang.String" value="Hour/s Worked"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlBenefitLbl">
+            <Component class="javax.swing.JLabel" name="financePrlBenefitLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="1"/>
@@ -615,7 +615,7 @@
                 <Property name="text" type="java.lang.String" value="Benefit"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlRiceSubsidyLbl">
+            <Component class="javax.swing.JLabel" name="financePrlRiceSubsidyLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -626,7 +626,7 @@
                 <Property name="text" type="java.lang.String" value="Rice Subsidy"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlPhnAllowanceLbl">
+            <Component class="javax.swing.JLabel" name="financePrlPhnAllowanceLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -637,7 +637,7 @@
                 <Property name="text" type="java.lang.String" value="Phone Allowance"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlCltAllowanceLbl">
+            <Component class="javax.swing.JLabel" name="financePrlCltAllowanceLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -648,7 +648,7 @@
                 <Property name="text" type="java.lang.String" value="Clothing Allowance"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlBasicSalaryFld">
+            <Component class="javax.swing.JTextField" name="financePrlBasicSalaryFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -669,10 +669,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlBasicSalaryFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlBasicSalaryFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlOvertimeFld">
+            <Component class="javax.swing.JTextField" name="financePrlOvertimeFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -693,10 +693,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlOvertimeFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlOvertimeFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlHrsWorkedFld">
+            <Component class="javax.swing.JTextField" name="financePrlHrsWorkedFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -717,10 +717,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlHrsWorkedFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlHrsWorkedFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlRiceSubsidyFld">
+            <Component class="javax.swing.JTextField" name="financePrlRiceSubsidyFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -741,10 +741,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlRiceSubsidyFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlRiceSubsidyFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlPhnAllowanceFld">
+            <Component class="javax.swing.JTextField" name="financePrlPhnAllowanceFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -765,10 +765,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlPhnAllowanceFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlPhnAllowanceFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlCltAllowanceFld">
+            <Component class="javax.swing.JTextField" name="financePrlCltAllowanceFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -789,10 +789,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlCltAllowanceFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlCltAllowanceFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlTGrossFld">
+            <Component class="javax.swing.JTextField" name="financePrlTGrossFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -813,10 +813,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlTGrossFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlTGrossFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlTGrossLbl">
+            <Component class="javax.swing.JLabel" name="financePrlTGrossLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="1"/>
@@ -827,7 +827,7 @@
                 <Property name="text" type="java.lang.String" value="Total Gross"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlHourlyRateLbl">
+            <Component class="javax.swing.JLabel" name="financePrlHourlyRateLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -838,7 +838,7 @@
                 <Property name="text" type="java.lang.String" value="Hourly Rate"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlHourlyRateFld">
+            <Component class="javax.swing.JTextField" name="financePrlHourlyRateFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -859,12 +859,12 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlHourlyRateFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlHourlyRateFldActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="financeGPrlTDeductionBrdrPnl">
+        <Container class="javax.swing.JPanel" name="financePrlTDeductionBrdrPnl">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="e9" green="e9" red="e9" type="rgb"/>
@@ -888,42 +888,42 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
-                              <Component id="financeGPrlDeductionLbl" min="-2" max="-2" attributes="0"/>
+                              <Component id="financePrlDeductionLbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="97" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="financeGPrlTDeductionLbl" min="-2" max="-2" attributes="0"/>
+                              <Component id="financePrlTDeductionLbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="financeGPrlTDeductionFld" min="-2" pref="99" max="-2" attributes="0"/>
+                              <Component id="financePrlTDeductionFld" min="-2" pref="99" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlPagIbigLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlPagIbigLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlPagIbigFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlPagIbigFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlUndertimeLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlUndertimeLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlUndertimeFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlUndertimeFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlSSSLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlSSSLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlSSSFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlSSSFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlPhilHealthLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="financePrlPhilHealthLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlPhilHealthFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlPhilHealthFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="financeGPrlWithTaxLbl" min="-2" pref="119" max="-2" attributes="0"/>
+                                      <Component id="financePrlWithTaxLbl" min="-2" pref="119" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="financeGPrlWithtaxFld" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="financePrlWithtaxFld" min="-2" pref="99" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -936,36 +936,36 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="financeGPrlDeductionLbl" min="-2" max="-2" attributes="0"/>
+                      <Component id="financePrlDeductionLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlSSSLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlSSSFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlSSSLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlSSSFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlPagIbigFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
-                          <Component id="financeGPrlPagIbigLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlPagIbigFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlPagIbigLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlPhilHealthLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlPhilHealthFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlPhilHealthLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlPhilHealthFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlWithTaxLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlWithtaxFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlWithTaxLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlWithtaxFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlUndertimeLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="financeGPrlUndertimeFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="financePrlUndertimeLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlUndertimeFld" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="financeGPrlTDeductionFld" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                          <Component id="financeGPrlTDeductionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="financePrlTDeductionFld" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="financePrlTDeductionLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="20" max="32767" attributes="0"/>
                   </Group>
@@ -973,7 +973,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="financeGPrlDeductionLbl">
+            <Component class="javax.swing.JLabel" name="financePrlDeductionLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="1"/>
@@ -984,7 +984,7 @@
                 <Property name="text" type="java.lang.String" value="Deduction"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlSSSLbl">
+            <Component class="javax.swing.JLabel" name="financePrlSSSLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -995,7 +995,7 @@
                 <Property name="text" type="java.lang.String" value="SSS"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlWithTaxLbl">
+            <Component class="javax.swing.JLabel" name="financePrlWithTaxLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -1006,7 +1006,7 @@
                 <Property name="text" type="java.lang.String" value="Withholding Tax"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlPhilHealthLbl">
+            <Component class="javax.swing.JLabel" name="financePrlPhilHealthLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -1017,7 +1017,7 @@
                 <Property name="text" type="java.lang.String" value="PhilHealth"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlUndertimeLbl">
+            <Component class="javax.swing.JLabel" name="financePrlUndertimeLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -1028,7 +1028,7 @@
                 <Property name="text" type="java.lang.String" value="Undertime"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlSSSFld">
+            <Component class="javax.swing.JTextField" name="financePrlSSSFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1049,10 +1049,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlSSSFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlSSSFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlWithtaxFld">
+            <Component class="javax.swing.JTextField" name="financePrlWithtaxFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1073,10 +1073,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlWithtaxFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlWithtaxFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlPhilHealthFld">
+            <Component class="javax.swing.JTextField" name="financePrlPhilHealthFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1097,10 +1097,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlPhilHealthFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlPhilHealthFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlUndertimeFld">
+            <Component class="javax.swing.JTextField" name="financePrlUndertimeFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1121,10 +1121,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlUndertimeFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlUndertimeFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlTDeductionFld">
+            <Component class="javax.swing.JTextField" name="financePrlTDeductionFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1145,10 +1145,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlTDeductionFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlTDeductionFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlTDeductionLbl">
+            <Component class="javax.swing.JLabel" name="financePrlTDeductionLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="1"/>
@@ -1159,7 +1159,7 @@
                 <Property name="text" type="java.lang.String" value="Total Deduction"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="financeGPrlPagIbigFld">
+            <Component class="javax.swing.JTextField" name="financePrlPagIbigFld">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1180,10 +1180,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlPagIbigFldActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlPagIbigFldActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="financeGPrlPagIbigLbl">
+            <Component class="javax.swing.JLabel" name="financePrlPagIbigLbl">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="15" style="0"/>
@@ -1196,7 +1196,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="financeGPrlNetPayLbl">
+        <Component class="javax.swing.JLabel" name="financePrlNetPayLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="1"/>
@@ -1207,7 +1207,7 @@
             <Property name="text" type="java.lang.String" value="Net Pay"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="financeGPrlNetPayFld">
+        <Component class="javax.swing.JTextField" name="financePrlNetPayFld">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5e" green="c5" red="22" type="rgb"/>
@@ -1234,12 +1234,12 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlNetPayFldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlNetPayFldActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="financeGPrlBackBtn">
+    <Component class="javax.swing.JButton" name="financePrlBackBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="8a" green="3a" red="1e" type="rgb"/>
@@ -1260,10 +1260,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financeGPrlBackBtnActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlBackBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="payrollDateField">
+    <Component class="javax.swing.JTextField" name="financePrlPrlDateField">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1284,10 +1284,10 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="payrollDateFieldActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlPrlDateFieldActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="payrollPeriodField">
+    <Component class="javax.swing.JTextField" name="financePrlPrlPeriodField">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="37" green="29" red="1f" type="rgb"/>
@@ -1308,7 +1308,7 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="payrollPeriodFieldActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="financePrlPrlPeriodFieldActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

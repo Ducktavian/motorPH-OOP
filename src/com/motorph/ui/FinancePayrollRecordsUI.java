@@ -93,7 +93,7 @@ public class FinancePayrollRecordsUI extends javax.swing.JFrame {
     private void initComponents() {
 
         employeePrlRecordSidebarPnl = new javax.swing.JPanel();
-        employeePrlRecordGPrllBtn = new javax.swing.JButton();
+        employeePrlRecordGenPrllBtn = new javax.swing.JButton();
         employeePrllDetailsPrlRecordBtn = new javax.swing.JButton();
         employeePrlRecordMainDashboardBtn = new javax.swing.JButton();
         employeePrlRecordMotorPHIconImgLbl = new javax.swing.JLabel();
@@ -111,12 +111,12 @@ public class FinancePayrollRecordsUI extends javax.swing.JFrame {
 
         employeePrlRecordSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
 
-        employeePrlRecordGPrllBtn.setBackground(new java.awt.Color(30, 42, 56));
-        employeePrlRecordGPrllBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        employeePrlRecordGPrllBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeePrlRecordGPrllBtn.setText("Generate Payroll");
-        employeePrlRecordGPrllBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        employeePrlRecordGPrllBtn.addActionListener(this::employeePrlRecordGPrllBtnActionPerformed);
+        employeePrlRecordGenPrllBtn.setBackground(new java.awt.Color(30, 42, 56));
+        employeePrlRecordGenPrllBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        employeePrlRecordGenPrllBtn.setForeground(new java.awt.Color(255, 255, 255));
+        employeePrlRecordGenPrllBtn.setText("Generate Payroll");
+        employeePrlRecordGenPrllBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        employeePrlRecordGenPrllBtn.addActionListener(this::employeePrlRecordGenPrllBtnActionPerformed);
 
         employeePrllDetailsPrlRecordBtn.setBackground(new java.awt.Color(30, 42, 56));
         employeePrllDetailsPrlRecordBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -154,7 +154,7 @@ public class FinancePayrollRecordsUI extends javax.swing.JFrame {
                 .addComponent(employeePrllDetailsPrlRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(employeePrlRecordSidebarPnlLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(employeePrlRecordGPrllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(employeePrlRecordGenPrllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(employeePrlRecordSidebarPnlLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(employeePrlRecordPrlDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -170,14 +170,14 @@ public class FinancePayrollRecordsUI extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(employeePrllDetailsPrlRecordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
-                .addComponent(employeePrlRecordGPrllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(employeePrlRecordGenPrllBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addComponent(employeePrlRecordPrlDisputeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(254, 254, 254)
                 .addComponent(employeePrlRecordMainDashboardBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        employeePrlRecordGPrllBtn.getAccessibleContext().setAccessibleName("employeePrlRecordGPrllBtn");
+        employeePrlRecordGenPrllBtn.getAccessibleContext().setAccessibleName("employeePrlRecordGPrllBtn");
         employeePrllDetailsPrlRecordBtn.getAccessibleContext().setAccessibleName("employeePrllRecordPrlRecordBtn");
         employeePrllDetailsPrlRecordBtn.getAccessibleContext().setAccessibleDescription("");
         employeePrlRecordMainDashboardBtn.getAccessibleContext().setAccessibleName("employeePrlRecordMainDashboardBtn");
@@ -421,10 +421,10 @@ public class FinancePayrollRecordsUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void employeePrlRecordGPrllBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordGPrllBtnActionPerformed
+    private void employeePrlRecordGenPrllBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrlRecordGenPrllBtnActionPerformed
         // TODO add your handling code here:
         GuiUtil.openFrame(this, new FinanceGeneratePayrollUI());
-    }//GEN-LAST:event_employeePrlRecordGPrllBtnActionPerformed
+    }//GEN-LAST:event_employeePrlRecordGenPrllBtnActionPerformed
 
     private void employeePrllDetailsPrlRecordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePrllDetailsPrlRecordBtnActionPerformed
         // TODO add your handling code here:
@@ -471,7 +471,7 @@ public class FinancePayrollRecordsUI extends javax.swing.JFrame {
     private javax.swing.JPanel employeePrlRecordBrdrPnl;
     private javax.swing.JScrollPane employeePrlRecordBrdrScrlPnl;
     private javax.swing.JTextField employeePrlRecordEntENumberFld;
-    private javax.swing.JButton employeePrlRecordGPrllBtn;
+    private javax.swing.JButton employeePrlRecordGenPrllBtn;
     private javax.swing.JButton employeePrlRecordMainDashboardBtn;
     private javax.swing.JLabel employeePrlRecordMotorPHIconImgLbl;
     private javax.swing.JButton employeePrlRecordPrlDisputeBtn;
