@@ -158,8 +158,6 @@ public class LoginUI extends javax.swing.JFrame {
     private void LoginUsernameFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginUsernameFldActionPerformed
         // TODO add your handling code here:
         
-        
-        
     }//GEN-LAST:event_LoginUsernameFldActionPerformed
 
     private void LoginForgotPasswordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginForgotPasswordBtnActionPerformed
@@ -192,7 +190,6 @@ public class LoginUI extends javax.swing.JFrame {
                     "Login Error",
                     javax.swing.JOptionPane.ERROR_MESSAGE
             );
-                    
         }
     }//GEN-LAST:event_LoginLoginBtnActionPerformed
 

@@ -521,9 +521,6 @@ public class EmployeePayslipDisputeUI extends javax.swing.JFrame {
 
     private void employeePylDisputeSubmitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylDisputeSubmitBtnActionPerformed
         // TODO add your handling code here:
-
-     
-
     }//GEN-LAST:event_employeePylDisputeSubmitBtnActionPerformed
 
     private void employeePylDisputeReasonFldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeePylDisputeReasonFldActionPerformed

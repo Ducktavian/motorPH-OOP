@@ -67,7 +67,6 @@ public class FinanceGeneratePayrollUI extends javax.swing.JFrame {
             populateEmployeeFields(emp);
             
         }
-        
     }
     
     private void clearFields() {

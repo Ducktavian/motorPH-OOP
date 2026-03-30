@@ -478,7 +478,6 @@ public class ITAddUserAccountUI extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
                 
             } else {
-                // This handles the case where the user closes the dialog without pressing Yes or No
                 JOptionPane.showMessageDialog(null, "Dialog closed without a choice.");
             }
             

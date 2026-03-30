@@ -71,11 +71,9 @@ public class EmployeeLeaveUI extends javax.swing.JFrame {
             
             List<LeaveRequest> list = leaveService.getAllLeave(Session.getCurrentUser().getEmployeeNumber());
 
-            // Ensure the table model exists
             DefaultTableModel model = (DefaultTableModel) employeeLeaveRecordsTbl.getModel();
             model.setRowCount(0);
 
-            // 4. Fill the rows
             for (LeaveRequest q : list) {
 
                 Object[] row = {

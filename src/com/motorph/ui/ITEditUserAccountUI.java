@@ -461,10 +461,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
     private void itEditUAccUpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itEditUAccUpdateBtnActionPerformed
         // TODO add your handling code here:
         try {
-            
-            
-            
-            
             Role selectedRole = null;
             Object selectedItem = itEditUAccUAccDetailsRoleCbx.getSelectedItem();
 
@@ -474,8 +470,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
             } else {
                 throw new IllegalArgumentException("Please select a valid user role.");
             }
-            
-            
             
             String message = "Do you want to update user " + user.getUsername() + " ?";
             String title = "Confirmation";
@@ -492,7 +486,6 @@ public class ITEditUserAccountUI extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "You clicked No. Exiting.");
                 
             } else {
-                // This handles the case where the user closes the dialog without pressing Yes or No
                 JOptionPane.showMessageDialog(null, "Dialog closed without a choice.");
             }
         

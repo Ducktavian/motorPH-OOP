@@ -38,10 +38,7 @@ public class EmployeePayslipRecordsUI extends javax.swing.JFrame {
     }
     
      private void initDataEngine() {
-         
-         
          this.payrollService = AppContext.getPayrollService();
-     
      }
      
      private void refreshTableData(String empNumber) {  

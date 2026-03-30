@@ -152,7 +152,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
         itUManagementUManagementBtn.setBackground(new java.awt.Color(30, 42, 56));
         itUManagementUManagementBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         itUManagementUManagementBtn.setForeground(new java.awt.Color(255, 255, 255));
-        itUManagementUManagementBtn.setText("User Management");
+        itUManagementUManagementBtn.setText("Manage Users");
         itUManagementUManagementBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         itUManagementUManagementBtn.addActionListener(this::itUManagementUManagementBtnActionPerformed);
         itUManagementSidebarPnl.add(itUManagementUManagementBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
@@ -179,7 +179,7 @@ public class ITUserManagementUI extends javax.swing.JFrame {
 
         itUManagementActLogsLbl.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
         itUManagementActLogsLbl.setForeground(new java.awt.Color(255, 255, 255));
-        itUManagementActLogsLbl.setText(" Activity Logs");
+        itUManagementActLogsLbl.setText("Manage Users");
         itUManagementActLogsPnl.add(itUManagementActLogsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 170, 46));
         itUManagementActLogsLbl.getAccessibleContext().setAccessibleName("itSysToolsActLogsLbl");
 

@@ -196,7 +196,7 @@ public class MainFinanceDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        GuiUtil.openFrame(this, new EmployeeDashboardUI());
+        GuiUtil.openFrame(this, new EmployeeProfileUI());
     }//GEN-LAST:event_mainFDashboardMyProfileImgBtnActionPerformed
 
     private void mainFDashboardMDisputesImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainFDashboardMDisputesImgBtnActionPerformed

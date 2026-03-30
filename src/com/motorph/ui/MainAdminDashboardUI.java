@@ -233,7 +233,7 @@ public class MainAdminDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
         
-        GuiUtil.openFrame(this, new EmployeeDashboardUI());
+        GuiUtil.openFrame(this, new EmployeeProfileUI());
     }//GEN-LAST:event_mainAdminDashboardMyProfileImgBtnActionPerformed
 
     private void mainAdminDashboardMUsersImgBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainAdminDashboardMUsersImgBtnActionPerformed

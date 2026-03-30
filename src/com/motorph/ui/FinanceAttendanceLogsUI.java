@@ -63,7 +63,6 @@ public class FinanceAttendanceLogsUI extends javax.swing.JFrame {
                 String.valueOf(log.getLogOut()),
                 "GOODS :)"
             };
-
             model.addRow(row);
         }
     }

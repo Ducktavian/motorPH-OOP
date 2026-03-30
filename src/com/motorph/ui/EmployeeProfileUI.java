@@ -22,9 +22,9 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Lenovo
  */
-public class EmployeeDashboardUI extends javax.swing.JFrame {
+public class EmployeeProfileUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeeDashboardUI.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(EmployeeProfileUI.class.getName());
     private EmployeeService empService;
     private AttendanceService attendanceService;
     
@@ -32,7 +32,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
     /**
      * Creates new form EMPLOYEEDASH
      */
-    public EmployeeDashboardUI() {
+    public EmployeeProfileUI() {
         initComponents();
         this.empService = AppContext.getEmployeeService();
         this.attendanceService = AppContext.getAttendanceService();
@@ -91,10 +91,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
                 
                 model.addRow(row);
             }
-            
-            
             refreshAttendanceButtons();
-            
         }
 
     /**
@@ -107,7 +104,6 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
     private void initComponents() {
 
         employeeDashboardSidebarPnl = new javax.swing.JPanel();
-        employeeDashboardDashboardBtn = new javax.swing.JButton();
         employeeDashboardMainDashboardBtn = new javax.swing.JButton();
         employeeDashboardMotorPHIconImgLbl = new javax.swing.JLabel();
         employeeDashboardEDetailsBrdrPnl = new javax.swing.JPanel();
@@ -159,16 +155,6 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
 
         employeeDashboardSidebarPnl.setBackground(new java.awt.Color(30, 58, 138));
         employeeDashboardSidebarPnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        employeeDashboardDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
-        employeeDashboardDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        employeeDashboardDashboardBtn.setForeground(new java.awt.Color(255, 255, 255));
-        employeeDashboardDashboardBtn.setText("Dashboard");
-        employeeDashboardDashboardBtn.setToolTipText("");
-        employeeDashboardDashboardBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        employeeDashboardDashboardBtn.addActionListener(this::employeeDashboardDashboardBtnActionPerformed);
-        employeeDashboardSidebarPnl.add(employeeDashboardDashboardBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 199, 216, 39));
-        employeeDashboardDashboardBtn.getAccessibleContext().setAccessibleName("employeeDashboardDashboardBtn");
 
         employeeDashboardMainDashboardBtn.setBackground(new java.awt.Color(30, 42, 56));
         employeeDashboardMainDashboardBtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -894,10 +880,6 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_employeeDashboardStatusFldActionPerformed
 
-    private void employeeDashboardDashboardBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeDashboardDashboardBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_employeeDashboardDashboardBtnActionPerformed
-
     private void refreshAttendanceButtons() {
         boolean hasOpenSession = attendanceService.hasOpenSession(Session.getCurrentUser().getEmployeeNumber());
         
@@ -939,7 +921,7 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new EmployeeDashboardUI().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new EmployeeProfileUI().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -956,7 +938,6 @@ public class EmployeeDashboardUI extends javax.swing.JFrame {
     private javax.swing.JLabel employeeDashboardBirthdayLbl;
     private javax.swing.JTextField employeeDashboardCltAllowanceFld;
     private javax.swing.JLabel employeeDashboardCltAllowanceLbl;
-    private javax.swing.JButton employeeDashboardDashboardBtn;
     private javax.swing.JPanel employeeDashboardEDetailsBrdrPnl;
     private javax.swing.JTextField employeeDashboardENumberFld;
     private javax.swing.JLabel employeeDashboardENumberLbl;
