@@ -259,7 +259,7 @@
         <Property name="text" type="java.lang.String" value="Manage Disputes"/>
       </Properties>
       <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="mainIDashboardDDetailsImgBtn"/>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="mainIDashboardDMDisputesImgBtn"/>
       </AccessibilityProperties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mainIDashboardDMDisputesImgBtnActionPerformed"/>

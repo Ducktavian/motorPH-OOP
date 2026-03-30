@@ -125,7 +125,7 @@ public class MainITDashboardUI extends javax.swing.JFrame {
         mainIDashboardDMDisputesImgBtn.setText("Manage Disputes");
         mainIDashboardDMDisputesImgBtn.addActionListener(this::mainIDashboardDMDisputesImgBtnActionPerformed);
         getContentPane().add(mainIDashboardDMDisputesImgBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 169, 45));
-        mainIDashboardDMDisputesImgBtn.getAccessibleContext().setAccessibleName("mainIDashboardDDetailsImgBtn");
+        mainIDashboardDMDisputesImgBtn.getAccessibleContext().setAccessibleName("mainIDashboardDMDisputesImgBtn");
 
         mainIDashboardMUsersImgBtn.setBackground(new java.awt.Color(30, 42, 56));
         mainIDashboardMUsersImgBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
